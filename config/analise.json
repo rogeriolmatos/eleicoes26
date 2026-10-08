@@ -1,0 +1,91 @@
+{
+  "_comentario": "Análise editorial exibida no painel 'Leitura do momento', no topo da página. NÃO é pesquisa eleitoral nem previsão. Revise sempre que sair pesquisa registrada nova, debate ou apoio relevante, e atualize 'dataAnalise'. 'escala' vai de 0 a 4: 0 = vantagem clara do 1º candidato da configuração (13), 1 = vantagem leve do 13, 2 = indefinido, 3 = vantagem leve do 22, 4 = vantagem clara do 22. 'favorece' em cada fundamento: '13', '22' ou 'neutro'. Na 'aritmetica', 'para13' e 'para22' são percentuais (0–100) dos eleitores de cada candidato eliminado; o restante vai para branco, nulo ou abstenção.",
+  "dataAnalise": "2026-10-08T13:50:00-03:00",
+  "revisarAposHoras": 48,
+  "escala": 3,
+  "favorecido": "22",
+  "rotulo": "Vantagem leve de Flávio Bolsonaro",
+  "confianca": "moderada",
+  "clima": "Disputa aberta, com o vento soprando a favor de Flávio Bolsonaro.",
+  "resumo": "Flávio Bolsonaro começa o 2º turno com uma vantagem leve. Ele saiu do 1º turno na frente, os eleitores dos candidatos eliminados pendem mais para ele do que para Lula, e as pesquisas do 1º turno subestimaram o seu desempenho. A disputa, porém, segue aberta: a diferença do 1º turno (1,87 ponto) é a menor entre os dois primeiros colocados desde 1989, e as primeiras pesquisas feitas depois do 1º turno ainda não saíram.",
+  "fundamentos": [
+    {
+      "titulo": "Ponto de partida",
+      "favorece": "22",
+      "texto": "Flávio terminou com 47,03% dos votos válidos e Lula com 45,16%, uma diferença de 2,2 milhões de votos. Os outros candidatos somaram 7,8%. Para passar de 50%, Flávio precisa de cerca de 3 pontos desse bloco; Lula precisa de quase 5."
+    },
+    {
+      "titulo": "Para onde vão os votos dos eliminados",
+      "favorece": "22",
+      "texto": "Na Quaest de 2 e 3/10 (BR-02197/2026), os eleitores de Renan Santos escolhiam Flávio por 60% a 11%, os de Caiado por 43% a 19% e os de Cury por 34% a 23%; o restante ia para branco, nulo ou abstenção. Zema (5/10) e Caiado (6/10) declararam apoio a Flávio. Cury e Renan Santos ficaram neutros, e o PSD liberou seus filiados. Nenhum dos quatro eliminados mais votados declarou apoio a Lula."
+    },
+    {
+      "titulo": "As pesquisas erraram para um lado só",
+      "favorece": "22",
+      "texto": "Na véspera do 1º turno, cinco de seis institutos mostravam Lula à frente. O resultado inverteu a ordem. O erro médio foi de cerca de 3,3 pontos para baixo no caso de Flávio e de cerca de 1,1 ponto, sem direção definida, no caso de Lula. Se o padrão se repetir, um empate técnico nas pesquisas de 2º turno deve ser lido com cautela a favor de Flávio."
+    },
+    {
+      "titulo": "Mapa do 1º turno",
+      "favorece": "22",
+      "texto": "Flávio venceu em 14 estados e no DF, incluindo São Paulo (51,9% a 38,2%) e Minas Gerais (48,2% a 43,3%). Minas teve o mesmo vencedor do país em todas as eleições presidenciais desde 1989. Lula venceu nos nove estados do Nordeste e entre os eleitores no exterior, e ficou à frente na capital paulista."
+    },
+    {
+      "titulo": "O peso da história",
+      "favorece": "22",
+      "texto": "Nos sete 2ºs turnos presidenciais desde 1989, quem liderou o 1º turno venceu. É um sinal fraco: a vantagem de 2026 é a menor da série, e o 2º colocado costuma crescer mais entre os turnos (em 2022, a diferença caiu de 5,2 para 1,8 ponto)."
+    },
+    {
+      "titulo": "Rejeição empatada",
+      "favorece": "neutro",
+      "texto": "No Datafolha de 1º/10, 45% diziam não votar de jeito nenhum em Flávio, e o mesmo percentual em Lula. Nenhum dos dois tem um teto claramente mais baixo que o outro."
+    }
+  ],
+  "podeVirar": [
+    {
+      "titulo": "Comparecimento",
+      "texto": "Cerca de 33 milhões de eleitores (21%) não votaram no 1º turno. Uma mobilização maior no Nordeste e entre eleitores de menor renda, em que o comparecimento costuma ser mais baixo, é o caminho mais direto para Lula recuperar a diferença."
+    },
+    {
+      "titulo": "Eleitores de Augusto Cury",
+      "texto": "É o maior bloco entre os eliminados (2,9%) e o mais aberto a Lula: 23% iam para ele e 41% não escolhiam nenhum dos dois. Cury anunciou neutralidade, o que deixa esse eleitor em disputa."
+    },
+    {
+      "titulo": "Debates",
+      "texto": "Lula e Flávio não se enfrentaram no 1º turno. Os três debates (11, 18 e 23/10) são o primeiro confronto direto e podem mexer com indecisos."
+    },
+    {
+      "titulo": "Margem estreita nas simulações",
+      "texto": "As simulações de 2º turno feitas antes do 1º turno ficaram dentro da margem de erro, ora com Lula, ora com Flávio numericamente à frente. Uma diferença de 2 a 4 pontos pode se desfazer em três semanas de campanha."
+    }
+  ],
+  "aritmetica": {
+    "descricao": "Exercício aritmético com dados públicos: parte do resultado oficial do 1º turno e distribui os votos dos eliminados conforme a Quaest de 2 e 3/10 (BR-02197/2026). Não considera mudanças no comparecimento, troca de voto entre Lula e Flávio nem erros de pesquisa. Não é pesquisa nem previsão.",
+    "base": { "13": 45.16, "22": 47.03 },
+    "linhas": [
+      { "grupo": "Augusto Cury (Avante)", "pct": 2.89, "para13": 23, "para22": 34, "origem": "Quaest BR-02197/2026" },
+      { "grupo": "Renan Santos (Missão)", "pct": 2.24, "para13": 11, "para22": 60, "origem": "Quaest BR-02197/2026" },
+      { "grupo": "Ronaldo Caiado (PSD)", "pct": 2.18, "para13": 19, "para22": 43, "origem": "Quaest BR-02197/2026" },
+      { "grupo": "Romeu Zema (Novo)", "pct": 0.27, "para13": 10, "para22": 70, "origem": "Hipótese: apoio declarado a Flávio" },
+      { "grupo": "UP, PSTU, PCB e PCO", "pct": 0.17, "para13": 60, "para22": 5, "origem": "Hipótese: partidos de esquerda" },
+      { "grupo": "DC e Democrata", "pct": 0.04, "para13": 20, "para22": 40, "origem": "Hipótese" }
+    ]
+  },
+  "gatilhos": [
+    "Datafolha de 2º turno (registro BR-02949/2026), com divulgação prevista para 8/10.",
+    "AtlasIntel de 2º turno (5 mil entrevistas, margem de 1 ponto), prevista para 9/10.",
+    "Se a média das pesquisas registradas mostrar Lula à frente além da margem de erro, esta leitura deve passar para 'indefinido' ou 'vantagem de Lula'. A página avisa automaticamente quando houver essa divergência.",
+    "Debate da Record em 11/10."
+  ],
+  "fontes": [
+    { "titulo": "Resultado do 1º turno com 100% das seções (Portal de Prefeitura)", "url": "https://portaldeprefeitura.com.br/bastidores-da-politica/eleicoes-2026-com-100-das-secoes-totalizadas-flavio-tem-4703-e/633498/" },
+    { "titulo": "Transferência de votos segundo a Quaest (Jornal Opção)", "url": "https://www.jornalopcao.com.br/ultimas-noticias/quem-fica-com-os-votos-de-ronaldo-caiado-augusto-cury-e-renan-santos-no-duelo-entre-lula-e-flavio-876089/" },
+    { "titulo": "Posição de Zema, Cury, Renan e Caiado (CNN Brasil)", "url": "https://www.cnnbrasil.com.br/eleicoes/quem-zema-cury-renan-e-caiado-apoiarao-no-segundo-turno-entenda/" },
+    { "titulo": "Caiado anuncia apoio a Flávio (IstoÉ)", "url": "https://istoe.com.br/caiado-apoia-flavio-bolsonaro-segundo-turno" },
+    { "titulo": "PSD anuncia neutralidade (SBT News)", "url": "https://sbtnews.sbt.com.br/noticia/eleicoes/psd-anuncia-neutralidade-no-2-turno-entre-lula-e-flavio" },
+    { "titulo": "Erro dos institutos no 1º turno (Gazeta do Povo)", "url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/um-de-seis-institutos-de-pesquisa-apontava-flavio-numericamente-a-frente-de-lula/" },
+    { "titulo": "Resultado por estado (O Povo+)", "url": "https://mais.opovo.com.br/jornal/politica/2026/10/05/flavio-vence-em-14-estados-e-df-lula-lidera-no-nordeste-e-fica-com-12.html" },
+    { "titulo": "Datafolha de 1º/10: rejeição (Poder360)", "url": "https://static.poder360.com.br/uploads/2026/10/datafolha-presidencial-outubro.pdf" },
+    { "titulo": "Agenda das pesquisas de 2º turno (Brasil de Fato)", "url": "https://www.brasildefato.com.br/2026/10/06/datafolha-quaest-atlasintel-quando-saem-as-pesquisas-de-2o-turno-entre-lula-e-flavio/" },
+    { "titulo": "Datas dos debates (Metrópoles)", "url": "https://www.metropoles.com/brasil/globo-band-record-debates-flavio" }
+  ]
+}

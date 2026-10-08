@@ -1,0 +1,1786 @@
+{
+ "meta": {
+  "atualizadoEm": "2026-10-08T17:03:36.224Z",
+  "exemplo": true,
+  "versao": 1,
+  "geradoPor": "coleta.js",
+  "fontesOk": [
+   {
+    "nome": "Ve\u00edculo de exemplo A",
+    "itens": 5,
+    "aproveitados": 4
+   },
+   {
+    "nome": "Ve\u00edculo de exemplo B",
+    "itens": 5,
+    "aproveitados": 2
+   },
+   {
+    "nome": "Ve\u00edculo de exemplo C",
+    "itens": 4,
+    "aproveitados": 2
+   },
+   {
+    "nome": "Ve\u00edculo de exemplo D",
+    "itens": 4,
+    "aproveitados": 3
+   },
+   {
+    "nome": "Ve\u00edculo de exemplo E",
+    "itens": 4,
+    "aproveitados": 3
+   },
+   {
+    "nome": "Ve\u00edculo de exemplo F",
+    "itens": 4,
+    "aproveitados": 3
+   }
+  ],
+  "fontesFalha": [],
+  "pesquisasDescartadas": [],
+  "avisos": [
+   "Arquivo de exemplo gerado para teste. Ser\u00e1 substitu\u00eddo na primeira execu\u00e7\u00e3o do rob\u00f4."
+  ],
+  "notaExemplo": "Not\u00edcias, pesquisas, mapa e apura\u00e7\u00e3o exibidos agora s\u00e3o fict\u00edcios, s\u00f3 para testar o site. A linha do tempo e a Leitura do momento j\u00e1 trazem conte\u00fado real. Os n\u00fameros reais aparecem depois da primeira execu\u00e7\u00e3o do rob\u00f4."
+ },
+ "candidatos": [
+  {
+   "numero": "13",
+   "nome": "Lula",
+   "partido": "PT"
+  },
+  {
+   "numero": "22",
+   "nome": "Fl\u00e1vio Bolsonaro",
+   "partido": "PL"
+  }
+ ],
+ "pesquisas": [
+  {
+   "13": 45,
+   "22": 44,
+   "instituto": "Instituto Exemplo A",
+   "contratante": "",
+   "campoInicio": "2026-09-24",
+   "campoFim": "2026-09-26",
+   "amostra": 2000,
+   "margem": 2,
+   "confianca": 95,
+   "registroTSE": "BR-00001/2026",
+   "tipo": "totais",
+   "naoValidos": 11,
+   "exemplo": true,
+   "observacao": "Pesquisa fict\u00edcia, apenas para teste."
+  },
+  {
+   "13": 44,
+   "22": 45,
+   "instituto": "Instituto Exemplo B",
+   "contratante": "",
+   "campoInicio": "2026-09-28",
+   "campoFim": "2026-09-30",
+   "amostra": 3000,
+   "margem": 1.8,
+   "confianca": 95,
+   "registroTSE": "BR-00002/2026",
+   "tipo": "totais",
+   "naoValidos": 11,
+   "exemplo": true
+  },
+  {
+   "13": 49.4,
+   "22": 50.6,
+   "instituto": "Instituto Exemplo C",
+   "contratante": "",
+   "campoInicio": "2026-10-01",
+   "campoFim": "2026-10-02",
+   "amostra": 5000,
+   "margem": 1,
+   "confianca": 95,
+   "registroTSE": "BR-00003/2026",
+   "tipo": "validos",
+   "naoValidos": null,
+   "exemplo": true
+  },
+  {
+   "13": 43,
+   "22": 46,
+   "instituto": "Instituto Exemplo A",
+   "contratante": "",
+   "campoInicio": "2026-10-05",
+   "campoFim": "2026-10-06",
+   "amostra": 2500,
+   "margem": 2,
+   "confianca": 95,
+   "registroTSE": "BR-00004/2026",
+   "tipo": "totais",
+   "naoValidos": 11,
+   "exemplo": true
+  },
+  {
+   "13": 48,
+   "22": 52,
+   "instituto": "Instituto Exemplo D",
+   "contratante": "",
+   "campoInicio": "2026-10-05",
+   "campoFim": "2026-10-07",
+   "amostra": 2000,
+   "margem": 2.2,
+   "confianca": 95,
+   "registroTSE": "BR-00005/2026",
+   "tipo": "validos",
+   "naoValidos": null,
+   "exemplo": true
+  }
+ ],
+ "noticias": [
+  {
+   "id": "lula-e-flavio-bolsonaro-confirmam-presenca-no-primeiro-debate-do-segundo-turno",
+   "veiculo": "Ve\u00edculo de exemplo A",
+   "fonteFeed": "Ve\u00edculo de exemplo A",
+   "titulo": "Lula e Fl\u00e1vio Bolsonaro confirmam presen\u00e7a no primeiro debate do segundo turno",
+   "resumo": "Encontro est\u00e1 marcado para domingo; campanhas negociam regras.",
+   "link": "https://example.com/exemplo/0-0",
+   "dataPub": "2026-10-08T15:03:36.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "flavio-bolsonaro-recebe-apoio-de-ex-adversario-e-amplia-alianca-no-sul",
+   "veiculo": "Ve\u00edculo de exemplo B",
+   "fonteFeed": "Ve\u00edculo de exemplo B",
+   "titulo": "Fl\u00e1vio Bolsonaro recebe apoio de ex-advers\u00e1rio e amplia alian\u00e7a no Sul",
+   "resumo": "Partido anuncia ades\u00e3o \u00e0 campanha do senador.",
+   "link": "https://example.com/exemplo/1-0",
+   "dataPub": "2026-10-08T12:03:36.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "lula-intensifica-agenda-no-nordeste-e-aposta-em-mobilizacao-para-reduzir-abstencao",
+   "veiculo": "Ve\u00edculo de exemplo C",
+   "fonteFeed": "Ve\u00edculo de exemplo C",
+   "titulo": "Lula intensifica agenda no Nordeste e aposta em mobiliza\u00e7\u00e3o para reduzir absten\u00e7\u00e3o",
+   "resumo": "Presidente far\u00e1 atos em quatro capitais nesta semana.",
+   "link": "https://example.com/exemplo/2-0",
+   "dataPub": "2026-10-08T10:03:36.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "campanha-de-flavio-critica-proposta-do-governo-e-acusa-uso-da-maquina",
+   "veiculo": "Ve\u00edculo de exemplo D",
+   "fonteFeed": "Ve\u00edculo de exemplo D",
+   "titulo": "Campanha de Fl\u00e1vio critica proposta do governo e acusa uso da m\u00e1quina",
+   "resumo": "Coordenador diz que vai acionar a Justi\u00e7a Eleitoral.",
+   "link": "https://example.com/exemplo/3-0",
+   "dataPub": "2026-10-08T08:03:36.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "pesquisa-de-segundo-turno-sera-divulgada-nesta-quinta",
+   "veiculo": "Ve\u00edculo de exemplo E",
+   "fonteFeed": "Ve\u00edculo de exemplo E",
+   "titulo": "Pesquisa de segundo turno ser\u00e1 divulgada nesta quinta",
+   "resumo": "Instituto registrou levantamento no TSE.",
+   "link": "https://example.com/exemplo/4-0",
+   "dataPub": "2026-10-08T06:03:36.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "lula-rebate-criticas-e-diz-que-nao-vai-recuar-de-programa-social",
+   "veiculo": "Ve\u00edculo de exemplo F",
+   "fonteFeed": "Ve\u00edculo de exemplo F",
+   "titulo": "Lula rebate cr\u00edticas e diz que n\u00e3o vai recuar de programa social",
+   "resumo": "Em discurso, presidente defendeu medidas econ\u00f4micas.",
+   "link": "https://example.com/exemplo/5-0",
+   "dataPub": "2026-10-08T03:03:36.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "aliados-de-flavio-comemoram-desempenho-em-minas-gerais",
+   "veiculo": "Ve\u00edculo de exemplo A",
+   "fonteFeed": "Ve\u00edculo de exemplo A",
+   "titulo": "Aliados de Fl\u00e1vio comemoram desempenho em Minas Gerais",
+   "resumo": "Estado \u00e9 considerado decisivo para o segundo turno.",
+   "link": "https://example.com/exemplo/0-1",
+   "dataPub": "2026-10-07T23:03:36.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "lula-vence-disputa-por-apoio-de-prefeitos-no-interior-paulista",
+   "veiculo": "Ve\u00edculo de exemplo D",
+   "fonteFeed": "Ve\u00edculo de exemplo D",
+   "titulo": "Lula vence disputa por apoio de prefeitos no interior paulista",
+   "resumo": "Grupo de prefeitos anunciou ades\u00e3o nesta segunda.",
+   "link": "https://example.com/exemplo/3-1",
+   "dataPub": "2026-10-07T15:03:36.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "flavio-bolsonaro-nao-comparece-a-sabatina-e-e-alvo-de-criticas",
+   "veiculo": "Ve\u00edculo de exemplo E",
+   "fonteFeed": "Ve\u00edculo de exemplo E",
+   "titulo": "Fl\u00e1vio Bolsonaro n\u00e3o comparece a sabatina e \u00e9 alvo de cr\u00edticas",
+   "resumo": "Entidade organizadora lamentou aus\u00eancia.",
+   "link": "https://example.com/exemplo/4-1",
+   "dataPub": "2026-10-07T11:03:36.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "segundo-turno-o-que-pensam-os-eleitores-indecisos",
+   "veiculo": "Ve\u00edculo de exemplo F",
+   "fonteFeed": "Ve\u00edculo de exemplo F",
+   "titulo": "Segundo turno: o que pensam os eleitores indecisos",
+   "resumo": "Reportagem ouviu eleitores em cinco estados.",
+   "link": "https://example.com/exemplo/5-1",
+   "dataPub": "2026-10-07T07:03:36.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "lula-e-flavio-trocam-ataques-sobre-seguranca-publica",
+   "veiculo": "Ve\u00edculo de exemplo A",
+   "fonteFeed": "Ve\u00edculo de exemplo A",
+   "titulo": "Lula e Fl\u00e1vio trocam ataques sobre seguran\u00e7a p\u00fablica",
+   "resumo": "Propostas dos dois candidatos divergem sobre armas.",
+   "link": "https://example.com/exemplo/0-2",
+   "dataPub": "2026-10-07T01:03:36.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "flavio-bolsonaro-cresce-entre-evangelicos-dizem-aliados",
+   "veiculo": "Ve\u00edculo de exemplo C",
+   "fonteFeed": "Ve\u00edculo de exemplo C",
+   "titulo": "Fl\u00e1vio Bolsonaro cresce entre evang\u00e9licos, dizem aliados",
+   "resumo": "Campanha aposta em eventos religiosos.",
+   "link": "https://example.com/exemplo/2-2",
+   "dataPub": "2026-10-06T15:03:36.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "governo-lula-anuncia-medida-e-oposicao-fala-em-uso-eleitoral",
+   "veiculo": "Ve\u00edculo de exemplo D",
+   "fonteFeed": "Ve\u00edculo de exemplo D",
+   "titulo": "Governo Lula anuncia medida e oposi\u00e7\u00e3o fala em uso eleitoral",
+   "resumo": "Ministro nega rela\u00e7\u00e3o com a campanha.",
+   "link": "https://example.com/exemplo/3-2",
+   "dataPub": "2026-10-06T10:03:36.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "abstencao-preocupa-campanhas-na-reta-final-do-segundo-turno",
+   "veiculo": "Ve\u00edculo de exemplo E",
+   "fonteFeed": "Ve\u00edculo de exemplo E",
+   "titulo": "Absten\u00e7\u00e3o preocupa campanhas na reta final do segundo turno",
+   "resumo": "Cerca de 33 milh\u00f5es n\u00e3o votaram no primeiro turno.",
+   "link": "https://example.com/exemplo/4-2",
+   "dataPub": "2026-10-06T05:03:36.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "flavio-defende-reforma-tributaria-e-promete-corte-de-gastos",
+   "veiculo": "Ve\u00edculo de exemplo F",
+   "fonteFeed": "Ve\u00edculo de exemplo F",
+   "titulo": "Fl\u00e1vio defende reforma tribut\u00e1ria e promete corte de gastos",
+   "resumo": "Senador falou em evento com empres\u00e1rios.",
+   "link": "https://example.com/exemplo/5-2",
+   "dataPub": "2026-10-05T23:03:36.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "lula-recebe-apoio-de-artistas-em-ato-no-rio-de-janeiro",
+   "veiculo": "Ve\u00edculo de exemplo A",
+   "fonteFeed": "Ve\u00edculo de exemplo A",
+   "titulo": "Lula recebe apoio de artistas em ato no Rio de Janeiro",
+   "resumo": "Evento reuniu milhares de pessoas na orla.",
+   "link": "https://example.com/exemplo/0-3",
+   "dataPub": "2026-10-05T19:03:36.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  },
+  {
+   "id": "debate-presidencial-regras-definem-tempo-igual-para-os-dois",
+   "veiculo": "Ve\u00edculo de exemplo B",
+   "fonteFeed": "Ve\u00edculo de exemplo B",
+   "titulo": "Debate presidencial: regras definem tempo igual para os dois",
+   "resumo": "Emissora divulgou formato do encontro.",
+   "link": "https://example.com/exemplo/1-3",
+   "dataPub": "2026-10-05T09:03:36.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-08T17:03:36.224Z"
+  }
+ ],
+ "midia": {
+  "janelaHoras": 72,
+  "totalManchetes": 16,
+  "mencoes": {
+   "13": 7,
+   "22": 8
+  },
+  "tom": {
+   "13": {
+    "positivo": 3,
+    "neutro": 2,
+    "negativo": 2
+   },
+   "22": {
+    "positivo": 3,
+    "neutro": 2,
+    "negativo": 3
+   }
+  },
+  "termos": [
+   [
+    "apoio",
+    3
+   ],
+   [
+    "recebe",
+    2
+   ],
+   [
+    "absten\u00e7\u00e3o",
+    2
+   ],
+   [
+    "governo",
+    2
+   ],
+   [
+    "cr\u00edticas",
+    2
+   ],
+   [
+    "aliados",
+    2
+   ]
+  ],
+  "serieDiaria": [
+   {
+    "13": 1,
+    "22": 1,
+    "dia": "2026-10-05"
+   },
+   {
+    "13": 2,
+    "22": 2,
+    "dia": "2026-10-06"
+   },
+   {
+    "13": 1,
+    "22": 2,
+    "dia": "2026-10-07"
+   },
+   {
+    "13": 3,
+    "22": 3,
+    "dia": "2026-10-08"
+   }
+  ],
+  "veiculos": {
+   "Ve\u00edculo de exemplo A": 4,
+   "Ve\u00edculo de exemplo B": 1,
+   "Ve\u00edculo de exemplo C": 2,
+   "Ve\u00edculo de exemplo D": 3,
+   "Ve\u00edculo de exemplo E": 3,
+   "Ve\u00edculo de exemplo F": 3
+  }
+ },
+ "primeiroTurno": {
+  "exemplo": true,
+  "fonte": "Exemplo fict\u00edcio",
+  "codigoEleicao": "000000",
+  "horaTSE": "04/10/2026 23:13:55",
+  "pctSecoes": 100,
+  "uf": {
+   "AC": {
+    "13": {
+     "votos": 146077,
+     "pct": 32.27
+    },
+    "22": {
+     "votos": 271285,
+     "pct": 59.93
+    },
+    "outros": {
+     "votos": 35308,
+     "pct": 7.8
+    },
+    "validos": 452670,
+    "pctSecoes": 100,
+    "brancos": 8532,
+    "nulos": 12798,
+    "abstencao": 126000,
+    "eleitorado": 600000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "AL": {
+    "13": {
+     "votos": 895937,
+     "pct": 51.63
+    },
+    "22": {
+     "votos": 703950,
+     "pct": 40.57
+    },
+    "outros": {
+     "votos": 135348,
+     "pct": 7.8
+    },
+    "validos": 1735235,
+    "pctSecoes": 100,
+    "brancos": 32706,
+    "nulos": 49059,
+    "abstencao": 483000,
+    "eleitorado": 2300000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "AP": {
+    "13": {
+     "votos": 194769,
+     "pct": 46.1
+    },
+    "22": {
+     "votos": 194769,
+     "pct": 46.1
+    },
+    "outros": {
+     "votos": 32954,
+     "pct": 7.8
+    },
+    "validos": 422492,
+    "pctSecoes": 100,
+    "brancos": 7963,
+    "nulos": 11945,
+    "abstencao": 117600,
+    "eleitorado": 560000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "AM": {
+    "13": {
+     "votos": 882720,
+     "pct": 43.33
+    },
+    "22": {
+     "votos": 995408,
+     "pct": 48.87
+    },
+    "outros": {
+     "votos": 158887,
+     "pct": 7.8
+    },
+    "validos": 2037015,
+    "pctSecoes": 100,
+    "brancos": 38394,
+    "nulos": 57591,
+    "abstencao": 567000,
+    "eleitorado": 2700000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "BA": {
+    "13": {
+     "votos": 5109203,
+     "pct": 59.93
+    },
+    "22": {
+     "votos": 2751110,
+     "pct": 32.27
+    },
+    "outros": {
+     "votos": 664972,
+     "pct": 7.8
+    },
+    "validos": 8525285,
+    "pctSecoes": 100,
+    "brancos": 160686,
+    "nulos": 241029,
+    "abstencao": 2373000,
+    "eleitorado": 11300000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "CE": {
+    "13": {
+     "votos": 3071782,
+     "pct": 59.01
+    },
+    "22": {
+     "votos": 1727878,
+     "pct": 33.19
+    },
+    "outros": {
+     "votos": 406045,
+     "pct": 7.8
+    },
+    "validos": 5205705,
+    "pctSecoes": 100,
+    "brancos": 98118,
+    "nulos": 147177,
+    "abstencao": 1449000,
+    "eleitorado": 6900000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "DF": {
+    "13": {
+     "votos": 612130,
+     "pct": 36.88
+    },
+    "22": {
+     "votos": 918196,
+     "pct": 55.32
+    },
+    "outros": {
+     "votos": 129464,
+     "pct": 7.8
+    },
+    "validos": 1659790,
+    "pctSecoes": 100,
+    "brancos": 31284,
+    "nulos": 46926,
+    "abstencao": 462000,
+    "eleitorado": 2200000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "ES": {
+    "13": {
+     "votos": 867417,
+     "pct": 39.65
+    },
+    "22": {
+     "votos": 1149831,
+     "pct": 52.55
+    },
+    "outros": {
+     "votos": 170657,
+     "pct": 7.8
+    },
+    "validos": 2187905,
+    "pctSecoes": 100,
+    "brancos": 41238,
+    "nulos": 61857,
+    "abstencao": 609000,
+    "eleitorado": 2900000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "GO": {
+    "13": {
+     "votos": 1295213,
+     "pct": 35.04
+    },
+    "22": {
+     "votos": 2113241,
+     "pct": 57.16
+    },
+    "outros": {
+     "votos": 288351,
+     "pct": 7.8
+    },
+    "validos": 3696805,
+    "pctSecoes": 100,
+    "brancos": 69678,
+    "nulos": 104517,
+    "abstencao": 1029000,
+    "eleitorado": 4900000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "MA": {
+    "13": {
+     "votos": 2283664,
+     "pct": 61.77
+    },
+    "22": {
+     "votos": 1124790,
+     "pct": 30.43
+    },
+    "outros": {
+     "votos": 288351,
+     "pct": 7.8
+    },
+    "validos": 3696805,
+    "pctSecoes": 100,
+    "brancos": 69678,
+    "nulos": 104517,
+    "abstencao": 1029000,
+    "eleitorado": 4900000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "MT": {
+    "13": {
+     "votos": 608652,
+     "pct": 32.27
+    },
+    "22": {
+     "votos": 1130355,
+     "pct": 59.93
+    },
+    "outros": {
+     "votos": 147118,
+     "pct": 7.8
+    },
+    "validos": 1886125,
+    "pctSecoes": 100,
+    "brancos": 35550,
+    "nulos": 53325,
+    "abstencao": 525000,
+    "eleitorado": 2500000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "MS": {
+    "13": {
+     "votos": 528658,
+     "pct": 35.04
+    },
+    "22": {
+     "votos": 862548,
+     "pct": 57.16
+    },
+    "outros": {
+     "votos": 117694,
+     "pct": 7.8
+    },
+    "validos": 1508900,
+    "pctSecoes": 100,
+    "brancos": 28440,
+    "nulos": 42660,
+    "abstencao": 420000,
+    "eleitorado": 2000000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "MG": {
+    "13": {
+     "votos": 5342230,
+     "pct": 44.26
+    },
+    "22": {
+     "votos": 5787416,
+     "pct": 47.94
+    },
+    "outros": {
+     "votos": 941554,
+     "pct": 7.8
+    },
+    "validos": 12071200,
+    "pctSecoes": 100,
+    "brancos": 227520,
+    "nulos": 341280,
+    "abstencao": 3360000,
+    "eleitorado": 16000000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "PA": {
+    "13": {
+     "votos": 2170281,
+     "pct": 47.94
+    },
+    "22": {
+     "votos": 2003336,
+     "pct": 44.26
+    },
+    "outros": {
+     "votos": 353083,
+     "pct": 7.8
+    },
+    "validos": 4526700,
+    "pctSecoes": 100,
+    "brancos": 85320,
+    "nulos": 127980,
+    "abstencao": 1260000,
+    "eleitorado": 6000000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "PB": {
+    "13": {
+     "votos": 1358512,
+     "pct": 58.09
+    },
+    "22": {
+     "votos": 797857,
+     "pct": 34.11
+    },
+    "outros": {
+     "votos": 182426,
+     "pct": 7.8
+    },
+    "validos": 2338795,
+    "pctSecoes": 100,
+    "brancos": 44082,
+    "nulos": 66123,
+    "abstencao": 651000,
+    "eleitorado": 3100000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "PR": {
+    "13": {
+     "votos": 2167499,
+     "pct": 35.04
+    },
+    "22": {
+     "votos": 3536445,
+     "pct": 57.16
+    },
+    "outros": {
+     "votos": 482546,
+     "pct": 7.8
+    },
+    "validos": 6186490,
+    "pctSecoes": 100,
+    "brancos": 116604,
+    "nulos": 174906,
+    "abstencao": 1722000,
+    "eleitorado": 8200000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "PE": {
+    "13": {
+     "votos": 3111432,
+     "pct": 58.09
+    },
+    "22": {
+     "votos": 1827349,
+     "pct": 34.11
+    },
+    "outros": {
+     "votos": 417814,
+     "pct": 7.8
+    },
+    "validos": 5356595,
+    "pctSecoes": 100,
+    "brancos": 100962,
+    "nulos": 151443,
+    "abstencao": 1491000,
+    "eleitorado": 7100000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "PI": {
+    "13": {
+     "votos": 1284083,
+     "pct": 65.46
+    },
+    "22": {
+     "votos": 524485,
+     "pct": 26.74
+    },
+    "outros": {
+     "votos": 153002,
+     "pct": 7.8
+    },
+    "validos": 1961570,
+    "pctSecoes": 100,
+    "brancos": 36972,
+    "nulos": 55458,
+    "abstencao": 546000,
+    "eleitorado": 2600000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "RJ": {
+    "13": {
+     "votos": 3917635,
+     "pct": 40.57
+    },
+    "22": {
+     "votos": 4986082,
+     "pct": 51.63
+    },
+    "outros": {
+     "votos": 753243,
+     "pct": 7.8
+    },
+    "validos": 9656960,
+    "pctSecoes": 100,
+    "brancos": 182016,
+    "nulos": 273024,
+    "abstencao": 2688000,
+    "eleitorado": 12800000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "RN": {
+    "13": {
+     "votos": 1085141,
+     "pct": 55.32
+    },
+    "22": {
+     "votos": 723427,
+     "pct": 36.88
+    },
+    "outros": {
+     "votos": 153002,
+     "pct": 7.8
+    },
+    "validos": 1961570,
+    "pctSecoes": 100,
+    "brancos": 36972,
+    "nulos": 55458,
+    "abstencao": 546000,
+    "eleitorado": 2600000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "RS": {
+    "13": {
+     "votos": 2572340,
+     "pct": 39.65
+    },
+    "22": {
+     "votos": 3409845,
+     "pct": 52.55
+    },
+    "outros": {
+     "votos": 506085,
+     "pct": 7.8
+    },
+    "validos": 6488270,
+    "pctSecoes": 100,
+    "brancos": 122292,
+    "nulos": 183438,
+    "abstencao": 1806000,
+    "eleitorado": 8600000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "RO": {
+    "13": {
+     "votos": 275459,
+     "pct": 30.43
+    },
+    "22": {
+     "votos": 559264,
+     "pct": 61.77
+    },
+    "outros": {
+     "votos": 70617,
+     "pct": 7.8
+    },
+    "validos": 905340,
+    "pctSecoes": 100,
+    "brancos": 17064,
+    "nulos": 25596,
+    "abstencao": 252000,
+    "eleitorado": 1200000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "RR": {
+    "13": {
+     "votos": 74012,
+     "pct": 25.82
+    },
+    "22": {
+     "votos": 190317,
+     "pct": 66.38
+    },
+    "outros": {
+     "votos": 22362,
+     "pct": 7.8
+    },
+    "validos": 286691,
+    "pctSecoes": 100,
+    "brancos": 5404,
+    "nulos": 8105,
+    "abstencao": 79800,
+    "eleitorado": 380000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "SC": {
+    "13": {
+     "votos": 1246520,
+     "pct": 29.5
+    },
+    "22": {
+     "votos": 2648856,
+     "pct": 62.7
+    },
+    "outros": {
+     "votos": 329544,
+     "pct": 7.8
+    },
+    "validos": 4224920,
+    "pctSecoes": 100,
+    "brancos": 79632,
+    "nulos": 119448,
+    "abstencao": 1176000,
+    "eleitorado": 5600000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "SP": {
+    "13": {
+     "votos": 10406220,
+     "pct": 40.57
+    },
+    "22": {
+     "votos": 13244279,
+     "pct": 51.63
+    },
+    "outros": {
+     "votos": 2000801,
+     "pct": 7.8
+    },
+    "validos": 25651300,
+    "pctSecoes": 100,
+    "brancos": 483480,
+    "nulos": 725220,
+    "abstencao": 7140000,
+    "eleitorado": 34000000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "SE": {
+    "13": {
+     "votos": 721340,
+     "pct": 56.24
+    },
+    "22": {
+     "votos": 461185,
+     "pct": 35.96
+    },
+    "outros": {
+     "votos": 100040,
+     "pct": 7.8
+    },
+    "validos": 1282565,
+    "pctSecoes": 100,
+    "brancos": 24174,
+    "nulos": 36261,
+    "abstencao": 357000,
+    "eleitorado": 1700000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "TO": {
+    "13": {
+     "votos": 359627,
+     "pct": 43.33
+    },
+    "22": {
+     "votos": 405536,
+     "pct": 48.87
+    },
+    "outros": {
+     "votos": 64732,
+     "pct": 7.8
+    },
+    "validos": 829895,
+    "pctSecoes": 100,
+    "brancos": 15642,
+    "nulos": 23463,
+    "abstencao": 231000,
+    "eleitorado": 1100000,
+    "horaTSE": "04/10/2026 23:13:55"
+   },
+   "ZZ": {
+    "13": {
+     "votos": 253199,
+     "pct": 47.94
+    },
+    "22": {
+     "votos": 233723,
+     "pct": 44.26
+    },
+    "outros": {
+     "votos": 41193,
+     "pct": 7.8
+    },
+    "validos": 528115,
+    "pctSecoes": 100,
+    "brancos": 9954,
+    "nulos": 14931,
+    "abstencao": 147000,
+    "eleitorado": 700000,
+    "horaTSE": "04/10/2026 23:13:55"
+   }
+  }
+ },
+ "apuracao": {
+  "exemplo": true,
+  "ativa": false,
+  "fonte": "Exemplo fict\u00edcio (use ?simular=apuracao)",
+  "horaTSE": "25/10/2026 19:42:10",
+  "espelhadoEm": "2026-10-25T22:44:00Z",
+  "pctSecoes": 75.75,
+  "eleitorado": 155440000,
+  "comparecimento": 93021394,
+  "abstencao": 24727206,
+  "pctAbstencao": 21,
+  "brancos": 1674386,
+  "pctBrancos": 1.8,
+  "nulos": 2511577,
+  "pctNulos": 2.7,
+  "validos": 88835431,
+  "votos": {
+   "13": {
+    "votos": 44083996,
+    "pct": 49.62
+   },
+   "22": {
+    "votos": 44751435,
+    "pct": 50.38
+   }
+  },
+  "diferenca": 667439,
+  "lider": "22",
+  "eleitoresRestantes": 37691400,
+  "decidido": false,
+  "uf": {
+   "AC": {
+    "13": {
+     "votos": 71295,
+     "pct": 35
+    },
+    "22": {
+     "votos": 132406,
+     "pct": 65
+    },
+    "validos": 203701,
+    "pctSecoes": 45,
+    "brancos": 3840,
+    "nulos": 5759,
+    "abstencao": 56700,
+    "eleitorado": 600000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "AL": {
+    "13": {
+     "votos": 796820,
+     "pct": 56
+    },
+    "22": {
+     "votos": 626073,
+     "pct": 44
+    },
+    "validos": 1422893,
+    "pctSecoes": 82,
+    "brancos": 26819,
+    "nulos": 40228,
+    "abstencao": 396060,
+    "eleitorado": 2300000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "AP": {
+    "13": {
+     "votos": 145759,
+     "pct": 50
+    },
+    "22": {
+     "votos": 145760,
+     "pct": 50
+    },
+    "validos": 291519,
+    "pctSecoes": 69,
+    "brancos": 5495,
+    "nulos": 8242,
+    "abstencao": 81144,
+    "eleitorado": 560000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "AM": {
+    "13": {
+     "votos": 536142,
+     "pct": 47
+    },
+    "22": {
+     "votos": 604586,
+     "pct": 53
+    },
+    "validos": 1140728,
+    "pctSecoes": 56,
+    "brancos": 21501,
+    "nulos": 32251,
+    "abstencao": 317520,
+    "eleitorado": 2700000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "BA": {
+    "13": {
+     "votos": 5153535,
+     "pct": 65
+    },
+    "22": {
+     "votos": 2774980,
+     "pct": 35
+    },
+    "validos": 7928515,
+    "pctSecoes": 93,
+    "brancos": 149438,
+    "nulos": 224157,
+    "abstencao": 2206890,
+    "eleitorado": 11300000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "CE": {
+    "13": {
+     "votos": 2665321,
+     "pct": 64
+    },
+    "22": {
+     "votos": 1499243,
+     "pct": 36
+    },
+    "validos": 4164564,
+    "pctSecoes": 80,
+    "brancos": 78494,
+    "nulos": 117742,
+    "abstencao": 1159200,
+    "eleitorado": 6900000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "DF": {
+    "13": {
+     "votos": 444824,
+     "pct": 40
+    },
+    "22": {
+     "votos": 667235,
+     "pct": 60
+    },
+    "validos": 1112059,
+    "pctSecoes": 67,
+    "brancos": 20960,
+    "nulos": 31441,
+    "abstencao": 309540,
+    "eleitorado": 2200000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "ES": {
+    "13": {
+     "votos": 508032,
+     "pct": 43
+    },
+    "22": {
+     "votos": 673437,
+     "pct": 57
+    },
+    "validos": 1181469,
+    "pctSecoes": 54,
+    "brancos": 22268,
+    "nulos": 33403,
+    "abstencao": 328860,
+    "eleitorado": 2900000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "GO": {
+    "13": {
+     "votos": 1278355,
+     "pct": 38
+    },
+    "22": {
+     "votos": 2085738,
+     "pct": 62
+    },
+    "validos": 3364093,
+    "pctSecoes": 91,
+    "brancos": 63407,
+    "nulos": 95110,
+    "abstencao": 936390,
+    "eleitorado": 4900000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "MA": {
+    "13": {
+     "votos": 1931950,
+     "pct": 67
+    },
+    "22": {
+     "votos": 951558,
+     "pct": 33
+    },
+    "validos": 2883508,
+    "pctSecoes": 78,
+    "brancos": 54349,
+    "nulos": 81523,
+    "abstencao": 802620,
+    "eleitorado": 4900000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "MT": {
+    "13": {
+     "votos": 429093,
+     "pct": 35
+    },
+    "22": {
+     "votos": 796888,
+     "pct": 65
+    },
+    "validos": 1225981,
+    "pctSecoes": 65,
+    "brancos": 23108,
+    "nulos": 34661,
+    "abstencao": 341250,
+    "eleitorado": 2500000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "MS": {
+    "13": {
+     "votos": 298159,
+     "pct": 38
+    },
+    "22": {
+     "votos": 486469,
+     "pct": 62
+    },
+    "validos": 784628,
+    "pctSecoes": 52,
+    "brancos": 14789,
+    "nulos": 22183,
+    "abstencao": 218400,
+    "eleitorado": 2000000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "MG": {
+    "13": {
+     "votos": 5156817,
+     "pct": 48
+    },
+    "22": {
+     "votos": 5586551,
+     "pct": 52
+    },
+    "validos": 10743368,
+    "pctSecoes": 89,
+    "brancos": 202493,
+    "nulos": 303739,
+    "abstencao": 2990400,
+    "eleitorado": 16000000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "PA": {
+    "13": {
+     "votos": 1788952,
+     "pct": 52
+    },
+    "22": {
+     "votos": 1651340,
+     "pct": 48
+    },
+    "validos": 3440292,
+    "pctSecoes": 76,
+    "brancos": 64843,
+    "nulos": 97265,
+    "abstencao": 957600,
+    "eleitorado": 6000000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "PB": {
+    "13": {
+     "votos": 928268,
+     "pct": 63
+    },
+    "22": {
+     "votos": 545173,
+     "pct": 37
+    },
+    "validos": 1473441,
+    "pctSecoes": 63,
+    "brancos": 27772,
+    "nulos": 41657,
+    "abstencao": 410130,
+    "eleitorado": 3100000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "PR": {
+    "13": {
+     "votos": 1175433,
+     "pct": 38
+    },
+    "22": {
+     "votos": 1917812,
+     "pct": 62
+    },
+    "validos": 3093245,
+    "pctSecoes": 50,
+    "brancos": 58302,
+    "nulos": 87453,
+    "abstencao": 861000,
+    "eleitorado": 8200000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "PE": {
+    "13": {
+     "votos": 2935950,
+     "pct": 63
+    },
+    "22": {
+     "votos": 1724288,
+     "pct": 37
+    },
+    "validos": 4660238,
+    "pctSecoes": 87,
+    "brancos": 87837,
+    "nulos": 131755,
+    "abstencao": 1297170,
+    "eleitorado": 7100000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "PI": {
+    "13": {
+     "votos": 1030609,
+     "pct": 71
+    },
+    "22": {
+     "votos": 420953,
+     "pct": 29
+    },
+    "validos": 1451562,
+    "pctSecoes": 74,
+    "brancos": 27359,
+    "nulos": 41039,
+    "abstencao": 404040,
+    "eleitorado": 2600000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "RJ": {
+    "13": {
+     "votos": 2591928,
+     "pct": 44
+    },
+    "22": {
+     "votos": 3298818,
+     "pct": 56
+    },
+    "validos": 5890746,
+    "pctSecoes": 61,
+    "brancos": 111030,
+    "nulos": 166544,
+    "abstencao": 1639680,
+    "eleitorado": 12800000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "RN": {
+    "13": {
+     "votos": 564932,
+     "pct": 60
+    },
+    "22": {
+     "votos": 376622,
+     "pct": 40
+    },
+    "validos": 941554,
+    "pctSecoes": 48,
+    "brancos": 17746,
+    "nulos": 26620,
+    "abstencao": 262080,
+    "eleitorado": 2600000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "RS": {
+    "13": {
+     "votos": 2371462,
+     "pct": 43
+    },
+    "22": {
+     "votos": 3143567,
+     "pct": 57
+    },
+    "validos": 5515029,
+    "pctSecoes": 85,
+    "brancos": 103948,
+    "nulos": 155923,
+    "abstencao": 1535100,
+    "eleitorado": 8600000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "RO": {
+    "13": {
+     "votos": 215109,
+     "pct": 33
+    },
+    "22": {
+     "votos": 436736,
+     "pct": 67
+    },
+    "validos": 651845,
+    "pctSecoes": 72,
+    "brancos": 12286,
+    "nulos": 18429,
+    "abstencao": 181440,
+    "eleitorado": 1200000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "RR": {
+    "13": {
+     "votos": 47361,
+     "pct": 28
+    },
+    "22": {
+     "votos": 121787,
+     "pct": 72
+    },
+    "validos": 169148,
+    "pctSecoes": 59,
+    "brancos": 3188,
+    "nulos": 4782,
+    "abstencao": 47082,
+    "eleitorado": 380000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "SC": {
+    "13": {
+     "votos": 621908,
+     "pct": 32
+    },
+    "22": {
+     "votos": 1321555,
+     "pct": 68
+    },
+    "validos": 1943463,
+    "pctSecoes": 46,
+    "brancos": 36631,
+    "nulos": 54946,
+    "abstencao": 540960,
+    "eleitorado": 5600000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "SP": {
+    "13": {
+     "votos": 9367855,
+     "pct": 44
+    },
+    "22": {
+     "votos": 11922724,
+     "pct": 56
+    },
+    "validos": 21290579,
+    "pctSecoes": 83,
+    "brancos": 401288,
+    "nulos": 601933,
+    "abstencao": 5926200,
+    "eleitorado": 34000000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "SE": {
+    "13": {
+     "votos": 547655,
+     "pct": 61
+    },
+    "22": {
+     "votos": 350140,
+     "pct": 39
+    },
+    "validos": 897795,
+    "pctSecoes": 70,
+    "brancos": 16922,
+    "nulos": 25383,
+    "abstencao": 249900,
+    "eleitorado": 1700000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "TO": {
+    "13": {
+     "votos": 222329,
+     "pct": 47
+    },
+    "22": {
+     "votos": 250711,
+     "pct": 53
+    },
+    "validos": 473040,
+    "pctSecoes": 57,
+    "brancos": 8916,
+    "nulos": 13374,
+    "abstencao": 131670,
+    "eleitorado": 1100000,
+    "horaTSE": "25/10/2026 19:42:10"
+   },
+   "ZZ": {
+    "13": {
+     "votos": 258143,
+     "pct": 52
+    },
+    "22": {
+     "votos": 238285,
+     "pct": 48
+    },
+    "validos": 496428,
+    "pctSecoes": 94,
+    "brancos": 9357,
+    "nulos": 14035,
+    "abstencao": 138180,
+    "eleitorado": 700000,
+    "horaTSE": "25/10/2026 19:42:10"
+   }
+  }
+ },
+ "tseCodigos": {},
+ "urlApuracaoBr": null,
+ "linhaTempo": [
+  {
+   "data": "2026-10-04T08:00:00-03:00",
+   "tipo": "tse",
+   "titulo": "1\u00ba turno",
+   "detalhe": "Vota\u00e7\u00e3o das 8h \u00e0s 17h (hor\u00e1rio de Bras\u00edlia) para presidente, governador, senador e deputados.",
+   "link": "https://www.tse.jus.br"
+  },
+  {
+   "data": "2026-10-04T23:00:00-03:00",
+   "tipo": "fato",
+   "titulo": "Resultado do 1\u00ba turno para Presidente",
+   "detalhe": "Com 100% das se\u00e7\u00f5es totalizadas: Fl\u00e1vio Bolsonaro (PL) 47,03% dos votos v\u00e1lidos; Lula (PT) 45,16%. Diferen\u00e7a de 2.224.965 votos. Absten\u00e7\u00e3o em torno de 21%.",
+   "link": "https://resultados.tse.jus.br"
+  },
+  {
+   "data": "2026-10-05T17:00:00-03:00",
+   "tipo": "tse",
+   "titulo": "Campanhas do 2\u00ba turno retomadas",
+   "detalhe": "Propaganda das candidaturas que disputam o 2\u00ba turno liberada 24 horas ap\u00f3s o fechamento das urnas.",
+   "link": "https://www.tse.jus.br"
+  },
+  {
+   "data": "2026-10-11T20:00:00-03:00",
+   "tipo": "debate",
+   "titulo": "Debate Record TV",
+   "detalhe": "Primeiro debate presidencial do 2\u00ba turno, \u00e0s 20h.",
+   "link": "https://www.metropoles.com/brasil/globo-band-record-debates-flavio"
+  },
+  {
+   "data": "2026-10-18T20:00:00-03:00",
+   "tipo": "debate",
+   "titulo": "Debate Band / Estad\u00e3o",
+   "detalhe": "\u00c0s 20h, em pool com TV Cultura, TV Gazeta e Jovem Pan.",
+   "link": "https://www.metropoles.com/brasil/globo-band-record-debates-flavio"
+  },
+  {
+   "data": "2026-10-23T22:00:00-03:00",
+   "tipo": "debate",
+   "titulo": "Debate TV Globo",
+   "detalhe": "\u00daltimo debate antes da vota\u00e7\u00e3o. Hor\u00e1rio a confirmar pela emissora. No 2\u00ba turno, debates n\u00e3o podem passar da meia-noite da sexta-feira anterior ao pleito.",
+   "link": "https://www.metropoles.com/brasil/globo-band-record-debates-flavio"
+  },
+  {
+   "data": "2026-10-23T23:59:00-03:00",
+   "tipo": "tse",
+   "titulo": "Fim da propaganda gratuita no r\u00e1dio e na TV",
+   "detalhe": "\u00daltimo dia do hor\u00e1rio eleitoral gratuito do 2\u00ba turno (antev\u00e9spera da elei\u00e7\u00e3o). Confira no calend\u00e1rio oficial do TSE.",
+   "link": "https://www.tse.jus.br"
+  },
+  {
+   "data": "2026-10-25T08:00:00-03:00",
+   "tipo": "tse",
+   "titulo": "2\u00ba turno \u2014 abertura das urnas",
+   "detalhe": "Vota\u00e7\u00e3o das 8h \u00e0s 17h, hor\u00e1rio de Bras\u00edlia, em todo o pa\u00eds.",
+   "link": "https://www.tse.jus.br"
+  },
+  {
+   "data": "2026-10-25T17:00:00-03:00",
+   "tipo": "tse",
+   "titulo": "Fechamento das urnas e in\u00edcio da divulga\u00e7\u00e3o",
+   "detalhe": "O TSE come\u00e7a a divulgar a totaliza\u00e7\u00e3o a partir das 17h.",
+   "link": "https://resultados.tse.jus.br"
+  },
+  {
+   "data": "2027-01-05T15:00:00-03:00",
+   "tipo": "tse",
+   "titulo": "Posse presidencial",
+   "detalhe": "Primeira posse na nova data fixada pela Emenda Constitucional 111/2021 (5 de janeiro).",
+   "link": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc111.htm"
+  }
+ ],
+ "analise": {
+  "_comentario": "An\u00e1lise editorial exibida no painel 'Leitura do momento', no topo da p\u00e1gina. N\u00c3O \u00e9 pesquisa eleitoral nem previs\u00e3o. Revise sempre que sair pesquisa registrada nova, debate ou apoio relevante, e atualize 'dataAnalise'. 'escala' vai de 0 a 4: 0 = vantagem clara do 1\u00ba candidato da configura\u00e7\u00e3o (13), 1 = vantagem leve do 13, 2 = indefinido, 3 = vantagem leve do 22, 4 = vantagem clara do 22. 'favorece' em cada fundamento: '13', '22' ou 'neutro'. Na 'aritmetica', 'para13' e 'para22' s\u00e3o percentuais (0\u2013100) dos eleitores de cada candidato eliminado; o restante vai para branco, nulo ou absten\u00e7\u00e3o.",
+  "dataAnalise": "2026-10-08T13:50:00-03:00",
+  "revisarAposHoras": 48,
+  "escala": 3,
+  "favorecido": "22",
+  "rotulo": "Vantagem leve de Fl\u00e1vio Bolsonaro",
+  "confianca": "moderada",
+  "clima": "Disputa aberta, com o vento soprando a favor de Fl\u00e1vio Bolsonaro.",
+  "resumo": "Fl\u00e1vio Bolsonaro come\u00e7a o 2\u00ba turno com uma vantagem leve. Ele saiu do 1\u00ba turno na frente, os eleitores dos candidatos eliminados pendem mais para ele do que para Lula, e as pesquisas do 1\u00ba turno subestimaram o seu desempenho. A disputa, por\u00e9m, segue aberta: a diferen\u00e7a do 1\u00ba turno (1,87 ponto) \u00e9 a menor entre os dois primeiros colocados desde 1989, e as primeiras pesquisas feitas depois do 1\u00ba turno ainda n\u00e3o sa\u00edram.",
+  "fundamentos": [
+   {
+    "titulo": "Ponto de partida",
+    "favorece": "22",
+    "texto": "Fl\u00e1vio terminou com 47,03% dos votos v\u00e1lidos e Lula com 45,16%, uma diferen\u00e7a de 2,2 milh\u00f5es de votos. Os outros candidatos somaram 7,8%. Para passar de 50%, Fl\u00e1vio precisa de cerca de 3 pontos desse bloco; Lula precisa de quase 5."
+   },
+   {
+    "titulo": "Para onde v\u00e3o os votos dos eliminados",
+    "favorece": "22",
+    "texto": "Na Quaest de 2 e 3/10 (BR-02197/2026), os eleitores de Renan Santos escolhiam Fl\u00e1vio por 60% a 11%, os de Caiado por 43% a 19% e os de Cury por 34% a 23%; o restante ia para branco, nulo ou absten\u00e7\u00e3o. Zema (5/10) e Caiado (6/10) declararam apoio a Fl\u00e1vio. Cury e Renan Santos ficaram neutros, e o PSD liberou seus filiados. Nenhum dos quatro eliminados mais votados declarou apoio a Lula."
+   },
+   {
+    "titulo": "As pesquisas erraram para um lado s\u00f3",
+    "favorece": "22",
+    "texto": "Na v\u00e9spera do 1\u00ba turno, cinco de seis institutos mostravam Lula \u00e0 frente. O resultado inverteu a ordem. O erro m\u00e9dio foi de cerca de 3,3 pontos para baixo no caso de Fl\u00e1vio e de cerca de 1,1 ponto, sem dire\u00e7\u00e3o definida, no caso de Lula. Se o padr\u00e3o se repetir, um empate t\u00e9cnico nas pesquisas de 2\u00ba turno deve ser lido com cautela a favor de Fl\u00e1vio."
+   },
+   {
+    "titulo": "Mapa do 1\u00ba turno",
+    "favorece": "22",
+    "texto": "Fl\u00e1vio venceu em 14 estados e no DF, incluindo S\u00e3o Paulo (51,9% a 38,2%) e Minas Gerais (48,2% a 43,3%). Minas teve o mesmo vencedor do pa\u00eds em todas as elei\u00e7\u00f5es presidenciais desde 1989. Lula venceu nos nove estados do Nordeste e entre os eleitores no exterior, e ficou \u00e0 frente na capital paulista."
+   },
+   {
+    "titulo": "O peso da hist\u00f3ria",
+    "favorece": "22",
+    "texto": "Nos sete 2\u00bas turnos presidenciais desde 1989, quem liderou o 1\u00ba turno venceu. \u00c9 um sinal fraco: a vantagem de 2026 \u00e9 a menor da s\u00e9rie, e o 2\u00ba colocado costuma crescer mais entre os turnos (em 2022, a diferen\u00e7a caiu de 5,2 para 1,8 ponto)."
+   },
+   {
+    "titulo": "Rejei\u00e7\u00e3o empatada",
+    "favorece": "neutro",
+    "texto": "No Datafolha de 1\u00ba/10, 45% diziam n\u00e3o votar de jeito nenhum em Fl\u00e1vio, e o mesmo percentual em Lula. Nenhum dos dois tem um teto claramente mais baixo que o outro."
+   }
+  ],
+  "podeVirar": [
+   {
+    "titulo": "Comparecimento",
+    "texto": "Cerca de 33 milh\u00f5es de eleitores (21%) n\u00e3o votaram no 1\u00ba turno. Uma mobiliza\u00e7\u00e3o maior no Nordeste e entre eleitores de menor renda, em que o comparecimento costuma ser mais baixo, \u00e9 o caminho mais direto para Lula recuperar a diferen\u00e7a."
+   },
+   {
+    "titulo": "Eleitores de Augusto Cury",
+    "texto": "\u00c9 o maior bloco entre os eliminados (2,9%) e o mais aberto a Lula: 23% iam para ele e 41% n\u00e3o escolhiam nenhum dos dois. Cury anunciou neutralidade, o que deixa esse eleitor em disputa."
+   },
+   {
+    "titulo": "Debates",
+    "texto": "Lula e Fl\u00e1vio n\u00e3o se enfrentaram no 1\u00ba turno. Os tr\u00eas debates (11, 18 e 23/10) s\u00e3o o primeiro confronto direto e podem mexer com indecisos."
+   },
+   {
+    "titulo": "Margem estreita nas simula\u00e7\u00f5es",
+    "texto": "As simula\u00e7\u00f5es de 2\u00ba turno feitas antes do 1\u00ba turno ficaram dentro da margem de erro, ora com Lula, ora com Fl\u00e1vio numericamente \u00e0 frente. Uma diferen\u00e7a de 2 a 4 pontos pode se desfazer em tr\u00eas semanas de campanha."
+   }
+  ],
+  "aritmetica": {
+   "descricao": "Exerc\u00edcio aritm\u00e9tico com dados p\u00fablicos: parte do resultado oficial do 1\u00ba turno e distribui os votos dos eliminados conforme a Quaest de 2 e 3/10 (BR-02197/2026). N\u00e3o considera mudan\u00e7as no comparecimento, troca de voto entre Lula e Fl\u00e1vio nem erros de pesquisa. N\u00e3o \u00e9 pesquisa nem previs\u00e3o.",
+   "base": {
+    "13": 45.16,
+    "22": 47.03
+   },
+   "linhas": [
+    {
+     "grupo": "Augusto Cury (Avante)",
+     "pct": 2.89,
+     "para13": 23,
+     "para22": 34,
+     "origem": "Quaest BR-02197/2026"
+    },
+    {
+     "grupo": "Renan Santos (Miss\u00e3o)",
+     "pct": 2.24,
+     "para13": 11,
+     "para22": 60,
+     "origem": "Quaest BR-02197/2026"
+    },
+    {
+     "grupo": "Ronaldo Caiado (PSD)",
+     "pct": 2.18,
+     "para13": 19,
+     "para22": 43,
+     "origem": "Quaest BR-02197/2026"
+    },
+    {
+     "grupo": "Romeu Zema (Novo)",
+     "pct": 0.27,
+     "para13": 10,
+     "para22": 70,
+     "origem": "Hip\u00f3tese: apoio declarado a Fl\u00e1vio"
+    },
+    {
+     "grupo": "UP, PSTU, PCB e PCO",
+     "pct": 0.17,
+     "para13": 60,
+     "para22": 5,
+     "origem": "Hip\u00f3tese: partidos de esquerda"
+    },
+    {
+     "grupo": "DC e Democrata",
+     "pct": 0.04,
+     "para13": 20,
+     "para22": 40,
+     "origem": "Hip\u00f3tese"
+    }
+   ]
+  },
+  "gatilhos": [
+   "Datafolha de 2\u00ba turno (registro BR-02949/2026), com divulga\u00e7\u00e3o prevista para 8/10.",
+   "AtlasIntel de 2\u00ba turno (5 mil entrevistas, margem de 1 ponto), prevista para 9/10.",
+   "Se a m\u00e9dia das pesquisas registradas mostrar Lula \u00e0 frente al\u00e9m da margem de erro, esta leitura deve passar para 'indefinido' ou 'vantagem de Lula'. A p\u00e1gina avisa automaticamente quando houver essa diverg\u00eancia.",
+   "Debate da Record em 11/10."
+  ],
+  "fontes": [
+   {
+    "titulo": "Resultado do 1\u00ba turno com 100% das se\u00e7\u00f5es (Portal de Prefeitura)",
+    "url": "https://portaldeprefeitura.com.br/bastidores-da-politica/eleicoes-2026-com-100-das-secoes-totalizadas-flavio-tem-4703-e/633498/"
+   },
+   {
+    "titulo": "Transfer\u00eancia de votos segundo a Quaest (Jornal Op\u00e7\u00e3o)",
+    "url": "https://www.jornalopcao.com.br/ultimas-noticias/quem-fica-com-os-votos-de-ronaldo-caiado-augusto-cury-e-renan-santos-no-duelo-entre-lula-e-flavio-876089/"
+   },
+   {
+    "titulo": "Posi\u00e7\u00e3o de Zema, Cury, Renan e Caiado (CNN Brasil)",
+    "url": "https://www.cnnbrasil.com.br/eleicoes/quem-zema-cury-renan-e-caiado-apoiarao-no-segundo-turno-entenda/"
+   },
+   {
+    "titulo": "Caiado anuncia apoio a Fl\u00e1vio (Isto\u00c9)",
+    "url": "https://istoe.com.br/caiado-apoia-flavio-bolsonaro-segundo-turno"
+   },
+   {
+    "titulo": "PSD anuncia neutralidade (SBT News)",
+    "url": "https://sbtnews.sbt.com.br/noticia/eleicoes/psd-anuncia-neutralidade-no-2-turno-entre-lula-e-flavio"
+   },
+   {
+    "titulo": "Erro dos institutos no 1\u00ba turno (Gazeta do Povo)",
+    "url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/um-de-seis-institutos-de-pesquisa-apontava-flavio-numericamente-a-frente-de-lula/"
+   },
+   {
+    "titulo": "Resultado por estado (O Povo+)",
+    "url": "https://mais.opovo.com.br/jornal/politica/2026/10/05/flavio-vence-em-14-estados-e-df-lula-lidera-no-nordeste-e-fica-com-12.html"
+   },
+   {
+    "titulo": "Datafolha de 1\u00ba/10: rejei\u00e7\u00e3o (Poder360)",
+    "url": "https://static.poder360.com.br/uploads/2026/10/datafolha-presidencial-outubro.pdf"
+   },
+   {
+    "titulo": "Agenda das pesquisas de 2\u00ba turno (Brasil de Fato)",
+    "url": "https://www.brasildefato.com.br/2026/10/06/datafolha-quaest-atlasintel-quando-saem-as-pesquisas-de-2o-turno-entre-lula-e-flavio/"
+   },
+   {
+    "titulo": "Datas dos debates (Metr\u00f3poles)",
+    "url": "https://www.metropoles.com/brasil/globo-band-record-debates-flavio"
+   }
+  ]
+ }
+}

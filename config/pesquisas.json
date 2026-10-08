@@ -1,0 +1,53 @@
+{
+  "_comentario": "Tabela editável de pesquisas de 2º turno para Presidente (Lula x Flávio Bolsonaro). Só entram na página pesquisas com registroTSE no formato BR-00000/2026 (ou UF-00000/2026). 'tipo' = 'totais' (percentuais sobre todos os entrevistados) ou 'validos' (já excluídos brancos, nulos e indecisos). As chaves '13' e '22' são os números de urna. Confira cada registro no PesqEle (https://pesqele-divulgacao.tse.jus.br) antes de publicar. As três linhas abaixo são cenários de 2º turno testados ANTES do 1º turno, transcritos de reportagens: confira os números na fonte original.",
+  "pesquisas": [
+    {
+      "instituto": "PoderData",
+      "contratante": "Poder360",
+      "campoInicio": "2026-09-20",
+      "campoFim": "2026-09-23",
+      "amostra": 3000,
+      "margem": null,
+      "confianca": 95,
+      "registroTSE": "BR-01739/2026",
+      "tipo": "totais",
+      "13": 45,
+      "22": 46,
+      "naoValidos": 9,
+      "observacao": "Cenário de 2º turno testado antes do 1º turno.",
+      "fonte": "https://www.tribunapr.com.br/noticias/brasil/lula-flavio-ficam-separados-por-apenas-1-ponto-pesquisa/"
+    },
+    {
+      "instituto": "Real Time Big Data",
+      "contratante": "",
+      "campoInicio": "2026-09-26",
+      "campoFim": "2026-09-30",
+      "amostra": 2000,
+      "margem": 2,
+      "confianca": 95,
+      "registroTSE": "BR-09503/2026",
+      "tipo": "validos",
+      "13": 49,
+      "22": 51,
+      "naoValidos": null,
+      "observacao": "Cenário de 2º turno testado antes do 1º turno.",
+      "fonte": "https://www.tribunapr.com.br/noticias/brasil/tres-dias-eleicao-pesquisa-mostra-virada-2o-turno-entre-lula-flavio-bolsonaro/"
+    },
+    {
+      "instituto": "Quaest",
+      "contratante": "Genial Investimentos",
+      "campoInicio": "2026-10-02",
+      "campoFim": "2026-10-03",
+      "amostra": 3702,
+      "margem": 2,
+      "confianca": 95,
+      "registroTSE": "BR-02197/2026",
+      "tipo": "totais",
+      "13": 42,
+      "22": 44,
+      "naoValidos": 14,
+      "observacao": "Cenário de 2º turno testado na véspera do 1º turno.",
+      "fonte": "https://viva.com.br/politica/quaest-lula-tem-46-e-flavio-45-dos-votos-validos-no-primeiro-turno.html"
+    }
+  ]
+}

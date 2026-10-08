@@ -1,0 +1,1338 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clima 2º Turno – Eleições 2026</title>
+<meta name="description" content="Agregador independente e apartidário sobre o 2º turno da eleição presidencial de 2026: pesquisas registradas no TSE, manchetes da imprensa e apuração oficial.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0c0c0d">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230c0c0d'/%3E%3Cpath d='M9 22V10h4.5a3.5 3.5 0 010 7H9m10-7h4v12' stroke='%23edece9' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+<!-- Fontes servidas pelo jsDelivr (sem cookies). Se o CDN falhar, a página usa fontes do sistema. -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cormorant-garamond@5.0.13/500.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cormorant-garamond@5.0.13/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/archivo@5.0.17/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/archivo@5.0.17/600.css">
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"></script>
+
+<script>
+/* ===== CONFIG:INICIO ===== */
+/*
+ * CONFIGURAÇÃO — edite aqui. O robô (coleta.js) também lê este bloco.
+ * Mantenha a sintaxe de objeto JavaScript válida.
+ *
+ * Candidatos: na ordem do número de urna. 'cor' é a mesma para os dois por
+ * neutralidade; a diferenciação nos gráficos é feita pelo padrão
+ * (linha contínua x tracejada, preenchimento liso x listrado).
+ * 'foto': caminho ou URL de uma imagem sua (deixe "" para mostrar as iniciais).
+ * 'apelidos': como o robô reconhece o candidato nas manchetes.
+ * 'excluir': expressões que NÃO contam como menção (homônimos).
+ */
+const CONFIG = {
+  candidatos: [
+    {
+      numero: "13",
+      nome: "Lula",
+      nomeCompleto: "Luiz Inácio Lula da Silva",
+      partido: "PT",
+      cor: "#E6E5E1",
+      foto: "",
+      padrao: "liso",
+      apelidos: ["lula", "luiz inácio", "luiz inacio"],
+      excluir: []
+    },
+    {
+      numero: "22",
+      nome: "Flávio Bolsonaro",
+      nomeCompleto: "Flávio Nantes Bolsonaro",
+      partido: "PL",
+      cor: "#E6E5E1",
+      foto: "",
+      padrao: "listrado",
+      apelidos: ["flávio bolsonaro", "flavio bolsonaro", "senador flávio", "flávio", "flavio"],
+      excluir: ["flávio dino", "flavio dino"]
+    }
+  ],
+  votacao: {
+    abertura:   "2026-10-25T08:00:00-03:00",
+    fechamento: "2026-10-25T17:00:00-03:00",
+    divulgacao: "2026-10-25T17:00:00-03:00"
+  },
+  dados: {
+    url: "dados.json",
+    atualizarACadaSeg: 60,
+    desatualizadoAposMin: 30
+  },
+  tse: {
+    base: "https://resultados.tse.jus.br/oficial",
+    ciclo: "ele2026",
+    cargo: "0001",
+    codigoTurno1: "",          // deixe vazio para o robô descobrir sozinho
+    codigoTurno2: "",          // idem; preencha se a descoberta automática falhar
+    tentarDiretoNoNavegador: true
+  },
+  termometro: {
+    pesos: { pesquisas: 0.60, tom: 0.25, volume: 0.15 },
+    saturacaoPontos: 10,       // diferença (em pontos de votos válidos) que leva o componente ao máximo
+    meiaVidaDias: 7,           // peso de uma pesquisa cai à metade a cada 7 dias
+    janelaDias: 14
+  },
+  midia: { janelaHoras: 72 }
+};
+/* ===== CONFIG:FIM ===== */
+</script>
+
+<style>
+:root {
+  --fundo: #0c0c0d;
+  --superficie: #141416;
+  --superficie-2: #1b1c1f;
+  --linha: #2a2b2f;
+  --linha-forte: #3d3f44;
+  --texto: #edece9;
+  --texto-2: #b6b7bc;
+  --texto-3: #8d8f96;
+  --aviso: #d9cfb8;
+  --serifa: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --sans: "Archivo", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --largura: 1180px;
+  --raio: 3px;
+  --listra: repeating-linear-gradient(135deg, var(--c, #e6e5e1) 0 3px, transparent 3px 6px);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
+body {
+  margin: 0; background: var(--fundo); color: var(--texto);
+  font-family: var(--sans); font-size: 1rem; line-height: 1.55;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+a { color: var(--texto); text-decoration-color: var(--linha-forte); text-underline-offset: 3px; }
+a:hover { text-decoration-color: var(--texto); }
+:focus-visible { outline: 2px solid var(--texto); outline-offset: 3px; border-radius: 2px; }
+.pular { position: absolute; left: -9999px; top: 0; background: var(--texto); color: var(--fundo); padding: .6rem 1rem; z-index: 10; }
+.pular:focus { left: 1rem; top: 1rem; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.envoltorio { max-width: var(--largura); margin: 0 auto; padding: 0 16px; }
+@media (min-width: 720px) { .envoltorio { padding: 0 32px; } }
+button, select { font: inherit; color: inherit; }
+.muted { color: var(--texto-2); }
+.fraco { color: var(--texto-3); }
+.serif { font-family: var(--serifa); }
+.num { font-variant-numeric: tabular-nums; }
+
+/* ---------- Topo ---------- */
+.topo { border-bottom: 1px solid var(--linha); }
+.topo-linha { display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: end; justify-content: space-between; padding: 22px 0 18px; }
+.marca h1 { font-family: var(--serifa); font-weight: 600; font-size: clamp(1.7rem, 4vw, 2.3rem); line-height: 1; margin: 0; letter-spacing: -.005em; }
+.marca p { margin: 6px 0 0; color: var(--texto-3); font-size: .875rem; }
+.relogios { display: flex; gap: 28px; flex-wrap: wrap; }
+.relogio dt { font-size: .8rem; color: var(--texto-3); }
+.relogio dd { margin: 2px 0 0; font-size: 1.05rem; font-weight: 600; }
+.selo { display: inline-flex; align-items: center; gap: 8px; }
+.selo::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--texto-2); }
+.selo[data-estado="velho"]::before { background: var(--aviso); box-shadow: 0 0 0 3px rgba(217,207,184,.15); }
+.selo[data-estado="vivo"]::before { background: var(--texto); animation: pulso 2.4s ease-in-out infinite; }
+@keyframes pulso { 50% { opacity: .35; } }
+nav.atalhos { border-top: 1px solid var(--linha); overflow-x: auto; scrollbar-width: none; }
+nav.atalhos::-webkit-scrollbar { display: none; }
+nav.atalhos ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 10px 0; white-space: nowrap; }
+nav.atalhos a { color: var(--texto-2); text-decoration: none; font-size: .9rem; }
+nav.atalhos a:hover { color: var(--texto); }
+
+/* ---------- Avisos ---------- */
+#avisos:empty { display: none; }
+#avisos { padding-top: 16px; display: grid; gap: 8px; }
+.aviso { border: 1px solid var(--linha-forte); border-left: 3px solid var(--aviso); padding: 10px 14px; font-size: .92rem; background: var(--superficie); }
+.aviso strong { color: var(--aviso); font-weight: 600; }
+.aviso.exemplo { border-left-color: var(--texto); }
+.aviso.exemplo strong { color: var(--texto); }
+
+/* ---------- Duelo ---------- */
+.duelo { display: grid; grid-template-columns: 1fr auto 1fr; align-items: start; gap: 0 clamp(12px, 4vw, 56px); padding: clamp(28px, 6vw, 64px) 0 clamp(18px, 3vw, 28px); }
+.cand { min-width: 0; }
+.cand.dir { text-align: right; }
+.cand-num { font-family: var(--serifa); font-weight: 500; font-size: clamp(4.6rem, 17vw, 11.5rem); line-height: .78; letter-spacing: -.03em; color: var(--texto); display: block; }
+.cand-nome { font-family: var(--serifa); font-weight: 600; font-size: clamp(1.55rem, 5.2vw, 3.6rem); line-height: 1.02; margin: 16px 0 6px; overflow-wrap: anywhere; }
+.cand-meta { color: var(--texto-2); font-size: .92rem; }
+.cand-foto { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; filter: grayscale(1) contrast(1.05); border: 1px solid var(--linha-forte); display: inline-grid; place-items: center; font-family: var(--serifa); font-size: 1.4rem; color: var(--texto-2); background: var(--superficie-2); margin-bottom: 14px; }
+.cand-padrao { display: inline-block; width: 22px; height: 10px; vertical-align: middle; margin: 0 6px; border: 1px solid var(--texto-2); }
+.versus { font-family: var(--serifa); font-size: clamp(1.4rem, 4vw, 2.6rem); color: var(--texto-3); align-self: center; font-style: italic; }
+
+/* ---------- Leitura do momento ---------- */
+.leitura { border-top: 1px solid var(--linha-forte); border-bottom: 1px solid var(--linha); padding: 26px 0 30px; display: grid; gap: 22px 48px; }
+@media (min-width: 900px) { .leitura { grid-template-columns: 5fr 7fr; } }
+.leitura h2 { font-size: .95rem; font-weight: 600; margin: 0 0 10px; color: var(--texto-2); }
+.veredito { font-family: var(--serifa); font-weight: 600; font-size: clamp(1.9rem, 4.6vw, 2.9rem); line-height: 1.05; margin: 0 0 18px; }
+.escala { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; margin: 0 0 8px; padding: 0; list-style: none; }
+.escala li { height: 30px; border: 1px solid var(--linha-forte); background: transparent; position: relative; }
+.escala li[aria-current="true"] { background: var(--texto); border-color: var(--texto); }
+.escala li:nth-child(3) { border-style: dashed; }
+.escala-rotulos { display: flex; justify-content: space-between; font-size: .82rem; color: var(--texto-3); gap: 8px; }
+.escala-rotulos span:last-child { text-align: right; }
+.leitura-meta { margin: 16px 0 0; display: grid; gap: 4px; font-size: .9rem; color: var(--texto-2); }
+.leitura-meta b { color: var(--texto); font-weight: 600; }
+.clima { font-family: var(--serifa); font-size: clamp(1.25rem, 2.6vw, 1.6rem); line-height: 1.3; margin: 0 0 12px; font-style: italic; }
+.leitura-texto p { margin: 0 0 12px; max-width: 68ch; }
+.coerencia { border-left: 3px solid var(--linha-forte); padding: 8px 12px; font-size: .92rem; background: var(--superficie); margin: 14px 0 0; }
+.coerencia[data-tipo="diverge"], .coerencia[data-tipo="velha"] { border-left-color: var(--aviso); }
+.coerencia[data-tipo="diverge"] strong, .coerencia[data-tipo="velha"] strong { color: var(--aviso); }
+details.mais { grid-column: 1 / -1; border-top: 1px solid var(--linha); padding-top: 14px; }
+details.mais > summary { cursor: pointer; font-weight: 600; list-style: none; display: inline-flex; gap: 10px; align-items: center; }
+details.mais > summary::-webkit-details-marker { display: none; }
+details.mais > summary::before { content: "+"; font-family: var(--serifa); font-size: 1.4rem; line-height: 1; width: 1ch; }
+details.mais[open] > summary::before { content: "–"; }
+.fundamentos { display: grid; gap: 0 40px; margin-top: 18px; }
+@media (min-width: 820px) { .fundamentos { grid-template-columns: 1fr 1fr; } }
+.fund { padding: 14px 0; border-top: 1px solid var(--linha); }
+.fund h4 { margin: 0 0 4px; font-family: var(--serifa); font-size: 1.3rem; font-weight: 600; }
+.fund p { margin: 0; color: var(--texto-2); font-size: .95rem; max-width: 64ch; }
+.etiqueta { display: inline-block; font-size: .78rem; color: var(--texto-2); border: 1px solid var(--linha-forte); padding: 1px 7px; border-radius: 20px; margin-left: 6px; vertical-align: 3px; font-family: var(--sans); font-weight: 400; }
+.sub { font-family: var(--serifa); font-size: 1.5rem; font-weight: 600; margin: 28px 0 4px; }
+
+/* ---------- Seções ---------- */
+main { padding-bottom: 40px; }
+.bloco { display: grid; gap: 14px 48px; padding: 40px 0; border-bottom: 1px solid var(--linha); }
+@media (min-width: 980px) { .bloco { grid-template-columns: 260px 1fr; } }
+.bloco-cab h2 { font-family: var(--serifa); font-weight: 600; font-size: clamp(1.7rem, 3vw, 2.1rem); line-height: 1.05; margin: 0 0 8px; }
+.bloco-cab p { margin: 0; color: var(--texto-2); font-size: .92rem; max-width: 44ch; }
+.bloco-corpo { min-width: 0; }
+.alternador { display: inline-flex; border: 1px solid var(--linha-forte); border-radius: var(--raio); overflow: hidden; margin-bottom: 14px; }
+.alternador button { background: none; border: 0; padding: 7px 14px; cursor: pointer; color: var(--texto-2); }
+.alternador button[aria-pressed="true"] { background: var(--texto); color: var(--fundo); }
+.vazio { border: 1px dashed var(--linha-forte); padding: 22px; color: var(--texto-2); }
+
+/* ---------- Termômetro ---------- */
+.termo-valor { font-family: var(--serifa); font-size: clamp(2.4rem, 6vw, 3.6rem); font-weight: 600; line-height: 1; margin: 0 0 4px; }
+.termo-trilho { position: relative; height: 54px; margin: 22px 0 6px; }
+.termo-trilho .eixo { position: absolute; left: 0; right: 0; top: 26px; height: 1px; background: var(--linha-forte); }
+.termo-trilho .marca-t { position: absolute; top: 18px; width: 1px; height: 17px; background: var(--linha-forte); }
+.termo-trilho .marca-t.meio { height: 30px; top: 11px; background: var(--texto-3); }
+.termo-trilho .agulha { position: absolute; top: 0; width: 2px; height: 54px; background: var(--texto); transform: translateX(-1px); transition: left .8s cubic-bezier(.2,.7,.2,1); }
+.termo-trilho .agulha::after { content: ""; position: absolute; left: -6px; top: -2px; width: 14px; height: 14px; border-radius: 50%; background: var(--texto); }
+.termo-rotulos { display: flex; justify-content: space-between; font-size: .85rem; color: var(--texto-2); }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+th, td { text-align: left; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--linha); vertical-align: top; }
+th { font-weight: 600; color: var(--texto-2); font-size: .84rem; }
+td.n, th.n { text-align: right; padding-right: 0; padding-left: 10px; }
+.tabela-rolagem { overflow-x: auto; }
+#pesq-tabela table { min-width: 780px; }
+#pesq-tabela td, #pesq-tabela th { padding-right: 14px; }
+.nw { white-space: nowrap; }
+.formula { background: var(--superficie); border: 1px solid var(--linha); padding: 14px 16px; font-size: .92rem; margin-top: 16px; }
+.formula p { margin: 0 0 8px; }
+.formula code { font-family: var(--sans); background: var(--superficie-2); padding: 1px 6px; border-radius: 2px; }
+
+/* ---------- Pesquisas ---------- */
+.grafico { position: relative; height: 340px; margin: 4px 0 16px; }
+@media (max-width: 600px) { .grafico { height: 280px; } }
+.legenda { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: .88rem; color: var(--texto-2); margin-bottom: 8px; }
+.amostra-padrao { display: inline-block; width: 26px; height: 12px; vertical-align: -1px; margin-right: 6px; border: 1px solid var(--texto-2); }
+.amostra-padrao.liso { background: var(--texto); border-color: var(--texto); }
+.amostra-padrao.listrado { background: var(--listra); --c: var(--texto); border-color: var(--texto); }
+.media-atual { display: flex; flex-wrap: wrap; gap: 8px 36px; margin: 0 0 14px; }
+.media-atual div { display: grid; }
+.media-atual b { font-family: var(--serifa); font-size: 2.2rem; line-height: 1; font-weight: 600; }
+
+/* ---------- Mapa ---------- */
+.mapa-grade { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 5px; max-width: 520px; }
+.uf { aspect-ratio: 1; border: 1px solid var(--linha-forte); background: var(--superficie-2); border-radius: 2px; padding: 4px 5px; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; text-align: left; min-width: 0; color: var(--texto); }
+.uf[aria-pressed="true"] { outline: 2px solid var(--texto); outline-offset: 1px; }
+.uf .sg { font-weight: 600; font-size: .9rem; line-height: 1; }
+.uf .ld { font-size: .68rem; line-height: 1.1; color: var(--texto-2); white-space: nowrap; overflow: hidden; }
+.uf .ld b { color: var(--texto); font-weight: 600; }
+.uf .barra { display: flex; height: 5px; gap: 1px; }
+.uf .barra i { display: block; height: 100%; }
+.uf.sem { opacity: .45; cursor: default; }
+.uf.ext { grid-column: span 2; aspect-ratio: auto; }
+.mapa-layout { display: grid; gap: 22px 36px; }
+@media (min-width: 900px) { .mapa-layout { grid-template-columns: minmax(0, 520px) 1fr; } }
+.mapa-detalhe { border-top: 1px solid var(--linha-forte); padding-top: 12px; }
+.mapa-detalhe h3 { font-family: var(--serifa); font-size: 1.7rem; margin: 0 0 6px; font-weight: 600; }
+.mapa-leg { font-size: .85rem; color: var(--texto-2); margin-top: 12px; display: grid; gap: 4px; }
+.degrade { display: inline-block; width: 120px; height: 10px; vertical-align: middle; background: linear-gradient(90deg, #1b1c1f, #6b6d73); border: 1px solid var(--linha-forte); margin: 0 6px; }
+
+/* ---------- Barras genéricas ---------- */
+.barra-dupla { display: flex; height: 14px; gap: 2px; margin: 6px 0; }
+.barra-dupla i { display: block; height: 100%; }
+.seg-liso { background: var(--c, var(--texto)); }
+.seg-listrado { background: var(--listra); box-shadow: inset 0 0 0 1px var(--c, var(--texto)); }
+
+/* ---------- Mídia ---------- */
+.midia-resumo { display: grid; gap: 18px 40px; margin-bottom: 24px; }
+@media (min-width: 760px) { .midia-resumo { grid-template-columns: 1fr 1fr; } }
+.midia-cand h3 { font-family: var(--serifa); font-size: 1.45rem; margin: 0; font-weight: 600; }
+.midia-cand .grande { font-family: var(--serifa); font-size: 2.4rem; font-weight: 600; line-height: 1; }
+.tom-barra { display: flex; height: 10px; gap: 2px; margin: 8px 0 4px; }
+.tom-barra i { display: block; height: 100%; }
+.tom-pos { background: #d9d8d4; } .tom-neu { background: #6c6e74; } .tom-neg { background: repeating-linear-gradient(135deg, #b9bac0 0 2px, #2a2b2f 2px 4px); }
+.tom-leg { font-size: .82rem; color: var(--texto-3); display: flex; gap: 14px; flex-wrap: wrap; }
+.tom-leg i { display: inline-block; width: 10px; height: 10px; margin-right: 5px; vertical-align: -1px; }
+.serie { display: flex; align-items: end; gap: 6px; height: 74px; margin: 6px 0 2px; }
+.serie .dia { flex: 1; display: flex; gap: 2px; align-items: end; height: 100%; min-width: 0; }
+.serie .dia i { flex: 1; display: block; min-height: 1px; }
+.serie-rot { display: flex; gap: 6px; font-size: .72rem; color: var(--texto-3); }
+.serie-rot span { flex: 1; text-align: center; }
+.filtros { display: flex; flex-wrap: wrap; gap: 10px 14px; margin: 8px 0 14px; align-items: end; }
+.filtros label { display: grid; gap: 3px; font-size: .82rem; color: var(--texto-2); }
+.filtros select { background: var(--superficie); border: 1px solid var(--linha-forte); border-radius: var(--raio); padding: 6px 8px; min-width: 150px; }
+.feed { list-style: none; margin: 0; padding: 0; }
+.feed li { padding: 12px 0; border-top: 1px solid var(--linha); }
+.feed a.tit { font-weight: 600; text-decoration: none; display: block; line-height: 1.35; }
+.feed a.tit:hover { text-decoration: underline; }
+.feed .res { color: var(--texto-2); font-size: .9rem; margin: 3px 0 4px; max-width: 75ch; }
+.feed .meta { font-size: .8rem; color: var(--texto-3); display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.botao { background: none; border: 1px solid var(--linha-forte); border-radius: var(--raio); padding: 8px 16px; cursor: pointer; margin-top: 12px; }
+.botao:hover { border-color: var(--texto-2); }
+.nuvem { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; margin: 10px 0 22px; line-height: 1.25; }
+.nuvem span { font-family: var(--serifa); font-weight: 500; }
+.duas-col { display: grid; gap: 22px 40px; }
+@media (min-width: 1040px) { .duas-col { grid-template-columns: 2fr 1fr; } }
+
+/* ---------- Apuração ---------- */
+#apuracao[hidden] { display: none; }
+.apu-topo { display: flex; flex-wrap: wrap; gap: 10px 30px; align-items: baseline; margin-bottom: 18px; }
+.apu-pct { font-family: var(--serifa); font-size: clamp(3rem, 8vw, 4.6rem); line-height: 1; font-weight: 600; }
+.progresso { height: 6px; background: var(--superficie-2); border: 1px solid var(--linha); margin: 6px 0 22px; }
+.progresso i { display: block; height: 100%; background: var(--texto); transition: width .8s; }
+.apu-cands { display: grid; gap: 20px 40px; }
+@media (min-width: 720px) { .apu-cands { grid-template-columns: 1fr 1fr; } }
+.apu-cand h3 { font-family: var(--serifa); font-weight: 600; font-size: 1.8rem; margin: 0; }
+.apu-cand .pct { font-family: var(--serifa); font-size: 3.2rem; font-weight: 600; line-height: 1; }
+.apu-num { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 14px 24px; margin: 24px 0 8px; }
+.apu-num dt { font-size: .82rem; color: var(--texto-3); }
+.apu-num dd { margin: 2px 0 0; font-weight: 600; font-size: 1.1rem; }
+.decisao { margin-top: 18px; padding: 14px 16px; border: 1px solid var(--linha-forte); background: var(--superficie); }
+.decisao[data-decidido="true"] { border-color: var(--texto); }
+.decisao strong { font-family: var(--serifa); font-size: 1.5rem; display: block; }
+
+/* ---------- Linha do tempo ---------- */
+.tempo { list-style: none; margin: 0; padding: 0; position: relative; }
+.tempo::before { content: ""; position: absolute; left: 7px; top: 6px; bottom: 6px; width: 1px; background: var(--linha-forte); }
+.tempo li { position: relative; padding: 0 0 22px 32px; }
+.tempo li::before { content: ""; position: absolute; left: 2px; top: 6px; width: 11px; height: 11px; border-radius: 50%; border: 1px solid var(--texto-2); background: var(--fundo); }
+.tempo li[data-estado="passado"] { color: var(--texto-2); }
+.tempo li[data-estado="passado"]::before { background: var(--texto-3); border-color: var(--texto-3); }
+.tempo li[data-estado="proximo"]::before { background: var(--texto); border-color: var(--texto); box-shadow: 0 0 0 4px rgba(237,236,233,.12); }
+.tempo time { font-size: .84rem; color: var(--texto-3); display: block; }
+.tempo h3 { margin: 2px 0 2px; font-size: 1.05rem; font-weight: 600; }
+.tempo p { margin: 0; font-size: .92rem; color: var(--texto-2); max-width: 70ch; }
+
+/* ---------- Metodologia e rodapé ---------- */
+.texto-longo p, .texto-longo li { max-width: 72ch; color: var(--texto-2); }
+.texto-longo h3 { font-family: var(--serifa); font-size: 1.45rem; margin: 26px 0 6px; font-weight: 600; color: var(--texto); }
+.texto-longo h3:first-child { margin-top: 0; }
+.texto-longo ul { padding-left: 1.1rem; }
+.lista-fontes { columns: 2 220px; padding-left: 1.1rem; font-size: .9rem; }
+footer { padding: 34px 0 48px; color: var(--texto-3); font-size: .86rem; }
+footer p { max-width: 80ch; margin: 0 0 10px; }
+</style>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="envoltorio">
+    <div class="topo-linha">
+      <div class="marca">
+        <h1>Clima 2º Turno – Eleições 2026</h1>
+        <p>Agregador independente sobre a disputa presidencial. Votação em 25 de outubro.</p>
+      </div>
+      <dl class="relogios">
+        <div class="relogio"><dt id="rotulo-contagem">Fechamento das urnas em</dt><dd id="contagem" class="num">—</dd></div>
+        <div class="relogio"><dt>Dados</dt><dd><span class="selo" id="selo" data-estado="ok">carregando…</span></dd></div>
+      </dl>
+    </div>
+  </div>
+  <nav class="atalhos" aria-label="Seções">
+    <div class="envoltorio">
+      <ul>
+        <li><a href="#leitura">Leitura do momento</a></li>
+        <li><a href="#termometro">Termômetro</a></li>
+        <li><a href="#pesquisas">Pesquisas</a></li>
+        <li><a href="#mapa">Mapa</a></li>
+        <li><a href="#midia">Radar da mídia</a></li>
+        <li><a href="#tempo">Linha do tempo</a></li>
+        <li><a href="#metodologia">Metodologia</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="envoltorio">
+  <div id="avisos" role="status" aria-live="polite"></div>
+  <p class="sr" id="anuncio" aria-live="polite"></p>
+</div>
+
+<main id="conteudo" class="envoltorio">
+
+  <section class="duelo" id="duelo" aria-label="Candidatos do 2º turno, em ordem de número de urna"></section>
+
+  <section class="bloco" id="apuracao" hidden aria-labelledby="t-apuracao">
+    <header class="bloco-cab">
+      <h2 id="t-apuracao">Apuração ao vivo</h2>
+      <p>Totalização oficial do TSE. Percentuais sobre votos válidos, como faz a Justiça Eleitoral.</p>
+    </header>
+    <div class="bloco-corpo" id="apuracao-corpo"></div>
+  </section>
+
+  <section class="leitura" id="leitura" aria-labelledby="t-leitura"></section>
+
+  <section class="bloco" id="termometro" aria-labelledby="t-termo">
+    <header class="bloco-cab">
+      <h2 id="t-termo">Termômetro do clima</h2>
+      <p>Indicador ilustrativo que combina pesquisas, tom das manchetes e volume de menções. Não é previsão de resultado.</p>
+    </header>
+    <div class="bloco-corpo" id="termo-corpo"></div>
+  </section>
+
+  <section class="bloco" id="pesquisas" aria-labelledby="t-pesq">
+    <header class="bloco-cab">
+      <h2 id="t-pesq">Agregador de pesquisas</h2>
+      <p>Só pesquisas registradas no TSE, com o número de registro. Linha: média ponderada por tamanho da amostra e data. Faixa: margem de erro média.</p>
+    </header>
+    <div class="bloco-corpo">
+      <div class="alternador" role="group" aria-label="Base dos percentuais">
+        <button type="button" data-base="validos" aria-pressed="true">Votos válidos</button>
+        <button type="button" data-base="totais" aria-pressed="false">Votos totais</button>
+      </div>
+      <div id="pesq-media"></div>
+      <div class="legenda" id="pesq-legenda"></div>
+      <div class="grafico"><canvas id="grafico-pesq" role="img" aria-label="Evolução das pesquisas de 2º turno"></canvas></div>
+      <div class="tabela-rolagem" id="pesq-tabela"></div>
+    </div>
+  </section>
+
+  <section class="bloco" id="mapa" aria-labelledby="t-mapa">
+    <header class="bloco-cab">
+      <h2 id="t-mapa">Mapa por estado</h2>
+      <p id="mapa-desc">Resultado do 1º turno para Presidente em cada UF e no exterior.</p>
+    </header>
+    <div class="bloco-corpo">
+      <div class="alternador" role="group" aria-label="Turno exibido no mapa">
+        <button type="button" data-turno="1" aria-pressed="true">1º turno</button>
+        <button type="button" data-turno="2" aria-pressed="false">2º turno ao vivo</button>
+      </div>
+      <div class="mapa-layout">
+        <div>
+          <div class="mapa-grade" id="mapa-grade" role="group" aria-label="Estados"></div>
+          <div class="mapa-leg" id="mapa-leg"></div>
+        </div>
+        <div class="mapa-detalhe" id="mapa-detalhe" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco" id="midia" aria-labelledby="t-midia">
+    <header class="bloco-cab">
+      <h2 id="t-midia">Radar da mídia</h2>
+      <p>Manchetes de veículos de todo o espectro editorial, com link para a matéria original. Tom classificado por análise léxica simples.</p>
+    </header>
+    <div class="bloco-corpo">
+      <div class="midia-resumo" id="midia-resumo"></div>
+      <div class="duas-col">
+        <div>
+          <div class="filtros">
+            <label>Veículo <select id="f-veiculo"><option value="">Todos</option></select></label>
+            <label>Candidato <select id="f-cand"><option value="">Todos</option></select></label>
+            <label>Tom <select id="f-tom"><option value="">Todos</option><option value="positivo">Positivo</option><option value="neutro">Neutro</option><option value="negativo">Negativo</option></select></label>
+          </div>
+          <p class="fraco" id="feed-contagem"></p>
+          <ul class="feed" id="feed"></ul>
+          <button type="button" class="botao" id="feed-mais" hidden>Mostrar mais manchetes</button>
+        </div>
+        <div>
+          <h3 class="sub" style="margin-top:0">Termos mais frequentes</h3>
+          <p class="fraco" style="margin:0;font-size:.85rem">Palavras dos títulos no período, sem nomes dos candidatos.</p>
+          <div class="nuvem" id="nuvem"></div>
+          <h3 class="sub">Menções por dia</h3>
+          <div id="serie"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco" id="tempo" aria-labelledby="t-tempo">
+    <header class="bloco-cab">
+      <h2 id="t-tempo">Linha do tempo</h2>
+      <p>Debates, calendário do TSE e fatos da campanha. Horários de Brasília.</p>
+    </header>
+    <div class="bloco-corpo"><ol class="tempo" id="tempo-lista"></ol></div>
+  </section>
+
+  <section class="bloco" id="metodologia" aria-labelledby="t-met">
+    <header class="bloco-cab">
+      <h2 id="t-met">Metodologia e transparência</h2>
+      <p>Como os dados são coletados, calculados e onde estão os limites.</p>
+    </header>
+    <div class="bloco-corpo texto-longo" id="met-corpo">
+      <h3>Quem faz</h3>
+      <p>Este é um agregador independente, sem vínculo com partidos, candidaturas, com o TSE ou com qualquer veículo de imprensa. Os candidatos aparecem em ordem de número de urna, com a mesma cor e o mesmo destaque. A diferenciação visual usa apenas padrões (liso e listrado).</p>
+      <h3>Fontes e frequência</h3>
+      <ul>
+        <li><strong>Notícias:</strong> feeds RSS públicos de veículos nacionais e regionais, lidos a cada 10 minutos por um robô no GitHub Actions. Mostramos só título, trecho curto e link para a matéria original.</li>
+        <li><strong>Pesquisas:</strong> tabela mantida manualmente. Entram apenas pesquisas com registro no TSE (Lei 9.504/97, art. 33, e Res. TSE 23.600/2019), com o número exibido.</li>
+        <li><strong>Resultados:</strong> arquivos públicos do TSE (resultados.tse.jus.br). No dia 25/10 a página tenta ler o TSE direto; se o navegador bloquear, usa a cópia feita pelo robô a cada 5 minutos.</li>
+        <li><strong>Atualização na tela:</strong> a cada 60 segundos, sem recarregar a página.</li>
+      </ul>
+      <div id="met-fontes"></div>
+      <h3>Fórmula do termômetro</h3>
+      <div id="met-formula"></div>
+      <h3>Leitura do momento</h3>
+      <p>É uma análise editorial assinada pelo responsável pelo site, revisada manualmente. Usa resultado do 1º turno, pesquisas registradas, apoios declarados e histórico eleitoral. Não é pesquisa de opinião, não é enquete e não é previsão. A página compara a leitura com a média das pesquisas e avisa quando elas divergem ou quando a análise está há muito tempo sem revisão.</p>
+      <h3>Limitações</h3>
+      <ul>
+        <li>A classificação de tom conta palavras positivas e negativas de um dicionário fixo. Não entende ironia, contexto, citação ("X diz que Y mente") nem quem é o sujeito da frase. Quando uma manchete cita os dois candidatos, o tom conta para ambos.</li>
+        <li>Volume de menções não indica apoio. Um escândalo gera muitas menções.</li>
+        <li>A seleção de feeds influencia o radar. A lista é pública e editável, e procura equilíbrio entre linhas editoriais.</li>
+        <li>A média de pesquisas combina institutos com metodologias diferentes (presencial, telefone, internet). Em votos totais, só entram pesquisas que publicaram votos totais.</li>
+        <li>O GitHub Actions pode atrasar execuções agendadas em horários de pico. O selo no topo mostra a idade real dos dados.</li>
+        <li>A projeção "matematicamente definido" só aparece quando a diferença entre os candidatos é maior do que todos os eleitores ainda não apurados.</li>
+        <li>Não usamos dados de buscas (Google Trends) porque não há interface pública e gratuita estável para isso.</li>
+      </ul>
+      <h3>Privacidade</h3>
+      <p>Sem cookies, sem rastreadores, sem formulários e sem coleta de dados pessoais (LGPD). Bibliotecas e fontes são carregadas do jsDelivr. O navegador guarda localmente apenas a última cópia de dados.json, para continuar funcionando se a rede falhar.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="envoltorio">
+  <p><strong>Aviso legal.</strong> Este site é um agregador independente e apartidário. Não é produzido pelo Tribunal Superior Eleitoral nem por nenhum veículo de imprensa, e não representa candidatos ou partidos. Os resultados oficiais são os divulgados pelo TSE. Pesquisas são exibidas apenas com o número de registro no TSE. Manchetes pertencem aos respectivos veículos e levam à matéria original. O termômetro e a leitura do momento são indicadores ilustrativos e analíticos, não previsões.</p>
+  <p id="rodape-hora"></p>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ================================================================ */
+  /* Utilidades                                                        */
+  /* ================================================================ */
+  const TZ = 'America/Sao_Paulo';
+  const C = CONFIG.candidatos;
+  const NUMS = C.map(c => String(c.numero));
+  const $ = (s, r) => (r || document).querySelector(s);
+  const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+  const urlSegura = u => (/^https?:\/\//i.test(String(u || '')) ? String(u) : '#');
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const nf = (v, d = 1) => (v == null || !Number.isFinite(+v)) ? '—' : (+v).toLocaleString('pt-BR', { minimumFractionDigits: d, maximumFractionDigits: d });
+  const ni = v => (v == null || !Number.isFinite(+v)) ? '—' : Math.round(+v).toLocaleString('pt-BR');
+  const fmtData = (d, op) => new Intl.DateTimeFormat('pt-BR', Object.assign({ timeZone: TZ }, op)).format(new Date(d));
+  const dataHora = d => fmtData(d, { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+  const dataCurta = d => fmtData(d, { day: '2-digit', month: '2-digit' });
+  const dataLonga = d => fmtData(d, { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
+  const cand = n => C.find(c => String(c.numero) === String(n)) || { numero: n, nome: n, partido: '' };
+  const rotuloCand = n => `${cand(n).numero} ${cand(n).nome}`;
+  const segClasse = n => (cand(n).padrao === 'listrado' ? 'seg-listrado' : 'seg-liso');
+  const params = new URLSearchParams(location.search);
+  const SIMULAR_APURACAO = params.get('simular') === 'apuracao';
+  function agora() { return new Date(); }
+  function ha(min) {
+    if (min < 1) return 'agora';
+    if (min < 60) return `há ${Math.round(min)} min`;
+    const h = Math.floor(min / 60); const m = Math.round(min % 60);
+    if (h < 48) return `há ${h} h${m ? ' ' + m + ' min' : ''}`;
+    return `há ${Math.round(h / 24)} dias`;
+  }
+  function seguro(nome, fn) {
+    try { fn(); } catch (e) { console.error('Falha ao montar', nome, e); }
+  }
+
+  /* ================================================================ */
+  /* Estado e carregamento                                             */
+  /* ================================================================ */
+  const ESTADO = {
+    dados: null,
+    origem: 'nenhuma',      // rede | cache | nenhuma
+    erro: null,
+    ultimaTentativa: null,
+    tseDireto: null,        // resultado lido direto do TSE no navegador
+    tseDiretoErro: null,
+    basePesq: 'validos',
+    turnoMapa: null,        // escolhido automaticamente na primeira renderização
+    ufSel: 'SP',
+    feedLimite: 25,
+    grafico: null,
+  };
+  const CHAVE_CACHE = 'clima2t:dados:v1';
+
+  function dadosValidos(d) {
+    return d && typeof d === 'object' && d.meta && d.meta.atualizadoEm && !Number.isNaN(new Date(d.meta.atualizadoEm).getTime());
+  }
+
+  async function carregarDados() {
+    ESTADO.ultimaTentativa = agora();
+    try {
+      const sep = CONFIG.dados.url.includes('?') ? '&' : '?';
+      const r = await fetch(CONFIG.dados.url + sep + 't=' + Date.now(), { cache: 'no-store' });
+      if (!r.ok) throw new Error(r.status === 404 ? 'dados.json não encontrado' : 'HTTP ' + r.status);
+      const d = await r.json();
+      if (!dadosValidos(d)) throw new Error('dados.json sem o campo meta.atualizadoEm');
+      // Nunca troca um dado mais novo por um mais velho (cache de CDN).
+      if (ESTADO.dados && new Date(d.meta.atualizadoEm) < new Date(ESTADO.dados.meta.atualizadoEm)) {
+        ESTADO.erro = null;
+      } else {
+        ESTADO.dados = d; ESTADO.origem = 'rede'; ESTADO.erro = null;
+        try { localStorage.setItem(CHAVE_CACHE, JSON.stringify(d)); } catch (e) { /* armazenamento indisponível */ }
+      }
+    } catch (e) {
+      ESTADO.erro = e.message || String(e);
+      if (!ESTADO.dados) {
+        try {
+          const c = JSON.parse(localStorage.getItem(CHAVE_CACHE) || 'null');
+          if (dadosValidos(c)) { ESTADO.dados = c; ESTADO.origem = 'cache'; }
+        } catch (e2) { /* sem cache */ }
+      }
+    }
+  }
+
+  function apuracaoDeveAparecer() {
+    const t = agora().getTime();
+    const abertura = new Date(CONFIG.votacao.abertura).getTime();
+    const d = ESTADO.dados;
+    return SIMULAR_APURACAO || t >= abertura || !!(d && d.apuracao && d.apuracao.ativa && !d.apuracao.exemplo);
+  }
+  function divulgacaoComecou() {
+    return SIMULAR_APURACAO || agora().getTime() >= new Date(CONFIG.votacao.divulgacao).getTime();
+  }
+
+  /* Leitura direta do TSE no navegador (pode ser bloqueada por CORS). */
+  function numTSE(v) {
+    if (v == null || v === '') return null;
+    let s = String(v).trim();
+    if (s.includes(',')) s = s.replace(/\./g, '').replace(',', '.');
+    const n = Number(s); return Number.isFinite(n) ? n : null;
+  }
+  function urlTSEbr() {
+    const d = ESTADO.dados;
+    if (d && d.urlApuracaoBr) return d.urlApuracaoBr;
+    const t = CONFIG.tse;
+    if (!t.codigoTurno2) return null;
+    const cod = String(t.codigoTurno2);
+    return `${t.base.replace(/\/$/, '')}/${t.ciclo}/${cod}/dados-simplificados/br/br-c${t.cargo}-e${cod.padStart(6, '0')}-r.json`;
+  }
+  async function tentarTSEDireto() {
+    if (!CONFIG.tse.tentarDiretoNoNavegador || SIMULAR_APURACAO || !divulgacaoComecou()) return;
+    const url = urlTSEbr();
+    if (!url) return;
+    try {
+      const ctrl = new AbortController();
+      const tm = setTimeout(() => ctrl.abort(), 8000);
+      const r = await fetch(url + '?t=' + Date.now(), { cache: 'no-store', signal: ctrl.signal, mode: 'cors' });
+      clearTimeout(tm);
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      const j = await r.json();
+      const votos = {};
+      NUMS.forEach(n => {
+        const c = (j.cand || []).find(x => String(x.n) === n) || {};
+        votos[n] = { votos: numTSE(c.vap) || 0, pct: numTSE(c.pvap) || 0 };
+      });
+      const eleitorado = numTSE(j.e), comp = numTSE(j.c), abst = numTSE(j.a);
+      const apurado = numTSE(j.ea) || ((comp || 0) + (abst || 0));
+      const pst = numTSE(j.pst) || 0;
+      const dif = Math.abs(votos[NUMS[0]].votos - votos[NUMS[1]].votos);
+      const restante = Math.max(0, (eleitorado || 0) - apurado);
+      ESTADO.tseDireto = {
+        ativa: true, fonte: 'TSE (leitura direta)', horaTSE: [j.dg, j.hg].filter(Boolean).join(' '),
+        pctSecoes: pst, eleitorado, comparecimento: comp, abstencao: abst, pctAbstencao: numTSE(j.pa),
+        brancos: numTSE(j.vb), pctBrancos: numTSE(j.pvb), nulos: numTSE(j.tvn) ?? numTSE(j.vn), pctNulos: numTSE(j.ptvn) ?? numTSE(j.pvn),
+        validos: numTSE(j.vv), votos, diferenca: dif, eleitoresRestantes: restante,
+        lider: votos[NUMS[0]].votos >= votos[NUMS[1]].votos ? NUMS[0] : NUMS[1],
+        decidido: pst >= 100 ? dif > 0 : (eleitorado ? dif > restante : false),
+        lidoEm: agora().toISOString(),
+      };
+      ESTADO.tseDiretoErro = null;
+    } catch (e) {
+      ESTADO.tseDiretoErro = e.name === 'TypeError' ? 'bloqueado pelo navegador (CORS) ou sem rede' : (e.message || String(e));
+    }
+  }
+
+  /* ================================================================ */
+  /* Cálculos                                                          */
+  /* ================================================================ */
+  const DIA = 864e5;
+
+  /** Converte cada pesquisa na base escolhida; devolve [{t, v:{13,22}, margem, amostra, p}] */
+  function pesquisasNaBase(base) {
+    const lista = ((ESTADO.dados && ESTADO.dados.pesquisas) || []).filter(p => /^(BR|[A-Z]{2})-\d{5}\/\d{4}$/.test(String(p.registroTSE || '')));
+    const out = [];
+    for (const p of lista) {
+      const a = +p[NUMS[0]], b = +p[NUMS[1]];
+      if (!Number.isFinite(a) || !Number.isFinite(b)) continue;
+      const t = new Date(p.campoFim + 'T12:00:00-03:00').getTime();
+      const margem = Number.isFinite(+p.margem) && p.margem !== null ? +p.margem : null;
+      let v = null, m = margem;
+      if (base === 'validos') {
+        const s = a + b;
+        v = { [NUMS[0]]: 100 * a / s, [NUMS[1]]: 100 * b / s };
+        if (p.tipo === 'totais' && margem != null) m = margem * 100 / s;
+      } else if (p.tipo === 'totais') {
+        v = { [NUMS[0]]: a, [NUMS[1]]: b };
+      }
+      if (v) out.push({ t, v, margem: m, amostra: +p.amostra || 1000, p });
+    }
+    return out.sort((x, y) => x.t - y.t);
+  }
+
+  /** Média ponderada no instante 'ref': peso = √amostra × 0,5^(idade/meia-vida), janela de N dias. */
+  function mediaEm(ref, lista) {
+    const tc = CONFIG.termometro;
+    const usadas = lista.filter(x => x.t <= ref + DIA / 2 && x.t > ref - tc.janelaDias * DIA);
+    if (!usadas.length) return null;
+    let sw = 0; const soma = { [NUMS[0]]: 0, [NUMS[1]]: 0 }; let sm = 0, swm = 0;
+    for (const x of usadas) {
+      const idade = Math.max(0, (ref - x.t) / DIA);
+      const w = Math.sqrt(x.amostra) * Math.pow(0.5, idade / tc.meiaVidaDias);
+      sw += w; NUMS.forEach(n => { soma[n] += w * x.v[n]; });
+      if (x.margem != null) { sm += w * x.margem; swm += w; }
+    }
+    return { v: { [NUMS[0]]: soma[NUMS[0]] / sw, [NUMS[1]]: soma[NUMS[1]] / sw }, margem: swm ? sm / swm : 2, n: usadas.length };
+  }
+
+  /** Média "agora" em votos válidos; se não houver pesquisa na janela, usa a janela da pesquisa mais recente. */
+  function mediaAtualValidos() {
+    const lista = pesquisasNaBase('validos');
+    if (!lista.length) return null;
+    let m = mediaEm(agora().getTime(), lista);
+    let antiga = false;
+    if (!m) { m = mediaEm(lista[lista.length - 1].t, lista); antiga = true; }
+    return m ? Object.assign(m, { antiga, ultima: lista[lista.length - 1].t }) : null;
+  }
+
+  function calcularTermometro() {
+    const tc = CONFIG.termometro;
+    const comp = {};
+    const m = mediaAtualValidos();
+    if (m) comp.pesquisas = { s: clamp((m.v[NUMS[1]] - m.v[NUMS[0]]) / tc.saturacaoPontos, -1, 1), info: m };
+    const md = ESTADO.dados && ESTADO.dados.midia;
+    if (md && md.tom) {
+      const liq = NUMS.map(n => {
+        const t = md.tom[n] || {}; const tot = (t.positivo || 0) + (t.neutro || 0) + (t.negativo || 0);
+        return tot ? ((t.positivo || 0) - (t.negativo || 0)) / tot : null;
+      });
+      if (liq[0] != null && liq[1] != null) comp.tom = { s: clamp((liq[1] - liq[0]) / 2, -1, 1), info: liq };
+    }
+    if (md && md.mencoes) {
+      const a = md.mencoes[NUMS[0]] || 0, b = md.mencoes[NUMS[1]] || 0;
+      if (a + b > 0) comp.volume = { s: (b - a) / (a + b), info: [a, b] };
+    }
+    let sw = 0, soma = 0;
+    for (const k of Object.keys(comp)) { sw += tc.pesos[k]; soma += tc.pesos[k] * comp[k].s; }
+    return { valor: sw ? 100 * soma / sw : null, comp, pesoUsado: sw };
+  }
+
+  /* ================================================================ */
+  /* Topo: contagem, selo, avisos                                      */
+  /* ================================================================ */
+  function renderContagem() {
+    const fim = new Date(CONFIG.votacao.fechamento).getTime();
+    const ab = new Date(CONFIG.votacao.abertura).getTime();
+    const t = agora().getTime();
+    const el = $('#contagem'); const rot = $('#rotulo-contagem');
+    if (t >= fim) { rot.textContent = 'Urnas'; el.textContent = 'fechadas às 17h de 25/10'; return; }
+    rot.textContent = t >= ab ? 'Votação em andamento; fecha em' : 'Fechamento das urnas em';
+    let s = Math.floor((fim - t) / 1000);
+    const d = Math.floor(s / 86400); s -= d * 86400;
+    const h = Math.floor(s / 3600); s -= h * 3600;
+    const m = Math.floor(s / 60);
+    el.textContent = (d ? `${d} ${d === 1 ? 'dia' : 'dias'}, ` : '') + `${String(h).padStart(2, '0')} h ${String(m).padStart(2, '0')} min`;
+  }
+
+  function idadeMin() {
+    const d = ESTADO.dados; if (!d) return null;
+    return (agora() - new Date(d.meta.atualizadoEm)) / 60000;
+  }
+
+  function renderSelo() {
+    const selo = $('#selo'); const d = ESTADO.dados; const idade = idadeMin();
+    if (!d) { selo.dataset.estado = 'velho'; selo.textContent = 'sem dados'; return; }
+    const velho = idade > CONFIG.dados.desatualizadoAposMin;
+    selo.dataset.estado = velho ? 'velho' : (apuracaoDeveAparecer() && divulgacaoComecou() ? 'vivo' : 'ok');
+    selo.textContent = `atualizado ${ha(idade)}`;
+    selo.title = 'Última coleta: ' + dataLonga(d.meta.atualizadoEm);
+    $('#rodape-hora').textContent = `Última coleta: ${dataLonga(d.meta.atualizadoEm)} (horário de Brasília). Página verificada às ${fmtData(agora(), { hour: '2-digit', minute: '2-digit' })}.`;
+  }
+
+  function renderAvisos() {
+    const box = $('#avisos'); const d = ESTADO.dados; const av = [];
+    if (!d) {
+      av.push(`<div class="aviso"><strong>Ainda não há dados para exibir.</strong> ${ESTADO.erro ? 'Motivo: ' + esc(ESTADO.erro) + '. ' : ''}O robô de coleta grava o arquivo dados.json na primeira execução; a página tenta de novo a cada ${CONFIG.dados.atualizarACadaSeg} segundos.</div>`);
+    } else {
+      if (d.meta.exemplo) av.push(`<div class="aviso exemplo"><strong>Dados de exemplo.</strong> ${esc(d.meta.notaExemplo || 'Notícias, pesquisas, mapa e apuração exibidos agora são fictícios, só para testar o site. Os números reais aparecem depois da primeira execução do robô.')}</div>`);
+      const idade = idadeMin();
+      if (idade > CONFIG.dados.desatualizadoAposMin) av.push(`<div class="aviso"><strong>Dados desatualizados.</strong> A última coleta foi ${ha(idade)} (${esc(dataHora(d.meta.atualizadoEm))}). O robô pode estar atrasado; exibindo o último dado válido.</div>`);
+      if (ESTADO.erro && ESTADO.origem === 'cache') av.push(`<div class="aviso"><strong>Sem conexão com dados.json.</strong> Exibindo a cópia guardada neste navegador. Motivo: ${esc(ESTADO.erro)}.</div>`);
+      else if (ESTADO.erro) av.push(`<div class="aviso"><strong>A última atualização falhou.</strong> Exibindo o último dado válido. Motivo: ${esc(ESTADO.erro)}.</div>`);
+      if (SIMULAR_APURACAO) av.push(`<div class="aviso exemplo"><strong>Modo de simulação.</strong> A apuração exibida é a de exemplo de dados.json. Remova <em>?simular=apuracao</em> do endereço para voltar ao normal.</div>`);
+    }
+    box.innerHTML = av.join('');
+  }
+
+  /* ================================================================ */
+  /* Duelo (candidatos)                                                */
+  /* ================================================================ */
+  function iniciais(nome) { return nome.split(/\s+/).filter(Boolean).map(p => p[0]).slice(0, 2).join('').toUpperCase(); }
+  function renderDuelo() {
+    const html = C.map((c, i) => {
+      const foto = c.foto
+        ? `<img class="cand-foto" src="${esc(c.foto)}" alt="Foto de ${esc(c.nomeCompleto || c.nome)}" width="56" height="56">`
+        : `<span class="cand-foto" aria-hidden="true">${esc(iniciais(c.nome))}</span>`;
+      return `<div class="cand ${i ? 'dir' : ''}">
+        ${foto}
+        <span class="cand-num" aria-label="Número ${esc(c.numero)}">${esc(c.numero)}</span>
+        <p class="cand-nome">${esc(c.nome)}</p>
+        <div class="cand-meta">${esc(c.partido)}<span class="cand-padrao ${c.padrao === 'listrado' ? 'seg-listrado' : 'seg-liso'}" style="--c:var(--texto)" title="Padrão usado nos gráficos" aria-hidden="true"></span><br><span class="fraco">${esc(c.nomeCompleto || '')}</span></div>
+      </div>`;
+    });
+    $('#duelo').innerHTML = html[0] + '<div class="versus" aria-hidden="true">x</div>' + html[1];
+  }
+
+  /* ================================================================ */
+  /* Leitura do momento                                                */
+  /* ================================================================ */
+  function aritmetica(a) {
+    const base = { [NUMS[0]]: +a.base[NUMS[0]], [NUMS[1]]: +a.base[NUMS[1]] };
+    const ganho = { [NUMS[0]]: 0, [NUMS[1]]: 0 };
+    for (const l of a.linhas) {
+      ganho[NUMS[0]] += l.pct * (+l['para' + NUMS[0]] || 0) / 100;
+      ganho[NUMS[1]] += l.pct * (+l['para' + NUMS[1]] || 0) / 100;
+    }
+    const fin = { [NUMS[0]]: base[NUMS[0]] + ganho[NUMS[0]], [NUMS[1]]: base[NUMS[1]] + ganho[NUMS[1]] };
+    const s = fin[NUMS[0]] + fin[NUMS[1]];
+    return { ganho, fin, val: { [NUMS[0]]: 100 * fin[NUMS[0]] / s, [NUMS[1]]: 100 * fin[NUMS[1]] / s } };
+  }
+
+  function renderLeitura() {
+    const sec = $('#leitura');
+    const a = ESTADO.dados && ESTADO.dados.analise;
+    if (!a) {
+      sec.innerHTML = `<div><h2 id="t-leitura">Leitura do momento</h2><p class="muted">Nenhuma análise publicada ainda. Edite config/analise.json.</p></div>`;
+      return;
+    }
+    const n0 = cand(NUMS[0]).nome, n1 = cand(NUMS[1]).nome;
+    const rotulos = [`Vantagem clara de ${n0}`, `Vantagem leve de ${n0}`, 'Indefinido', `Vantagem leve de ${n1}`, `Vantagem clara de ${n1}`];
+    const esc5 = clamp(+a.escala, 0, 4);
+    const idadeH = (agora() - new Date(a.dataAnalise)) / 36e5;
+    const velha = idadeH > (+a.revisarAposHoras || 48);
+
+    // Coerência com a média das pesquisas (votos válidos)
+    let coer = '';
+    const m = mediaAtualValidos();
+    if (velha) {
+      coer = `<p class="coerencia" data-tipo="velha"><strong>Análise sem revisão ${ha(idadeH * 60)}.</strong> Pode não refletir pesquisas, debates ou apoios mais recentes.</p>`;
+    }
+    if (m) {
+      const dif = m.v[NUMS[1]] - m.v[NUMS[0]];
+      const lider = dif >= 0 ? NUMS[1] : NUMS[0];
+      const txtMedia = `Média das pesquisas registradas em votos válidos: ${rotuloCand(NUMS[0])} ${nf(m.v[NUMS[0]])}%, ${rotuloCand(NUMS[1])} ${nf(m.v[NUMS[1]])}%${m.antiga ? ' (última pesquisa em ' + dataCurta(m.ultima) + ')' : ''}.`;
+      let tipo, msg;
+      if (Math.abs(dif) <= m.margem) { tipo = 'margem'; msg = `<strong>Pesquisas dentro da margem de erro.</strong> ${txtMedia}`; }
+      else if (esc5 === 2) { tipo = 'diverge'; msg = `<strong>As pesquisas apontam ${esc(cand(lider).nome)} à frente além da margem.</strong> ${txtMedia} Esta leitura precisa de revisão.`; }
+      else if (String(a.favorecido) === lider) { tipo = 'coerente'; msg = `<strong>Coerente com a média das pesquisas.</strong> ${txtMedia}`; }
+      else { tipo = 'diverge'; msg = `<strong>Divergência: as pesquisas recentes apontam ${esc(cand(lider).nome)} à frente além da margem.</strong> ${txtMedia} Esta leitura precisa de revisão.`; }
+      coer += `<p class="coerencia" data-tipo="${tipo}">${msg}</p>`;
+    } else {
+      coer += `<p class="coerencia" data-tipo="margem">Ainda não há pesquisa registrada na tabela para comparar com esta leitura.</p>`;
+    }
+
+    const fund = (a.fundamentos || []).map(f => {
+      const et = f.favorece === 'neutro' ? 'neutro' : (f.favorece ? 'favorece ' + cand(f.favorece).nome : '');
+      return `<div class="fund"><h4>${esc(f.titulo)}${et ? `<span class="etiqueta">${esc(et)}</span>` : ''}</h4><p>${esc(f.texto)}</p></div>`;
+    }).join('');
+    const vir = (a.podeVirar || []).map(f => `<div class="fund"><h4>${esc(f.titulo)}</h4><p>${esc(f.texto)}</p></div>`).join('');
+
+    let arit = '';
+    if (a.aritmetica && Array.isArray(a.aritmetica.linhas)) {
+      const r = aritmetica(a.aritmetica);
+      arit = `<h3 class="sub">Exercício de transferência de votos</h3>
+        <p class="muted" style="max-width:72ch;font-size:.92rem">${esc(a.aritmetica.descricao)}</p>
+        <div class="tabela-rolagem"><table>
+          <caption class="sr">Distribuição dos votos dos candidatos eliminados</caption>
+          <thead><tr><th>Eleitorado de</th><th class="n">% válidos no 1º turno</th><th class="n">Vai para ${esc(n0)}</th><th class="n">Vai para ${esc(n1)}</th><th>Origem</th></tr></thead>
+          <tbody>
+            <tr><td>Base: 1º turno</td><td class="n">—</td><td class="n">${nf(a.aritmetica.base[NUMS[0]], 2)}</td><td class="n">${nf(a.aritmetica.base[NUMS[1]], 2)}</td><td class="fraco">TSE</td></tr>
+            ${a.aritmetica.linhas.map(l => `<tr><td>${esc(l.grupo)}</td><td class="n">${nf(l.pct, 2)}</td><td class="n">+${nf(l.pct * (+l['para' + NUMS[0]] || 0) / 100, 2)} <span class="fraco">(${nf(l['para' + NUMS[0]], 0)}%)</span></td><td class="n">+${nf(l.pct * (+l['para' + NUMS[1]] || 0) / 100, 2)} <span class="fraco">(${nf(l['para' + NUMS[1]], 0)}%)</span></td><td class="fraco">${esc(l.origem)}</td></tr>`).join('')}
+            <tr><th>Resultado do exercício, em votos válidos</th><th class="n"></th><th class="n">${nf(r.val[NUMS[0]])}%</th><th class="n">${nf(r.val[NUMS[1]])}%</th><th></th></tr>
+          </tbody>
+        </table></div>`;
+    }
+
+    const fontes = (a.fontes || []).map(f => `<li><a href="${esc(urlSegura(f.url))}" target="_blank" rel="noopener noreferrer">${esc(f.titulo)}</a></li>`).join('');
+    const gatilhos = (a.gatilhos || []).map(g => `<li>${esc(g)}</li>`).join('');
+
+    sec.innerHTML = `
+      <div>
+        <h2 id="t-leitura">Leitura do momento</h2>
+        <p class="veredito">${esc(a.rotulo || rotulos[esc5])}</p>
+        <ol class="escala" aria-label="Escala de cinco posições, de vantagem clara de ${esc(n0)} a vantagem clara de ${esc(n1)}">
+          ${rotulos.map((r, i) => `<li aria-current="${i === esc5}" title="${esc(r)}"><span class="sr">${esc(r)}${i === esc5 ? ' (posição atual)' : ''}</span></li>`).join('')}
+        </ol>
+        <div class="escala-rotulos"><span>${esc(rotuloCand(NUMS[0]))}</span><span>indefinido</span><span>${esc(rotuloCand(NUMS[1]))}</span></div>
+        <div class="leitura-meta">
+          <span>Confiança da leitura: <b>${esc(a.confianca || '—')}</b></span>
+          <span>Análise de ${esc(dataLonga(a.dataAnalise))}</span>
+        </div>
+      </div>
+      <div class="leitura-texto">
+        <p class="clima">${esc(a.clima || '')}</p>
+        <p>${esc(a.resumo || '')}</p>
+        <p class="fraco" style="font-size:.86rem">Análise editorial com base em dados públicos. Não é pesquisa eleitoral nem previsão.</p>
+        ${coer}
+      </div>
+      <details class="mais">
+        <summary>Ver o raciocínio completo</summary>
+        <h3 class="sub">Por que esta leitura</h3>
+        <div class="fundamentos">${fund}</div>
+        <h3 class="sub">O que pode virar o quadro</h3>
+        <div class="fundamentos">${vir}</div>
+        ${arit}
+        ${gatilhos ? `<h3 class="sub">Quando revisar</h3><ul class="muted" style="max-width:72ch">${gatilhos}</ul>` : ''}
+        ${fontes ? `<h3 class="sub">Fontes</h3><ul class="lista-fontes">${fontes}</ul>` : ''}
+      </details>`;
+  }
+
+  /* ================================================================ */
+  /* Termômetro                                                        */
+  /* ================================================================ */
+  function renderTermometro() {
+    const box = $('#termo-corpo');
+    const r = calcularTermometro();
+    const tc = CONFIG.termometro;
+    const n0 = rotuloCand(NUMS[0]), n1 = rotuloCand(NUMS[1]);
+    let topo;
+    if (r.valor == null) {
+      topo = `<p class="vazio">Sem pesquisas nem manchetes suficientes para calcular o termômetro.</p>`;
+    } else {
+      const v = Math.round(r.valor);
+      const lado = v > 0 ? cand(NUMS[1]).nome : v < 0 ? cand(NUMS[0]).nome : null;
+      const pos = 50 + r.valor / 2;
+      const ticks = [-100, -50, 0, 50, 100].map(t => `<span class="marca-t ${t === 0 ? 'meio' : ''}" style="left:${50 + t / 2}%"></span>`).join('');
+      topo = `
+        <p class="termo-valor">${v === 0 ? 'Equilíbrio' : `${Math.abs(v)} pontos`}</p>
+        <p class="muted" style="margin:0">${lado ? `Inclinação em direção a ${esc(lado)}, numa escala de 0 a 100 para cada lado.` : 'Nenhum dos lados tem vantagem no indicador.'}${r.pesoUsado < 0.999 ? ' Calculado só com os componentes disponíveis.' : ''}</p>
+        <div class="termo-trilho" role="img" aria-label="Termômetro: ${v === 0 ? 'equilíbrio' : Math.abs(v) + ' pontos em direção a ' + esc(lado)}">
+          <span class="eixo"></span>${ticks}<span class="agulha" style="left:${clamp(pos, 0, 100)}%"></span>
+        </div>
+        <div class="termo-rotulos"><span>100 · ${esc(n0)}</span><span>0</span><span>${esc(n1)} · 100</span></div>`;
+    }
+    const nomeComp = { pesquisas: 'Média das pesquisas (votos válidos)', tom: 'Tom das manchetes', volume: 'Volume de menções' };
+    const desc = k => {
+      const c = r.comp[k]; if (!c) return 'sem dados';
+      if (k === 'pesquisas') return `${esc(cand(NUMS[0]).nome)} ${nf(c.info.v[NUMS[0]])}% × ${esc(cand(NUMS[1]).nome)} ${nf(c.info.v[NUMS[1]])}%`;
+      if (k === 'tom') {
+        const sg = x => (x > 0 ? '+' : '') + nf(x * 100, 0);
+        return `saldo de tom: ${esc(cand(NUMS[0]).nome)} ${sg(c.info[0])}, ${esc(cand(NUMS[1]).nome)} ${sg(c.info[1])}`;
+      }
+      return `${ni(c.info[0])} × ${ni(c.info[1])} menções`;
+    };
+    const linhas = ['pesquisas', 'tom', 'volume'].map(k => {
+      const c = r.comp[k];
+      return `<tr><td>${nomeComp[k]}</td><td class="fraco">${desc(k)}</td><td class="n">${c ? nf(c.s, 2) : '—'}</td><td class="n">${nf(tc.pesos[k] * 100, 0)}%</td><td class="n">${c && r.pesoUsado ? nf(100 * tc.pesos[k] * c.s / r.pesoUsado, 1) : '—'}</td></tr>`;
+    }).join('');
+    box.innerHTML = topo + `
+      <div class="tabela-rolagem" style="margin-top:22px"><table>
+        <caption class="sr">Componentes do termômetro</caption>
+        <thead><tr><th>Componente</th><th>Dado</th><th class="n">Sinal (−1 a +1)</th><th class="n">Peso</th><th class="n">Contribuição</th></tr></thead>
+        <tbody>${linhas}</tbody>
+      </table></div>
+      <p class="fraco" style="font-size:.86rem;margin-top:10px">Sinal negativo puxa para ${esc(cand(NUMS[0]).nome)}; positivo, para ${esc(cand(NUMS[1]).nome)}. Indicador ilustrativo: não é pesquisa nem previsão.</p>`;
+    $('#met-formula').innerHTML = formulaHTML();
+  }
+
+  function formulaHTML() {
+    const tc = CONFIG.termometro; const a = cand(NUMS[0]).nome, b = cand(NUMS[1]).nome;
+    return `<div class="formula">
+      <p><code>T = 100 × (${tc.pesos.pesquisas} × P + ${tc.pesos.tom} × M + ${tc.pesos.volume} × V)</code>, de −100 (${esc(a)}) a +100 (${esc(b)}). Se faltar algum componente, os pesos dos disponíveis são reescalados para somar 1.</p>
+      <p><strong>P, pesquisas:</strong> diferença entre ${esc(b)} e ${esc(a)} na média ponderada de votos válidos, dividida por ${tc.saturacaoPontos} e limitada a ±1. Peso de cada pesquisa = √amostra × 0,5^(idade em dias ÷ ${tc.meiaVidaDias}); entram as dos últimos ${tc.janelaDias} dias.</p>
+      <p><strong>M, tom:</strong> para cada candidato, (positivas − negativas) ÷ total de manchetes que o citam nas últimas ${CONFIG.midia.janelaHoras} h. M = (saldo de ${esc(b)} − saldo de ${esc(a)}) ÷ 2.</p>
+      <p style="margin:0"><strong>V, volume:</strong> (menções a ${esc(b)} − menções a ${esc(a)}) ÷ total de menções no mesmo período.</p>
+    </div>`;
+  }
+
+  /* ================================================================ */
+  /* Pesquisas                                                         */
+  /* ================================================================ */
+  function renderPesquisas() {
+    const base = ESTADO.basePesq;
+    $$('#pesquisas .alternador button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.base === base)));
+    const lista = pesquisasNaBase(base);
+    const todas = (ESTADO.dados && ESTADO.dados.pesquisas) || [];
+
+    // Média atual
+    const m = lista.length ? (mediaEm(agora().getTime(), lista) || mediaEm(lista[lista.length - 1].t, lista)) : null;
+    $('#pesq-media').innerHTML = m
+      ? `<div class="media-atual">${NUMS.map(n => `<div><span class="fraco">${esc(rotuloCand(n))}</span><b>${nf(m.v[n])}%</b></div>`).join('')}<div><span class="fraco">Margem média</span><b>±${nf(m.margem)}</b></div></div>`
+      : '';
+    $('#pesq-legenda').innerHTML = NUMS.map(n => `<span><i class="amostra-padrao ${cand(n).padrao === 'listrado' ? 'listrado' : 'liso'}"></i>${esc(rotuloCand(n))}</span>`).join('') +
+      `<span class="fraco">Pontos: pesquisas. Linha: média ponderada. Faixa: margem de erro.</span>`;
+
+    // Tabela
+    const ordenadas = todas.slice().sort((a, b) => String(b.campoFim).localeCompare(String(a.campoFim)));
+    $('#pesq-tabela').innerHTML = ordenadas.length ? `<table>
+      <caption class="sr">Pesquisas de 2º turno registradas no TSE</caption>
+      <thead><tr><th>Instituto</th><th>Campo</th><th class="n">Amostra</th><th class="n">Margem</th><th>Registro TSE</th><th>Base</th>${NUMS.map(n => `<th class="n">${esc(rotuloCand(n))}</th>`).join('')}<th class="n">Outros</th><th>Fonte</th></tr></thead>
+      <tbody>${ordenadas.map(p => `<tr>
+        <td>${esc(p.instituto)}${p.contratante ? `<br><span class="fraco">${esc(p.contratante)}</span>` : ''}${p.exemplo ? '<br><span class="fraco">exemplo</span>' : ''}</td>
+        <td class="nw">${esc(dataCurta(p.campoInicio + 'T12:00:00-03:00'))} a ${esc(dataCurta(p.campoFim + 'T12:00:00-03:00'))}</td>
+        <td class="n">${ni(p.amostra)}</td><td class="n nw">${p.margem != null ? '±' + nf(p.margem) : '—'}</td>
+        <td class="nw">${esc(p.registroTSE)}</td><td>${p.tipo === 'validos' ? 'válidos' : 'totais'}</td>
+        ${NUMS.map(n => `<td class="n">${nf(p[n], 0)}%</td>`).join('')}
+        <td class="n">${p.naoValidos != null ? nf(p.naoValidos, 0) + '%' : '—'}</td>
+        <td>${p.fonte ? `<a href="${esc(urlSegura(p.fonte))}" target="_blank" rel="noopener noreferrer">ver</a>` : '—'}</td>
+      </tr>${p.observacao ? `<tr><td colspan="${8 + NUMS.length}" class="fraco" style="border-bottom-color:var(--linha);padding-top:0;font-size:.84rem">${esc(p.observacao)}</td></tr>` : ''}`).join('')}</tbody></table>`
+      : `<p class="vazio">Nenhuma pesquisa registrada na tabela ainda. Inclua novas pesquisas em config/pesquisas.json.</p>`;
+
+    desenharGrafico(lista, base);
+  }
+
+  function desenharGrafico(lista, base) {
+    const canvas = $('#grafico-pesq');
+    const caixa = canvas.parentElement;
+    if (!window.Chart) {
+      caixa.style.height = 'auto';
+      canvas.style.display = 'none';
+      if (!$('.sem-grafico', caixa)) caixa.insertAdjacentHTML('beforeend', '<p class="vazio sem-grafico">O gráfico não carregou (biblioteca indisponível). Os números estão na tabela abaixo.</p>');
+      return;
+    }
+    if (!lista.length) {
+      if (ESTADO.grafico) { ESTADO.grafico.destroy(); ESTADO.grafico = null; }
+      canvas.style.display = 'none';
+      if (!$('.sem-grafico', caixa)) caixa.insertAdjacentHTML('beforeend', `<p class="vazio sem-grafico">Sem pesquisas em ${base === 'validos' ? 'votos válidos' : 'votos totais'} para desenhar.</p>`);
+      return;
+    }
+    canvas.style.display = ''; const aviso = $('.sem-grafico', caixa); if (aviso) aviso.remove();
+    const datas = [...new Set(lista.map(x => x.t))].sort((a, b) => a - b);
+    const ds = [];
+    const corTexto = '#edece9', corFraca = '#8d8f96', corLinha = '#2a2b2f';
+    NUMS.forEach(n => {
+      const c = cand(n); const listrado = c.padrao === 'listrado';
+      const medias = datas.map(t => { const m = mediaEm(t, lista); return m ? { x: t, y: m.v[n], mg: m.margem } : null; }).filter(Boolean);
+      ds.push({ label: `${rotuloCand(n)}: faixa superior`, data: medias.map(p => ({ x: p.x, y: p.y + p.mg })), borderWidth: 0, pointRadius: 0, fill: false, _faixa: true });
+      ds.push({ label: `${rotuloCand(n)}: faixa inferior`, data: medias.map(p => ({ x: p.x, y: p.y - p.mg })), borderWidth: 0, pointRadius: 0, fill: '-1', backgroundColor: listrado ? 'rgba(230,229,225,.05)' : 'rgba(230,229,225,.09)', _faixa: true });
+      ds.push({ label: `${rotuloCand(n)}: média`, data: medias.map(p => ({ x: p.x, y: p.y })), borderColor: c.cor || corTexto, borderWidth: 2, borderDash: listrado ? [7, 5] : [], pointRadius: 0, tension: .25, fill: false });
+      ds.push({ label: `${rotuloCand(n)}: pesquisas`, data: lista.map(x => ({ x: x.t, y: x.v[n], inst: x.p.instituto, reg: x.p.registroTSE })), showLine: false, pointStyle: listrado ? 'rect' : 'circle', pointRadius: 4.5, pointHoverRadius: 6, borderColor: c.cor || corTexto, backgroundColor: listrado ? '#0c0c0d' : (c.cor || corTexto), borderWidth: 1.5 });
+    });
+    const xs = lista.map(x => x.t); const ys = lista.flatMap(x => NUMS.map(n => x.v[n]));
+    const minY = Math.floor((Math.min(...ys) - 6) / 2) * 2, maxY = Math.ceil((Math.max(...ys) + 6) / 2) * 2;
+    const cfg = {
+      type: 'line',
+      data: { datasets: ds },
+      options: {
+        responsive: true, maintainAspectRatio: false, animation: { duration: 500 },
+        interaction: { mode: 'nearest', intersect: false },
+        parsing: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            filter: it => !it.dataset._faixa,
+            backgroundColor: '#1b1c1f', borderColor: '#3d3f44', borderWidth: 1, titleColor: corTexto, bodyColor: corTexto,
+            callbacks: {
+              title: its => its.length ? dataCurta(its[0].parsed.x) : '',
+              label: it => {
+                const r = it.raw || {}; const nome = it.dataset.label.replace(/: (média|pesquisas)$/, '');
+                return r.inst ? `${nome}: ${nf(it.parsed.y)}% (${r.inst}, ${r.reg})` : `${nome}, média: ${nf(it.parsed.y)}%`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: { type: 'linear', min: Math.min(...xs) - 2 * DIA, max: Math.max(Math.max(...xs), agora().getTime()) + DIA,
+            grid: { color: corLinha }, border: { color: corLinha },
+            ticks: { color: corFraca, maxTicksLimit: 8, callback: v => dataCurta(v) } },
+          y: { min: minY, max: maxY, grid: { color: ctx => ctx.tick.value === 50 && base === 'validos' ? '#5a5c62' : corLinha }, border: { color: corLinha },
+            ticks: { color: corFraca, callback: v => v + '%' } }
+        }
+      }
+    };
+    if (ESTADO.grafico) { ESTADO.grafico.data = cfg.data; ESTADO.grafico.options = cfg.options; ESTADO.grafico.update(); }
+    else { Chart.defaults.font.family = getComputedStyle(document.body).fontFamily; ESTADO.grafico = new Chart(canvas, cfg); }
+    canvas.setAttribute('aria-label', `Evolução das pesquisas em ${base === 'validos' ? 'votos válidos' : 'votos totais'}: ${lista.length} pesquisas. Os valores estão na tabela abaixo.`);
+  }
+
+  /* ================================================================ */
+  /* Mapa (grade de UFs)                                               */
+  /* ================================================================ */
+  const GRADE = {
+    RR: [0, 2], AP: [0, 3],
+    AM: [1, 1], PA: [1, 2], MA: [1, 3], CE: [1, 4], RN: [1, 5],
+    AC: [2, 0], RO: [2, 1], TO: [2, 2], PI: [2, 3], PE: [2, 4], PB: [2, 5],
+    MT: [3, 1], GO: [3, 2], BA: [3, 3], SE: [3, 4], AL: [3, 5],
+    MS: [4, 1], DF: [4, 2], MG: [4, 3], ES: [4, 4],
+    PR: [5, 1], SP: [5, 2], RJ: [5, 3],
+    SC: [6, 1],
+    RS: [7, 1], ZZ: [7, 3]
+  };
+  const NOMES_UF = { AC: 'Acre', AL: 'Alagoas', AP: 'Amapá', AM: 'Amazonas', BA: 'Bahia', CE: 'Ceará', DF: 'Distrito Federal', ES: 'Espírito Santo', GO: 'Goiás', MA: 'Maranhão', MT: 'Mato Grosso', MS: 'Mato Grosso do Sul', MG: 'Minas Gerais', PA: 'Pará', PB: 'Paraíba', PR: 'Paraná', PE: 'Pernambuco', PI: 'Piauí', RJ: 'Rio de Janeiro', RN: 'Rio Grande do Norte', RS: 'Rio Grande do Sul', RO: 'Rondônia', RR: 'Roraima', SC: 'Santa Catarina', SP: 'São Paulo', SE: 'Sergipe', TO: 'Tocantins', ZZ: 'Exterior' };
+
+  function fonteMapa(turno) {
+    const d = ESTADO.dados || {};
+    if (turno === 2) {
+      const ap = d.apuracao;
+      if (!ap || (!ap.ativa && !SIMULAR_APURACAO) || !ap.uf) return null;
+      if (ap.exemplo && !SIMULAR_APURACAO) return null;
+      return ap.uf;
+    }
+    return d.primeiroTurno && d.primeiroTurno.uf;
+  }
+
+  function corMargem(dif) {
+    const k = clamp(Math.abs(dif) / 30, 0, 1);
+    const a = [27, 28, 31], b = [107, 109, 115];
+    return `rgb(${a.map((x, i) => Math.round(x + (b[i] - x) * k)).join(',')})`;
+  }
+
+  function renderMapa() {
+    if (ESTADO.turnoMapa == null) ESTADO.turnoMapa = fonteMapa(2) ? 2 : 1;
+    const turno = ESTADO.turnoMapa;
+    $$('#mapa .alternador button').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.turno === turno)));
+    $('#mapa-desc').textContent = turno === 2
+      ? 'Apuração do 2º turno em cada UF e no exterior, com o percentual de seções totalizadas.'
+      : 'Resultado do 1º turno para Presidente em cada UF e no exterior.';
+    const fonte = fonteMapa(turno) || {};
+    const grade = $('#mapa-grade');
+    const linhas = Math.max(...Object.values(GRADE).map(p => p[0])) + 1;
+    grade.style.gridTemplateRows = `repeat(${linhas}, auto)`;
+    grade.innerHTML = Object.entries(GRADE).map(([uf, [r, c]]) => {
+      const u = fonte[uf];
+      const estilo = `grid-row:${r + 1};grid-column:${c + 1}${uf === 'ZZ' ? ' / span 2' : ''};`;
+      if (!u) return `<button type="button" class="uf sem ${uf === 'ZZ' ? 'ext' : ''}" style="${estilo}" aria-label="${NOMES_UF[uf]}: sem dados" disabled><span class="sg">${uf === 'ZZ' ? 'Exterior' : uf}</span></button>`;
+      const p0 = (u[NUMS[0]] || {}).pct || 0, p1 = (u[NUMS[1]] || {}).pct || 0;
+      const lider = p1 > p0 ? NUMS[1] : NUMS[0];
+      const s = p0 + p1 || 1;
+      const label = `${NOMES_UF[uf]}: ${rotuloCand(NUMS[0])} ${nf(p0)}%, ${rotuloCand(NUMS[1])} ${nf(p1)}%` + (turno === 2 ? `, ${nf(u.pctSecoes, 2)}% das seções totalizadas` : '');
+      return `<button type="button" class="uf ${uf === 'ZZ' ? 'ext' : ''}" style="${estilo}background:${corMargem(p1 - p0)};${turno === 2 ? `opacity:${0.45 + 0.55 * clamp((u.pctSecoes || 0) / 100, 0, 1)}` : ''}" data-uf="${uf}" aria-pressed="${ESTADO.ufSel === uf}" aria-label="${esc(label)}">
+        <span class="sg">${uf === 'ZZ' ? 'Exterior' : uf}</span>
+        <span class="ld">${p0 === p1 ? 'empate' : `<b>${esc(lider)}</b> ${nf(Math.max(p0, p1), 0)}%`}</span>
+        <span class="barra" aria-hidden="true"><i class="${segClasse(NUMS[0])}" style="--c:var(--texto);width:${100 * p0 / s}%"></i><i class="${segClasse(NUMS[1])}" style="--c:var(--texto);width:${100 * p1 / s}%"></i></span>
+      </button>`;
+    }).join('');
+    $('#mapa-leg').innerHTML = `
+      <span>Tom do quadro: <i class="degrade" aria-hidden="true"></i> mais claro = diferença maior entre os dois, para qualquer lado.</span>
+      <span>No quadro: número do candidato à frente e seu percentual de votos válidos. Barra: <i class="amostra-padrao liso"></i>${esc(rotuloCand(NUMS[0]))}, <i class="amostra-padrao listrado"></i>${esc(rotuloCand(NUMS[1]))}.</span>
+      ${turno === 2 ? '<span>Quadros mais apagados: menos seções totalizadas.</span>' : ''}
+      ${!Object.keys(fonte).length ? `<span>${turno === 2 ? 'A apuração por estado aparece a partir das 17h de 25/10.' : 'O resultado do 1º turno aparece depois da primeira coleta do robô.'}</span>` : ''}`;
+    renderDetalheUF(fonte, turno);
+  }
+
+  function renderDetalheUF(fonte, turno) {
+    const uf = ESTADO.ufSel; const u = fonte[uf]; const box = $('#mapa-detalhe');
+    if (!u) { box.innerHTML = `<h3>${esc(NOMES_UF[uf] || uf)}</h3><p class="muted">Sem dados para esta área.</p>`; return; }
+    const p0 = (u[NUMS[0]] || {}), p1 = (u[NUMS[1]] || {});
+    const s = (p0.pct || 0) + (p1.pct || 0) || 1;
+    box.innerHTML = `<h3>${esc(NOMES_UF[uf])}</h3>
+      <p class="fraco" style="margin:0 0 10px">${turno === 2 ? `2º turno, ${nf(u.pctSecoes, 2)}% das seções totalizadas` : '1º turno'}${u.horaTSE ? `, TSE às ${esc(u.horaTSE)}` : ''}</p>
+      <div class="barra-dupla" aria-hidden="true"><i class="${segClasse(NUMS[0])}" style="--c:var(--texto);width:${100 * (p0.pct || 0) / s}%"></i><i class="${segClasse(NUMS[1])}" style="--c:var(--texto);width:${100 * (p1.pct || 0) / s}%"></i></div>
+      <table><tbody>
+        ${NUMS.map(n => `<tr><td>${esc(rotuloCand(n))}</td><td class="n">${nf((u[n] || {}).pct, 2)}%</td><td class="n">${ni((u[n] || {}).votos)} votos</td></tr>`).join('')}
+        ${u.outros && turno === 1 ? `<tr><td>Outros candidatos</td><td class="n">${nf(u.outros.pct, 2)}%</td><td class="n">${ni(u.outros.votos)} votos</td></tr>` : ''}
+        <tr><td>Brancos</td><td class="n"></td><td class="n">${ni(u.brancos)}</td></tr>
+        <tr><td>Nulos</td><td class="n"></td><td class="n">${ni(u.nulos)}</td></tr>
+        <tr><td>Abstenção</td><td class="n"></td><td class="n">${ni(u.abstencao)}</td></tr>
+      </tbody></table>
+      <p class="fraco" style="font-size:.84rem">Diferença: ${ni(Math.abs((p0.votos || 0) - (p1.votos || 0)))} votos.</p>`;
+  }
+
+  /* ================================================================ */
+  /* Radar da mídia                                                    */
+  /* ================================================================ */
+  function renderMidia() {
+    const d = ESTADO.dados || {};
+    const md = d.midia || {};
+    const noticias = d.noticias || [];
+    const jan = md.janelaHoras || CONFIG.midia.janelaHoras;
+
+    $('#midia-resumo').innerHTML = NUMS.map(n => {
+      const t = (md.tom && md.tom[n]) || { positivo: 0, neutro: 0, negativo: 0 };
+      const tot = t.positivo + t.neutro + t.negativo || 0;
+      const pc = k => tot ? 100 * t[k] / tot : 0;
+      return `<div class="midia-cand">
+        <h3>${esc(rotuloCand(n))}</h3>
+        <span class="grande">${ni((md.mencoes || {})[n] || 0)}</span> <span class="muted">manchetes com menção nas últimas ${jan} h</span>
+        <div class="tom-barra" role="img" aria-label="Tom: ${nf(pc('positivo'), 0)}% positivo, ${nf(pc('neutro'), 0)}% neutro, ${nf(pc('negativo'), 0)}% negativo">
+          ${tot ? `<i class="tom-pos" style="width:${pc('positivo')}%"></i><i class="tom-neu" style="width:${pc('neutro')}%"></i><i class="tom-neg" style="width:${pc('negativo')}%"></i>` : '<i class="tom-neu" style="width:100%;opacity:.3"></i>'}
+        </div>
+        <div class="tom-leg"><span><i class="tom-pos"></i>positivo ${nf(pc('positivo'), 0)}%</span><span><i class="tom-neu"></i>neutro ${nf(pc('neutro'), 0)}%</span><span><i class="tom-neg"></i>negativo ${nf(pc('negativo'), 0)}%</span></div>
+      </div>`;
+    }).join('');
+
+    // Filtros
+    const selV = $('#f-veiculo'); const atualV = selV.value;
+    const veiculos = [...new Set(noticias.map(n => n.veiculo))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+    selV.innerHTML = '<option value="">Todos</option>' + veiculos.map(v => `<option${v === atualV ? ' selected' : ''}>${esc(v)}</option>`).join('');
+    const selC = $('#f-cand'); const atualC = selC.value;
+    selC.innerHTML = '<option value="">Todos</option>' + NUMS.map(n => `<option value="${n}"${n === atualC ? ' selected' : ''}>${esc(rotuloCand(n))}</option>`).join('') + `<option value="ambos"${atualC === 'ambos' ? ' selected' : ''}>Os dois na mesma manchete</option>`;
+    renderFeed();
+
+    // Nuvem
+    const termos = md.termos || [];
+    const max = termos.length ? termos[0][1] : 1, min = termos.length ? termos[termos.length - 1][1] : 1;
+    const tons = ['#edece9', '#cfd0d4', '#b6b7bc', '#9a9ca2'];
+    $('#nuvem').innerHTML = termos.length ? termos.map(([t, c], i) => {
+      const k = max === min ? .5 : (c - min) / (max - min);
+      return `<span style="font-size:${(0.95 + k * 1.25).toFixed(2)}rem;color:${tons[Math.min(3, Math.floor(i / 10))]}" title="${c} ocorrências">${esc(t)}</span>`;
+    }).join('') : '<span class="fraco" style="font-family:var(--sans)">Sem termos suficientes no período.</span>';
+
+    // Série diária
+    const serie = (md.serieDiaria || []).slice(-10);
+    if (serie.length) {
+      const mx = Math.max(1, ...serie.flatMap(s => NUMS.map(n => s[n] || 0)));
+      $('#serie').innerHTML = `<div class="serie" role="img" aria-label="Menções por dia: ${serie.map(s => `${dataCurta(s.dia + 'T12:00:00-03:00')} ${NUMS.map(n => cand(n).nome + ' ' + (s[n] || 0)).join(', ')}`).join('; ')}">
+        ${serie.map(s => `<div class="dia">${NUMS.map(n => `<i class="${segClasse(n)}" style="--c:var(--texto-2);height:${100 * (s[n] || 0) / mx}%" title="${esc(cand(n).nome)}: ${s[n] || 0}"></i>`).join('')}</div>`).join('')}
+      </div><div class="serie-rot">${serie.map(s => `<span>${dataCurta(s.dia + 'T12:00:00-03:00')}</span>`).join('')}</div>
+      <div class="legenda" style="margin-top:8px">${NUMS.map(n => `<span><i class="amostra-padrao ${cand(n).padrao === 'listrado' ? 'listrado' : 'liso'}"></i>${esc(cand(n).nome)}</span>`).join('')}</div>`;
+    } else {
+      $('#serie').innerHTML = '<p class="fraco">Sem histórico ainda.</p>';
+    }
+  }
+
+  function renderFeed() {
+    const d = ESTADO.dados || {};
+    const v = $('#f-veiculo').value, c = $('#f-cand').value, t = $('#f-tom').value;
+    const lista = (d.noticias || []).filter(n =>
+      (!v || n.veiculo === v) &&
+      (!c || (c === 'ambos' ? NUMS.every(x => n.mencoes.includes(x)) : n.mencoes.includes(c))) &&
+      (!t || n.tom === t));
+    const mostrar = lista.slice(0, ESTADO.feedLimite);
+    $('#feed-contagem').textContent = lista.length ? `${lista.length} manchete${lista.length > 1 ? 's' : ''} nos últimos 7 dias.` : '';
+    $('#feed').innerHTML = mostrar.length ? mostrar.map(n => `<li>
+      <a class="tit" href="${esc(urlSegura(n.link))}" target="_blank" rel="noopener noreferrer">${esc(n.titulo)}</a>
+      ${n.resumo ? `<p class="res">${esc(n.resumo)}</p>` : ''}
+      <div class="meta"><span>${esc(n.veiculo)}</span><time datetime="${esc(n.dataPub)}">${esc(dataHora(n.dataPub))}</time><span>${n.mencoes.length ? 'cita ' + n.mencoes.map(x => esc(cand(x).nome)).join(' e ') : 'sem menção direta'}</span><span>tom ${esc(n.tom)}</span></div>
+    </li>`).join('') : '<li class="fraco">Nenhuma manchete com esses filtros.</li>';
+    $('#feed-mais').hidden = lista.length <= ESTADO.feedLimite;
+  }
+
+  /* ================================================================ */
+  /* Apuração                                                          */
+  /* ================================================================ */
+  function renderApuracao() {
+    const sec = $('#apuracao'); const box = $('#apuracao-corpo');
+    if (!apuracaoDeveAparecer()) { sec.hidden = true; return; }
+    sec.hidden = false;
+    if (!divulgacaoComecou()) {
+      box.innerHTML = `<p class="apu-pct">Votação em andamento</p><p class="muted">O TSE começa a divulgar a totalização às 17h (horário de Brasília). Esta seção passa a se atualizar sozinha.</p>`;
+      return;
+    }
+    const d = ESTADO.dados || {};
+    let ap = null;
+    if (SIMULAR_APURACAO) ap = d.apuracao;
+    else {
+      const espelho = d.apuracao && d.apuracao.ativa && !d.apuracao.exemplo ? d.apuracao : null;
+      ap = ESTADO.tseDireto && (!espelho || (ESTADO.tseDireto.pctSecoes >= (espelho.pctSecoes || 0))) ? ESTADO.tseDireto : espelho;
+    }
+    if (!ap || !ap.votos) {
+      box.innerHTML = `<p class="vazio">Aguardando os primeiros números do TSE.${ESTADO.tseDiretoErro ? ' Leitura direta: ' + esc(ESTADO.tseDiretoErro) + '; usando a cópia do robô assim que ela chegar.' : ''}</p>`;
+      return;
+    }
+    const v0 = ap.votos[NUMS[0]] || {}, v1 = ap.votos[NUMS[1]] || {};
+    const s = (v0.votos || 0) + (v1.votos || 0) || 1;
+    const lider = ap.lider || ((v1.votos || 0) > (v0.votos || 0) ? NUMS[1] : NUMS[0]);
+    const decidido = !!ap.decidido;
+    box.innerHTML = `
+      <div class="apu-topo"><span class="apu-pct">${nf(ap.pctSecoes, 2)}%</span><span class="muted">das seções totalizadas${ap.horaTSE ? `, TSE às ${esc(ap.horaTSE)}` : ''}</span></div>
+      <div class="progresso" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${(+ap.pctSecoes || 0).toFixed(2)}" aria-label="Seções totalizadas"><i style="width:${clamp(+ap.pctSecoes || 0, 0, 100)}%"></i></div>
+      <div class="apu-cands">${NUMS.map(n => { const v = ap.votos[n] || {}; return `<div class="apu-cand">
+        <h3>${esc(rotuloCand(n))}</h3><span class="pct">${nf(v.pct, 2)}%</span>
+        <div class="muted">${ni(v.votos)} votos</div></div>`; }).join('')}</div>
+      <div class="barra-dupla" style="height:18px;margin-top:18px" aria-hidden="true"><i class="${segClasse(NUMS[0])}" style="--c:var(--texto);width:${100 * (v0.votos || 0) / s}%"></i><i class="${segClasse(NUMS[1])}" style="--c:var(--texto);width:${100 * (v1.votos || 0) / s}%"></i></div>
+      <dl class="apu-num">
+        <div><dt>Diferença</dt><dd>${ni(ap.diferenca != null ? ap.diferenca : Math.abs((v0.votos || 0) - (v1.votos || 0)))} votos</dd></div>
+        <div><dt>Brancos</dt><dd>${ni(ap.brancos)} <span class="fraco">(${nf(ap.pctBrancos, 2)}%)</span></dd></div>
+        <div><dt>Nulos</dt><dd>${ni(ap.nulos)} <span class="fraco">(${nf(ap.pctNulos, 2)}%)</span></dd></div>
+        <div><dt>Abstenção</dt><dd>${ni(ap.abstencao)} <span class="fraco">(${nf(ap.pctAbstencao, 2)}%)</span></dd></div>
+        <div><dt>Eleitores ainda não apurados</dt><dd>${ni(ap.eleitoresRestantes)}</dd></div>
+      </dl>
+      <div class="decisao" data-decidido="${decidido}">
+        ${decidido
+          ? `<strong>Resultado matematicamente definido: ${esc(rotuloCand(lider))}</strong><span class="muted">A diferença supera o número de eleitores ainda não apurados. O resultado oficial é o proclamado pelo TSE.</span>`
+          : `<strong>Ainda não definido</strong><span class="muted">${esc(cand(lider).nome)} está à frente, mas a diferença ainda é menor do que o número de eleitores não apurados. Não fazemos projeção antes disso.</span>`}
+      </div>
+      <p class="fraco" style="font-size:.84rem;margin-top:12px">Fonte: ${esc(ap.fonte || 'TSE')}${ap.espelhadoEm ? `, copiado às ${esc(fmtData(ap.espelhadoEm, { hour: '2-digit', minute: '2-digit' }))}` : ''}.${ESTADO.tseDiretoErro && !SIMULAR_APURACAO ? ' Leitura direta do TSE: ' + esc(ESTADO.tseDiretoErro) + '.' : ''}</p>`;
+  }
+
+  /* ================================================================ */
+  /* Linha do tempo                                                    */
+  /* ================================================================ */
+  function renderLinha() {
+    const ev = ((ESTADO.dados && ESTADO.dados.linhaTempo) || []).slice().sort((a, b) => String(a.data).localeCompare(String(b.data)));
+    const t = agora().getTime();
+    const prox = ev.find(e => new Date(e.data).getTime() >= t);
+    const tipos = { tse: 'Calendário TSE', debate: 'Debate', fato: 'Campanha' };
+    $('#tempo-lista').innerHTML = ev.length ? ev.map(e => {
+      const est = e === prox ? 'proximo' : new Date(e.data).getTime() < t ? 'passado' : 'futuro';
+      return `<li data-estado="${est}"><time datetime="${esc(e.data)}">${esc(fmtData(e.data, { weekday: 'short', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }))}, ${esc(tipos[e.tipo] || e.tipo)}${e === prox ? ', próximo' : ''}</time>
+        <h3>${e.link ? `<a href="${esc(urlSegura(e.link))}" target="_blank" rel="noopener noreferrer">${esc(e.titulo)}</a>` : esc(e.titulo)}</h3>
+        ${e.detalhe ? `<p>${esc(e.detalhe)}</p>` : ''}</li>`;
+    }).join('') : '<li>Sem eventos cadastrados.</li>';
+  }
+
+  /* ================================================================ */
+  /* Metodologia dinâmica                                              */
+  /* ================================================================ */
+  function renderMetodologia() {
+    const d = ESTADO.dados; const box = $('#met-fontes');
+    if (!d) { box.innerHTML = ''; return; }
+    const ok = (d.meta.fontesOk || []).map(f => `<li>${esc(f.nome)} <span class="fraco">(${f.aproveitados} de ${f.itens} itens sobre a disputa)</span></li>`).join('');
+    const falha = (d.meta.fontesFalha || []).map(f => `<li>${esc(f.nome)} <span class="fraco">(${esc(f.erro)})</span></li>`).join('');
+    const avisos = (d.meta.avisos || []).map(a => `<li>${esc(a)}</li>`).join('');
+    box.innerHTML = `
+      <p>Na última coleta (${esc(dataLonga(d.meta.atualizadoEm))}), ${(d.meta.fontesOk || []).length} feeds responderam e ${(d.meta.fontesFalha || []).length} falharam.</p>
+      ${ok ? `<ul class="lista-fontes">${ok}</ul>` : ''}
+      ${falha ? `<p>Feeds que falharam nesta coleta:</p><ul class="lista-fontes">${falha}</ul>` : ''}
+      ${avisos ? `<p>Avisos do robô:</p><ul>${avisos}</ul>` : ''}`;
+  }
+
+  /* ================================================================ */
+  /* Orquestração                                                      */
+  /* ================================================================ */
+  function renderTudo() {
+    seguro('avisos', renderAvisos);
+    seguro('selo', renderSelo);
+    seguro('contagem', renderContagem);
+    seguro('apuração', renderApuracao);
+    seguro('leitura', renderLeitura);
+    seguro('termômetro', renderTermometro);
+    seguro('pesquisas', renderPesquisas);
+    seguro('mapa', renderMapa);
+    seguro('mídia', renderMidia);
+    seguro('linha do tempo', renderLinha);
+    seguro('metodologia', renderMetodologia);
+  }
+
+  async function ciclo(primeira) {
+    const antes = ESTADO.dados && ESTADO.dados.meta.atualizadoEm;
+    await carregarDados();
+    if (apuracaoDeveAparecer()) await tentarTSEDireto();
+    const leituraAberta = $('#leitura details.mais') && $('#leitura details.mais').open;
+    renderTudo();
+    if (leituraAberta && $('#leitura details.mais')) $('#leitura details.mais').open = true;
+    const depois = ESTADO.dados && ESTADO.dados.meta.atualizadoEm;
+    if (!primeira && depois && depois !== antes) $('#anuncio').textContent = `Dados atualizados às ${fmtData(depois, { hour: '2-digit', minute: '2-digit' })}.`;
+  }
+
+  // Eventos
+  document.addEventListener('click', e => {
+    const b = e.target.closest('button');
+    if (!b) return;
+    if (b.dataset.base) { ESTADO.basePesq = b.dataset.base; seguro('pesquisas', renderPesquisas); }
+    else if (b.dataset.turno) { ESTADO.turnoMapa = +b.dataset.turno; seguro('mapa', renderMapa); }
+    else if (b.dataset.uf) { ESTADO.ufSel = b.dataset.uf; seguro('mapa', renderMapa); const nb = $(`.uf[data-uf="${b.dataset.uf}"]`); if (nb) nb.focus(); }
+    else if (b.id === 'feed-mais') { ESTADO.feedLimite += 25; renderFeed(); }
+  });
+  ['#f-veiculo', '#f-cand', '#f-tom'].forEach(s => $(s).addEventListener('change', () => { ESTADO.feedLimite = 25; renderFeed(); }));
+
+  seguro('duelo', renderDuelo);
+  seguro('contagem', renderContagem);
+  function iniciar() {
+    ciclo(true);
+    setInterval(() => ciclo(false), CONFIG.dados.atualizarACadaSeg * 1000);
+    setInterval(() => { seguro('contagem', renderContagem); seguro('selo', renderSelo); }, 20000);
+  }
+  // Scripts "defer" (Chart.js) rodam antes do DOMContentLoaded.
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', iniciar); else iniciar();
+})();
+</script>
+</body>
+</html>
