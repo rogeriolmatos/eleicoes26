@@ -1,0 +1,95 @@
+# Coleta de dados e publicação no GitHub Pages.
+#
+# - A cada 10 minutos: lê RSS, pesquisas, TSE e grava dados.json.
+# - No dia 25/10 (17h às 3h de Brasília): a cada 5 minutos, para espelhar a apuração.
+# - A cada push na branch main (quando você edita o site ou a configuração).
+#
+# Os horários do "cron" são em UTC (Brasília = UTC−3).
+# Em Settings > Pages, a origem deve ser "GitHub Actions".
+
+name: Coleta e publicação
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"          # todos os dias, a cada 10 min
+    - cron: "*/5 20-23 25 10 *"     # 25/10, das 17h às 20h55 de Brasília
+    - cron: "*/5 0-5 26 10 *"       # 25/10, das 21h às 2h55 de Brasília (já é 26/10 em UTC)
+  push:
+    branches: [main]
+    paths-ignore:
+      - "dados.json"
+      - "README.md"
+  workflow_dispatch:
+    inputs:
+      forcar_apuracao:
+        description: "Buscar a apuração do 2º turno mesmo fora do dia (teste)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write     # gravar dados.json no repositório
+  pages: write        # publicar no GitHub Pages
+  id-token: write     # exigido pelo deploy-pages
+
+concurrency:
+  group: coleta-e-publicacao
+  cancel-in-progress: false
+
+jobs:
+  coletar-e-publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Coletar dados
+        env:
+          TZ: America/Sao_Paulo
+          FORCAR_APURACAO: ${{ inputs.forcar_apuracao && '1' || '0' }}
+        run: node coleta.js
+
+      - name: Gravar dados.json no repositório
+        run: |
+          git config user.name  "clima2turno-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados.json
+          if git diff --cached --quiet; then
+            echo "Sem mudanças em dados.json."
+            exit 0
+          fi
+          git commit -m "dados: coleta de $(TZ=America/Sao_Paulo date '+%d/%m %H:%M')" --quiet
+          for tentativa in 1 2 3; do
+            if git push --quiet; then exit 0; fi
+            echo "Push recusado (tentativa $tentativa). Sincronizando e tentando de novo."
+            # Em rebase, "theirs" é o commit local: em conflito, vale o dados.json recém-coletado.
+            git pull --rebase --quiet -X theirs || git rebase --abort
+            sleep 3
+          done
+          echo "::warning::Não foi possível gravar dados.json no repositório; a página será publicada mesmo assim."
+
+      - name: Montar a pasta do site
+        run: |
+          mkdir -p _site
+          cp index.html dados.json _site/
+          touch _site/.nojekyll
+
+      - name: Configurar o Pages
+        uses: actions/configure-pages@v5
+
+      - name: Enviar o site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Publicar
+        id: deploy
+        uses: actions/deploy-pages@v4
