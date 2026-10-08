@@ -1,25 +1,148 @@
 {
   "_comentario": "Lista editável de feeds RSS. 'ativo': false desliga a fonte sem apagar. 'linha' é só uma referência aproximada de perfil editorial, usada para manter a lista equilibrada; não aparece como rótulo na página. Feeds mudam de endereço com frequência: o robô registra em dados.json quais falharam (meta.fontesFalha) e a página mostra isso na seção Metodologia.",
   "fontes": [
-    { "nome": "G1",              "url": "https://g1.globo.com/rss/g1/politica/",                                  "abrangencia": "nacional", "linha": "centro",   "ativo": true },
-    { "nome": "O Globo",         "url": "https://oglobo.globo.com/rss/oglobo",                                     "abrangencia": "nacional", "linha": "centro",   "ativo": true },
-    { "nome": "Folha de S.Paulo","url": "https://feeds.folha.uol.com.br/poder/rss091.xml",                         "abrangencia": "nacional", "linha": "centro",   "ativo": true },
-    { "nome": "Estadão",         "url": "https://www.estadao.com.br/arc/outboundfeeds/feeds/rss/sections/politica/", "abrangencia": "nacional", "linha": "centro",   "ativo": true },
-    { "nome": "UOL",             "url": "https://rss.uol.com.br/feed/noticias.xml",                                "abrangencia": "nacional", "linha": "centro",   "ativo": true },
-    { "nome": "CNN Brasil",      "url": "https://www.cnnbrasil.com.br/politica/feed/",                             "abrangencia": "nacional", "linha": "centro",   "ativo": true },
-    { "nome": "Agência Brasil",  "url": "https://agenciabrasil.ebc.com.br/rss/politica/feed.xml",                  "abrangencia": "nacional", "linha": "pública",  "ativo": true },
-    { "nome": "BBC News Brasil", "url": "https://feeds.bbci.co.uk/portuguese/rss.xml",                             "abrangencia": "nacional", "linha": "centro",   "ativo": true },
-    { "nome": "Poder360",        "url": "https://www.poder360.com.br/feed/",                                       "abrangencia": "nacional", "linha": "centro",   "ativo": true },
-    { "nome": "Metrópoles",      "url": "https://www.metropoles.com/feed",                                         "abrangencia": "nacional", "linha": "centro",   "ativo": true },
-    { "nome": "CartaCapital",    "url": "https://www.cartacapital.com.br/feed/",                                   "abrangencia": "nacional", "linha": "esquerda", "ativo": true },
-    { "nome": "Brasil de Fato",  "url": "https://www.brasildefato.com.br/rss2.xml",                                "abrangencia": "nacional", "linha": "esquerda", "ativo": true },
-    { "nome": "Gazeta do Povo",  "url": "https://www.gazetadopovo.com.br/feed/rss/republica.xml",                  "abrangencia": "nacional", "linha": "direita",  "ativo": true },
-    { "nome": "Revista Oeste",   "url": "https://revistaoeste.com/feed/",                                          "abrangencia": "nacional", "linha": "direita",  "ativo": true },
-    { "nome": "Correio Braziliense", "url": "https://www.correiobraziliense.com.br/feed/",                         "abrangencia": "DF",       "linha": "centro",   "ativo": true },
-    { "nome": "GZH",             "url": "https://gauchazh.clicrbs.com.br/rss/ultimas-noticias/",                   "abrangencia": "RS",       "linha": "centro",   "ativo": true },
-    { "nome": "Estado de Minas", "url": "https://www.em.com.br/rss/noticia/politica/rss.xml",                      "abrangencia": "MG",       "linha": "centro",   "ativo": true },
-    { "nome": "O Povo",          "url": "https://www.opovo.com.br/rss/politica",                                   "abrangencia": "CE",       "linha": "centro",   "ativo": true },
-    { "nome": "Jornal do Commercio", "url": "https://jc.uol.com.br/rss/politica",                                  "abrangencia": "PE",       "linha": "centro",   "ativo": true },
-    { "nome": "Google Notícias (busca)", "url": "https://news.google.com/rss/search?q=%22segundo+turno%22+Lula+Fl%C3%A1vio&hl=pt-BR&gl=BR&ceid=BR:pt-419", "abrangencia": "agregador", "linha": "agregador", "ativo": true, "veiculoPorItem": true }
+    {
+      "nome": "G1",
+      "url": "https://g1.globo.com/rss/g1/politica/",
+      "abrangencia": "nacional",
+      "linha": "centro",
+      "ativo": true
+    },
+    {
+      "nome": "O Globo",
+      "url": "https://oglobo.globo.com/rss/oglobo",
+      "abrangencia": "nacional",
+      "linha": "centro",
+      "ativo": true
+    },
+    {
+      "nome": "Folha de S.Paulo",
+      "url": "https://feeds.folha.uol.com.br/poder/rss091.xml",
+      "abrangencia": "nacional",
+      "linha": "centro",
+      "ativo": true
+    },
+    {
+      "nome": "Estadão",
+      "url": "https://www.estadao.com.br/arc/outboundfeeds/feeds/rss/sections/politica/",
+      "abrangencia": "nacional",
+      "linha": "centro",
+      "ativo": true
+    },
+    {
+      "nome": "UOL",
+      "url": "https://rss.uol.com.br/feed/noticias.xml",
+      "abrangencia": "nacional",
+      "linha": "centro",
+      "ativo": true
+    },
+    {
+      "nome": "CNN Brasil",
+      "url": "https://www.cnnbrasil.com.br/feed/",
+      "abrangencia": "nacional",
+      "linha": "centro",
+      "ativo": true
+    },
+    {
+      "nome": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/rss/politica/feed.xml",
+      "abrangencia": "nacional",
+      "linha": "pública",
+      "ativo": true
+    },
+    {
+      "nome": "BBC News Brasil",
+      "url": "https://feeds.bbci.co.uk/portuguese/rss.xml",
+      "abrangencia": "nacional",
+      "linha": "centro",
+      "ativo": true
+    },
+    {
+      "nome": "Poder360",
+      "url": "https://www.poder360.com.br/feed/",
+      "abrangencia": "nacional",
+      "linha": "centro",
+      "ativo": true
+    },
+    {
+      "nome": "Metrópoles",
+      "url": "https://www.metropoles.com/feed",
+      "abrangencia": "nacional",
+      "linha": "centro",
+      "ativo": true
+    },
+    {
+      "nome": "CartaCapital",
+      "url": "https://www.cartacapital.com.br/feed/",
+      "abrangencia": "nacional",
+      "linha": "esquerda",
+      "ativo": true
+    },
+    {
+      "nome": "Brasil de Fato",
+      "url": "https://www.brasildefato.com.br/feed/",
+      "abrangencia": "nacional",
+      "linha": "esquerda",
+      "ativo": true
+    },
+    {
+      "nome": "Gazeta do Povo",
+      "url": "https://www.gazetadopovo.com.br/feed/rss/republica.xml",
+      "abrangencia": "nacional",
+      "linha": "direita",
+      "ativo": true
+    },
+    {
+      "nome": "Revista Oeste",
+      "url": "https://revistaoeste.com/feed/",
+      "abrangencia": "nacional",
+      "linha": "direita",
+      "ativo": true
+    },
+    {
+      "nome": "Correio Braziliense",
+      "url": "https://www.correiobraziliense.com.br/feed/",
+      "abrangencia": "DF",
+      "linha": "centro",
+      "ativo": true
+    },
+    {
+      "nome": "GZH",
+      "url": "https://gauchazh.clicrbs.com.br/rss/ultimas-noticias/",
+      "abrangencia": "RS",
+      "linha": "centro",
+      "ativo": false,
+      "obs": "Endereço do feed retornou 404 em 08/10/2026. Atualize a URL e mude ativo para true."
+    },
+    {
+      "nome": "Estado de Minas",
+      "url": "https://www.em.com.br/feed/",
+      "abrangencia": "MG",
+      "linha": "centro",
+      "ativo": true
+    },
+    {
+      "nome": "O Povo",
+      "url": "https://www.opovo.com.br/rss/politica",
+      "abrangencia": "CE",
+      "linha": "centro",
+      "ativo": true
+    },
+    {
+      "nome": "Jornal do Commercio",
+      "url": "https://jc.uol.com.br/rss/politica",
+      "abrangencia": "PE",
+      "linha": "centro",
+      "ativo": false,
+      "obs": "Endereço do feed retornou 404 em 08/10/2026. Atualize a URL e mude ativo para true."
+    },
+    {
+      "nome": "Google Notícias (busca)",
+      "url": "https://news.google.com/rss/search?q=%22segundo+turno%22+Lula+Fl%C3%A1vio&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "abrangencia": "agregador",
+      "linha": "agregador",
+      "ativo": true,
+      "veiculoPorItem": true
+    }
   ]
 }
