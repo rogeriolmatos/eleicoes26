@@ -630,21 +630,30 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
       if (!r.ok) throw new Error('HTTP ' + r.status);
       const j = await r.json();
       // Mesmo leitor do robô: aceita o formato de 2026 (EA20) e o antigo.
-      const achar = o => {
+      const achatar = (o, s = {}) => { for (const [k, v] of Object.entries(o || {})) { if (Array.isArray(v)) continue; if (v && typeof v === 'object') achatar(v, s); else if (!(k in s)) s[k] = v; } return s; };
+      // Candidatos vêm em várias listas 'cand' (uma por coligação/partido): junta todas.
+      const todos = new Map();
+      const juntar = o => {
+        if (!o || typeof o !== 'object') return;
+        if (Array.isArray(o)) { o.forEach(juntar); return; }
+        if (Array.isArray(o.cand)) o.cand.forEach(c => { if (c && c.n !== undefined && !todos.has(String(c.n))) todos.set(String(c.n), c); });
+        Object.entries(o).forEach(([k, v]) => { if (k !== 'cand') juntar(v); });
+      };
+      juntar(j);
+      if (!todos.size) throw new Error('formato do TSE não reconhecido');
+      const acharAbr = o => {
         if (!o || typeof o !== 'object') return null;
-        if (Array.isArray(o)) { for (const x of o) { const k = achar(x); if (k) return k; } return null; }
-        if (Array.isArray(o.cand) && o.cand.some(c => c && c.n !== undefined)) return o;
-        for (const v of Object.values(o)) { const k = achar(v); if (k) return k; }
+        if (Array.isArray(o)) { for (const x of o) { const r = acharAbr(x); if (r) return r; } return null; }
+        if ('pst' in achatar(o)) return o;
+        for (const v of Object.values(o)) { const r = acharAbr(v); if (r) return r; }
         return null;
       };
-      const achatar = (o, s = {}) => { for (const [k, v] of Object.entries(o || {})) { if (Array.isArray(v)) continue; if (v && typeof v === 'object') achatar(v, s); else if (!(k in s)) s[k] = v; } return s; };
-      const abr = achar(j);
-      if (!abr) throw new Error('formato do TSE não reconhecido');
+      const abr = acharAbr(j) || j;
       const f = Object.assign(achatar(j), achatar(abr));
       const pg = ks => { for (const k of ks) { const n = numTSE(f[k]); if (n != null) return n; } return null; };
       const votos = {};
       NUMS.forEach(n => {
-        const c = abr.cand.find(x => String(x.n) === n) || {};
+        const c = todos.get(n) || {};
         votos[n] = { votos: numTSE(c.vap) || 0, pct: numTSE(c.pvap) || 0 };
       });
       const eleitorado = pg(['te', 'e']), comp = pg(['tc', 'c']), abst = pg(['ta', 'a']);

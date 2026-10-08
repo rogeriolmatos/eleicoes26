@@ -25,6 +25,7 @@ const path = require('path');
 const vm = require('vm');
 
 const RAIZ = __dirname;
+const VERSAO_LEITOR = 2; // aumente ao mudar parseTSE, para descartar dados lidos com o leitor antigo
 const ARQ = {
   html: path.join(RAIZ, 'index.html'),
   dados: path.join(RAIZ, 'dados.json'),
@@ -453,12 +454,26 @@ async function descobrirCodigos(tse, anteriores) {
   return codigos;
 }
 
-/** Procura, em qualquer profundidade, o objeto que contém a lista de candidatos ('cand'). */
-function acharComCandidatos(o) {
+/**
+ * Junta todos os candidatos do arquivo. No formato de 2026 eles vêm em várias
+ * listas 'cand', uma por coligação/partido (cargo > agremiação > partido > cand).
+ */
+function coletarCandidatos(o, saida = new Map()) {
+  if (!o || typeof o !== 'object') return saida;
+  if (Array.isArray(o)) { o.forEach((x) => coletarCandidatos(x, saida)); return saida; }
+  if (Array.isArray(o.cand)) {
+    for (const c of o.cand) if (c && c.n !== undefined && !saida.has(String(c.n))) saida.set(String(c.n), c);
+  }
+  for (const [k, v] of Object.entries(o)) if (k !== 'cand') coletarCandidatos(v, saida);
+  return saida;
+}
+
+/** Acha o objeto da abrangência (o que tem o percentual de seções totalizadas, 'pst'). */
+function acharAbrangencia(o) {
   if (!o || typeof o !== 'object') return null;
-  if (Array.isArray(o)) { for (const x of o) { const r = acharComCandidatos(x); if (r) return r; } return null; }
-  if (Array.isArray(o.cand) && o.cand.some((c) => c && c.n !== undefined)) return o;
-  for (const v of Object.values(o)) { const r = acharComCandidatos(v); if (r) return r; }
+  if (Array.isArray(o)) { for (const x of o) { const r = acharAbrangencia(x); if (r) return r; } return null; }
+  if ('pst' in achatar(o)) return o;
+  for (const v of Object.values(o)) { const r = acharAbrangencia(v); if (r) return r; }
   return null;
 }
 
@@ -483,10 +498,11 @@ function pegarNum(f, chaves) {
  * procurando os campos pelos nomes usados nos dois modelos.
  */
 function parseTSE(j) {
-  const abr = acharComCandidatos(j);
-  if (!abr) throw new Error('formato de arquivo do TSE não reconhecido (sem lista de candidatos)');
+  const lista = [...coletarCandidatos(j).values()];
+  if (!lista.length) throw new Error('formato de arquivo do TSE não reconhecido (sem lista de candidatos)');
+  const abr = acharAbrangencia(j) || j;
   const f = Object.assign(achatar(j), achatar(abr)); // campos da abrangência têm prioridade
-  const cand = abr.cand.map((c) => ({
+  const cand = lista.map((c) => ({
     numero: String(c.n), nome: c.nm || c.nmu || '', votos: num(c.vap) || 0, pct: num(c.pvap) || 0,
     eleito: /^s/i.test(String(c.e || '')),
   }));
@@ -559,7 +575,8 @@ async function coletarTSE(config, anterior) {
 
   // 1º turno por UF (mapa pré-eleição). Atualiza até ficar completo.
   const t1 = saida.primeiroTurno;
-  const completo = t1 && t1.uf && Object.keys(t1.uf).length >= 28 && Object.values(t1.uf).every((u) => u.pctSecoes >= 100);
+  // versaoLeitor: se o leitor dos arquivos do TSE mudar, o 1º turno é baixado de novo.
+  const completo = t1 && t1.versaoLeitor === VERSAO_LEITOR && t1.uf && Object.keys(t1.uf).length >= 28 && Object.values(t1.uf).every((u) => u.pctSecoes >= 100);
   if (!completo && saida.codigos.turno1) {
     try {
       const br = parseTSE(await baixar(urlTSE(tse, saida.codigos.turno1, 'br'), { tipo: 'json' }));
@@ -570,9 +587,9 @@ async function coletarTSE(config, anterior) {
         nacional[n] = { votos: c.votos, pct: c.pct };
       }
       saida.primeiroTurno = {
-        fonte: 'TSE', codigoEleicao: saida.codigos.turno1, horaTSE: br.horaTSE, pctSecoes: br.pctSecoes,
+        fonte: 'TSE', versaoLeitor: VERSAO_LEITOR, codigoEleicao: saida.codigos.turno1, horaTSE: br.horaTSE, pctSecoes: br.pctSecoes,
         nacional: { ...nacional, validos: br.validos, brancos: br.brancos, nulos: br.nulos, abstencao: br.abstencao, pctAbstencao: br.pctAbstencao },
-        uf: { ...(t1 && t1.uf), ...porUF },
+        uf: { ...(t1 && t1.versaoLeitor === VERSAO_LEITOR ? t1.uf : {}), ...porUF },
       };
       if (falhas.length) saida.avisos.push('TSE 1º turno — UFs sem resposta: ' + falhas.join('; '));
     } catch (e) {
