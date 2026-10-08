@@ -411,9 +411,20 @@ function validarPesquisas(cfg, candidatos) {
 
 function pad6(c) { return String(c).padStart(6, '0'); }
 
+/**
+ * Monta o endereço de um arquivo de resultado a partir do modelo da CONFIGURAÇÃO.
+ * Modelo de 2026 (EA20, "resultado unificado"):
+ *   {base}/{ciclo}/{eleicao}/dados/{uf}/{uf}-c{cargo}-e{eleicao6}-u.json
+ */
+const MODELO_URL_PADRAO = '{base}/{ciclo}/{eleicao}/dados/{uf}/{uf}-c{cargo}-e{eleicao6}-u.json';
 function urlTSE(tse, codigo, uf) {
-  const base = tse.base.replace(/\/$/, '');
-  return `${base}/${tse.ciclo}/${codigo}/dados-simplificados/${uf}/${uf}-c${tse.cargo}-e${pad6(codigo)}-r.json`;
+  return (tse.modeloUrl || MODELO_URL_PADRAO)
+    .replace(/\{base\}/g, tse.base.replace(/\/$/, ''))
+    .replace(/\{ciclo\}/g, tse.ciclo)
+    .replace(/\{eleicao6\}/g, pad6(codigo))
+    .replace(/\{eleicao\}/g, String(codigo))
+    .replace(/\{cargo\}/g, tse.cargo)
+    .replace(/\{uf\}/g, uf);
 }
 
 /** Procura no arquivo de configuração público do TSE os códigos das eleições federais de 1º e 2º turno. */
@@ -442,24 +453,56 @@ async function descobrirCodigos(tse, anteriores) {
   return codigos;
 }
 
+/** Procura, em qualquer profundidade, o objeto que contém a lista de candidatos ('cand'). */
+function acharComCandidatos(o) {
+  if (!o || typeof o !== 'object') return null;
+  if (Array.isArray(o)) { for (const x of o) { const r = acharComCandidatos(x); if (r) return r; } return null; }
+  if (Array.isArray(o.cand) && o.cand.some((c) => c && c.n !== undefined)) return o;
+  for (const v of Object.values(o)) { const r = acharComCandidatos(v); if (r) return r; }
+  return null;
+}
+
+/** Junta os campos simples de um objeto (descendo em subobjetos, sem entrar em listas). */
+function achatar(o, saida = {}) {
+  for (const [k, v] of Object.entries(o || {})) {
+    if (Array.isArray(v)) continue;
+    if (v && typeof v === 'object') achatar(v, saida);
+    else if (!(k in saida)) saida[k] = v;
+  }
+  return saida;
+}
+
+function pegarNum(f, chaves) {
+  for (const k of chaves) { const n = num(f[k]); if (n !== null) return n; }
+  return null;
+}
+
+/**
+ * Lê um arquivo de resultado do TSE. Aceita o formato de 2026 (EA20, com a
+ * abrangência dentro de uma lista) e o formato antigo (dados-simplificados),
+ * procurando os campos pelos nomes usados nos dois modelos.
+ */
 function parseTSE(j) {
-  const cand = (j.cand || []).map((c) => ({
-    numero: String(c.n), nome: c.nm || '', votos: num(c.vap) || 0, pct: num(c.pvap) || 0,
+  const abr = acharComCandidatos(j);
+  if (!abr) throw new Error('formato de arquivo do TSE não reconhecido (sem lista de candidatos)');
+  const f = Object.assign(achatar(j), achatar(abr)); // campos da abrangência têm prioridade
+  const cand = abr.cand.map((c) => ({
+    numero: String(c.n), nome: c.nm || c.nmu || '', votos: num(c.vap) || 0, pct: num(c.pvap) || 0,
     eleito: /^s/i.test(String(c.e || '')),
   }));
-  const eleitorado = num(j.e);
-  const comparecimento = num(j.c);
-  const abstencao = num(j.a);
-  const eleitoradoApurado = num(j.ea) || ((comparecimento || 0) + (abstencao || 0));
+  const eleitorado = pegarNum(f, ['te', 'e']);
+  const comparecimento = pegarNum(f, ['tc', 'c']);
+  const abstencao = pegarNum(f, ['ta', 'a']);
+  const eleitoradoApurado = pegarNum(f, ['ea', 'tea']) || ((comparecimento || 0) + (abstencao || 0));
   return {
-    pctSecoes: num(j.pst) || 0,
-    secoes: num(j.s), secoesTotalizadas: num(j.st),
-    eleitorado, eleitoradoApurado, comparecimento, abstencao, pctAbstencao: num(j.pa),
-    brancos: num(j.vb), pctBrancos: num(j.pvb),
-    nulos: num(j.tvn) ?? num(j.vn), pctNulos: num(j.ptvn) ?? num(j.pvn),
-    validos: num(j.vv),
+    pctSecoes: pegarNum(f, ['pst']) || 0,
+    secoes: pegarNum(f, ['ts', 's']), secoesTotalizadas: pegarNum(f, ['st']),
+    eleitorado, eleitoradoApurado, comparecimento, abstencao, pctAbstencao: pegarNum(f, ['pa', 'pta']),
+    brancos: pegarNum(f, ['vb', 'tvb']), pctBrancos: pegarNum(f, ['pvb', 'ptvb']),
+    nulos: pegarNum(f, ['tvn', 'vn', 'vnt']), pctNulos: pegarNum(f, ['ptvn', 'pvn', 'pvnt']),
+    validos: pegarNum(f, ['vv', 'tvv']),
     candidatos: cand,
-    horaTSE: [j.dg, j.hg].filter(Boolean).join(' '),
+    horaTSE: [f.dg || f.dt, f.hg || f.ht].filter(Boolean).join(' '),
   };
 }
 

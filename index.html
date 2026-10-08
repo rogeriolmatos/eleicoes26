@@ -68,8 +68,10 @@ const CONFIG = {
     base: "https://resultados.tse.jus.br/oficial",
     ciclo: "ele2026",
     cargo: "0001",
-    codigoTurno1: "",          // deixe vazio para o robô descobrir sozinho
-    codigoTurno2: "",          // idem; preencha se a descoberta automática falhar
+    // Modelo de endereço dos arquivos de resultado (formato de 2026, "EA20").
+    modeloUrl: "{base}/{ciclo}/{eleicao}/dados/{uf}/{uf}-c{cargo}-e{eleicao6}-u.json",
+    codigoTurno1: "6257",      // Eleição Geral Federal 2026, 1º turno (informado pelo TSE)
+    codigoTurno2: "",          // vazio: o robô descobre sozinho no arquivo de configuração do TSE
     tentarDiretoNoNavegador: true
   },
   termometro: {
@@ -611,7 +613,10 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
     const t = CONFIG.tse;
     if (!t.codigoTurno2) return null;
     const cod = String(t.codigoTurno2);
-    return `${t.base.replace(/\/$/, '')}/${t.ciclo}/${cod}/dados-simplificados/br/br-c${t.cargo}-e${cod.padStart(6, '0')}-r.json`;
+    return (t.modeloUrl || '{base}/{ciclo}/{eleicao}/dados/{uf}/{uf}-c{cargo}-e{eleicao6}-u.json')
+      .replace(/\{base\}/g, t.base.replace(/\/$/, '')).replace(/\{ciclo\}/g, t.ciclo)
+      .replace(/\{eleicao6\}/g, cod.padStart(6, '0')).replace(/\{eleicao\}/g, cod)
+      .replace(/\{cargo\}/g, t.cargo).replace(/\{uf\}/g, 'br');
   }
   async function tentarTSEDireto() {
     if (!CONFIG.tse.tentarDiretoNoNavegador || SIMULAR_APURACAO || !divulgacaoComecou()) return;
@@ -624,21 +629,34 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
       clearTimeout(tm);
       if (!r.ok) throw new Error('HTTP ' + r.status);
       const j = await r.json();
+      // Mesmo leitor do robô: aceita o formato de 2026 (EA20) e o antigo.
+      const achar = o => {
+        if (!o || typeof o !== 'object') return null;
+        if (Array.isArray(o)) { for (const x of o) { const k = achar(x); if (k) return k; } return null; }
+        if (Array.isArray(o.cand) && o.cand.some(c => c && c.n !== undefined)) return o;
+        for (const v of Object.values(o)) { const k = achar(v); if (k) return k; }
+        return null;
+      };
+      const achatar = (o, s = {}) => { for (const [k, v] of Object.entries(o || {})) { if (Array.isArray(v)) continue; if (v && typeof v === 'object') achatar(v, s); else if (!(k in s)) s[k] = v; } return s; };
+      const abr = achar(j);
+      if (!abr) throw new Error('formato do TSE não reconhecido');
+      const f = Object.assign(achatar(j), achatar(abr));
+      const pg = ks => { for (const k of ks) { const n = numTSE(f[k]); if (n != null) return n; } return null; };
       const votos = {};
       NUMS.forEach(n => {
-        const c = (j.cand || []).find(x => String(x.n) === n) || {};
+        const c = abr.cand.find(x => String(x.n) === n) || {};
         votos[n] = { votos: numTSE(c.vap) || 0, pct: numTSE(c.pvap) || 0 };
       });
-      const eleitorado = numTSE(j.e), comp = numTSE(j.c), abst = numTSE(j.a);
-      const apurado = numTSE(j.ea) || ((comp || 0) + (abst || 0));
-      const pst = numTSE(j.pst) || 0;
+      const eleitorado = pg(['te', 'e']), comp = pg(['tc', 'c']), abst = pg(['ta', 'a']);
+      const apurado = pg(['ea', 'tea']) || ((comp || 0) + (abst || 0));
+      const pst = pg(['pst']) || 0;
       const dif = Math.abs(votos[NUMS[0]].votos - votos[NUMS[1]].votos);
       const restante = Math.max(0, (eleitorado || 0) - apurado);
       ESTADO.tseDireto = {
-        ativa: true, fonte: 'TSE (leitura direta)', horaTSE: [j.dg, j.hg].filter(Boolean).join(' '),
-        pctSecoes: pst, eleitorado, comparecimento: comp, abstencao: abst, pctAbstencao: numTSE(j.pa),
-        brancos: numTSE(j.vb), pctBrancos: numTSE(j.pvb), nulos: numTSE(j.tvn) ?? numTSE(j.vn), pctNulos: numTSE(j.ptvn) ?? numTSE(j.pvn),
-        validos: numTSE(j.vv), votos, diferenca: dif, eleitoresRestantes: restante,
+        ativa: true, fonte: 'TSE (leitura direta)', horaTSE: [f.dg || f.dt, f.hg || f.ht].filter(Boolean).join(' '),
+        pctSecoes: pst, eleitorado, comparecimento: comp, abstencao: abst, pctAbstencao: pg(['pa', 'pta']),
+        brancos: pg(['vb', 'tvb']), pctBrancos: pg(['pvb', 'ptvb']), nulos: pg(['tvn', 'vn', 'vnt']), pctNulos: pg(['ptvn', 'pvn', 'pvnt']),
+        validos: pg(['vv', 'tvv']), votos, diferenca: dif, eleitoresRestantes: restante,
         lider: votos[NUMS[0]].votos >= votos[NUMS[1]].votos ? NUMS[0] : NUMS[1],
         decidido: pst >= 100 ? dif > 0 : (eleitorado ? dif > restante : false),
         lidoEm: agora().toISOString(),
