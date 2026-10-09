@@ -1,6 +1,6 @@
 {
  "meta": {
-  "atualizadoEm": "2026-10-09T12:18:00.464Z",
+  "atualizadoEm": "2026-10-09T12:18:49.452Z",
   "exemplo": false,
   "versao": 1,
   "geradoPor": "coleta.js",
@@ -16,9 +16,9 @@
     "aproveitados": 3
    },
    {
-    "nome": "Folha de S.Paulo",
-    "itens": 100,
-    "aproveitados": 59
+    "nome": "CNN Brasil",
+    "itens": 60,
+    "aproveitados": 8
    },
    {
     "nome": "G1",
@@ -26,14 +26,14 @@
     "aproveitados": 77
    },
    {
-    "nome": "CNN Brasil",
-    "itens": 60,
-    "aproveitados": 8
-   },
-   {
     "nome": "O Globo",
     "itens": 100,
     "aproveitados": 27
+   },
+   {
+    "nome": "Folha de S.Paulo",
+    "itens": 100,
+    "aproveitados": 59
    },
    {
     "nome": "BBC News Brasil",
@@ -51,11 +51,6 @@
     "aproveitados": 2
    },
    {
-    "nome": "Agência Brasil",
-    "itens": 10,
-    "aproveitados": 9
-   },
-   {
     "nome": "Brasil de Fato",
     "itens": 99,
     "aproveitados": 39
@@ -66,9 +61,9 @@
     "aproveitados": 4
    },
    {
-    "nome": "Revista Oeste",
+    "nome": "Agência Brasil",
     "itens": 10,
-    "aproveitados": 6
+    "aproveitados": 9
    },
    {
     "nome": "Gazeta do Povo",
@@ -76,14 +71,19 @@
     "aproveitados": 38
    },
    {
-    "nome": "Correio Braziliense",
-    "itens": 0,
-    "aproveitados": 0
+    "nome": "Revista Oeste",
+    "itens": 10,
+    "aproveitados": 6
    },
    {
     "nome": "Estado de Minas",
     "itens": 20,
     "aproveitados": 4
+   },
+   {
+    "nome": "Correio Braziliense",
+    "itens": 0,
+    "aproveitados": 0
    },
    {
     "nome": "Google Notícias (busca)",
@@ -170,6 +170,38 @@
    "naoValidos": 14,
    "observacao": "Cenário de 2º turno testado na véspera do 1º turno.",
    "fonte": "https://viva.com.br/politica/quaest-lula-tem-46-e-flavio-45-dos-votos-validos-no-primeiro-turno.html"
+  },
+  {
+   "13": 45,
+   "22": 49,
+   "instituto": "Datafolha",
+   "contratante": "Folha de S.Paulo e TV Globo",
+   "campoInicio": "2026-10-06",
+   "campoFim": "2026-10-08",
+   "amostra": 2520,
+   "margem": 2,
+   "confianca": 95,
+   "registroTSE": "BR-02949/2026",
+   "tipo": "totais",
+   "naoValidos": 6,
+   "observacao": "Primeira pesquisa Datafolha do 2º turno, divulgada em 8/10 às 18h43. Em votos válidos: Flávio 52%, Lula 48%. Brancos, nulos ou nenhum 5%, indecisos 1%. Rejeição: Lula 46%, Flávio 43%. As reportagens divergem sobre o último dia de campo (7 ou 8/10).",
+   "fonte": "https://www.brasildefato.com.br/2026/10/08/datafolha-segundo-turno-flavio-bolsonaro-49-lula-45/"
+  },
+  {
+   "13": 45.7,
+   "22": 51.1,
+   "instituto": "AtlasIntel",
+   "contratante": "Bloomberg News",
+   "campoInicio": "2026-10-03",
+   "campoFim": "2026-10-08",
+   "amostra": 5026,
+   "margem": 1,
+   "confianca": 95,
+   "registroTSE": "BR-03663/2026",
+   "tipo": "totais",
+   "naoValidos": 3.2,
+   "observacao": "Divulgada em 9/10 às 7h30. Em votos válidos: Flávio 52,8%, Lula 47,2%. Entrevistas pela internet; o campo começou um dia antes do 1º turno.",
+   "fonte": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/atlasintel-presidente-outubro-2026-segundo-turno/"
   }
  ],
  "noticias": [
@@ -180,13 +212,13 @@
    "titulo": "Com sua adesão, Cury trata Flávio como um ex-corrupto",
    "resumo": "Augusto Cury entrou na corrida presidencial como algo novo. Saiu como pão dormido. Em 10 de setembro, o escritor disse que não apoiaria Lula \"em hipótese alguma\". E impôs condições para se unir a…",
    "link": "https://noticias.uol.com.br/colunas/josias-de-souza/2026/10/09/com-sua-adesao-cury-trata-flavio-como-um-ex-corrupto.htm",
-   "dataPub": "2026-10-09T12:18:00.464Z",
+   "dataPub": "2026-10-09T12:18:49.452Z",
    "mencoes": [
     "13",
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "-seus-ze-ruela-e-oreiudo-craque-neto-baixa-em-lula-em-bronca-com-campanha",
@@ -195,12 +227,12 @@
    "titulo": "'Seus Zé Ruela e oreiudo': Craque Neto baixa em Lula em bronca com campanha",
    "resumo": "Se a radiografia da pesquisa Datafolha de ontem (8) se confirmar, a campanha de Lula (PT) à reeleição ficará lembrada como um torneio em que o candidato favorito evitou o confronto contra um…",
    "link": "https://noticias.uol.com.br/eleicoes/2026/10/09/orelhudo-espirito-de-craque-neto-baixa-em-lula-em-bronca-com-campanha.ghtm",
-   "dataPub": "2026-10-09T12:18:00.464Z",
+   "dataPub": "2026-10-09T12:18:49.452Z",
    "mencoes": [
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "mendonca-manda-pt-excluir-video-ligando-corte-de-r-200-bi-de-flavio-a-perdas-sociais",
@@ -209,13 +241,13 @@
    "titulo": "Mendonça manda PT excluir vídeo ligando corte de R$ 200 bi de Flávio a perdas sociais",
    "resumo": "O ministro André Mendonça, do TSE (Tribunal Superior Eleitoral), mandou a campanha do presidente Lula (PT) remover um vídeo que associa promessas econômicas de Flávio Bolsonaro (PL) a cortes em…",
    "link": "https://noticias.uol.com.br/eleicoes/2026/10/09/mendonca-manda-lula-tirar-video-contra-flavio-bolsonaro.ghtm",
-   "dataPub": "2026-10-09T12:18:00.464Z",
+   "dataPub": "2026-10-09T12:18:49.452Z",
    "mencoes": [
     "13",
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-exalta-apoios-no-2-turno-e-lula-cita-riscos-do-adversario-na-volta-da-propaganda-el",
@@ -230,7 +262,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "split-payment-vira-debate-central-na-corrida-presidencial-entre-flavio-e-lula",
@@ -245,7 +277,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-ganha-imagem-de-nossa-senhora-aparecida-do-arcebispo-de-brasilia",
@@ -260,7 +292,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "apoiadores-de-lula-e-grass-se-reunem-em-caminhada-no-df",
@@ -274,7 +306,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "a-mascara-do-flavio-moderado-nao-se-sustenta",
@@ -288,7 +320,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "paes-reconhece-fim-da-disputa-no-rj-apos-decisoes-judiciais-ruas-deve-ser-declarado-govern",
@@ -300,7 +332,7 @@
    "dataPub": "2026-10-09T11:56:06.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-bolsonaro-visita-cardeal-e-recebe-imagem-de-nossa-senhora",
@@ -314,7 +346,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "-melhor-pesquisa-e-a-urna-diz-grass-apos-primeira-datafolha-para-2-turno",
@@ -326,7 +358,7 @@
    "dataPub": "2026-10-09T11:54:53.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-bolsonaro-x-lula-veja-agregador-com-os-numeros-das-pesquisas-para-a-presidencia",
@@ -341,7 +373,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-bolsonaro-abre-2-turno-na-frente-de-lula-mas-rejeicao-segue-alta",
@@ -356,7 +388,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "netanyahu-conversa-com-flavio-e-pede-renovacao-da-amizade-entre-brasil-e-israel",
@@ -370,7 +402,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "as-sete-novas-pesquisas-da-quaest-sobre-o-segundo-turno-das-eleicoes-2026",
@@ -382,7 +414,7 @@
    "dataPub": "2026-10-09T11:44:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "onde-flavio-constroi-sua-vantagem-sobre-lula-no-segundo-turno",
@@ -397,7 +429,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "na-volta-da-propaganda-flavio-aborda-reeleicao-lula-conexao-com-eleitor",
@@ -412,7 +444,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "netanyahu-liga-para-flavio-bolsonaro-e-o-convida-para-visitar-israel-renovar-a-profunda-am",
@@ -427,7 +459,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "atlas-flavio-bolsonaro-tem-52-8-contra-47-2-de-lula-no-2-turno",
@@ -442,7 +474,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "mendonca-manda-remover-video-de-janones-e-lindbergh-contra-flavio",
@@ -456,7 +488,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-diz-no-horario-eleitoral-que-vai-manter-programas-sociais-apos-ofensiva-de-lula-que",
@@ -471,7 +503,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pesquisa-atlas-flavio-bolsonaro-tem-51-1-e-lula-45-7-no-2-turno",
@@ -486,7 +518,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "nova-guerra-as-drogas-de-trump-aposta-em-militarizacao-na-america-latina-o-que-muda-com-fl",
@@ -501,7 +533,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "deltan-dallagnol-chora-e-diz-que-eleicao-ja-valeu-enquanto-aguarda-tse-julgar-candidatura-",
@@ -516,7 +548,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "o-novo-time-de-comunicacao-da-campanha-de-lula-e-os-cuidados-para-nao-melindrar-sidonio",
@@ -530,7 +562,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "8-1-moraes-manda-prender-porteira-condenada-a-14-anos",
@@ -544,7 +576,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "ao-vivo-lula-vai-a-caminhada-com-leandro-grass-em-brasilia",
@@ -558,7 +590,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pesquisa-atlasintel-bloomberg-mostra-flavio-bolsonaro-com-52-8-dos-votos-validos-no-2-turn",
@@ -573,7 +605,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-marca-52-8-e-lula-47-2-em-simulacao-de-2-turno-diz-atlas",
@@ -588,7 +620,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "mendonca-manda-campanha-de-lula-retirar-video-que-diz-que-se-flavio-vence-voce-perde-",
@@ -603,7 +635,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "avenida-helio-prates-tera-interdicoes-durante-ato-de-lula-e-grass-veja",
@@ -632,7 +664,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "horario-eleitoral-celina-e-grass-destacam-aliancas-e-votos-para-2-turno",
@@ -659,7 +691,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "-tem-jogo-datafolha-com-49-a-45-segura-euforia-de-flavio",
@@ -703,7 +735,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "na-lideranca-flavio-soma-7-apoios-e-doacoes-no-2-turno-lula-nao-avanca",
@@ -718,7 +750,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "atlasintel-flavio-tem-52-8-no-2-turno-em-votos-validos-lula-soma-47-2-",
@@ -733,7 +765,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "agenda-dos-candidatos-lula-volta-a-ceilandia-enquanto-flavio-bolsonaro-se-reune-com-ruas-n",
@@ -748,7 +780,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "confira-a-agenda-dos-presidenciaveis-nesta-sexta-feira-9-",
@@ -763,7 +795,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "governador-do-piaui-vai-coordenar-comunicacao-da-campanha-de-lula-ao-lado-da-equipe-de-sid",
@@ -778,7 +810,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "vorcaro-relata-pagamentos-por-filme-sobre-lula-e-esquema-com-petistas",
@@ -793,7 +825,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-tem-52-8-das-intencoes-de-voto-no-segundo-turno-e-lula-47-2-aponta-atlasintel",
@@ -808,7 +840,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pesquisa-atlasintel-aponta-flavio-a-frente-no-segundo-turno-com-53-contra-47-de-lula",
@@ -823,7 +855,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "ana-elisa-rebate-nikolas-por-suposto-post-sobre-fechamento-de-igrejas-vai-ter-que-comecar-",
@@ -838,7 +870,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-tem-51-1-e-lula-45-7-das-intencoes-de-voto-no-2-turno-mostra-atlas",
@@ -853,7 +885,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pesquisa-atlasintel-2-turno-flavio-bolsonaro-abre-5-4-pontos-de-vantagem-sobre-lula",
@@ -868,7 +900,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "tse-manda-retirar-publicacoes-de-lula-janja-e-aliados-contra-flavio-bolsonaro",
@@ -883,7 +915,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-mostra-apoios-que-tem-no-2-turno-lula-cita-conquistas-do-governo",
@@ -898,7 +930,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "atlas-bloomberg-53-4-desaprovam-governo-lula-e-44-7-aprovam",
@@ -912,7 +944,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pesquisa-atlas-mostra-vantagem-de-flavio-bolsonaro-na-disputa-com-lula-no-2-turno",
@@ -927,7 +959,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "atlas-flavio-tem-52-8-dos-votos-validos-no-2-turno-lula-47-2-",
@@ -942,7 +974,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "a-primeira-pesquisa-atlasintel-sobre-a-disputa-entre-flavio-e-lula-no-2-turno",
@@ -957,7 +989,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "primeira-pesquisa-atlasintel-mostra-disputa-entre-flavio-e-lula-no-2-turno",
@@ -987,7 +1019,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "atlasintel-divulga-pesquisa-para-presidente-no-2-turno",
@@ -1002,7 +1034,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "atlasintel-confirma-poderdata-aya-e-da-flavio-com-53-e-lula-com-47-",
@@ -1017,7 +1049,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pesquisa-atlas-flavio-bolsonaro-tem-51-1-e-lula-registra-45-7-no-segundo-turno",
@@ -1032,7 +1064,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "os-numeros-da-primeira-pesquisa-atlas-para-o-2-turno",
@@ -1044,7 +1076,7 @@
    "dataPub": "2026-10-09T10:30:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "atlas-bloomberg-flavio-tem-52-8-e-lula-47-2-em-votos-validos",
@@ -1059,7 +1091,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-bolsonaro-tem-51-1-e-lula-45-7-mostra-pesquisa-atlasintel-bloomberg",
@@ -1074,7 +1106,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "paes-desiste-de-candidatura-no-rio-apos-zanin-negar-recurso-ao-stf",
@@ -1086,7 +1118,7 @@
    "dataPub": "2026-10-09T10:27:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "ex-secretario-de-turismo-de-sp-e-citado-para-governo-de-flavio",
@@ -1100,7 +1132,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "homem-apontado-como-operador-financeiro-do-cv-e-preso-no-galeao-ao-voltar-de-viagem-de-lux",
@@ -1114,7 +1146,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "lula-tem-44-2-e-flavio-bolsonaro-42-7-no-segundo-turno-diz-pesquisa-vox-brasil",
@@ -1129,7 +1161,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pesquisa-datafolha-divulgada-nesta-quinta-feira-8-mostra-que-25-dos-eleitores-de-flavio-bo",
@@ -1144,7 +1176,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "conheca-as-propostas-de-flavio-e-lula-para-a-seguranca-publica",
@@ -1159,7 +1191,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "noticia-flavio-bolsonaro-tem-51-1-e-lula-45-7-mostra-pesquisa-atlasintel-bloomberg",
@@ -1174,7 +1206,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-aciona-tse-por-suposta-rede-de-desinformacao-ligada-a-lula",
@@ -1203,7 +1235,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "de-atrasos-salariais-a-risco-para-recuperacao-judicial-pelo-menos-23-clubes-vao-ao-stf-con",
@@ -1218,7 +1250,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "viradouro-sao-garrafa-e-desafio-dos-fortes-niteroi-tera-tres-corridas-de-rua-ate-janeiro",
@@ -1232,7 +1264,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "havan-triplica-lucro-desde-2022-apos-luciano-hang-prever-pais-quebrado-com-governo-lula",
@@ -1246,7 +1278,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-com-49-e-lula-com-45-tem-empate-tecnico-no-segundo-turno",
@@ -1261,7 +1293,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "augusto-cury-terceiro-colocado-na-disputa-presidencial-com-2-89-dos-votos-validos-o-escrit",
@@ -1342,7 +1374,7 @@
    "dataPub": "2026-10-09T09:15:56.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "governo-lula-leia-a-agenda-de-ministros-do-governo-nesta-6-feira",
@@ -1386,7 +1418,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pesquisa-vox-brasil-lula-tem-44-2-e-flavio-bolsonaro-42-7-no-2-turno",
@@ -1401,7 +1433,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "lula-teve-72-6-e-flavio-23-3-em-presidios-no-1-turno",
@@ -1476,20 +1508,6 @@
    "coletadoEm": "2026-10-09T09:21:01.564Z"
   },
   {
-   "id": "flavio-planeja-intensificar-agendas-de-rua-apos-semana-dedicada-a-negociar-apoios-no-segun",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Flávio planeja intensificar agendas de rua após semana dedicada a negociar apoios no segundo turno",
-   "resumo": "A campanha do senador e candidato à Presidência, Flávio Bolsonaro ( PL ), ainda fecha o cronograma das viagens que serão feitas no segundo turno, mas vai priorizar aquelas cidades onde ele tem maior…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/flavio-planeja-intensificar-agendas-de-rua-apos-semana-dedicada-a-negociar-apoios-no-segundo-turno.shtml",
-   "dataPub": "2026-10-09T09:00:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
-  },
-  {
    "id": "escala-6x1-movimento-da-oposicao-pode-atrasar-votacao-na-proxima-semana-e-lula-usa-tema-pa",
    "veiculo": "O Globo",
    "fonteFeed": "O Globo",
@@ -1502,7 +1520,21 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
+  },
+  {
+   "id": "flavio-planeja-intensificar-agendas-de-rua-apos-semana-dedicada-a-negociar-apoios-no-segun",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Flávio planeja intensificar agendas de rua após semana dedicada a negociar apoios no segundo turno",
+   "resumo": "A campanha do senador e candidato à Presidência, Flávio Bolsonaro ( PL ), ainda fecha o cronograma das viagens que serão feitas no segundo turno, mas vai priorizar aquelas cidades onde ele tem maior…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/flavio-planeja-intensificar-agendas-de-rua-apos-semana-dedicada-a-negociar-apoios-no-segundo-turno.shtml",
+   "dataPub": "2026-10-09T09:00:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "ao-mynews-marina-silva-revela-bastidores-de-reuniao-com-lula-e-analisa-disputa-contra-flav",
@@ -1531,7 +1563,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pl-aponta-principal-articulador-da-campanha-do-medo-contra-flavio",
@@ -1560,7 +1592,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "-lula-falava-de-terra-raras-e-eleitor-queria-picanha-diz-marqueteiro-que-derrotou-o-pt-no-",
@@ -1575,7 +1607,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "janones-tenta-pegar-carona-em-mobilizacao-pro-lula-apos-perder-60-do-eleitorado-em-minas",
@@ -1590,7 +1622,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "quem-esta-a-frente-nas-pesquisas-para-presidente-no-2-turno-das-eleicoes-2026-veja-lula-x-",
@@ -1605,7 +1637,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pesquisa-datafolha-2-turno-flavio-bolsonaro-tem-52-e-lula-48-dos-votos-validos",
@@ -1620,7 +1652,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-trata-impeachment-de-moraes-como-inegociavel-dino-segue-na-mira",
@@ -1679,7 +1711,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-tem-49-dos-votos-e-lula-45-diz-datafolha",
@@ -1694,7 +1726,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "alvo-de-flavio-e-defendido-por-governo-lula-entenda-o-que-e-o-split-payment-da-reforma-tri",
@@ -1709,7 +1741,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "enxurrada-de-processos-tse-recebeu-quase-300-novas-acoes-de-propaganda-na-reta-final-do-1-",
@@ -1721,7 +1753,7 @@
    "dataPub": "2026-10-09T08:00:00.000Z",
    "mencoes": [],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "festival-halleluya-estreia-na-praia-com-shows-e-esporte",
@@ -1736,7 +1768,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "horario-eleitoral-gratuito-recomeca-nesta-sexta-9-para-2-turno",
@@ -1751,7 +1783,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "lembrai-vos-da-eleicao-presidencial-de-2014-a-segunda-mais-apertada",
@@ -1849,7 +1881,7 @@
    "dataPub": "2026-10-09T07:30:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "veja-como-atuava-a-mafia-de-taxistas-ligada-ao-comando-vermelho-que-fraudava-taximetros-no",
@@ -1863,7 +1895,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "stf-cobrou-urgencia-mas-pgr-so-respondeu-sobre-acusacao-contra-vice-de-flavio-bolsonaro-ap",
@@ -1877,7 +1909,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "analise-flavio-bolsonaro-joga-parado-enquanto-lula-calibra-ofensiva",
@@ -1892,7 +1924,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "se-eleito-flavio-podera-subir-a-rampa-com-jair-bolsonaro-entenda",
@@ -1906,7 +1938,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-ganha-1-7-milhao-de-seguidores-apos-1-turno-lula-958-mil",
@@ -1921,7 +1953,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-abre-vantagem-sobre-lula-no-2-turno-aponta-pesquisa-poderdata-aya",
@@ -1950,7 +1982,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-adota-mote-de-renovacao-contra-lula-que-retoma-atos-no-df-e-no-rn",
@@ -1965,7 +1997,63 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
+  },
+  {
+   "id": "oab-sp-entra-com-acao-civil-publica-contra-a-legaltech-enter",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "OAB-SP entra com ação civil pública contra a legaltech Enter",
+   "resumo": "A seção da Ordem dos Advogados do Brasil de São Paulo (OAB-SP) entrou, anteontem, com uma ação civil pública contra a Enter, solicitando que a startup tenha a oferta de seus serviços restrita aos…",
+   "link": "https://oglobo.globo.com/economia/tecnologia/noticia/2026/10/09/oab-sp-entra-com-acao-civil-publica-contra-a-legaltech-enter.ghtml",
+   "dataPub": "2026-10-09T07:00:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
+  },
+  {
+   "id": "com-a-maior-bancada-na-alerj-a-partir-de-2027-pl-trabalha-para-manter-o-comando-da-casa-en",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Com a maior bancada na Alerj a partir de 2027, PL trabalha para manter o comando da Casa; entenda",
+   "resumo": "Faltam quase quatro meses para a posse dos deputados estaduais eleitos, mas a corrida pela cadeira mais cobiçada da Assembleia Legislativa do Rio já começou nos bastidores da política fluminense. Com…",
+   "link": "https://oglobo.globo.com/rio/noticia/2026/10/09/com-a-maior-bancada-na-alerj-a-partir-de-2027-pl-trabalha-para-manter-o-comando-da-casa-entenda.ghtml",
+   "dataPub": "2026-10-09T07:00:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
+  },
+  {
+   "id": "em-crise-braskem-e-raizen-usam-cenario-eleitoral-em-paralisia-negocial-estrategica-",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Em crise, Braskem e Raízen usam cenário eleitoral em 'paralisia negocial estratégica'",
+   "resumo": "A melhora temporária do mercado está influenciando o rumo nas mesas de negociação de empresas em recuperação judicial e extrajudicial. Advogados especialistas no tema consultados pelo GLOBO observam…",
+   "link": "https://oglobo.globo.com/economia/financas/noticia/2026/10/09/empresas-em-crise-usam-cenario-para-ganhar-tempo.ghtml",
+   "dataPub": "2026-10-09T07:00:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
+  },
+  {
+   "id": "a-chance-de-eduardo-bolsonaro-ser-o-ministro-das-relacoes-exteriores-num-eventual-governo-",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "A chance de Eduardo Bolsonaro ser o ministro das Relações Exteriores num eventual governo Flávio",
+   "resumo": "A cúpula da campanha de Flávio Bolsonaro é taxativa. A chance de Eduardo Bolsonaro ocupar o cargo de ministro das Relações Exteriores caso o irmão seja eleito é “zero”. Matéria exclusiva para…",
+   "link": "https://oglobo.globo.com/blogs/bela-megale/post/2026/10/a-chance-de-eduardo-bolsonaro-ser-o-ministro-das-relacoes-exteriores-num-eventual-governo-flavio.ghtml",
+   "dataPub": "2026-10-09T07:00:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "novo-congresso-e-submisso-a-trump-e-antiambiental-diz-marina-silva-apos-derrota-no-senado",
@@ -1979,7 +2067,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "fa-clubes-de-anitta-a-bts-se-mobilizam-para-ampliar-votos-de-lula-no-2-turno",
@@ -1994,63 +2082,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
-  },
-  {
-   "id": "oab-sp-entra-com-acao-civil-publica-contra-a-legaltech-enter",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "OAB-SP entra com ação civil pública contra a legaltech Enter",
-   "resumo": "A seção da Ordem dos Advogados do Brasil de São Paulo (OAB-SP) entrou, anteontem, com uma ação civil pública contra a Enter, solicitando que a startup tenha a oferta de seus serviços restrita aos…",
-   "link": "https://oglobo.globo.com/economia/tecnologia/noticia/2026/10/09/oab-sp-entra-com-acao-civil-publica-contra-a-legaltech-enter.ghtml",
-   "dataPub": "2026-10-09T07:00:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
-  },
-  {
-   "id": "com-a-maior-bancada-na-alerj-a-partir-de-2027-pl-trabalha-para-manter-o-comando-da-casa-en",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Com a maior bancada na Alerj a partir de 2027, PL trabalha para manter o comando da Casa; entenda",
-   "resumo": "Faltam quase quatro meses para a posse dos deputados estaduais eleitos, mas a corrida pela cadeira mais cobiçada da Assembleia Legislativa do Rio já começou nos bastidores da política fluminense. Com…",
-   "link": "https://oglobo.globo.com/rio/noticia/2026/10/09/com-a-maior-bancada-na-alerj-a-partir-de-2027-pl-trabalha-para-manter-o-comando-da-casa-entenda.ghtml",
-   "dataPub": "2026-10-09T07:00:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
-  },
-  {
-   "id": "em-crise-braskem-e-raizen-usam-cenario-eleitoral-em-paralisia-negocial-estrategica-",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Em crise, Braskem e Raízen usam cenário eleitoral em 'paralisia negocial estratégica'",
-   "resumo": "A melhora temporária do mercado está influenciando o rumo nas mesas de negociação de empresas em recuperação judicial e extrajudicial. Advogados especialistas no tema consultados pelo GLOBO observam…",
-   "link": "https://oglobo.globo.com/economia/financas/noticia/2026/10/09/empresas-em-crise-usam-cenario-para-ganhar-tempo.ghtml",
-   "dataPub": "2026-10-09T07:00:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
-  },
-  {
-   "id": "a-chance-de-eduardo-bolsonaro-ser-o-ministro-das-relacoes-exteriores-num-eventual-governo-",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "A chance de Eduardo Bolsonaro ser o ministro das Relações Exteriores num eventual governo Flávio",
-   "resumo": "A cúpula da campanha de Flávio Bolsonaro é taxativa. A chance de Eduardo Bolsonaro ocupar o cargo de ministro das Relações Exteriores caso o irmão seja eleito é “zero”. Matéria exclusiva para…",
-   "link": "https://oglobo.globo.com/blogs/bela-megale/post/2026/10/a-chance-de-eduardo-bolsonaro-ser-o-ministro-das-relacoes-exteriores-num-eventual-governo-flavio.ghtml",
-   "dataPub": "2026-10-09T07:00:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "empresas-em-crise-usam-cenario-para-ganhar-tempo",
@@ -2109,7 +2141,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "apos-sucesso-vivendo-elis-regina-laila-garin-chega-ao-rio-com-peca-sobre-edith-piaf",
@@ -2123,7 +2155,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "eleito-governador-em-minas-cleitinho-minimiza-caso-master-em-entrevista-todos-entendiam-qu",
@@ -2138,7 +2170,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-descarta-ida-a-aparecida-no-feriado-e-prepara-evento-em-brasilia-apos-polemica-com-",
@@ -2152,7 +2184,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-e-vice-sao-aconselhados-a-evitar-especulacoes-sobre-ministerios-para-impedir-fritur",
@@ -2167,7 +2199,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pt-aposta-na-estrategia-do-medo-ja-usada-contra-rivais-no-passado-para-tentar-virar-votos-",
@@ -2181,7 +2213,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "-pergunta-da-semana-de-zero-a-dez-qual-a-chance-de-lula-reverter-o-cenario-contra-flavio-n",
@@ -2211,7 +2243,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "qg-de-lula-ja-esperava-numeros-adversos-no-datafolha-e-evita-desmobilizacao",
@@ -2253,7 +2285,7 @@
    "dataPub": "2026-10-09T05:00:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-e-favorito-no-segundo-turno-mas-a-bola-segue-em-jogo",
@@ -2267,7 +2299,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-e-favorito-mas-a-bola-segue-em-jogo",
@@ -2326,7 +2358,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "antipetismo-vs-antibolsonarismo-o-voto-do-contra-que-pode-decidir-a-eleicao-o-assunto-1822",
@@ -2341,7 +2373,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "mendonca-determina-remocao-de-video-de-janones-e-lindbergh-contra-flavio",
@@ -2414,7 +2446,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "esquerda-precisa-abandonar-estrategia-de-estigma-censura-e-cadeia",
@@ -2458,7 +2490,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "escala-6x1-oposicao-avalia-esvaziar-votacao-em-primeiro-turno-enquanto-governo-articula-ca",
@@ -2476,20 +2508,6 @@
    "coletadoEm": "2026-10-09T09:21:01.564Z"
   },
   {
-   "id": "ministerio-publico-e-policia-investigam-caso-de-crianca-com-objeto-semelhante-a-arma-em-at",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Ministério Público e polícia investigam caso de criança com objeto semelhante a arma em ato pró-Flávio",
-   "resumo": "O Ministério Público do Rio Grande do Norte abriu uma investigação para apurar o caso de uma criança que apareceu sobre o teto de um veículo segurando um objeto semelhante a uma arma de fogo em…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/ministerio-publico-e-policia-investigam-caso-de-crianca-com-objeto-semelhante-a-arma-em-ato-pro-flavio.shtml",
-   "dataPub": "2026-10-09T03:00:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
-  },
-  {
    "id": "violencia-corrupcao-economia-veja-as-propostas-de-flavio-bolsonaro-e-de-lula-para-os-temas",
    "veiculo": "G1",
    "fonteFeed": "G1",
@@ -2502,7 +2520,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "horario-eleitoral-volta-nesta-sexta-feira-9-para-o-2-turno",
@@ -2517,7 +2535,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "lula-retoma-atos-de-campanha-para-o-2-turno-nesta-sexta-com-caminhada-no-distrito-federal",
@@ -2532,7 +2550,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "disputa-digital-lula-reune-jovens-influenciadores-eleitos-e-aliados-de-flavio-organizam-re",
@@ -2547,7 +2565,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-bolsonaro-fala-em-acabar-com-reeleicao-e-aumentar-o-proprio-mandato-entenda-como-mu",
@@ -2561,7 +2579,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-2-turno-veja-intencao-de-voto-por-regiao-genero-idade-identificacao-politica-cor",
@@ -2576,7 +2594,21 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
+  },
+  {
+   "id": "ministerio-publico-e-policia-investigam-caso-de-crianca-com-objeto-semelhante-a-arma-em-at",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Ministério Público e polícia investigam caso de criança com objeto semelhante a arma em ato pró-Flávio",
+   "resumo": "O Ministério Público do Rio Grande do Norte abriu uma investigação para apurar o caso de uma criança que apareceu sobre o teto de um veículo segurando um objeto semelhante a uma arma de fogo em…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/ministerio-publico-e-policia-investigam-caso-de-crianca-com-objeto-semelhante-a-arma-em-ato-pro-flavio.shtml",
+   "dataPub": "2026-10-09T03:00:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-fala-em-reajustar-aposentadoria-acima-da-inflacao-analistas-veem-desafio-fiscal-mai",
@@ -2621,7 +2653,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "douglas-ruas-pl-e-eleito-governador-do-rio-de-janeiro",
@@ -2662,7 +2694,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "analise-datafolha-2-turno-comeca-com-vantagem-estreita-de-flavio-bolsonaro-e-caminho-longo",
@@ -2677,7 +2709,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "celina-leao-pp-tem-55-e-lidera-disputa-no-segundo-turno-do-df",
@@ -2722,7 +2754,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "lula-deve-passar-a-defender-equilibrio-das-contas-e-campanha-apontara-furos-de-flavio-na-a",
@@ -2810,7 +2842,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "cotado-de-flavio-para-a-saude-trata-atuacao-de-jair-bolsonaro-na-pandemia-como-capitulo-su",
@@ -2824,7 +2856,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "aliados-de-flavio-bolsonaro-veem-lottenberg-na-saude-como-escudo-na-campanha-contra-negaci",
@@ -2838,7 +2870,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "indicado-de-flavio-para-a-saude-trata-atuacao-de-jair-bolsonaro-na-pandemia-como-capitulo-",
@@ -2895,7 +2927,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "palver-lula-e-flavio-tem-46-no-2-turno",
@@ -2910,7 +2942,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "bia-lula-rebate-criticas-a-janja-e-diz-que-alckmin-deve-aparecer-mais",
@@ -2964,7 +2996,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-pede-para-moraes-renunciar-faca-esse-bem-pela-nacao-",
@@ -3006,7 +3038,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "paes-reconhece-fim-da-disputa-pelo-governo-do-rj-depois-de-reveses-no-tse-e-no-stf",
@@ -3018,7 +3050,7 @@
    "dataPub": "2026-10-09T01:40:17.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "apoio-de-ex-adversarios-leva-a-voto-no-segundo-turno-o-que-diz-ceo-de-instituto-de-pesquis",
@@ -3059,7 +3091,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "bolsonarista-saca-arma-e-da-tiro-pra-cima-durante-ato-pro-lula-em-sergipe",
@@ -3102,7 +3134,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pesquisa-indica-flavio-bolsonaro-com-49-e-lula-com-45-no-segundo-turno",
@@ -3171,7 +3203,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-bolsonaro-soma-apoios-e-lidera-primeira-pesquisa-para-o-segundo-turno",
@@ -3185,7 +3217,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-le-poesia-de-cordel-em-homenagem-a-dia-do-nordestino",
@@ -3214,7 +3246,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "deputado-diz-que-moraes-podera-ser-preso",
@@ -3241,7 +3273,7 @@
    "dataPub": "2026-10-09T00:49:00.000Z",
    "mencoes": [],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "por-que-tirar-um-voto-do-rival-vale-por-dois-no-2-turno-de-acordo-com-ceo-de-instituto-de-",
@@ -3308,7 +3340,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "corrida-presidencial-o-senador-flavio-bolsonaro-pl-rj-chega-ao-segundo-turno-em-um-cenario",
@@ -3322,7 +3354,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "estudantes-organizam-atos-pro-lula-nesta-sexta-9-10-em-minas",
@@ -3365,7 +3397,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "eleicoes-2026-flavio-bolsonaro-afirma-que-cabera-ao-congresso-definir-o-tamanho-do-mandato",
@@ -3453,7 +3485,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "augusto-cury-apoia-lula-ou-flavio-o-que-candidato-disse-sobre-segundo-turno",
@@ -3468,7 +3500,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "paes-lamenta-decisao-da-justica-mas-reconhece-fim-da-disputa-pelo-governo-do-rio-sem-citar",
@@ -3483,20 +3515,6 @@
    "coletadoEm": "2026-10-09T02:18:09.983Z"
   },
   {
-   "id": "flavio-bolsonaro-recebe-apoio-de-governadores-eleitos-e-cury",
-   "veiculo": "Agência Brasil",
-   "fonteFeed": "Agência Brasil",
-   "titulo": "Flávio Bolsonaro recebe apoio de governadores eleitos e Cury",
-   "resumo": "O candidato Flávio Bolsonaro (PL) reuniu, em Brasília, um grupo de 14 governadores eleitos em primeiro turno das eleições. Governadores de partidos como PL, Republicanos, PP e MDB mostraram apoio à…",
-   "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/flavio-bolsonaro-recebe-apoios-de-governadores-eleitos-e-cury",
-   "dataPub": "2026-10-09T00:10:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
-  },
-  {
    "id": "lula-celebra-avanco-do-fim-da-6x1-e-defende-investimento-publico",
    "veiculo": "Agência Brasil",
    "fonteFeed": "Agência Brasil",
@@ -3509,7 +3527,21 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
+  },
+  {
+   "id": "flavio-bolsonaro-recebe-apoio-de-governadores-eleitos-e-cury",
+   "veiculo": "Agência Brasil",
+   "fonteFeed": "Agência Brasil",
+   "titulo": "Flávio Bolsonaro recebe apoio de governadores eleitos e Cury",
+   "resumo": "O candidato Flávio Bolsonaro (PL) reuniu, em Brasília, um grupo de 14 governadores eleitos em primeiro turno das eleições. Governadores de partidos como PL, Republicanos, PP e MDB mostraram apoio à…",
+   "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/flavio-bolsonaro-recebe-apoios-de-governadores-eleitos-e-cury",
+   "dataPub": "2026-10-09T00:10:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-desta-quinta-reforca-confianca-na-virada-de-lula-diz-boulos-em-ato-em-sp",
@@ -3524,7 +3556,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-e-recebido-por-arcebispo-de-brasilia-e-ganha-imagem-de-nossa-senhora",
@@ -3550,7 +3582,7 @@
    "dataPub": "2026-10-09T00:08:39.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-bolsonaro-lidera-disputa-acirrada-contra-lula-no-2-turno",
@@ -3580,7 +3612,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "ato-a-favor-de-lula-em-sp-tem-momentos-de-tensao-entre-estudantes-petistas-e-bolsonaristas",
@@ -3752,7 +3784,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "zanin-nega-recurso-a-paes-ruas-deve-ser-declarado-governador-eleito-do-rj",
@@ -3779,7 +3811,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "haddad-pede-votos-para-lula-em-sp-e-boulos-diz-que-derrotismo-e-para-covardes-",
@@ -3794,7 +3826,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "haddad-pede-votos-para-lula-em-sp-e-diz-que-esta-facil-fazer-campanha-contra-flavio-bolson",
@@ -3824,7 +3856,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-bolsonaro-perde-para-lula-apenas-no-nordeste-no-segundo-turno-veja-numero",
@@ -3839,7 +3871,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-visita-arcebispo-de-brasilia-e-recebe-imagem-de-nossa-senhora",
@@ -3892,7 +3924,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "reforma-tributaria-ministro-da-fazenda-diz-que-compromisso-do-governo-e-editar-mp-do-impos",
@@ -3919,7 +3951,7 @@
    "dataPub": "2026-10-08T23:10:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "site-oferece-criptomoedas-por-posts-de-apoio-a-flavio-bolsonaro",
@@ -3934,7 +3966,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-colunistas-do-globo-analisam-a-primeira-pesquisa-do-segundo-turno-apos-flavio-fi",
@@ -3963,7 +3995,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pesquisa-presidente-2026-veja-numeros-do-levantamento-de-2-turno-do-datafolha",
@@ -3975,7 +4007,7 @@
    "dataPub": "2026-10-08T23:00:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "lula-tenta-colocar-flavio-bolsonaro-na-defensiva-ao-cobrar-como-ele-votara-no-fim-da-escal",
@@ -4033,7 +4065,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-bolsonaro-na-pesquisa-de-segundo-turno-para-presidente-veja-numeros-do-datafolha",
@@ -4047,7 +4079,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-25-dos-eleitores-de-flavio-votam-para-derrotar-lula",
@@ -4077,7 +4109,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "na-tv-flavio-apostou-em-custo-de-vida-e-violencia-e-lula-investiu-em-legado-dizem-analista",
@@ -4092,7 +4124,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "douglas-ruas-critica-judicializacao-da-eleicao-e-se-declara-governador",
@@ -4104,7 +4136,7 @@
    "dataPub": "2026-10-08T22:45:00.000Z",
    "mencoes": [],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-pede-para-moraes-renunciar-apos-ministro-pedir-cumprimento-da-pena-de-eduardo-bolso",
@@ -4118,7 +4150,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-mostra-empate-entre-aprovacao-e-desaprovacao-a-lula",
@@ -4146,7 +4178,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-tem-52-e-lula-48-dos-votos-validos-no-2-turno-aponta-datafolha",
@@ -4161,7 +4193,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "apos-datafolha-lula-diz-que-sua-obrigacao-e-trabalhar-para-ter-mais-votos-que-flavio-bolso",
@@ -4190,7 +4222,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-comemora-mais-pontos-obtidos-do-que-lula-que-aponta-para-eleicao-indefini",
@@ -4205,7 +4237,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "augusto-cury-anuncia-apoio-a-flavio-bolsonaro-no-2-turno",
@@ -4264,7 +4296,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "quem-esta-na-frente-no-segundo-turno-para-presidente-veja-numeros-de-lula-e-flavio",
@@ -4279,7 +4311,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "quem-esta-na-frente-no-segundo-turno-para-presidente-veja-numeros-da-pesquisa-datafolha",
@@ -4348,7 +4380,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "lula-diz-que-flavio-vai-cortar-programas-sociais-e-senador-reage-prometendo-aumentar-bolsa",
@@ -4363,7 +4395,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pesquisa-segundo-turno-veja-numeros-do-novo-levantamento-datafolha",
@@ -4375,7 +4407,7 @@
    "dataPub": "2026-10-08T22:20:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "campanha-de-lula-pede-investigacao-de-site-que-oferece-criptomoeda-por-divulgacao-pro-flav",
@@ -4405,7 +4437,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "lula-diz-que-tesouraco-de-flavio-vai-tirar-dinheiro-do-pobre-e-evita-comentar-datafolha-na",
@@ -4495,7 +4527,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "nova-pesquisa-datafolha-do-segundo-turno-veja-numeros-de-lula-e-flavio-bolsonaro",
@@ -4510,7 +4542,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-no-df-aponta-celina-leao-com-55-e-grass-com-37-no-segundo-turno",
@@ -4522,7 +4554,7 @@
    "dataPub": "2026-10-08T22:09:38.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-bolsonaro-tem-49-das-intencoes-de-voto-e-lula-45-",
@@ -4537,7 +4569,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "2-turno-das-eleicoes-pesquisa-datafolha-flavio-tem-49-e-lula-soma-45-no-segundo-turno-leva",
@@ -4664,7 +4696,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "veja-os-partidos-que-declararam-apoio-a-flavio-bolsonaro-e-a-lula",
@@ -4679,7 +4711,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "moraes-expede-mandado-contra-eduardo-para-calar-boato-de-acordo-no-stf",
@@ -4732,7 +4764,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "lula-diz-que-pl-e-flavio-nao-querem-assumir-compromisso-com-fim-da-escala-6x1-e-defende-vo",
@@ -4747,7 +4779,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pesquisa-lula-e-flavio-no-segundo-turno-o-que-diz-datafolha-em-levantamento",
@@ -4762,7 +4794,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-confirma-poderdata-e-da-flavio-com-52-contra-48-de-lula",
@@ -4834,7 +4866,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-tem-49-e-lula-45-",
@@ -4864,7 +4896,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-e-lula-estao-tecnicamente-empatados-no-2-turno",
@@ -4879,7 +4911,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-bolsonaro-tem-49-e-lula-45-no-2-turno",
@@ -4908,7 +4940,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-para-o-2-turno-flavio-bolsonaro-49-lula-45-",
@@ -4938,7 +4970,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "pesquisa-datafolha-flavio-bolsonaro-tem-49-e-lula-45-no-segundo-turno",
@@ -4953,7 +4985,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-abre-quatro-pontos-sobre-lula-no-primeiro-datafolha-do-2-turno",
@@ -4998,7 +5030,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "primeira-pesquisa-datafolha-no-2-turno-mostra-flavio-bolsonaro-numericamente-a-frente-de-l",
@@ -5070,7 +5102,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "o-que-mostra-a-primeira-pesquisa-datafolha-para-presidente-no-2-turno",
@@ -5082,7 +5114,7 @@
    "dataPub": "2026-10-08T21:46:02.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-bolsonaro-tem-52-dos-votos-validos-no-2-turno-contra-48-de-lula",
@@ -5097,7 +5129,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "flavio-abre-2-turno-com-52-dos-votos-contra-48-de-lula-diz-datafolha",
@@ -5154,7 +5186,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-bolsonaro-e-rejeitado-por-43-e-lula-46-08-10-2026-politica",
@@ -5169,7 +5201,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-bolsonaro-tem-49-e-lula-45-na-primeira-pesquisa-do-segundo-turno",
@@ -5199,7 +5231,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "primeira-pesquisa-datafolha-do-2-turno-mostra-como-esta-a-disputa-entre-flavio-e-lula",
@@ -5229,7 +5261,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "a-disputa-entre-lula-e-flavio-bolsonaro-segundo-nova-pesquisa-datafolha",
@@ -5259,7 +5291,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-bolsonaro-tem-49-dos-votos-e-lula-45-no-segundo-turno",
@@ -5304,7 +5336,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-segundo-turno-flavio-bolsonaro-49-lula-45-",
@@ -5319,7 +5351,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-tem-52-dos-votos-validos-no-2-turno-lula-48-",
@@ -5349,7 +5381,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-2-turno-flavio-tem-52-e-lula-48-em-votos-validos",
@@ -5378,7 +5410,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-49-desaprovam-e-48-aprovam-governo-lula",
@@ -5393,7 +5425,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-bolsonaro-49-lula-45-",
@@ -5408,7 +5440,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "augusto-cury-declara-apoio-a-flavio-bolsonaro-no-segundo-turno",
@@ -5423,7 +5455,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "e-fake-video-de-flavio-bolsonaro-dizendo-que-se-eleito-vai-cortar-13-e-aposentadorias-fala",
@@ -5438,7 +5470,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "nova-pesquisa-quaest-no-amazonas-para-segundo-turno-mede-duelo-entre-omar-aziz-e-professor",
@@ -5465,7 +5497,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-flavio-bolsonaro-tem-52-e-lula-48-em-votos-validos-no-segundo-turno",
@@ -5508,7 +5540,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "lula-volta-a-cobrar-flavio-para-de-lorota-e-vamos-votar-a-escala-6x1-",
@@ -5567,7 +5599,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "augusto-cury-sela-apoio-a-flavio-bolsonaro-no-2-turno-das-eleicoes-presidenciais",
@@ -5637,7 +5669,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "augusto-cury-anuncia-apoio-a-flavio-bolsonaro-no-segundo-turno-apos-conversar-com-senador",
@@ -5651,7 +5683,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "augusto-cury-deve-declarar-apoio-a-flavio-bolsonaro-no-segundo-turno",
@@ -5678,7 +5710,7 @@
    "dataPub": "2026-10-08T21:26:40.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "tropa-de-flavio-bolsonaro-x-exercito-de-lula-aliados-de-candidatos-mobilizam-eleitores-nas",
@@ -5693,7 +5725,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-celina-lidera-com-55-e-grass-soma-37-no-segundo-turno-no-df",
@@ -5749,7 +5781,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "eduardo-reage-a-moraes-e-aposta-em-vitoria-de-flavio-para-restaurar-a-normalidade-",
@@ -5791,7 +5823,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "governo-avalia-definir-imposto-seletivo-por-emenda-constitucional",
@@ -5847,7 +5879,7 @@
    "dataPub": "2026-10-08T21:09:59.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "datafolha-no-df-2-turno-celina-leao-55-leandro-grass-37-",
@@ -5862,7 +5894,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "lula-diz-que-flavio-bolsonaro-inventa-lorota-sobre-6x1-e-cobra-da-bancada-do-pl-voto-a-fav",
@@ -5877,7 +5909,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   },
   {
    "id": "lula-diz-que-flavio-bolsonaro-inventa-lorota-sobre-6x1-e-cobra-que-bancada-do-pl-vote-a-fa",
@@ -5910,33 +5942,36 @@
    "coletadoEm": "2026-10-08T21:57:03.667Z"
   },
   {
-   "id": "datafolha-celina-leao-lidera-disputa-de-2-turno-contra-grass-no-df",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Datafolha: Celina Leão lidera disputa de 2º turno contra Grass no DF",
-   "resumo": "A governadora Celina Leão ( PP ), candidata à reeleição, lidera a disputa no segundo turno ao Governo do Distrito Federal , segundo pesquisa Datafolha divulgada nesta quinta-feira (8). Leia mais…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/datafolha-celina-leao-lidera-disputa-de-2o-turno-no-df-com-55-contra-37-de-grass.shtml",
+   "id": "unidade-popular-declara-apoio-a-lula-no-segundo-turno",
+   "veiculo": "G1",
+   "fonteFeed": "G1",
+   "titulo": "Unidade Popular declara apoio a Lula no segundo turno",
+   "resumo": "O Unidade Popular (UP), partido da ex-candidata à Presidência Samara Martins, declarou nesta quinta-feira (8) apoio ao presidente Luiz Inácio Lula da Silva (PT) no segundo turno da eleição…",
+   "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/08/unidade-popular-declara-apoio-a-lula-no-segundo-turno.ghtml",
    "dataPub": "2026-10-08T21:05:00.000Z",
-   "mencoes": [],
+   "mencoes": [
+    "13",
+    "22"
+   ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-09T12:18:00.464Z"
+   "coletadoEm": "2026-10-09T12:18:49.452Z"
   }
  ],
  "midia": {
   "janelaHoras": 72,
   "totalManchetes": 400,
   "mencoes": {
-   "13": 284,
-   "22": 310
+   "13": 285,
+   "22": 311
   },
   "tom": {
    "13": {
-    "positivo": 53,
+    "positivo": 54,
     "neutro": 194,
     "negativo": 37
    },
    "22": {
-    "positivo": 70,
+    "positivo": 71,
     "neutro": 203,
     "negativo": 37
    }
@@ -5944,7 +5979,7 @@
   "termos": [
    [
     "datafolha",
-    103
+    102
    ],
    [
     "pesquisa",
@@ -5956,7 +5991,7 @@
    ],
    [
     "apoio",
-    23
+    24
    ],
    [
     "governo",
@@ -5964,7 +5999,7 @@
    ],
    [
     "disputa",
-    20
+    19
    ],
    [
     "mostra",
@@ -5987,10 +6022,6 @@
     15
    ],
    [
-    "grass",
-    13
-   ],
-   [
     "ruas",
     13
    ],
@@ -6003,7 +6034,7 @@
     13
    ],
    [
-    "celina",
+    "grass",
     12
    ],
    [
@@ -6012,6 +6043,10 @@
    ],
    [
     "frente",
+    11
+   ],
+   [
+    "celina",
     11
    ],
    [
@@ -6055,7 +6090,7 @@
     8
    ],
    [
-    "lidera",
+    "declara",
     8
    ],
    [
@@ -6091,22 +6126,22 @@
     7
    ],
    [
-    "leão",
-    7
-   ],
-   [
-    "declara",
+    "lidera",
     7
    ],
    [
     "apoios",
     6
+   ],
+   [
+    "debate",
+    6
    ]
   ],
   "serieDiaria": [
    {
-    "13": 157,
-    "22": 174,
+    "13": 158,
+    "22": 175,
     "dia": "2026-10-08"
    },
    {
@@ -6128,7 +6163,7 @@
    "Gazeta do Povo": 7,
    "VEJA": 7,
    "InfoMoney": 2,
-   "G1": 25,
+   "G1": 26,
    "O Globo": 52,
    "Estado de Minas": 10,
    "BBC News Brasil": 3,
@@ -6146,7 +6181,7 @@
    "Instagram": 7,
    "Kinvo": 1,
    "Valor Econômico": 8,
-   "Folha de S.Paulo": 28,
+   "Folha de S.Paulo": 27,
    "Brasil 61": 1,
    "O GLOBO": 7,
    "Congresso em Foco": 1,
@@ -6820,18 +6855,18 @@
    "link": "https://www.tse.jus.br"
   },
   {
-   "data": "2026-10-08T20:00:00-03:00",
+   "data": "2026-10-08T18:43:00-03:00",
    "tipo": "pesquisa",
-   "titulo": "Datafolha: primeira pesquisa do 2º turno",
-   "detalhe": "Registro BR-02949/2026. 2.520 entrevistas entre 6 e 8/10, margem de 2 pontos. Divulgação prevista para a noite de 8/10.",
-   "link": "https://www.brasildefato.com.br/2026/10/06/datafolha-quaest-atlasintel-quando-saem-as-pesquisas-de-2o-turno-entre-lula-e-flavio/"
+   "titulo": "Datafolha: Flávio 52%, Lula 48% nos válidos",
+   "detalhe": "Primeira pesquisa Datafolha do 2º turno (BR-02949/2026). Votos totais: Flávio 49%, Lula 45%. Margem de 2 pontos.",
+   "link": "https://www.brasildefato.com.br/2026/10/08/datafolha-segundo-turno-flavio-bolsonaro-49-lula-45/"
   },
   {
-   "data": "2026-10-09T12:00:00-03:00",
+   "data": "2026-10-09T07:30:00-03:00",
    "tipo": "pesquisa",
-   "titulo": "AtlasIntel: primeira pesquisa do 2º turno",
-   "detalhe": "5 mil entrevistas pela internet, margem de 1 ponto. Divulgação prevista para 9/10.",
-   "link": "https://www.cartacapital.com.br/cartaexpressa/a-1a-pesquisa-atlasintel-sobre-o-2o-turno-entre-lula-e-flavio-bolsonaro/"
+   "titulo": "AtlasIntel: Flávio 52,8%, Lula 47,2% nos válidos",
+   "detalhe": "Pesquisa AtlasIntel/Bloomberg (BR-03663/2026), 5.026 entrevistas pela internet, margem de 1 ponto. Votos totais: Flávio 51,1%, Lula 45,7%.",
+   "link": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/atlasintel-presidente-outubro-2026-segundo-turno/"
   },
   {
    "data": "2026-10-11T20:00:00-03:00",
@@ -6885,15 +6920,20 @@
  ],
  "analise": {
   "_comentario": "Análise editorial exibida no painel 'Leitura do momento', no topo da página. NÃO é pesquisa eleitoral nem previsão. Revise sempre que sair pesquisa registrada nova, debate ou apoio relevante, e atualize 'dataAnalise'. 'escala' vai de 0 a 4: 0 = vantagem clara do 1º candidato da configuração (13), 1 = vantagem leve do 13, 2 = indefinido, 3 = vantagem leve do 22, 4 = vantagem clara do 22. 'favorece' em cada fundamento: '13', '22' ou 'neutro'. Na 'aritmetica', 'para13' e 'para22' são percentuais (0–100) dos eleitores de cada candidato eliminado; o restante vai para branco, nulo ou abstenção.",
-  "dataAnalise": "2026-10-08T13:50:00-03:00",
+  "dataAnalise": "2026-10-09T09:30:00-03:00",
   "revisarAposHoras": 48,
   "escala": 3,
   "favorecido": "22",
   "rotulo": "Vantagem leve de Flávio Bolsonaro",
-  "confianca": "moderada",
-  "clima": "Disputa aberta, com o vento soprando a favor de Flávio Bolsonaro.",
-  "resumo": "Flávio Bolsonaro começa o 2º turno com uma vantagem leve. Ele saiu do 1º turno na frente, os eleitores dos candidatos eliminados pendem mais para ele do que para Lula, e as pesquisas do 1º turno subestimaram o seu desempenho. A disputa, porém, segue aberta: a diferença do 1º turno (1,87 ponto) é a menor entre os dois primeiros colocados desde 1989, e as primeiras pesquisas feitas depois do 1º turno ainda não saíram.",
+  "confianca": "moderada a alta",
+  "clima": "Flávio Bolsonaro abre o 2º turno à frente, agora também nas pesquisas. A disputa segue aberta, mas o ônus da virada é de Lula.",
+  "resumo": "Flávio Bolsonaro tem vantagem leve, e ela ficou mais consistente nesta semana. As duas primeiras pesquisas do 2º turno confirmam o que o 1º turno e a transferência de votos já indicavam: Datafolha, 52% a 48% dos votos válidos; AtlasIntel, 52,8% a 47,2%. A diferença, de 4 a 6 pontos, está no limite da margem no Datafolha e acima dela na AtlasIntel. Faltam 16 dias e três debates: Lula precisa tirar algo como 2 a 3 pontos líquidos, o que já aconteceu em 2º turnos brasileiros, mas exige mudar o rumo da campanha.",
   "fundamentos": [
+   {
+    "titulo": "As primeiras pesquisas do 2º turno",
+    "favorece": "22",
+    "texto": "Datafolha (BR-02949/2026, 6 a 8/10): Flávio 49%, Lula 45% dos votos totais; 52% a 48% dos válidos. AtlasIntel/Bloomberg (BR-03663/2026, 3 a 8/10, 5.026 entrevistas): Flávio 51,1%, Lula 45,7%; 52,8% a 47,2% dos válidos. Os dois institutos, com métodos diferentes (presencial e internet), apontam na mesma direção e quase no mesmo tamanho, o que dá mais peso ao resultado."
+   },
    {
     "titulo": "Ponto de partida",
     "favorece": "22",
@@ -6920,9 +6960,9 @@
     "texto": "Nos sete 2ºs turnos presidenciais desde 1989, quem liderou o 1º turno venceu. É um sinal fraco: a vantagem de 2026 é a menor da série, e o 2º colocado costuma crescer mais entre os turnos (em 2022, a diferença caiu de 5,2 para 1,8 ponto)."
    },
    {
-    "titulo": "Rejeição empatada",
-    "favorece": "neutro",
-    "texto": "No Datafolha de 1º/10, 45% diziam não votar de jeito nenhum em Flávio, e o mesmo percentual em Lula. Nenhum dos dois tem um teto claramente mais baixo que o outro."
+    "titulo": "Rejeição e avaliação do governo",
+    "favorece": "22",
+    "texto": "No Datafolha de 8/10, 46% dizem não votar em Lula de jeito nenhum e 43% em Flávio. Uma semana antes, os dois empatavam em 45%. A avaliação do governo também pesa contra o candidato à reeleição: 40% negativa contra 35% positiva."
    }
   ],
   "podeVirar": [
@@ -6939,8 +6979,8 @@
     "texto": "Lula e Flávio não se enfrentaram no 1º turno. Os três debates (11, 18 e 23/10) são o primeiro confronto direto e podem mexer com indecisos."
    },
    {
-    "titulo": "Margem estreita nas simulações",
-    "texto": "As simulações de 2º turno feitas antes do 1º turno ficaram dentro da margem de erro, ora com Lula, ora com Flávio numericamente à frente. Uma diferença de 2 a 4 pontos pode se desfazer em três semanas de campanha."
+    "titulo": "Datafolha no limite da margem",
+    "texto": "No Datafolha, a diferença de 4 pontos nos votos totais é o dobro da margem de 2 pontos para cada lado: os candidatos ficam no limite do empate técnico. 6% dizem que ainda podem mudar o voto. Uma oscilação de 2 pontos de um lado para o outro desfaz a vantagem."
    }
   ],
   "aritmetica": {
@@ -6995,12 +7035,28 @@
    ]
   },
   "gatilhos": [
-   "Datafolha de 2º turno (registro BR-02949/2026), com divulgação prevista para 8/10.",
-   "AtlasIntel de 2º turno (5 mil entrevistas, margem de 1 ponto), prevista para 9/10.",
-   "Se a média das pesquisas registradas mostrar Lula à frente além da margem de erro, esta leitura deve passar para 'indefinido' ou 'vantagem de Lula'. A página avisa automaticamente quando houver essa divergência.",
-   "Debate da Record em 11/10."
+   "Debate da Record em 11/10: primeiro confronto direto entre os dois.",
+   "Próximas rodadas de Quaest, Paraná Pesquisas e Real Time Big Data, ainda sem data divulgada.",
+   "Se duas pesquisas seguidas mostrarem Lula à frente, ou a diferença cair para 2 pontos ou menos nos válidos, esta leitura passa para 'indefinido'. A página avisa automaticamente quando a média das pesquisas divergir da leitura.",
+   "Se a vantagem de Flávio passar de 6 pontos nos válidos em mais de um instituto, a leitura pode subir para 'vantagem clara'."
   ],
   "fontes": [
+   {
+    "titulo": "Datafolha de 8/10 (Brasil de Fato)",
+    "url": "https://www.brasildefato.com.br/2026/10/08/datafolha-segundo-turno-flavio-bolsonaro-49-lula-45/"
+   },
+   {
+    "titulo": "Datafolha de 8/10 (Gazeta do Povo)",
+    "url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/datafolha-presidente-outubro-2026-segundo-turno/"
+   },
+   {
+    "titulo": "AtlasIntel de 9/10 (Gazeta do Povo)",
+    "url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/atlasintel-presidente-outubro-2026-segundo-turno/"
+   },
+   {
+    "titulo": "AtlasIntel de 9/10 (Bloomberg Línea)",
+    "url": "https://www.bloomberglinea.com.br/brasil/pesquisa-atlasintel-aponta-flavio-a-frente-no-segundo-turno-com-53-contra-47-de-lula/"
+   },
    {
     "titulo": "Resultado do 1º turno com 100% das seções (Portal de Prefeitura)",
     "url": "https://portaldeprefeitura.com.br/bastidores-da-politica/eleicoes-2026-com-100-das-secoes-totalizadas-flavio-tem-4703-e/633498/"
@@ -7032,10 +7088,6 @@
    {
     "titulo": "Datafolha de 1º/10: rejeição (Poder360)",
     "url": "https://static.poder360.com.br/uploads/2026/10/datafolha-presidencial-outubro.pdf"
-   },
-   {
-    "titulo": "Agenda das pesquisas de 2º turno (Brasil de Fato)",
-    "url": "https://www.brasildefato.com.br/2026/10/06/datafolha-quaest-atlasintel-quando-saem-as-pesquisas-de-2o-turno-entre-lula-e-flavio/"
    },
    {
     "titulo": "Datas dos debates (Metrópoles)",
