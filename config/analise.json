@@ -1,6 +1,6 @@
 {
   "_comentario": "Análise editorial exibida no painel 'Leitura do momento', no topo da página. NÃO é pesquisa eleitoral nem previsão. Revise sempre que sair pesquisa registrada nova, debate ou apoio relevante, e atualize 'dataAnalise'. 'escala' vai de 0 a 4: 0 = vantagem clara do 1º candidato da configuração (13), 1 = vantagem leve do 13, 2 = indefinido, 3 = vantagem leve do 22, 4 = vantagem clara do 22. 'favorece' em cada fundamento: '13', '22' ou 'neutro'. Na 'aritmetica', 'para13' e 'para22' são percentuais (0–100) dos eleitores de cada candidato eliminado; o restante vai para branco, nulo ou abstenção.",
-  "dataAnalise": "2026-10-09T09:45:00-03:00",
+  "dataAnalise": "2026-10-09T10:00:00-03:00",
   "revisarAposHoras": 48,
   "escala": 3,
   "favorecido": "22",
@@ -20,9 +20,9 @@
       "texto": "Flávio terminou com 47,03% dos votos válidos e Lula com 45,16%, uma diferença de 2,2 milhões de votos. Os outros candidatos somaram 7,8%. Para passar de 50%, Flávio precisa de cerca de 3 pontos desse bloco; Lula precisa de quase 5."
     },
     {
-      "titulo": "Para onde vão os votos dos eliminados",
+      "titulo": "Apoios e transferência de votos",
       "favorece": "22",
-      "texto": "Na Quaest de 2 e 3/10 (BR-02197/2026), os eleitores de Renan Santos escolhiam Flávio por 60% a 11%, os de Caiado por 43% a 19% e os de Cury por 34% a 23%; o restante ia para branco, nulo ou abstenção. Zema (5/10) e Caiado (6/10) declararam apoio a Flávio. Cury e Renan Santos ficaram neutros, e o PSD liberou seus filiados. Nenhum dos quatro eliminados mais votados declarou apoio a Lula."
+      "texto": "Os candidatos que declararam apoio a Flávio (Cury em 8/10, Caiado em 6/10, Zema em 5/10 e Clariana Barão em 7/10) somaram 5,4% dos votos válidos no 1º turno. Os que apoiam Lula (UP, PSTU e PCB) somaram 0,2%. Renan Santos (2,2%) ficou neutro, e o PSD de Caiado liberou seus filiados. Apoio não garante transferência: no Datafolha de 8/10, 46% dos eleitores de Cury, Renan, Caiado e Zema dizem votar em Flávio e 32% em Lula. Na Quaest de 2 e 3/10, antes dos anúncios, os eleitores de Renan escolhiam Flávio por 60% a 11%, os de Caiado por 43% a 19% e os de Cury por 34% a 23%."
     },
     {
       "titulo": "As pesquisas erraram para um lado só",
@@ -52,7 +52,7 @@
     },
     {
       "titulo": "Eleitores de Augusto Cury",
-      "texto": "É o maior bloco entre os eliminados (2,9%) e o mais aberto a Lula: 23% iam para ele e 41% não escolhiam nenhum dos dois. Cury anunciou neutralidade, o que deixa esse eleitor em disputa."
+      "texto": "É o maior bloco entre os eliminados (2,9%) e era o mais aberto a Lula: na Quaest de 2 e 3/10, 23% iam para ele e 41% não escolhiam nenhum dos dois. O apoio de Cury a Flávio, anunciado em 8/10, foi condicionado a compromissos e veio depois de ele ter dito que ficaria neutro; parte desse eleitor pode não seguir a orientação."
     },
     {
       "titulo": "Debates",
@@ -64,7 +64,7 @@
     }
   ],
   "aritmetica": {
-    "descricao": "Exercício aritmético com dados públicos: parte do resultado oficial do 1º turno e distribui os votos dos eliminados conforme a Quaest de 2 e 3/10 (BR-02197/2026). Não considera mudanças no comparecimento, troca de voto entre Lula e Flávio nem erros de pesquisa. Não é pesquisa nem previsão.",
+    "descricao": "Exercício aritmético com dados públicos: parte do resultado oficial do 1º turno e distribui os votos dos eliminados conforme a Quaest de 2 e 3/10 (BR-02197/2026), feita antes dos anúncios de apoio. Não considera o efeito dos apoios, mudanças no comparecimento, troca de voto entre Lula e Flávio nem erros de pesquisa. Não é pesquisa nem previsão.",
     "base": {
       "13": 45.16,
       "22": 47.03
@@ -75,7 +75,7 @@
         "pct": 2.89,
         "para13": 23,
         "para22": 34,
-        "origem": "Quaest BR-02197/2026"
+        "origem": "Quaest BR-02197/2026 (antes do apoio a Flávio)"
       },
       {
         "grupo": "Renan Santos (Missão)",
@@ -89,7 +89,7 @@
         "pct": 2.18,
         "para13": 19,
         "para22": 43,
-        "origem": "Quaest BR-02197/2026"
+        "origem": "Quaest BR-02197/2026 (antes do apoio a Flávio)"
       },
       {
         "grupo": "Romeu Zema (Novo)",
@@ -103,14 +103,14 @@
         "pct": 0.17,
         "para13": 60,
         "para22": 5,
-        "origem": "Hipótese: partidos de esquerda"
+        "origem": "Hipótese: UP, PSTU e PCB apoiam Lula"
       },
       {
         "grupo": "DC e Democrata",
         "pct": 0.04,
         "para13": 20,
         "para22": 40,
-        "origem": "Hipótese"
+        "origem": "Hipótese: DC apoia Flávio"
       }
     ]
   },
@@ -121,6 +121,18 @@
     "Se a vantagem de Flávio passar de 6 pontos nos válidos em mais de um instituto, a leitura pode subir para 'vantagem clara'."
   ],
   "fontes": [
+    {
+      "titulo": "Partidos e candidatos que declararam apoio (CNN Brasil, 8/10)",
+      "url": "https://www.cnnbrasil.com.br/eleicoes/veja-os-partidos-que-declararam-apoio-a-flavio-bolsonaro-e-a-lula/"
+    },
+    {
+      "titulo": "Cury declara apoio a Flávio (Poder360, 8/10)",
+      "url": "https://www.poder360.com.br/poder-eleicoes-2026/augusto-cury-declara-apoio-a-flavio-bolsonaro-no-2o-turno/"
+    },
+    {
+      "titulo": "Renan Santos não apoia ninguém (Terra, 8/10)",
+      "url": "https://www.terra.com.br/noticias/eleicoes/renan-santos-vai-apoiar-lula-ou-flavio-bolsonaro-no-segundo-turno,7065c7e54d60037983b98adb3f6c8bf0uy6c8h2y.html"
+    },
     {
       "titulo": "PoderData/Aya de 8/10 (Poder360)",
       "url": "https://www.poder360.com.br/poderdata/flavio-tem-53-contra-47-de-lula-no-2o-turno-diz-pesquisa-poderdata-aya/"
@@ -150,10 +162,6 @@
       "url": "https://www.jornalopcao.com.br/ultimas-noticias/quem-fica-com-os-votos-de-ronaldo-caiado-augusto-cury-e-renan-santos-no-duelo-entre-lula-e-flavio-876089/"
     },
     {
-      "titulo": "Posição de Zema, Cury, Renan e Caiado (CNN Brasil)",
-      "url": "https://www.cnnbrasil.com.br/eleicoes/quem-zema-cury-renan-e-caiado-apoiarao-no-segundo-turno-entenda/"
-    },
-    {
       "titulo": "Caiado anuncia apoio a Flávio (IstoÉ)",
       "url": "https://istoe.com.br/caiado-apoia-flavio-bolsonaro-segundo-turno"
     },
@@ -176,6 +184,98 @@
     {
       "titulo": "Datas dos debates (Metrópoles)",
       "url": "https://www.metropoles.com/brasil/globo-band-record-debates-flavio"
+    }
+  ],
+  "apoios": [
+    {
+      "nome": "Augusto Cury",
+      "partido": "Avante",
+      "pct1T": 2.89,
+      "posicao": "22",
+      "data": "2026-10-08",
+      "detalhe": "Apoio anunciado após videochamada com Flávio, condicionado a um termo de compromisso público (transparência, responsabilidade fiscal, respeito às instituições). Antes, em 5/10, tinha dito que ficaria neutro.",
+      "fonte": "https://www.poder360.com.br/poder-eleicoes-2026/augusto-cury-declara-apoio-a-flavio-bolsonaro-no-2o-turno/"
+    },
+    {
+      "nome": "Renan Santos",
+      "partido": "Missão",
+      "pct1T": 2.24,
+      "posicao": "neutro",
+      "data": "2026-10-08",
+      "detalhe": "Não apoia nenhum dos dois e liberou seus eleitores. Disse que jamais votará em Lula e também criticou Flávio.",
+      "fonte": "https://www.terra.com.br/noticias/eleicoes/renan-santos-vai-apoiar-lula-ou-flavio-bolsonaro-no-segundo-turno,7065c7e54d60037983b98adb3f6c8bf0uy6c8h2y.html"
+    },
+    {
+      "nome": "Ronaldo Caiado",
+      "partido": "PSD",
+      "pct1T": 2.18,
+      "posicao": "22",
+      "data": "2026-10-06",
+      "detalhe": "Apoio pessoal anunciado em Goiânia, com documento de pontos em comum. O PSD, de Gilberto Kassab, ficou neutro e liberou diretórios e filiados.",
+      "fonte": "https://istoe.com.br/caiado-apoia-flavio-bolsonaro-segundo-turno"
+    },
+    {
+      "nome": "Romeu Zema",
+      "partido": "Novo",
+      "pct1T": 0.27,
+      "posicao": "22",
+      "data": "2026-10-05",
+      "detalhe": "Declarou que ficaria contra o PT no 2º turno.",
+      "fonte": "https://www.cnnbrasil.com.br/eleicoes/quem-zema-cury-renan-e-caiado-apoiarao-no-segundo-turno-entenda/"
+    },
+    {
+      "nome": "Samara Martins",
+      "partido": "UP",
+      "pct1T": 0.1,
+      "posicao": "13",
+      "data": "2026-10-08",
+      "detalhe": "A Unidade Popular declarou apoio a Lula.",
+      "fonte": "https://www.cnnbrasil.com.br/eleicoes/veja-os-partidos-que-declararam-apoio-a-flavio-bolsonaro-e-a-lula/"
+    },
+    {
+      "nome": "Hertz Dias",
+      "partido": "PSTU",
+      "pct1T": 0.04,
+      "posicao": "13",
+      "data": "2026-10-07",
+      "detalhe": "Apoio crítico a Lula.",
+      "fonte": "https://www.cnnbrasil.com.br/eleicoes/veja-os-partidos-que-declararam-apoio-a-flavio-bolsonaro-e-a-lula/"
+    },
+    {
+      "nome": "Clariana Barão",
+      "partido": "DC",
+      "pct1T": 0.03,
+      "posicao": "22",
+      "data": "2026-10-07",
+      "detalhe": "Apoio anunciado após reunião com Valdemar Costa Neto, presidente do PL.",
+      "fonte": "https://www.cnnbrasil.com.br/eleicoes/veja-os-partidos-que-declararam-apoio-a-flavio-bolsonaro-e-a-lula/"
+    },
+    {
+      "nome": "Edmilson Costa",
+      "partido": "PCB",
+      "pct1T": 0.02,
+      "posicao": "13",
+      "data": "",
+      "detalhe": "Declarou apoio a Lula.",
+      "fonte": "https://www.cnnbrasil.com.br/eleicoes/veja-os-partidos-que-declararam-apoio-a-flavio-bolsonaro-e-a-lula/"
+    },
+    {
+      "nome": "Rui Costa Pimenta",
+      "partido": "PCO",
+      "pct1T": 0.01,
+      "posicao": "indefinido",
+      "data": "",
+      "detalhe": "Decisão será tomada em conferência nacional do partido, sem data.",
+      "fonte": "https://www.cnnbrasil.com.br/eleicoes/veja-os-partidos-que-declararam-apoio-a-flavio-bolsonaro-e-a-lula/"
+    },
+    {
+      "nome": "Wilson Grassi",
+      "partido": "Democrata",
+      "pct1T": 0.01,
+      "posicao": "indefinido",
+      "data": "",
+      "detalhe": "Ainda não decidiu.",
+      "fonte": "https://www.cnnbrasil.com.br/eleicoes/veja-os-partidos-que-declararam-apoio-a-flavio-bolsonaro-e-a-lula/"
     }
   ]
 }
