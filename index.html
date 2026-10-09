@@ -299,6 +299,7 @@ td.n, th.n { text-align: right; padding-right: 0; padding-left: 10px; }
 #pesq-tabela table { min-width: 780px; }
 #pesq-tabela td, #pesq-tabela th { padding-right: 14px; }
 .nw { white-space: nowrap; }
+#pn-apoios td.n, #pn-apoios th.n { padding-right: 16px; }
 .formula { background: var(--superficie); border: 1px solid var(--linha); border-left: 3px solid var(--ceu); padding: 14px 16px; font-size: .92rem; margin-top: 16px; border-radius: var(--raio); }
 .formula p { margin: 0 0 8px; }
 .formula code { font-family: var(--sans); background: var(--superficie-2); padding: 1px 6px; border-radius: 2px; color: var(--ceu); }
@@ -521,12 +522,14 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
       <div class="abas" role="tablist" aria-label="Central do 2º turno">
         <button type="button" role="tab" id="aba-resumo" aria-controls="pn-resumo" aria-selected="true" data-aba="resumo">Resumo</button>
         <button type="button" role="tab" id="aba-pesquisas" aria-controls="pn-pesquisas" aria-selected="false" data-aba="pesquisas" tabindex="-1">Pesquisas do 2º turno</button>
+        <button type="button" role="tab" id="aba-apoios" aria-controls="pn-apoios" aria-selected="false" data-aba="apoios" tabindex="-1">Apoios</button>
         <button type="button" role="tab" id="aba-agenda" aria-controls="pn-agenda" aria-selected="false" data-aba="agenda" tabindex="-1">Debates e agenda</button>
         <button type="button" role="tab" id="aba-apuracao" aria-controls="pn-apuracao" aria-selected="false" data-aba="apuracao" tabindex="-1">Apuração</button>
         <button type="button" role="tab" id="aba-fontes" aria-controls="pn-fontes" aria-selected="false" data-aba="fontes" tabindex="-1">Onde acompanhar</button>
       </div>
       <div class="painel" role="tabpanel" id="pn-resumo" aria-labelledby="aba-resumo"></div>
       <div class="painel" role="tabpanel" id="pn-pesquisas" aria-labelledby="aba-pesquisas" hidden></div>
+      <div class="painel" role="tabpanel" id="pn-apoios" aria-labelledby="aba-apoios" hidden></div>
       <div class="painel" role="tabpanel" id="pn-agenda" aria-labelledby="aba-agenda" hidden></div>
       <div class="painel" role="tabpanel" id="pn-apuracao" aria-labelledby="aba-apuracao" hidden></div>
       <div class="painel" role="tabpanel" id="pn-fontes" aria-labelledby="aba-fontes" hidden></div>
@@ -1608,6 +1611,10 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
     }
     if (base) html += cartao('Ponto de partida: 1º turno', `${nf(base[lider1], 2)}%`, `${esc(rotuloCand(lider1))} terminou à frente; ${esc(cand(lider1 === NUMS[0] ? NUMS[1] : NUMS[0]).nome)} teve ${nf(base[lider1 === NUMS[0] ? NUMS[1] : NUMS[0]], 2)}%`, corDe(lider1));
     html += cartao('Apuração', ap ? `${nf(ap.pctSecoes, 2)}%` : (divulgacaoComecou() ? 'Aguardando' : '25/10, 17h'), ap ? 'das seções totalizadas' : 'O TSE começa a divulgar às 17h', 'var(--vivo)');
+    if (apoiosLista().length) {
+      const so = somaApoios(); const l = so[NUMS[1]] >= so[NUMS[0]] ? NUMS[1] : NUMS[0]; const o = l === NUMS[0] ? NUMS[1] : NUMS[0];
+      html += cartao('Apoios dos eliminados', `${nf(so[l], 1)}%`, `dos válidos do 1º turno vieram de quem apoia ${esc(cand(l).nome)}; ${nf(so[o], 1)}% de quem apoia ${esc(cand(o).nome)}`, corDe(l));
+    }
     html += cartao('Fontes de notícias', `${fontesOk} de ${fontesOk + fontesFalha}`, 'feeds responderam na última coleta', fontesFalha ? 'var(--ouro)' : 'var(--pos)');
     html += '</div>';
     $('#pn-resumo').innerHTML = html;
@@ -1638,6 +1645,36 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
       ${imprensa.length ? `<ul class="feed">${imprensa.map(n => `<li data-tom="${esc(n.tom)}"><a class="tit" href="${esc(urlSegura(n.link))}" target="_blank" rel="noopener noreferrer">${esc(n.titulo)}</a><div class="meta"><span>${esc(n.veiculo)}</span><time datetime="${esc(n.dataPub)}">${esc(dataHora(n.dataPub))}</time></div></li>`).join('')}</ul>` : '<p class="fraco">Nenhuma manchete sobre pesquisas no período.</p>'}
       <p style="margin-top:14px"><a href="https://pesqele-divulgacao.tse.jus.br/" target="_blank" rel="noopener noreferrer">Consultar registros no PesqEle</a></p>`;
     $('#pn-pesquisas').innerHTML = html;
+  }
+
+  const apoiosLista = () => (((ESTADO.dados || {}).analise || {}).apoios || []).slice().sort((a, b) => (+b.pct1T || 0) - (+a.pct1T || 0));
+  function somaApoios() {
+    const soma = { [NUMS[0]]: 0, [NUMS[1]]: 0, neutro: 0, indefinido: 0 };
+    apoiosLista().forEach(x => { soma[x.posicao in soma ? x.posicao : 'indefinido'] += +x.pct1T || 0; });
+    return soma;
+  }
+  const rotuloPosicao = x => x.posicao === 'neutro' ? 'Neutro' : x.posicao === 'indefinido' ? 'Sem decisão' : `Apoia ${cand(x.posicao).nome}`;
+  const corPosicao = x => (x.posicao === NUMS[0] || x.posicao === NUMS[1]) ? corDe(x.posicao) : 'var(--neu)';
+
+  function painelApoios() {
+    const lista = apoiosLista();
+    if (!lista.length) { $('#pn-apoios').innerHTML = '<p class="vazio">Nenhum apoio registrado ainda. Edite a lista "apoios" em config/analise.json.</p>'; return; }
+    const soma = somaApoios();
+    const tot = Object.values(soma).reduce((a, b) => a + b, 0) || 1;
+    const a = (ESTADO.dados || {}).analise || {};
+    const f = (a.fundamentos || []).find(x => /apoio|transfer/i.test(x.titulo));
+    $('#pn-apoios').innerHTML = `
+      <p class="muted" style="max-width:70ch;margin-top:0">Posição dos candidatos eliminados no 1º turno, com o peso de cada um nos votos válidos de 4/10. Apoio declarado não garante que o eleitor siga a orientação.</p>
+      <div class="barra-dupla" style="height:16px" role="img" aria-label="Votos dos eliminados: ${nf(soma[NUMS[1]], 1)}% com apoio a ${esc(cand(NUMS[1]).nome)}, ${nf(soma[NUMS[0]], 1)}% com apoio a ${esc(cand(NUMS[0]).nome)}, ${nf(soma.neutro + soma.indefinido, 1)}% neutros ou sem decisão">
+        <i class="${segClasse(NUMS[0])}" style="--c:${corDe(NUMS[0])};width:${100 * soma[NUMS[0]] / tot}%"></i><i style="background:var(--neu);width:${100 * (soma.neutro + soma.indefinido) / tot}%"></i><i class="${segClasse(NUMS[1])}" style="--c:${corDe(NUMS[1])};width:${100 * soma[NUMS[1]] / tot}%"></i>
+      </div>
+      <div class="legenda" style="margin:6px 0 18px">${NUMS.map(n => `<span>${amostra(n)}Apoiam ${esc(cand(n).nome)}: ${nf(soma[n], 2)}% dos válidos do 1º turno</span>`).join('')}<span><i class="amostra-padrao" style="background:var(--neu);border-color:var(--neu)"></i>Neutros ou sem decisão: ${nf(soma.neutro + soma.indefinido, 2)}%</span></div>
+      <div class="tabela-rolagem"><table><caption class="sr">Apoios declarados no 2º turno</caption>
+        <thead><tr><th>Candidato no 1º turno</th><th class="n">% válidos</th><th>Posição</th><th>Detalhe</th></tr></thead>
+        <tbody>${lista.map(x => `<tr><td class="nw"><b>${esc(x.nome)}</b><br><span class="fraco">${esc(x.partido)}</span></td><td class="n">${nf(x.pct1T, 2)}%</td>
+          <td class="nw"><span class="etiqueta" style="--et:${corPosicao(x)};margin-left:0">${esc(rotuloPosicao(x))}</span>${x.data ? `<br><span class="fraco" style="font-size:.82rem">${esc(dataCurta(x.data + 'T12:00:00-03:00'))}</span>` : ''}</td>
+          <td style="max-width:46ch">${esc(x.detalhe || '')}${x.fonte ? ` <a href="${esc(urlSegura(x.fonte))}" target="_blank" rel="noopener noreferrer">fonte</a>` : ''}</td></tr>`).join('')}</tbody></table></div>
+      ${f ? `<h3 class="sub">O que isso significa</h3><p class="muted" style="max-width:72ch">${esc(f.texto)}</p>` : ''}`;
   }
 
   function painelAgenda() {
@@ -1700,7 +1737,7 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
       b.setAttribute('aria-selected', String(sel)); b.tabIndex = sel ? 0 : -1;
     });
     $$('#central .painel').forEach(p => { p.hidden = p.id !== 'pn-' + aba; });
-    ({ resumo: painelResumo, pesquisas: painelPesquisas, agenda: painelAgenda, apuracao: painelApuracao, fontes: painelFontes })[aba]();
+    ({ resumo: painelResumo, pesquisas: painelPesquisas, apoios: painelApoios, agenda: painelAgenda, apuracao: painelApuracao, fontes: painelFontes })[aba]();
   }
 
   /* ================================================================ */
@@ -1840,8 +1877,15 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
       ESTADO.ufSel = uf; ESTADO.turnoMapa = ap ? 2 : 1; seguro('mapa', renderMapa);
       return { html: h, secao: 'mapa' };
     },
-    apoio() {
+    apoio(txt) {
       const a = (ESTADO.dados || {}).analise; if (!a) return null;
+      const lista = apoiosLista();
+      const quem = lista.find(x => semAcento(x.nome).split(' ').some(p => p.length > 3 && new RegExp('\\b' + p + '\\b').test(txt)) || new RegExp('\\b' + semAcento(x.partido) + '\\b').test(txt));
+      if (quem) return { html: `<p><b>${esc(quem.nome)}</b> (${esc(quem.partido)}, ${nf(quem.pct1T, 2)}% dos válidos no 1º turno): <b style="color:${corPosicao(quem)}">${esc(rotuloPosicao(quem))}</b>${quem.data ? `, desde ${esc(dataCurta(quem.data + 'T12:00:00-03:00'))}` : ''}. ${esc(quem.detalhe || '')}${quem.fonte ? ` <a href="${esc(urlSegura(quem.fonte))}" target="_blank" rel="noopener noreferrer">Fonte</a>.` : ''}</p>`, secao: 'central', aba: 'apoios' };
+      if (lista.length) {
+        const so = somaApoios();
+        return { html: `<p>Apoios declarados pelos candidatos eliminados:</p><ul>${lista.filter(x => x.pct1T >= 0.05 || x.posicao === NUMS[0] || x.posicao === NUMS[1]).map(x => `<li><b>${esc(x.nome)}</b> (${esc(x.partido)}, ${nf(x.pct1T, 2)}%): <span style="color:${corPosicao(x)}">${esc(rotuloPosicao(x))}</span></li>`).join('')}</ul><p>Somando o peso de cada um no 1º turno: ${NUMS.map(n => `quem apoia <span style="color:${corDe(n)}">${esc(cand(n).nome)}</span> teve ${nf(so[n], 1)}%`).join('; ')}. Apoio não garante transferência de votos.</p>`, secao: 'central', aba: 'apoios' };
+      }
       const f = (a.fundamentos || []).find(x => /eliminad|apoio/i.test(x.titulo + x.texto));
       let h = f ? `<p><b>${esc(f.titulo)}.</b> ${esc(f.texto)}</p>` : '';
       if (a.aritmetica) {
@@ -1892,7 +1936,7 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
     ['quando', /quando (e|sera|vai ser|acontece)|que dia|qual (o )?dia|data da (eleicao|votacao)|quanto (tempo )?falta|horario|que horas|ate que horas|abre|fecha (a|as)/],
     ['rejeicao', /rejei/],
     ['termometro', /termometro|indicador/],
-    ['apoio', /apoi|caiado|zema|cury|renan|psd|alianca|transfer|eliminad/],
+    ['apoio', /apoi|caiado|zema|cury|renan|psd|avante|missao|alianca|transfer|eliminad|clariana|samara|hertz|edmilson|pimenta|grassi|pstu|pcb|pco|\bup\b|\bdc\b/],
     ['abstencao', /absten|comparec|faltaram|nao votaram|nao foram votar/],
     ['virar', /virar|virada|reverter|pode mudar|o que (pode )?muda|o que falta|recuperar|tirar a diferenca/],
     ['primeiro', /primeiro turno|1o turno|1 turno|\b4 de outubro\b/],
@@ -1945,7 +1989,7 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
   const SUGESTOES = ['Quem está na frente?', 'Qual a pesquisa mais recente?', 'Quando é o próximo debate?', 'Como foi em Minas Gerais?', 'O que pode mudar o resultado?', 'O que a imprensa diz do Lula?'];
   const historico = [];
   function renderConversa() {
-    $('#conversa').innerHTML = historico.map(h => `<div class="troca"><p class="perg">${esc(h.p)}</p><div class="resp">${h.r.html}${h.r.secao ? `<p class="ir-secao">${linkSecao(h.r.secao, 'Ver na página')}</p>` : ''}</div></div>`).join('');
+    $('#conversa').innerHTML = historico.map(h => `<div class="troca"><p class="perg">${esc(h.p)}</p><div class="resp">${h.r.html}${h.r.secao ? `<p class="ir-secao"><a href="#${h.r.secao}" class="ir"${h.r.aba ? ` data-ir-aba="${h.r.aba}"` : ''}>Ver na página</a></p>` : ''}</div></div>`).join('');
   }
   function perguntar(p) {
     p = String(p || '').trim().slice(0, 200);
@@ -1959,6 +2003,7 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
   function iniciarPergunte() {
     $('#sugestoes').innerHTML = SUGESTOES.map(s => `<button type="button" class="chip" data-pergunta="${esc(s)}">${esc(s)}</button>`).join('');
     $('#form-pergunta').addEventListener('submit', e => { e.preventDefault(); const i = $('#pergunta'); perguntar(i.value); i.value = ''; i.focus(); });
+    $('#conversa').addEventListener('click', e => { const l = e.target.closest('[data-ir-aba]'); if (l) { ESTADO.aba = l.dataset.irAba; seguro('central', renderCentral); } });
     $('#sugestoes').addEventListener('click', e => { const b = e.target.closest('[data-pergunta]'); if (b) perguntar(b.dataset.pergunta); });
   }
 
