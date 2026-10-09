@@ -1,14 +1,19 @@
 {
   "_comentario": "Análise editorial exibida no painel 'Leitura do momento', no topo da página. NÃO é pesquisa eleitoral nem previsão. Revise sempre que sair pesquisa registrada nova, debate ou apoio relevante, e atualize 'dataAnalise'. 'escala' vai de 0 a 4: 0 = vantagem clara do 1º candidato da configuração (13), 1 = vantagem leve do 13, 2 = indefinido, 3 = vantagem leve do 22, 4 = vantagem clara do 22. 'favorece' em cada fundamento: '13', '22' ou 'neutro'. Na 'aritmetica', 'para13' e 'para22' são percentuais (0–100) dos eleitores de cada candidato eliminado; o restante vai para branco, nulo ou abstenção.",
-  "dataAnalise": "2026-10-08T13:50:00-03:00",
+  "dataAnalise": "2026-10-09T09:30:00-03:00",
   "revisarAposHoras": 48,
   "escala": 3,
   "favorecido": "22",
   "rotulo": "Vantagem leve de Flávio Bolsonaro",
-  "confianca": "moderada",
-  "clima": "Disputa aberta, com o vento soprando a favor de Flávio Bolsonaro.",
-  "resumo": "Flávio Bolsonaro começa o 2º turno com uma vantagem leve. Ele saiu do 1º turno na frente, os eleitores dos candidatos eliminados pendem mais para ele do que para Lula, e as pesquisas do 1º turno subestimaram o seu desempenho. A disputa, porém, segue aberta: a diferença do 1º turno (1,87 ponto) é a menor entre os dois primeiros colocados desde 1989, e as primeiras pesquisas feitas depois do 1º turno ainda não saíram.",
+  "confianca": "moderada a alta",
+  "clima": "Flávio Bolsonaro abre o 2º turno à frente, agora também nas pesquisas. A disputa segue aberta, mas o ônus da virada é de Lula.",
+  "resumo": "Flávio Bolsonaro tem vantagem leve, e ela ficou mais consistente nesta semana. As duas primeiras pesquisas do 2º turno confirmam o que o 1º turno e a transferência de votos já indicavam: Datafolha, 52% a 48% dos votos válidos; AtlasIntel, 52,8% a 47,2%. A diferença, de 4 a 6 pontos, está no limite da margem no Datafolha e acima dela na AtlasIntel. Faltam 16 dias e três debates: Lula precisa tirar algo como 2 a 3 pontos líquidos, o que já aconteceu em 2º turnos brasileiros, mas exige mudar o rumo da campanha.",
   "fundamentos": [
+    {
+      "titulo": "As primeiras pesquisas do 2º turno",
+      "favorece": "22",
+      "texto": "Datafolha (BR-02949/2026, 6 a 8/10): Flávio 49%, Lula 45% dos votos totais; 52% a 48% dos válidos. AtlasIntel/Bloomberg (BR-03663/2026, 3 a 8/10, 5.026 entrevistas): Flávio 51,1%, Lula 45,7%; 52,8% a 47,2% dos válidos. Os dois institutos, com métodos diferentes (presencial e internet), apontam na mesma direção e quase no mesmo tamanho, o que dá mais peso ao resultado."
+    },
     {
       "titulo": "Ponto de partida",
       "favorece": "22",
@@ -35,9 +40,9 @@
       "texto": "Nos sete 2ºs turnos presidenciais desde 1989, quem liderou o 1º turno venceu. É um sinal fraco: a vantagem de 2026 é a menor da série, e o 2º colocado costuma crescer mais entre os turnos (em 2022, a diferença caiu de 5,2 para 1,8 ponto)."
     },
     {
-      "titulo": "Rejeição empatada",
-      "favorece": "neutro",
-      "texto": "No Datafolha de 1º/10, 45% diziam não votar de jeito nenhum em Flávio, e o mesmo percentual em Lula. Nenhum dos dois tem um teto claramente mais baixo que o outro."
+      "titulo": "Rejeição e avaliação do governo",
+      "favorece": "22",
+      "texto": "No Datafolha de 8/10, 46% dizem não votar em Lula de jeito nenhum e 43% em Flávio. Uma semana antes, os dois empatavam em 45%. A avaliação do governo também pesa contra o candidato à reeleição: 40% negativa contra 35% positiva."
     }
   ],
   "podeVirar": [
@@ -54,38 +59,119 @@
       "texto": "Lula e Flávio não se enfrentaram no 1º turno. Os três debates (11, 18 e 23/10) são o primeiro confronto direto e podem mexer com indecisos."
     },
     {
-      "titulo": "Margem estreita nas simulações",
-      "texto": "As simulações de 2º turno feitas antes do 1º turno ficaram dentro da margem de erro, ora com Lula, ora com Flávio numericamente à frente. Uma diferença de 2 a 4 pontos pode se desfazer em três semanas de campanha."
+      "titulo": "Datafolha no limite da margem",
+      "texto": "No Datafolha, a diferença de 4 pontos nos votos totais é o dobro da margem de 2 pontos para cada lado: os candidatos ficam no limite do empate técnico. 6% dizem que ainda podem mudar o voto. Uma oscilação de 2 pontos de um lado para o outro desfaz a vantagem."
     }
   ],
   "aritmetica": {
     "descricao": "Exercício aritmético com dados públicos: parte do resultado oficial do 1º turno e distribui os votos dos eliminados conforme a Quaest de 2 e 3/10 (BR-02197/2026). Não considera mudanças no comparecimento, troca de voto entre Lula e Flávio nem erros de pesquisa. Não é pesquisa nem previsão.",
-    "base": { "13": 45.16, "22": 47.03 },
+    "base": {
+      "13": 45.16,
+      "22": 47.03
+    },
     "linhas": [
-      { "grupo": "Augusto Cury (Avante)", "pct": 2.89, "para13": 23, "para22": 34, "origem": "Quaest BR-02197/2026" },
-      { "grupo": "Renan Santos (Missão)", "pct": 2.24, "para13": 11, "para22": 60, "origem": "Quaest BR-02197/2026" },
-      { "grupo": "Ronaldo Caiado (PSD)", "pct": 2.18, "para13": 19, "para22": 43, "origem": "Quaest BR-02197/2026" },
-      { "grupo": "Romeu Zema (Novo)", "pct": 0.27, "para13": 10, "para22": 70, "origem": "Hipótese: apoio declarado a Flávio" },
-      { "grupo": "UP, PSTU, PCB e PCO", "pct": 0.17, "para13": 60, "para22": 5, "origem": "Hipótese: partidos de esquerda" },
-      { "grupo": "DC e Democrata", "pct": 0.04, "para13": 20, "para22": 40, "origem": "Hipótese" }
+      {
+        "grupo": "Augusto Cury (Avante)",
+        "pct": 2.89,
+        "para13": 23,
+        "para22": 34,
+        "origem": "Quaest BR-02197/2026"
+      },
+      {
+        "grupo": "Renan Santos (Missão)",
+        "pct": 2.24,
+        "para13": 11,
+        "para22": 60,
+        "origem": "Quaest BR-02197/2026"
+      },
+      {
+        "grupo": "Ronaldo Caiado (PSD)",
+        "pct": 2.18,
+        "para13": 19,
+        "para22": 43,
+        "origem": "Quaest BR-02197/2026"
+      },
+      {
+        "grupo": "Romeu Zema (Novo)",
+        "pct": 0.27,
+        "para13": 10,
+        "para22": 70,
+        "origem": "Hipótese: apoio declarado a Flávio"
+      },
+      {
+        "grupo": "UP, PSTU, PCB e PCO",
+        "pct": 0.17,
+        "para13": 60,
+        "para22": 5,
+        "origem": "Hipótese: partidos de esquerda"
+      },
+      {
+        "grupo": "DC e Democrata",
+        "pct": 0.04,
+        "para13": 20,
+        "para22": 40,
+        "origem": "Hipótese"
+      }
     ]
   },
   "gatilhos": [
-    "Datafolha de 2º turno (registro BR-02949/2026), com divulgação prevista para 8/10.",
-    "AtlasIntel de 2º turno (5 mil entrevistas, margem de 1 ponto), prevista para 9/10.",
-    "Se a média das pesquisas registradas mostrar Lula à frente além da margem de erro, esta leitura deve passar para 'indefinido' ou 'vantagem de Lula'. A página avisa automaticamente quando houver essa divergência.",
-    "Debate da Record em 11/10."
+    "Debate da Record em 11/10: primeiro confronto direto entre os dois.",
+    "Próximas rodadas de Quaest, Paraná Pesquisas e Real Time Big Data, ainda sem data divulgada.",
+    "Se duas pesquisas seguidas mostrarem Lula à frente, ou a diferença cair para 2 pontos ou menos nos válidos, esta leitura passa para 'indefinido'. A página avisa automaticamente quando a média das pesquisas divergir da leitura.",
+    "Se a vantagem de Flávio passar de 6 pontos nos válidos em mais de um instituto, a leitura pode subir para 'vantagem clara'."
   ],
   "fontes": [
-    { "titulo": "Resultado do 1º turno com 100% das seções (Portal de Prefeitura)", "url": "https://portaldeprefeitura.com.br/bastidores-da-politica/eleicoes-2026-com-100-das-secoes-totalizadas-flavio-tem-4703-e/633498/" },
-    { "titulo": "Transferência de votos segundo a Quaest (Jornal Opção)", "url": "https://www.jornalopcao.com.br/ultimas-noticias/quem-fica-com-os-votos-de-ronaldo-caiado-augusto-cury-e-renan-santos-no-duelo-entre-lula-e-flavio-876089/" },
-    { "titulo": "Posição de Zema, Cury, Renan e Caiado (CNN Brasil)", "url": "https://www.cnnbrasil.com.br/eleicoes/quem-zema-cury-renan-e-caiado-apoiarao-no-segundo-turno-entenda/" },
-    { "titulo": "Caiado anuncia apoio a Flávio (IstoÉ)", "url": "https://istoe.com.br/caiado-apoia-flavio-bolsonaro-segundo-turno" },
-    { "titulo": "PSD anuncia neutralidade (SBT News)", "url": "https://sbtnews.sbt.com.br/noticia/eleicoes/psd-anuncia-neutralidade-no-2-turno-entre-lula-e-flavio" },
-    { "titulo": "Erro dos institutos no 1º turno (Gazeta do Povo)", "url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/um-de-seis-institutos-de-pesquisa-apontava-flavio-numericamente-a-frente-de-lula/" },
-    { "titulo": "Resultado por estado (O Povo+)", "url": "https://mais.opovo.com.br/jornal/politica/2026/10/05/flavio-vence-em-14-estados-e-df-lula-lidera-no-nordeste-e-fica-com-12.html" },
-    { "titulo": "Datafolha de 1º/10: rejeição (Poder360)", "url": "https://static.poder360.com.br/uploads/2026/10/datafolha-presidencial-outubro.pdf" },
-    { "titulo": "Agenda das pesquisas de 2º turno (Brasil de Fato)", "url": "https://www.brasildefato.com.br/2026/10/06/datafolha-quaest-atlasintel-quando-saem-as-pesquisas-de-2o-turno-entre-lula-e-flavio/" },
-    { "titulo": "Datas dos debates (Metrópoles)", "url": "https://www.metropoles.com/brasil/globo-band-record-debates-flavio" }
+    {
+      "titulo": "Datafolha de 8/10 (Brasil de Fato)",
+      "url": "https://www.brasildefato.com.br/2026/10/08/datafolha-segundo-turno-flavio-bolsonaro-49-lula-45/"
+    },
+    {
+      "titulo": "Datafolha de 8/10 (Gazeta do Povo)",
+      "url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/datafolha-presidente-outubro-2026-segundo-turno/"
+    },
+    {
+      "titulo": "AtlasIntel de 9/10 (Gazeta do Povo)",
+      "url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/atlasintel-presidente-outubro-2026-segundo-turno/"
+    },
+    {
+      "titulo": "AtlasIntel de 9/10 (Bloomberg Línea)",
+      "url": "https://www.bloomberglinea.com.br/brasil/pesquisa-atlasintel-aponta-flavio-a-frente-no-segundo-turno-com-53-contra-47-de-lula/"
+    },
+    {
+      "titulo": "Resultado do 1º turno com 100% das seções (Portal de Prefeitura)",
+      "url": "https://portaldeprefeitura.com.br/bastidores-da-politica/eleicoes-2026-com-100-das-secoes-totalizadas-flavio-tem-4703-e/633498/"
+    },
+    {
+      "titulo": "Transferência de votos segundo a Quaest (Jornal Opção)",
+      "url": "https://www.jornalopcao.com.br/ultimas-noticias/quem-fica-com-os-votos-de-ronaldo-caiado-augusto-cury-e-renan-santos-no-duelo-entre-lula-e-flavio-876089/"
+    },
+    {
+      "titulo": "Posição de Zema, Cury, Renan e Caiado (CNN Brasil)",
+      "url": "https://www.cnnbrasil.com.br/eleicoes/quem-zema-cury-renan-e-caiado-apoiarao-no-segundo-turno-entenda/"
+    },
+    {
+      "titulo": "Caiado anuncia apoio a Flávio (IstoÉ)",
+      "url": "https://istoe.com.br/caiado-apoia-flavio-bolsonaro-segundo-turno"
+    },
+    {
+      "titulo": "PSD anuncia neutralidade (SBT News)",
+      "url": "https://sbtnews.sbt.com.br/noticia/eleicoes/psd-anuncia-neutralidade-no-2-turno-entre-lula-e-flavio"
+    },
+    {
+      "titulo": "Erro dos institutos no 1º turno (Gazeta do Povo)",
+      "url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/um-de-seis-institutos-de-pesquisa-apontava-flavio-numericamente-a-frente-de-lula/"
+    },
+    {
+      "titulo": "Resultado por estado (O Povo+)",
+      "url": "https://mais.opovo.com.br/jornal/politica/2026/10/05/flavio-vence-em-14-estados-e-df-lula-lidera-no-nordeste-e-fica-com-12.html"
+    },
+    {
+      "titulo": "Datafolha de 1º/10: rejeição (Poder360)",
+      "url": "https://static.poder360.com.br/uploads/2026/10/datafolha-presidencial-outubro.pdf"
+    },
+    {
+      "titulo": "Datas dos debates (Metrópoles)",
+      "url": "https://www.metropoles.com/brasil/globo-band-record-debates-flavio"
+    }
   ]
 }
