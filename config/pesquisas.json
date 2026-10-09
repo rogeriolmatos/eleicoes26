@@ -1,69 +1,21 @@
 {
-  "_comentario": "Tabela editável de pesquisas de 2º turno para Presidente (Lula x Flávio Bolsonaro). Só entram na página pesquisas com registroTSE no formato BR-00000/2026 (ou UF-00000/2026). 'tipo' = 'totais' (percentuais sobre todos os entrevistados) ou 'validos' (já excluídos brancos, nulos e indecisos). As chaves '13' e '22' são os números de urna. Confira cada registro no PesqEle (https://pesqele-divulgacao.tse.jus.br) antes de publicar. As pesquisas com campo encerrado até 4/10 são cenários de 2º turno testados antes do 1º turno; a média e o termômetro usam só as feitas depois do 1º turno quando houver pelo menos uma.",
+  "_comentario": "Tabela editável das pesquisas de 2º turno para Presidente (Lula x Flávio Bolsonaro), feitas depois do 1º turno. Só entram na página pesquisas com registroTSE no formato BR-00000/2026 e campo encerrado depois de 4/10/2026. 'tipo' = 'totais' (percentuais sobre todos os entrevistados) ou 'validos' (já excluídos brancos, nulos e indecisos). As chaves '13' e '22' são os números de urna. Confira cada registro no PesqEle (https://pesqele-divulgacao.tse.jus.br) antes de publicar. Para incluir uma pesquisa nova, copie um bloco abaixo, cole depois do último (com vírgula entre os blocos) e troque os valores.",
   "pesquisas": [
     {
       "instituto": "PoderData",
-      "contratante": "Poder360",
-      "campoInicio": "2026-09-20",
-      "campoFim": "2026-09-23",
+      "contratante": "Próprio instituto (divulgação com Aya)",
+      "campoInicio": "2026-10-05",
+      "campoFim": "2026-10-07",
       "amostra": 3000,
-      "margem": null,
+      "margem": 1.8,
       "confianca": 95,
-      "registroTSE": "BR-01739/2026",
-      "tipo": "totais",
-      "13": 45,
-      "22": 46,
-      "naoValidos": 9,
-      "observacao": "Cenário de 2º turno testado antes do 1º turno.",
-      "fonte": "https://www.tribunapr.com.br/noticias/brasil/lula-flavio-ficam-separados-por-apenas-1-ponto-pesquisa/"
-    },
-    {
-      "instituto": "Real Time Big Data",
-      "contratante": "",
-      "campoInicio": "2026-09-26",
-      "campoFim": "2026-09-30",
-      "amostra": 2000,
-      "margem": 2,
-      "confianca": 95,
-      "registroTSE": "BR-09503/2026",
+      "registroTSE": "BR-08134/2026",
       "tipo": "validos",
-      "13": 49,
-      "22": 51,
+      "13": 47,
+      "22": 53,
       "naoValidos": null,
-      "observacao": "Cenário de 2º turno testado antes do 1º turno.",
-      "fonte": "https://www.tribunapr.com.br/noticias/brasil/tres-dias-eleicao-pesquisa-mostra-virada-2o-turno-entre-lula-flavio-bolsonaro/"
-    },
-    {
-      "instituto": "Quaest",
-      "contratante": "Genial Investimentos",
-      "campoInicio": "2026-10-02",
-      "campoFim": "2026-10-03",
-      "amostra": 3702,
-      "margem": 2,
-      "confianca": 95,
-      "registroTSE": "BR-02197/2026",
-      "tipo": "totais",
-      "13": 42,
-      "22": 44,
-      "naoValidos": 14,
-      "observacao": "Cenário de 2º turno testado na véspera do 1º turno.",
-      "fonte": "https://viva.com.br/politica/quaest-lula-tem-46-e-flavio-45-dos-votos-validos-no-primeiro-turno.html"
-    },
-    {
-      "instituto": "Datafolha",
-      "contratante": "Folha de S.Paulo e TV Globo",
-      "campoInicio": "2026-10-06",
-      "campoFim": "2026-10-08",
-      "amostra": 2520,
-      "margem": 2,
-      "confianca": 95,
-      "registroTSE": "BR-02949/2026",
-      "tipo": "totais",
-      "13": 45,
-      "22": 49,
-      "naoValidos": 6,
-      "observacao": "Primeira pesquisa Datafolha do 2º turno, divulgada em 8/10 às 18h43. Em votos válidos: Flávio 52%, Lula 48%. Brancos, nulos ou nenhum 5%, indecisos 1%. Rejeição: Lula 46%, Flávio 43%. As reportagens divergem sobre o último dia de campo (7 ou 8/10).",
-      "fonte": "https://www.brasildefato.com.br/2026/10/08/datafolha-segundo-turno-flavio-bolsonaro-49-lula-45/"
+      "observacao": "Divulgada em 8/10 às 7h30. Entrevistas por telefone com gravação (URA) em 705 municípios. A reportagem publica só os votos válidos.",
+      "fonte": "https://www.poder360.com.br/poderdata/flavio-tem-53-contra-47-de-lula-no-2o-turno-diz-pesquisa-poderdata-aya/"
     },
     {
       "instituto": "AtlasIntel",
@@ -80,6 +32,22 @@
       "naoValidos": 3.2,
       "observacao": "Divulgada em 9/10 às 7h30. Em votos válidos: Flávio 52,8%, Lula 47,2%. Entrevistas pela internet; o campo começou um dia antes do 1º turno.",
       "fonte": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/atlasintel-presidente-outubro-2026-segundo-turno/"
+    },
+    {
+      "instituto": "Datafolha",
+      "contratante": "Folha de S.Paulo e TV Globo",
+      "campoInicio": "2026-10-06",
+      "campoFim": "2026-10-08",
+      "amostra": 2520,
+      "margem": 2,
+      "confianca": 95,
+      "registroTSE": "BR-02949/2026",
+      "tipo": "totais",
+      "13": 45,
+      "22": 49,
+      "naoValidos": 6,
+      "observacao": "Primeira pesquisa Datafolha do 2º turno, divulgada em 8/10 às 18h43. Em votos válidos: Flávio 52%, Lula 48%. Brancos, nulos ou nenhum 5%, indecisos 1%. Rejeição: Lula 46%, Flávio 43%. As reportagens divergem sobre o último dia de campo (7 ou 8/10).",
+      "fonte": "https://www.brasildefato.com.br/2026/10/08/datafolha-segundo-turno-flavio-bolsonaro-49-lula-45/"
     }
   ]
 }
