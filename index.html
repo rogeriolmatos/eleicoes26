@@ -418,6 +418,29 @@ td.n, th.n { text-align: right; padding-right: 0; padding-left: 10px; }
 .lista-fontes { columns: 2 220px; padding-left: 1.1rem; font-size: .9rem; }
 footer { padding: 34px 0 48px; color: var(--texto-3); font-size: .86rem; }
 footer p { max-width: 80ch; margin: 0 0 10px; }
+
+/* ---------- Pergunte ao painel ---------- */
+#pergunte { --acento: linear-gradient(90deg, var(--ceu), var(--rosa)); }
+.pergunta-form { display: flex; gap: 8px; }
+.pergunta-form input { flex: 1; min-width: 0; background: var(--superficie); border: 1px solid var(--linha-forte); border-radius: 24px; padding: 11px 18px; font: inherit; color: var(--texto); }
+.pergunta-form input::placeholder { color: var(--texto-3); }
+.pergunta-form input:focus { outline: none; border-color: var(--ceu); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ceu) 25%, transparent); }
+.pergunta-form button { background: var(--ceu); color: var(--fundo); border: 0; border-radius: 24px; padding: 0 20px; font-weight: 600; cursor: pointer; }
+.pergunta-form button:hover { background: #9bd7ff; }
+.sugestoes { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 18px; }
+.chip { background: none; border: 1px solid var(--linha-forte); border-radius: 20px; padding: 5px 12px; cursor: pointer; color: var(--texto-2); font-size: .88rem; }
+.chip:hover { border-color: var(--ceu); color: var(--texto); }
+.conversa { display: grid; gap: 14px; }
+.troca { border: 1px solid var(--linha); border-radius: 8px; background: var(--superficie); overflow: hidden; }
+.troca:first-child { border-color: color-mix(in srgb, var(--ceu) 45%, var(--linha)); }
+.perg { margin: 0; padding: 10px 16px; background: var(--superficie-2); font-weight: 600; }
+.perg::before { content: "Você: "; color: var(--ceu); font-weight: 400; }
+.resp { padding: 10px 16px 12px; font-size: .95rem; }
+.resp p { margin: 0 0 8px; max-width: 72ch; }
+.resp ul { margin: 0 0 8px; padding-left: 1.1rem; max-width: 72ch; }
+.resp li { margin-bottom: 4px; }
+.ir-secao { font-size: .86rem; }
+.ir-secao a { color: var(--ceu); }
 </style>
 </head>
 <body>
@@ -441,6 +464,7 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
       <ul>
         <li><a href="#central" class="destaque">2º turno</a></li>
         <li><a href="#leitura">Leitura do momento</a></li>
+        <li><a href="#pergunte">Pergunte ao painel</a></li>
         <li><a href="#termometro">Termômetro</a></li>
         <li><a href="#pesquisas">Pesquisas</a></li>
         <li><a href="#mapa">Mapa</a></li>
@@ -470,6 +494,22 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
   </section>
 
   <section class="leitura" id="leitura" aria-labelledby="t-leitura"></section>
+
+  <section class="bloco" id="pergunte" aria-labelledby="t-pergunte">
+    <header class="bloco-cab">
+      <h2 id="t-pergunte">Pergunte ao painel</h2>
+      <p>Respostas automáticas montadas só com os dados desta página. Não é uma inteligência artificial e não diz em quem votar.</p>
+    </header>
+    <div class="bloco-corpo">
+      <form id="form-pergunta" class="pergunta-form" autocomplete="off">
+        <label for="pergunta" class="sr">Sua pergunta</label>
+        <input id="pergunta" type="text" maxlength="200" placeholder="Ex.: quem está na frente?" enterkeyhint="send">
+        <button type="submit">Perguntar</button>
+      </form>
+      <div class="sugestoes" id="sugestoes" aria-label="Sugestões de pergunta"></div>
+      <div class="conversa" id="conversa" aria-live="polite"></div>
+    </div>
+  </section>
 
   <section class="bloco" id="central" aria-labelledby="t-central">
     <header class="bloco-cab">
@@ -842,9 +882,18 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
     return { v: { [NUMS[0]]: soma[NUMS[0]] / sw, [NUMS[1]]: soma[NUMS[1]] / sw }, margem: swm ? sm / swm : 2, n: usadas.length };
   }
 
+  /** Pesquisas com campo encerrado depois do 1º turno (4/10). */
+  const FIM_1T = '2026-10-04';
+  const ehPos1T = p => String(p.campoFim || '') > FIM_1T;
+  /** Para médias: usa só as pesquisas feitas depois do 1º turno, quando houver alguma. */
+  function paraMedia(lista) {
+    const pos = lista.filter(x => ehPos1T(x.p));
+    return pos.length ? pos : lista;
+  }
+
   /** Média "agora" em votos válidos; se não houver pesquisa na janela, usa a janela da pesquisa mais recente. */
   function mediaAtualValidos() {
-    const lista = pesquisasNaBase('validos');
+    const lista = paraMedia(pesquisasNaBase('validos'));
     if (!lista.length) return null;
     let m = mediaEm(agora().getTime(), lista);
     let antiga = false;
@@ -906,6 +955,37 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
     $('#rodape-hora').textContent = `Última coleta: ${dataLonga(d.meta.atualizadoEm)} (horário de Brasília). Página verificada às ${fmtData(agora(), { hour: '2-digit', minute: '2-digit' })}.`;
   }
 
+  /* Pesquisas citadas na imprensa que ainda não estão na tabela */
+  const INSTITUTOS = [
+    ['Datafolha', /datafolha/], ['Quaest', /quaest/], ['AtlasIntel', /atlas ?intel|\batlas\b/], ['Ipec', /\bipec\b/],
+    ['Paraná Pesquisas', /parana pesquisas/], ['PoderData', /poderdata/], ['Real Time Big Data', /real time big data/],
+    ['Futura', /\bfutura\b/], ['Gerp', /\bgerp\b/], ['MDA', /\bmda\b/], ['Ipespe', /ipespe/], ['Nexus', /\bnexus\b/],
+    ['Vox Populi', /vox populi/], ['Ideia', /instituto ideia|\bideia\b/]
+  ];
+  const semAcento = t => String(t || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  function pesquisasNaImprensa() {
+    const d = ESTADO.dados || {};
+    const tabela = d.pesquisas || [];
+    const limite = agora().getTime() - 4 * DIA;
+    const achadas = new Map();
+    for (const n of (d.noticias || [])) {
+      const t = new Date(n.dataPub).getTime();
+      if (t < limite) continue;
+      const txt = semAcento(n.titulo + ' ' + (n.resumo || ''));
+      if (!/pesquisa|levantamento|intencao de voto|turno|lula|flavio/.test(txt)) continue;
+      if (!/(\d{1,2}(,\d)?\s?%)|turno|lidera|frente|empate/.test(txt)) continue;
+      const inst = INSTITUTOS.find(([, re]) => re.test(txt));
+      if (!inst) continue;
+      // Já coberta: a tabela tem pesquisa do mesmo instituto com campo encerrado até 3 dias antes da manchete
+      const coberta = tabela.some(p => semAcento(p.instituto).includes(semAcento(inst[0]).split(' ')[0]) &&
+        new Date(p.campoFim + 'T23:59:00-03:00').getTime() >= t - 3 * DIA);
+      if (coberta) continue;
+      const atual = achadas.get(inst[0]);
+      if (!atual || t > new Date(atual.dataPub).getTime()) achadas.set(inst[0], Object.assign({ instituto: inst[0] }, n));
+    }
+    return [...achadas.values()].sort((a, b) => String(b.dataPub).localeCompare(String(a.dataPub)));
+  }
+
   function renderAvisos() {
     const box = $('#avisos'); const d = ESTADO.dados; const av = [];
     if (!d) {
@@ -916,6 +996,8 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
       if (idade > CONFIG.dados.desatualizadoAposMin) av.push(`<div class="aviso"><strong>Dados desatualizados.</strong> A última coleta foi ${ha(idade)} (${esc(dataHora(d.meta.atualizadoEm))}). O robô pode estar atrasado; exibindo o último dado válido.</div>`);
       if (ESTADO.erro && ESTADO.origem === 'cache') av.push(`<div class="aviso"><strong>Sem conexão com dados.json.</strong> Exibindo a cópia guardada neste navegador. Motivo: ${esc(ESTADO.erro)}.</div>`);
       else if (ESTADO.erro) av.push(`<div class="aviso"><strong>A última atualização falhou.</strong> Exibindo o último dado válido. Motivo: ${esc(ESTADO.erro)}.</div>`);
+      const novas = pesquisasNaImprensa();
+      if (novas.length) av.push(`<div class="aviso"><strong>${novas.length === 1 ? 'Pesquisa nova na imprensa, ainda fora do agregador' : 'Pesquisas novas na imprensa, ainda fora do agregador'}:</strong> ${novas.map(n => `<a href="${esc(urlSegura(n.link))}" target="_blank" rel="noopener noreferrer">${esc(n.instituto)}</a> (${esc(n.veiculo)}, ${esc(dataHora(n.dataPub))})`).join('; ')}. Os números entram depois de conferido o registro no TSE.</div>`);
       if (SIMULAR_APURACAO) av.push(`<div class="aviso exemplo"><strong>Modo de simulação.</strong> A apuração exibida é a de exemplo de dados.json. Remova <em>?simular=apuracao</em> do endereço para voltar ao normal.</div>`);
     }
     box.innerHTML = av.join('');
@@ -1112,10 +1194,12 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
     const lista = pesquisasNaBase(base);
     const todas = (ESTADO.dados && ESTADO.dados.pesquisas) || [];
 
-    // Média atual
-    const m = lista.length ? (mediaEm(agora().getTime(), lista) || mediaEm(lista[lista.length - 1].t, lista)) : null;
+    // Média atual (só pesquisas pós-1º turno, quando houver)
+    const lm = paraMedia(lista);
+    const soPos = lm.length && lm.length < lista.length;
+    const m = lm.length ? (mediaEm(agora().getTime(), lm) || mediaEm(lm[lm.length - 1].t, lm)) : null;
     $('#pesq-media').innerHTML = m
-      ? `<div class="media-atual">${NUMS.map(n => `<div style="--k:${corDe(n)}"><span class="fraco">${esc(rotuloCand(n))}</span><b>${nf(m.v[n])}%</b></div>`).join('')}<div><span class="fraco">Margem média</span><b>±${nf(m.margem)}</b></div></div>`
+      ? `<p class="fraco" style="margin:0 0 4px;font-size:.86rem">${soPos ? `Média das ${lm.length} pesquisas feitas depois do 1º turno` : 'Média ponderada das pesquisas'}</p><div class="media-atual">${NUMS.map(n => `<div style="--k:${corDe(n)}"><span class="fraco">${esc(rotuloCand(n))}</span><b>${nf(m.v[n])}%</b></div>`).join('')}<div><span class="fraco">Margem média</span><b>±${nf(m.margem)}</b></div></div>`
       : '';
     $('#pesq-legenda').innerHTML = NUMS.map(n => `<span>${amostra(n)}${esc(rotuloCand(n))}</span>`).join('') +
       `<span class="fraco">Pontos: pesquisas. Linha: média ponderada. Faixa: margem de erro.</span>`;
@@ -1467,10 +1551,10 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
     return `há ${-dias} dias`;
   }
   const pesquisas2T = () => ((ESTADO.dados && ESTADO.dados.pesquisas) || [])
-    .filter(p => new Date(p.campoInicio + 'T00:00:00-03:00').getTime() >= INICIO_2T)
+    .filter(ehPos1T)
     .sort((a, b) => String(b.campoFim).localeCompare(String(a.campoFim)));
   const eventosFuturos = tipo => ((ESTADO.dados && ESTADO.dados.linhaTempo) || [])
-    .filter(e => (!tipo || e.tipo === tipo) && new Date(e.data).getTime() >= agora().getTime() - 3 * 3600e3)
+    .filter(e => (!tipo || e.tipo === tipo) && new Date(e.data).getTime() >= agora().getTime() - (e.tipo === 'pesquisa' ? 0 : 3 * 3600e3))
     .sort((a, b) => String(a.data).localeCompare(String(b.data)));
 
   function cartao(rotulo, valor, det, cor) {
@@ -1486,7 +1570,7 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
     const prox = eventosFuturos()[0];
     const p2 = pesquisas2T();
     const prevista = eventosFuturos('pesquisa')[0];
-    const lista = pesquisasNaBase('validos').filter(x => new Date(x.p.campoInicio + 'T00:00:00-03:00').getTime() >= INICIO_2T);
+    const lista = pesquisasNaBase('validos').filter(x => ehPos1T(x.p));
     const m = lista.length ? (mediaEm(agora().getTime(), lista) || mediaEm(lista[lista.length - 1].t, lista)) : null;
     // 1º turno: TSE (se o robô já leu) ou a base da análise
     const pt = d.primeiroTurno && !d.primeiroTurno.exemplo && d.primeiroTurno.nacional;
@@ -1514,6 +1598,8 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
     const d = ESTADO.dados || {};
     const p2 = pesquisas2T();
     let html = '';
+    const novas = pesquisasNaImprensa();
+    if (novas.length) html += `<p class="coerencia" data-tipo="diverge" style="margin:0 0 16px"><strong>Na imprensa e ainda fora da tabela:</strong> ${novas.map(n => `<a href="${esc(urlSegura(n.link))}" target="_blank" rel="noopener noreferrer">${esc(n.instituto)}</a> (${esc(dataHora(n.dataPub))})`).join('; ')}. Inclua em config/pesquisas.json depois de conferir o registro.</p>`;
     if (p2.length) {
       html += `<div class="tabela-rolagem"><table><caption class="sr">Pesquisas feitas após o 1º turno</caption>
         <thead><tr><th>Instituto</th><th>Campo</th><th>Registro TSE</th><th>Base</th>${NUMS.map(n => `<th class="n" style="color:${corDe(n)}">${esc(rotuloCand(n))}</th>`).join('')}</tr></thead>
@@ -1576,6 +1662,7 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
       [idade != null && idade <= CONFIG.dados.desatualizadoAposMin ? 'sim' : 'espera', idade != null ? `Última coleta do robô ${ha(idade)}.` : 'O robô ainda não gerou dados.'],
       [falha === 0 && ok ? 'sim' : ok ? 'espera' : 'nao', `Notícias: ${ok} de ${ok + falha} feeds responderam${falha ? ` (sem resposta: ${(meta.fontesFalha || []).map(f => esc(f.nome)).join(', ')})` : ''}.`],
       [p2 ? 'sim' : 'espera', `Pesquisas: ${((d.pesquisas) || []).length} com registro no TSE na tabela, ${p2} feitas após o 1º turno.`],
+      [pesquisasNaImprensa().length ? 'nao' : 'sim', pesquisasNaImprensa().length ? `Pesquisa citada na imprensa e ainda fora da tabela: ${pesquisasNaImprensa().map(n => esc(n.instituto)).join(', ')}.` : 'Nenhuma pesquisa na imprensa fora da tabela nos últimos 4 dias.'],
       [d.primeiroTurno && !d.primeiroTurno.exemplo ? 'sim' : 'nao', d.primeiroTurno && !d.primeiroTurno.exemplo ? 'Mapa do 1º turno com dados oficiais do TSE.' : 'Mapa do 1º turno ainda sem dados oficiais do TSE.'],
       [d.tseCodigos && d.tseCodigos.turno2 ? 'sim' : 'espera', d.tseCodigos && d.tseCodigos.turno2 ? 'Apuração do 2º turno: endereço do TSE pronto.' : 'Apuração do 2º turno: aguardando o TSE publicar o código da eleição.'],
       [a && idadeA <= (+a.revisarAposHoras || 48) ? 'sim' : 'espera', a ? `Leitura do momento revisada ${ha(idadeA * 60)}.` : 'Leitura do momento não publicada.']
@@ -1595,6 +1682,265 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
     });
     $$('#central .painel').forEach(p => { p.hidden = p.id !== 'pn-' + aba; });
     ({ resumo: painelResumo, pesquisas: painelPesquisas, agenda: painelAgenda, apuracao: painelApuracao, fontes: painelFontes })[aba]();
+  }
+
+  /* ================================================================ */
+  /* Pergunte ao painel                                                */
+  /* Respostas montadas só com os dados da página (sem IA, sem servidor). */
+  /* ================================================================ */
+  const UF_NOMES = { AC: 'acre', AL: 'alagoas', AP: 'amapa', AM: 'amazonas', BA: 'bahia', CE: 'ceara', DF: 'distrito federal|brasilia', ES: 'espirito santo', GO: 'goias', MA: 'maranhao', MT: 'mato grosso(?! do sul)', MS: 'mato grosso do sul', MG: 'minas gerais|minas', PA: '(?:no|do|estado do) para|belem', PB: 'paraiba', PR: 'parana(?! pesquisas)', PE: 'pernambuco', PI: 'piaui', RJ: 'rio de janeiro', RN: 'rio grande do norte', RS: 'rio grande do sul|gaucho', RO: 'rondonia', RR: 'roraima', SC: 'santa catarina', SP: 'sao paulo', SE: 'sergipe', TO: 'tocantins', ZZ: 'exterior|fora do brasil|no exterior' };
+  const STOP_P = new Set('a o e de da do das dos em no na nos nas um uma para por com que se ao as os ou mas mais como sobre qual quais quem quando onde esta estao ta tem ter foi ser sao vai vao pode qual eu me voce isso essa esse este esta ja ainda hoje agora entre sobre pelo pela'.split(' '));
+
+  function detectarUF(original, txt) {
+    for (const [uf, nomes] of Object.entries(UF_NOMES)) {
+      if (new RegExp('(^|[^a-z])(' + nomes + ')([^a-z]|$)').test(txt)) {
+        return uf;
+      }
+    }
+    const m = String(original).match(/\b(AC|AL|AP|AM|BA|CE|DF|ES|GO|MA|MT|MS|MG|PA|PB|PR|PE|PI|RJ|RN|RS|RO|RR|SC|SP|SE|TO)\b/);
+    return m ? m[1] : null;
+  }
+  function detectarCand(txt) {
+    const achados = C.filter(c => (c.apelidos || [c.nome]).some(a => new RegExp('(^|[^a-z])' + semAcento(a) + '([^a-z]|$)').test(txt)) || new RegExp('\\b' + c.numero + '\\b').test(txt));
+    return achados.length === 1 ? String(achados[0].numero) : null;
+  }
+  const linkSecao = (id, rot) => `<a href="#${id}" class="ir">${rot}</a>`;
+
+  const RESPOSTAS = {
+    voto() {
+      return { html: `<p>O painel não recomenda voto nem diz qual candidato é melhor. Ele reúne pesquisas, notícias e resultados para você comparar com seus próprios critérios.</p><p>Os planos de governo registrados estão no <a href="https://divulgacandcontas.tse.jus.br/" target="_blank" rel="noopener noreferrer">DivulgaCandContas, do TSE</a>.</p>` };
+    },
+    apuracao() {
+      const d = ESTADO.dados || {};
+      const ap = ESTADO.tseDireto || (d.apuracao && d.apuracao.ativa && !d.apuracao.exemplo ? d.apuracao : null);
+      if (!ap || !ap.votos) {
+        return { html: `<p>A apuração do 2º turno ainda não começou. A votação é em 25/10, das 8h às 17h (Brasília), e o TSE começa a divulgar a totalização às 17h. A partir daí, esta página mostra os números ao vivo.</p>`, secao: 'central' };
+      }
+      const l = ap.lider || NUMS[0];
+      const o = l === NUMS[0] ? NUMS[1] : NUMS[0];
+      return { html: `<p>Com <b>${nf(ap.pctSecoes, 2)}%</b> das seções totalizadas${ap.horaTSE ? ` (TSE, ${esc(ap.horaTSE)})` : ''}: <b style="color:${corDe(l)}">${esc(rotuloCand(l))} ${nf(ap.votos[l].pct, 2)}%</b> e ${esc(rotuloCand(o))} ${nf(ap.votos[o].pct, 2)}% dos votos válidos. Diferença de ${ni(ap.diferenca)} votos.</p><p>${ap.decidido ? `<b>Resultado matematicamente definido:</b> a diferença já supera os eleitores ainda não apurados. O resultado oficial é o proclamado pelo TSE.` : 'Ainda não definido: a diferença é menor do que o número de eleitores não apurados.'}</p>`, secao: 'apuracao' };
+    },
+    lider() {
+      const d = ESTADO.dados || {};
+      const ap = ESTADO.tseDireto || (d.apuracao && d.apuracao.ativa && !d.apuracao.exemplo ? d.apuracao : null);
+      if (ap && ap.votos && divulgacaoComecou()) return RESPOSTAS.apuracao();
+      const a = d.analise; const m = mediaAtualValidos();
+      const pos = pesquisas2T().length;
+      let h = '';
+      if (a) h += `<p>Pela <b>Leitura do momento</b> (análise editorial de ${esc(dataCurta(a.dataAnalise))}): <b>${esc(a.rotulo)}</b>, com confiança ${esc(a.confianca)}. ${esc(a.clima || '')}</p>`;
+      if (m) {
+        const l = m.v[NUMS[1]] >= m.v[NUMS[0]] ? NUMS[1] : NUMS[0];
+        const dif = Math.abs(m.v[NUMS[1]] - m.v[NUMS[0]]);
+        h += `<p>Na média ${pos ? `das ${pos} pesquisas feitas depois do 1º turno` : 'das pesquisas registradas'}, <b style="color:${corDe(l)}">${esc(rotuloCand(l))}</b> tem ${nf(m.v[l])}% dos votos válidos, contra ${nf(m.v[l === NUMS[0] ? NUMS[1] : NUMS[0]])}%. ${dif <= m.margem ? 'A diferença está dentro da margem de erro média.' : 'A diferença está acima da margem de erro média.'}</p>`;
+      }
+      const b = a && a.aritmetica && a.aritmetica.base;
+      if (b) {
+        const l1 = b[NUMS[1]] > b[NUMS[0]] ? NUMS[1] : NUMS[0];
+        h += `<p>No 1º turno, ${esc(cand(l1).nome)} terminou à frente: ${nf(b[l1], 2)}% a ${nf(b[l1 === NUMS[0] ? NUMS[1] : NUMS[0]], 2)}%.</p>`;
+      }
+      h += `<p class="fraco">Pesquisa e análise não são previsão. O resultado só se define na apuração de 25/10.</p>`;
+      return { html: h, secao: 'leitura' };
+    },
+    termometro() {
+      const r = calcularTermometro();
+      if (r.valor == null) return { html: '<p>O termômetro ainda não tem dados suficientes.</p>', secao: 'termometro' };
+      const v = Math.round(r.valor);
+      const lado = v > 0 ? NUMS[1] : NUMS[0];
+      return { html: `<p>O termômetro está em <b>${v === 0 ? 'equilíbrio' : `${Math.abs(v)} pontos em direção a <span style="color:${corDe(lado)}">${esc(cand(lado).nome)}</span>`}</b>, numa escala de 0 a 100 para cada lado.</p><p>Ele combina a média das pesquisas (60%), o tom das manchetes (25%) e o volume de menções (15%). É um indicador ilustrativo, não uma previsão.</p>`, secao: 'termometro' };
+    },
+    media() { return RESPOSTAS.pesquisa(''); },
+    pesquisa(txt) {
+      const d = ESTADO.dados || {};
+      const todas = (d.pesquisas || []).slice().sort((a, b) => String(b.campoFim).localeCompare(String(a.campoFim)));
+      const inst = INSTITUTOS.find(([, re]) => re.test(txt || ''));
+      const fmtP = p => {
+        const s = (+p[NUMS[0]]) + (+p[NUMS[1]]);
+        const val = n => p.tipo === 'validos' ? +p[n] : 100 * p[n] / s;
+        return `<b>${esc(p.instituto)}</b> (${esc(p.registroTSE)}, campo de ${esc(dataCurta(p.campoInicio + 'T12:00:00-03:00'))} a ${esc(dataCurta(p.campoFim + 'T12:00:00-03:00'))}, ${ni(p.amostra)} entrevistas${p.margem != null ? `, margem de ${nf(p.margem)} ponto${+p.margem === 1 ? '' : 's'}` : ''}): ${NUMS.map(n => `<span style="color:${corDe(n)}">${esc(cand(n).nome)} ${nf(val(n))}%</span>`).join(' x ')} dos votos válidos${p.tipo === 'totais' ? ` (${NUMS.map(n => `${esc(cand(n).nome)} ${nf(p[n], 1)}%`).join(', ')} dos totais)` : ''}.`;
+      };
+      let h = '';
+      if (inst) {
+        const p = todas.find(x => semAcento(x.instituto).includes(semAcento(inst[0]).split(' ')[0]));
+        h += p ? `<p>Última pesquisa ${esc(inst[0])} na tabela: ${fmtP(p)}</p>` : `<p>Ainda não há pesquisa ${esc(inst[0])} na tabela.</p>`;
+        if (p && !ehPos1T(p)) h += `<p class="fraco">Atenção: esse cenário foi testado antes do 1º turno.</p>`;
+      } else {
+        const pos = todas.filter(ehPos1T);
+        if (pos.length) h += `<p>Pesquisas feitas depois do 1º turno:</p><ul>${pos.slice(0, 5).map(p => `<li>${fmtP(p)}</li>`).join('')}</ul>`;
+        else if (todas.length) h += `<p>Ainda não há pesquisa feita depois do 1º turno na tabela. A mais recente é: ${fmtP(todas[0])}</p>`;
+        else h += '<p>Ainda não há pesquisas na tabela.</p>';
+        const m = mediaAtualValidos();
+        if (m) h += `<p>Média ponderada: ${NUMS.map(n => `<span style="color:${corDe(n)}">${esc(cand(n).nome)} ${nf(m.v[n])}%</span>`).join(' x ')} dos válidos, margem média de ±${nf(m.margem)}.</p>`;
+      }
+      const novas = pesquisasNaImprensa();
+      if (novas.length) h += `<p class="fraco">Na imprensa, ainda fora da tabela: ${novas.map(n => `<a href="${esc(urlSegura(n.link))}" target="_blank" rel="noopener noreferrer">${esc(n.instituto)}</a>`).join(', ')}.</p>`;
+      const prev = eventosFuturos('pesquisa');
+      if (prev.length) h += `<p class="fraco">Prevista: ${prev.slice(0, 2).map(e => `${esc(e.titulo)} (${relativo(e.data)})`).join('; ')}.</p>`;
+      return { html: h, secao: 'pesquisas' };
+    },
+    rejeicao() {
+      const a = (ESTADO.dados || {}).analise;
+      const f = a && (a.fundamentos || []).find(x => /rejei/i.test(x.titulo + x.texto));
+      return f ? { html: `<p><b>${esc(f.titulo)}.</b> ${esc(f.texto)}</p>`, secao: 'leitura' } : null;
+    },
+    debate(txt) {
+      let ev = eventosFuturos('debate');
+      const emis = [['record', /record/], ['band', /band|estadao|cultura/], ['globo', /globo/]].find(([, re]) => re.test(txt));
+      if (emis) ev = ev.filter(e => semAcento(e.titulo).includes(emis[0]));
+      if (!ev.length) {
+        const passados = ((ESTADO.dados || {}).linhaTempo || []).filter(e => e.tipo === 'debate');
+        return { html: passados.length ? `<p>Não há mais debates ${emis ? 'nessa emissora ' : ''}previstos. Os que já aconteceram estão na linha do tempo.</p>` : '<p>Não há debates cadastrados.</p>', secao: 'tempo' };
+      }
+      return { html: `<p>${ev.length === 1 ? 'Debate previsto' : 'Próximos debates'}:</p><ul>${ev.map(e => `<li><b>${esc(e.titulo)}</b>: ${esc(fmtData(e.data, { weekday: 'long', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }))} (${relativo(e.data)}). ${esc(e.detalhe || '')}</li>`).join('')}</ul>`, secao: 'central' };
+    },
+    quando() {
+      const t = agora().getTime(), fim = new Date(CONFIG.votacao.fechamento).getTime(), ab = new Date(CONFIG.votacao.abertura).getTime();
+      const est = t >= fim ? 'A votação já terminou; acompanhe a apuração.' : t >= ab ? 'A votação está acontecendo agora.' : `Faltam ${esc($('#contagem').textContent)} para o fechamento das urnas.`;
+      return { html: `<p>O 2º turno é no <b>domingo, 25 de outubro de 2026</b>, das 8h às 17h, no horário de Brasília, em todo o país. O TSE começa a divulgar os resultados às 17h.</p><p>${est}</p>`, secao: 'central' };
+    },
+    primeiro() {
+      const d = ESTADO.dados || {};
+      const pt = d.primeiroTurno && !d.primeiroTurno.exemplo && d.primeiroTurno.nacional;
+      const b = pt ? { [NUMS[0]]: pt[NUMS[0]].pct, [NUMS[1]]: pt[NUMS[1]].pct } : (d.analise && d.analise.aritmetica && d.analise.aritmetica.base);
+      if (!b) return null;
+      const l = b[NUMS[1]] > b[NUMS[0]] ? NUMS[1] : NUMS[0], o = l === NUMS[0] ? NUMS[1] : NUMS[0];
+      return { html: `<p>No 1º turno (4/10), <b style="color:${corDe(l)}">${esc(rotuloCand(l))}</b> terminou à frente, com ${nf(b[l], 2)}% dos votos válidos, contra ${nf(b[o], 2)}% de ${esc(rotuloCand(o))}. Os demais candidatos somaram cerca de ${nf(100 - b[l] - b[o], 1)}%.</p><p>O resultado por estado está no mapa. Pergunte, por exemplo, "como foi em Minas?".</p>`, secao: 'mapa' };
+    },
+    estado(txt, uf) {
+      const d = ESTADO.dados || {};
+      const nome = NOMES_UF[uf] || uf;
+      const ap = d.apuracao && d.apuracao.ativa && !d.apuracao.exemplo && d.apuracao.uf && d.apuracao.uf[uf];
+      const t1 = d.primeiroTurno && !d.primeiroTurno.exemplo && d.primeiroTurno.uf && d.primeiroTurno.uf[uf];
+      const linha = (u, rot) => {
+        const l = (u[NUMS[1]] || {}).pct > (u[NUMS[0]] || {}).pct ? NUMS[1] : NUMS[0];
+        return `<p>${rot}: ${NUMS.map(n => `<span style="color:${corDe(n)}">${esc(rotuloCand(n))} ${nf((u[n] || {}).pct, 2)}%</span> (${ni((u[n] || {}).votos)} votos)`).join(', ')}. À frente: <b>${esc(cand(l).nome)}</b>, com diferença de ${ni(Math.abs(((u[NUMS[0]] || {}).votos || 0) - ((u[NUMS[1]] || {}).votos || 0)))} votos.</p>`;
+      };
+      let h = '';
+      if (ap) h += linha(ap, `<b>${esc(nome)}</b>, apuração do 2º turno (${nf(ap.pctSecoes, 2)}% das seções)`);
+      if (t1) h += linha(t1, `<b>${esc(nome)}</b>, 1º turno`);
+      if (!h) h = `<p>Ainda não há resultado oficial de ${esc(nome)} carregado no painel.</p>`;
+      ESTADO.ufSel = uf; ESTADO.turnoMapa = ap ? 2 : 1; seguro('mapa', renderMapa);
+      return { html: h, secao: 'mapa' };
+    },
+    apoio() {
+      const a = (ESTADO.dados || {}).analise; if (!a) return null;
+      const f = (a.fundamentos || []).find(x => /eliminad|apoio/i.test(x.titulo + x.texto));
+      let h = f ? `<p><b>${esc(f.titulo)}.</b> ${esc(f.texto)}</p>` : '';
+      if (a.aritmetica) {
+        const r = aritmetica(a.aritmetica);
+        h += `<p>No exercício de transferência da página (resultado do 1º turno mais a divisão dos votos dos eliminados), o placar ficaria ${NUMS.map(n => `<span style="color:${corDe(n)}">${esc(cand(n).nome)} ${nf(r.val[n])}%</span>`).join(' x ')} dos válidos. É uma conta ilustrativa, não previsão.</p>`;
+      }
+      return h ? { html: h, secao: 'leitura' } : null;
+    },
+    abstencao() {
+      const a = (ESTADO.dados || {}).analise;
+      const f = a && (a.podeVirar || []).find(x => /compareci|absten/i.test(x.titulo + x.texto));
+      return f ? { html: `<p><b>${esc(f.titulo)}.</b> ${esc(f.texto)}</p>`, secao: 'leitura' } : null;
+    },
+    midia(txt) {
+      const d = ESTADO.dados || {}; const md = d.midia || {};
+      const c = detectarCand(txt);
+      const nums = c ? [c] : NUMS;
+      const tom = n => { const t = (md.tom || {})[n] || {}; const tot = (t.positivo || 0) + (t.neutro || 0) + (t.negativo || 0); return tot ? `${nf(100 * (t.positivo || 0) / tot, 0)}% positivas, ${nf(100 * (t.negativo || 0) / tot, 0)}% negativas` : 'sem manchetes'; };
+      let h = `<p>Nas últimas ${md.janelaHoras || 72} horas: ${nums.map(n => `<span style="color:${corDe(n)}">${esc(cand(n).nome)}</span> apareceu em ${ni((md.mencoes || {})[n] || 0)} manchetes (${tom(n)})`).join('; ')}.</p>`;
+      const ult = (d.noticias || []).filter(n => !c || n.mencoes.includes(c)).slice(0, 4);
+      if (ult.length) h += `<p>Manchetes mais recentes:</p><ul>${ult.map(n => `<li><a href="${esc(urlSegura(n.link))}" target="_blank" rel="noopener noreferrer">${esc(n.titulo)}</a> <span class="fraco">(${esc(n.veiculo)}, ${esc(dataHora(n.dataPub))})</span></li>`).join('')}</ul>`;
+      const termos = (md.termos || []).slice(0, 8).map(t => t[0]);
+      if (termos.length && !c) h += `<p class="fraco">Termos mais frequentes: ${termos.map(esc).join(', ')}.</p>`;
+      h += `<p class="fraco">O tom vem de uma contagem de palavras e não entende ironia nem contexto.</p>`;
+      return { html: h, secao: 'midia' };
+    },
+    virar() {
+      const a = (ESTADO.dados || {}).analise; if (!a || !(a.podeVirar || []).length) return null;
+      return { html: `<p>O que pode mudar o quadro, segundo a Leitura do momento:</p><ul>${a.podeVirar.map(x => `<li><b>${esc(x.titulo)}.</b> ${esc(x.texto)}</li>`).join('')}</ul>`, secao: 'leitura' };
+    },
+    candidatos() {
+      return { html: `<p>Disputam o 2º turno, em ordem de número de urna:</p><ul>${C.map(c => `<li><b style="color:${c.cor}">${esc(c.numero)}</b> ${esc(c.nomeCompleto || c.nome)} (${esc(c.partido)})</li>`).join('')}</ul>`, secao: 'duelo' };
+    },
+    metodo() {
+      return { html: `<p>Um robô no GitHub coleta, a cada 10 minutos, manchetes de cerca de 20 veículos e os arquivos públicos do TSE. As pesquisas são incluídas à mão, só com registro no TSE. A Leitura do momento é uma análise editorial revisada manualmente.</p><p>Estas respostas são montadas automaticamente a partir desses mesmos dados; não há inteligência artificial nem opinião própria.</p>`, secao: 'metodologia' };
+    },
+    agenda() {
+      const ev = eventosFuturos().slice(0, 5);
+      return ev.length ? { html: `<p>Próximos eventos:</p><ul>${ev.map(e => `<li><b>${esc(e.titulo)}</b>: ${esc(fmtData(e.data, { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }))} (${relativo(e.data)})</li>`).join('')}</ul>`, secao: 'central' } : null;
+    },
+  };
+
+  const INTENCOES = [
+    ['voto', /(em quem|quem) (eu )?(devo|deveria|vou|posso) votar|devo votar|em quem votar|qual (e o )?melhor (candidato|opcao)|quem e (o )?melhor|quem (e|seria) pior|merece (meu )?voto/],
+    ['debate', /debate|confronto|record|\bband\b|globo/],
+    ['apuracao', /apura|urnas apuradas|secoes|totaliz|quem (ganhou|venceu)|resultado (final|oficial|do segundo|do 2)/],
+    ['pesquisa', /(quando|proxima|nova).*(pesquisa|datafolha|quaest|atlas)|(pesquisa|datafolha|quaest|atlas).*(quando|proxima|nova)/],
+    ['quando', /quando (e|sera|vai ser|acontece)|que dia|qual (o )?dia|data da (eleicao|votacao)|quanto (tempo )?falta|horario|que horas|ate que horas|abre|fecha (a|as)/],
+    ['rejeicao', /rejei/],
+    ['termometro', /termometro|indicador/],
+    ['apoio', /apoi|caiado|zema|cury|renan|psd|alianca|transfer|eliminad/],
+    ['abstencao', /absten|comparec|faltaram|nao votaram|nao foram votar/],
+    ['virar', /virar|virada|reverter|pode mudar|o que (pode )?muda|o que falta|recuperar|tirar a diferenca/],
+    ['primeiro', /primeiro turno|1o turno|1 turno|\b4 de outubro\b/],
+    ['pesquisa', /pesquisa|datafolha|quaest|atlas|ipec|parana pesquisas|poderdata|real time|instituto|levantamento|margem de erro|media/],
+    ['midia', /imprensa|noticia|manchete|midia|jornal|falando|repercuss|\btom\b/],
+    ['lider', /quem (esta|ta) (na frente|ganhando|liderando|melhor|vencendo)|quem (vai|deve|pode) (ganhar|vencer)|favorit|quem lidera|lideranca|chance|vantagem|vai ganhar|vencer|clima|como esta (a )?(disputa|eleicao|corrida)|panorama|cenario/],
+    ['candidatos', /quem sao|numero d|qual (o )?numero|partido|candidatos|quem disputa/],
+    ['metodo', /como funciona|metodolog|de onde|fonte|atualiza|confiavel|robo|voce e|quem fez/],
+    ['agenda', /agenda|proxim|calendario|o que vem|acontecimentos/],
+  ];
+
+  function buscaLivre(txt) {
+    const tokens = txt.split(/[^a-z0-9]+/).filter(t => t.length >= 4 && !STOP_P.has(t));
+    if (!tokens.length) return null;
+    const d = ESTADO.dados || {}; const a = d.analise || {};
+    const itens = [
+      ...(a.fundamentos || []).map(f => ({ t: f.titulo, x: f.texto, s: 'leitura' })),
+      ...(a.podeVirar || []).map(f => ({ t: f.titulo, x: f.texto, s: 'leitura' })),
+      ...((d.linhaTempo) || []).map(e => ({ t: e.titulo, x: (e.detalhe || '') + ' (' + dataCurta(e.data) + ')', s: 'tempo' })),
+      ...((d.noticias) || []).slice(0, 150).map(n => ({ t: n.titulo, x: `${n.veiculo}, ${dataHora(n.dataPub)}`, s: 'midia', link: n.link })),
+    ];
+    const pont = itens.map(i => {
+      const alvo = semAcento(i.t + ' ' + i.x);
+      return { i, p: tokens.reduce((s, t) => s + (alvo.includes(t.slice(0, Math.max(4, t.length - 2))) ? 1 : 0), 0) };
+    }).filter(r => r.p > 0).sort((a, b) => b.p - a.p);
+    if (!pont.length || pont[0].p < Math.min(2, tokens.length)) return null;
+    const top = pont.slice(0, 3);
+    return { html: `<p>Encontrei isto nos dados da página:</p><ul>${top.map(({ i }) => `<li>${i.link ? `<a href="${esc(urlSegura(i.link))}" target="_blank" rel="noopener noreferrer">${esc(i.t)}</a>` : `<b>${esc(i.t)}</b>`}. <span class="muted">${esc(i.x)}</span></li>`).join('')}</ul>`, secao: top[0].i.s };
+  }
+
+  function responder(pergunta) {
+    const txt = semAcento(pergunta).replace(/[º°]/g, 'o').replace(/[?!.,;:]/g, ' ').replace(/\s+/g, ' ').trim();
+    if (!txt) return null;
+    if (/^(oi|ola|bom dia|boa tarde|boa noite|e ai)\b/.test(txt) && txt.split(' ').length <= 3)
+      return { html: '<p>Olá! Pergunte sobre pesquisas, quem está à frente, debates, resultado por estado, notícias ou a apuração.</p>' };
+    const voto = INTENCOES[0][1].test(txt);
+    if (voto) return RESPOSTAS.voto();
+    const uf = detectarUF(pergunta, txt);
+    if (uf && !/debate|pesquisa (do|da) /.test(txt)) return RESPOSTAS.estado(txt, uf);
+    for (const [id, re] of INTENCOES.slice(1)) {
+      if (re.test(txt)) {
+        const r = RESPOSTAS[id](txt);
+        if (r) return r;
+      }
+    }
+    if (detectarCand(txt)) return RESPOSTAS.midia(txt);
+    return buscaLivre(txt) || { html: `<p>Não encontrei isso nos dados desta página. Tente perguntar sobre pesquisas, quem está à frente, debates, um estado ("como foi na Bahia?"), notícias ou a apuração.</p>`, vazio: true };
+  }
+
+  const SUGESTOES = ['Quem está na frente?', 'Qual a pesquisa mais recente?', 'Quando é o próximo debate?', 'Como foi em Minas Gerais?', 'O que pode mudar o resultado?', 'O que a imprensa diz do Lula?'];
+  const historico = [];
+  function renderConversa() {
+    $('#conversa').innerHTML = historico.map(h => `<div class="troca"><p class="perg">${esc(h.p)}</p><div class="resp">${h.r.html}${h.r.secao ? `<p class="ir-secao">${linkSecao(h.r.secao, 'Ver na página')}</p>` : ''}</div></div>`).join('');
+  }
+  function perguntar(p) {
+    p = String(p || '').trim().slice(0, 200);
+    if (!p) return;
+    let r;
+    try { r = responder(p); } catch (e) { console.error(e); r = { html: '<p>Não consegui montar a resposta agora. Tente de novo em instantes.</p>' }; }
+    historico.unshift({ p, r });
+    if (historico.length > 6) historico.pop();
+    renderConversa();
+  }
+  function iniciarPergunte() {
+    $('#sugestoes').innerHTML = SUGESTOES.map(s => `<button type="button" class="chip" data-pergunta="${esc(s)}">${esc(s)}</button>`).join('');
+    $('#form-pergunta').addEventListener('submit', e => { e.preventDefault(); const i = $('#pergunta'); perguntar(i.value); i.value = ''; i.focus(); });
+    $('#sugestoes').addEventListener('click', e => { const b = e.target.closest('[data-pergunta]'); if (b) perguntar(b.dataset.pergunta); });
   }
 
   /* ================================================================ */
@@ -1651,6 +1997,7 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
   ['#f-veiculo', '#f-cand', '#f-tom'].forEach(s => $(s).addEventListener('change', () => { ESTADO.feedLimite = 25; renderFeed(); }));
 
   seguro('duelo', renderDuelo);
+  seguro('pergunte', iniciarPergunte);
   seguro('contagem', renderContagem);
   function iniciar() {
     ciclo(true);
