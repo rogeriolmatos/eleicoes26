@@ -310,6 +310,7 @@ td.n, th.n { text-align: right; padding-right: 0; padding-left: 10px; }
 .amostra-padrao { display: inline-block; width: 26px; height: 12px; vertical-align: -1px; margin-right: 6px; border: 1px solid var(--c, var(--texto-2)); border-radius: 2px; }
 .amostra-padrao.liso { background: var(--c, var(--texto)); }
 .amostra-padrao.listrado { background: var(--listra); }
+.amostra-1t { font-style: normal; color: var(--texto); margin-right: 6px; }
 .media-atual { display: flex; flex-wrap: wrap; gap: 8px 36px; margin: 0 0 14px; }
 .media-atual div { display: grid; }
 .media-atual b { font-family: var(--serifa); font-size: 2.2rem; line-height: 1; font-weight: 600; color: var(--k, var(--texto)); }
@@ -543,7 +544,7 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
   <section class="bloco" id="pesquisas" aria-labelledby="t-pesq">
     <header class="bloco-cab">
       <h2 id="t-pesq">Agregador de pesquisas</h2>
-      <p>Só pesquisas registradas no TSE, com o número de registro. Linha: média ponderada por tamanho da amostra e data. Faixa: margem de erro média.</p>
+      <p>Só pesquisas do 2º turno, feitas depois de 4/10 e registradas no TSE, e o resultado oficial do 1º turno como ponto de partida. Linha: média ponderada por tamanho da amostra e data. Faixa: margem de erro média.</p>
     </header>
     <div class="bloco-corpo">
       <div class="alternador" role="group" aria-label="Base dos percentuais">
@@ -847,7 +848,8 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
 
   /** Converte cada pesquisa na base escolhida; devolve [{t, v:{13,22}, margem, amostra, p}] */
   function pesquisasNaBase(base) {
-    const lista = ((ESTADO.dados && ESTADO.dados.pesquisas) || []).filter(p => /^(BR|[A-Z]{2})-\d{5}\/\d{4}$/.test(String(p.registroTSE || '')));
+    // Só pesquisas registradas no TSE e feitas depois do 1º turno (campo encerrado após 4/10).
+    const lista = ((ESTADO.dados && ESTADO.dados.pesquisas) || []).filter(p => /^(BR|[A-Z]{2})-\d{5}\/\d{4}$/.test(String(p.registroTSE || '')) && ehPos1T(p));
     const out = [];
     for (const p of lista) {
       const a = +p[NUMS[0]], b = +p[NUMS[1]];
@@ -972,7 +974,9 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
       const t = new Date(n.dataPub).getTime();
       if (t < limite) continue;
       const txt = semAcento(n.titulo + ' ' + (n.resumo || ''));
-      if (!/pesquisa|levantamento|intencao de voto|turno|lula|flavio/.test(txt)) continue;
+      if (!/lula|flavio|presiden|planalto/.test(txt)) continue;
+      // Ignora pesquisas estaduais (governador, senado, capitais)
+      if (/governador|governo (de|do|da) [a-z]|senado|prefeit|\b(no|na|em) (acre|alagoas|amapa|amazonas|bahia|ceara|df|distrito federal|espirito santo|goias|maranhao|mato grosso|minas|para|paraiba|parana|pernambuco|piaui|rio de janeiro|rio grande|rondonia|roraima|santa catarina|sao paulo|sergipe|tocantins)\b|celina|grass|allyson|cadu|omar aziz|maria do carmo/.test(txt)) continue;
       if (!/(\d{1,2}(,\d)?\s?%)|turno|lidera|frente|empate/.test(txt)) continue;
       const inst = INSTITUTOS.find(([, re]) => re.test(txt));
       if (!inst) continue;
@@ -1192,17 +1196,17 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
     const base = ESTADO.basePesq;
     $$('#pesquisas .alternador button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.base === base)));
     const lista = pesquisasNaBase(base);
-    const todas = (ESTADO.dados && ESTADO.dados.pesquisas) || [];
+    const todas = ((ESTADO.dados && ESTADO.dados.pesquisas) || []).filter(ehPos1T);
 
     // Média atual (só pesquisas pós-1º turno, quando houver)
     const lm = paraMedia(lista);
-    const soPos = lm.length && lm.length < lista.length;
     const m = lm.length ? (mediaEm(agora().getTime(), lm) || mediaEm(lm[lm.length - 1].t, lm)) : null;
     $('#pesq-media').innerHTML = m
-      ? `<p class="fraco" style="margin:0 0 4px;font-size:.86rem">${soPos ? `Média das ${lm.length} pesquisas feitas depois do 1º turno` : 'Média ponderada das pesquisas'}</p><div class="media-atual">${NUMS.map(n => `<div style="--k:${corDe(n)}"><span class="fraco">${esc(rotuloCand(n))}</span><b>${nf(m.v[n])}%</b></div>`).join('')}<div><span class="fraco">Margem média</span><b>±${nf(m.margem)}</b></div></div>`
+      ? `<p class="fraco" style="margin:0 0 4px;font-size:.86rem">Média ponderada ${lm.length === 1 ? 'da pesquisa' : `das ${lm.length} pesquisas`} do 2º turno</p><div class="media-atual">${NUMS.map(n => `<div style="--k:${corDe(n)}"><span class="fraco">${esc(rotuloCand(n))}</span><b>${nf(m.v[n])}%</b></div>`).join('')}<div><span class="fraco">Margem média</span><b>±${nf(m.margem)}</b></div></div>`
       : '';
     $('#pesq-legenda').innerHTML = NUMS.map(n => `<span>${amostra(n)}${esc(rotuloCand(n))}</span>`).join('') +
-      `<span class="fraco">Pontos: pesquisas. Linha: média ponderada. Faixa: margem de erro.</span>`;
+      (base === 'validos' && primeiroTurnoRef() ? `<span><i class="amostra-1t" aria-hidden="true">◆</i>Resultado oficial do 1º turno</span>` : '') +
+      `<span class="fraco">Pontos: pesquisas. Linha: média ponderada. Faixa: margem de erro.${base === 'validos' && primeiroTurnoRef() ? ' O 1º turno aparece só entre os dois candidatos, para comparar com as pesquisas.' : ''}</span>`;
 
     // Tabela
     const ordenadas = todas.slice().sort((a, b) => String(b.campoFim).localeCompare(String(a.campoFim)));
@@ -1214,13 +1218,24 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
         <td class="nw">${esc(dataCurta(p.campoInicio + 'T12:00:00-03:00'))} a ${esc(dataCurta(p.campoFim + 'T12:00:00-03:00'))}</td>
         <td class="n">${ni(p.amostra)}</td><td class="n nw">${p.margem != null ? '±' + nf(p.margem) : '—'}</td>
         <td class="nw">${esc(p.registroTSE)}</td><td>${p.tipo === 'validos' ? 'válidos' : 'totais'}</td>
-        ${NUMS.map(n => `<td class="n">${nf(p[n], 0)}%</td>`).join('')}
-        <td class="n">${p.naoValidos != null ? nf(p.naoValidos, 0) + '%' : '—'}</td>
+        ${NUMS.map(n => `<td class="n">${nf(p[n], Number.isInteger(+p[n]) ? 0 : 1)}%</td>`).join('')}
+        <td class="n">${p.naoValidos != null ? nf(p.naoValidos, Number.isInteger(+p.naoValidos) ? 0 : 1) + '%' : '—'}</td>
         <td>${p.fonte ? `<a href="${esc(urlSegura(p.fonte))}" target="_blank" rel="noopener noreferrer">ver</a>` : '—'}</td>
       </tr>${p.observacao ? `<tr><td colspan="${8 + NUMS.length}" class="fraco" style="border-bottom-color:var(--linha);padding-top:0;font-size:.84rem">${esc(p.observacao)}</td></tr>` : ''}`).join('')}</tbody></table>`
-      : `<p class="vazio">Nenhuma pesquisa registrada na tabela ainda. Inclua novas pesquisas em config/pesquisas.json.</p>`;
+      : `<p class="vazio">Nenhuma pesquisa do 2º turno na tabela ainda. Inclua novas pesquisas em config/pesquisas.json.</p>`;
 
     desenharGrafico(lista, base);
+  }
+
+  /** Resultado oficial do 1º turno (TSE ou, na falta, a base da análise), para o gráfico. */
+  function primeiroTurnoRef() {
+    const d = ESTADO.dados || {};
+    const pt = d.primeiroTurno && !d.primeiroTurno.exemplo && d.primeiroTurno.nacional;
+    const pct = pt && pt[NUMS[0]] && pt[NUMS[0]].pct ? { [NUMS[0]]: +pt[NUMS[0]].pct, [NUMS[1]]: +pt[NUMS[1]].pct }
+      : (d.analise && d.analise.aritmetica && d.analise.aritmetica.base ? { [NUMS[0]]: +d.analise.aritmetica.base[NUMS[0]], [NUMS[1]]: +d.analise.aritmetica.base[NUMS[1]] } : null);
+    if (!pct || !(pct[NUMS[0]] + pct[NUMS[1]])) return null;
+    const s = pct[NUMS[0]] + pct[NUMS[1]];
+    return { t: new Date('2026-10-04T17:00:00-03:00').getTime(), pct, dois: { [NUMS[0]]: 100 * pct[NUMS[0]] / s, [NUMS[1]]: 100 * pct[NUMS[1]] / s } };
   }
 
   function desenharGrafico(lista, base) {
@@ -1241,6 +1256,7 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
     canvas.style.display = ''; const aviso = $('.sem-grafico', caixa); if (aviso) aviso.remove();
     const datas = [...new Set(lista.map(x => x.t))].sort((a, b) => a - b);
     const ds = [];
+    const ref = base === 'validos' ? primeiroTurnoRef() : null;
     const corTexto = '#eef0f7', corFraca = '#8a92ad', corLinha = '#262c42';
     NUMS.forEach(n => {
       const c = cand(n); const listrado = c.padrao === 'listrado';
@@ -1249,8 +1265,10 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
       ds.push({ label: `${rotuloCand(n)}: faixa inferior`, data: medias.map(p => ({ x: p.x, y: p.y - p.mg })), borderWidth: 0, pointRadius: 0, fill: '-1', backgroundColor: rgba(corDe(n), .13), _faixa: true });
       ds.push({ label: `${rotuloCand(n)}: média`, data: medias.map(p => ({ x: p.x, y: p.y })), borderColor: c.cor || corTexto, borderWidth: 2.5, borderDash: listrado ? [7, 5] : [], pointRadius: 0, tension: .25, fill: false });
       ds.push({ label: `${rotuloCand(n)}: pesquisas`, data: lista.map(x => ({ x: x.t, y: x.v[n], inst: x.p.instituto, reg: x.p.registroTSE })), showLine: false, pointStyle: listrado ? 'rect' : 'circle', pointRadius: 4.5, pointHoverRadius: 6, borderColor: c.cor || corTexto, backgroundColor: listrado ? '#0b0d14' : (c.cor || corTexto), borderWidth: 2 });
+      if (ref) ds.push({ label: `${rotuloCand(n)}: 1º turno`, data: [{ x: ref.t, y: ref.dois[n], real: ref.pct[n] }], showLine: false, pointStyle: 'rectRot', pointRadius: 8, pointHoverRadius: 10, borderColor: c.cor || corTexto, backgroundColor: c.cor || corTexto, borderWidth: 2 });
     });
-    const xs = lista.map(x => x.t); const ys = lista.flatMap(x => NUMS.map(n => x.v[n]));
+    const xs = lista.map(x => x.t).concat(ref ? [ref.t] : []);
+    const ys = lista.flatMap(x => NUMS.map(n => x.v[n])).concat(ref ? NUMS.map(n => ref.dois[n]) : []);
     const minY = Math.floor((Math.min(...ys) - 6) / 2) * 2, maxY = Math.ceil((Math.max(...ys) + 6) / 2) * 2;
     const cfg = {
       type: 'line',
@@ -1265,16 +1283,17 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
             filter: it => !it.dataset._faixa,
             backgroundColor: '#1a1f31', borderColor: '#3a4260', borderWidth: 1, titleColor: corTexto, bodyColor: corTexto,
             callbacks: {
-              title: its => its.length ? dataCurta(its[0].parsed.x) : '',
+              title: its => its.length ? (its[0].raw && its[0].raw.real != null ? '1º turno, 04/10' : dataCurta(its[0].parsed.x)) : '',
               label: it => {
-                const r = it.raw || {}; const nome = it.dataset.label.replace(/: (média|pesquisas)$/, '');
+                const r = it.raw || {}; const nome = it.dataset.label.replace(/: (média|pesquisas|1º turno)$/, '');
+                if (r.real != null) return `${nome}, 1º turno (TSE): ${nf(r.real, 2)}% dos válidos; ${nf(it.parsed.y)}% entre os dois`;
                 return r.inst ? `${nome}: ${nf(it.parsed.y)}% (${r.inst}, ${r.reg})` : `${nome}, média: ${nf(it.parsed.y)}%`;
               }
             }
           }
         },
         scales: {
-          x: { type: 'linear', min: Math.min(...xs) - 2 * DIA, max: Math.max(Math.max(...xs), agora().getTime()) + DIA,
+          x: { type: 'linear', min: Math.min(...xs) - DIA, max: Math.max(Math.max(...xs), agora().getTime()) + DIA,
             grid: { color: corLinha }, border: { color: corLinha },
             ticks: { color: corFraca, maxTicksLimit: 8, callback: v => dataCurta(v) } },
           y: { min: minY, max: maxY, grid: { color: ctx => ctx.tick.value === 50 && base === 'validos' ? '#f5b83d' : corLinha }, border: { color: corLinha },
@@ -1603,7 +1622,7 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
     if (p2.length) {
       html += `<div class="tabela-rolagem"><table><caption class="sr">Pesquisas feitas após o 1º turno</caption>
         <thead><tr><th>Instituto</th><th>Campo</th><th>Registro TSE</th><th>Base</th>${NUMS.map(n => `<th class="n" style="color:${corDe(n)}">${esc(rotuloCand(n))}</th>`).join('')}</tr></thead>
-        <tbody>${p2.map(p => `<tr><td>${esc(p.instituto)}</td><td class="nw">${esc(dataCurta(p.campoInicio + 'T12:00:00-03:00'))} a ${esc(dataCurta(p.campoFim + 'T12:00:00-03:00'))}</td><td class="nw">${esc(p.registroTSE)}</td><td>${p.tipo === 'validos' ? 'válidos' : 'totais'}</td>${NUMS.map(n => `<td class="n">${nf(p[n], 0)}%</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+        <tbody>${p2.map(p => `<tr><td>${esc(p.instituto)}</td><td class="nw">${esc(dataCurta(p.campoInicio + 'T12:00:00-03:00'))} a ${esc(dataCurta(p.campoFim + 'T12:00:00-03:00'))}</td><td class="nw">${esc(p.registroTSE)}</td><td>${p.tipo === 'validos' ? 'válidos' : 'totais'}</td>${NUMS.map(n => `<td class="n">${nf(p[n], Number.isInteger(+p[n]) ? 0 : 1)}%</td>`).join('')}</tr>`).join('')}</tbody></table></div>
         <p class="fraco" style="font-size:.86rem">Gráfico, média e todas as pesquisas na seção <a href="#pesquisas">Agregador de pesquisas</a>.</p>`;
     } else {
       html += `<p class="vazio">Ainda não há na tabela pesquisa feita depois do 1º turno. Assim que um instituto divulgar, os números entram aqui depois da conferência do registro no TSE.</p>`;
@@ -1751,7 +1770,7 @@ footer p { max-width: 80ch; margin: 0 0 10px; }
     media() { return RESPOSTAS.pesquisa(''); },
     pesquisa(txt) {
       const d = ESTADO.dados || {};
-      const todas = (d.pesquisas || []).slice().sort((a, b) => String(b.campoFim).localeCompare(String(a.campoFim)));
+      const todas = (d.pesquisas || []).filter(ehPos1T).sort((a, b) => String(b.campoFim).localeCompare(String(a.campoFim)));
       const inst = INSTITUTOS.find(([, re]) => re.test(txt || ''));
       const fmtP = p => {
         const s = (+p[NUMS[0]]) + (+p[NUMS[1]]);
