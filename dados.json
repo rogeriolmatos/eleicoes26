@@ -1,6 +1,6 @@
 {
  "meta": {
-  "atualizadoEm": "2026-10-20T22:35:05.346Z",
+  "atualizadoEm": "2026-10-21T00:57:29.607Z",
   "exemplo": false,
   "versao": 1,
   "geradoPor": "coleta.js",
@@ -8,17 +8,12 @@
    {
     "nome": "Estadão",
     "itens": 20,
-    "aproveitados": 18
+    "aproveitados": 15
    },
    {
-    "nome": "UOL",
-    "itens": 15,
-    "aproveitados": 4
-   },
-   {
-    "nome": "CNN Brasil",
-    "itens": 60,
-    "aproveitados": 14
+    "nome": "G1",
+    "itens": 100,
+    "aproveitados": 86
    },
    {
     "nome": "Folha de S.Paulo",
@@ -26,14 +21,19 @@
     "aproveitados": 81
    },
    {
-    "nome": "G1",
-    "itens": 100,
-    "aproveitados": 87
+    "nome": "UOL",
+    "itens": 15,
+    "aproveitados": 8
+   },
+   {
+    "nome": "CNN Brasil",
+    "itens": 60,
+    "aproveitados": 9
    },
    {
     "nome": "O Globo",
     "itens": 100,
-    "aproveitados": 34
+    "aproveitados": 36
    },
    {
     "nome": "BBC News Brasil",
@@ -43,7 +43,12 @@
    {
     "nome": "Poder360",
     "itens": 10,
-    "aproveitados": 8
+    "aproveitados": 7
+   },
+   {
+    "nome": "Metrópoles",
+    "itens": 20,
+    "aproveitados": 1
    },
    {
     "nome": "CartaCapital",
@@ -53,12 +58,7 @@
    {
     "nome": "Brasil de Fato",
     "itens": 99,
-    "aproveitados": 59
-   },
-   {
-    "nome": "Metrópoles",
-    "itens": 20,
-    "aproveitados": 4
+    "aproveitados": 57
    },
    {
     "nome": "Agência Brasil",
@@ -68,12 +68,12 @@
    {
     "nome": "Revista Oeste",
     "itens": 10,
-    "aproveitados": 8
+    "aproveitados": 9
    },
    {
     "nome": "Gazeta do Povo",
-    "itens": 55,
-    "aproveitados": 40
+    "itens": 56,
+    "aproveitados": 42
    },
    {
     "nome": "Correio Braziliense",
@@ -81,14 +81,14 @@
     "aproveitados": 0
    },
    {
-    "nome": "Estado de Minas",
-    "itens": 20,
-    "aproveitados": 6
-   },
-   {
     "nome": "Google Notícias (busca)",
     "itens": 100,
-    "aproveitados": 98
+    "aproveitados": 99
+   },
+   {
+    "nome": "Estado de Minas",
+    "itens": 20,
+    "aproveitados": 4
    },
    {
     "nome": "O Povo",
@@ -98,12 +98,12 @@
    {
     "nome": "Google Notícias (pesquisas)",
     "itens": 100,
-    "aproveitados": 96
+    "aproveitados": 95
    },
    {
     "nome": "Google Notícias (debates)",
     "itens": 100,
-    "aproveitados": 98
+    "aproveitados": 97
    }
   ],
   "fontesFalha": [],
@@ -174,6 +174,847 @@
  ],
  "noticias": [
   {
+   "id": "professores-e-alunos-da-usp-cobram-checagem-em-tempo-real-no-debate-da-globo",
+   "veiculo": "UOL",
+   "fonteFeed": "UOL",
+   "titulo": "Professores e alunos da USP cobram checagem em tempo real no debate da Globo",
+   "resumo": "Professores, alunos e ex-alunos da Escola de Comunicações e Artes (ECA) da USP lançaram uma carta aberta para cobrar a checagem de fatos em tempo real do debate marcado pela Globo para sexta (23)…",
+   "link": "https://redir.folha.com.br/redir/online/colunas/monicabergamo/rss091/*https://www1.folha.uol.com.br/colunas/monicabergamo/2026/10/professores-e-alunos-da-usp-cobram-checagem-em-tempo-real-no-debate-da-globo.shtml",
+   "dataPub": "2026-10-21T00:57:29.607Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "flavio-aciona-tse-e-acusa-lula-de-disparos-em-massa-sobre-programas-sociais",
+   "veiculo": "UOL",
+   "fonteFeed": "UOL",
+   "titulo": "Flávio aciona TSE e acusa Lula de disparos em massa sobre programas sociais",
+   "resumo": "O candidato Flávio Bolsonaro (PL) acusou a campanha de Lula (PT), seu adversário na disputa presidencial, de supostamente utilizar dados de brasileiros para mensagens em massa para a divulgação de…",
+   "link": "https://noticias.uol.com.br/eleicoes/2026/10/20/flavio-aciona-tse-contra-lula-por-disparos-em-massa-sobre-programas-sociais.ghtm",
+   "dataPub": "2026-10-21T00:57:29.607Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "e-obrigacao-independente-do-resultado-de-domingo-defender-o-estado-de-direito-diz-hugo-mot",
+   "veiculo": "UOL",
+   "fonteFeed": "UOL",
+   "titulo": "É obrigação, independente do resultado de domingo, defender o Estado de Direito, diz Hugo Motta",
+   "resumo": "O presidente da Câmara dos Deputados, Hugo Motta (Republicanos-PB), disse nesta terça-feira (20), que, independente do resultado do segundo turno da eleição presidencial, é obrigação das autoridades…",
+   "link": "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2026/10/20/e-obrigacao-independente-do-resultado-de-domingo-defender-o-estado-de-direito-diz-hugo-motta.htm",
+   "dataPub": "2026-10-21T00:57:29.607Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "pf-diz-que-willer-tomaz-pagou-para-tirar-do-ar-links-que-o-ligavam-a-flavio",
+   "veiculo": "UOL",
+   "fonteFeed": "UOL",
+   "titulo": "PF diz que Willer Tomaz pagou para tirar do ar links que o ligavam a Flávio",
+   "resumo": "Mensagens e documentos apreendidos pela Polícia Federal (PF) indicam que o advogado Willer Tomaz pagou para remover ou desindexar links de reportagens que o relacionavam ao senador Flávio Bolsonaro…",
+   "link": "https://noticias.uol.com.br/eleicoes/2026/10/20/pf-aponta-que-advogado-willer-tomaz-pagou-para-tirar-links-que-o-ligavam-a-flavio.ghtm",
+   "dataPub": "2026-10-21T00:57:29.607Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "mensagens-de-vorcaro-mostram-comparacao-entre-ex-banqueiro-e-jeffrey-epstein-jeff-ta-amado",
+   "veiculo": "UOL",
+   "fonteFeed": "UOL",
+   "titulo": "Mensagens de Vorcaro mostram comparação entre ex-banqueiro e Jeffrey Epstein: 'Jeff tá amador demais'",
+   "resumo": "Mensagens de WhatsApp extraídas pela Polícia Federal do celular de Daniel Vorcaro e obtidas pela BBC News Brasil registram uma conversa em que o banqueiro e um contato identificado no aparelho como o…",
+   "link": "https://c-level.folha.uol.com.br/financas/2026/10/mensagens-de-vorcaro-mostram-comparacao-entre-ex-banqueiro-e-jeffrey-epstein-jeff-ta-amador-demais.shtml",
+   "dataPub": "2026-10-21T00:57:29.607Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "comite-da-meta-ve-falhas-da-empresa-sobre-atuacao-eleitoral-no-brasil-siga-as-noticias-do-",
+   "veiculo": "BBC News Brasil",
+   "fonteFeed": "BBC News Brasil",
+   "titulo": "Comitê da Meta vê falhas da empresa sobre atuação eleitoral no Brasil; siga as notícias do 2º turno",
+   "resumo": "Siga a cobertura especial da BBC News Brasil na reta final do 2º turno e baixe nosso aplicativo para receber os alertas com os maiores destaques do noticiário",
+   "link": "https://www.bbc.co.uk/portuguese/live/c98rzv56p3g0t?at_medium=RSS&at_campaign=rss",
+   "dataPub": "2026-10-21T00:57:29.607Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "mendonca-cobra-fachin-sobre-destino-dos-casos-master-e-inss",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Mendonça cobra Fachin sobre destino dos casos Master e INSS",
+   "resumo": "O ministro André Mendonça, do Supremo Tribunal Federal (STF) , pediu ao presidente da Corte, Edson Fachin, uma definição sobre o destino das investigações relacionadas ao Banco Master e às fraudes…",
+   "link": "https://revistaoeste.com/politica/mendonca-cobra-fachin-sobre-destino-dos-casos-master-e-inss/",
+   "dataPub": "2026-10-21T00:53:43.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "decepcionados-com-lula-nordestinos-fazem-live-com-flavio",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Decepcionados com Lula, nordestinos fazem live com Flávio",
+   "resumo": "Os cinco moradores da Bahia que participaram como protagonistas do vídeo ‘O Nordeste que foi esquecido’ conversaram nesta segunda-feira, 19, com o senador Flávio Bolsonaro (PL) , candidato à…",
+   "link": "https://revistaoeste.com/politica/decepcionados-com-lula-nordestinos-fazem-live-com-flavio/",
+   "dataPub": "2026-10-21T00:51:15.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "nikolas-diz-que-video-com-criticas-de-nordestinos-a-lula-foi-silenciado-no-instagram",
+   "veiculo": "Gazeta do Povo",
+   "fonteFeed": "Gazeta do Povo",
+   "titulo": "Nikolas diz que vídeo com críticas de nordestinos a Lula foi “silenciado” no Instagram",
+   "resumo": "Meta atribuiu a retirada do áudio de vídeo de Nikolas a uma solicitação de direitos autorais. Leia na Gazeta do Povo.",
+   "link": "https://www.gazetadopovo.com.br/eleicoes/2026/nikolas-diz-que-video-com-criticas-de-nordestinos-a-lula-foi-silenciado-no-instagram/",
+   "dataPub": "2026-10-21T00:36:50.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "pesquisas-para-presidente-no-2-turno-lula-x-flavio-bolsonaro-veja-quem-esta-na-frente-no-a",
+   "veiculo": "BBC",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Pesquisas para presidente no 2º turno Lula x Flávio Bolsonaro; veja quem está na frente no agregador da BBC",
+   "resumo": "Pesquisas para presidente no 2º turno Lula x Flávio Bolsonaro; veja quem está na frente no agregador da BBC BBC",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB6bGk0bElMQlVXeV95N0czci1kb2JqLWxDc29JT0xQeldGelU1R2Q0N0NrMTZPX3lIS0RvVzM2TmtiekJYdWo1QVZJSmdFcVBGaWhpYUtFNUNFOWFXbWMxektlONIBaEFVX3lxTE9fX2laSGMzVExhdmVvaUpDTzFSZTE2QmhCSmZRaTh1YzI0NTJBTXJuTkQ5Um02Y3NVQzllWmF3SkZpejhKQm1oVEc0dnEwRTNHZl9GNzZnUk5DTVZiakpOUUJEcW5TcV94?oc=5",
+   "dataPub": "2026-10-21T00:32:59.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "flavio-vai-ao-tse-contra-disparos-em-massa-de-whatsapp-pelo-governo-lula",
+   "veiculo": "Poder360",
+   "fonteFeed": "Poder360",
+   "titulo": "Flávio vai ao TSE contra disparos em massa de WhatsApp pelo governo Lula",
+   "resumo": "Candidato do PL fala em descumprimento da lei eleitoral; Poder360 mostrou que envios chegam a milhões de pessoas",
+   "link": "https://www.poder360.com.br/poder-eleicoes-2026/flavio-vai-ao-tse-contra-disparos-em-massa-de-whatsapp-pelo-governo-lula/",
+   "dataPub": "2026-10-21T00:31:18.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "nordeste-concentra-40-das-mudancas-nos-locais-de-votacao-no-segundo-turno",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Nordeste concentra 40% das mudanças nos locais de votação no segundo turno",
+   "resumo": "O presidente do TSE (Tribunal Superior Eleitoral), ministro Kassio Nunes Marques , anunciou na sessão desta terça-feira (20) que os TREs (Tribunais Regionais Eleitorais) registraram para o segundo…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/nordeste-concentra-40-das-mudancas-nos-locais-de-votacao-no-segundo-turno.shtml",
+   "dataPub": "2026-10-21T00:19:00.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "escritorio-de-flavio-bolsonaro-emitiu-r-13-7-milhoes-em-notas-fiscais-em-tres-anos-e-meio",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Escritório de Flávio Bolsonaro emitiu R$ 13,7 milhões em notas fiscais em três anos e meio",
+   "resumo": "O escritório de advocacia do senador e candidato à Presidência Flávio Bolsonaro (PL-RJ) emitiu notas fiscais que somam ao menos R$ 13,7 milhões entre janeiro de 2023 e julho de 2026. A informação…",
+   "link": "https://oglobo.globo.com/politica/noticia/2026/10/20/escritorio-de-flavio-bolsonaro-emitiu-r-137-milhoes-em-notas-fiscais-em-tres-anos-e-meio.ghtml",
+   "dataPub": "2026-10-21T00:18:15.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "silencio-de-flavio-sobre-ana-clara-foi-desesperador-diz-a-mae-da-menina",
+   "veiculo": "Brasil de Fato",
+   "fonteFeed": "Brasil de Fato",
+   "titulo": "Silêncio de Flávio sobre Ana Clara “foi desesperador”, diz a mãe da menina",
+   "resumo": "Naquele 2 de fevereiro de 2021, a família de Cristiane tinha acabado de acordar e seus dois filhos, a menina com cinco e Pedro com dois anos, estavam brincando na porta de casa. De repente, dois…",
+   "link": "https://www.brasildefato.com.br/2026/10/20/silencio-de-flavio-sobre-ana-clara-foi-desesperador-diz-a-mae-da-menina/",
+   "dataPub": "2026-10-21T00:15:55.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "roger-waters-chama-flavio-de-babaca-e-declara-apoio-a-lula",
+   "veiculo": "Poder360",
+   "fonteFeed": "Poder360",
+   "titulo": "Roger Waters chama Flávio de “babaca” e declara apoio a Lula",
+   "resumo": "Músico britânico critica família Bolsonaro, pede mobilização dos eleitores e cita Marielle Franco em vídeo no Instagram",
+   "link": "https://www.poder360.com.br/poder-eleicoes-2026/roger-waters-chama-flavio-de-babaca-e-declara-apoio-a-lula/",
+   "dataPub": "2026-10-21T00:15:21.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "tse-reune-meta-e-campanhas-de-lula-e-flavio-para-apurar-favorecimento",
+   "veiculo": "Metrópoles",
+   "fonteFeed": "Metrópoles",
+   "titulo": "TSE reúne Meta e campanhas de Lula e Flávio para apurar favorecimento",
+   "resumo": "Empresa foi intimada a explicar em 24h medidas para garantir igualdade entre candidatos nas redes após denúncias da campanha petista",
+   "link": "https://www.metropoles.com/brasil/tse-reune-meta-e-campanhas-de-lula-e-flavio-para-apurar-favorecimento",
+   "dataPub": "2026-10-21T00:14:12.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "conselho-da-meta-ve-falhas-e-cobra-regras-claras-nas-eleicoes",
+   "veiculo": "Poder360",
+   "fonteFeed": "Poder360",
+   "titulo": "Conselho da Meta vê falhas e cobra regras claras nas eleições",
+   "resumo": "Declaração do conselho vem após TSE determinar igualdade de alcance entre as campanhas de Lula e Flávio Bolsonaro",
+   "link": "https://www.poder360.com.br/poder-eleicoes-2026/conselho-da-meta-ve-falhas-e-cobra-regras-claras-nas-eleicoes/",
+   "dataPub": "2026-10-21T00:11:58.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "renan-santos-diz-que-eleitor-dele-que-quiser-votar-em-flavio-vai-pagar-mico-e-perder-tempo",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "Renan Santos diz que eleitor dele que quiser votar em Flávio vai ‘pagar mico’ e ‘perder tempo’",
+   "resumo": "O candidato do Missão no primeiro turno da disputa presidencial, Renan Santos , afirmou que os eleitores dele que quiserem votar em Flávio Bolsonaro vão “pagar mico” e que estariam “perdendo o seu…",
+   "link": "https://www.estadao.com.br/politica/eleicoes/renan-santos-diz-que-eleitor-dele-que-quiser-votar-em-flavio-vai-pagar-mico-e-perder-tempo/",
+   "dataPub": "2026-10-21T00:04:47.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "campanha-de-lula-lanca-novo-jingle-flavio-abre-o-sigilo-",
+   "veiculo": "Poder360",
+   "fonteFeed": "Poder360",
+   "titulo": "Campanha de Lula lança novo jingle: “Flávio, abre o sigilo”",
+   "resumo": "Música repete pedido para senador divulgar dados bancários; petistas também cobram posição sobre 6 X 1 e manutenção do Bolsa Família",
+   "link": "https://www.poder360.com.br/poder-eleicoes/campanha-de-lula-lanca-novo-jingle-flavio-abre-o-sigilo/",
+   "dataPub": "2026-10-21T00:00:12.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "flavio-pede-cassacao-da-chapa-lula-alckmin-por-uso-irregular-do-whatsapp",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Flávio pede cassação da chapa Lula-Alckmin por uso irregular do WhatsApp",
+   "resumo": "O candidato do Partido Liberal (PL) à Presidência, senador Flávio Bolsonaro (PL), pediu a cassação da chapa Lula-Alckmin por causa de uso indevido do WhatsApp. Nesta terça-feira, 20, Flávio acionou o…",
+   "link": "https://revistaoeste.com/no-ponto/flavio-denuncia-lula-tse-whatsapp/",
+   "dataPub": "2026-10-20T23:57:35.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "escritorio-de-flavio-bolsonaro-faturou-r-14-mi-enquanto-ele-exercia-mandato-de-senador",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Escritório de Flávio Bolsonaro faturou R$ 14 mi enquanto ele exercia mandato de senador",
+   "resumo": "O escritório de advocacia do senador e candidato à Presidência Flávio Bolsonaro ( PL -RJ) emitiu ao menos R$ 13,7 milhões em notas fiscais entre janeiro de 2023 e julho de 2026. Metade dessas notas…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/escritorio-de-flavio-bolsonaro-faturou-r-14-mi-enquanto-ele-exercia-mandato-de-senador.shtml",
+   "dataPub": "2026-10-20T23:57:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "pf-pede-mais-prazo-para-aprofundar-investigacoes-sobre-lulinha-e-roberta-luchsinger",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "PF pede mais prazo para aprofundar investigações sobre Lulinha e Roberta Luchsinger",
+   "resumo": "A Polícia Federal pediu a prorrogação do prazo de duas investigações envolvendo os empresários Fábio Luis Lula da Silva, o Lulinha, e Roberta Luchsinger. Os inquéritos apuram um suposto esquema de…",
+   "link": "https://oglobo.globo.com/politica/noticia/2026/10/20/pf-pede-mais-prazo-para-aprofundar-investigacoes-sobre-lulinha-e-roberta-luchsinger.ghtml",
+   "dataPub": "2026-10-20T23:52:37.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "deputado-eleito-felipe-sertanejo-sofre-atentado-em-sp",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Deputado eleito Felipe Sertanejo sofre atentado em SP",
+   "resumo": "O deputado estadual eleito Felipe Sertanejo (PL-SP) sofreu uma tentativa de homicídio na noite desta terça-feira, 20, na Avenida Giovanni Gronchi, no Morumbi, zona sul de São Paulo . O ataque ocorreu…",
+   "link": "https://revistaoeste.com/politica/deputado-eleito-felipe-sertanejo-sofre-atentado-em-sp/",
+   "dataPub": "2026-10-20T23:51:13.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "vantagem-de-flavio-em-pesquisas-impulsiona-ibovespa-ao-2-maior-fechamento-da-historia",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Vantagem de Flávio em pesquisas impulsiona Ibovespa ao 2º maior fechamento da história",
+   "resumo": "O Ibovespa, principal índice da Bolsa de Valores brasileira (B3), encerrou esta terça-feira, 20, em alta de 1,57%, aos 208.295,98 pontos, o segundo maior fechamento de sua história. Enquanto isso, o…",
+   "link": "https://revistaoeste.com/economia/vantagem-de-flavio-em-pesquisas-impulsiona-ibovespa-ao-2o-maior-fechamento-da-historia/",
+   "dataPub": "2026-10-20T23:50:07.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "pesquisa-hoje-veja-numeros-recentes-atualizados-do-2-turno-entre-lula-e-flavio",
+   "veiculo": "UOL Notícias",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Pesquisa hoje: veja números recentes atualizados do 2º turno entre Lula e Flávio",
+   "resumo": "Pesquisa hoje: veja números recentes atualizados do 2º turno entre Lula e Flávio UOL Notícias",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbXRIbDRtTVBQU2VmQk5aUHBHS2V5T0Y2SXV4c19jdV9Vd3dzM1JyRE5JMHZkdVg4OFVXOFJjOXpDZDhoXzZPeklQdC01MmFDOGhzSXV0T0tweUFpZThyVy1UbVQ2d1NIVndLX0MwNzQyVU55SXZGLXl2RFRHRmFXb1hYRWlnRUdWWjBBd0w4TUNtLS1DMnhVUmlpSGJqMXRLajFmQVB3X2FWNEdwc0I5ZEk1UzJoaGQ0UHljZnR4LU5lV3JxRElZR2ZvZw?oc=5",
+   "dataPub": "2026-10-20T23:47:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "mpf-apura-se-chefe-da-pf-violou-sigilo-ao-falar-sobre-irmao-de-lula-no-caso-inss",
+   "veiculo": "Gazeta do Povo",
+   "fonteFeed": "Gazeta do Povo",
+   "titulo": "MPF apura se chefe da PF violou sigilo ao falar sobre irmão de Lula no caso INSS",
+   "resumo": "MPF apura se Andrei Rodrigues violou sigilo ao falar que Sindnapi e irmão de Lula não eram alvos da Operação Sem Desconto.",
+   "link": "https://www.gazetadopovo.com.br/republica/mpf-apura-se-chefe-da-pf-vazou-dados-sigilosos-sobre-irmao-de-lula-no-caso-inss/",
+   "dataPub": "2026-10-20T23:42:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "-a-extrema-direita-no-brasil-e-no-mundo-nao-quer-enfrentar-o-crime-organizado-diz-ex-ouvid",
+   "veiculo": "Brasil de Fato",
+   "fonteFeed": "Brasil de Fato",
+   "titulo": "‘A extrema direita, no Brasil e no mundo, não quer enfrentar o crime organizado’, diz ex-ouvidor das polícias de SP",
+   "resumo": "Benedito Mariano chama propostas de Flávio Bolsonaro (PL) de 'pura demagogia' Fonte",
+   "link": "https://www.brasildefato.com.br/2026/10/20/a-extrema-direita-no-brasil-e-no-mundo-nao-quer-enfrentar-o-crime-organizado-diz-ex-ouvidor-da-policia-de-sp/",
+   "dataPub": "2026-10-20T23:41:05.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "gilmar-e-hugo-motta-defendem-preservacao-das-instituicoes-democraticas-na-reta-final-do-se",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Gilmar e Hugo Motta defendem preservação das instituições democráticas na reta final do segundo turno",
+   "resumo": "O ministro do Supremo Tribunal Federal (STF) Gilmar Mendes, decano da Corte, e o presidente da Câmara, Hugo Motta (Republicanos-PB), defenderam nesta terça-feira as instituições democráticas e…",
+   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/20/gilmar-e-hugo-motta-defendem-preservacao-das-instituicoes-democraticas-na-reta-final-do-segundo-turno.ghtml",
+   "dataPub": "2026-10-20T23:41:04.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "presidente-do-tse-diz-que-mudancas-em-locais-de-votacao-do-primeiro-para-o-segundo-turno-c",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Presidente do TSE diz que mudanças em locais de votação do primeiro para o segundo turno caíram em relação a 2022",
+   "resumo": "O presidente do Tribunal Superior Eleitoral (TSE), Kassio Nunes Marques, afirmou nesta terça-feira que o número de mudanças de endereços de locais de votação entre o primeiro e o segundo turno das…",
+   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/20/presidente-do-tse-diz-que-mudancas-em-locais-de-votacao-do-primeiro-para-o-segundo-turno-cairam-em-relacao-a-2022.ghtml",
+   "dataPub": "2026-10-20T23:41:03.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "conselho-da-meta-aponta-falhas-recorrentes-em-moderacao-eleitoral-no-brasil",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "Conselho da Meta aponta falhas recorrentes em moderação eleitoral no Brasil",
+   "resumo": "BRASÍLIA - O Conselho de Supervisão da Meta , órgão de fiscalização das práticas internas da plataforma, emitiu declaração nesta terça-feira, 20, em que afirma estar preocupado com “falhas…",
+   "link": "https://www.estadao.com.br/politica/conselho-da-meta-aponta-falhas-recorrentes-em-moderacao-eleitoral-no-brasil/",
+   "dataPub": "2026-10-20T23:40:38.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "lula-visita-sarney-apos-ato-no-maranhao-veja-fotos",
+   "veiculo": "Poder360",
+   "fonteFeed": "Poder360",
+   "titulo": "Lula visita Sarney após ato no Maranhão; veja fotos",
+   "resumo": "Petista esteve com o ex-presidente em São Luís, acompanhado de Janja, depois de participar de caminhada",
+   "link": "https://www.poder360.com.br/poder-eleicoes-2026/lula-visita-sarney-apos-ato-no-maranhao-veja-fotos/",
+   "dataPub": "2026-10-20T23:37:17.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "pesquisa-lula-e-flavio-veja-numeros-atualizados-do-segundo-turno-presidencial",
+   "veiculo": "UOL Notícias",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Pesquisa Lula e Flávio: veja números atualizados do segundo turno presidencial",
+   "resumo": "Pesquisa Lula e Flávio: veja números atualizados do segundo turno presidencial UOL Notícias",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQd0N1UkdOQTVkdGFrUVBEdTZLNjNSMWVDcDJlM0wxZjh0QVE1a0dYWDhuY3pfeW05WFJvcFY1YTRzQlhZampGZlpQVW1DTEV5S2pQTUFkNmFqVXdfaVFrN3VxYUxCSmtET3oxc3NkSExPc0E1VGVvU0VpNXpmNXhTZnJYRWFZMGdlblNUWW9RZmwxclc2amJXOUg5QzF0TTFuVldudmZtYWlvVmI1aTRoZlZLQmMzUHcyWUM2cV9HUjhRb0pVX2czYkxB?oc=5",
+   "dataPub": "2026-10-20T23:33:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "ofensiva-de-medo-do-pt-na-internet-tende-a-aumentar-rejeicao-a-lula",
+   "veiculo": "Gazeta do Povo",
+   "fonteFeed": "Gazeta do Povo",
+   "titulo": "Ofensiva de medo do PT na internet tende a aumentar rejeição a Lula",
+   "resumo": "Ataques digitais e retórica de pânico do PT elevam a rejeição Lula na reta final da disputa eleitoral. Leia na Gazeta do Povo.",
+   "link": "https://www.gazetadopovo.com.br/eleicoes/2026/ofensiva-de-medo-do-pt-na-internet-tende-a-aumentar-rejeicao-a-lula/",
+   "dataPub": "2026-10-20T23:30:15.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "mudanca-de-secoes-pelo-tse-em-eleicoes-disputadas-voto-a-voto-e-muito-grave-diz-cientista-",
+   "veiculo": "Brasil de Fato",
+   "fonteFeed": "Brasil de Fato",
+   "titulo": "Mudança de seções pelo TSE em eleições disputadas voto a voto é ‘muito grave’, diz cientista político",
+   "resumo": "Juarez Guimarães avalia mobilização da campanha de Lula nas urnas e atuação dos EUA em prol do bolsonarismo Fonte",
+   "link": "https://www.brasildefato.com.br/2026/10/20/mudanca-de-secoes-pelo-tse-em-eleicoes-disputadas-voto-a-voto-e-muito-grave-diz-cientista-politico/",
+   "dataPub": "2026-10-20T23:29:15.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "tse-ouve-meta-e-campanhas-sobre-igualdade-em-tratamento-de-flavio-e-lula",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "TSE ouve Meta e campanhas sobre igualdade em tratamento de Flávio e Lula",
+   "resumo": "Reunião foi solicitada pela Meta após a empresa prestar informações no âmbito da decisão da Corte eleitoral, que exigiu tratamento igualitário entre as candidaturas nas plataformas digitais",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/tse-ouve-meta-e-campanhas-sobre-igualdade-em-tratamento-de-flavio-e-lula/",
+   "dataPub": "2026-10-20T23:27:58.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "flavio-bolsonaro-apaga-publicacoes-contra-o-bolsa-familia",
+   "veiculo": "CartaCapital",
+   "fonteFeed": "CartaCapital",
+   "titulo": "Flavio Bolsonaro apaga publicações contra o Bolsa Família",
+   "resumo": "As publicações antigas contrastam com o discurso adotado pelo senador nos últimos anos",
+   "link": "https://www.cartacapital.com.br/politica/flavio-bolsonaro-apaga-publicacoes-contra-o-bolsa-familia/",
+   "dataPub": "2026-10-20T23:26:52.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "flavio-bolsonaro-recebe-apoio-de-cantores-sertanejos-saiba-quem",
+   "veiculo": "Estado de Minas",
+   "fonteFeed": "Estado de Minas",
+   "titulo": "Flávio Bolsonaro recebe apoio de cantores sertanejos; saiba quem",
+   "resumo": "ELEIÇÕES 2026",
+   "link": "https://www.em.com.br/politica/2026/10/7524567-flavio-bolsonaro-recebe-apoio-de-cantores-sertanejos-saiba-quem.html",
+   "dataPub": "2026-10-20T23:25:52.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "lula-e-flavio-bolsonaro-fazem-campanha-em-sao-paulo-e-no-nordeste",
+   "veiculo": "Agência Brasil",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Lula e Flávio Bolsonaro fazem campanha em São Paulo e no Nordeste",
+   "resumo": "Lula e Flávio Bolsonaro fazem campanha em São Paulo e no Nordeste Agência Brasil",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQS29fR2FXMXF2V2Y0eXJWRWxONjBvclg5cThkOWgwWjRTSGhISFp4UUtLTC1Cc2NFVW5IUXJqYVRxeVczYTEwQVpCdjNXTTFHOFRXQXpIaHViSXlpd2VTUXhCT2FVZDZNaVNPOVpTTFNaUFZOMWFjSHJhTENxMWN6WXFqcm81Qjc0TDhmQkNXNzd3blo4UllobHd6TzZibWxjU25jTEZ4RHBrTERTcnRlN3Q2cFRTMjVfaVlGR21kZFNyVS1BWW9tODNGTkd1cDFsTWxoc1RSRnhFckE?oc=5",
+   "dataPub": "2026-10-20T23:18:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "pesquisa-presidente-veja-quem-esta-na-frente-na-disputa-de-2-turno",
+   "veiculo": "UOL Notícias",
+   "fonteFeed": "Google Notícias (pesquisas)",
+   "titulo": "Pesquisa presidente: veja quem está na frente na disputa de 2º turno",
+   "resumo": "Pesquisa presidente: veja quem está na frente na disputa de 2º turno UOL Notícias",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOa000TDRGbXJkZjJkQWdhRzJqeFFUcjJiOW1mZUlMYkI3THViTjhlZzdTQ1VZcHFRSjJ6c0dPMENVN2Q2VmwtMk0zZ202Nm5CajJINURCbmc5RDFoT3dHTXBzWUJya0hYWkp3emcwMXRlS0U4S2wxT193TjVzM2xMdjlGWmNIaGRsSnE2Qjk5NE1SQm04YjFzTXlRMHNTNWR5YWJoUGNud3NWYVp5UDV1MklDM1hGVkpMQl9v?oc=5",
+   "dataPub": "2026-10-20T23:16:00.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "flavio-bolsonaro-pede-a-alexandre-de-moraes-do-stf-acesso-a-inquerito-sobre-suspeitas-de-l",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Flávio Bolsonaro pede a Alexandre de Moraes, do STF, acesso a inquérito sobre suspeitas de lavagem de dinheiro",
+   "resumo": "A defesa do senador e candidato à Presidência da República Flávio Bolsonaro (PL) pediu ao ministro Alexandre de Moraes, do Supremo Tribunal Federal (STF), acesso ao inquérito que investiga suspeitas…",
+   "link": "https://oglobo.globo.com/politica/noticia/2026/10/20/flavio-bolsonaro-pede-a-alexandre-de-moraes-do-stf-acesso-a-inquerito-sobre-suspeitas-de-lavagem-de-dinheiro.ghtml",
+   "dataPub": "2026-10-20T23:14:02.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "a-seis-dias-da-eleicao-milei-volta-a-chamar-lula-de-esquerdista-ladrao-",
+   "veiculo": "Estado de Minas",
+   "fonteFeed": "Estado de Minas",
+   "titulo": "A seis dias da eleição, Milei volta a chamar Lula de \"esquerdista ladrão\"",
+   "resumo": "ELEIÇÕES 2026",
+   "link": "https://www.em.com.br/politica/2026/10/7524558-a-seis-dias-da-eleicao-milei-volta-a-chamar-lula-de-esquerdista-ladrao.html",
+   "dataPub": "2026-10-20T23:07:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "doacoes-a-flavio-quase-triplicam-no-2-turno-e-chegam-a-26-vezes-o-valor-recebido-por-lula",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Doações a Flávio quase triplicam no 2º turno e chegam a 26 vezes o valor recebido por Lula",
+   "resumo": "As doações à campanha do senador Flávio Bolsonaro ( PL ) somaram R$ 20,3 milhões de 5 a 16 de outubro no segundo turno. O valor é quase o triplo dos R$ 7,5 milhões recebidos em todo o primeiro turno…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/doacoes-a-flavio-quase-triplicam-no-2o-turno-e-chegam-a-26-vezes-o-valor-recebido-por-lula.shtml",
+   "dataPub": "2026-10-20T23:05:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "eleicao-no-brasil-e-a-mais-importante-para-o-mundo-fora-dos-eua-em-2026-diz-daron-acemoglu",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Eleição no Brasil é a mais importante para o mundo fora dos EUA em 2026, diz Daron Acemoglu",
+   "resumo": "A eleição presidencial brasileira é a mais importante fora dos Estados Unidos em 2026. Essa é a visão do prestigiado economista americano Daron Acemoglu, professor do Massachusetts Institute of…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/eleicao-no-brasil-e-a-mais-importante-para-o-mundo-fora-dos-eua-em-2026-diz-daron-acemoglu.shtml",
+   "dataPub": "2026-10-20T23:04:00.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "tropa-do-flavio-emplaca-termo-no-x-exercito-do-lula-reage-para-derrubar",
+   "veiculo": "Poder360",
+   "fonteFeed": "Poder360",
+   "titulo": "Tropa do Flávio emplaca termo no X; Exército do Lula reage para derrubar",
+   "resumo": "Grupo de Janones reage à mobilização que tuitava \"Não cale os nordestinos\" e leva \"Nordestinos Com Lula\" ao 1º lugar dos assuntos do momento na rede social",
+   "link": "https://www.poder360.com.br/poder-eleicoes-2026/tropa-do-flavio-emplaca-termo-no-x-exercito-do-lula-reage-para-derrubar/",
+   "dataPub": "2026-10-20T23:03:49.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "pesquisa-segundo-turno-veja-numeros-atualizados-da-disputa-lula-x-flavio",
+   "veiculo": "UOL Notícias",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Pesquisa segundo turno: veja números atualizados da disputa Lula x Flávio",
+   "resumo": "Pesquisa segundo turno: veja números atualizados da disputa Lula x Flávio UOL Notícias",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQU1oMWFiSEZzUVZQV1V5T0RjSjVGQUtyaHNCbWpod1ljRTcxeXpMWTlnTzJ6Z0hLcy1YcUdQbF9MakptZWxNWnVmRTl2QXo2S0ZUN2lOaDJFRkc2elpGVHNhdVhoVU80eVMyaExLaHhHMkg4LWdNQnUzcTcxVW40VVlyT2hadkpJZTBlc085SHBjd1RPNmpHblFESTlXTjJ5MXN1bnVPQ2UzYXJHTG1ONk5QOFY1YXFlLWVBcDczaFJBaWs?oc=5",
+   "dataPub": "2026-10-20T23:02:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "campanha-de-lula-corre-contra-o-tempo-apos-dormir-no-ponto-e-aposta-em-erro-de-flavio-na-u",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "Campanha de Lula corre contra o tempo após dormir no ponto e aposta em erro de Flávio na última hora",
+   "resumo": "A campanha do presidente Lula dormiu no ponto. No primeiro turno da disputa, subestimou Flávio Bolsonaro , subiu no salto alto e agora, nos últimos dias, tenta criar fatos políticos para virar o…",
+   "link": "https://www.estadao.com.br/politica/vera-rosa/campanha-de-lula-corre-contra-o-tempo-apos-dormir-no-ponto-e-aposta-em-erro-de-flavio-na-ultima-hora/",
+   "dataPub": "2026-10-20T23:00:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "campanha-de-lula-cobra-checagem-ao-vivo-em-debate-com-flavio",
+   "veiculo": "Poder360",
+   "fonteFeed": "Google Notícias (debates)",
+   "titulo": "Campanha de Lula cobra checagem ao vivo em debate com Flávio",
+   "resumo": "Campanha de Lula cobra checagem ao vivo em debate com Flávio Poder360",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNeEktdG1oWnNuOXE1aHdGak9RRjczQm5zS1NfN1UxTzdlbVlBektnbzlnWFh3WHJYaGx4UlhfTXJsaWxpdGRNSzFBNlphbnl3SjVlcVZDTUEybzhFcURYQ3gxUnJQdktYUm1VM1FOV3U1eEx4YVdFQ0V1XzJlOV9CNVlHeWNHYUpNenZTNTZXajFMRm1DQlRVVUtoNXBnSHREQUVEQkM5Y0NkXzlRQUE?oc=5",
+   "dataPub": "2026-10-20T22:57:15.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "proposta-de-flavio-de-comprar-dividas-provocaria-calote-geral-diz-durigan",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Proposta de Flávio de comprar dívidas provocaria calote geral, diz Durigan",
+   "resumo": "Ministro da Fazenda afirma que suspensão do pagamento de dívidas por até um ano travaria o sistema de crédito e prejudicaria consumidores e empresas; candidato do PL defendeu medida durante debate…",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/proposta-de-flavio-de-comprar-dividas-provocaria-calote-geral-diz-durigan/",
+   "dataPub": "2026-10-20T22:55:48.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "lula-condiciona-debate-na-globo-a-abertura-de-sigilo-de-flavio",
+   "veiculo": "Poder360",
+   "fonteFeed": "Google Notícias (debates)",
+   "titulo": "Lula condiciona debate na \"Globo\" à abertura de sigilo de Flávio",
+   "resumo": "Lula condiciona debate na \"Globo\" à abertura de sigilo de Flávio Poder360",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQS2xrMjdHRUEtaWFfajNIQVI3cXI3Y25xNE1KSVAxN3poNloyWlh4S1hoaVFNVC1qc0JCOUE2dHU2U0JDS1RPMW01Nk1vcklodU0yWUNzdlFRcHdxT0tYTU5NRVNyQzVNVXlEOThsSThWeTY3MEZJN3l3LWN1VGtjUF9uZTEwdXJCTjZzVTNhWWlCSHNacXhaQlZsMDZKM0pPYlFJWjl4QXZoUk13bGdUbQ?oc=5",
+   "dataPub": "2026-10-20T22:55:48.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "flavio-se-reune-com-influenciadores-em-sao-paulo",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Flávio se reúne com influenciadores em São Paulo",
+   "resumo": "O senador e candidato à Presidência da República , Flávio Bolsonaro (PL), participou nesta terça-feira, 20, de um encontro com influenciadores digitais na região de Alphaville, em Barueri, na Grande…",
+   "link": "https://revistaoeste.com/politica/flavio-se-reune-com-influenciadores-em-sao-paulo/",
+   "dataPub": "2026-10-20T22:55:44.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "governo-lula-ataca-milei-golpistas-derrotados-",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Governo Lula ataca Milei: ‘Golpistas derrotados’",
+   "resumo": "O governo Lula atacou o presidente da Argentina, Javier Milei, nesta terça-feira, 20, em nota do Itamaraty . A gestão petista classificou as declarações do argentino como uma \"nova e inaceitável…",
+   "link": "https://revistaoeste.com/politica/governo-lula-ataca-milei-golpistas-derrotados/",
+   "dataPub": "2026-10-20T22:55:10.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "nikolas-acusa-cantor-de-silenciar-nordestinos",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Nikolas acusa cantor de ‘silenciar’ nordestinos",
+   "resumo": "O deputado federal Nikolas Ferreira (PL-MG) acusou nesta terça-feira, 20, o cantor Rubel de “silenciar” moradores do Nordeste que criticaram o presidente Luiz Inácio Lula da Silva (PT). O artista…",
+   "link": "https://revistaoeste.com/politica/nikolas-acusa-cantor-esquerdista-de-silenciar-nordestinos/",
+   "dataPub": "2026-10-20T22:54:01.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "gay-vai-poder-dar-o-caneco-se-eu-for-presidente-diz-flavio",
+   "veiculo": "Poder360",
+   "fonteFeed": "Poder360",
+   "titulo": "Gay “vai poder dar o caneco” se eu for presidente, diz Flávio",
+   "resumo": "Em vídeo ao lado do influenciador Rico Melquiades, senador nega que \"caçará gays\" e afirma que população LGBTQIA+ terá mais segurança",
+   "link": "https://www.poder360.com.br/poder-eleicoes-2026/gay-vai-poder-dar-o-caneco-se-eu-for-presidente-diz-flavio/",
+   "dataPub": "2026-10-20T22:53:22.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "coiab-repudia-decisao-que-negou-transporte-gratuito-a-indigenas-no-vale-do-javari-no-segun",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Coiab repudia decisão que negou transporte gratuito a indígenas no Vale do Javari no segundo turno",
+   "resumo": "A Coordenação das Organizações Indígenas da Amazônia (Coiab) divulgou nota em que repudia a decisão da juíza Dálethe Borges Messias, do Tribunal Regional Eleitoral do Amazonas (TRE-AM), que negou o…",
+   "link": "https://oglobo.globo.com/blogs/miriam-leitao/post/2026/10/coiab-repudia-decisao-que-negou-transporte-gratuito-a-indigenas-no-vale-do-javari-no-segundo-turno.ghtml",
+   "dataPub": "2026-10-20T22:43:37.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "equipe-de-lula-negocia-checagem-de-fatos-no-debate-da-globo",
+   "veiculo": "Vero Notícias",
+   "fonteFeed": "Google Notícias (debates)",
+   "titulo": "Equipe de Lula negocia checagem de fatos no debate da Globo",
+   "resumo": "Equipe de Lula negocia checagem de fatos no debate da Globo Vero Notícias",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWDN6WXFfNmw2Zl96TFJCQXZHNkhTbWpOa1dIbEVYcFNtVnBNZm1wektabmxDWGpmWWpfdG8zR3NEb0R1eTRaZ0RmLTk4a2d6eDlLZ255UHJpbzVCQU0zUHpHd0ltdFprSno3ZEhpMmo5MTRLVTh1SlZBSFMtOV8tVEpLWVpfNlE5eUR5dXdHcEwzVkQ0UHNYNTZn?oc=5",
+   "dataPub": "2026-10-20T22:43:24.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "lula-diz-que-flavio-nao-pode-ir-a-debate-sem-quebrar-sigilo",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Lula diz que Flávio não pode ir a debate sem quebrar sigilo",
+   "resumo": "Atual chefe do Planalto e candidato à reeleição pelo PT (Partido dos Trabalhadores) afirmou que \"um presidente da República não pode debater com ladrão\"",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/lula-diz-que-flavio-nao-pode-ir-a-debate-sem-quebrar-sigilo/",
+   "dataPub": "2026-10-20T22:42:24.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "flavio-disse-que-quantidade-de-beneficiarios-do-bolsa-familia-era-para-se-envergonhar-",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Flávio disse que quantidade de beneficiários do Bolsa Família era 'para se envergonhar'",
+   "resumo": "Em 2014, quando era deputado estadual pelo Rio de Janeiro, Flávio Bolsonaro ( PL ) criticou o alto número de beneficiários do Bolsa Família e disse que o dado \"era para se envergonhar perante o…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/flavio-disse-que-quantidade-de-beneficiarios-do-bolsa-familia-era-para-se-envergonhar.shtml",
+   "dataPub": "2026-10-20T22:37:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "perfis-usam-mulheres-de-ia-em-campanha-por-flavio-bolsonaro-e-lula-para-atrair-publico-e-a",
+   "veiculo": "BBC News Brasil",
+   "fonteFeed": "BBC News Brasil",
+   "titulo": "Perfis usam mulheres de IA em campanha por Flávio Bolsonaro e Lula para atrair público e até vender conteúdo adulto",
+   "resumo": "Levantamento da BBC News Brasil identificou que páginas têm quase 7 milhões de seguidores e centenas de milhares de curtidas. Avatares apoiam Lula e Bolsonaro.",
+   "link": "https://www.bbc.com/portuguese/articles/cmgr8qz1095jo?at_medium=RSS&at_campaign=rss",
+   "dataPub": "2026-10-20T22:35:54.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "agu-pede-na-justica-r-190-milhoes-de-bens-de-membros-de-faccoes",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "AGU pede na Justiça R$ 190 milhões de bens de membros de facções",
+   "resumo": "A Advocacia Geral da União (AGU) entrou nesta terça-feira com quatro ações na Justiça para obter R$ 190,3 milhões em bens de membros das facções criminosas Primeiro Comando da Capital (PCC) e do…",
+   "link": "https://oglobo.globo.com/brasil/noticia/2026/10/20/agu-pede-na-justica-r-190-milhoes-de-bens-de-membros-de-faccoes.ghtml",
+   "dataPub": "2026-10-20T22:35:10.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
    "id": "faturamento-mostra-porque-flavio-nao-quer-abrir-sigilo-diz-campanha-do-pt",
    "veiculo": "UOL",
    "fonteFeed": "UOL",
@@ -203,21 +1044,6 @@
    "coletadoEm": "2026-10-20T22:35:05.346Z"
   },
   {
-   "id": "lula-volta-a-cobrar-flavio-sobre-sigilo-presidente-nao-debate-com-ladrao-",
-   "veiculo": "UOL",
-   "fonteFeed": "UOL",
-   "titulo": "Lula volta a cobrar Flávio sobre sigilo: 'Presidente não debate com ladrão'",
-   "resumo": "O presidente Lula (PT) fez hoje (20) novamente uma cobrança ao adversário Flávio Bolsonaro (PL) para abrir o sigilo bancário e telefônico. A declaração se deu durante caminhada de campanha entre…",
-   "link": "https://noticias.uol.com.br/eleicoes/2026/10/20/lula-volta-cobrar-flavio-sobre-sigilo-presidente-nao-debate-com-ladrao.ghtm",
-   "dataPub": "2026-10-20T22:35:05.346Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
    "id": "lindbergh-pede-protecao-para-suposta-laranja-de-advogado-ligado-a-flavio",
    "veiculo": "UOL",
    "fonteFeed": "UOL",
@@ -232,16 +1058,32 @@
    "coletadoEm": "2026-10-20T22:35:05.346Z"
   },
   {
-   "id": "comite-da-meta-ve-falhas-da-empresa-sobre-atuacao-eleitoral-no-brasil-siga-as-noticias-do-",
-   "veiculo": "BBC News Brasil",
-   "fonteFeed": "BBC News Brasil",
-   "titulo": "Comitê da Meta vê falhas da empresa sobre atuação eleitoral no Brasil; siga as notícias do 2º turno",
-   "resumo": "Siga a cobertura especial da BBC News Brasil na reta final do 2º turno e baixe nosso aplicativo para receber os alertas com os maiores destaques do noticiário",
-   "link": "https://www.bbc.co.uk/portuguese/live/c98rzv56p3g0t?at_medium=RSS&at_campaign=rss",
-   "dataPub": "2026-10-20T22:35:05.346Z",
-   "mencoes": [],
+   "id": "lula-anuncia-sancao-de-anistia-a-dividas-de-meis-e-envio-da-pec-da-tarifa-zero",
+   "veiculo": "Estado de Minas",
+   "fonteFeed": "Estado de Minas",
+   "titulo": "Lula anuncia sanção de anistia a dívidas de MEIs e envio da PEC da Tarifa Zero",
+   "resumo": "ELEIÇÕES 2026",
+   "link": "https://www.em.com.br/politica/2026/10/7524538-lula-anuncia-sancao-de-anistia-a-dividas-de-meis-e-envio-da-pec-da-tarifa-zero.html",
+   "dataPub": "2026-10-20T22:32:51.000Z",
+   "mencoes": [
+    "13"
+   ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "flavio-grava-com-cantores-sertanejos-aliados-em-goias-saiba-quem",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Flávio grava com cantores sertanejos aliados em Goiás; saiba quem",
+   "resumo": "Encontro aconteceu em fazenda próximo a Goiânia e contou com a presença de Gusttavo Lima, Zezé Di Camargo e Marrone, entre outros",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/flavio-grava-com-cantores-sertanejos-aliados-em-goias-saiba-quem/",
+   "dataPub": "2026-10-20T22:30:06.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "em-encontro-com-liderancas-do-agro-em-mg-gaspar-defende-criacao-de-empregos",
@@ -255,7 +1097,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "rede-de-empresas-aplicativo-que-destroi-mensagens-e-viagens-em-jatinho-pf-aponta-vinculos-",
@@ -269,7 +1111,35 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "o-quanto-o-desafio-dos-sigilos-pode-expor-flavio-bolsonaro",
+   "veiculo": "Nexo Jornal",
+   "fonteFeed": "Google Notícias (debates)",
+   "titulo": "O quanto o desafio dos sigilos pode expor Flávio Bolsonaro",
+   "resumo": "O quanto o desafio dos sigilos pode expor Flávio Bolsonaro Nexo Jornal",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQamVOWVZGTWJWR0V3TUZoMDhVd2wtQ1FDeWtfR0I1aXlIcFdkRlgyeDUyb0tYSkFHTmpTTXJZRmFkVWlBQmF1SGhudVIxb2R0MnN3SlVPazZpTTRIUzJVNTNyWUNQSjNSRUxQLVlkUFJVMHBkYnJSa09sNlhPZXN0SXQ0SnA2Rl9xZnBqU3dxUG1CT2N0ZHBtSGFLWlU4RGw0SlJOaVpvU0Q?oc=5",
+   "dataPub": "2026-10-20T22:25:24.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "vira-pix-campanha-de-flavio-promete-cashback-em-pagamentos-de-contas",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Vira PIX: campanha de Flávio promete cashback em pagamentos de contas",
+   "resumo": "Medida seria uma parceria com a Caixa e foi anunciada por Daniella Marques, ex-presidente do banco; modelo é semelhante ao cashback previsto na Reforma Tributária para população de baixa renda",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/vira-pix-campanha-de-flavio-promete-cashback-em-pagamentos-de-contas/",
+   "dataPub": "2026-10-20T22:25:13.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "cpmi-para-investigar-flavio-bolsonaro-tem-mais-da-metade-das-assinaturas-necessarias",
@@ -283,7 +1153,22 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "lula-volta-a-cobrar-flavio-sobre-sigilo-presidente-nao-debate-com-ladrao-",
+   "veiculo": "UOL Notícias",
+   "fonteFeed": "Google Notícias (debates)",
+   "titulo": "Lula volta a cobrar Flávio sobre sigilo: 'Presidente não debate com ladrão'",
+   "resumo": "Lula volta a cobrar Flávio sobre sigilo: 'Presidente não debate com ladrão' UOL Notícias",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOW1rMmowVmJZNC1GdHJZdjRfSkljdUV4Zm1jdmpxcmNtUW9lbWsybWxuVEVXdzZfMzNjREd1aHRRQUxoZHdZekM2eFp5a1J2LW9xdUtCVEg0UV85RnVmdUxCbFI5OUJ3Y2NERkNSSFJGVE9aNlVpelBtckExaVY0b0duUGc3RENyVDZHTnd5NkJ4YlFCWklVVWlfX3RsWFM3Sy1MSkttYWlUWjRMNU12dXkwcGwwXzJ3Smp6eVlGNV8?oc=5",
+   "dataPub": "2026-10-20T22:24:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "queda-de-desmatamento-na-amazonia-e-no-cerrado-rendeu-ate-r-192-bilhoes-para-a-economia-br",
@@ -297,7 +1182,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "willer-tomaz-pagou-para-remover-links-com-noticias-que-mostram-relacao-com-flavio-bolsonar",
@@ -311,7 +1196,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "flavio-anuncia-vira-pix-para-devolver-parte-de-gastos-com-contas",
@@ -339,7 +1224,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "inss-mpf-apura-se-andrei-vazou-informacoes-sigilosas-sobre-irmao-de-lula",
@@ -382,7 +1267,21 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "ratinho-ganha-protagonismo-na-campanha-de-flavio-bolsonaro",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Ratinho ganha protagonismo na campanha de Flávio Bolsonaro",
+   "resumo": "Segundo apuração de Pedro Venceslau, apresentador atua no horário eleitoral e nas redes sociais para ampliar base do candidato do PL no segundo turno",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/ratinho-ganha-protagonismo-na-campanha-de-flavio-bolsonaro/",
+   "dataPub": "2026-10-20T22:07:35.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "mpf-investiga-diretor-da-pf-por-possivel-vazamento-no-caso-inss",
@@ -422,7 +1321,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-retoma-mote-de-dilma-em-2014-e-assume-o-slogan-mudanca-continua-",
@@ -437,7 +1336,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "as-perguntas-da-nova-pesquisa-eleitoral-quaest-sobre-a-disputa-lula-e-flavio-no-segundo-tu",
@@ -452,14 +1351,14 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-diz-que-se-flavio-apresentar-um-documento-autorizando-quebrar-o-sigilo-vai-ter-debate",
    "veiculo": "Estadão",
    "fonteFeed": "Estadão",
    "titulo": "Lula diz que ‘se Flávio apresentar um documento autorizando quebrar o sigilo vai ter debate’",
-   "resumo": "O presidente Luiz Inácio Lula da Silva (PT), candidato à reeleição, afirmou nesta terça-feira, 20, que o adversário no segundo turno, Flávio Bolsonaro (PL), só poderá participar do debate da TV Globo…",
+   "resumo": "O presidente Luiz Inácio Lula da Silva (PT) afirmou nesta terça-feira, 20, que se o senador Flávio Bolsonaro “ apresentar um documento autorizando quebrar o sigilo vai ter debate”, em referência ao…",
    "link": "https://www.estadao.com.br/politica/eleicoes/lula-diz-que-se-flavio-apresentar-um-documento-autorizando-quebrar-o-sigilo-vai-ter-debate/",
    "dataPub": "2026-10-20T21:59:47.000Z",
    "mencoes": [
@@ -467,7 +1366,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "nas-redes-mae-de-flavio-sai-em-defesa-do-filho-sei-o-filho-que-eu-criei-",
@@ -495,7 +1394,22 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "lula-usa-bolsa-familia-para-pressionar-flavio-e-volta-a-cobrar-quebra-de-sigilo-em-ato-no-",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Lula usa Bolsa Família para pressionar Flávio e volta a cobrar quebra de sigilo, em ato no Nordeste",
+   "resumo": "O presidente Luiz Inácio Lula da Silva (PT) usou o Bolsa Família para tentar pressionar o seu adversário, Flávio Bolsonaro (PL), na reta final do segundo turno. Ao abordar programa, que completou 23…",
+   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/20/lula-associa-flavio-a-atos-de-corrupcao-e-acusa-adversario-de-atuar-contra-o-bolsa-familia.ghtml",
+   "dataPub": "2026-10-20T21:53:12.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-usa-bolsa-familia-para-pressionar-flavio-e-volta-a-cobrar-quebra-de-sigilo-em-ato-em-",
@@ -524,7 +1438,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "o-climao-entre-lula-e-o-governador-do-maranhao",
@@ -564,7 +1478,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "relembre-flavio-bolsonaro-atacou-juizas-para-defender-policiais-acusados-de-envolvimento-c",
@@ -578,7 +1492,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "os-detalhes-da-penultima-pesquisa-datafolha-sobre-lula-x-flavio-bolsonaro-no-2-turno",
@@ -593,22 +1507,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "pesquisas-para-presidente-no-2-turno-lula-x-flavio-bolsonaro-veja-quem-esta-na-frente-no-a",
-   "veiculo": "BBC",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Pesquisas para presidente no 2º turno Lula x Flávio Bolsonaro; veja quem está na frente no agregador da BBC",
-   "resumo": "Pesquisas para presidente no 2º turno Lula x Flávio Bolsonaro; veja quem está na frente no agregador da BBC BBC",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB6bGk0bElMQlVXeV95N0czci1kb2JqLWxDc29JT0xQeldGelU1R2Q0N0NrMTZPX3lIS0RvVzM2TmtiekJYdWo1QVZJSmdFcVBGaWhpYUtFNUNFOWFXbWMxektlONIBaEFVX3lxTE9fX2laSGMzVExhdmVvaUpDTzFSZTE2QmhCSmZRaTh1YzI0NTJBTXJuTkQ5Um02Y3NVQzllWmF3SkZpejhKQm1oVEc0dnEwRTNHZl9GNzZnUk5DTVZiakpOUUJEcW5TcV94?oc=5",
-   "dataPub": "2026-10-20T21:31:48.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "ultimo-dia-de-campanha-tera-flavio-com-nikolas-e-lula-em-ato-com-artistas",
@@ -623,7 +1522,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-pede-que-idosos-facam-do-voto-uma-questao-de-honra-",
@@ -682,7 +1581,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "flavio-promete-devolver-parte-de-contas-via-pix-mas-nao-detalha",
@@ -729,6 +1628,18 @@
    "coletadoEm": "2026-10-20T22:35:05.346Z"
   },
   {
+   "id": "institutos-divulgarao-pesquisas-de-intencao-de-voto-para-a-presidencia-antes-do-2-turno",
+   "veiculo": "Portal VV8",
+   "fonteFeed": "Google Notícias (pesquisas)",
+   "titulo": "Institutos divulgarão pesquisas de intenção de voto para a Presidência antes do 2º turno",
+   "resumo": "Institutos divulgarão pesquisas de intenção de voto para a Presidência antes do 2º turno Portal VV8",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaGJCNUJZeVdRU1VWYl9qVzZuRnA4b01BMUNKcS1nMk9lWVJsclB5T2FkMkYyMFdqSmtJaFAzYVVtMDFvVkZESUdscU1lOG8xUmlNXzdwRi1zUWpDcGw4UlFQcGVUY1FtamZiTnY5UUh2MW1oSVpEQm80QmV4eDE1dlpOZENYVGhZekpWWHlrSU42SHdIWDZTUVRIN0FFdXYzeFEtM195a1dkeFFPRFVYVFVqbVZjZkV2Y2NURUw2LXljc1pfUmc?oc=5",
+   "dataPub": "2026-10-20T21:20:31.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
    "id": "analise-bolsa-familia-vira-problema-para-flavio-e-lula",
    "veiculo": "CNN Brasil",
    "fonteFeed": "CNN Brasil",
@@ -741,7 +1652,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "andre-mendonca-e-relator-de-pedido-de-lula-para-quebra-de-sigilos-no-tse",
@@ -770,7 +1681,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "milei-insinua-que-lula-poderia-roubar-eleicao-itamaraty-fala-em-mentiras-e-ingerencia-exte",
@@ -785,7 +1696,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "sem-quorum-sessao-da-camara-do-df-tem-defesa-da-educacao-publica-e-reivindicacoes-de-servi",
@@ -797,7 +1708,7 @@
    "dataPub": "2026-10-20T21:17:28.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "advogado-amigo-de-flavio-bolsonaro-movimentou-r-5-bilhoes-com-bet-em-2025",
@@ -812,7 +1723,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-lidera-o-debate-presidencial-sobre-seguranca-publica-nas-redes",
@@ -827,7 +1738,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "quando-sai-a-proxima-pesquisa-quaest-da-disputa-flavio-bolsonaro-x-lula-",
@@ -842,7 +1753,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "diesel-sobe-ate-6-67-na-1-quinzena-de-outubro",
@@ -900,7 +1811,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "alvo-de-provavel-sabotagem-smart-sampa-ja-capturou-mais-de-3-6-mil-foragidos-da-justica",
@@ -926,7 +1837,7 @@
    "dataPub": "2026-10-20T21:10:26.000Z",
    "mencoes": [],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "flavio-recebeu-cerca-de-r-26-milhoes-em-doacoes-privadas-34-vezes-mais-que-lula",
@@ -941,7 +1852,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "alckmin-fara-mais-dois-eventos-no-interior-de-sp-ate-eleicao",
@@ -955,7 +1866,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "assista-lula-x-flavio-quem-leva-vantagem-na-disputa-digital-pelo-segundo-turno-",
@@ -970,7 +1881,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "iniciativas-em-espacos-publicos-no-df-estimulam-voto-consciente-no-2-turno",
@@ -982,7 +1893,7 @@
    "dataPub": "2026-10-20T20:53:44.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-diz-que-sancionara-lei-que-perdoa-divida-de-meis-nesta-quarta",
@@ -1011,7 +1922,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "procuradoria-investiga-se-chefe-da-pf-divulgou-dados-sigilosos-sobre-irmao-de-lula-no-caso",
@@ -1025,7 +1936,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "itamaraty-trata-declaracoes-de-milei-sobre-processo-eleitoral-como-inaceitaveis-e-desequil",
@@ -1040,7 +1951,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "jogadores-e-torcidas-do-futebol-se-posicionam-em-defesa-da-democracia-e-apoiam-lula",
@@ -1054,7 +1965,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "abaixo-assinado-pede-que-globo-faca-checagem-de-fatos-no-debate-entre-lula-e-flavio",
@@ -1069,7 +1980,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "painel-abaixo-assinado-pede-que-globo-faca-checagem-de-fatos-no-debate-entre-lula-e-flavio",
@@ -1084,7 +1995,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "tres-alertam-local-de-votacao-pode-mudar-ate-domingo",
@@ -1111,7 +2022,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "analise-flavio-e-lula-calibram-propaganda-na-reta-final-da-eleicao",
@@ -1140,7 +2051,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-quer-associar-flavio-a-corrupcao-em-debate-na-globo-e-e-aconselhado-a-manter-tom-sobr",
@@ -1155,7 +2066,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "debate-da-globo-entre-lula-e-flavio-bolsonaro-veja-data-horario-regras-e-como-assistir",
@@ -1170,7 +2081,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "aliado-de-flavio-marcal-desdenha-de-eleitores-de-renan-santos-fica-com-esse-voto-anula-poe",
@@ -1185,7 +2096,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "itamaraty-rebate-milei-e-diz-que-argentino-tenta-interferir-no-processo-eleitoral",
@@ -1199,7 +2110,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "flavio-bolsonaro-se-deu-bem-no-debate-com-lula-mas-nao-por-merito-proprio",
@@ -1214,7 +2125,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "palavra-corrupto-na-mao-de-flavio-bolsonaro-vira-meme-e-inspira-trend-nas-redes",
@@ -1228,22 +2139,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "oeste-sem-filtro-assista-ao-programa-de-20-10-2026",
-   "veiculo": "Revista Oeste",
-   "fonteFeed": "Revista Oeste",
-   "titulo": "Oeste Sem Filtro: assista ao programa de 20/10/2026",
-   "resumo": "Acompanhe mais uma edição do programa Oeste Sem Filtro . A atração vai ao ar de segunda a sexta-feira, das 17h45 às 19h45. Apresentação: Paula Leal. Os comentários ficam por conta de Ana Paula…",
-   "link": "https://revistaoeste.com/videos/oeste-sem-filtro/oeste-sem-filtro-assista-ao-programa-de-20-10-2026/",
-   "dataPub": "2026-10-20T20:30:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pesquisa-lula-e-flavio-no-segundo-turno-veja-numeros-mais-recentes-divulgados",
@@ -1252,6 +2148,21 @@
    "titulo": "Pesquisa Lula e Flávio no segundo turno: veja números mais recentes divulgados",
    "resumo": "Pesquisa Lula e Flávio no segundo turno: veja números mais recentes divulgados UOL Notícias",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOLWozYWlqeWN1cUpuNmFUVldoR2lKemNjN3IzOGI2Rl9QcUJ6T1hTdkhPX2ZNUVVnbDhtd2Z6SG5TVnlpYWNsSENpR2VGdkh3LUY2U2lzRXV5elgzTGQxeHRtMFFCNDFCSFlGNUpNNE9RVDVxMWhCLXNob1JUNnZONnl1U0ZENFdjTHozTmNiTEZuQ3UtdHNPQnJqZXFJQl9Yc0tlaXlnRlNxalhCYmM4dDZzdTctaFp4VGVydmJXNGVJNGx0SklSRHNn?oc=5",
+   "dataPub": "2026-10-20T20:30:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "oeste-sem-filtro-assista-ao-programa-de-20-10-2026",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Oeste Sem Filtro: assista ao programa de 20/10/2026",
+   "resumo": "Acompanhe mais uma edição do programa Oeste Sem Filtro . A atração vai ao ar de segunda a sexta-feira, das 17h45 às 19h45. Apresentação: Paula Leal. Os comentários ficam por conta de Ana Paula…",
+   "link": "https://revistaoeste.com/videos/oeste-sem-filtro/oeste-sem-filtro-assista-ao-programa-de-20-10-2026/",
    "dataPub": "2026-10-20T20:30:00.000Z",
    "mencoes": [
     "13",
@@ -1272,7 +2183,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "campanha-de-flavio-mira-mulheres-nordestinas-lula-adota-estilo-descolado-",
@@ -1302,22 +2213,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "perfis-usam-mulheres-de-ia-em-campanha-por-flavio-bolsonaro-e-lula-para-atrair-publico-e-a",
-   "veiculo": "BBC News Brasil",
-   "fonteFeed": "BBC News Brasil",
-   "titulo": "Perfis usam mulheres de IA em campanha por Flávio Bolsonaro e Lula para atrair público e até vender conteúdo adulto",
-   "resumo": "Levantamento da BBC News Brasil identificou que páginas têm quase 7 milhões de seguidores e centenas de milhares de curtidas. Avatares apoiam Lula e Bolsonaro.",
-   "link": "https://www.bbc.com/portuguese/articles/cmgr8qz1095jo?at_medium=RSS&at_campaign=rss",
-   "dataPub": "2026-10-20T20:24:37.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "mendonca-mantem-propaganda-de-flavio-bolsonaro-que-associa-ato-pro-lula-a-pcc-e-hamas",
@@ -1332,7 +2228,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "quem-venceu-a-repercussao-do-debate-da-band-lula-ou-flavio-",
@@ -1347,7 +2243,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pazolini-republicanos-tem-52-dos-votos-validos-no-espirito-santo-mostra-pesquisa",
@@ -1376,7 +2272,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "analise-falha-da-meta-nas-eleicoes-deve-fazer-stf-debater-regulamentacao",
@@ -1400,7 +2296,7 @@
    "dataPub": "2026-10-20T20:20:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-visita-sarney-apos-ato-de-campanha-em-sao-luis",
@@ -1429,7 +2325,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "abstencao-no-segundo-turno-entenda-o-que-e-o-indice-e-quem-pode-votar-no-proximo-domingo",
@@ -1441,7 +2337,7 @@
    "dataPub": "2026-10-20T20:16:03.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "eleicoes-2026-eleitores-nao-podem-ser-presos-a-partir-desta-terca-feira",
@@ -1468,7 +2364,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pesquisa-presidente-2026-segundo-turno-veja-como-esta-disputa-lula-x-flavio",
@@ -1483,7 +2379,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pt-pede-cpi-contra-flavio-bolsonaro-e-investigacao-de-lulinha-as-vesperas-do-segundo-turno",
@@ -1498,7 +2394,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "-por-marielle-franco-va-e-vote-roger-waters-do-pink-floyd-manifesta-apoio-a-lula",
@@ -1513,7 +2409,22 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "flavio-recebeu-r-20-3-mi-em-doacoes-no-2-turno-contra-r-709-mil-de-lula",
+   "veiculo": "UOL Notícias",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Flávio recebeu R$ 20,3 mi em doações no 2º turno, contra R$ 709 mil de Lula",
+   "resumo": "Flávio recebeu R$ 20,3 mi em doações no 2º turno, contra R$ 709 mil de Lula UOL Notícias",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcTBLOFIxeXI1U2R6V3lENDEyNGhRT3ExX0JGQnBkeTJQX1FCSG5jT1dvSmJfOFJuLWROT3NPcnZ5aS0xcEhZLXB4SzdFZm5DWllOeHhYcHlOSWdPU2hGb2Z2MGdMSDQ2dGQtTm9iUkxqOXVkOVNHOFNmUk82WkoxVDJOOEdLQk8yb3o3OV94WExtSTA?oc=5",
+   "dataPub": "2026-10-20T20:08:02.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "andre-janones-recebe-alta-e-deixa-hospital-em-sao-paulo",
@@ -1528,7 +2439,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "advogado-amigo-de-flavio-movimentou-r-5-bi-em-bets-em-2025-diz-fazenda",
@@ -1556,7 +2467,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "motta-diz-ser-favoravel-ao-passe-livre-proposto-por-lula-mas-quer-preservar-emendas",
@@ -1570,7 +2481,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pesquisa-2-turno-veja-numeros-mais-recentes-de-lula-x-flavio",
@@ -1585,7 +2496,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "quaest-divulga-nova-pesquisa-do-2-turno-entre-lula-e-flavio-bolsonaro",
@@ -1600,7 +2511,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-dispara-nas-redes-apos-debate-na-band-e-supera-flavio-em-5-vezes",
@@ -1615,7 +2526,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "itamaraty-rebate-comentario-de-milei-sobre-fraude-em-eleicao-inaceitavel-",
@@ -1634,16 +2545,16 @@
   {
    "id": "campanha-de-lula-cogita-sugerir-checagem-de-fatos-em-ultimo-debate",
    "veiculo": "CNN Brasil",
-   "fonteFeed": "CNN Brasil",
+   "fonteFeed": "Google Notícias (busca)",
    "titulo": "Campanha de Lula cogita sugerir checagem de fatos em último debate",
-   "resumo": "Ideia seria recomendar à TV Globo modelo adotado nos Estados Unidos, onde o moderador é munido de informações e pode intervir em caso de imprecisão dos presidenciáveis",
-   "link": "https://www.cnnbrasil.com.br/eleicoes/campanha-de-lula-cogita-sugerir-checagem-de-fatos-em-ultimo-debate/",
+   "resumo": "Campanha de Lula cogita sugerir checagem de fatos em último debate CNN Brasil",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPT21rR29MbGptN1FEUTJLQkhiaVZnNkNuWE5kYzlJelZzMVlhTzVEQm44U1Y5c0NSZzFjZ21WelFUM3pTXzZjZGI5cWZOTlExS2xESllWZ2lVZndOUlF6NDNRNmZwTEd0Z0xYd0hyS01VRkgxaEI1aVk0Uk9LNUJ6UTFhVDB3WUJVYkhjRGlHdkc1TG1Zc1FqWDJoTVZtekV0ek1pNGRoTFg?oc=5",
    "dataPub": "2026-10-20T20:00:51.000Z",
    "mencoes": [
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "eleicoes-saiba-quais-documentos-sao-aceitos-para-votar-no-2-turno",
@@ -1655,7 +2566,7 @@
    "dataPub": "2026-10-20T20:00:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "aglomerado-da-serra-bh-realiza-ato-em-defesa-de-lula-e-de-politicas-sociais-nesta-sexta",
@@ -1669,7 +2580,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "perse-flavio-bolsonaro-promete-volta-de-beneficios-fiscais-para-setor-de-eventos",
@@ -1711,7 +2622,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "entidades-criticam-promessa-de-flavio-bolsonaro-de-acabar-com-entraves-ambientais-",
@@ -1730,14 +2641,14 @@
   {
    "id": "saiba-quais-pesquisas-eleitorais-ainda-serao-publicadas-ate-a-votacao-do-2-turno",
    "veiculo": "InfoMoney",
-   "fonteFeed": "Google Notícias (busca)",
+   "fonteFeed": "Google Notícias (pesquisas)",
    "titulo": "Saiba quais pesquisas eleitorais ainda serão publicadas até a votação do 2º turno",
    "resumo": "Saiba quais pesquisas eleitorais ainda serão publicadas até a votação do 2º turno InfoMoney",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPd2RadG9NaGNDUlVWeFViTDVkekMyT24tZlA5VUFjY0oyN21idVRhUTlKdlBRRUZZSmdWTm1DeFZlYjd2elRGZmQ1UUItYmJDRlBRUkNSTVNXSF9odDRMUWw3bTIyLXJ4MnRrZm1TVnJpQm9DOUlmaktQWGF0U1R1Si1jaWFiMU52NnRDZUJuQ21QWDBWb0xUNjIxOFRQYWZuU01wdFZPWktyUUtzdTd3eGVKTkZLeEotVmZ6VdIBwgFBVV95cUxQOEp4Mk9aY3BvVGVGVktfcGRnZ21zZl9uLVVXdFFFejlRU3ZhaFVna1VvZHFtRmFWSGhnM19fS0tOYW5iTVRXZVhabnJReUVDMDJqOHVTMHdHRmZEbTJxSkxnT1ZXU1A1VmdiVEYxXzduM2Rsd0J6V1o1NGR1Ny1lZTZKZER5Y1hGZmNlY293eTNDYzJJRVRvNzRVeExEWUNqdW1BXzNTRllDUkUyRGNpRktPOHRiQ0VsZ3RLal9JY2psZw?oc=5",
    "dataPub": "2026-10-20T19:48:25.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "flavio-recebeu-cerca-de-r-20-3-mi-em-doacoes-no-2-turno-lula-r-30-7-mi",
@@ -1781,7 +2692,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "-falas-de-flavio-no-para-dao-ao-agro-europeu-argumento-para-convencer-eurodeputados-a-vota",
@@ -1795,7 +2706,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "flavio-bolsonaro-reforca-acenos-a-governadora-raquel-lyra-em-busca-de-mais-votos-na-terra-",
@@ -1810,7 +2721,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "milei-reproduz-mentiras-sobre-urnas-e-tenta-interferir-no-processo-eleitoral-brasileiro-di",
@@ -1825,7 +2736,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "de-gusttavo-lima-e-zeze-di-camargo-a-caetano-e-djavan-saiba-os-artistas-que-apoiam-lula-e-",
@@ -1840,22 +2751,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "flavio-recebeu-r-20-3-mi-em-doacoes-no-2-turno-contra-r-709-mil-de-lula",
-   "veiculo": "UOL Notícias",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Flávio recebeu R$ 20,3 mi em doações no 2º turno, contra R$ 709 mil de Lula",
-   "resumo": "Flávio recebeu R$ 20,3 mi em doações no 2º turno, contra R$ 709 mil de Lula UOL Notícias",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcTBLOFIxeXI1U2R6V3lENDEyNGhRT3ExX0JGQnBkeTJQX1FCSG5jT1dvSmJfOFJuLWROT3NPcnZ5aS0xcEhZLXB4SzdFZm5DWllOeHhYcHlOSWdPU2hGb2Z2MGdMSDQ2dGQtTm9iUkxqOXVkOVNHOFNmUk82WkoxVDJOOEdLQk8yb3o3OV94WExtSTA?oc=5",
-   "dataPub": "2026-10-20T19:35:05.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "flavio-arns-declara-apoio-a-lula-no-2-turno",
@@ -1870,7 +2766,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "sobe-para-4-o-numero-de-locais-de-votacao-alterados-no-2-turno-em-sp-veja-enderecos",
@@ -1882,7 +2778,7 @@
    "dataPub": "2026-10-20T19:31:37.000Z",
    "mencoes": [],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "meta-recusa-pedido-federal-para-criar-canal-de-protecao-a-jornalistas",
@@ -1896,7 +2792,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "investidores-reforcam-operacoes-de-hedge-antes-de-segundo-turno-acirrado",
@@ -1908,7 +2804,7 @@
    "dataPub": "2026-10-20T19:30:42.000Z",
    "mencoes": [],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "tse-rejeita-pedido-de-flavio-bolsonaro-para-retirar-propaganda-de-lula-sobre-escala-6x1",
@@ -1923,7 +2819,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "trump-anuncia-us-8-bilhoes-em-subsidios-a-combustiveis-para-fazendeiros-durante-a-colheita",
@@ -1937,7 +2833,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "em-curitiba-flavio-arns-e-gustavo-fruet-declaram-apoio-a-lula-no-segundo-turno",
@@ -1981,7 +2877,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "a-nova-pesquisa-quaest-para-presidente-apos-o-primeiro-debate-entre-flavio-e-lula",
@@ -1996,7 +2892,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "derrotado-no-parana-ratinho-jr-pede-votos-a-flavio-bolsonaro-greca-declara-voto-em-lula",
@@ -2011,7 +2907,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pt-pede-cpi-contra-flavio-bolsonaro-e-defende-apuracao-sobre-lulinha-em-manobra-para-press",
@@ -2026,7 +2922,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "cnn-brasil-prepara-cobertura-especial-para-2-turno-apos-audiencia-recorde",
@@ -2064,7 +2960,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pesquisadores-da-ayahuasca-se-mobilizam-sobre-as-eleicoes-e-assumem-voto-em-lula",
@@ -2078,7 +2974,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pesquisa-apos-debate-da-band-mostra-flavio-bolsonaro-com-52-e-lula-com-48-no-2-turno",
@@ -2093,7 +2989,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "alexandre-de-moraes-assume-relatoria-de-investigacao-contra-flavio-bolsonaro",
@@ -2107,7 +3003,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-promete-quarto-mandato-historico-e-surra-nos-bolsonaristas-",
@@ -2121,7 +3017,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "com-lula-na-cola-flavio-apela-para-seu-proprio-pacote-de-bondades",
@@ -2166,7 +3062,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "o-que-e-milicia-entenda-o-termo-usado-por-lula-contra-flavio",
@@ -2195,7 +3091,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pesquisas-para-presidente-na-reta-final-do-2-turno-o-que-diziam-em-2018-2022-e-o-que-mostr",
@@ -2207,7 +3103,22 @@
    "dataPub": "2026-10-20T19:03:21.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "pesquisas-eleitorais-dos-ultimos-dias-mostram-disputa-de-flavio-bolsonaro-e-lula-pelo-voto",
+   "veiculo": "VEJA",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Pesquisas eleitorais dos últimos dias mostram disputa de Flávio Bolsonaro e Lula pelo voto feminino",
+   "resumo": "Pesquisas eleitorais dos últimos dias mostram disputa de Flávio Bolsonaro e Lula pelo voto feminino VEJA",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTDhmR1lUa2g4RjYxMVNheUd0UVNWcV9Nd0lQbzZVd3hmMk1pcmtuVy1Qd2kyZVRaRngtLWVySkhDaU5fei0wdklJbFE1b3BQSDY2NFBsQjBEUjZMUzFkb2VmVFRVdUVSTTRqaVVJbmVNeHozNmtaWmhwSkpkV1AwcmRBR1lGb1NXdXdXYTN4V0lYWkJaakZrYXRqUGdWTVhpRTZCalRTd0VhWUhnZk1FR09oREZiaHZ0X2ZkUGNPeEl2VG53THNRS2l2R0dYSmx6?oc=5",
+   "dataPub": "2026-10-20T19:01:01.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "comite-da-meta-diz-que-faltou-transparencia-da-empresa-sobre-atuacao-eleitoral-no-brasil",
@@ -2222,7 +3133,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "aliados-de-flavio-defendem-que-senador-nao-ceda-a-pressao-de-campanha-de-lula-pela-abertur",
@@ -2237,7 +3148,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "general-santos-cruz-kim-kataguiri-joice-hasselman-por-que-ex-aliados-de-bolsonaro-nao-vota",
@@ -2251,7 +3162,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "tocantins-vicentinho-junior-tem-52-contra-48-de-dorinha-diz-real-time",
@@ -2292,7 +3203,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "quebra-de-sigilo-de-lula-fala-so-para-bolha-avalia-monitoramento-de-flavio",
@@ -2321,7 +3232,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "as-pesquisas-para-presidente-na-reta-final-do-2-turno-o-que-diziam-em-2018-2022-e-o-que-mo",
@@ -2336,7 +3247,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "debate-presidencial-da-globo-data-horario-e-onde-assistir-ao-ultimo-confronto-de-lula-e-fl",
@@ -2351,7 +3262,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "conta-falsa-cria-loirona-do-flavio-e-espalha-videos-ao-lado-do-candidato-para-vender-porno",
@@ -2365,7 +3276,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "avanco-de-flavio-nas-pesquisas-deixa-campanha-de-lula-em-alerta-na-reta-final",
@@ -2410,7 +3321,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pesquisa-para-presidente-alfa-flavio-bolsonaro-tem-51-5-e-lula-48-5-no-2-turno",
@@ -2425,7 +3336,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "em-evento-fechado-com-influenciadores-flavio-e-marcal-definem-estrategia-nas-redes-nao-vam",
@@ -2440,7 +3351,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "abaixo-assinado-pede-checagem-ao-vivo-da-globo-no-debate-presidencial",
@@ -2452,7 +3363,7 @@
    "dataPub": "2026-10-20T18:27:28.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "amazonas-omar-aziz-tem-53-contra-47-de-maria-do-carmo-diz-pesquisa",
@@ -2482,7 +3393,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "mendonca-relatara-pedido-de-lula-para-abrir-seus-sigilos-e-os-de-flavio",
@@ -2572,19 +3483,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "saiba-quais-pesquisas-eleitorais-ainda-serao-publicadas-ate-a-votacao-do-segundo-turno",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Saiba quais pesquisas eleitorais ainda serão publicadas até a votação do segundo turno",
-   "resumo": "Na segunda-feira, 19, foram divulgados dados de dois institutos; outros cinco serão divulgados até sábado, 24; véspera das eleições",
-   "link": "https://www.estadao.com.br/politica/eleicoes/quando-saem-as-proximas-pesquisas-eleitorais-para-presidente-confira-dias-e-institutos/",
-   "dataPub": "2026-10-20T18:12:58.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "mendonca-sera-relator-de-pedido-de-lula-para-levantar-sigilos-dele-e-de-flavio",
@@ -2599,7 +3498,19 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "saiba-quais-pesquisas-eleitorais-ainda-serao-publicadas-ate-a-votacao-do-segundo-turno",
+   "veiculo": "Estadão",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Saiba quais pesquisas eleitorais ainda serão publicadas até a votação do segundo turno",
+   "resumo": "Saiba quais pesquisas eleitorais ainda serão publicadas até a votação do segundo turno Estadão",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNdV9EcXhOOWoyNzhrVnhmejdnVHVKSE1Ud1JWZlJSc1ZzZEV2MHU3ZGh5Y2NvQXlQUmpGbUxoVzhTcTZXVW1RQ002WEo5RjNaMDViSnJJZTB5MmxSekcwalV2WEphV3VkVUNWZVpfRkJ1aEljTF9QWExMQUdIUmRBaU5rV1R2dy1veFljbU1rQ01HTUpsNnVUam54TngtcE5FZnZOMkc0amF3VXVUemlXTldfNWFFdWJDQUNzNU5RQ05PR2JwRzZBTXh1MGrSAdIBQVVfeXFMT0NnVDVHTVI4R0RmV0tXTDBCclFVXzhndzlJRGVXVmlzTmtoSC16cUpqeWVSUmlqUENqSXFFY09FTE03OXhCUzZYNWtlRVhlS2EyMWdxUXhDVlNWcW1HdVk0cjNsOTh5U29aWGRSLTZlbXFJcUF3SmlhalhBWkN2SXlPdXp1b0sxTklIQkRLS2p1Ty1pNFRDWDd2TVo3WEo1T0xHYVlZNTlCLVhsVGZ3NFNCSUtGMXZyaUdPUUplSl9oajE3RDV3VU9rUHRhY21DbzdB?oc=5",
+   "dataPub": "2026-10-20T18:12:00.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "as-novas-pesquisas-quaest-e-datafolha-sobre-a-disputa-entre-flavio-e-lula-veja-os-horarios",
@@ -2614,7 +3525,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "as-conversas-de-lula-com-ministros-do-stf-no-segundo-turno",
@@ -2628,7 +3539,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "as-vesperas-do-segundo-turno-df-registra-64-casos-de-assedio-politico-sobre-trabalhadores",
@@ -2640,19 +3551,19 @@
    "dataPub": "2026-10-20T18:10:31.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "tse-ve-falha-de-tribunais-regionais-em-mudanca-de-secoes-eleitorais",
    "veiculo": "Folha de S.Paulo",
    "fonteFeed": "Folha de S.Paulo",
    "titulo": "TSE vê falha de tribunais regionais em mudança de seções eleitorais",
-   "resumo": "Integrantes do TSE (Tribunal Superior Eleitoral) apontam falhas dos Tribunais Regionais Eleitorais na crise gerada com a mudança de milhares de locais de votação entre o primeiro e o segundo turnos…",
+   "resumo": "Integrantes do TSE (Tribunal Superior Eleitoral) apontam falhas dos Tribunais Regionais Eleitorais na crise gerada com a mudança de locais de votação entre o primeiro e o segundo turnos. Leia mais…",
    "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/tse-ve-falha-de-tribunais-regionais-em-mudanca-de-secoes-eleitorais.shtml",
    "dataPub": "2026-10-20T18:10:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "celina-leao-tem-59-dos-votos-validos-no-df-diz-pesquisa",
@@ -2692,22 +3603,21 @@
    "dataPub": "2026-10-20T18:04:22.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-lidera-engajamento-nas-redes-em-todo-o-2-turno-com-200-milhoes-de-interacoes",
    "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
+   "fonteFeed": "Google Notícias (busca)",
    "titulo": "Lula lidera engajamento nas redes em todo o 2º turno, com 200 milhões de interações",
-   "resumo": "O presidenciável Lula (PT) lidera o engajamento nas redes sociais sobre Flávio Bolsonaro (PL) durante todo o segundo turno e chegou nesta terça-feira, 20, a 200 milhões de interações, três vezes mais…",
-   "link": "https://www.estadao.com.br/politica/coluna-do-estadao/lula-lidera-engajamento-nas-redes-em-todo-o-2-turno-com-200-milhoes-de-interacoes/",
+   "resumo": "Lula lidera engajamento nas redes em todo o 2º turno, com 200 milhões de interações Estadão",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPVC1SUThYUGdQX3FWMFJXSjEwcVBTVXh4TUZTYkwtTmhoYkpibVFUQmhvNDlKVlg3NjA5Z3QzcUhfSjMzWWhRRnlRSFZDX2F0MFB4c3dyTGlYRlB4aVVYak05NnlzZkhCeE5vVUhtRmQwMUw0YkJUUVgtakZTZXNHa1BEcFgwcU1YaHhUWXpKX2ZNTGVYajhWOFFVaHNLaFRFLWtmaVByQVJ0OXVXQl80Wm13MmFfU1B3TWpEaVZWRFVtajJiWVZ1RHYzZHZuV180U1HSAdcBQVVfeXFMUENnLUwydzRJZjlqU1RhbXE3S0NjR2t2MF8tRm9RcjlGcFZGc1VHRWlzYUVHX1JDQzREd3NmMFJaSHRoUjlPU3VqUnA5dHVmejlrZE9wRmJZb3NqTmhmVWJ6MnNYczkwZDBrS2FuM0E2OWl5aXl3Yk5SZm9zUU9iYU1LNHYtcnZNaUJOVTlLSnlWb0RiT2thZnNUckJqSjlxSmw3eDVsdldiLXBYczJ1Rk9TRS1tZjgyUjJrTkxwUHktMFUyNnZnSUVzS1lZNjFlRndBcDFLU3M?oc=5",
    "dataPub": "2026-10-20T17:59:38.000Z",
    "mencoes": [
-    "13",
-    "22"
+    "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "motociata-entregadores-de-app-realizam-ato-em-apoio-a-lula-na-quarta-feira-21-em-sp",
@@ -2721,7 +3631,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "segundo-turno-como-foram-as-agendas-de-flavio-bolsonaro-e-lula-no-rio-grande-do-sul",
@@ -2736,7 +3646,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "as-ultimas-pesquisas-da-disputa-entre-flavio-bolsonaro-e-lula-no-segundo-turno",
@@ -2766,7 +3676,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-reage-mas-flavio-bolsonaro-segue-favorito-diz-diretor-da-nexus",
@@ -2781,7 +3691,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "bolsa-familia-flavio-e-lula-travam-disputa-sobre-programa",
@@ -2810,7 +3720,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pix-para-meis-daria-so-r-363-com-distribuicao-igualitaria",
@@ -2868,7 +3778,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-exalta-bondades-eleitorais-repete-que-esta-e-sua-ultima-eleicao-e-visita-sarney-no-ma",
@@ -2882,7 +3792,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "a-palavra-de-ordem-petista-abre-o-sigilo-flavio-ainda-nao-ganhou-tracao",
@@ -2897,7 +3807,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "janones-sai-do-hospital-compara-lula-a-messi-e-diz-que-petista-nao-precisa-usar-redes-soci",
@@ -2911,7 +3821,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "o-que-sao-os-sigilos-bancario-fiscal-e-telefonico-que-lula-desafiou-flavio-bolsonaro-a-abr",
@@ -2926,7 +3836,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "minas-gerais-volta-a-ser-peca-chave-na-eleicao-presidencial",
@@ -2938,7 +3848,7 @@
    "dataPub": "2026-10-20T17:22:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "janones-e-recebido-por-apoiadores-apos-ter-alta-hospitalar-e-compara-lula-a-messi",
@@ -2967,7 +3877,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-tenta-deixar-versao-analogica-e-escalada-digital-petista-acende-alerta-na-direita",
@@ -2981,7 +3891,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "roberta-luchsinger-decide-tirar-filhas-do-brasil-apos-denuncias-sobre-lula-em-entrevista",
@@ -2995,7 +3905,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "josias-de-souza-realtime-lula-e-flavio-ralam-por-7-que-ainda-nao-definiram-voto",
@@ -3067,7 +3977,7 @@
    "dataPub": "2026-10-20T16:46:44.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pf-pede-relatorio-sobre-origem-do-pagamento-de-viagens-de-lulinha-e-quer-mais-prazo-para-i",
@@ -3111,7 +4021,22 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
+  },
+  {
+   "id": "tse-lula-autoriza-quebra-de-sigilo-bancario-se-flavio-fizer-o-mesmo-ebc",
+   "veiculo": "EBC - Empresa Brasil de Comunicação",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "TSE: Lula autoriza quebra de sigilo bancário se Flávio fizer o mesmo - EBC",
+   "resumo": "TSE: Lula autoriza quebra de sigilo bancário se Flávio fizer o mesmo EBC - Empresa Brasil de Comunicação",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWEV4cEkxeUcwTmk0UWFDaW9BWW92WDBISjhjd1pQRHBSMmNhbFRkcFRncjBnd1dGd0xQRzZhakxIQmN3bFQ5bS1lcy1JcW9JanEyczlqdkJFSmstVTdFQVM4bXhucEF3Tkl6VUtaSnpEQmRLOVhhYnZZVWVDUFVvbk5QczZpVUNkaWliX0xMWjhjRGp4Z0tscmgwZ1NmSXdEdDk0djY2bkNGb3VzeG1WS21ENmt0eFJjWUtKLXZKRlZsNDQ?oc=5",
+   "dataPub": "2026-10-20T16:44:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-x-bolsonaro-o-que-indicavam-as-pesquisas-a-esta-altura-em-2022",
@@ -3125,7 +4050,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "advogado-willer-tomaz-ligado-a-flavio-bolsonaro-usava-a-propria-mae-como-laranja",
@@ -3169,7 +4094,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "a-5-dias-do-2-turno-flavio-propoe-devolver-via-pix-parte-de-gastos-com-contas-e-prestacoes",
@@ -3183,7 +4108,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "aumento-do-bolsa-familia-turbina-otimismo-financeiro-entre-beneficiarios-mostra-pesquisa",
@@ -3212,7 +4137,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pesquisa-para-presidente-rejeicao-de-flavio-bolsonaro-supera-a-de-lula-entre-eleitores-que",
@@ -3271,7 +4196,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "o-que-disse-a-assessora-de-flavio-bolsonaro-sobre-mudancas-no-bolsa-familia",
@@ -3301,7 +4226,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "flavio-e-lula-prometem-comprar-dividas-o-que-se-sabe-e-o-que-nao-esta-explicado-nas-propos",
@@ -3330,7 +4255,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-autoriza-ao-tse-quebra-dos-proprios-sigilos-se-flavio-fizer-o-mesmo",
@@ -3345,7 +4270,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-protocola-no-tse-autorizacao-para-liberar-o-proprio-sigilo-bancario-se-flavio-fizer-o",
@@ -3360,7 +4285,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-formaliza-ao-tse-abertura-de-sigilo-caso-flavio-bolsonaro-entregue-seus-dados",
@@ -3375,7 +4300,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "brasilia-hoje-lula-formaliza-ao-tse-abertura-de-sigilo-caso-flavio-bolsonaro-entregue-seus",
@@ -3390,7 +4315,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "outro-canal-lula-e-flavio-bolsonaro-confirmam-presenca-e-globo-fara-debate-no-segundo-turn",
@@ -3405,7 +4330,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "china-suspende-importacoes-de-carne-de-aves-de-sc-apos-foco-da-doenca-de-newcastle-mexico-",
@@ -3424,14 +4349,14 @@
   {
    "id": "pesquisas-eleitorais-2026-para-presidente-veja-numeros-do-2-turno",
    "veiculo": "UOL Notícias",
-   "fonteFeed": "Google Notícias (pesquisas)",
+   "fonteFeed": "Google Notícias (busca)",
    "titulo": "Pesquisas eleitorais 2026 para presidente: veja números do 2º turno",
    "resumo": "Pesquisas eleitorais 2026 para presidente: veja números do 2º turno UOL Notícias",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZmpnMmtkU3NRVEQ1RWRScDlGOFozb21xc0FjTVpEV2R1NGxxYUVRWDhaNGh0aER1QkwwY01CRDZ2dTZsc2lhbVN5SUhEai1tTHpvTWw1b0xHN3FiaG1EVnlKYU90STVMWXgxY2ZPWVljMEszVWNYeU5PQ2tDaEdaUGc2bmZCa280MTloUGFkRVZEN3lSNVlWbjg1VFpQZEw1aHNIX0FhaGppa0xkQUVoQzZOd29keVZWZ0E?oc=5",
    "dataPub": "2026-10-20T16:00:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "missil-inflavel-da-paulista-repercutiu-nas-redes-mais-que-tiro-de-deputado-do-pl-veja-nume",
@@ -3491,7 +4416,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "conselho-da-meta-aponta-falhas-recorrentes-na-moderacao-de-conteudo-eleitoral",
@@ -3506,7 +4431,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pesquisa-flavio-bolsonaro-veja-os-numeros-mais-recentes-do-2-turno",
@@ -3520,7 +4445,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "em-nova-ode-do-bolsonarismo-a-violencia-nikolas-levanta-caixao-do-pt-em-ato-pro-flavio",
@@ -3548,7 +4473,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "no-maranhao-lula-diz-que-disputa-pela-ultima-vez-a-presidencia-e-promete-mandato-historico",
@@ -3563,7 +4488,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "por-que-flavio-diz-que-vai-criar-um-ministerio-da-prosperidade",
@@ -3592,7 +4517,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-busca-tracao-em-atos-de-rua-mobilizacao-nas-redes-e-anuncios-de-benesses-na-reta-fina",
@@ -3606,7 +4531,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pesquisas-para-presidente-veja-os-ultimos-numeros-de-lula-e-flavio-divulgados",
@@ -3621,7 +4546,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "a-distancia-entre-flavio-bolsonaro-e-lula-nas-pesquisas-eleitorais-divulgadas-nos-ultimos-",
@@ -3636,7 +4561,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "leticia-casado-campanha-de-flavio-calcula-gestos-para-evitar-erro-fatal",
@@ -3692,7 +4617,7 @@
    "dataPub": "2026-10-20T15:20:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "licenca-maternidade-turismo-sexual-e-violencia-domestica-tres-vezes-que-flavio-bolsonaro-v",
@@ -3706,7 +4631,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "ultima-pesquisa-quaest-para-presidente-no-segundo-turno-testa-se-eleitor-teme-volta-dos-bo",
@@ -3720,7 +4645,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "damares-apresenta-projeto-para-barrar-pacote-de-bondades-em-ano-eleitoral-",
@@ -3792,7 +4717,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T19:27:00.868Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "advogado-diz-que-lulinha-nao-despachou-com-ministros-convivio-social-",
@@ -3821,7 +4746,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-diz-que-enviara-pec-do-transporte-gratuito-ao-congresso-na-4-feira",
@@ -3849,7 +4774,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pesquisas-eleitorais-veja-os-numeros-mais-recentes-de-lula-x-flavio",
@@ -3864,7 +4789,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "a-5-dias-das-eleicoes-lula-anuncia-envio-da-pec-da-tarifa-zero-na-quarta",
@@ -3890,7 +4815,7 @@
    "dataPub": "2026-10-20T15:08:10.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "video-mais-importante-de-nikolas-traz-nordestinos-criticando-lula",
@@ -3946,7 +4871,7 @@
    "dataPub": "2026-10-20T15:07:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-diz-que-entregara-sigilos-dele-lulinha-e-janja-se-flavio-fizer-igual",
@@ -3988,7 +4913,7 @@
    "dataPub": "2026-10-20T14:56:06.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "flavio-fala-em-retomar-programa-emergencial-para-retomada-do-setor-de-evento-e-amplia-list",
@@ -4046,7 +4971,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "depois-de-aprovar-pacote-pro-lula-camara-esvazia-agenda-na-reta-final-do-2-turno",
@@ -4075,7 +5000,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "flavio-bolsonaro-vai-a-goias-para-gravar-videos-com-cantores-sertanejos",
@@ -4198,7 +5123,7 @@
    "dataPub": "2026-10-20T14:35:31.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "de-saida-do-governo-de-minas-simoes-apresenta-proposta-de-reducao-do-ipva-principal-bandei",
@@ -4286,7 +5211,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "eleicoes-2026-quem-e-alfredo-gaspar-vice-na-chapa-de-flavio-bolsonaro-",
@@ -4301,7 +5226,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "flavio-bolsonaro-modula-plano-para-debate-da-globo-e-deve-manter-aparicoes-atras-de-lula-a",
@@ -4316,7 +5241,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pl-ve-isca-e-pretende-ignorar-proposta-de-lula-sobre-quebra-de-sigilos",
@@ -4380,7 +5305,7 @@
   {
    "id": "lula-diz-ao-tse-que-abrira-os-seus-sigilos-e-de-seus-familiares-se-flavio-fizer-o-mesmo",
    "veiculo": "O GLOBO",
-   "fonteFeed": "Google Notícias (busca)",
+   "fonteFeed": "Google Notícias (debates)",
    "titulo": "Lula diz ao TSE que abrirá os seus sigilos e de seus familiares se Flávio fizer o mesmo",
    "resumo": "Lula diz ao TSE que abrirá os seus sigilos e de seus familiares se Flávio fizer o mesmo O GLOBO",
    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPWGM1VXlhLU9iZGNydEhzemdKdU9RaV9pamc0eXRsclVNbEF4VlJ6cjhMdUNzb1lIZU9nS2hmOEFnOENRYVdCY25jcEtLWkhLLUdMVUhLOVdNQ25CeEw4T1AtWmZuM200TlNQb2Zjb2Z6eklwWEVCb1VZTHQ2akREZFo3NDRNOHVIWWVkcDM4d3pRNVlVUXg1WWczWC1SLUdCWWdkbzdOVnpYUFdoYUxpR2FtYmxCR1dKSGIyekNzaWdnVERUcEtzQVJMY1BQZENQSnZDbWtvekJtZHlqNkNmdXBJaw?oc=5",
@@ -4390,7 +5315,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "a-5-dias-da-eleicao-ibovespa-sobe-mais-de-1-e-dolar-cai-com-flavio-a-frente-de-lula",
@@ -4432,7 +5357,7 @@
    "dataPub": "2026-10-20T14:17:11.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-protocola-documento-no-tse-e-no-stf-em-que-diz-que-libera-a-divulgacao-de-sigilos-del",
@@ -4447,7 +5372,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-protocola-documento-no-tse-em-que-diz-que-libera-a-divulgacao-de-sigilos-dele-e-de-pa",
@@ -4536,7 +5461,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "flavio-promete-se-eleito-retomar-beneficio-para-eventos-encerrado-por-lula-apos-suspeitas-",
@@ -4551,7 +5476,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "governo-lula-envia-milhoes-de-mensagens-via-whatsapp-divulgando-programas",
@@ -4579,7 +5504,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "real-time-big-data-aponta-flavio-bolsonaro-com-52-e-lula-com-48-dos-votos-validos",
@@ -4609,7 +5534,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "governo-editou-reajuste-do-bolsa-familia-as-vesperas-de-anuncio",
@@ -4653,7 +5578,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "eleicoes-2026-o-que-dizem-os-programas-economicos-de-flavio-e-lula-leia-serie-de-reportage",
@@ -4727,7 +5652,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "flavio-aparece-numericamente-a-frente-de-lula-no-2-turno-mostra-real-time-big-data",
@@ -4742,7 +5667,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "trackings-pos-debate-mostram-empate-entre-lula-e-flavio-bolsonaro-na-disputa-presidencial",
@@ -4772,7 +5697,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "presos-podem-votar-no-segundo-turno-das-eleicoes-2026-",
@@ -4832,7 +5757,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "presidente-da-oab-critica-lula-por-criminalizar-advocacia-em-debate-com-flavio",
@@ -4874,7 +5799,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "pressao-de-6-por-4-batimentos-a-130-por-minuto-descarga-de-hormonios-entenda-o-que-levou-j",
@@ -4917,7 +5842,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "flavio-ve-otimismo-na-reta-final-mas-alerta-campanha-apos-ruido-sobre-bolsa-familia",
@@ -4932,7 +5857,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "lula-teve-mais-votos-que-flavio-bolsonaro-na-maioria-das-secoes-com-locais-alterados-para-",
@@ -4947,7 +5872,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   },
   {
    "id": "os-trackings-pos-debate",
@@ -4977,1043 +5902,91 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "lula-supera-flavio-bolsonaro-em-engajamento-nas-redes-apos-debate-na-band-aponta-levantame",
-   "veiculo": "Valor Econômico",
-   "fonteFeed": "Google Notícias (debates)",
-   "titulo": "Lula supera Flávio Bolsonaro em engajamento nas redes após debate na Band, aponta levantamento",
-   "resumo": "Lula supera Flávio Bolsonaro em engajamento nas redes após debate na Band, aponta levantamento Valor Econômico",
-   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPR0ViZVJwR1FheTRFRFRDUldhYzdjNEZSRkhWWDRQUjZ4MG5OUGNBQ2llT0stQ0VyOTVYV0dwT1RpcnJuZjR6SDFBT2l2Z1lNVXhVT1NTcWRmRXNYZkprYTVxTjFkWUZyS3NOa3lMTjVEaFp3dG1ZN25BYW9IOGZNOFMydTRSbW50Rm5JZzdzMkQ3c0doS1FIQjB2X1l1b25XTjIyMG85b25YYTVpX0FWdjBYbVdoRlNSN2FUdnJ0SWJBVWZYS0pYTW9PUTVIeDFXWk9VamNzVEROejEycUZGSDdhYXZFNTJzWUN6RGQ1dk53cnBOclRXX9IBhwJBVV95cUxOM2ZCcnFFR1B0QnVlMF8tSWtlSE1aN3lranZSMWlQUlg1ZW5KdHFaSGdHUUp4elZzeGNSaXFwRGJzRWstSlhPX3pZX2dKVmd2elBDYjhTZ09Idnh1d2xTNlE2ZFZVYnhrek9PNUc1NmhaNWF6UmtkX3lka1Ixcm5BWlp1ZlFsZkpVZS1wS05xTDV0MW9DZmtQWmgtNEt6Uk1UZmc2QXhrcDZ3ZV9wS3ZLUElObEVkX3FsNmcxdlBYUEtYMkE1QTdnQ21xazRrNGdwbGNUZ2ZHVDcxczFpYkt1aTBJRjRVSksxQ1lENTRPb3JxdG14dkhoZmRwNGthRmFXUmxnSWVfRQ?oc=5",
-   "dataPub": "2026-10-20T13:18:19.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "janones-avisa-no-exercito-do-lula-que-tera-alta-nesta-3-feira",
-   "veiculo": "Poder360",
-   "fonteFeed": "Poder360",
-   "titulo": "Janones avisa no Exército do Lula que terá alta nesta 3ª feira",
-   "resumo": "Congressista está internado após quadro de arritmia no domingo (18.out); alta, segundo ele, será às 13h13",
-   "link": "https://www.poder360.com.br/poder-eleicoes-2026/janones-avisa-no-exercito-do-lula-que-tera-alta-nesta-3a-feira/",
-   "dataPub": "2026-10-20T13:17:52.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "real-time-big-data-flavio-bolsonaro-tem-52-dos-votos-validos-contra-48-de-lula",
-   "veiculo": "OpiniãoCE",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Real Time Big Data: Flávio Bolsonaro tem 52% dos votos válidos, contra 48% de Lula",
-   "resumo": "Real Time Big Data: Flávio Bolsonaro tem 52% dos votos válidos, contra 48% de Lula OpiniãoCE",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPY3ZfQjZyU0Jlel94UkdQVC1nM3FWLTJPRklJcW1lUUc3RXdLS0hNZzdLTzNCRXFHdm5VNXA0MUNIOXlrclkzMUJaNGFMeW1ESHhwUzFXNHRJaWdNVzZXZXpMMW5nd3UyeUdnUm4tX28yS1dKUDdjeFo5LV9GQjZCX2hnWVY5QVlvMnlwa2xDcFdVTS11ZlVXRFJKM0VhcGYzTmNJUVFhNk15V3ZrN0cxYTBiZTRxLUh5OHVXLTg0dWlHZ0hSRFZ3?oc=5",
-   "dataPub": "2026-10-20T13:14:43.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "lula-rebate-flavio-sobre-padrao-einstein-em-hospitais-do-sus",
-   "veiculo": "Gazeta do Povo",
-   "fonteFeed": "Gazeta do Povo",
-   "titulo": "Lula rebate Flávio sobre “padrão Einstein” em hospitais do SUS",
-   "resumo": "Presidente afirma que promessa de campanha de Flávio já existe no SUS com parceria do governo com Hospital Albert Einstein. Leia na Gazeta do Povo.",
-   "link": "https://www.gazetadopovo.com.br/eleicoes/2026/lula-rebate-flavio-padrao-einstein-hospitais-sus/",
-   "dataPub": "2026-10-20T13:14:22.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "real-time-big-data-flavio-tem-48-e-lula-45-dos-votos-validos-em-empate-tecnico",
-   "veiculo": "Sul 21",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Real Time Big Data: Flávio tem 48% e Lula 45% dos votos válidos em empate técnico",
-   "resumo": "Real Time Big Data: Flávio tem 48% e Lula 45% dos votos válidos em empate técnico Sul 21",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaVdIcFZXci1VczRzMGJLSWY1YXdiOUhCTlBTa0tvT3VQM1lZaWVxRVd0ZDdqMmZqLUg4eEl0YXRwYTMyem9CWnpKaXZNb2ZJcnN4SzRGRWhYQVQ0UjdXSkdNNVByeEY4U2lwSVRyWk5FczBYZ1ByNk5aNGV5aVBXdVVLemtqLTAwbE5MTDJVVWRPeV80R211OG01T3l0NEU?oc=5",
-   "dataPub": "2026-10-20T13:06:19.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "real-time-big-data-flavio-tem-48-dos-votos-lula-45-",
-   "veiculo": "Sul 21",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Real Time Big Data: Flávio tem 48% dos votos, Lula 45%",
-   "resumo": "Real Time Big Data: Flávio tem 48% dos votos, Lula 45% Sul 21",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaVdIcFZXci1VczRzMGJLSWY1YXdiOUhCTlBTa0tvT3VQM1lZaWVxRVd0ZDdqMmZqLUg4eEl0YXRwYTMyem9CWnpKaXZNb2ZJcnN4SzRGRWhYQVQ0UjdXSkdNNVByeEY4U2lwSVRyWk5FczBYZ1ByNk5aNGV5aVBXdVVLemtqLTAwbE5MTDJVVWRPeV80R211OG01T3l0NEU?oc=5",
-   "dataPub": "2026-10-20T13:06:19.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "vicentinho-tem-52-contra-48-de-dorinha-no-2-turno-no-to",
-   "veiculo": "Poder360",
-   "fonteFeed": "Poder360",
-   "titulo": "Vicentinho tem 52% contra 48% de Dorinha no 2º turno no TO",
-   "resumo": "Levantamento Real Time Big Data ouviu 1.600 eleitores do Estado de 15 a 19 de outubro; margem de erro é de 2 p.p.",
-   "link": "https://www.poder360.com.br/poder-eleicoes-2026/vicentinho-tem-52-contra-48-de-dorinha-no-2o-turno-no-to/",
-   "dataPub": "2026-10-20T13:01:18.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "quem-nao-votou-no-1-turno-pode-votar-no-2-tire-essa-e-outras-duvidas",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Quem não votou no 1º turno pode votar no 2º? Tire essa e outras dúvidas",
-   "resumo": "O segundo turno das eleições de 2026 acontece neste domingo (25), com votação das 8h às 17h pelo horário de Brasília , e definirá se o próximo presidente da República será Lula ( PT ) ou Flávio…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/quem-nao-votou-no-1o-turno-pode-votar-no-2o-tire-essa-e-outras-duvidas.shtml",
-   "dataPub": "2026-10-20T13:00:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "projeto-defendido-por-flavio-vai-contra-recomendacao-da-onu-para-prevenir-desvio-e-trafico",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Projeto defendido por Flávio vai contra recomendação da ONU para prevenir desvio e tráfico de armas",
-   "resumo": "O projeto que prevê acabar com a identificação de munições adquiridas pelas forças de segurança e que é defendido pelo candidato à Presidência Flávio Bolsonaro ( PL ) vai contra um marco firmado pela…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/projeto-defendido-por-flavio-vai-contra-recomendacao-da-onu-para-prevenir-desvio-e-trafico-de-armas.shtml",
-   "dataPub": "2026-10-20T13:00:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "especialistas-apontam-licoes-da-esquerda-de-outros-paises-que-lula-deixou-de-aproveitar-no",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Especialistas apontam lições da esquerda de outros países que Lula deixou de aproveitar no Brasil",
-   "resumo": "Após ficar atrás de Flávio Bolsonaro (PL) no primeiro turno da disputa pela Presidência da República por mais de 2 milhões de votos, Lula (PT) promoveu mudanças claras na campanha. Na comunicação…",
-   "link": "https://www.estadao.com.br/politica/especialistas-apontam-licoes-da-esquerda-de-outros-paises-que-lula-deixou-de-aproveitar-no-brasil/",
-   "dataPub": "2026-10-20T13:00:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T19:27:00.868Z"
-  },
-  {
-   "id": "milton-leite-e-transferido-apos-regalias-em-cadeia-na-grande-sao-paulo",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Milton Leite é transferido após regalias em cadeia na Grande São Paulo",
-   "resumo": "O ex-vereador Milton Leite, preso há mais de um mês sob a acusação de participar de esquemas criminosos ligado ao transporte público de São Paulo, deixou a Cadeia Pública de Mogi das Cruzes, na…",
-   "link": "https://oglobo.globo.com/politica/noticia/2026/10/20/milton-leite-e-transferido-apos-regalias-em-cadeia-na-grande-sao-paulo.ghtml",
-   "dataPub": "2026-10-20T12:53:55.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "tse-determina-que-nikolas-ferreira-e-pablo-marcal-nao-publiquem-conteudos-ja-vetados",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "TSE determina que Nikolas Ferreira e Pablo Marçal não publiquem conteúdos já vetados",
-   "resumo": "O corregedor-geral do Tribunal Superior Eleitoral (TSE) , Ricardo Villas Bôas Cueva, determinou nesta segunda-feira, 19, a proibição de publicação de conteúdos já vetados pela Justiça Eleitoral nas…",
-   "link": "https://www.estadao.com.br/politica/eleicoes/tse-determina-que-nikolas-ferreira-e-pablo-marcal-nao-publiquem-conteudos-ja-vetados-nprp/",
-   "dataPub": "2026-10-20T12:52:01.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T19:27:00.868Z"
-  },
-  {
-   "id": "real-time-flavio-bolsonaro-tem-52-dos-votos-validos-e-lula-48-",
-   "veiculo": "Opera Mundi",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Real Time: Flávio Bolsonaro tem 52% dos votos válidos e Lula 48%",
-   "resumo": "Real Time: Flávio Bolsonaro tem 52% dos votos válidos e Lula 48% Opera Mundi",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZEFnVU9JdE1xcFQwdWJMV1lVTHNuQ3drU2JiZ2ZBUGViXzhJSlJCU2J4dEQ5TFZqMTVtOGUtU0pRLUdFbldqSkVjc19hRUdqLUtvR0U2VUF5Q2g0eWRfdHRkNERPVGF3WDZtLWZuMUxUR1RXY2VJdXhCS2FrQ0lZV0hNelJDM08yZkRNQU51RWt2Wkx0aUFKcGZ3Q1VtS1lhUkZfZzR0dlQteGVkRjhHdUJBTQ?oc=5",
-   "dataPub": "2026-10-20T12:51:28.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "convergencia-brasil-declara-apoio-a-flavio-bolsonaro-e-cobra-mudanca-na-politica-fiscal",
-   "veiculo": "Gazeta do Povo",
-   "fonteFeed": "Gazeta do Povo",
-   "titulo": "Convergência Brasil declara apoio a Flávio Bolsonaro e cobra mudança na política fiscal",
-   "resumo": "Movimento critica a política econômica de Lula e cobra compromissos fiscais de eventual governo Flávio Bolsonaro. Leia na Gazeta do Povo.",
-   "link": "https://www.gazetadopovo.com.br/eleicoes/2026/convergencia-brasil-declara-apoio-a-flavio-bolsonaro-e-cobra-mudanca-na-politica-fiscal/",
-   "dataPub": "2026-10-20T12:45:27.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "eleitores-de-candidatos-derrotados-podem-ser-decisivos-avalia-especialista",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "CNN Brasil",
-   "titulo": "Eleitores de candidatos derrotados podem ser decisivos, avalia especialista",
-   "resumo": "Analista e sócio do Real Time Big Data avalia, ao CNN Novo Dia, que eleitores de Caiado, Zema e Renan Santos tendem a migrar para Flávio Bolsonaro no 2° turno",
-   "link": "https://www.cnnbrasil.com.br/eleicoes/eleitores-de-candidatos-derrotados-podem-ser-decisivos-avalia-especialista/",
-   "dataPub": "2026-10-20T12:44:51.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "meta-diz-que-campanhas-de-lula-e-flavio-sao-tratadas-de-forma-igual-",
-   "veiculo": "Poder360",
-   "fonteFeed": "Poder360",
-   "titulo": "Meta diz que campanhas de Lula e Flávio são tratadas “de forma igual”",
-   "resumo": "Empresa respondeu ao TSE sobre medidas adotadas para garantir isonomia nas redes e pediu reunião com ministro do Tribunal",
-   "link": "https://www.poder360.com.br/poder-eleicoes-2026/meta-diz-que-campanhas-de-lula-e-flavio-sao-tratadas-de-forma-igual/",
-   "dataPub": "2026-10-20T12:42:34.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "o-que-flavio-bolsonaro-e-lula-propoem-sobre-o-bolsa-familia",
-   "veiculo": "BBC News Brasil",
-   "fonteFeed": "BBC News Brasil",
-   "titulo": "O que Flávio Bolsonaro e Lula propõem sobre o Bolsa Família",
-   "resumo": "Lula e Flávio Bolsonaro disputam eleição para presidente no segundo turno e apresentam propostas diferentes para o Bolsa Família.",
-   "link": "https://www.bbc.com/portuguese/articles/c84g120zwq1zo?at_medium=RSS&at_campaign=rss",
-   "dataPub": "2026-10-20T12:41:53.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "campanha-de-lula-escala-alckmin-para-rebater-flavio-sobre-tesouraco-de-r-200-bilhoes-e-com",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Campanha de Lula escala Alckmin para rebater Flávio sobre ‘tesouraço’ de R$ 200 bilhões e compara medida com governo Milei",
-   "resumo": "A campanha do presidente Luiz Inácio Lula da Silva escalou o vice-presidente Geraldo Alckmin para explorar uma das principais propostas econômicas de Flávio Bolsonaro na reta final do segundo turno…",
-   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/20/campanha-de-lula-escala-alckmin-para-rebater-flavio-sobre-tesouraco-de-r-200-bilhoes-e-compara-medida-com-governo-milei.ghtml",
-   "dataPub": "2026-10-20T12:37:30.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "meta-diz-ao-tse-que-deu-tratamento-igual-as-campanhas-de-flavio-bolsonaro-e-lula",
-   "veiculo": "O GLOBO",
-   "fonteFeed": "Google Notícias (debates)",
-   "titulo": "Meta diz ao TSE que deu tratamento igual às campanhas de Flávio Bolsonaro e Lula",
-   "resumo": "Meta diz ao TSE que deu tratamento igual às campanhas de Flávio Bolsonaro e Lula O GLOBO",
-   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPS0h4NlltRGxTSC1DOGtQOHNlWGNyc3lxUmpvLXNBUjFmX0g2bkJSNzk5dTVrM2hCcnZWTDZNSUpCaU9TZEw3S0tma2VoXzFyLUNEMXhWV1kyM19MUXZjcnU3T3lxNnZxSTdPQl9YQ2Fvd3BuQWZGZDZFdkdWeXhwRW5WMHNTbkNsTlpVRmoxdXpfLS1kMk91eTJoYWpjTEl6NW1GRXBpcmRqZE1rVTZfU3ZyYkFWN2h6VlBRcU01dGNLNzdYeWZxdG9HWnZKdi1qMXlvNFFVSU11VXBnR0ViT0FEOF93eHFX0gH3AUFVX3lxTE1ZWlNIUkIxRVJDWFpVU0I3SDloQU5RcWNPNFlrUWhFYWw2ZndxN3NBb25EMXUwU0lhQk1VNWFFQnVjb1ZrM2FoY3lFazA2WlllejBSQ1RieG1vd2VjYWJKZC1fN3ZqbFAtdlczc2E4OHM2RXpvU2xkNnZuQzVDOUZjNS1sM2ZpUnp3OEUydXRFSnlINHgxMVUtQnVaYUJkN3d4NmF3WHdKWG5hS0U1cDd4OVc2NTQxSXB4UnNxSEZfSUZwcWVnZFFiTjNSQzZqZERjYmtlTkZYN21GSU1rLUlINGF4NkZabTJwYkVqZWk4LXdlOXdwdDg?oc=5",
-   "dataPub": "2026-10-20T12:29:34.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "meta-diz-ao-tse-que-deu-tratamento-igual-as-campanhas-de-flavio-bolsonaro-e-lula-nas-redes",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Meta diz ao TSE que deu tratamento igual às campanhas de Flávio Bolsonaro e Lula nas redes sociais",
-   "resumo": "A Meta afirmou em resposta ao Tribunal Superior Eleitoral (TSE ) que deu tratamento igual às campanhas de Flávio Bolsonaro (PL) e Lula (PT), sem privilegiar o conteúdo de nenhum candidato. A Corte…",
-   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/20/meta-diz-ao-tse-que-deu-tratamento-igual-as-campanhas-de-flavio-bolsonaro-e-lula.ghtml",
-   "dataPub": "2026-10-20T12:29:34.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "quem-esta-a-frente-nas-pesquisas-para-presidente-no-2-turno-das-eleicoes-2026-veja-lula-x-",
-   "veiculo": "BBC",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Quem está à frente nas pesquisas para presidente no 2º turno das Eleições 2026? Veja Lula x Flávio Bolsonaro no agregador da BBC",
-   "resumo": "Quem está à frente nas pesquisas para presidente no 2º turno das Eleições 2026? Veja Lula x Flávio Bolsonaro no agregador da BBC BBC",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB6bGk0bElMQlVXeV95N0czci1kb2JqLWxDc29JT0xQeldGelU1R2Q0N0NrMTZPX3lIS0RvVzM2TmtiekJYdWo1QVZJSmdFcVBGaWhpYUtFNUNFOWFXbWMxektlONIBaEFVX3lxTE9fX2laSGMzVExhdmVvaUpDTzFSZTE2QmhCSmZRaTh1YzI0NTJBTXJuTkQ5Um02Y3NVQzllWmF3SkZpejhKQm1oVEc0dnEwRTNHZl9GNzZnUk5DTVZiakpOUUJEcW5TcV94?oc=5",
-   "dataPub": "2026-10-20T12:28:04.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "confira-a-agenda-dos-presidenciaveis-nesta-terca-feira-20-",
-   "veiculo": "Agência Brasil",
-   "fonteFeed": "Agência Brasil",
-   "titulo": "Confira a agenda dos presidenciáveis nesta terça-feira (20)",
-   "resumo": "Confira a agenda dos candidatos à Presidência da República que disputam o segundo turno das eleições gerais nesta terça-feira (20). Luiz Inácio Lula da Silva (PT) Pela manhã, participa de ato…",
-   "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/confira-agenda-dos-presidenciaveis-nesta-terca-feira-20",
-   "dataPub": "2026-10-20T12:28:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "a-burocracia-na-ancine",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "A burocracia na Ancine",
-   "resumo": "As produtoras de cinema que venceram o edital lançado pela EBC, intitulado “Seleção TV Brasil”, temem ficar a ver navios, em caso de derrota de Lula no domingo. Matéria exclusiva para assinantes…",
-   "link": "https://oglobo.globo.com/blogs/lauro-jardim/post/2026/10/a-burocracia-na-ancine.ghtml",
-   "dataPub": "2026-10-20T12:27:01.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "quem-sao-os-deputados-federais-eleitos-em-2026-",
-   "veiculo": "G1",
-   "fonteFeed": "G1",
-   "titulo": "Quem são os deputados federais eleitos em 2026?",
-   "resumo": "Os eleitores brasileiros escolheram no primeiro turno, em 4 de outubro, os 513 deputados federais que vão compor a Câmara dos Deputados a partir de 1º de fevereiro de 2027. As vagas são distribuídas…",
-   "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/20/quem-sao-os-deputados-federais-eleitos-em-2026.ghtml",
-   "dataPub": "2026-10-20T12:24:14.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "quem-ganhou-as-eleicoes-de-2026-para-senador-",
-   "veiculo": "G1",
-   "fonteFeed": "G1",
-   "titulo": "Quem ganhou as eleições de 2026 para senador?",
-   "resumo": "As eleições de 2026 colocaram em disputa 54 vagas no Senado — duas por estado e duas pelo Distrito Federal. Isso significa a renovação de dois terços das 81 cadeiras da Casa. ACESSE A PÁGINA DE…",
-   "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/20/quem-ganhou-as-eleicoes-de-2026-para-senador.ghtml",
-   "dataPub": "2026-10-20T12:23:03.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "meta-diz-ao-tse-que-tomou-medidas-para-candidaturas-serem-tratadas-de-forma-igual",
-   "veiculo": "G1",
-   "fonteFeed": "G1",
-   "titulo": "Meta diz ao TSE que tomou medidas para candidaturas serem tratadas de forma igual",
-   "resumo": "Meta diz ao TSE que tomou medidas para candidaturas serem tratadas de forma igual ) A empresa Meta (dona do Facebook, WhatsApp e Instagram) respondeu ao Tribunal Superior Eleitoral (TSE) nesta…",
-   "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/20/meta-responde-ao-tse-e-diz-que-nao-houve-desobediencia-ou-demora-no-cumprimento-de-decisao.ghtml",
-   "dataPub": "2026-10-20T12:22:57.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "dois-meses-apos-a-posse-governo-de-direita-da-colombia-amplia-gastos-em-16-no-orcamento-de",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Dois meses após a posse, governo de direita da Colômbia amplia gastos em 16% no Orçamento de 2027",
-   "resumo": "Parlamentares colombianos aprovaram na madrugada desta terça-feira um aumento de 16% nos gastos do Orçamento, ampliando as preocupações dos investidores com o crescente endividamento do país. A…",
-   "link": "https://oglobo.globo.com/economia/noticia/2026/10/20/colombia-adia-ajuste-fiscal-e-aprova-alta-de-16percent-do-orcamento-para-2027.ghtml",
-   "dataPub": "2026-10-20T12:21:53.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "o-risco-real-que-flavio-bolsonaro-representa-aos-agricultores-da-regiao-sul",
-   "veiculo": "Brasil de Fato",
-   "fonteFeed": "Brasil de Fato",
-   "titulo": "O risco real que Flávio Bolsonaro representa aos agricultores da região Sul",
-   "resumo": "O agronegócio brasileiro tem razões de sobra para se preocupar com os rumos da política econômica e industrial do país. A dependência de fertilizantes importados é uma delas. O país, que figura entre…",
-   "link": "https://www.brasildefato.com.br/colunista/guilherme-mazer/2026/10/20/o-risco-real-que-flavio-bolsonaro-representa-aos-agricultores-da-regiao-sul/",
-   "dataPub": "2026-10-20T12:19:13.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "pesquisa-apos-debate-mostra-flavio-a-frente-com-52-ante-48-de-lula-no-segundo-turno",
-   "veiculo": "Diário de Goiás",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Pesquisa após debate mostra Flávio à frente com 52% ante 48% de Lula no segundo turno",
-   "resumo": "Pesquisa após debate mostra Flávio à frente com 52% ante 48% de Lula no segundo turno Diário de Goiás",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNOE1iY0pOTGdXQ0ZVQ25zN3JEbVFmVVZ1QlJHTUhRbTBhNmhmTWFObHdHUlotZ1lpWVBYUFpFTHRRazN6TGw2bDI0RGZlSkVuM2FFaGp3T3BWdDh2ZmQ4X2ZPMEViRGpCcnJPMnpSNm5uNWdZbGZNMFVGN2prQm9wMEFGUHhLNlVnekdzLVZORjBHS094SWpBVzR1RndFeU9yeXhJVUVodEFoc3dPN3pJX2VycDhpUk1yd0xnXw?oc=5",
-   "dataPub": "2026-10-20T12:13:48.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "campanha-de-flavio-pulveriza-comicios-de-rua-e-foca-em-preparacao-para-debate-na-semana-pr",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Campanha de Flávio pulveriza comícios de rua e foca em preparação para debate na semana pré-eleição",
-   "resumo": "BRASÍLIA – Faltando cinco dias para a eleição, a campanha do senador Flávio Bolsonaro (PL-RJ) à Presidência da República vai descentralizar a mobilização de rua e se concentrar no debate da TV Globo…",
-   "link": "https://www.estadao.com.br/politica/eleicoes/campanha-de-flavio-pulveriza-comicios-de-rua-e-foca-em-preparacao-para-debate-na-semana-pre-eleicao/",
-   "dataPub": "2026-10-20T12:09:19.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T19:27:00.868Z"
-  },
-  {
-   "id": "prudential-vendera-unidades-no-brasil-e-no-mexico-para-francesa-cnp-por-us-4-bi",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Prudential venderá unidades no Brasil e no México para francesa CNP por US$ 4 bi",
-   "resumo": "A Prudential Financial concordou em vender suas operações no Brasil e no México para o grupo francês CNP em uma transação de US$ 4 bilhões. O negócio deverá ser concluído no segundo semestre de 2027…",
-   "link": "https://oglobo.globo.com/economia/negocios/noticia/2026/10/20/prudential-vendera-unidades-no-brasil-e-no-mexico-para-francesa-cnp-por-us-4-bi.ghtml",
-   "dataPub": "2026-10-20T12:04:38.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "pesquisa-nacional-data-ranking-lula-tem-50-4-e-flavio-49-6-no-2-turno",
-   "veiculo": "Fonte 83",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Pesquisa nacional Data Ranking: Lula tem 50,4% e Flávio 49,6% no 2º turno",
-   "resumo": "Pesquisa nacional Data Ranking: Lula tem 50,4% e Flávio 49,6% no 2º turno Fonte 83",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWU9kYmZWVk41eW5fZzRRc044S05IbXBKMWNNZlBFVmJjajNqMDNHQ0hsSFUwQi1ITWNnYVNBUGdSZ29GUzhmb1lYZzRQb3JwN2NJcGdoV25oWVhucVF4dU41Mkc5XzFERUhGU2VjN0JoM1EyRlB4R0FVV29QWFRuTi1zejNRXzJJb3RBUFBmaENNSHVHSUlEUmE3MTlhVFZDaE9r?oc=5",
-   "dataPub": "2026-10-20T12:03:57.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "resgates-de-gambas-crescem-141-em-setembro-em-niteroi",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Resgates de gambás crescem 141% em setembro em Niterói",
-   "resumo": "Quem vive em Niterói pode encontrar gambás com mais frequência nos próximos meses. Com a chegada da primavera, o período reprodutivo desses animais favorece o aparecimento de fêmeas com filhotes em…",
-   "link": "https://oglobo.globo.com/rio/bairros/niteroi/noticia/2026/10/20/resgates-de-gambas-crescem-141percent-em-setembro-em-niteroi.ghtml",
-   "dataPub": "2026-10-20T12:00:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "camilo-santana-diz-que-pt-fugiu-por-muito-tempo-do-debate-sobre-maioridade-penal-e-que-gov",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Camilo Santana diz que PT ‘fugiu por muito tempo’ do debate sobre maioridade penal e que governo Lula demorou a entender prioridades da população",
-   "resumo": "O senador Camilo Santana (PT-CE), um dos coordenadores da campanha à reeleição do presidente Luiz Inácio Lula da Silva, afirmou que o petista já era favorável à redução da maioridade penal de 18 para…",
-   "link": "https://oglobo.globo.com/politica/noticia/2026/10/20/camilo-santana-diz-que-pt-fugiu-por-muito-tempo-do-debate-sobre-maioridade-penal-e-que-governo-lula-demorou-a-entender-prioridades-da-populacao.ghtml",
-   "dataPub": "2026-10-20T11:59:02.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "explicando-as-confusoes-em-torno-do-bolsa-familia",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Explicando as confusões em torno do Bolsa Família",
-   "resumo": "O Bolsa Família está sendo usado pelas duas campanhas à Presidência da República porque é um bom programa. Por isso, tudo o que se refere a ele precisa ser bem explicado. Nesta segunda-feira, houve…",
-   "link": "https://oglobo.globo.com/blogs/miriam-leitao/post/2026/10/explicando-as-confusoes-em-torno-do-bolsa-familia.ghtml",
-   "dataPub": "2026-10-20T11:57:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "janones-anuncia-alta-hospitalar-para-esta-terca-feira-apos-internacao-por-arritmia-cardiac",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Janones anuncia alta hospitalar para esta terça-feira após internação por arritmia cardíaca",
-   "resumo": "O deputado federal André Janones (Rede-MG) anunciou que receberá alta hospitalar nesta terça-feira, 20, após ser internado por causa de uma arritmia cardíaca. Em publicação nas redes sociais, o…",
-   "link": "https://www.estadao.com.br/politica/janones-anuncia-alta-hospitalar-para-esta-terca-feira-apos-internacao-por-arritmia-cardiaca-npr/",
-   "dataPub": "2026-10-20T11:47:48.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T19:27:00.868Z"
-  },
-  {
-   "id": "sociedade-civil-apresenta-propostas-aos-candidatos-a-presidencia",
-   "veiculo": "Agência Brasil",
-   "fonteFeed": "Agência Brasil",
-   "titulo": "Sociedade civil apresenta propostas aos candidatos à Presidência",
-   "resumo": "A coalizão Vida em Conta , iniciativa que reúne cerca de 140 economistas e 70 organizações da sociedade civil, apresenta o documento 10 Propostas para um Novo Ciclo de Desenvolvimento no Brasil. O…",
-   "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/sociedade-civil-apresenta-propostas-aos-candidatos-presidencia",
-   "dataPub": "2026-10-20T11:35:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "a-nova-pesquisa-alfa-inteligencia-sobre-a-disputa-flavio-x-lula-a-poucos-dias-do-segundo-t",
-   "veiculo": "VEJA",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "A nova pesquisa Alfa Inteligência sobre a disputa Flávio x Lula a poucos dias do segundo turno",
-   "resumo": "A nova pesquisa Alfa Inteligência sobre a disputa Flávio x Lula a poucos dias do segundo turno VEJA",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMlVvNURXUDZzcHFPX21Wc3BFaDE1RGFCNzNyOFZUNnVIaGNzeHNVVjFmeVZxd2lhMXltM004RE1xSlVfd3N4SjB1MDJsZThTYkNuUy1JVEpVU2dTU3hzRnNjYnBZNF9faFRRTDZhTkViM213TXM5bVQ4bEI1aFpacU1ma25CdHB4UjNkNWRrT1YzakZQcFkwaHNrQ3h6YWhtQjBwUHF3cWtEQ2gxcTlWaWFJSTYxNDZUdFFuWHlqLXJjU25YWWVxbkRR?oc=5",
-   "dataPub": "2026-10-20T11:34:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "-manipulacao-algoritmica-o-que-alega-a-campanha-de-lula-contra-a-meta-em-acusacao-de-favor",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "'Manipulação algorítmica': o que alega a campanha de Lula contra a Meta em acusação de favorecer Flávio",
-   "resumo": "A campanha do presidente Luiz Inácio Lula da Silva (PT) acusa a Meta de favorecer o oponente de segundo turno, o senador Flávio Bolsonaro (PL), por meio de \"manipulação algorítmica\". A coligação diz…",
-   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/20/manipulacao-algoritmica-o-que-alega-a-campanha-de-lula-contra-a-meta-em-acusacao-de-favorecer-flavio.ghtml",
-   "dataPub": "2026-10-20T11:33:16.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "gerp-flavio-tem-53-pontos-e-lula-47-distancia-aumenta-a-cinco-dias-das-eleicoes",
-   "veiculo": "Times Brasil | CNBC",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "GERP: Flávio tem 53 pontos e Lula, 47; distância aumenta a cinco dias das eleições",
-   "resumo": "GERP: Flávio tem 53 pontos e Lula, 47; distância aumenta a cinco dias das eleições Times Brasil | CNBC",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcHpwZnAxbXBOb3ZOSWlzUzc5N3FSN0VXT1VNV3EySXN6ZGF4b3JVMFBGaG5EZUVUQzNhS3RWZWFibkl1SXlkYnBMVG1qVFZvRE5ZYkEtdnBtZ1N4dU15MXZlZTRNelAya2ExQXk2aVhpZnYtaXZKbGJPeXd6YTFUZm5PQk14ajhraDdOd09BQi02bUY0WXc?oc=5",
-   "dataPub": "2026-10-20T11:28:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "real-time-flavio-tem-52-dos-votos-validos-lula-48-",
-   "veiculo": "SBT News",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Real Time: Flávio tem 52% dos votos válidos; Lula, 48%",
-   "resumo": "Real Time: Flávio tem 52% dos votos válidos; Lula, 48% SBT News",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPenhHelVhQjBNaGtCRmpYTDZRWUtfd0ltbkduUldCbUtzRmFSOWVCWDB6ZGhoeTIyZWVlM0cybjhWeGM1ME1KWGdrdGtNQUNKTnNzMzI2c01oOEphd0VLRGZiVnU2eTR5N0locjB3MVpvT0xxR2Z3M0ZhWlRrdU1JWThVeElZVGsxalVnM2VYazY0cjZncjRQQg?oc=5",
-   "dataPub": "2026-10-20T11:03:32.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "a-intencao-de-voto-de-flavio-e-lula-em-cada-regiao-do-pais-segundo-nova-pesquisa-real-time",
-   "veiculo": "VEJA",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "A intenção de voto de Flávio e Lula em cada região do país, segundo nova pesquisa Real Time Big Data",
-   "resumo": "A intenção de voto de Flávio e Lula em cada região do país, segundo nova pesquisa Real Time Big Data VEJA",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPR1d5anlrVE8tek40WEZJYVRkNl9ReloxT2QzOEd5Q3R4alI4QVF1dkhiSGRFcGJfdDk2S0N1elBGTjZkNHFhOWhVVENpcVAtWHFYMWloMmVsWTBycEpYTjd1MF9iNDBfd0I5NTlPcVFqLUdLQjhHWU44ZjE4eG41RGFRdmdpNHpwd0dHelBmRDhzaTRNRkZGV05xTEtSaFNVd0tURGVlcFQwMlp5WmVPYkI0emlZS1Fwc2NrSFhxSHhPTnl2NV9IS2VYVVdsNVNU?oc=5",
-   "dataPub": "2026-10-20T11:03:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "janones-anuncia-que-tera-alta-hospitalar-nesta-terca",
-   "veiculo": "CartaCapital",
-   "fonteFeed": "CartaCapital",
-   "titulo": "Janones anuncia que terá alta hospitalar nesta terça",
-   "resumo": "O deputado voltou a convocar o 'Exército do Lula' para os últimos dias de campanha",
-   "link": "https://www.cartacapital.com.br/politica/janones-anuncia-que-tera-alta-hospitalar-nesta-terca/",
-   "dataPub": "2026-10-20T11:01:45.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "as-ultimas-pesquisas-eleitorais-antes-do-segundo-turno-da-eleicao-presidencial",
-   "veiculo": "VEJA",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "As últimas pesquisas eleitorais antes do segundo turno da eleição presidencial",
-   "resumo": "As últimas pesquisas eleitorais antes do segundo turno da eleição presidencial VEJA",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaFkyd2tHWjdqRURaUERFX21KSEhiQXQta1d5VlQ4T1d3MWxKSF9pdGpfQVJUNFdVOVBwYktlNlNVR05VdGQ5UzAwUUpaclpCamVRUXFmU2hTbWtuQzk0clpuRFpPWDlUVWIyRFo3aDdtV3NTVDhBNk02aTN0YkZoMVU5U0xQdnNZX3JKVmQ5ZzBOaHd1VG9xSWN4RURqMHRqRENHbW9ScmF4RDVXZHFIdl93?oc=5",
-   "dataPub": "2026-10-20T11:00:52.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "lula-reage-avanca-e-empata-com-flavio-bolsonaro-a-cinco-dias-da-votacao-jose-casado",
-   "veiculo": "VEJA",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Lula reage, avança e empata com Flávio Bolsonaro a cinco dias da votação | José Casado",
-   "resumo": "Lula reage, avança e empata com Flávio Bolsonaro a cinco dias da votação | José Casado VEJA",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNc0k4UXREWlFIWFpBWmdjWUNvZS0wMWJfOFM1S2Y0VUhGR3hIT014YzFGaWpBSVpyMGZlQ1A5Yk5VSVo4SzlNWjRwdmJWNnpVZnROXzk4c3B5blRNcjE3QTI0Umo4eGxaR1p1TzJvaElWVk9vNWtlWTB6a1o4XzFkQ0l3T1NZUlpvUkJhTUdDOXJBeDZCTjk3bmpyOTVLWWQ4eHdzTk95Y1h3dnN0ckYxS05ndzZsbnFE?oc=5",
-   "dataPub": "2026-10-20T11:00:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "eleicoes-2026-lula-reage-avanca-e-empata-com-flavio-bolsonaro-a-cinco-dias-da-votacao",
-   "veiculo": "VEJA",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Eleições 2026: Lula reage, avança e empata com Flávio Bolsonaro a cinco dias da votação",
-   "resumo": "Eleições 2026: Lula reage, avança e empata com Flávio Bolsonaro a cinco dias da votação VEJA",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNc0k4UXREWlFIWFpBWmdjWUNvZS0wMWJfOFM1S2Y0VUhGR3hIT014YzFGaWpBSVpyMGZlQ1A5Yk5VSVo4SzlNWjRwdmJWNnpVZnROXzk4c3B5blRNcjE3QTI0Umo4eGxaR1p1TzJvaElWVk9vNWtlWTB6a1o4XzFkQ0l3T1NZUlpvUkJhTUdDOXJBeDZCTjk3bmpyOTVLWWQ4eHdzTk95Y1h3dnN0ckYxS05ndzZsbnFE?oc=5",
-   "dataPub": "2026-10-20T11:00:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-20T19:27:00.868Z"
-  },
-  {
-   "id": "a-cinco-dias-do-segundo-turno-flavio-bolsonaro-e-lula-estao-em-empate-tecnico-aponta-real-",
-   "veiculo": "Brasil de Fato",
-   "fonteFeed": "Brasil de Fato",
-   "titulo": "A cinco dias do segundo turno, Flávio Bolsonaro e Lula estão em empate técnico, aponta Real Time Big Data",
-   "resumo": "O senador Flávio Bolsonaro (PL-RJ) e o presidente Luiz Inácio Lula da Silva (PT) estão em empate técnico na disputa do segundo turno da eleição presidencial, segundo pesquisa Real Time Big Data…",
-   "link": "https://www.brasildefato.com.br/2026/10/20/a-cinco-dias-do-segundo-turno-flavio-bolsonaro-e-lula-estao-em-empate-tecnico-aponta-real-time-big-data/",
-   "dataPub": "2026-10-20T10:58:57.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "real-time-big-data-flavio-tem-52-dos-votos-validos-e-lula-48-a-cinco-dias-do-2-turno",
-   "veiculo": "Bloomberg Línea Brasil",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Real Time Big Data: Flávio tem 52% dos votos válidos e Lula, 48%, a cinco dias do 2º turno",
-   "resumo": "Real Time Big Data: Flávio tem 52% dos votos válidos e Lula, 48%, a cinco dias do 2º turno Bloomberg Línea Brasil",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNT3BaQW11TzlCczI1bE44QjJQWjJ1VmJ2Rnl2UXRnNllxelNJcFhjTWwtU2VTS19LeFFwQS1JcGs5QkpYNVFVNTcwMnZvYlBreGVpVVhpdUQyODh2QXNPV0tTajBKMGRnVWV4VC1id3JQd2lNQlhvQkVXZXhMa216U0x5U1BsOGRUNkFXQ1dvUnEwOXBibkVtbUlsNW9vZmZ4VmJJVE5GZ2hEaEJCOXJDcVBkdm5NT2U1Y210NXNBY0RFQ1Nq0gHYAUFVX3lxTE9WaVdkcEhHakxXQjAtSWNjbTNHWHE5M1VHdVg4RG9BMWVIUUlRU2pZTUFPYi0wQlIwaGZ1MHNHZmFaZVlMOVg1LVJoN196Y21CQU4zQXA0MGZSMzNZcXljTUpqN0ZUWlAwalZxckdvRGhOcmdrdThJSXJiYWN4OG52eDR0dkdMN0NERkU0YnJYTVVNNmVNeldPVjBQOFVoZWMxWEdtTDc4RU9XanZlZC14dlNkUURENHNpc3otUG9kZ3VNWTNrTm9iYk0xOEhseDRocjFqYzlncg?oc=5",
-   "dataPub": "2026-10-20T10:58:51.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "nova-pesquisa-testa-disputa-entre-flavio-e-lula-a-uma-semana-do-segundo-turno",
-   "veiculo": "VEJA",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Nova pesquisa testa disputa entre Flávio e Lula a uma semana do segundo turno",
-   "resumo": "Nova pesquisa testa disputa entre Flávio e Lula a uma semana do segundo turno VEJA",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTk5rZ0Z4SUNqUDBnaGNiVGVJZjVULVZFWUVSXzF3aTFHbnBJNTFSNXBSQlRuYTRlMlM4alVOTmNySnF1dXJUa05TWldqbmpPRWxWZ0NodW9QeW82SmJMMUQ4YlY5d3NQdF83dFUzRWZ5WUVvLWQxWWhZUjdTaDBpSEN5MXhUcTJSNFEwVERKblM2TzQ4c1F5b0tYdDVkYVQ4eEtUdnctdDZQOVMxaXdQcTUtbw?oc=5",
-   "dataPub": "2026-10-20T10:54:20.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "agenda-dos-candidatos-lula-visita-maranhao-pernambuco-e-bahia-flavio-grava-propaganda",
-   "veiculo": "CartaCapital",
-   "fonteFeed": "CartaCapital",
-   "titulo": "Agenda dos candidatos: Lula visita Maranhão, Pernambuco e Bahia; Flávio grava propaganda",
-   "resumo": "Petista tem caminhadas e comício no Nordeste; candidato do PL fará gravações em São Paulo e Goiânia",
-   "link": "https://www.cartacapital.com.br/politica/agenda-dos-candidatos-lula-faz-vai-ao-maranhao-pernambuco-e-bahia-flavio-grava-propaganda/",
-   "dataPub": "2026-10-20T10:50:30.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "nova-pesquisa-real-time-big-data-revela-a-rejeicao-a-flavio-e-lula-a-cinco-dias-do-segundo",
-   "veiculo": "VEJA",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Nova pesquisa Real Time Big Data revela a rejeição a Flávio e Lula a cinco dias do segundo turno",
-   "resumo": "Nova pesquisa Real Time Big Data revela a rejeição a Flávio e Lula a cinco dias do segundo turno VEJA",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTHE3VGMyM0xCR2o3X0hmLTV0c01sR2NXYjBwX1prUnlKdWZUaTM2Y01ScEdZWTFfVXkyZDdNd1R6WUs0WWwzbE93VVYzRzBhWnNfNVM2djVqSjQ5WjJweEJHQTlUU083UW9KZnk1bHltQ29XNjIxQnNXUC1xVEtEMHlmYnN6QW40WjR6MWIzUTRod1IyRXpOZ2xHV2ZBcWVZS3I5WUJDN3JTRkV4RXF5T2FjUHpOT2E4TGgtUWRVWm5oYVVEcTNSNTRZLUM?oc=5",
-   "dataPub": "2026-10-20T10:45:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "pesquisa-indica-flavio-bolsonaro-a-frente-de-lula-nas-intencoes-de-voto",
-   "veiculo": "Portal VV8",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Pesquisa indica Flávio Bolsonaro à frente de Lula nas intenções de voto",
-   "resumo": "Pesquisa indica Flávio Bolsonaro à frente de Lula nas intenções de voto Portal VV8",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVV9DVXU4U282TEU5QnZBeEVzSUEtX2N3Vml4OHVpNVJheHhBVFNwc09MSnAwa3FhOXhxWHRiSlZ2SXZtV2NRTmhyVlhrdVFxLUltOEhJWWhKM0lNOXRncVEzN0l6dXVxaUpnbGplZ3NYZDdjdTRLMnhkYmlFdTJzUVVDMUV0Y0V2ZEQxVm1aeFpNUTNhcWFRay1qMEN4aHFQZC1hVjNsTFBYeDgzdmZz?oc=5",
-   "dataPub": "2026-10-20T10:44:36.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "real-time-big-data-flavio-tem-52-dos-votos-validos-e-lula-48-no-2-turno",
-   "veiculo": "InfoMoney",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Real Time Big Data: Flávio tem 52% dos votos válidos e Lula, 48% no 2º turno",
-   "resumo": "Real Time Big Data: Flávio tem 52% dos votos válidos e Lula, 48% no 2º turno InfoMoney",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcFVGcVJjTTU0U3cxWkxuWFVFUTcwMUZ4cTZPTUs4SC1wbGNwY3Nwak1EMFNjS3JuNmpwNHpvYVJlSFk4NW5TQzZKSHg1QmFNY3ZGX2tsYWpPc0xKOWY3UXN3V1lLX2liZEVQN0NqYzcxZVhwbVU1dXJtR3h6QmdDVTNkbkdsNkg0dHBRVEFtM2RiNmVLUzZ3QUtRdXdkRHNPVVppOHdyNTMwNHRmeVpja9IBtgFBVV95cUxOZDlqRnFCeWlpd0JVa2ZnWERiVmVjN1lSTjhVSHNfcU5NMlJKdFVvRldrZ1QwX0o4SnQ3cXJ5NEJWVlVOME54MVZJMm16T0FaajBlSmcwVWJLdjVxTzJCY3FmdU9PeXFRa3NFZ0xjQWxZQVVEbnp0Ul8zWkgyX3A3bWVqQkczTW5INGhCdEZzaVJMM2psUzJ3eGNKOUYxOXdrcTgtLTkwMnotZWpHbFVRbnNOcnNNdw?oc=5",
-   "dataPub": "2026-10-20T10:36:37.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "a-diferenca-na-escolha-de-ricos-e-pobres-entre-flavio-e-lula-segundo-nova-pesquisa-real-ti",
-   "veiculo": "VEJA",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "A diferença na escolha de ricos e pobres entre Flávio e Lula, segundo nova pesquisa Real Time Big Data",
-   "resumo": "A diferença na escolha de ricos e pobres entre Flávio e Lula, segundo nova pesquisa Real Time Big Data VEJA",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVU9lZ2FaUXFJT2M3WGR1MHlKRkh3cU1ZcmJ4M2ZfVUdlUDJXWHdiRFVWbVlFV0NyVjczWVdNanR0SFpMNnJvU015a1dVdUtNbWxyeGNkNHhkMlhWeFZrVlNON2Q4ZFMwZ1gzbXFia3ZnYXV3bFlrUEN1UE9ZeEo2a0lDX0xTNk1sbHZMUDFQZGdsLTZDSGZ5ZXIweVQwTlFkS1hGc0h1d3FRNTFXbjRuTDRqam10ZzFod08waFBDU3BoZExUQ2pJNmJmRmp3ak1GZkZR?oc=5",
-   "dataPub": "2026-10-20T10:34:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "flavio-bolsonaro-tem-51-5-dos-votos-validos-e-lula-48-5-diz-pesquisa-alfa-inteligencia",
-   "veiculo": "JOTA Info",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Flávio Bolsonaro tem 51,5% dos votos válidos e Lula, 48,5%, diz pesquisa Alfa Inteligência",
-   "resumo": "Flávio Bolsonaro tem 51,5% dos votos válidos e Lula, 48,5%, diz pesquisa Alfa Inteligência JOTA Info",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQdFpIZWs1c05reGRBRFFoYkY1RElKaUZTbmR2dXFnSmxmQm0wbGRkUmNsMUt6NUhDX0U0Z1dhVFVKWjBwekphazRlRDhoU0VVNGdQTXBjdUFGSEhCTHdrdjBqUHZFME13bFFyWDdxTTNBR0pqWHJ5NDFYZ3JaUHV2eVhWaDF0X0ZuV183T0lmdHUwcmNoTUZkejc4emJUTlVnRWR4dHBKdWNidlBTaDhVOGV2M0dPNTBfajJIaEJZN2VDeVdJVHZ5eA?oc=5",
-   "dataPub": "2026-10-20T10:30:55.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "adriana-araujo-se-indigna-com-debate-lula-x-flavio-e-isso-o-que-vamos-aceitar-",
-   "veiculo": "Band",
-   "fonteFeed": "Google Notícias (debates)",
-   "titulo": "Adriana Araújo se indigna com debate Lula x Flávio: 'É isso o que vamos aceitar?'",
-   "resumo": "Adriana Araújo se indigna com debate Lula x Flávio: 'É isso o que vamos aceitar?' Band",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMG9hbXp6M3FFSEJKd0wwT0JqbmRxR2oxZlpVX09tcmdMWDVqVTg3ajlXajdJU2N0bUNNSlhJNGoxNmxNYzg5ckMyU1ZCTmRNVUpRdkZsTFp6Rk1XZnNvUWF2U0RoRXBOaDRfdEpDV2RDQVN5YW9sR1pvblVSZG5sYS1VRnBHOFEtc0Q3bjdKcENQXzdMbDUtVUVUMjJRcllKLVkwRzhfX1BwbzYzN3NKSUNISVNnNWNLRUIwa1JGSmk5dw?oc=5",
-   "dataPub": "2026-10-20T10:30:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "real-time-big-data-divulga-pesquisa-para-o-segundo-turno-da-eleicao-presidencial",
-   "veiculo": "Portal VV8",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Real Time Big Data divulga pesquisa para o segundo turno da eleição presidencial",
-   "resumo": "Real Time Big Data divulga pesquisa para o segundo turno da eleição presidencial Portal VV8",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPeGVKNjhOU2VvZDliRS0xbllYV0RKbklMUHRLT3hrRE5MWjlBV2stNVZnc05kczdlelhEeEJqeWFPWVNNa1Z3dzF1TnV4NUlxTTVabll6S0xSd19WajRnQlZUclVlNHpiM0NTQzFBQXB6Zy1UdnpkXzhjSUM0Tzg0VUo5eVZKU1dMWW9wTkFLbUhBVTdyb3hxX2huRjVubnhhZjhFQ0JDanZrRlo1czZmbVZCVHkyLUtVcW9j?oc=5",
-   "dataPub": "2026-10-20T10:28:21.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "nova-pesquisa-real-time-big-data-mostra-quem-ainda-pode-mudar-de-voto-na-reta-final-do-seg",
-   "veiculo": "VEJA",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Nova pesquisa Real Time Big Data mostra quem ainda pode mudar de voto na reta final do segundo turno",
-   "resumo": "Nova pesquisa Real Time Big Data mostra quem ainda pode mudar de voto na reta final do segundo turno VEJA",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZVdRTV9SVFEySzBhNXEwZHgySEt5VkZZUmpTNWtOV213YkNQMUdLV01pVXNRRmxIVE5Pb2haNXlieW9hS0U4Y2hORHlMUTlzQjBmaGNqZjItUG1ta28tZ0dTbnIwcXczMVZmb1hqdFo2TTJqalpwWlJ0ZVVBZVIydUtaRHBGa1RXM1I0YXdIM1FZZEI2ZWEyWGVrTy1RUVBCT0NnYTBwQ1JvWmkwdmpQaXBKWXg1OFdGUDlNaXpRVHdhZjZ2NW4yUVZHS29HNWlFY3c?oc=5",
-   "dataPub": "2026-10-20T10:28:00.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "pesquisa-aponta-empate-tecnico-entre-flavio-bolsonaro-e-lula-na-simulacao-de-segundo-turno",
-   "veiculo": "Portal VV8",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Pesquisa aponta empate técnico entre Flávio Bolsonaro e Lula na simulação de segundo turno",
-   "resumo": "Pesquisa aponta empate técnico entre Flávio Bolsonaro e Lula na simulação de segundo turno Portal VV8",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVmVncVduc3BVMnpTUnNseE5JY2hnMEU3VUd0aEszRTJIQUNweUJVdk1CRl9QSmdJN1ViZjBFcl9FN3dwZ0d1YlRpNDFzNUNXLWo5aGszQ2tSN3pITk5fN1NyY2NtZDJBRDVYUElOWkkzMUdKeVo3ckFoM0R5TzV5TjdKYUNkN1dZX2pxNWd2RmhHZEtvR2UycDZCWTlJLS0yWl92Mkh6YWJwNXh5YXFVdVczZHBmYmxnTEtmNHVqcUlXZURDRk5XTw?oc=5",
-   "dataPub": "2026-10-20T10:26:35.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
-  },
-  {
-   "id": "realtime-big-data-veja-cenarios-de-segundo-turno-em-seis-estados",
-   "veiculo": "UOL",
-   "fonteFeed": "UOL",
-   "titulo": "RealTime Big Data: veja cenários de segundo turno em seis estados",
-   "resumo": "Pesquisas RealTime Big Data realizadas em seis estados e divulgada hoje (20), mostra os cenários eleitorais para o segundo turno em cada um deles. O levantamento entrevistou eleitores no Acre…",
-   "link": "https://noticias.uol.com.br/eleicoes/2026/10/20/realtime-veja-cenarios-de-segundo-turno-em-6-estados.ghtm",
-   "dataPub": "2026-10-20T10:22:35.322Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T10:22:35.322Z"
-  },
-  {
-   "id": "realtime-big-data-flavio-tem-52-dos-votos-validos-e-lula-48-",
-   "veiculo": "UOL",
-   "fonteFeed": "UOL",
-   "titulo": "RealTime Big Data: Flávio tem 52% dos votos válidos, e Lula, 48%",
-   "resumo": "Pesquisa RealTime BigData divulgada hoje (20) mostra Flávio Bolsonaro com 52% das intenções de votos válidos contra 48% de Lula. Os dois candidatos estão empatados na margem de erro, que é de dois…",
-   "link": "https://noticias.uol.com.br/eleicoes/2026/10/20/realtime-big-data-flavio-tem-com-52-dos-votos-validos-e-lula-48.ghtm",
-   "dataPub": "2026-10-20T10:22:35.322Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T10:22:35.322Z"
-  },
-  {
-   "id": "flavio-bolsonaro-e-a-idade-de-lula",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Flávio Bolsonaro e a idade de Lula",
-   "resumo": "De um assessor de Flávio Bolsonaro na campanha, que participou do treinamento do senador para o debate de domingo passado: Matéria exclusiva para assinantes. Para ter acesso completo, acesse o link…",
-   "link": "https://oglobo.globo.com/blogs/lauro-jardim/post/2026/10/flavio-bolsonaro-e-a-idade-de-lula.ghtml",
-   "dataPub": "2026-10-20T10:22:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T15:20:06.724Z"
-  },
-  {
-   "id": "na-reta-final-das-eleicoes-nikolas-percorre-nordeste-para-buscar-votos-para-flavio",
-   "veiculo": "Revista Oeste",
-   "fonteFeed": "Revista Oeste",
-   "titulo": "Na reta final das eleições, Nikolas percorre Nordeste para buscar votos para Flávio",
-   "resumo": "O deputado federal Nikolas Ferreira (PL-MG) iniciou uma viagem pelo Nordeste para buscar votos para o candidato à Presidência da República Flávio Bolsonaro na reta final das eleições . Deputado mais…",
-   "link": "https://revistaoeste.com/politica/na-reta-final-das-eleicoes-nikolas-percorre-nordeste-para-buscar-votos-para-flavio/",
-   "dataPub": "2026-10-20T10:18:26.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T10:22:35.322Z"
-  },
-  {
-   "id": "flavio-tem-52-e-lula-48-no-2-turno-mostra-pesquisa",
-   "veiculo": "Revista Oeste",
-   "fonteFeed": "Revista Oeste",
-   "titulo": "Flávio tem 52% e Lula, 48% no 2º turno, mostra pesquisa",
-   "resumo": "Uma pesquisa do Real Time Big Data divulgada nesta terça-feira, 20, aponta empate técnico entre Flávio Bolsonaro (PL-RJ) e o presidente Luiz Inácio Lula da Silva (PT) na simulação de segundo turno…",
-   "link": "https://revistaoeste.com/politica/flavio-tem-52-e-lula-48-no-2o-turno-mostra-pesquisa/",
-   "dataPub": "2026-10-20T10:16:41.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T10:22:35.322Z"
-  },
-  {
-   "id": "flavio-tem-52-dos-votos-validos-e-lula-48-diz-real-time-big-data",
-   "veiculo": "Congresso em Foco",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Flávio tem 52% dos votos válidos e Lula, 48%, diz Real Time Big Data",
-   "resumo": "Flávio tem 52% dos votos válidos e Lula, 48%, diz Real Time Big Data Congresso em Foco",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdEV1OF9HSWh1Zm5sQUpnb29oSUVaak5nUS03bkpQN1pRaVF4dUh2TUJQcS12YTVvMDZGeWxOamk1eWtJR21jc2kxSFVaU0NDaGlsbGFxbFpULVJnXzcwQVh0NGhyeHE2VktaX0dZWTVZcVQ2Qm1uT3NvY2FsaVlPNUo3OTM5cWZSX2R4cERBazJ3T0dUelQyVFBhWEZVemFQUjhHVVhORFNBdEllZExIM09DZXRDQQ?oc=5",
-   "dataPub": "2026-10-20T10:13:05.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-20T22:35:05.346Z"
+   "coletadoEm": "2026-10-21T00:57:29.607Z"
   }
  ],
  "midia": {
   "janelaHoras": 72,
   "totalManchetes": 400,
   "mencoes": {
-   "13": 299,
-   "22": 297
+   "13": 285,
+   "22": 288
   },
   "tom": {
    "13": {
-    "positivo": 36,
-    "neutro": 225,
-    "negativo": 38
+    "positivo": 31,
+    "neutro": 210,
+    "negativo": 44
    },
    "22": {
-    "positivo": 37,
-    "neutro": 214,
-    "negativo": 46
+    "positivo": 34,
+    "neutro": 206,
+    "negativo": 48
    }
   },
   "termos": [
-   [
-    "pesquisa",
-    41
-   ],
    [
     "debate",
     34
    ],
    [
-    "data",
-    25
+    "pesquisa",
+    32
    ],
    [
     "pesquisas",
-    21
+    22
    ],
    [
-    "real",
+    "sigilo",
     21
-   ],
-   [
-    "time",
-    19
    ],
    [
     "sigilos",
+    19
+   ],
+   [
+    "família",
     18
    ],
    [
     "meta",
-    17
-   ],
-   [
-    "família",
-    17
-   ],
-   [
-    "válidos",
-    17
-   ],
-   [
-    "final",
     16
    ],
    [
-    "sigilo",
+    "pede",
     15
    ],
    [
-    "disputa",
-    13
+    "final",
+    15
    ],
    [
-    "redes",
-    13
+    "globo",
+    14
+   ],
+   [
+    "números",
+    14
    ],
    [
     "bolsa",
-    13
+    14
    ],
    [
-    "reta",
-    13
+    "disputa",
+    14
    ],
    [
     "milei",
+    13
+   ],
+   [
+    "lulinha",
+    12
+   ],
+   [
+    "reta",
     12
    ],
    [
@@ -6021,47 +5994,19 @@
     12
    ],
    [
+    "eleitoral",
+    11
+   ],
+   [
     "abrir",
     11
    ],
    [
-    "pede",
+    "redes",
     11
    ],
    [
-    "lulinha",
-    11
-   ],
-   [
-    "globo",
-    11
-   ],
-   [
-    "janones",
-    11
-   ],
-   [
-    "números",
-    11
-   ],
-   [
-    "mostra",
-    10
-   ],
-   [
-    "eleitoral",
-    10
-   ],
-   [
-    "aponta",
-    10
-   ],
-   [
-    "nesta",
-    10
-   ],
-   [
-    "governo",
+    "data",
     10
    ],
    [
@@ -6069,7 +6014,15 @@
     10
    ],
    [
+    "cobra",
+    9
+   ],
+   [
     "nikolas",
+    9
+   ],
+   [
+    "governo",
     9
    ],
    [
@@ -6077,97 +6030,117 @@
     9
    ],
    [
+    "apoio",
+    9
+   ],
+   [
+    "dele",
+    9
+   ],
+   [
+    "quebra",
+    9
+   ],
+   [
+    "fizer",
+    9
+   ],
+   [
+    "checagem",
+    8
+   ],
+   [
+    "mendonça",
+    8
+   ],
+   [
+    "aponta",
+    8
+   ],
+   [
+    "volta",
+    8
+   ],
+   [
     "advogado",
     8
    ],
    [
-    "marçal",
+    "janones",
     8
    ],
    [
-    "eleitores",
+    "válidos",
     8
    ],
    [
-    "apoio",
-    8
-   ],
-   [
-    "dele",
-    8
-   ],
-   [
-    "fizer",
-    8
-   ],
-   [
-    "quaest",
+    "real",
     7
    ],
    [
-    "quebra",
+    "recentes",
+    7
+   ],
+   [
+    "quer",
     7
    ]
   ],
   "serieDiaria": [
    {
-    "13": 299,
-    "22": 297,
+    "13": 285,
+    "22": 288,
     "dia": "2026-10-20"
    }
   ],
   "veiculos": {
-   "UOL": 10,
-   "BBC News Brasil": 6,
-   "Revista Oeste": 24,
-   "O Globo": 69,
-   "Estado de Minas": 7,
-   "Poder360": 17,
-   "CartaCapital": 15,
-   "Metrópoles": 13,
-   "Brasil de Fato": 26,
-   "G1": 19,
-   "CNN Brasil": 24,
-   "VEJA": 15,
-   "Estadão": 25,
-   "Folha de S.Paulo": 22,
-   "BBC": 3,
-   "Band": 3,
-   "InfoMoney": 3,
-   "Sul 21": 3,
+   "UOL": 12,
+   "BBC News Brasil": 5,
+   "Revista Oeste": 30,
+   "Gazeta do Povo": 19,
+   "BBC": 2,
+   "Poder360": 23,
+   "Folha de S.Paulo": 25,
+   "O Globo": 66,
+   "Brasil de Fato": 27,
+   "Metrópoles": 14,
+   "Estadão": 24,
+   "UOL Notícias": 23,
+   "CNN Brasil": 29,
+   "CartaCapital": 14,
+   "Estado de Minas": 10,
+   "Agência Brasil": 7,
+   "Vero Notícias": 1,
+   "Nexo Jornal": 2,
+   "G1": 16,
+   "VEJA": 7,
+   "Portal VV8": 3,
+   "Band": 2,
+   "InfoMoney": 2,
+   "Sul 21": 1,
    "Exame": 6,
-   "Gazeta do Povo": 18,
-   "UOL Notícias": 18,
    "Correio Braziliense": 1,
-   "Agência Brasil": 8,
    "O POVO": 1,
    "vermelho.org.br": 1,
-   "Bloomberg Línea Brasil": 2,
+   "Bloomberg Línea Brasil": 1,
    "GP1": 1,
-   "Valor Econômico": 3,
+   "Valor Econômico": 2,
    "GZH": 2,
    "Rádio Itatiaia": 1,
    "Investidor10": 1,
    "Blog Milton Figueiredo": 1,
+   "EBC - Empresa Brasil de Comunicação": 1,
    "Partido dos Trabalhadores": 1,
    "Alma Preta Jornalismo": 2,
-   "O GLOBO": 6,
+   "O GLOBO": 5,
    "Consultor Jurídico": 1,
-   "JOTA Info": 3,
-   "Nexo Jornal": 1,
+   "JOTA Info": 2,
    "Brasil Paralelo": 1,
-   "Portal VV8": 5,
    "J3News": 1,
-   "Congresso em Foco": 2,
+   "Congresso em Foco": 1,
    "TradeMap": 1,
    "Brasil 247": 1,
-   "O TEMPO": 1,
-   "OpiniãoCE": 1,
-   "Opera Mundi": 1,
-   "Diário de Goiás": 1,
-   "Fonte 83": 1,
-   "Times Brasil | CNBC": 1,
-   "SBT News": 1
+   "O TEMPO": 1
   }
  },
  "primeiroTurno": {
