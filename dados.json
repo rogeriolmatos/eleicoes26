@@ -1,6 +1,6 @@
 {
  "meta": {
-  "atualizadoEm": "2026-10-25T22:00:08.111Z",
+  "atualizadoEm": "2026-10-25T22:20:06.811Z",
   "exemplo": false,
   "versao": 1,
   "geradoPor": "coleta.js",
@@ -8,12 +8,7 @@
    {
     "nome": "G1",
     "itens": 100,
-    "aproveitados": 98
-   },
-   {
-    "nome": "Estadão",
-    "itens": 20,
-    "aproveitados": 19
+    "aproveitados": 99
    },
    {
     "nome": "UOL",
@@ -21,14 +16,24 @@
     "aproveitados": 6
    },
    {
-    "nome": "Folha de S.Paulo",
-    "itens": 100,
-    "aproveitados": 48
+    "nome": "CNN Brasil",
+    "itens": 60,
+    "aproveitados": 30
+   },
+   {
+    "nome": "Estadão",
+    "itens": 20,
+    "aproveitados": 19
    },
    {
     "nome": "O Globo",
     "itens": 100,
-    "aproveitados": 78
+    "aproveitados": 79
+   },
+   {
+    "nome": "Folha de S.Paulo",
+    "itens": 100,
+    "aproveitados": 46
    },
    {
     "nome": "BBC News Brasil",
@@ -41,14 +46,14 @@
     "aproveitados": 7
    },
    {
-    "nome": "Metrópoles",
-    "itens": 20,
-    "aproveitados": 5
-   },
-   {
     "nome": "CartaCapital",
     "itens": 20,
     "aproveitados": 12
+   },
+   {
+    "nome": "Metrópoles",
+    "itens": 20,
+    "aproveitados": 6
    },
    {
     "nome": "Agência Brasil",
@@ -61,14 +66,9 @@
     "aproveitados": 78
    },
    {
-    "nome": "Revista Oeste",
-    "itens": 10,
-    "aproveitados": 9
-   },
-   {
     "nome": "Gazeta do Povo",
-    "itens": 38,
-    "aproveitados": 34
+    "itens": 36,
+    "aproveitados": 32
    },
    {
     "nome": "Correio Braziliense",
@@ -78,7 +78,7 @@
    {
     "nome": "Estado de Minas",
     "itens": 20,
-    "aproveitados": 6
+    "aproveitados": 7
    },
    {
     "nome": "Google Notícias (busca)",
@@ -91,22 +91,22 @@
     "aproveitados": 0
    },
    {
-    "nome": "Google Notícias (pesquisas)",
-    "itens": 100,
-    "aproveitados": 94
+    "nome": "Revista Oeste",
+    "itens": 10,
+    "aproveitados": 8
    },
    {
     "nome": "Google Notícias (debates)",
     "itens": 100,
     "aproveitados": 91
-   }
-  ],
-  "fontesFalha": [
+   },
    {
-    "nome": "CNN Brasil",
-    "erro": "HTTP 403"
+    "nome": "Google Notícias (pesquisas)",
+    "itens": 100,
+    "aproveitados": 94
    }
   ],
+  "fontesFalha": [],
   "pesquisasDescartadas": [],
   "avisos": []
  },
@@ -174,6 +174,637 @@
  ],
  "noticias": [
   {
+   "id": "lula-lidera-apuracao-do-2-turno-da-eleicao-presidencial-com-0-37-das-secoes-eleitorais-apu",
+   "veiculo": "UOL",
+   "fonteFeed": "UOL",
+   "titulo": "Lula lidera apuração do 2º turno da eleição presidencial com 0,37% das seções eleitorais apuradas, diz TSE",
+   "resumo": "25 Out (Reuters) - ?O presidente ?Luiz Inácio Lula ?da ?Silva (PT) ?liderava ?a ?apuração do segundo ?turno da eleição ?presidencial ?deste ?domingo com 55,53% dos votos válidos, ?enquanto o senador…",
+   "link": "https://noticias.uol.com.br/ultimas-noticias/reuters/2026/10/25/lula-lidera-apuracao-do-2-turno-da-eleicao-presidencial-com-037-das-secoes-eleitorais-apuradas-diz-tse.htm",
+   "dataPub": "2026-10-25T22:20:06.811Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "-o-resultado-das-eleicoes-esta-sendo-maculado-diz-renan-santos-ao-defender-possivel-adiame",
+   "veiculo": "UOL",
+   "fonteFeed": "UOL",
+   "titulo": "'O resultado das eleições está sendo maculado', diz Renan Santos ao defender possível adiamento do segundo turno",
+   "resumo": "",
+   "link": "https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467814",
+   "dataPub": "2026-10-25T22:20:06.811Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "apuracao-da-eleicao-presidencial-e-retomada-apos-prorrogacao-da-votacao",
+   "veiculo": "UOL",
+   "fonteFeed": "UOL",
+   "titulo": "Apuração da eleição presidencial é retomada após prorrogação da votação",
+   "resumo": "apuração do segundo turno da eleição presidencial foi retomada após as 19h deste domingo (25), com o encerramento do prazo adicional de votação determinado pelo ministro Cristiano Zanin, do Supremo…",
+   "link": "https://tnonline.uol.com.br/eleicoes/2026/apuracao-da-eleicao-presidencial-e-retomada-apos-prorrogacao-da-votacao-1168199",
+   "dataPub": "2026-10-25T22:20:06.811Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "como-esta-apuracao-dos-votos-veja-resultados-do-segundo-turno-de-lula-x-flavio",
+   "veiculo": "UOL",
+   "fonteFeed": "UOL",
+   "titulo": "Como está apuração dos votos? Veja resultados do segundo turno de Lula x Flávio",
+   "resumo": "A apuração oficial do segundo turno das Eleições 2026 pode ser acompanhada em tempo real com os dados divulgados pelo TSE (Tribunal Superior Eleitoral).",
+   "link": "https://noticias.uol.com.br/eleicoes/2026/10/25/como-esta-apuracao-dos-votos-veja-resultados-do-segundo-turno-de-lula-x-flavio.ghtm",
+   "dataPub": "2026-10-25T22:20:06.811Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "como-estava-apuracao-para-presidente-as-22h-em-2022-veja-resultado-e-apuracao",
+   "veiculo": "UOL",
+   "fonteFeed": "UOL",
+   "titulo": "Como estava apuração para presidente às 22h em 2022? Veja resultado e apuração",
+   "resumo": "A apuração do segundo turno da eleição presidencial de 2022 mostrava Lula (PT) na frente às 22h, com 99,99% das urnas totalizadas.",
+   "link": "https://noticias.uol.com.br/eleicoes/2026/10/25/apuracao-para-presidente-em-2022-as-22h-como-estava-resultado-do-segundo-turno.ghtm",
+   "dataPub": "2026-10-25T22:20:06.811Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "pt-recorreu-ao-stf-por-horario-de-votacao-apos-tse-demorar-2h-para-se-posicionar",
+   "veiculo": "UOL",
+   "fonteFeed": "UOL",
+   "titulo": "PT recorreu ao STF por horário de votação após TSE demorar 2h para se posicionar",
+   "resumo": "presidente do Tribunal Superior Eleitoral (TSE), Kassio Nunes Marques, demorou mais de duas horas para analisar um pedido da coligação do presidente Luiz Inácio Lula da Silva (PT) para prorrogar o…",
+   "link": "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2026/10/25/pt-recorreu-ao-stf-por-horario-de-votacao-apos-tse-demorar-2h-para-se-posicionar.htm",
+   "dataPub": "2026-10-25T22:20:06.811Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "eleicoes-2026-ao-vivo-tse-retoma-divulgacao-da-apuracao-apos-prorrogacao-da-votacao-chegar",
+   "veiculo": "BBC News Brasil",
+   "fonteFeed": "BBC News Brasil",
+   "titulo": "Eleições 2026 ao vivo: TSE retoma divulgação da apuração após prorrogação da votação chegar ao fim; siga",
+   "resumo": "Após pedido das campanhas de Lula e Flávio Bolsonaro, ministro Cristiano Zanin ordena que urnas fiquem abertas até 19h; acompanhe a cobertura completa. BBC News Brasil faz transmissão ao vivo com…",
+   "link": "https://www.bbc.co.uk/portuguese/live/c6vg0rrxzx13t?at_medium=RSS&at_campaign=rss",
+   "dataPub": "2026-10-25T22:20:06.811Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "mapa-das-eleicoes-2026-veja-o-resultado-para-presidente-e-governador-no-2-turno",
+   "veiculo": "BBC News Brasil",
+   "fonteFeed": "BBC News Brasil",
+   "titulo": "Mapa das Eleições 2026: veja o resultado para presidente e governador no 2º turno",
+   "resumo": "Neste interativo, você pode consultar os resultados da eleição para presidente e governador por Estado e município.",
+   "link": "https://www.bbc.com/portuguese/articles/c61m430mdek2o?at_medium=RSS&at_campaign=rss",
+   "dataPub": "2026-10-25T22:18:32.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "ao-vivo-acompanhe-a-apuracao-do-segundo-turno-das-eleicoes-de-2026",
+   "veiculo": "VEJA",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "AO VIVO: Acompanhe a apuração do segundo turno das eleições de 2026",
+   "resumo": "AO VIVO: Acompanhe a apuração do segundo turno das eleições de 2026 VEJA",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUHFoUGNRNEE0WUh0ZFBRWHRVbkVWTkt5bmE0THVJS216QURlR2hpbXhzMG9rQnZOOTQtejBlTmFmNFJuRzQwT0dGaERVWFpKTFZDN2twdUF6T3hKUkJ1VHZkYXpKOVNnTURCQnNLbWpsMHoteEdMRHBTYXU4bjhMRGw2V2YzYkNWNHJ5TmwwUm9yOE1fSkRZdmhwV1ZiQ3JsOVE?oc=5",
+   "dataPub": "2026-10-25T22:17:06.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "engenheiro-e-espancado-e-morto-ao-se-afastar-de-ato-politico-de-lula",
+   "veiculo": "Metrópoles",
+   "fonteFeed": "Metrópoles",
+   "titulo": "Engenheiro é espancado e morto ao se afastar de ato político de Lula",
+   "resumo": "Marcelo de Oliveira Rocha, de 30 anos, chegou a ser socorrido e levado para a Santa Casa, mas não resistiu aos ferimentos; polícia investiga",
+   "link": "https://www.metropoles.com/distrito-federal/na-mira/engenheiro-e-espancado-e-morto-ao-se-afastar-de-ato-politico-de-lula",
+   "dataPub": "2026-10-25T22:12:13.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "mg-com-0-88-das-urnas-apuradas-flavio-tem-50-42-e-lula-esta-com-49-58-",
+   "veiculo": "Metrópoles",
+   "fonteFeed": "Metrópoles",
+   "titulo": "MG: com 0,88% das urnas apuradas, Flávio tem 50,42% e Lula está com 49,58%",
+   "resumo": "A apuração deste segundo turno começou após o encerramento da votação neste domingo (25/10)",
+   "link": "https://www.metropoles.com/minas-gerais/mg-com-apuracao-minas-mg-flavio-lula",
+   "dataPub": "2026-10-25T22:09:26.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "celina-sai-na-frente-no-segundo-turno-das-eleicoes-do-df-veja-apuracao",
+   "veiculo": "Metrópoles",
+   "fonteFeed": "Metrópoles",
+   "titulo": "Celina sai na frente no segundo turno das eleições do DF. Veja apuração",
+   "resumo": "A apuração dos votos começou às 17h, foi suspensa e retomada às 19h deste domingo (25/10)",
+   "link": "https://www.metropoles.com/colunas/grande-angular/celina-tem-578-dos-votos-e-grass-soma-422-com-10-das-urnas-apuradas",
+   "dataPub": "2026-10-25T22:08:01.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "apuracao-ao-vivo-de-votos-para-presidente-em-2026-acompanhe-a-contagem-do-tse",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Apuração ao vivo de votos para presidente em 2026: acompanhe a contagem do TSE",
+   "resumo": "Após extensão do horário de votação, a apuração dos votos para presidente da República no segundo turno das Eleições 2026 poderá ser acompanhada ao vivo no site do O GLOBO. A previsão é que a…",
+   "link": "https://oglobo.globo.com/apuracao-eleicoes-2026/noticia/2026/10/25/apuracao-ao-vivo-de-votos-para-presidente-em-2026-acompanhe-a-contagem-do-tse.ghtml",
+   "dataPub": "2026-10-25T22:06:53.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "-golpe-judiciario-diz-coordenador-de-campanha-de-flavio-sobre-prorrogacao",
+   "veiculo": "Estado de Minas",
+   "fonteFeed": "Estado de Minas",
+   "titulo": "'Golpe judiciário', diz coordenador de campanha de Flávio sobre prorrogação",
+   "resumo": "ELEIÇÕES 2026",
+   "link": "https://www.em.com.br/politica/2026/10/7527568-golpe-judiciario-diz-coordenador-de-campanha-de-flavio-sobre-prorrogacao.html",
+   "dataPub": "2026-10-25T22:05:55.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "marcal-malafaia-e-aliados-criticam-zanin-por-prorrogar-votacao-do-2-turno",
+   "veiculo": "Metrópoles",
+   "fonteFeed": "Metrópoles",
+   "titulo": "Marçal, Malafaia e aliados criticam Zanin por prorrogar votação do 2º turno",
+   "resumo": "Aliados de Flávio criticam decisão de Cristiano Zanin, do STF, que prorrogou até as 19h a votação em seções eleitorais ainda abertas",
+   "link": "https://www.metropoles.com/brasil/marcal-malafaia-e-aliados-criticam-zanin-por-prorrogar-votacao-do-2o-turno",
+   "dataPub": "2026-10-25T22:05:53.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "eleicoes-2026-tse-retoma-apuracao-dos-votos-apos-prorrogacao-de-horario-lula-aparece-na-fr",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Eleições 2026: TSE retoma apuração dos votos após prorrogação de horário; Lula aparece na frente de Flávio Bolsonaro",
+   "resumo": "Eleições 2026: TSE retoma apuração dos votos após prorrogação de horário; Lula aparece na frente de Flávio Bolsonaro Prazo para votação foi postergado devido a relatos de restrição ao transporte de…",
+   "link": "https://oglobo.globo.com/politica/eleicoes-2026/ao-vivo/eleicoes-2026-acompanhe-ao-vivo-o-segundo-turno-ao-vivo-no-brasil.ghtml",
+   "dataPub": "2026-10-25T22:05:43.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "horario-de-votacao-termina-acompanhe-a-apuracao-em-tempo-real-no-g1",
+   "veiculo": "G1",
+   "fonteFeed": "G1",
+   "titulo": "Horário de votação termina; acompanhe a apuração em tempo real no g1",
+   "resumo": "Horário de votação termina; acompanhe a apuração em tempo real no g1 Flávio Bolsonaro (PL) e Lula (PT) disputam a Presidência da República neste domingo (25). Cinco estados e o Distrito Federal…",
+   "link": "https://g1.globo.com/politica/eleicoes/2026/ao-vivo/apuracao-eleicoes-2026-resultados-segundo-turno.ghtml",
+   "dataPub": "2026-10-25T22:04:37.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "a-tensa-conversa-entre-zanin-em-nunes-marques-sobre-a-prorrogacao-da-votacao-na-eleicao",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "A tensa conversa entre Zanin em Nunes Marques sobre a prorrogação da votação na eleição",
+   "resumo": "O presidente do Supremo Tribunal Federal (STF), Kassio Nunes Marques, falou por telefone com o ministro Cristiano Zanin, do STF, após ele determinar a extensão da votação em todo o país até as 19h…",
+   "link": "https://oglobo.globo.com/blogs/bela-megale/post/2026/10/a-tensa-conversa-entre-zanin-em-nunes-marques-sobre-a-prorrogacao-da-votacao-na-eleicao.ghtml",
+   "dataPub": "2026-10-25T22:04:23.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "decisao-de-zanin-coroa-sequencia-de-atropelos-do-stf-no-tse",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Decisão de Zanin coroa sequência de atropelos do STF no TSE",
+   "resumo": "A decisão do ministro Cristiano Zanin, do Supremo Tribunal Federal (STF), de prorrogar por duas horas o horário de votação em todo o país, atendendo a um pedido da campanha do presidente Lula, marca…",
+   "link": "https://oglobo.globo.com/blogs/malu-gaspar/post/2026/10/decisao-de-zanin-coroa-sequencia-de-atropelos-do-stf-no-tse.ghtml",
+   "dataPub": "2026-10-25T22:03:16.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "2-turno-na-palestina-lula-tem-95-60-contra-4-40-de-flavio-bolsonaro",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "2º turno na Palestina: Lula tem 95,60% contra 4,40% de Flavio Bolsonaro",
+   "resumo": "Candidato do PT abriu 954 votos de vantagem na Palestina; em 2022, Lula (PT) teve 90,54%",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/2o-turno-na-palestina-lula-tem-9560-contra-440-de-flavio-bolsonaro/",
+   "dataPub": "2026-10-25T22:03:01.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "na-noruega-lula-e-o-mais-votado-no-2-turno-com-76-78-dos-votos-validos",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Na Noruega, Lula é o mais votado no 2º turno, com 76,78% dos votos válidos",
+   "resumo": "Flavio Bolsonaro (PL) ficou com 23,22%; no 1º turno, candidato do PT tinha 66,97% na Noruega",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/na-noruega-lula-e-o-mais-votado-no-2o-turno-com-7678-dos-votos-validos/",
+   "dataPub": "2026-10-25T22:03:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "lula-tem-85-06-dos-votos-validos-na-dinamarca-no-2-turno",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Lula tem 85,06% dos votos válidos na Dinamarca no 2º turno",
+   "resumo": "Candidato do PT teve 1.383 votos, 1.140 a mais que Flavio Bolsonaro (PL)",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/lula-tem-8506-dos-votos-validos-na-dinamarca-no-2o-turno/",
+   "dataPub": "2026-10-25T22:03:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "flavio-bolsonaro-fica-a-frente-de-lula-nos-emirados-arabes-unidos-no-2-turno",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Flavio Bolsonaro fica à frente de Lula nos Emirados Árabes Unidos no 2º turno",
+   "resumo": "Candidato do PL teve 54,56% dos votos válidos nos Emirados Árabes Unidos, contra 45,44% de Lula (PT)",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/flavio-bolsonaro-fica-a-frente-de-lula-nos-emirados-arabes-unidos-no-2o-turno/",
+   "dataPub": "2026-10-25T22:03:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "lula-e-flavio-pediram-ao-tse-prorrogacao-da-votacao",
+   "veiculo": "Estado de Minas",
+   "fonteFeed": "Estado de Minas",
+   "titulo": "Lula e Flávio pediram ao TSE prorrogação da votação",
+   "resumo": "ELEIÇÕES 2026",
+   "link": "https://www.em.com.br/politica/2026/10/7527561-lula-e-flavio-pediram-ao-tse-prorrogacao-da-votacao.html",
+   "dataPub": "2026-10-25T22:03:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "lula-tem-80-54-dos-votos-validos-na-nova-zelandia-no-2-turno",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Lula tem 80,54% dos votos válidos na Nova Zelândia no 2º turno",
+   "resumo": "Candidato do PT teve 418 votos, 317 a mais que Flavio Bolsonaro (PL)",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/lula-tem-8054-dos-votos-validos-na-nova-zelandia-no-2o-turno/",
+   "dataPub": "2026-10-25T22:02:58.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "2-turno-em-israel-flavio-bolsonaro-tem-80-81-contra-19-19-de-lula",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "2º turno em Israel: Flavio Bolsonaro tem 80,81% contra 19,19% de Lula",
+   "resumo": "Candidato do PL abriu 533 votos de vantagem em Israel; em 2022, Jair Bolsonaro (PL) teve 53,43%",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/2o-turno-em-israel-flavio-bolsonaro-tem-8081-contra-1919-de-lula/",
+   "dataPub": "2026-10-25T22:02:54.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "lula-fica-a-frente-de-flavio-bolsonaro-na-austria-no-2-turno",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Lula fica à frente de Flavio Bolsonaro na Áustria no 2º turno",
+   "resumo": "Candidato do PT teve 74,98% dos votos válidos na Áustria, contra 25,02% de Flavio Bolsonaro (PL)",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/lula-fica-a-frente-de-flavio-bolsonaro-na-austria-no-2o-turno/",
+   "dataPub": "2026-10-25T22:02:54.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "no-libano-lula-e-o-mais-votado-no-2-turno-com-68-20-dos-votos-validos",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "No Líbano, Lula é o mais votado no 2º turno, com 68,20% dos votos válidos",
+   "resumo": "Flavio Bolsonaro (PL) ficou com 31,80%; no 1º turno, candidato do PT tinha 65,36% no Líbano",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/no-libano-lula-e-o-mais-votado-no-2o-turno-com-6820-dos-votos-validos/",
+   "dataPub": "2026-10-25T22:02:53.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "2-turno-na-suecia-lula-tem-78-26-contra-21-74-de-flavio-bolsonaro",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "2º turno na Suécia: Lula tem 78,26% contra 21,74% de Flavio Bolsonaro",
+   "resumo": "Candidato do PT abriu 1.536 votos de vantagem na Suécia; em 2022, Lula (PT) teve 76,71%",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/2o-turno-na-suecia-lula-tem-7826-contra-2174-de-flavio-bolsonaro/",
+   "dataPub": "2026-10-25T22:02:53.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "lula-fica-a-frente-de-flavio-bolsonaro-na-belgica-no-2-turno",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Lula fica à frente de Flavio Bolsonaro na Bélgica no 2º turno",
+   "resumo": "Candidato do PT teve 58,72% dos votos válidos na Bélgica, contra 41,28% de Flavio Bolsonaro (PL)",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/lula-fica-a-frente-de-flavio-bolsonaro-na-belgica-no-2o-turno/",
+   "dataPub": "2026-10-25T22:02:53.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "2-turno-nos-paises-baixos-lula-tem-80-13-contra-19-87-de-flavio-bolsonaro",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "2º turno nos Países Baixos: Lula tem 80,13% contra 19,87% de Flavio Bolsonaro",
+   "resumo": "Candidato do PT abriu 4.195 votos de vantagem nos Países Baixos; em 2022, Lula (PT) teve 78,41%",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/2o-turno-nos-paises-baixos-lula-tem-8013-contra-1987-de-flavio-bolsonaro/",
+   "dataPub": "2026-10-25T22:02:52.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "lula-tem-80-20-dos-votos-validos-na-irlanda-no-2-turno",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Lula tem 80,20% dos votos válidos na Irlanda no 2º turno",
+   "resumo": "Candidato do PT teve 7.194 votos, 5.418 a mais que Flavio Bolsonaro (PL)",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/lula-tem-8020-dos-votos-validos-na-irlanda-no-2o-turno/",
+   "dataPub": "2026-10-25T22:02:50.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "lula-fica-a-frente-de-flavio-bolsonaro-na-australia-no-2-turno",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Lula fica à frente de Flavio Bolsonaro na Austrália no 2º turno",
+   "resumo": "Candidato do PT teve 63,46% dos votos válidos na Austrália, contra 36,54% de Flavio Bolsonaro (PL)",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/lula-fica-a-frente-de-flavio-bolsonaro-na-australia-no-2o-turno/",
+   "dataPub": "2026-10-25T22:02:50.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "2-turno-na-suica-lula-tem-56-68-contra-43-32-de-flavio-bolsonaro",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "2º turno na Suíça: Lula tem 56,68% contra 43,32% de Flavio Bolsonaro",
+   "resumo": "Candidato do PT abriu 1.670 votos de vantagem na Suíça; em 2022, Lula (PT) teve 52,22%",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/2o-turno-na-suica-lula-tem-5668-contra-4332-de-flavio-bolsonaro/",
+   "dataPub": "2026-10-25T22:02:45.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "na-franca-lula-e-o-mais-votado-no-2-turno-com-83-96-dos-votos-validos",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Na França, Lula é o mais votado no 2º turno, com 83,96% dos votos válidos",
+   "resumo": "Flavio Bolsonaro (PL) ficou com 16,04%; no 1º turno, candidato do PT tinha 78,23% na França",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/na-franca-lula-e-o-mais-votado-no-2o-turno-com-8396-dos-votos-validos/",
+   "dataPub": "2026-10-25T22:02:44.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "no-reino-unido-lula-e-o-mais-votado-no-2-turno-com-63-34-dos-votos-validos",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "No Reino Unido, Lula é o mais votado no 2º turno, com 63,34% dos votos válidos",
+   "resumo": "Flavio Bolsonaro (PL) ficou com 36,66%; no 1º turno, candidato do PT tinha 57,03% no Reino Unido",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/no-reino-unido-lula-e-o-mais-votado-no-2o-turno-com-6334-dos-votos-validos/",
+   "dataPub": "2026-10-25T22:02:44.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "2-turno-na-alemanha-lula-tem-79-09-contra-20-91-de-flavio-bolsonaro",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "2º turno na Alemanha: Lula tem 79,09% contra 20,91% de Flavio Bolsonaro",
+   "resumo": "Candidato do PT abriu 12.175 votos de vantagem na Alemanha; em 2022, Lula (PT) teve 76,89%",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/2o-turno-na-alemanha-lula-tem-7909-contra-2091-de-flavio-bolsonaro/",
+   "dataPub": "2026-10-25T22:02:44.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "2-turno-em-portugal-lula-tem-59-42-contra-40-58-de-flavio-bolsonaro",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "2º turno em Portugal: Lula tem 59,42% contra 40,58% de Flavio Bolsonaro",
+   "resumo": "Candidato do PT abriu 10.886 votos de vantagem em Portugal; em 2022, Lula (PT) teve 64,00%",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/2o-turno-em-portugal-lula-tem-5942-contra-4058-de-flavio-bolsonaro/",
+   "dataPub": "2026-10-25T22:02:44.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "lula-fica-a-frente-de-flavio-bolsonaro-na-espanha-no-2-turno",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Lula fica à frente de Flavio Bolsonaro na Espanha no 2º turno",
+   "resumo": "Candidato do PT teve 68,42% dos votos válidos na Espanha, contra 31,58% de Flavio Bolsonaro (PL)",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/lula-fica-a-frente-de-flavio-bolsonaro-na-espanha-no-2o-turno/",
+   "dataPub": "2026-10-25T22:02:44.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "lula-tem-59-99-dos-votos-validos-na-italia-no-2-turno",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Lula tem 59,99% dos votos válidos na Itália no 2º turno",
+   "resumo": "Candidato do PT teve 7.921 votos, 2.638 a mais que Flavio Bolsonaro (PL)",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/lula-tem-5999-dos-votos-validos-na-italia-no-2o-turno/",
+   "dataPub": "2026-10-25T22:02:44.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "flavio-bolsonaro-fica-a-frente-de-lula-no-japao-no-2-turno",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Flavio Bolsonaro fica à frente de Lula no Japão no 2º turno",
+   "resumo": "Candidato do PL teve 80,08% dos votos válidos no Japão, contra 19,92% de Lula (PT)",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/flavio-bolsonaro-fica-a-frente-de-lula-no-japao-no-2o-turno/",
+   "dataPub": "2026-10-25T22:02:44.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "pf-decide-abrir-investigacoes-sobre-denuncias-de-restricoes-ao-transporte-nas-eleicoes",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "PF decide abrir investigações sobre denúncias de restrições ao transporte nas eleições",
+   "resumo": "A Polícia Federal investiga suspeitas de restrições ao transporte de eleitores durante o segundo turno das eleições, neste domingo (25). Leia mais (10/25/2026 - 19h02)",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467812",
+   "dataPub": "2026-10-25T22:02:00.000Z",
+   "mencoes": [],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "tarcisio-e-nunes-chegam-a-brasilia-para-acompanhar-apuracao-com-flavio",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Tarcísio e Nunes chegam a Brasília para acompanhar apuração com Flávio",
+   "resumo": "Ao desembarcar na capital federal neste domingo, governador de São Paulo criticou novo prazo de votação",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/tarcisio-e-nunes-chegam-a-brasilia-para-acompanhar-apuracao-com-flavio/",
+   "dataPub": "2026-10-25T22:01:24.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "pais-levam-filhos-a-secoes-eleitorais-para-ensinar-democracia",
+   "veiculo": "Agência Brasil",
+   "fonteFeed": "Agência Brasil",
+   "titulo": "Pais levam filhos a seções eleitorais para ensinar democracia",
+   "resumo": "O voto é facultativo a partir dos 16 anos e obrigatório para os brasileiros de 18 a 70 anos. Mas um público bem mais jovem foi às seções eleitorais no segundo turno das eleições. São crianças levadas…",
+   "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/pais-levam-filhos-secoes-eleitorais-para-ensinar-democracia",
+   "dataPub": "2026-10-25T22:01:00.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
    "id": "pf-abre-inquerito-para-apurar-falta-de-onibus-tudo-esta-sendo-apurado-",
    "veiculo": "UOL",
    "fonteFeed": "UOL",
@@ -183,32 +814,6 @@
    "dataPub": "2026-10-25T22:00:08.111Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "segundo-turno-registra-548-ocorrencias-eleitorais-no-pais-ate-as-18h-diz-ministerio-da-jus",
-   "veiculo": "UOL",
-   "fonteFeed": "UOL",
-   "titulo": "Segundo turno registra 548 ocorrências eleitorais no país até as 18h, diz Ministério da Justiça",
-   "resumo": "",
-   "link": "https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467804",
-   "dataPub": "2026-10-25T22:00:08.111Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "chefe-da-campanha-de-flavio-bolsonaro-fala-em-golpe-judiciario-e-aliados-sugerem-fraude-se",
-   "veiculo": "UOL",
-   "fonteFeed": "UOL",
-   "titulo": "Chefe da campanha de Flávio Bolsonaro fala em 'golpe judiciário', e aliados sugerem fraude sem provas",
-   "resumo": "",
-   "link": "https://www1.folha.uol.com.br/poder/2026/10/chefe-da-campanha-de-flavio-bolsonaro-fala-em-golpe-judiciario-e-aliados-sugerem-fraude-sem-provas.shtml",
-   "dataPub": "2026-10-25T22:00:08.111Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
    "coletadoEm": "2026-10-25T22:00:08.111Z"
   },
   {
@@ -269,6 +874,36 @@
    "coletadoEm": "2026-10-25T22:00:08.111Z"
   },
   {
+   "id": "resultado-das-eleicoes-2026-em-tempo-real-veja-apuracao-do-2-turno-entre-flavio-bolsonaro-",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Resultado das eleições 2026 em tempo real: veja apuração do 2º turno entre Flávio Bolsonaro e Lula",
+   "resumo": "Após extensão do horário de votação, a apuração dos votos para presidente da República no segundo turno das Eleições 2026 poderá ser acompanhada ao vivo no site do O GLOBO. A previsão é que a…",
+   "link": "https://oglobo.globo.com/apuracao-eleicoes-2026/noticia/2026/10/25/resultado-das-eleicoes-2026-em-tempo-real-veja-apuracao-do-2o-turno-entre-flavio-bolsonaro-e-lula.ghtml",
+   "dataPub": "2026-10-25T21:59:35.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "quem-esta-ganhando-a-eleicao-para-presidente-veja-o-resultado-parcial-da-apuracao-do-tse-a",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Quem está ganhando a eleição para presidente? Veja o resultado parcial da apuração do TSE ao vivo",
+   "resumo": "A contagem dos votos do 2º turno das Eleições 2026 no Tribunal Superior Eleitoral (TSE) começa a partir das 19h, neste domingo (25). O leitor pode conferir quem está ganhando a eleição para…",
+   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/25/quem-esta-ganhando-a-eleicao-para-presidente-veja-o-resultado-parcial-da-apuracao-do-tse-ao-vivo.ghtml",
+   "dataPub": "2026-10-25T21:59:34.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
    "id": "apos-prorrogacao-lula-e-aliados-pedem-que-eleitores-votem",
    "veiculo": "Poder360",
    "fonteFeed": "Poder360",
@@ -280,7 +915,22 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "campanha-de-lula-critica-demora-de-nunes-marques-e-coordenador-de-flavio-ataca-decisao-de-",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Campanha de Lula critica demora de Nunes Marques, e coordenador de Flávio ataca decisão de Zanin que prorrogou votação",
+   "resumo": "A decisão do ministro Cristiano Zanin, do Supremo Tribunal Federal (STF), que prorrogou por duas horas o fim da votação em segundo turno gerou reações opostas nas campanhas Luiz Inácio Lula da Silva…",
+   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/25/campanha-de-lula-critica-demora-de-nunes-marques-e-coordenador-de-flavio-ataca-decisao-de-zanin-que-prorrogou-votacao.ghtml",
+   "dataPub": "2026-10-25T21:55:56.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "urnas-fecham-em-sp-bh-e-rj-mesmo-com-prorrogacao-de-zanin",
@@ -295,7 +945,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "sobrinho-de-dilma-rousseff-comenta-acidente",
@@ -307,7 +957,7 @@
    "dataPub": "2026-10-25T21:55:36.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "-fiquei-de-12h-ate-13h30-esperando-no-ponto-de-onibus-e-nao-consegui-conta-eleitor-de-salv",
@@ -321,19 +971,67 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
-   "id": "pf-decide-abrir-investigacoes-sobre-denuncias-de-restricoes-ao-transporte-nas-eleicoes",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "PF decide abrir investigações sobre denúncias de restrições ao transporte nas eleições",
-   "resumo": "A Polícia Federal investiga suspeitas de restrições ao transporte de eleitores durante o segundo turno das eleições , neste domingo (25). Leia mais (10/25/2026 - 18h53)",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/pf-decide-abrir-investigacoes-sobre-denuncias-de-restricoes-ao-transporte-nas-eleicoes.shtml",
-   "dataPub": "2026-10-25T21:53:00.000Z",
-   "mencoes": [],
+   "id": "apuracao-ao-vivo-resultados-do-2-turno-das-eleicoes-presidenciais-de-2026",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Apuração ao vivo: resultados do 2º turno das eleições presidenciais de 2026",
+   "resumo": "A apuração dos votos para presidente da República no segundo turno das Eleições 2026 começa logo após o fim da votação em todo país, a partir das 19h (horário oficial de Brasília), deste domingo…",
+   "link": "https://oglobo.globo.com/apuracao-eleicoes-2026/noticia/2026/10/25/apuracao-ao-vivo-resultados-do-2o-turno-das-eleicoes-presidenciais-de-2026.ghtml",
+   "dataPub": "2026-10-25T21:53:49.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "eleicoes-2026-acompanhe-ao-vivo-a-apuracao-dos-votos-do-2-turno-para-presidente",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Eleições 2026: acompanhe ao vivo a apuração dos votos do 2º turno para presidente",
+   "resumo": "A apuração dos votos para presidente da República no segundo turno das Eleições 2026 poderá ser acompanhada ao vivo no site do O GLOBO. Neste domingo, 25 de outubro, a partir das 19h (horário de…",
+   "link": "https://oglobo.globo.com/apuracao-eleicoes-2026/noticia/2026/10/25/eleicoes-2026-acompanhe-ao-vivo-a-apuracao-dos-votos-do-2o-turno-para-presidente.ghtml",
+   "dataPub": "2026-10-25T21:53:28.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "aliados-de-flavio-falam-em-interferencia-de-zanin-enquanto-apoiadores-de-lula-criticam-dem",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Aliados de Flávio falam em 'interferência' de Zanin, enquanto apoiadores de Lula criticam 'demora' de Nunes Marques",
+   "resumo": "Em meio ao imbróglio causado no final da votação neste domingo, parlamentares de direita e integrantes da campanha do senador Flávio Bolsonaro (PL) acusaram o ministro Cristiano Zanin, do Supremo…",
+   "link": "https://oglobo.globo.com/blogs/sonar-a-escuta-das-redes/post/2026/10/aliados-de-flavio-falam-em-interferencia-de-zanin-enquanto-apoiadores-de-lula-criticam-demora-de-nunes-marques.ghtml",
+   "dataPub": "2026-10-25T21:53:18.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "votacao-prorrogada-campanhas-de-flavio-e-lula-trocam-acusacoes",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Votação prorrogada: Campanhas de Flávio e Lula trocam acusações",
+   "resumo": "Rogério Marinho criticou Cristiano Zanin e falou em “golpe judicial”; Edinho Silva repudiou suposta falta de ônibus para eleitores e citou “crime eleitoral”",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/votacao-prorrogada-campanhas-de-flavio-e-lula-trocam-acusacoes/",
+   "dataPub": "2026-10-25T21:52:58.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "entenda-a-manobra-do-pt-para-anular-as-eleicoes",
@@ -347,7 +1045,22 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "presidente-do-pt-diz-que-falta-de-onibus-caracteriza-crime-e-reafirma-tentativa-de-manipul",
+   "veiculo": "G1",
+   "fonteFeed": "G1",
+   "titulo": "Presidente do PT diz que falta de ônibus caracteriza crime e reafirma tentativa de manipulação da eleição ao citar big techs",
+   "resumo": "Presidente do PT diz que falta de ônibus em SP e Salvador caracteriza crime O presidente nacional do PT, Edinho Silva, disse na tarde deste domingo (25) que “é muito grave” a tentativa de…",
+   "link": "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/10/25/presidente-do-pt-diz-que-falta-de-onibus-caracteriza-crime-e-reafirma-tentativa-de-manipulacao-da-eleicao-ao-citar-big-techs.ghtml",
+   "dataPub": "2026-10-25T21:51:31.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "janones-preve-vitoria-de-lula",
@@ -361,7 +1074,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "aliados-de-flavio-bolsonaro-condenam-decisao-de-zanin-de-ampliar-horario-de-votacao",
@@ -376,7 +1089,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apos-prorrogacao-da-votacao-lula-encontra-apoiadores-veja-imagens",
@@ -390,7 +1103,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "van-hattem-defende-impeachment-de-zanin-golpe-nas-eleicoes-",
@@ -404,7 +1117,19 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "segundo-turno-registra-548-ocorrencias-eleitorais-no-pais-ate-as-18h-diz-ministerio-da-jus",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Segundo turno registra 548 ocorrências eleitorais no país até as 18h, diz Ministério da Justiça",
+   "resumo": "O Ministério da Justiça e Segurança Pública registrou 548 ocorrências relacionadas às eleições até as 18h deste domingo (25), durante o segundo turno. Segundo o balanço atualizado, 131 pessoas foram…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467804",
+   "dataPub": "2026-10-25T21:49:00.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "famosos-votam-no-2-turno-das-eleicoes-veja-fotos",
@@ -416,7 +1141,7 @@
    "dataPub": "2026-10-25T21:48:34.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "tse-diz-que-contagem-dos-votos-sera-retomada-as-19h",
@@ -428,7 +1153,7 @@
    "dataPub": "2026-10-25T21:48:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "advogado-de-trump-questiona-eleicao-apos-zanin-ampliar-votacao-ate-as-19h",
@@ -442,7 +1167,22 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "prorrogacao-da-votacao-repercute-na-imprensa-internacional-que-destaca-urnas-desligadas-e-",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Prorrogação da votação repercute na imprensa internacional, que destaca urnas desligadas e confusão em seções",
+   "resumo": "A decisão do ministro Cristiano Zanin, do STF, de estender em duas horas o horário de votação em todo o país neste domingo virou destaque da cobertura internacional do segundo turno entre Luiz Inácio…",
+   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/25/prorrogacao-da-votacao-repercute-na-imprensa-internacional-que-destaca-urnas-desligadas-e-confusao-em-secoes.ghtml",
+   "dataPub": "2026-10-25T21:47:46.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "advogado-de-trump-critica-zanin-por-estender-votacao-sem-aval-do-tse",
@@ -456,7 +1196,21 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "chefe-da-campanha-de-flavio-bolsonaro-fala-em-golpe-judiciario-e-aliados-sugerem-fraude-se",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Chefe da campanha de Flávio Bolsonaro fala em 'golpe judiciário', e aliados sugerem fraude sem provas",
+   "resumo": "O senador Rogério Marinho ( PL -RN), coordenador da campanha presidencial de Flávio Bolsonaro (PL), afirmou ser \"impressionante o nível de intervenção de alguns ministros do STF \", após a decisão do…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/chefe-da-campanha-de-flavio-bolsonaro-fala-em-golpe-judiciario-e-aliados-sugerem-fraude-sem-provas.shtml",
+   "dataPub": "2026-10-25T21:46:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "zanin-esclarece-que-prorrogacao-da-votacao-ate-19h-sera-apenas-em-secoes-em-que-urna-nao-f",
@@ -471,7 +1225,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "imprensa-internacional-repercute-prolongamento-da-votacao-no-brasil",
@@ -486,7 +1240,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "quem-esta-na-frente-lula-ou-flavio-bolsonaro-veja-resultado-da-apuracao-ao-vivo",
@@ -501,14 +1255,14 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "tse-diz-que-vai-retomar-divulgacao-dos-resultados-da-eleicao-depois-das-19h-ao-fim-da-vota",
    "veiculo": "O Globo",
    "fonteFeed": "O Globo",
    "titulo": "TSE diz que vai retomar divulgação dos resultados da eleição depois das 19h, ao fim da votação",
-   "resumo": "O Tribunal Superior Eleitoral afirmou que vai retomar a divulgação dos resultados após as 19h, ao fim da votação. \"O TSE retomará o recebimento dos Boletins de Urna (BUs), totalização dos votos e…",
+   "resumo": "O Tribunal Superior Eleitoral (TSE) afirmou que vai retomar a divulgação dos resultados após as 19h, ao fim da votação. A contagem chegou a começar, mas foi interrompida com 0,25% das urnas apuradas…",
    "link": "https://oglobo.globo.com/politica/noticia/2026/10/25/tse-diz-que-vai-retomar-divulgacao-dos-resultados-da-eleicao-depois-das-19h-ao-fim-da-votacao.ghtml",
    "dataPub": "2026-10-25T21:39:32.000Z",
    "mencoes": [
@@ -516,7 +1270,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "questoes-tecnicas-e-de-imparcialidade-impedem-reabertura-de-urnas-diz-ex-ministro-do-tse",
@@ -531,7 +1285,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "secretario-de-salvador-diz-que-atuou-para-normalizar-onibus-e-comenta-ordem-de-prisao",
@@ -545,7 +1299,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "quem-esta-ganhando-a-eleicao-para-presidente-acompanhe-a-apuracao-dos-votos",
@@ -560,7 +1314,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "tarcisio-de-freitas-chega-ao-local-de-apuracao-para-acompanhar-com-flavio-bolsonaro",
@@ -574,13 +1328,13 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "ranking-dos-politicos-critica-zanin-e-ve-caos-institucional-em-prorrogacao-da-votacao",
    "veiculo": "Revista Oeste",
    "fonteFeed": "Revista Oeste",
-   "titulo": "Ranking dos Políticos critica Zanin e vê “caos institucional” em prorrogação da votação",
+   "titulo": "Ranking dos Políticos critica Zanin e vê ‘caos institucional’ em prorrogação da votação",
    "resumo": "O Ranking dos Políticos criticou neste domingo, 25, a decisão do ministro Cristiano Zanin, do Supremo Tribunal Federal (STF), de prorrogar a votação do segundo turno até as 19h, no horário de…",
    "link": "https://revistaoeste.com/politica/ranking-dos-politicos-critica-zanin/",
    "dataPub": "2026-10-25T21:38:55.000Z",
@@ -589,7 +1343,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "o-que-se-sabe-sobre-as-denuncias-sobre-falta-de-onibus-pelo-brasil-",
@@ -603,7 +1357,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "temporal-mata-duas-jovens-em-jundiai-sp-",
@@ -615,7 +1369,7 @@
    "dataPub": "2026-10-25T21:36:12.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "joice-diz-que-votou-em-lula-apos-25-anos-de-oposicao-ao-pt",
@@ -630,7 +1384,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "nikolas-detona-decisao-de-zanin-quer-ganhar-no-tapetao-",
@@ -659,7 +1413,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "no-df-urnas-fecham-antes-de-informacao-sobre-prorrogacao-chegar",
@@ -673,7 +1427,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "pf-abre-inquerito-sobre-retencao-de-onibus-em-sergipe-e-apuracoes-preliminares-em-sp-al-pi",
@@ -685,7 +1439,7 @@
    "dataPub": "2026-10-25T21:33:21.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-amplia-margem-na-alemanha-e-vence-segundo-turno-com-79-",
@@ -699,7 +1453,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "tse-troca-1-516-urnas-eletronicas-ate-as-18h-no-2-turno",
@@ -711,7 +1465,22 @@
    "dataPub": "2026-10-25T21:31:25.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "ao-vivo-eleicoes-2026-acompanhe-a-votacao-ate-as-19h-na-disputa-entre-flavio-bolsonaro-e-l",
+   "veiculo": "JOTA Info",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "AO VIVO Eleições 2026 - acompanhe a votação até as 19h na disputa entre Flávio Bolsonaro e Lula no 2º turno",
+   "resumo": "AO VIVO Eleições 2026 - acompanhe a votação até as 19h na disputa entre Flávio Bolsonaro e Lula no 2º turno JOTA Info",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQZUd6TVRremQ4eEotV3I2X184Sk1PWlgzTTEwSWZUc1ZHZUhCZkFQSlNEUTg1R1BWb2d4T0VldVpjeWVEcjFZSVF4VjlTX194N2ltRjFlc3FDbzZJRWRkU0xZMmE1OFVVY2w4RE44ZnVlSmRxaXZxWDRNODB1UFN2Mk8xTmc4bVdSWDU0ZF8wQ0tJOVR1US02Q001VWhhOHpEakdiaDFNTjhBYlR5aUxoYkJZR2dVNVJFYTBDdmlrLUkwWlgxZlVxd1lNN19wdTlLSkJSQTJBemFodXJSMkI5NU1TeThOZw?oc=5",
+   "dataPub": "2026-10-25T21:31:21.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apuracao-dos-votos-2026-acompanhe-a-contagem-do-tse-para-presidente-no-segundo-turno-das-e",
@@ -726,7 +1495,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "tse-diz-que-1-516-urnas-foram-substituidas-ate-18h",
@@ -738,7 +1507,7 @@
    "dataPub": "2026-10-25T21:30:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apuracao-ao-vivo-das-eleicoes-2026-veja-resultado-do-2-turno-para-presidente",
@@ -753,7 +1522,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "desembargador-aposentado-diz-que-ha-preparacao-para-anular-2-turno-",
@@ -763,18 +1532,6 @@
    "resumo": "O desembargador aposentado do TJDFT e ex-candidato a senador, Sebastião Coelho (Novo), criticou decisão do ministro Cristiano Zanin",
    "link": "https://www.metropoles.com/colunas/grande-angular/desembargador-aposentado-diz-que-ha-preparacao-para-anular-2o-turno",
    "dataPub": "2026-10-25T21:27:41.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "ao-vivo-acompanhe-a-apuracao-do-segundo-turno-das-eleicoes-de-2026",
-   "veiculo": "VEJA",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "AO VIVO: Acompanhe a apuração do segundo turno das eleições de 2026",
-   "resumo": "AO VIVO: Acompanhe a apuração do segundo turno das eleições de 2026 VEJA",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUHFoUGNRNEE0WUh0ZFBRWHRVbkVWTkt5bmE0THVJS216QURlR2hpbXhzMG9rQnZOOTQtejBlTmFmNFJuRzQwT0dGaERVWFpKTFZDN2twdUF6T3hKUkJ1VHZkYXpKOVNnTURCQnNLbWpsMHoteEdMRHBTYXU4bjhMRGw2V2YzYkNWNHJ5TmwwUm9yOE1fSkRZdmhwV1ZiQ3JsOVE?oc=5",
-   "dataPub": "2026-10-25T21:25:39.000Z",
    "mencoes": [],
    "tom": "neutro",
    "coletadoEm": "2026-10-25T22:00:08.111Z"
@@ -805,7 +1562,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "esquerda-errou-ao-ignorar-redes-nos-ultimos-anos-diz-helder-filho",
@@ -819,7 +1576,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "falta-de-onibus-e-decisao-de-zanin-criam-desafio-inedito-para-eleicoes-avaliam-juristas",
@@ -831,7 +1588,7 @@
    "dataPub": "2026-10-25T21:21:08.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "horario-de-votacao-e-prorrogado-ate-as-19h-apos-pedido-de-extensao-do-prazo",
@@ -860,7 +1617,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "stf-toma-medida-inedita-ao-prorrogar-horario-da-votacao-no-brasil",
@@ -875,7 +1632,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "zanin-determina-que-votacao-seja-estendida-so-em-urnas-ainda-abertas-e-contagem-de-votos-e",
@@ -887,7 +1644,7 @@
    "dataPub": "2026-10-25T21:16:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "tse-secoes-eleitorais-ainda-abertas-devem-manter-votacao-ate-as-19h",
@@ -902,7 +1659,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "juizes-relatam-confusao-generalizada-apos-decisao-de-zanin",
@@ -914,7 +1671,7 @@
    "dataPub": "2026-10-25T21:14:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "marinho-critica-decisao-que-estendeu-horario-de-votacao",
@@ -929,7 +1686,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "em-sp-espera-por-onibus-tem-filas-desistencia-aplicativo-e-ate-carona-solidaria-para-votar",
@@ -943,7 +1700,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "justica-eleitoral-nega-prisao-de-secretario-de-transporte-e-presidente-da-sptrans",
@@ -969,7 +1726,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "zanin-do-stf-determina-extensao-da-votacao-em-todo-o-pais-ate-as-19h-apos-denuncias-de-pro",
@@ -984,7 +1741,21 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "zanin-diz-que-adiamento-de-votacao-vale-para-urnas-que-nao-foram-fechadas",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Zanin diz que adiamento de votação vale para urnas que não foram fechadas",
+   "resumo": "Mais cedo, o ministro atendeu a um pedido da Coligação Brasil Pronto Pra Mais, do presidente Lula (PT), e prorrogou o horário de votação até as 19h (no horário de Brasília)",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/zanin-diz-que-adiamento-de-votacao-vale-para-urnas-que-nao-foram-fechadas/",
+   "dataPub": "2026-10-25T21:03:54.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-amplia-vantagem-sobre-flavio-e-vence-eleicoes-em-portugal",
@@ -999,7 +1770,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apuracao-dos-votos-apos-prorrogar-votacao-ate-19h-zanin-esclarece-que-decisao-afeta-apenas",
@@ -1014,7 +1785,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "zanin-diz-que-decisao-sobre-prorrogacao-do-horario-de-votacao-para-19h-vale-para-urnas-ain",
@@ -1029,7 +1800,19 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "eleicoes-pf-apura-possiveis-crimes-ligados-ao-transporte-e-ao-fornecimento",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Eleições: PF apura possíveis crimes ligados ao transporte e ao fornecimento",
+   "resumo": "Corporação investiga possíveis crimes relacionados a obstrução e ocultação de transporte durante as votações do segundo turno das eleições no país",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/eleicoes-pf-apura-possiveis-crimes-ligados-ao-transporte-e-ao-fornecimento/",
+   "dataPub": "2026-10-25T21:01:19.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "caronas-para-eleitores-se-multiplicam-apos-falhas-no-transporte-no-2-turno",
@@ -1041,7 +1824,7 @@
    "dataPub": "2026-10-25T21:01:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "a-polarizacao-depois-da-certeza",
@@ -1053,7 +1836,7 @@
    "dataPub": "2026-10-25T21:00:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "eleicoes-2026-anac-diz-nao-ter-identificado-anormalidades-na-programacao-de-voos-comerciai",
@@ -1065,7 +1848,7 @@
    "dataPub": "2026-10-25T20:58:14.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "kassio-decidiu-nao-decidir-e-e-responsavel-por-confusao-no-segundo-turno",
@@ -1080,7 +1863,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apos-stf-prorrogar-votacao-mesarios-nao-recebem-orientacao-e-parte-das-escolas-sao-fechada",
@@ -1095,7 +1878,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "urnas-ja-fechadas-nao-podem-ser-reabertas-apos-decisao-de-zanin-apontam-especialistas",
@@ -1109,7 +1892,22 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "lula-ou-flavio-bolsonaro-quem-esta-ganhando-no-exterior-no-2-turno-das-eleicoes",
+   "veiculo": "Exame",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Lula ou Flávio Bolsonaro: quem está ganhando no exterior no 2º turno das eleições",
+   "resumo": "Lula ou Flávio Bolsonaro: quem está ganhando no exterior no 2º turno das eleições Exame",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMXpOVVMxdmlMcHMyMHFleFpQeUdoMk9TV0VsRzNGU0d6RXRUZEpjakhxb3hBTVQ1Z0x0UDBiSGxmZllmWXlHc3pSZkt6QjNRYmU2UWE1aTUwdlNvRUVyWUV0T0kzVjNHRXhSWklpWk5mTXRiUDJNV2ViQVBhRTNBQTZORTNRNjBUcHQ1RkcxXzgtVDFQYVVQVlhSbTZHVWQteEVqUmx2MWR2Zw?oc=5",
+   "dataPub": "2026-10-25T20:53:04.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "o-resultado-da-apuracao-da-disputa-lula-x-bolsonaro-no-segundo-turno-de-2022",
@@ -1137,7 +1935,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apuracao-dos-votos-urnas-fechadas-nao-podem-ser-reabertas",
@@ -1152,7 +1950,22 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "flavio-e-lula-mobilizam-eleitor-para-ir-as-urnas-em-novo-prazo-da-eleicao",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Flávio e Lula mobilizam eleitor para ir às urnas em novo prazo da eleição",
+   "resumo": "Ministro Cristiano Zanin, do STF, determinou que a votação se estenda até 19h em todo o território nacional",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/flavio-e-lula-mobilizam-eleitor-para-ir-as-urnas-em-novo-prazo-da-eleicao/",
+   "dataPub": "2026-10-25T20:46:52.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "tse-pausa-divulgacao-de-resultados-com-0-25-das-urnas-apuradas-apos-zanin-estender-votacao",
@@ -1164,7 +1977,7 @@
    "dataPub": "2026-10-25T20:45:26.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "com-0-25-das-urnas-apuradas-tse-suspende-totalizacao-dos-votos-apos-prorrogacao-da-votacao",
@@ -1178,7 +1991,19 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "propaganda-irregular-na-internet-lidera-denuncias-ao-tse-no-2-turno",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Propaganda irregular na internet lidera denúncias ao TSE no 2º turno",
+   "resumo": "Quase 22% das denúncias feitas no aplicativo Pardal retratam problemas na campanha on-line; aplicativo pode ser usado neste domingo (25)",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/propaganda-irregular-na-internet-lidera-denuncias-ao-tse-no-2o-turno/",
+   "dataPub": "2026-10-25T20:42:21.000Z",
+   "mencoes": [],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "que-horas-saem-os-resultados-do-2-turno-das-eleicoes-e-como-acompanhar-a-apuracao-",
@@ -1190,7 +2015,7 @@
    "dataPub": "2026-10-25T20:42:07.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "ramagem-diz-em-miami-que-quer-voltar-ao-brasil-com-vitoria-de-flavio",
@@ -1204,7 +2029,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apos-denuncia-de-frota-de-onibus-reduzida-eleitores-de-sp-podem-votar-ate-as-19h-decisao-d",
@@ -1219,7 +2044,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "urna-e-trocada-em-gravatai-e-video-mostra-barraca-com-panfletos-perto-da-avenida-goethe-em",
@@ -1231,7 +2056,7 @@
    "dataPub": "2026-10-25T20:35:47.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "na-eleicao-de-2022-lula-teve-virada-as-18h44-com-67-76-das-urnas-apuradas",
@@ -1245,7 +2070,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "-votacaoate19horas-e-o-assunto-mais-comentado-no-x-com-prorrogacao-de-horario-e-dificuldad",
@@ -1257,7 +2082,7 @@
    "dataPub": "2026-10-25T20:33:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "prefeito-de-salvador-atribui-atraso-de-onibus-a-retirada-de-adesivos-eleitorais-votacao-va",
@@ -1272,7 +2097,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "violencia-da-extrema-direita-deixa-mortos-e-feridos-pelo-pais",
@@ -1286,7 +2111,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "zanin-determina-prorrogacao-da-votacao-ate-19h-em-todo-o-pais",
@@ -1301,7 +2126,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "eleicoes-2026-apuracao-dos-votos-e-pausada-apos-zanin-prorrogar-tempo-de-votacao-ate-as-19",
@@ -1316,7 +2141,21 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "contabilizacao-de-votos-e-pausada-pelo-tse-em-funcao-do-adiamento",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Contabilização de votos é pausada pelo TSE em função do adiamento",
+   "resumo": "Ministro do STF, Cristiano Zanin atendeu a um pedido da coligação do presidente Luiz Inácio Lula da Silva (PT)",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/contabilizacao-de-votos-e-pausada-pelo-tse-em-funcao-do-adiamento/",
+   "dataPub": "2026-10-25T20:25:27.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "tse-pausa-divulgacao-de-resultados-da-eleicao-com-0-25-das-urnas-apuradas-apos-zanin-esten",
@@ -1330,7 +2169,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "votacao-no-exterior-quem-ganhou-na-europa-no-2-turno-das-eleicoes-2026-",
@@ -1345,7 +2184,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-sai-na-frente-de-flavio-bolsonaro-com-57-66-dos-votos-no-inicio-da-apuracao-do-segund",
@@ -1360,7 +2199,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "mp-eleitoral-diz-ao-tse-ser-contrario-a-extensao-de-horario-de-votacao-no-pais-zanin-deter",
@@ -1375,7 +2214,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "zanin-prorroga-votacao-ate-as-19h-em-todos-os-locais-onde-urnas-nao-foram-fechadas",
@@ -1389,7 +2228,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "acompanhe-a-evolucao-da-apuracao-do-segundo-turno-para-presidente-com-grafico-do-estadao-",
@@ -1404,19 +2243,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "mapa-das-eleicoes-2026-veja-o-resultado-para-presidente-e-governador-no-2-turno",
-   "veiculo": "BBC News Brasil",
-   "fonteFeed": "BBC News Brasil",
-   "titulo": "Mapa das Eleições 2026: veja o resultado para presidente e governador no 2º turno",
-   "resumo": "Neste interativo, você pode consultar os resultados da eleição para presidente e governador por Estado e município.",
-   "link": "https://www.bbc.com/portuguese/articles/c61m430mdek2o?at_medium=RSS&at_campaign=rss",
-   "dataPub": "2026-10-25T20:13:02.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "zanin-prorroga-votacao-ate-19-horas-em-todo-o-pais-apos-pedido-de-lula",
@@ -1431,7 +2258,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "ministerio-da-justica-identifica-falhas-no-transporte-em-7-estados-no-2-turno",
@@ -1443,7 +2270,7 @@
    "dataPub": "2026-10-25T20:09:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "salvador-procon-atualiza-para-544-total-de-onibus-parados-em-garagens",
@@ -1455,22 +2282,7 @@
    "dataPub": "2026-10-25T20:09:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "lula-ou-flavio-bolsonaro-quem-esta-ganhando-no-exterior-no-2-turno-das-eleicoes",
-   "veiculo": "Exame",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Lula ou Flávio Bolsonaro: quem está ganhando no exterior no 2º turno das eleições",
-   "resumo": "Lula ou Flávio Bolsonaro: quem está ganhando no exterior no 2º turno das eleições Exame",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMXpOVVMxdmlMcHMyMHFleFpQeUdoMk9TV0VsRzNGU0d6RXRUZEpjakhxb3hBTVQ1Z0x0UDBiSGxmZllmWXlHc3pSZkt6QjNRYmU2UWE1aTUwdlNvRUVyWUV0T0kzVjNHRXhSWklpWk5mTXRiUDJNV2ViQVBhRTNBQTZORTNRNjBUcHQ1RkcxXzgtVDFQYVVQVlhSbTZHVWQteEVqUmx2MWR2Zw?oc=5",
-   "dataPub": "2026-10-25T20:08:42.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "artistas-protestam-contra-falta-de-onibus-em-salvador-e-sao-paulo-no-2-turno",
@@ -1482,7 +2294,7 @@
    "dataPub": "2026-10-25T20:08:00.000Z",
    "mencoes": [],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-vence-na-maior-parte-da-europa-e-amplia-vantagem-no-exterior",
@@ -1497,7 +2309,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apuracao-do-2-turno-das-eleicoes-de-2026-os-resultados-em-todo-o-pais",
@@ -1509,7 +2321,7 @@
    "dataPub": "2026-10-25T20:06:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-derrota-flavio-bolsonaro-em-portugal-com-59-42-dos-votos-no-2-turno",
@@ -1524,7 +2336,21 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "zanin-prorroga-eleicao-ate-19h-deste-domingo-em-todo-o-pais",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Zanin prorroga eleição até 19h deste domingo em todo o país",
+   "resumo": "Ministro atendeu a um pedido da coligação de Lula após prefeituras reduzirem significativamente a frota de ônibus em circulação durante o dia de votação",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/zanin-prorroga-eleicao-ate-as-19h-deste-domingo-em-todo-o-pais/",
+   "dataPub": "2026-10-25T20:05:36.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "eleicoes-2026-zanin-prorroga-votacao-em-todo-o-pais-ate-as-19h",
@@ -1539,7 +2365,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "imagens-do-segundo-turno-denuncias-no-transporte-e-votacoes-de-lula-flavio-ministros-e-apo",
@@ -1554,7 +2380,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "campanha-de-flavio-pede-votacao-ate-19h-por-chuvas-em-alguns-estados",
@@ -1569,7 +2395,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "parcial-dos-votos-para-presidente-acompanhe-a-evolucao-da-apuracao-das-eleicoes-2026",
@@ -1584,7 +2410,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "ministerio-da-justica-identifica-falhas-no-transporte-em-sete-estados-no-2-turno",
@@ -1596,7 +2422,7 @@
    "dataPub": "2026-10-25T20:02:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "oea-observa-problemas-com-transporte-na-eleicao-do-brasil",
@@ -1611,7 +2437,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "campanha-de-lula-denuncia-falta-de-transporte-em-nove-estados",
@@ -1625,7 +2451,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "acompanhe-a-apuracao-do-2-turno-das-eleicoes-2026",
@@ -1637,7 +2463,7 @@
    "dataPub": "2026-10-25T20:01:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "quem-ganhou-as-eleicoes-2026-em-portugal-veja-resultado-da-apuracao-entre-lula-e-bolsonaro",
@@ -1652,7 +2478,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "eleicoes-2026-quantos-votos-sao-necessarios-para-ganhar-a-eleicao-presidencial-",
@@ -1667,7 +2493,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "onibus-parados-sem-circular-pontos-e-terminais-lotados-moradores-organizam-caronas-veja-si",
@@ -1679,7 +2505,7 @@
    "dataPub": "2026-10-25T20:00:01.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-e-flavio-bolsonaro-pedem-ao-tse-prorrogacao-da-votacao-ate-as-19h",
@@ -1694,7 +2520,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-vence-no-reino-unido-com-63-3-dos-votos-no-2-turno",
@@ -1709,33 +2535,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "justica-eleitoral-de-pernambuco-determina-restabelecimento-de-frota-apos-denuncias-de-ause",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Justiça Eleitoral de Pernambuco determina restabelecimento de frota após denúncias de ausência e redução de ônibus no Recife*",
-   "resumo": "Em decisão liminar na tarde deste domingo (25), a desembargadora Roberta Viana Jardim, do TRE-PE (Tribunal Regional Eleitoral de Pernambuco) determinou o restabelecimento imediato da oferta de ônibus…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467748",
-   "dataPub": "2026-10-25T19:58:00.000Z",
-   "mencoes": [],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "tarcisio-diz-que-lula-faz-acusacao-sem-prova-sobre-transporte-e-busca-subterfugio-para-jus",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Tarcísio diz que Lula faz acusação sem prova sobre transporte e busca subterfúgio para justificar derrota",
-   "resumo": "O governador de São Paulo, Tarcísio de Freitas (Republicanos), d iz que o presidente Luiz Inácio Lula da Silva faz acusações sem provas sobre problemas no transporte público do estado e que tenta…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/tarcisio-diz-que-lula-faz-acusacao-sem-prova-sobre-transporte-e-busca-subterfugio-para-justificar-derrota.shtml",
-   "dataPub": "2026-10-25T19:58:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "segundo-turno-no-tocantins-veja-o-resultado-da-eleicao-para-governador-em-tempo-real",
@@ -1750,7 +2550,33 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "justica-eleitoral-de-pernambuco-determina-restabelecimento-de-frota-apos-denuncias-de-ause",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Justiça Eleitoral de Pernambuco determina restabelecimento de frota após denúncias de ausência e redução de ônibus no Recife*",
+   "resumo": "Em decisão liminar na tarde deste domingo (25), a desembargadora Roberta Viana Jardim, do TRE-PE (Tribunal Regional Eleitoral de Pernambuco) determinou o restabelecimento imediato da oferta de ônibus…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467748",
+   "dataPub": "2026-10-25T19:58:00.000Z",
+   "mencoes": [],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "tarcisio-diz-que-lula-faz-acusacao-sem-prova-sobre-transporte-e-busca-subterfugio-para-jus",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Tarcísio diz que Lula faz acusação sem prova sobre transporte e busca subterfúgio para justificar derrota",
+   "resumo": "O governador de São Paulo, Tarcísio de Freitas (Republicanos), d iz que o presidente Luiz Inácio Lula da Silva faz acusações sem provas sobre problemas no transporte público do estado e que tenta…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/tarcisio-diz-que-lula-faz-acusacao-sem-prova-sobre-transporte-e-busca-subterfugio-para-justificar-derrota.shtml",
+   "dataPub": "2026-10-25T19:58:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "tse-apuracao-veja-resultados-do-segundo-turno-em-tempo-real",
@@ -1765,7 +2591,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "ao-vivo-eleicoes-2026-acompanhe-a-votacao-e-a-disputa-entre-flavio-bolsonaro-e-lula-no-2-t",
@@ -1780,7 +2606,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "video-cleitinho-pede-que-apoiadores-de-lula-e-flavio-se-abracem",
@@ -1795,7 +2621,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "quem-e-pablo-souza-secretario-de-mobilidade-de-salvador-que-teve-prisao-decretada-pelo-tre",
@@ -1809,7 +2635,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "segundo-turno-no-rio-grande-do-norte-veja-o-resultado-da-eleicao-para-governador-em-tempo-",
@@ -1824,7 +2650,21 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "zanin-vai-relatar-no-stf-pedido-de-lula-para-prorrogar-horario-da-eleicao",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Zanin vai relatar, no STF, pedido de Lula para prorrogar horário da eleição",
+   "resumo": "Minutos depois do ministro ter sido sorteado relator do processo, Zanin determinou que o horário de votação do segundo turno seja prorrogado até as 19h em todo o país",
+   "link": "https://www.cnnbrasil.com.br/eleicoes/zanin-vai-relatar-no-stf-pedido-de-lula-para-prorrogar-horario-da-eleicao/",
+   "dataPub": "2026-10-25T19:51:08.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "quem-e-o-prefeito-de-salvador-acusado-pelo-pt-de-atrapalhar-votacao-com-falta-de-onibus",
@@ -1839,7 +2679,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "deputada-samia-bomfim-pede-prisao-de-ricardo-nunes-por-descumprir-ordem-de-colocar-100-dos",
@@ -1851,7 +2691,7 @@
    "dataPub": "2026-10-25T19:49:42.000Z",
    "mencoes": [],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "eleitores-organizam-caronas-solidarias-para-locais-de-votacao-apos-denuncias-de-falta-de-o",
@@ -1866,7 +2706,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apuracao-para-governador-nas-eleicoes-2026-veja-resultado-do-2-turno-ao-vivo",
@@ -1880,7 +2720,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "sobrinho-de-dilma-deputado-federal-pedro-rousseff-sofre-acidente-de-carro",
@@ -1894,7 +2734,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "segundo-turno-no-espirito-santo-veja-o-resultado-da-eleicao-para-governador-em-tempo-real",
@@ -1909,7 +2749,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-pede-prorrogacao-de-votacao-em-cidades-com-falhas-no-transporte",
@@ -1923,7 +2763,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "kassio-manda-tre-da-bahia-e-procuradoria-se-manifestarem-em-meia-hora-sobre-transporte-pub",
@@ -1935,7 +2775,7 @@
    "dataPub": "2026-10-25T19:44:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "campanha-de-flavio-bolsonaro-pede-ao-tse-extensao-do-horario-de-votacao-em-mg-rs-pr-sp-e-s",
@@ -1950,7 +2790,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "segundo-turno-no-distrito-federal-veja-o-resultado-da-eleicao-para-governador-em-tempo-rea",
@@ -1965,19 +2805,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "justica-eleitoral-indefere-pedido-de-prisao-do-secretario-municipal-de-transporte-e-do-pre",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Justiça Eleitoral indefere pedido de prisão do secretário municipal de Transporte e do presidente da SPTrans por falta de ônibus no dia da votação",
-   "resumo": "O juiz eleitoral Tiago Machado indeferiu o pedido do PT para que o secretário municipal de Mobilidade Urbana e Transporte, Celso Jorge Caldeira, e o presidente da SPTrans, Victor Hugo Borges, sejam…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467745",
-   "dataPub": "2026-10-25T19:42:00.000Z",
-   "mencoes": [],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "quem-ganhou-no-primeiro-turno-no-exterior-nas-eleicoes-2026",
@@ -1992,7 +2820,19 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "justica-eleitoral-indefere-pedido-de-prisao-do-secretario-municipal-de-transporte-e-do-pre",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Justiça Eleitoral indefere pedido de prisão do secretário municipal de Transporte e do presidente da SPTrans por falta de ônibus no dia da votação",
+   "resumo": "O juiz eleitoral Tiago Machado indeferiu o pedido do PT para que o secretário municipal de Mobilidade Urbana e Transporte, Celso Jorge Caldeira, e o presidente da SPTrans, Victor Hugo Borges, sejam…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467745",
+   "dataPub": "2026-10-25T19:42:00.000Z",
+   "mencoes": [],
+   "tom": "negativo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-e-flavio-dividem-vitorias-nos-primeiros-resultados-do-exterior",
@@ -2007,7 +2847,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "flavio-e-lula-pedem-extensao-do-horario-de-votacao-ate-19h",
@@ -2022,7 +2862,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "acompanhe-a-apuracao-dos-votos-do-2-turno-para-presidente",
@@ -2034,7 +2874,7 @@
    "dataPub": "2026-10-25T19:40:06.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "campanha-de-lula-aciona-o-stf-pedindo-extensao-ate-as-19h-de-votacao-em-todo-o-pais-apos-p",
@@ -2048,19 +2888,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "organizacao-pro-israel-repudia-suposta-saudacao-nazista-em-local-de-votacao-no-rio",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Organização pró-Israel repudia suposta saudação nazista em local de votação no Rio",
-   "resumo": "A StandWithUs, organização pró-Israel, repudiou neste domingo (25) \"o episódio de antissemitismo e apologia ao nazismo\" ocorrido no Rio de Janeiro durante a votação do segundo turno das eleições…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467742",
-   "dataPub": "2026-10-25T19:38:00.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "segundo-turno-no-amazonas-veja-o-resultado-da-eleicao-para-governador-em-tempo-real",
@@ -2075,7 +2903,19 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "organizacao-pro-israel-repudia-suposta-saudacao-nazista-em-local-de-votacao-no-rio",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Organização pró-Israel repudia suposta saudação nazista em local de votação no Rio",
+   "resumo": "A StandWithUs, organização pró-Israel, repudiou neste domingo (25) \"o episódio de antissemitismo e apologia ao nazismo\" ocorrido no Rio de Janeiro durante a votação do segundo turno das eleições…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467742",
+   "dataPub": "2026-10-25T19:38:00.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "campanha-de-flavio-segue-lula-e-tambem-pede-adiamento-do-horario-de-fechamento-das-urnas-e",
@@ -2090,7 +2930,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "votacao-no-exterior-quem-ganhou-em-portugal-no-2-turno-das-eleicoes-2026-",
@@ -2105,7 +2945,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "campanha-de-lula-aciona-o-stf-pedindo-extensao-ate-as-19h-de-votacao-em-salvador-e-mais-du",
@@ -2119,7 +2959,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "coligacao-de-lula-pede-ao-tse-extensao-do-horario-de-votacao-em-cidades-de-10-estados",
@@ -2133,7 +2973,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "segundo-turno-no-acre-veja-o-resultado-da-eleicao-para-governador-em-tempo-real",
@@ -2148,7 +2988,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-vence-eleicoes-na-palestina-flavio-bolsonaro-em-israel",
@@ -2163,7 +3003,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "quem-esta-ganhando-a-eleicao-para-presidente-siga-a-apuracao-do-segundo-turno",
@@ -2175,7 +3015,22 @@
    "dataPub": "2026-10-25T19:30:16.000Z",
    "mencoes": [],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "quem-vai-ganhar-o-2-turno-para-presidente-veja-em-tempo-real-a-disputa-entre-lula-e-flavio",
+   "veiculo": "Exame",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Quem vai ganhar o 2º turno para presidente? Veja em tempo real a disputa entre Lula e Flávio",
+   "resumo": "Quem vai ganhar o 2º turno para presidente? Veja em tempo real a disputa entre Lula e Flávio Exame",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVDR6ck82RGhXUFM1WE0xMGVURmxwSHRDZEpqSU9PTUJUZDJMejdqOHhiS1prbnl0MFhucVY3Sm4xbjVsX1p0M2lycFJOYTNPcDJUUlRab2dSdi1ZQjZYbGpTOVQ5NDNHUzVLQXdiaDBlMTBoV1VJamFlTC16TFdyakcwLXBid3NybWNnX0xrRVVpUFFKSXNBRExXemNWanZJMUNaQ3c2WnZrUi1ZLVE5akFqR3k1a2haT0F2Mg?oc=5",
+   "dataPub": "2026-10-25T19:30:08.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "quem-esta-ganhando-o-2-turno-para-presidente-veja-em-tempo-real-a-disputa-entre-lula-e-fla",
@@ -2193,6 +3048,21 @@
    "coletadoEm": "2026-10-25T22:00:08.111Z"
   },
   {
+   "id": "eleicoes-2026-resultados-da-apuracao-do-segundo-turno-para-governador-do-tocantins",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Eleições 2026: resultados da apuração do segundo turno para governador do Tocantins",
+   "resumo": "O resultado da apuração para governador do Tocantins no segundo turno das Eleições 2026 poderá ser acompanhado ao vivo neste 25 de outubro. Após a prorrogação do horário de votação pelo ministro…",
+   "link": "https://oglobo.globo.com/apuracao-eleicoes-2026/noticia/2026/10/25/eleicoes-2026-resultados-da-apuracao-do-segundo-turno-para-governador-do-tocantins.ghtml",
+   "dataPub": "2026-10-25T19:28:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
    "id": "campanha-de-lula-notifica-companhias-aereas-e-cobra-lista-de-voos-cancelados",
    "veiculo": "Folha de S.Paulo",
    "fonteFeed": "Folha de S.Paulo",
@@ -2204,7 +3074,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-pede-prorrogacao-da-votacao-no-pais-inteiro-e-flavio-bolsonaro-em-cidades-de-3-estado",
@@ -2219,22 +3089,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "eleicoes-2026-resultados-da-apuracao-do-segundo-turno-para-governador-do-tocantins",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Eleições 2026: resultados da apuração do segundo turno para governador do Tocantins",
-   "resumo": "O resultado da apuração para governador do Tocantins no segundo turno das Eleições 2026 poderá ser acompanhado ao vivo neste 25 de outubro. Após a prorrogação do horário de votação pelo ministro…",
-   "link": "https://oglobo.globo.com/apuracao-eleicoes-2026/noticia/2026/10/25/eleicoes-2026-resultados-da-apuracao-do-segundo-turno-para-governador-do-tocantins.ghtml",
-   "dataPub": "2026-10-25T19:28:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "onde-acompanhar-a-apuracao-dos-votos-para-presidente-veja-resultado-ao-vivo",
@@ -2249,7 +3104,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-e-flavio-bolsonaro-pedem-a-justica-extensao-do-prazo-de-votacao",
@@ -2264,7 +3119,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "que-horas-comeca-a-apuracao-no-brasil-como-acompanhar-resultados-do-2-turno",
@@ -2395,21 +3250,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "flavio-bolsonaro-pede-para-ampliar-horario-de-votacao-em-cidades-de-sp",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Flávio Bolsonaro pede para ampliar horário de votação em cidades de SP",
-   "resumo": "A campanha de Flávio Bolsonaro (PL) apresentou pedido ao TSE (Tribunal Superior Eleitoral) para ampliar o horário de votação em cidades de São Paulo, do Paraná e de Santa Catarina por até 2 horas. De…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467739",
-   "dataPub": "2026-10-25T19:23:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "eleicoes-2026-resultados-da-apuracao-do-segundo-turno-para-governador-do-rio-grande-do-nor",
@@ -2424,7 +3265,21 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "flavio-bolsonaro-pede-para-ampliar-horario-de-votacao-em-cidades-de-sp",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Flávio Bolsonaro pede para ampliar horário de votação em cidades de SP",
+   "resumo": "A campanha de Flávio Bolsonaro (PL) apresentou pedido ao TSE (Tribunal Superior Eleitoral) para ampliar o horário de votação em cidades de São Paulo, do Paraná e de Santa Catarina por até 2 horas. De…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467739",
+   "dataPub": "2026-10-25T19:23:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "-nao-poderia-ficar-de-fora-diz-idoso-que-votou-10-dias-apos-cirurgia",
@@ -2436,7 +3291,7 @@
    "dataPub": "2026-10-25T19:23:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "quem-esta-ganhando-a-eleicao-",
@@ -2451,7 +3306,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "campanha-de-lula-pede-que-votacao-seja-estendida-em-cidades-de-mais-nove-estados-alem-da-b",
@@ -2465,7 +3320,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "kassio-da-30-minutos-para-prefeituras-explicarem-falta-de-onibus-na-bahia",
@@ -2492,7 +3347,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "quem-ganhou-as-eleicoes-2026-no-exterior-veja-diferenca-do-1-e-2-turno-entre-lula-e-bolson",
@@ -2507,19 +3362,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "procon-identifica-370-onibus-parados-em-garagens-de-salvador",
-   "veiculo": "Agência Brasil",
-   "fonteFeed": "Agência Brasil",
-   "titulo": "Procon identifica 370 ônibus parados em garagens de Salvador",
-   "resumo": "O Procon da Bahia identificou neste domingo (25) 370 ônibus de transporte público parados em quatro garagens de Salvador, após denúncias de eleitores sobre o bloqueio da saída dos veículos. A…",
-   "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/procon-identifica-370-onibus-parados-em-garagens-de-salvador",
-   "dataPub": "2026-10-25T19:16:00.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-critica-falta-de-transporte-e-pt-pede-para-estender-horario-de-votacao",
@@ -2533,6 +3376,18 @@
     "13"
    ],
    "tom": "negativo",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "procon-identifica-370-onibus-parados-em-garagens-de-salvador",
+   "veiculo": "Agência Brasil",
+   "fonteFeed": "Agência Brasil",
+   "titulo": "Procon identifica 370 ônibus parados em garagens de Salvador",
+   "resumo": "O Procon da Bahia identificou neste domingo (25) 370 ônibus de transporte público parados em quatro garagens de Salvador, após denúncias de eleitores sobre o bloqueio da saída dos veículos. A…",
+   "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/procon-identifica-370-onibus-parados-em-garagens-de-salvador",
+   "dataPub": "2026-10-25T19:16:00.000Z",
+   "mencoes": [],
+   "tom": "neutro",
    "coletadoEm": "2026-10-25T22:00:08.111Z"
   },
   {
@@ -2592,7 +3447,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "sobrinho-de-dilma-pedro-rousseff-sofre-acidente-de-carro",
@@ -2619,7 +3474,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "nunes-marques-pede-que-tre-ba-preste-informacoes-em-meia-hora-sobre-reducao-da-frota-de-on",
@@ -2633,7 +3488,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "seca-e-congestionamento-na-br-319-ameacam-chegada-de-eleitores-a-manaus-no-segundo-turno",
@@ -2645,7 +3500,7 @@
    "dataPub": "2026-10-25T19:10:29.000Z",
    "mencoes": [],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "flavio-x-lula-o-resultado-da-votacao-em-israel-e-palestina-no-segundo-turno",
@@ -2660,7 +3515,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "tse-troca-1-351-urnas-eletronicas-ate-as-15h30-no-2-turno",
@@ -2687,7 +3542,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "segundo-turno-votacao-entra-na-reta-final-que-horas-sai-o-resultado-das-eleicoes-",
@@ -2717,7 +3572,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "brasileira-de-17-anos-e-agredida-apos-votar-em-lisboa",
@@ -2761,7 +3616,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "que-horas-acaba-a-apuracao-dos-votos-nas-eleicoes-2026-",
@@ -2776,7 +3631,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "eduardo-leite-vota-no-rio-grande-do-sul-e-sem-revelar-candidato-diz-que-escolheu-o-mal-men",
@@ -2791,7 +3646,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "que-horas-lula-virou-sobre-bolsonaro-na-apuracao-em-2022-",
@@ -2805,7 +3660,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "alem-da-bahia-lula-pede-extensao-do-horario-de-votacao-em-9-estados",
@@ -2822,21 +3677,6 @@
    "coletadoEm": "2026-10-25T19:23:58.645Z"
   },
   {
-   "id": "cleitinho-pede-por-pacificacao-e-promove-abraco-entre-eleitores-de-lula-e-flavio-em-minas-",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Cleitinho pede por pacificação e promove abraço entre eleitores de Lula e Flávio em Minas Gerais",
-   "resumo": "Antes de votar na manhã deste domingo (25) em Divinópolis (MG), Cleitinho (Republicanos), governador eleito de Minas Gerais em primeiro turno, promoveu um abraço entre um eleitor de Lula (PT) e…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467731",
-   "dataPub": "2026-10-25T19:03:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
    "id": "eleicoes-2026-resultados-da-apuracao-do-segundo-turno-para-governador-do-acre",
    "veiculo": "O Globo",
    "fonteFeed": "O Globo",
@@ -2849,7 +3689,22 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "cleitinho-pede-por-pacificacao-e-promove-abraco-entre-eleitores-de-lula-e-flavio-em-minas-",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Cleitinho pede por pacificação e promove abraço entre eleitores de Lula e Flávio em Minas Gerais",
+   "resumo": "Antes de votar na manhã deste domingo (25) em Divinópolis (MG), Cleitinho (Republicanos), governador eleito de Minas Gerais em primeiro turno, promoveu um abraço entre um eleitor de Lula (PT) e…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467731",
+   "dataPub": "2026-10-25T19:03:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "pt-notifica-tre-sp-por-falta-de-onibus-na-cidade-neste-domingo",
@@ -2890,7 +3745,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apuracao-das-eleicoes-2026-para-governador-resultado-ao-vivo-de-segundo-turno",
@@ -2905,7 +3760,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "quantos-votos-lula-pode-ganhar-com-a-votacao-ate-as-19h-em-sp-e-salvador",
@@ -2933,7 +3788,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "a-vantagem-de-flavio-bolsonaro-nas-pesquisas-sob-pressao",
@@ -2947,7 +3802,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "a-dosimetria-do-golpe",
@@ -2976,7 +3831,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "flavio-pede-ao-tse-mais-2-horas-de-votacao-em-cidades-de-sp-pr-e-sc",
@@ -3004,7 +3859,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "campanha-de-lula-e-pt-pedem-ao-tse-extensao-da-votacao-ate-as-19h-em-dez-estados",
@@ -3058,7 +3913,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "coligacao-de-lula-pede-ao-tse-e-ao-stf-extensao-do-horario-de-votacao-em-cidades-de-pelo-m",
@@ -3073,7 +3928,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "coligacao-de-lula-pede-ao-tse-extensao-do-horario-de-votacao-em-cidades-de-pelo-menos-9-es",
@@ -3101,7 +3956,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-vence-em-portugal-no-segundo-turno-veja-os-numeros",
@@ -3115,7 +3970,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-vence-na-italia-no-segundo-turno-veja-os-numeros",
@@ -3129,7 +3984,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-vence-na-alemanha-no-segundo-turno-veja-os-numeros",
@@ -3143,7 +3998,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "acompanhe-a-apuracao-do-segundo-turno-para-governador-do-rio-grande-do-norte-em-tempo-real",
@@ -3158,7 +4013,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "mudanca-de-local-de-votacao-entre-escolas-a-700m-uma-da-outra-divide-eleitores-na-zona-nor",
@@ -3170,7 +4025,7 @@
    "dataPub": "2026-10-25T18:52:40.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "2-turno-pf-conduz-41-pessoas-a-delegacia-e-investiga-11-crimes-eleitorais",
@@ -3208,7 +4063,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "resultados-em-tempo-real-apuracao-do-2-turno-das-eleicoes-para-presidente-da-republica-de-",
@@ -3223,7 +4078,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-diz-que-pedira-prisao-de-prefeito-bandido-",
@@ -3251,7 +4106,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "pt-pede-a-justica-eleitoral-para-prorrogar-votacao-em-sao-paulo-ate-as-19h-por-falta-de-on",
@@ -3280,7 +4135,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "justica-eleitoral-do-rio-intima-sao-goncalo-a-reforcar-oferta-de-onibus",
@@ -3292,7 +4147,7 @@
    "dataPub": "2026-10-25T18:47:33.000Z",
    "mencoes": [],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-amplia-votacao-na-alemanha-no-segundo-turno",
@@ -3307,7 +4162,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "vereadora-do-pt-ferida-com-tijolada-vota-em-mg-meu-voto-carrega-coragem-",
@@ -3345,7 +4200,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "pedido-para-ampliar-horario-de-votacao-sera-avaliado-afirma-marques",
@@ -3374,7 +4229,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "quem-esta-a-frente-nas-pesquisas-para-presidente-no-2-turno-das-eleicoes-2026-veja-lula-x-",
@@ -3389,7 +4244,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "acompanhe-a-apuracao-do-segundo-turno-para-governador-do-distrito-federal-em-tempo-real",
@@ -3404,7 +4259,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "saiba-quem-e-pablo-souza-secretario-baiano-com-mandado-de-prisao-pelo-tre",
@@ -3445,7 +4300,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "presidente-do-pt-ve-gravidade-na-falta-de-onibus-em-sp-e-salvador-e-defende-prorrogacao-da",
@@ -3459,7 +4314,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "o-senador-flavio-bolsonaro-pl-venceu-o-presidente-luiz-inacio-lula-da-silva-pt-entre-os-br",
@@ -3488,7 +4343,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-amplia-vantagem-e-vence-na-alemanha-com-79-1-dos-votos-no-2-turno",
@@ -3502,21 +4357,21 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-amplia-numero-de-votos-e-vence-novamente-em-portugal",
    "veiculo": "O Globo",
    "fonteFeed": "O Globo",
    "titulo": "Lula amplia número de votos e vence novamente em Portugal",
-   "resumo": "O presidente Luiz Inácio Lula da Silva ampliou a votação que teve no primeiro turno e venceu novamente em Portugal, segundo parcial do núcleo do PT sobre resultado apurado pelo Tribunal Superior…",
+   "resumo": "O presidente Luiz Inácio Lula da Silva ampliou a votação que teve no primeiro turno e venceu novamente em Portugal, segundo o Tribunal Superior Eleitoral (TSE). Matéria exclusiva para assinantes…",
    "link": "https://oglobo.globo.com/blogs/portugal-giro/post/2026/10/lula-amplia-votos-e-vence-novamente-em-portugal-diz-parcial.ghtml",
    "dataPub": "2026-10-25T18:40:30.000Z",
    "mencoes": [
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-pede-prorrogacao-do-horario-de-votacao-apos-problemas-com-onibus-em-sp-e-salvador-nao",
@@ -3530,7 +4385,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "acompanhe-a-apuracao-do-segundo-turno-para-governador-do-amazonas-em-tempo-real",
@@ -3545,7 +4400,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "usuarios-reclamam-ao-aguardar-mais-de-2-horas-onibus-em-sao-paulo",
@@ -3557,7 +4412,7 @@
    "dataPub": "2026-10-25T18:35:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "tse-nao-agiu-de-oficio-diz-nunes-marques-sobre-exercito-do-lula-",
@@ -3586,7 +4441,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "justica-eleitoral-manda-prefeitura-de-sao-paulo-prestar-informacoes-sobre-frota-reduzida-d",
@@ -3600,7 +4455,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-vence-na-espanha-com-68-42-dos-votos-validos-no-2-turno",
@@ -3615,7 +4470,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apuracao-do-segundo-turno-para-governador-do-tocantins-acompanhe-ao-vivo",
@@ -3630,7 +4485,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "em-salvador-quem-estiver-na-secao-eleitoral-as-17h-podera-votar",
@@ -3671,7 +4526,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "-crime-organizado-e-a-base-material-da-extrema-direita-no-brasil-aponta-historiador",
@@ -3683,7 +4538,7 @@
    "dataPub": "2026-10-25T18:26:05.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "nunes-marques-nao-descarta-estender-horario-de-votacao-e-diz-que-e-preciso-aguardar-relato",
@@ -3727,7 +4582,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "-tive-que-andar-40-minutos-ate-minha-secao-espera-de-eleitores-por-onibus-em-sao-goncalo-r",
@@ -3742,7 +4597,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apuracao-do-segundo-turno-para-governador-do-rio-grande-do-norte-acompanhe-ao-vivo",
@@ -3757,7 +4612,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "resultado-parcial-das-eleicoes-no-exterior-atualizado-veja-numeros-de-lula-x-flavio",
@@ -3772,7 +4627,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "a-razao-pela-qual-gilmar-nao-vai-votar-no-2-turno",
@@ -3813,7 +4668,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "ministerio-da-igualdade-racial-quer-apurar-racismo-em-ato-bolsonarista",
@@ -3827,7 +4682,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "voto-no-exterior-veja-os-resultados-por-pais-e-a-apuracao-de-lula-x-flavio-no-2-turno-das-",
@@ -3842,7 +4697,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "-estamos-monitorando-diz-trump-sobre-a-eleicao-no-brasil",
@@ -3897,7 +4752,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "resultado-das-eleicoes-2026-no-segundo-turno-no-exterior-veja-apuracao-por-pais",
@@ -3912,7 +4767,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "parcial-atualizada-do-segundo-turno-das-eleicoes-veja-resultados-no-exterior",
@@ -3924,7 +4779,7 @@
    "dataPub": "2026-10-25T18:11:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-vence-flavio-bolsonaro-na-espanha-com-68-42-no-2-turno",
@@ -3984,7 +4839,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "flavio-reune-tarcisio-nunes-e-zucco-para-acompanhar-apuracao-enquanto-michelle-deve-aguard",
@@ -3999,7 +4854,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "pm-detem-cinco-pessoas-por-crimes-eleitorais-em-sao-paulo",
@@ -4039,7 +4894,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "nunes-nega-falta-de-onibus-e-diz-que-pt-usa-estrategia-ruim-ao-explorar-tema",
@@ -4068,18 +4923,6 @@
    "coletadoEm": "2026-10-25T19:23:58.645Z"
   },
   {
-   "id": "sptrans-fala-em-desafios-operacionais-para-cumprir-ordem-de-disponibilizar-100-da-frota-de",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "SPTrans fala em 'desafios operacionais' para cumprir ordem de disponibilizar 100% da frota de ônibus de SP no dia do segundo turno",
-   "resumo": "A SPTrans informou neste domingo (25) que agiu com \"agilidade e transparência\" para cumprir a ordem de disponibilizar 100% da frota de ônibus na cidade de São Paulo no dia da votação do segundo turno…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/sptrans-fala-em-desafios-operacionais-para-cumprir-ordem-de-disponibilizar-100-da-frota-de-onibus-de-sp-no-dia-do-segundo-turno.shtml",
-   "dataPub": "2026-10-25T18:03:00.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
    "id": "apuracao-do-segundo-turno-para-governador-do-acre-acompanhe-ao-vivo",
    "veiculo": "O Globo",
    "fonteFeed": "O Globo",
@@ -4092,7 +4935,19 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "sptrans-fala-em-desafios-operacionais-para-cumprir-ordem-de-disponibilizar-100-da-frota-de",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "SPTrans fala em 'desafios operacionais' para cumprir ordem de disponibilizar 100% da frota de ônibus de SP no dia do segundo turno",
+   "resumo": "A SPTrans informou neste domingo (25) que agiu com \"agilidade e transparência\" para cumprir a ordem de disponibilizar 100% da frota de ônibus na cidade de São Paulo no dia da votação do segundo turno…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/sptrans-fala-em-desafios-operacionais-para-cumprir-ordem-de-disponibilizar-100-da-frota-de-onibus-de-sp-no-dia-do-segundo-turno.shtml",
+   "dataPub": "2026-10-25T18:03:00.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "quem-ganhou-as-eleicoes-2026-na-china-veja-resultado-da-apuracao-entre-lula-e-bolsonaro",
@@ -4107,7 +4962,22 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
+  },
+  {
+   "id": "flavio-bolsonaro-x-lula-no-tocantins-acompanhe-a-apuracao-do-2-turno",
+   "veiculo": "Jovem Pan",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Flávio Bolsonaro x Lula no Tocantins: acompanhe a apuração do 2º turno",
+   "resumo": "Flávio Bolsonaro x Lula no Tocantins: acompanhe a apuração do 2º turno Jovem Pan",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZ3RLNFNWay1wcUd1SFg0aXF2TnhKUUJ0ZjZaNTZRcmZ6Rml6RURyWlRiSEVEZjhtU1MtVy1TY011TjdNaG5TTXczY256WXUtdW13SnZnN2RicUZIUHJTcUlSbzNiVkp2QUNGbGlOYlU3bTJhYXNpcFlUd2o2ejh3R0N1NGRIVzk0MzByVjg5QjBKazRULW5xOGw3b01kc2JrcWdWSlp3?oc=5",
+   "dataPub": "2026-10-25T18:00:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "trump-diz-estar-observando-eleicoes-no-brasil-mas-desconversa-sobre-apoiar-algum-candidato",
@@ -4135,7 +5005,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-derrota-flavio-bolsonaro-na-franca-com-84-dos-votos-no-2-turno",
@@ -4150,7 +5020,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-vence-em-berlim-milao-e-na-palestina-e-flavio-em-israel-no-voto-do-exterior",
@@ -4165,7 +5035,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "acompanhe-ao-vivo-a-apuracao-do-2-turno-das-eleicoes-2026",
@@ -4204,7 +5074,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "campanha-de-lula-diz-que-so-60-dos-onibus-circulam-em-sp",
@@ -4246,7 +5116,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-vence-na-franca-no-segundo-turno-veja-os-numeros",
@@ -4274,7 +5144,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apoiadores-de-flavio-organizam-caravanas-para-votar-em-nova-york",
@@ -4288,7 +5158,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "flavio-x-lula-qual-foi-o-resultado-da-votacao-em-salvador-no-primeiro-turno",
@@ -4303,7 +5173,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "nunes-marques-vai-decidir-se-estende-votacao-ate-as-19h-em-salvador-feira-de-santana-e-lau",
@@ -4343,7 +5213,7 @@
    "dataPub": "2026-10-25T17:45:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apuracao-de-votos-no-exterior-veja-resultados-parciais-das-eleicoes-no-2-turno",
@@ -4355,7 +5225,7 @@
    "dataPub": "2026-10-25T17:45:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "ministro-do-tse-manda-apurar-suposta-reducao-de-onibus-durante-votacao-na-bahia",
@@ -4382,7 +5252,7 @@
    "dataPub": "2026-10-25T17:42:41.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "eleicoes-2026-entenda-quem-precisa-assinar-o-caderno-de-votacao",
@@ -4397,7 +5267,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "os-numeros-das-ultimas-pesquisas-eleitorais-sobre-a-disputa-entre-flavio-bolsonaro-e-lula",
@@ -4412,7 +5282,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "kassio-rebate-criticas-de-favorecimento-a-campanha-de-flavio-bolsonaro-e-diz-que-nao-usou-",
@@ -4427,7 +5297,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "apuracao-do-2-turno-das-eleicoes-2026-no-exterior-veja-como-esta-a-contagem-de-votos",
@@ -4457,7 +5327,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-pede-prorrogacao-da-votacao-em-cidades-baianas-apos-falta-de-onibus",
@@ -4537,7 +5407,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "oea-pede-tranquilidade-e-respeito-ao-resultado-das-urnas-no-segundo-turno",
@@ -4561,7 +5431,7 @@
    "dataPub": "2026-10-25T17:25:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "amigos-desde-a-infancia-eleitores-de-lula-e-bolsonaro-vao-votar-juntos-no-rio-nos-consider",
@@ -4647,7 +5517,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "lula-e-flavio-bolsonaro-quem-esta-na-frente-veja-resultado-parcial-da-apuracao-no-exterior",
@@ -4662,7 +5532,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "tse-registra-900-urnas-trocadas-e-pf-soma-22-detidos-ate-o-meio-dia",
@@ -4674,7 +5544,7 @@
    "dataPub": "2026-10-25T17:09:22.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "tre-manda-prender-secretario-de-mobilidade-de-salvador-por-queda-em-fluxo-de-onibus-no-2-t",
@@ -4700,7 +5570,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "como-esta-a-votacao-para-presidente-acompanhe-a-apuracao-no-exterior",
@@ -4755,7 +5625,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "ao-vivo-lula-e-flavio-bolsonaro-votam-no-segundo-turno-das-eleicoes-no-brasil",
@@ -4798,7 +5668,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "tre-ba-ordena-prisao-de-secretario-de-mobilidade-de-salvador-por-falta-de-onibus-no-2-turn",
@@ -4810,7 +5680,7 @@
    "dataPub": "2026-10-25T16:55:05.000Z",
    "mencoes": [],
    "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
+   "coletadoEm": "2026-10-25T22:20:06.811Z"
   },
   {
    "id": "homem-e-morto-a-tiros-por-adolescente-em-briga-de-transito-apos-carreata-em-apoio-a-flavio",
@@ -4900,947 +5770,114 @@
    "mencoes": [],
    "tom": "neutro",
    "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "justica-eleitoral-manda-prender-secretario-de-salvador-por-retencao-de-onibus",
-   "veiculo": "UOL",
-   "fonteFeed": "UOL",
-   "titulo": "Justiça Eleitoral manda prender secretário de Salvador por retenção de ônibus",
-   "resumo": "O TRE-BA (Tribunal Regional Eleitoral da Bahia) expediu uma ordem de prisão contra Pablo Souza, secretário municipal de Mobilidade de Salvador, neste domingo (25), após a retenção de ônibus durante o…",
-   "link": "https://redir.folha.com.br/redir/online/colunas/monicabergamo/rss091/*https://www1.folha.uol.com.br/colunas/monicabergamo/2026/10/justica-eleitoral-manda-prender-secretario-de-salvador-por-retencao-de-onibus.shtml",
-   "dataPub": "2026-10-25T16:49:18.547Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "eleicoes-2026-ultimas-noticias-de-flavio-bolsonaro-e-lula-e-a-votacao-no-brasil-e-no-exter",
-   "veiculo": "BBC News Brasil",
-   "fonteFeed": "BBC News Brasil",
-   "titulo": "Eleições 2026: últimas notícias de Flávio Bolsonaro e Lula e a votação no Brasil e no exterior no 2º turno",
-   "resumo": "Urnas ficam abertas das 8h às 17h deste domingo (25/10); acompanhe a cobertura completa sobre a disputa entre Lula e Flávio Bolsonaro. BBC News Brasil terá transmissão ao vivo a partir das 16h30 com…",
-   "link": "https://www.bbc.co.uk/portuguese/live/c6vg0rrxzx13t?at_medium=RSS&at_campaign=rss",
-   "dataPub": "2026-10-25T16:49:18.547Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "como-votar-nas-eleicoes-2026-no-2-turno-veja-ordem-de-votacao",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Como votar nas Eleições 2026 no 2º turno: veja ordem de votação",
-   "resumo": "No domingo de votação, mais de 158,7 milhões de brasileiros voltam às urnas. Saber como votar nas eleições do Brasil no 2º turno ajuda a evitar filas e imprevistos na seção eleitoral. É preciso…",
-   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/25/como-votar-nas-eleicoes-2026-no-2o-turno-veja-ordem-de-votacao.ghtml",
-   "dataPub": "2026-10-25T16:48:12.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "brasileiro-em-portugal-viaja-1-500-km-so-para-votar-no-2-turno",
-   "veiculo": "CartaCapital",
-   "fonteFeed": "CartaCapital",
-   "titulo": "Brasileiro em Portugal viaja 1.500 km só para votar no 2º turno",
-   "resumo": "Homem pegou voo da Ilha dos Açores até Lisboa. Portugal é o segundo maior colégio eleitoral de brasileiros no exterior, atrás somente dos EUA. País deu vitória a Lula no 1º turno",
-   "link": "https://www.cartacapital.com.br/politica/brasileiro-em-portugal-viaja-1-500-km-so-para-votar-no-2o-turno/",
-   "dataPub": "2026-10-25T16:47:19.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "tre-determina-100-da-frota-mas-eleitores-denunciam-demora-de-onibus-em-sp",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "TRE determina 100% da frota, mas eleitores denunciam demora de ônibus em SP",
-   "resumo": "Justiça Eleitoral determinou que cidade de São Paulo opere com 100% da frota de ônibus no 2º turno, mas passageiros encaram outra realidade",
-   "link": "https://www.metropoles.com/sao-paulo/tre-determina-100-da-frota-mas-eleitores-denunciam-demora-de-onibus-em-sp",
-   "dataPub": "2026-10-25T16:45:25.000Z",
-   "mencoes": [],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "sistema-eleitoral-brasileiro-e-muito-solido-e-muito-claro-diz-observador-da-oea-apos-acomp",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Sistema eleitoral brasileiro ‘é muito sólido e muito claro', diz observador da OEA após acompanhar votação",
-   "resumo": "O chefe da missão de observação eleitoral da Organização dos Estados Americanos (OEA) no Brasil, José Miguel Insulza, afirmou neste domingo que o segundo turno das eleições presidenciais ocorre com…",
-   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/25/sistema-eleitoral-brasileiro-e-muito-solido-e-muito-claro-diz-observador-da-oea-apos-acompanhar-votacao.ghtml",
-   "dataPub": "2026-10-25T16:43:56.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "flavio-vence-em-israel-mas-lula-cresce-e-amplia-votacao-no-segundo-turno",
-   "veiculo": "InfoMoney",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Flávio vence em Israel, mas Lula cresce e amplia votação no segundo turno",
-   "resumo": "Flávio vence em Israel, mas Lula cresce e amplia votação no segundo turno InfoMoney",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRVIwUWNFc2hKZEFQa0N3MktGdzBXeVRldEpKQ19pRDkxcWs1U1ltdTZhcWprQm03VTZ1a3lPbFB5OFpMMm9kTUxiZ0Q4NlR6QkpIVEh3eGhRd0l0QnFyNzJ4R2Znd3UtTF83czdLT2NKbkVMcXVoWXZ4VFNhdzBVa1llMy1ONlBURklMZlFBaGVVQlZ2ZHp2R3NwSU1YRmpDdGppajIxT1JPU3Bi0gGyAUFVX3lxTE0yUXFTcm5JbVhjTDBITTBfQ0dDcjl0VU51cm95ZTN0ZzlBaC1rUUszYk1BYTFWOV9kcmwtWlpFeXRsV3JWZllZSVQxcGI1WjhUeW9NWW5SaGdCbk1NZlhibUhIemNoRmZVWFVGWFBRbGpLZVNpSXNqcFA0dEVIWGMyb3BIdFFLVjlVOXQ1UTFBaVNUbG52bTFHdmIwSjJlb0xnNzhpN3ZmaUFySU41UEtkNEE?oc=5",
-   "dataPub": "2026-10-25T16:43:05.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "tse-alerta-para-erro-em-informacoes-sobre-o-que-fazer-caso-voce-descubra-que-outra-pessoa-",
-   "veiculo": "G1",
-   "fonteFeed": "G1",
-   "titulo": "TSE alerta para erro em informações sobre o que fazer caso você 'descubra que outra pessoa votou em seu lugar'",
-   "resumo": "O Tribunal Superior Eleitoral (TSE) publicou uma nota, neste domingo (25), alertando para mensagens falsas que circulam nas redes sociais com orientações incorretas sobre \"o que fazer caso um eleitor…",
-   "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/tse-alerta-para-informacoes-falsas-sobre-eleitor-que-descobre-que-outra-pessoa-votou-em-seu-lugar.ghtml",
-   "dataPub": "2026-10-25T16:42:35.000Z",
-   "mencoes": [],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "lula-lidera-na-palestina-no-2-turno-flavio-bolsonaro-em-israel",
-   "veiculo": "CartaCapital",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Lula lidera na Palestina no 2º turno; Flávio Bolsonaro, em Israel",
-   "resumo": "Lula lidera na Palestina no 2º turno; Flávio Bolsonaro, em Israel CartaCapital",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcEpOQ3VHUTlHLU1UYWtuc3lBcVQ4b1AwVm13T2F1VXBfTm5mQmRmVHNIbWRTV3pONU1CSDZkZHFJV19RTkN1bFVkVEVyQi1IeEg4VDFVUU4yX2psaUxkQm9Yc2tCRFhnQ3ZvcmFaR3pnQkVFc0locVh5NVRzenZYX0ZTRzlRbXk4VHhqcUhQcm40QzdmMDJEdXhFTGIwaHRNZkl1QThoZHY?oc=5",
-   "dataPub": "2026-10-25T16:41:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "lohanna-franca-vota-em-divinopolis-faz-o-l-e-declara-confianca-em-lula",
-   "veiculo": "Estado de Minas",
-   "fonteFeed": "Estado de Minas",
-   "titulo": "Lohanna França vota em Divinópolis, faz o 'L' e declara confiança em Lula",
-   "resumo": "CONFIANTE",
-   "link": "https://www.em.com.br/politica/2026/10/7527403-lohanna-franca-vota-em-divinopolis-faz-o-l-e-declara-confianca-em-lula.html",
-   "dataPub": "2026-10-25T16:40:57.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "maior-mobilizacao-do-eleitorado-brasileiro-marca-o-2-turno-em-paris",
-   "veiculo": "CartaCapital",
-   "fonteFeed": "CartaCapital",
-   "titulo": "Maior mobilização do eleitorado brasileiro marca o 2º turno em Paris",
-   "resumo": "Mesários de sessões eleitorais confirmaram o fenômeno, apontando para uma maior afluência de participantes neste domingo",
-   "link": "https://www.cartacapital.com.br/politica/maior-mobilizacao-do-eleitorado-brasileiro-marca-o-2o-turno-em-paris/",
-   "dataPub": "2026-10-25T16:40:12.000Z",
-   "mencoes": [],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "tarcisio-fala-em-pacificacao-e-diz-que-flavio-tera-equipe-do-coracao-dele-",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "CNN Brasil",
-   "titulo": "Tarcísio fala em pacificação e diz que Flávio terá “equipe do coração dele”",
-   "resumo": "Após votar em São Paulo, governador defendeu autonomia de Flávio Bolsonaro para escolher ministros e prometeu apoio durante eventual mandato",
-   "link": "https://www.cnnbrasil.com.br/eleicoes/tarcisio-fala-em-pacificacao-e-diz-que-flavio-tera-equipe-do-coracao-dele/",
-   "dataPub": "2026-10-25T16:39:50.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "justica-determina-prisao-de-secretario-por-reducao-de-onibus-na-ba",
-   "veiculo": "Poder360",
-   "fonteFeed": "Poder360",
-   "titulo": "Justiça determina prisão de secretário por redução de ônibus na BA",
-   "resumo": "Decisão atende pedido do PT, que alega redução de transporte no 2º turno das eleições; em SP, o partido também acionou o Judiciario",
-   "link": "https://www.poder360.com.br/poder-eleicoes-2026/justica-determina-prisao-de-secretario-por-reducao-de-onibus-na-ba/",
-   "dataPub": "2026-10-25T16:39:40.000Z",
-   "mencoes": [],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "jao-ludmilla-luisa-sonza-simaria-cantores-votam-no-2-turno-das-eleicoes-de-2026-fotos",
-   "veiculo": "G1",
-   "fonteFeed": "G1",
-   "titulo": "Jão, Ludmilla, Luísa Sonza, Simaria: cantores votam no 2º turno das eleições de 2026; FOTOS",
-   "resumo": "Cantores votam no segundo turno Agnews Artistas da música brasileira, como Jão e Simaria, também foram às urnas neste domingo (25) para votar no segundo turno das eleições de 2026. Desta vez, os…",
-   "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/25/jao-ludmilla-luisa-sonza-simaria-cantores-votam-no-2o-turno-das-eleicoes-de-2026-fotos.ghtml",
-   "dataPub": "2026-10-25T16:39:22.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "flavio-bolsonaro-tem-80-81-dos-votos-em-israel-lula-95-60-na-palestina",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "Flávio Bolsonaro tem 80,81% dos votos em Israel; Lula, 95,60% na Palestina",
-   "resumo": "Luiz Inácio Lula da Silva e Flávio Bolsonaro disputam o segundo turno das eleições neste domingo (25/10)",
-   "link": "https://www.metropoles.com/mundo/lula-tem-9560-dos-votos-na-palestina-flavio-8081-em-israel",
-   "dataPub": "2026-10-25T16:36:32.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "pancadaria-apos-carreata-de-flavio-bolsonaro-deixa-um-morto-e-um-ferido",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "Pancadaria após carreata de Flávio Bolsonaro deixa um morto e um ferido",
-   "resumo": "Carreata política de Flávio Bolsonaro termina em tragédia com um morto com três tiros e um ferido grave perto de posto de combustíveis",
-   "link": "https://www.metropoles.com/distrito-federal/na-mira/pancadaria-apos-carreata-de-flavio-bolsonaro-deixa-um-morto-e-um-ferido",
-   "dataPub": "2026-10-25T16:35:33.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "o-para-choque-janonista",
-   "veiculo": "Revista Oeste",
-   "fonteFeed": "Revista Oeste",
-   "titulo": "O para-choque janonista",
-   "resumo": "O lulopetismo nunca precisou de bons motivos, apenas de bons pretextos. E o pretexto deste segundo turno foi, como em 2022, a salvação da democracia contra o fascismo, essa entidade proteiforme que a…",
-   "link": "https://revistaoeste.com/politica/o-para-choque-janonista/",
-   "dataPub": "2026-10-25T16:34:28.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "-estamos-confiantes-diz-alckmin-ao-votar-em-sao-paulo",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "'Estamos confiantes', diz Alckmin ao votar em São Paulo",
-   "resumo": "O vice-presidente da República, Geraldo Alckmin (PSB) disse estar animado para a reeleição de Lula, mas afirmou também que vai aguardar, com humildade, o resultado das urnas. Alckmin votou no início…",
-   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/25/estamos-confiantes-diz-alckmin-ao-votar-em-sao-paulo.ghtml",
-   "dataPub": "2026-10-25T16:33:34.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "-soberania-popular-liderancas-politicas-votam-e-destacam-fortalecimento-da-democracia",
-   "veiculo": "Brasil de Fato",
-   "fonteFeed": "Brasil de Fato",
-   "titulo": "‘Soberania popular’: lideranças políticas votam e destacam fortalecimento da democracia",
-   "resumo": "Autoridades do Poder Judiciário e presidentes do Poder Legislativo compareceram às urnas na manhã deste domingo (25) para registrar seus votos no segundo turno das Eleições 2026. Em declarações à…",
-   "link": "https://www.brasildefato.com.br/2026/10/25/soberania-popular-liderancas-politicas-votam-e-destacam-fortalecimento-da-democracia/",
-   "dataPub": "2026-10-25T16:32:56.000Z",
-   "mencoes": [],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "vereadora-do-pt-e-atacada-durante-carreata-em-montes-claros",
-   "veiculo": "Agência Brasil",
-   "fonteFeed": "Agência Brasil",
-   "titulo": "Vereadora do PT é atacada durante carreata em Montes Claros",
-   "resumo": "A disputa acirrada deste segundo turno tem sido acompanhada por episódios de violência política contra candidatos, militantes, agentes públicos e cidadãos. Em Montes Claros (MG), a vereadora Iara…",
-   "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/vereadora-do-pt-e-atacada-durante-carreata-em-montes-claros",
-   "dataPub": "2026-10-25T16:32:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "cleitinho-faz-gesto-de-apoio-a-flavio-bolsonaro-e-pede-uniao-somos-um-so-",
-   "veiculo": "Estado de Minas",
-   "fonteFeed": "Estado de Minas",
-   "titulo": "Cleitinho faz gesto de apoio a Flávio Bolsonaro e pede união: 'Somos um só'",
-   "resumo": "ELEIÇÕES 2026",
-   "link": "https://www.em.com.br/politica/2026/10/7527392-cleitinho-faz-gesto-de-apoio-a-flavio-bolsonaro-e-pede-uniao-somos-um-so.html",
-   "dataPub": "2026-10-25T16:31:55.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "tre-ba-determina-prisao-de-secretario-em-salvador-por-falta-de-onibus",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "TRE-BA determina prisão de secretário em Salvador por falta de ônibus",
-   "resumo": "TRE-BA ainda determinou restabelecimento e a liberação integral de 100% da frota de transporte coletivo urbano no 2º turno das eleições",
-   "link": "https://www.metropoles.com/colunas/manoela-alcantara/tre-ba-determina-prisao-de-secretario-em-salvador-por-falta-de-onibus",
-   "dataPub": "2026-10-25T16:31:31.000Z",
-   "mencoes": [],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "eleicoes-2026-flavio-diz-que-chegou-a-hora-da-mudanca-lula-fala-que-povo-e-exercito-da-dem",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Eleições 2026: Flávio diz que chegou a 'hora da mudança'; Lula fala que povo é 'exército da democracia'; acompanhe",
-   "resumo": "Eleições 2026: Flávio diz que chegou a 'hora da mudança'; Lula fala que povo é 'exército da democracia'; acompanhe Segundo turno é marcado por votação sem longas filas e tempo chuvoso em parte do…",
-   "link": "https://oglobo.globo.com/politica/eleicoes-2026/ao-vivo/eleicoes-2026-acompanhe-ao-vivo-o-segundo-turno-ao-vivo-no-brasil.ghtml",
-   "dataPub": "2026-10-25T16:30:34.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "tre-da-bahia-manda-prender-secretario-de-mobilidade-de-salvador",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "TRE da Bahia manda prender secretário de mobilidade de Salvador",
-   "resumo": "O presidente do Tribunal Regional Eleitoral da Bahia (TRE-BA), Maurício Kertzman Szporer, determinou a prisão de Pablo Souza, secretário de mobilidade de Salvador. Na manhã deste domingo, cerca de 75…",
-   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/25/tre-da-bahia-manda-prender-secretario-de-mobilidade-de-salvador.ghtml",
-   "dataPub": "2026-10-25T16:30:06.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "mais-de-2-6-milhoes-de-eleitores-justificam-ausencia-no-segundo-turno-ate-as-12h-diz-tse",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Mais de 2,6 milhões de eleitores justificam ausência no segundo turno até as 12h, diz TSE",
-   "resumo": "O TSE (Tribunal Superior Eleitoral) registrou 2.644.306 justificativas de ausência às urnas pelo aplicativo e-Título de sábado (24) até o meio-dia deste domingo (25), dia de votação do segundo turno…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/mais-de-2-milhoes-de-eleitores-justificam-ausencia-no-segundo-turno-ate-as-12h-diz-tse.shtml",
-   "dataPub": "2026-10-25T16:27:00.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "mais-de-2-milhoes-de-eleitores-justificam-ausencia-no-segundo-turno-ate-as-12h-diz-tse",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Mais de 2 milhões de eleitores justificam ausência no segundo turno até as 12h, diz TSE",
-   "resumo": "O TSE (Tribunal Superior Eleitoral) registrou 2.644.306 justificativas de ausência às urnas pelo aplicativo e-Título de sábado (24) até o meio-dia deste domingo (25), dia de votação do segundo turno…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/mais-de-2-milhoes-de-eleitores-justificam-ausencia-no-segundo-turno-ate-as-12h-diz-tse.shtml",
-   "dataPub": "2026-10-25T16:27:00.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "ministro-do-stf-gilmar-mendes-nao-votara-no-2-turno-por-questoes-medicas",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "Ministro do STF, Gilmar Mendes não votará no 2º turno por questões médicas",
-   "resumo": "Ministro está em Brasília, onde se recupera de uma lesão no braço. Por ter 70 anos, ele não é obrigado a votar nem a justificar a ausência",
-   "link": "https://www.metropoles.com/colunas/manoela-alcantara/ministro-do-stf-gilmar-mendes-nao-votara-no-2o-turno-por-questoes-medicas",
-   "dataPub": "2026-10-25T16:26:56.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "catar-indonesia-e-grecia-onde-flavio-bolsonaro-venceu-lula-no-exterior-",
-   "veiculo": "Exame",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Catar, Indonésia e Grécia: onde Flávio Bolsonaro venceu Lula no exterior?",
-   "resumo": "Catar, Indonésia e Grécia: onde Flávio Bolsonaro venceu Lula no exterior? Exame",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOaVMyLS1HVTBHRWs2Z1hKNEhhczdMeDVxUUhzaUItd2Q2MTNySW01dlB1TlFjcW1VeDNYMFpCNU5qQXBPMURoOEhOT2JleFJtbUVVOEMzaS13azlrcTdqOXEyTzhVaG1MNTV1ZnhuSE5JbTIwcUE3NFBETkYzSjdhUjlCZHNoM0VtbHh1cS1CY1VtRklnVUR4d3pR?oc=5",
-   "dataPub": "2026-10-25T16:26:35.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "trump-diz-que-nao-quer-comentar-sobre-endosso-mas-diz-que-esta-monitorando-eleicoes-no-bra",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Trump diz que não quer comentar sobre endosso, mas diz que está monitorando eleições no Brasil",
-   "resumo": "O presidente dos EUA, Donald Trump, foi questionado se estava acompanhando as eleições brasileiras neste domingo (25) e se deve endossar o candidato Flávio Bolsonaro (PL) ou Lula (PT). Leia mais…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://aovivo.folha.uol.com.br/poder-poder_e_politica/2026/10/25/6567-acompanhe-ao-vivo-o-segundo-turno-entre-flavio-bolsonaro-e-lula-nas-eleicoes-de-2026.shtml#post467688",
-   "dataPub": "2026-10-25T16:25:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "a-que-horas-sai-o-resultado-do-2-turno-das-eleicoes-2026-entre-lula-e-flavio-bolsonaro-",
-   "veiculo": "JOTA Info",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "A que horas sai o resultado do 2º turno das eleições 2026 entre Lula e Flávio Bolsonaro?",
-   "resumo": "A que horas sai o resultado do 2º turno das eleições 2026 entre Lula e Flávio Bolsonaro? JOTA Info",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdF94eExEcXFnV25nQVRNRFBOYVVkM3Y2NWZHcVFybU03dlN5S3dkdDRzVXE2WFNya01HS04tLWZudDktYjNjeHZqUGJsT0NHcWRTV2liNVNfRUJFVWRNWHE4M01mcUJlcWhwRUpWNUw2c1Z2dXBwdmlvLU9rMUhNNUFDUFFUZEQ0MElfdkxVUjd0cHBDWEh2czNOLTgtRndTbFZvcW4wNWRxbDhwdElWbjBwNWpNYXEtWDRmTXItZU5KenVkeXJfNnp5WWQ?oc=5",
-   "dataPub": "2026-10-25T16:22:44.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "tre-df-apreende-1-1-mil-itens-de-propaganda-irregular-no-segundo-turno",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "TRE-DF apreende 1,1 mil itens de propaganda irregular no segundo turno",
-   "resumo": "Justiça Eleitoral recebeu 77 denúncias de propaganda irregular entre o sábado (24/10) e a manhã deste domingo (25/10)",
-   "link": "https://www.metropoles.com/distrito-federal/tre-df-apreende-11-mil-itens-de-propaganda-irregular-no-segundo-turno",
-   "dataPub": "2026-10-25T16:20:43.000Z",
-   "mencoes": [],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "tse-registra-2-6-milhoes-de-justificativas-de-ausencia-pelo-e-titulo-ate-o-meio-dia",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "TSE registra 2,6 milhões de justificativas de ausência pelo e-título até o meio-dia",
-   "resumo": "O Tribunal Superior Eleitoral (TSE) divulgou dados sobre o uso do e-Título. Até o meio-dia, foram emitidas 2,644 milhões de justificativas de ausência pelo aplicativo. No primeiro turno, até as…",
-   "link": "https://oglobo.globo.com/politica/eleicoes-2026/guia/tse-registra-23-milhoes-de-justificativas-de-ausencia-pelo-e-titulo-ate-o-meio-dia.ghtml",
-   "dataPub": "2026-10-25T16:20:07.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "dilma-rousseff-vota-em-belo-horizonte-ovacionada-por-eleitores",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "CNN Brasil",
-   "titulo": "Dilma Rousseff vota em Belo Horizonte ovacionada por eleitores",
-   "resumo": "Ex-presidente viajará a São Paulo e deve acompanhar a apuração junto com presidente Lula",
-   "link": "https://www.cnnbrasil.com.br/eleicoes/dilma-rousseff-vota-em-belo-horizonte-ovacionada-por-eleitores/",
-   "dataPub": "2026-10-25T16:19:39.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "moraes-autoriza-bolsonaro-a-retomar-reunioes-semanais-com-grupo-de-oracao",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Moraes autoriza Bolsonaro a retomar reuniões semanais com grupo de oração",
-   "resumo": "O ministro Alexandre de Moraes, do Supremo Tribunal Federal (STF), autorizou o ex-presidente Jair Bolsonaro (PL) a retomar as reuniões semanais com um grupo de oração na residência onde cumpre prisão…",
-   "link": "https://oglobo.globo.com/politica/noticia/2026/10/25/moraes-autoriza-bolsonaro-a-retomar-reunioes-semanais-com-grupo-de-oracao.ghtml",
-   "dataPub": "2026-10-25T16:18:42.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "tre-ba-exige-frota-total-de-onibus-em-salvador-no-segundo-turno",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "CNN Brasil",
-   "titulo": "TRE-BA exige frota total de ônibus em Salvador no segundo turno",
-   "resumo": "Decisão estabelece multa de R$ 1 milhão por hora em caso de descumprimento pela prefeitura e concessionárias",
-   "link": "https://www.cnnbrasil.com.br/eleicoes/tre-ba-exige-frota-total-de-onibus-em-salvador-no-segundo-turno/",
-   "dataPub": "2026-10-25T16:17:19.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "dois-fiscais-do-pl-sao-detidos-por-suspeita-de-crime-eleitoral-no-rio",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "Dois fiscais do PL são detidos por suspeita de crime eleitoral no Rio",
-   "resumo": "Casos ocorreram no Colégio Estadual Amaro Cavalcanti, no Catete. Suspeitos são acusados de pedir votos para Flávio Bolsonaro",
-   "link": "https://www.metropoles.com/brasil/dois-fiscais-do-pl-sao-detidos-por-suspeita-de-crime-eleitoral-no-rio",
-   "dataPub": "2026-10-25T16:16:29.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "presidentes-do-senado-e-da-camara-fazem-visita-ao-tse",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Presidentes do Senado e da Câmara fazem visita ao TSE",
-   "resumo": "Os presidentes do Senado, Davi Alcolumbre (União-AP), e da Câmara dos Deputados, Hugo Motta (Republicanos-PB), fazem uma visita institucional ao Tribunal Superior Eleitoral (TSE) neste domingo. Os…",
-   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/25/presidentes-do-senado-e-da-camara-fazem-visita-ao-tse.ghtml",
-   "dataPub": "2026-10-25T16:13:52.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "voto-por-combustivel-propaganda-irregular-violacao-do-sigilo-pf-conduziu-61-investigados",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Voto por combustível, propaganda irregular, violação do sigilo; PF conduziu 61 investigados",
-   "resumo": "A Polícia Federal registrou 47 termos circunstanciados de ocorrência (TCs) para apurar a prática de crimes eleitorais no segundo turno das eleições até as 17hs deste domingo, 25. Segundo o balanço…",
-   "link": "https://www.estadao.com.br/politica/blog-do-fausto-macedo/voto-por-combustivel-propaganda-irregular-e-violacao-do-sigilo-marcam-acoes-da-pf-no-segundo-turno/",
-   "dataPub": "2026-10-25T16:13:14.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "voto-por-combustivel-propaganda-irregular-violacao-do-sigilo-pf-ja-conduziu-38-investigado",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Voto por combustível, propaganda irregular, violação do sigilo; PF já conduziu 38 investigados",
-   "resumo": "A Polícia Federal registrou 26 termos circunstanciados de ocorrência (TCs) para apurar a prática de crimes eleitorais no segundo turno das eleições até as 14h30 deste domingo, 25. Segundo o balanço…",
-   "link": "https://www.estadao.com.br/politica/blog-do-fausto-macedo/voto-por-combustivel-propaganda-irregular-e-violacao-do-sigilo-marcam-acoes-da-pf-no-segundo-turno/",
-   "dataPub": "2026-10-25T16:13:14.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "voto-por-combustivel-propaganda-irregular-e-violacao-do-sigilo-marcam-acoes-da-pf-no-segun",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Voto por combustível, propaganda irregular e violação do sigilo marcam ações da PF no segundo turno",
-   "resumo": "A Polícia Federal registrou dois termos circunstanciados de ocorrência (TCs) para apurar a prática de crimes eleitorais no segundo turno das eleições até as 10h30 da manhã deste domingo, 25. Segundo…",
-   "link": "https://www.estadao.com.br/politica/blog-do-fausto-macedo/voto-por-combustivel-propaganda-irregular-e-violacao-do-sigilo-marcam-acoes-da-pf-no-segundo-turno/",
-   "dataPub": "2026-10-25T16:13:14.000Z",
-   "mencoes": [],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "tarcisio-vota-em-sao-paulo-e-diz-que-brasil-quer-mudanca",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Tarcísio vota em São Paulo e diz que Brasil quer mudança",
-   "resumo": "O governador Tarcísio de Freitas (Republicanos) disse que o eleitor vai mostrar o que já havia sinalizado no primeiro turno, que quer um voto por mudança em Flávio Bolsonaro (PL) — de quem Tarcísio é…",
-   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/25/tarcisio-vota-em-sao-paulo-e-diz-que-brasil-quer-mudanca.ghtml",
-   "dataPub": "2026-10-25T16:12:06.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "haddad-vota-em-sp-e-destaca-clima-excelente-nas-ruas-para-reeleicao-de-lula",
-   "veiculo": "Estado de Minas",
-   "fonteFeed": "Estado de Minas",
-   "titulo": "Haddad vota em SP e destaca \"clima excelente nas ruas\" para reeleição de Lula",
-   "resumo": "ELEIÇÕES 2026",
-   "link": "https://www.em.com.br/politica/2026/10/7527385-haddad-vota-em-sp-e-destaca-clima-excelente-nas-ruas-para-reeleicao-de-lula.html",
-   "dataPub": "2026-10-25T16:11:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "hugo-motta-e-alcolumbre-visitam-tse-durante-2-turno-das-eleicoes",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "CNN Brasil",
-   "titulo": "Hugo Motta e Alcolumbre visitam TSE durante 2º turno das eleições",
-   "resumo": "Presidentes da Câmara e do Senado foram à sede da Corte Eleitoral, em Brasília, neste domingo (25), dia da disputa entre Lula e Flávio Bolsonaro pela Presidência",
-   "link": "https://www.cnnbrasil.com.br/eleicoes/hugo-motta-e-alcolumbre-visitam-tse-durante-2o-turno-das-eleicoes/",
-   "dataPub": "2026-10-25T16:10:16.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "vice-de-flavio-alfredo-gaspar-se-diz-confiante-a-mensagem-foi-passada-",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "Vice de Flávio, Alfredo Gaspar se diz confiante: \"A mensagem foi passada\"",
-   "resumo": "Após citar a confiança com o resultado do 2º turno, o vice de Flávio disse que deve ir a Brasília depois de votar para acompanhar apuração",
-   "link": "https://www.metropoles.com/brasil/vice-de-flavio-alfredo-gaspar-se-diz-confiante-a-mensagem-foi-passada",
-   "dataPub": "2026-10-25T16:09:52.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "nikolas-preve-vitoria-de-flavio-nem-cogito-possibilidade-de-perder-",
-   "veiculo": "Congresso em Foco",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Nikolas prevê vitória de Flávio: \"nem cogito possibilidade de perder\"",
-   "resumo": "Nikolas prevê vitória de Flávio: \"nem cogito possibilidade de perder\" Congresso em Foco",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdTItMVk5Vk5XVENGYy1jM2k0b1RVUWh1MlNpUGxmcldBeUFtUkh5aW1QZmZsTjYxY0FCZkc1TjNCTUdibElncWVaN3FqX0FXSEY4NEt0QkhRcnlLS2x2N2VQQVpZbG5HWllObmhUX3RYZTdrNE9VdHBPLUFwLTM3Q3dUaVoyWWEwUDhHYUFTUzNYay04LWJIUVJoTDNCYWkxZGF5Wjh1LUVQMUYyRkFyUkVscUhiZ09v?oc=5",
-   "dataPub": "2026-10-25T16:09:09.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "jovem-morre-apos-cair-de-caminhao-em-carreata-em-apoio-a-flavio-em-goias",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Jovem morre após cair de caminhão em carreata em apoio a Flávio, em Goiás",
-   "resumo": "O jovem de 19 anos Matheus Henrique Oliveira faleceu neste sábado, 24, após cair de um caminhão durante uma carreata, em Goianésia (GO), às vésperas do segundo turno das eleições . Matheus estava no…",
-   "link": "https://www.estadao.com.br/politica/eleicoes/jovem-morre-apos-ser-atropelado-em-carreata-em-apoio-a-flavio-em-goias/",
-   "dataPub": "2026-10-25T16:09:02.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "jovem-morre-apos-ser-atropelado-em-carreata-em-apoio-a-flavio-em-goias",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Jovem morre após ser atropelado em carreata em apoio a Flávio, em Goiás",
-   "resumo": "O jovem de 19 anos Matheus Henrique Oliveira faleceu neste sábado, 24, após cair de um caminhão durante uma carreata, em Goianésia (GO), às vésperas do segundo turno das eleições . Matheus estava no…",
-   "link": "https://www.estadao.com.br/politica/eleicoes/jovem-morre-apos-ser-atropelado-em-carreata-em-apoio-a-flavio-em-goias/",
-   "dataPub": "2026-10-25T16:09:02.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "alckmin-vota-em-sp-e-critica-ataques-contra-apoiadores-de-lula",
-   "veiculo": "G1",
-   "fonteFeed": "G1",
-   "titulo": "Alckmin vota em SP e critica ataques contra apoiadores de Lula",
-   "resumo": "Geraldo Alckimin vota na Zona Sul de São Paulo Reprodução/TV Globo O vice-presidente da República, Geraldo Alckmin (PSB), votou no início da tarde deste domingo (25) no Colégio Santo Américo, no…",
-   "link": "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/10/25/alckmin-vota-em-sp-e-critica-ataques-contra-apoiadores-de-lula.ghtml",
-   "dataPub": "2026-10-25T16:08:07.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "arthur-aguiar-o-que-diz-a-lei-sobre-enquetes-eleitorais-nas-redes-sociais-",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "Arthur Aguiar: o que diz a lei sobre enquetes eleitorais nas redes sociais?",
-   "resumo": "Arthur Aguiar cometeu um crime eleitoral após publicar uma enquete um dia antes do segundo turno",
-   "link": "https://www.metropoles.com/celebridades/arthur-aguiar-o-que-diz-a-lei-sobre-enquetes-eleitorais-nas-redes-sociais",
-   "dataPub": "2026-10-25T16:07:51.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "ex-apoiadora-de-lula-roberta-luchsinger-diz-ter-votado-em-flavio",
-   "veiculo": "Poder360",
-   "fonteFeed": "Poder360",
-   "titulo": "Ex-apoiadora de Lula, Roberta Luchsinger diz ter votado em Flávio",
-   "resumo": "Lobista diz que petista \"já não reúne as condições necessárias para conduzir o país\" e que espera que senador do PL possa começar um \"novo ciclo\"",
-   "link": "https://www.poder360.com.br/poder-eleicoes-2026/ex-apoiadora-de-lula-roberta-luchsinger-diz-ter-votado-em-flavio/",
-   "dataPub": "2026-10-25T16:07:21.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "infestacao-de-pulgas-muda-local-de-votacao-de-3-mil-eleitores-no-rio",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Infestação de pulgas muda local de votação de 3 mil eleitores no Rio",
-   "resumo": "Segundo o Tribunal Regional Eleitoral do Rio de Janeiro (TRE-RJ), o problema na Escola Municipal Visconde de Porto Seguro foi identificado no primeiro turno. A unidade passou por dedetização e…",
-   "link": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/25/infestacao-de-pulgas-muda-local-de-votacao-de-3-mil-eleitores-no-rio.ghtml",
-   "dataPub": "2026-10-25T16:06:57.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "confiante-na-vitoria-de-flavio-simoes-promete-13o-e-janeiro-quitados",
-   "veiculo": "Estado de Minas",
-   "fonteFeed": "Estado de Minas",
-   "titulo": "Confiante na vitória de Flávio, Simões promete 13o. e janeiro quitados",
-   "resumo": "Eleição",
-   "link": "https://www.em.com.br/politica/2026/10/7527397-confiante-na-vitoria-de-flavio-simoes-promete-13o-e-janeiro-quitados.html",
-   "dataPub": "2026-10-25T16:04:11.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "mais-de-450-urnas-sao-substituidas-nas-primeiras-duas-horas-de-votacao",
-   "veiculo": "Revista Oeste",
-   "fonteFeed": "Revista Oeste",
-   "titulo": "Mais de 450 urnas são substituídas nas primeiras duas horas de votação",
-   "resumo": "Boletim do Tribunal Superior Eleitoral (TSE) informou que 467 urnas eletrônicas precisaram ser substituídas em todo o país neste domingo, 25, durante as primeiras duas horas na votação do segundo…",
-   "link": "https://revistaoeste.com/politica/mais-de-450-urnas-sao-substituidas-nas-primeiras-duas-horas-de-votacao/",
-   "dataPub": "2026-10-25T16:03:39.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "alckmin-vota-em-sp-e-critica-violencia-politica",
-   "veiculo": "Poder360",
-   "fonteFeed": "Poder360",
-   "titulo": "Alckmin vota em SP e critica violência política",
-   "resumo": "Vice-presidente citou agressões no Estado e em Minas Gerais e comparou atos pró-Lula às mobilizações pelas Diretas Já",
-   "link": "https://www.poder360.com.br/poder-eleicoes-2026/alckmin-vota-em-sp-e-critica-violencia-politica/",
-   "dataPub": "2026-10-25T16:03:29.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "apuracao-na-europa-lula-vence-em-tres-paises-flavio-leva-a-grecia",
-   "veiculo": "Exame",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Apuração na Europa: Lula vence em três países; Flávio leva a Grécia",
-   "resumo": "Apuração na Europa: Lula vence em três países; Flávio leva a Grécia Exame",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZXROdlExTW5KWTJ3LVByN3Nfam5hOTNvQVJXeXJsSGtlT2RJS0YxVFVIOTB2dVN3bFFGc0MzN2trcU52VEJkUHFUV3RjcGlidkpicElKYnE1aEVyUEYtd0ZaWXpnZk9MZ3Fub1VFUDFTNXFLbEFZYjJjS0d0UE9hcFpEdUg4ZGNnOG1LcU0tSEM2MVF2QVE?oc=5",
-   "dataPub": "2026-10-25T16:03:08.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "eleitores-vao-cedo-aos-locais-de-votacao-no-rio-mesmo-com-chuva",
-   "veiculo": "Agência Brasil",
-   "fonteFeed": "Agência Brasil",
-   "titulo": "Eleitores vão cedo aos locais de votação no Rio, mesmo com chuva",
-   "resumo": "Os eleitores do Rio de Janeiro comparecem aos locais de votação no horário de abertura das urnas, neste domingo (25), mesmo com chuva. Quase 12,9 milhões de pessoas estão aptas a votar no estado…",
-   "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/eleitores-vao-cedo-aos-locais-de-votacao-no-rio",
-   "dataPub": "2026-10-25T15:59:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "que-horas-comeca-a-apuracao-do-segundo-turno-das-eleicoes-de-2026-",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Que horas começa a apuração do segundo turno das eleições de 2026?",
-   "resumo": "Desde o início da manhã deste domingo, eleitores de todo o Brasil comparecem às urnas para votar no segundo turno das eleições de 2026 e escolher o próximo presidente da República. A votação segue…",
-   "link": "https://oglobo.globo.com/politica/eleicoes-2026/guia/que-horas-comeca-a-apuracao-do-segundo-turno-das-eleicoes-de-2026.ghtml",
-   "dataPub": "2026-10-25T15:56:01.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T19:23:58.645Z"
-  },
-  {
-   "id": "chuvas-cancelam-voos-e-alteram-locais-de-votacao-em-sp-mas-situacao-e-considerada-normal",
-   "veiculo": "Brasil de Fato",
-   "fonteFeed": "Brasil de Fato",
-   "titulo": "Chuvas cancelam voos e alteram locais de votação em SP, mas situação é considerada normal",
-   "resumo": "Fortes temporais que atingiram o estado de São Paulo na noite de sábado (24) e na madrugada deste domingo (25) provocaram o alagamento de vias públicas, alteraram emergencialmente locais de votação…",
-   "link": "https://www.brasildefato.com.br/2026/10/25/chuvas-cancelam-voos-e-alteram-locais-de-votacao-em-sp-mas-situacao-e-considerada-normal/",
-   "dataPub": "2026-10-25T15:54:54.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
-  },
-  {
-   "id": "janja-vota-em-sp-e-diz-que-povo-nao-entregara-o-pais-a-miliciano-",
-   "veiculo": "Poder360",
-   "fonteFeed": "Poder360",
-   "titulo": "Janja vota em SP e diz que “povo não entregará o país a miliciano”",
-   "resumo": "Primeira-dama também declarou que Flávio \"defende um assassino de criança\", em referência ao caso Ana Clara",
-   "link": "https://www.poder360.com.br/poder-eleicoes-2026/janja-vota-em-sao-paulo/",
-   "dataPub": "2026-10-25T15:53:18.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-10-25T16:49:18.547Z"
-  },
-  {
-   "id": "homem-e-morto-a-tiros-em-carreata-pro-flavio-em-ms-e-briga-politica-deixa-dois-mortos-em-m",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Homem é morto a tiros em carreata pró-Flávio em MS, e briga política deixa dois mortos em MT",
-   "resumo": "Três pessoas morreram baleadas e outras três ficaram feridas em duas brigas por motivações políticas em Mato Grosso do Sul e Mato Grosso , na noite de sábado (24). Ninguém foi preso. Leia mais…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/10/brigas-por-divergencia-politica-deixam-tres-mortos-em-mt-e-ms.shtml",
-   "dataPub": "2026-10-25T15:53:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-10-25T22:00:08.111Z"
   }
  ],
  "midia": {
   "janelaHoras": 72,
   "totalManchetes": 400,
   "mencoes": {
-   "13": 263,
-   "22": 195
+   "13": 284,
+   "22": 207
   },
   "tom": {
    "13": {
-    "positivo": 53,
-    "neutro": 168,
-    "negativo": 42
+    "positivo": 52,
+    "neutro": 192,
+    "negativo": 40
    },
    "22": {
-    "positivo": 42,
-    "neutro": 134,
+    "positivo": 37,
+    "neutro": 151,
     "negativo": 19
    }
   },
   "termos": [
    [
     "votação",
-    90
+    94
    ],
    [
     "apuração",
-    68
+    82
    ],
    [
     "ônibus",
-    57
+    53
    ],
    [
     "resultado",
-    37
+    40
+   ],
+   [
+    "zanin",
+    33
    ],
    [
     "salvador",
-    36
+    32
    ],
    [
     "pede",
-    31
+    30
    ],
    [
     "falta",
     29
    ],
    [
+    "prorrogação",
+    28
+   ],
+   [
     "governador",
     28
    ],
    [
-    "urnas",
-    25
-   ],
-   [
-    "zanin",
-    25
-   ],
-   [
     "acompanhe",
-    24
+    28
    ],
    [
-    "eleitores",
-    23
+    "urnas",
+    28
    ],
    [
     "horário",
-    23
-   ],
-   [
-    "vence",
-    22
-   ],
-   [
-    "prorrogação",
-    21
-   ],
-   [
-    "transporte",
-    21
-   ],
-   [
-    "exterior",
-    21
+    27
    ],
    [
     "tempo",
-    20
+    23
+   ],
+   [
+    "transporte",
+    22
    ],
    [
     "resultados",
-    19
-   ],
-   [
-    "prisão",
-    19
-   ],
-   [
-    "justiça",
-    18
-   ],
-   [
-    "secretário",
-    18
-   ],
-   [
-    "país",
-    17
+    21
    ],
    [
     "real",
+    20
+   ],
+   [
+    "vence",
+    20
+   ],
+   [
+    "exterior",
+    19
+   ],
+   [
+    "pais",
+    18
+   ],
+   [
+    "eleitores",
+    17
+   ],
+   [
+    "prisão",
     17
    ],
    [
@@ -5848,19 +5885,15 @@
     17
    ],
    [
-    "horas",
+    "justiça",
     16
    ],
    [
-    "eleitoral",
-    15
-   ],
-   [
-    "votar",
+    "nunes",
     14
    ],
    [
-    "paulo",
+    "secretário",
     14
    ],
    [
@@ -5872,79 +5905,91 @@
     14
    ],
    [
+    "frente",
+    13
+   ],
+   [
+    "horas",
+    13
+   ],
+   [
+    "decisão",
+    12
+   ],
+   [
+    "eleitoral",
+    12
+   ],
+   [
     "estados",
     12
    ],
    [
-    "decisão",
+    "paulo",
+    12
+   ],
+   [
+    "votar",
+    11
+   ],
+   [
+    "válidos",
     10
    ],
    [
-    "determina",
-    10
-   ],
-   [
-    "frota",
-    10
-   ],
-   [
-    "nunes",
-    10
-   ],
-   [
-    "bahia",
-    10
-   ],
-   [
-    "vota",
-    10
-   ],
-   [
-    "acompanhar",
+    "eleitorais",
     9
    ],
    [
-    "trump",
+    "marques",
+    9
+   ],
+   [
+    "denúncias",
+    9
+   ],
+   [
+    "acompanhar",
     9
    ]
   ],
   "serieDiaria": [
    {
-    "13": 263,
-    "22": 195,
+    "13": 284,
+    "22": 207,
     "dia": "2026-10-25"
    }
   ],
   "veiculos": {
-   "UOL": 20,
+   "UOL": 23,
    "BBC News Brasil": 9,
-   "Poder360": 17,
-   "Revista Oeste": 20,
-   "Estadão": 28,
-   "Folha de S.Paulo": 42,
-   "Estado de Minas": 10,
-   "Agência Brasil": 18,
-   "Metrópoles": 24,
-   "G1": 29,
-   "UOL Notícias": 6,
-   "O Globo": 90,
-   "DW.com": 1,
    "VEJA": 5,
-   "Brasil de Fato": 19,
-   "CartaCapital": 17,
+   "Metrópoles": 19,
+   "O Globo": 90,
+   "Estado de Minas": 8,
+   "G1": 28,
+   "CNN Brasil": 44,
+   "Folha de S.Paulo": 40,
+   "Agência Brasil": 17,
+   "Poder360": 13,
+   "Revista Oeste": 18,
+   "Estadão": 23,
+   "UOL Notícias": 6,
+   "DW.com": 1,
+   "JOTA Info": 3,
+   "Brasil de Fato": 17,
+   "Exame": 3,
+   "CartaCapital": 14,
    "O Bom da Notícia": 1,
-   "Exame": 4,
    "Nexo Jornal": 2,
    "Migalhas": 1,
-   "JOTA Info": 3,
-   "CNN Brasil": 18,
    "Valor Econômico": 1,
-   "Congresso em Foco": 10,
+   "Congresso em Foco": 9,
    "Instagram": 1,
    "Brasil 247": 1,
+   "Jovem Pan": 1,
    "AFP Checamos": 1,
-   "Bloomberg Línea Brasil": 1,
-   "InfoMoney": 1
+   "Bloomberg Línea Brasil": 1
   }
  },
  "primeiroTurno": {
@@ -6564,536 +6609,536 @@
   "fonte": "TSE (espelho do robô)",
   "urlBr": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json",
   "codigoEleicao": "6258",
-  "horaTSE": "25/10/2026 17:06:31",
-  "espelhadoEm": "2026-10-25T22:00:08.111Z",
-  "pctSecoes": 0.25,
+  "horaTSE": "25/10/2026 19:19:36",
+  "espelhadoEm": "2026-10-25T22:20:06.811Z",
+  "pctSecoes": 2.33,
   "eleitorado": 158745502,
-  "comparecimento": 345054,
-  "abstencao": 337841,
-  "pctAbstencao": 49.47,
-  "brancos": 4158,
-  "pctBrancos": 1.21,
-  "nulos": 5153,
-  "pctNulos": 1.49,
-  "validos": 335743,
+  "comparecimento": 2992236,
+  "abstencao": 949334,
+  "pctAbstencao": 24.09,
+  "brancos": 30427,
+  "pctBrancos": 1.02,
+  "nulos": 57670,
+  "pctNulos": 1.93,
+  "validos": 2904139,
   "votos": {
    "13": {
-    "votos": 193574,
-    "pct": 57.66
+    "votos": 1495412,
+    "pct": 51.49
    },
    "22": {
-    "votos": 142169,
-    "pct": 42.34
+    "votos": 1408727,
+    "pct": 48.51
    }
   },
-  "diferenca": 51405,
+  "diferenca": 86685,
   "lider": "13",
-  "eleitoresRestantes": 158062607,
+  "eleitoresRestantes": 154803932,
   "decidido": false,
   "uf": {
    "AC": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 10361,
+     "pct": 38.94
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 16248,
+     "pct": 61.06
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 26609,
+    "pctSecoes": 7.36,
+    "brancos": 240,
+    "nulos": 1236,
+    "abstencao": 12835,
     "eleitorado": 613715,
-    "horaTSE": "13/10/2026 17:42:47"
+    "horaTSE": "25/10/2026 19:19:05"
    },
    "BA": {
     "13": {
-     "votos": 1148,
-     "pct": 72.2
+     "votos": 26071,
+     "pct": 70.3
     },
     "22": {
-     "votos": 442,
-     "pct": 27.8
+     "votos": 11013,
+     "pct": 29.7
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 1590,
-    "pctSecoes": 0.02,
-    "brancos": 15,
-    "nulos": 50,
-    "abstencao": 349,
+    "validos": 37084,
+    "pctSecoes": 0.39,
+    "brancos": 419,
+    "nulos": 1149,
+    "abstencao": 8540,
     "eleitorado": 11312891,
-    "horaTSE": "25/10/2026 17:07:00"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "AM": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 20307,
+     "pct": 50.62
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 19809,
+     "pct": 49.38
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 40116,
+    "pctSecoes": 1.86,
+    "brancos": 394,
+    "nulos": 944,
+    "abstencao": 10705,
     "eleitorado": 2798661,
-    "horaTSE": "13/10/2026 17:43:07"
+    "horaTSE": "25/10/2026 19:01:54"
    },
    "AL": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 12620,
+     "pct": 62.33
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 7626,
+     "pct": 37.67
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 20246,
+    "pctSecoes": 1.03,
+    "brancos": 174,
+    "nulos": 411,
+    "abstencao": 5281,
     "eleitorado": 2442081,
-    "horaTSE": "13/10/2026 17:42:57"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "AP": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 5931,
+     "pct": 72.14
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 2290,
+     "pct": 27.86
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 8221,
+    "pctSecoes": 2.72,
+    "brancos": 30,
+    "nulos": 63,
+    "abstencao": 4469,
     "eleitorado": 576910,
-    "horaTSE": "13/10/2026 17:43:17"
+    "horaTSE": "25/10/2026 19:19:05"
    },
    "DF": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 138340,
+     "pct": 45.34
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 166761,
+     "pct": 54.66
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 305101,
+    "pctSecoes": 17.35,
+    "brancos": 3778,
+    "nulos": 7210,
+    "abstencao": 65759,
     "eleitorado": 2258995,
-    "horaTSE": "09/10/2026 17:30:52"
+    "horaTSE": "25/10/2026 19:19:34"
    },
    "CE": {
     "13": {
-     "votos": 782,
-     "pct": 70.01
+     "votos": 7591,
+     "pct": 67.73
     },
     "22": {
-     "votos": 335,
-     "pct": 29.99
+     "votos": 3616,
+     "pct": 32.27
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 1117,
-    "pctSecoes": 0.02,
-    "brancos": 14,
-    "nulos": 21,
-    "abstencao": 217,
+    "validos": 11207,
+    "pctSecoes": 0.18,
+    "brancos": 112,
+    "nulos": 206,
+    "abstencao": 1812,
     "eleitorado": 6996521,
-    "horaTSE": "25/10/2026 17:07:00"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "MA": {
     "13": {
-     "votos": 2228,
-     "pct": 75.86
+     "votos": 59739,
+     "pct": 68.85
     },
     "22": {
-     "votos": 709,
-     "pct": 24.14
+     "votos": 27026,
+     "pct": 31.15
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 2937,
-    "pctSecoes": 0.11,
-    "brancos": 11,
-    "nulos": 51,
-    "abstencao": 890,
+    "validos": 86765,
+    "pctSecoes": 2.37,
+    "brancos": 550,
+    "nulos": 1170,
+    "abstencao": 22508,
     "eleitorado": 5183049,
-    "horaTSE": "25/10/2026 17:07:00"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "MT": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 39270,
+     "pct": 41.83
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 54609,
+     "pct": 58.17
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 93879,
+    "pctSecoes": 4.8,
+    "brancos": 711,
+    "nulos": 1129,
+    "abstencao": 22987,
     "eleitorado": 2637879,
-    "horaTSE": "13/10/2026 17:47:07"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "PA": {
     "13": {
-     "votos": 22949,
-     "pct": 65.03
+     "votos": 253294,
+     "pct": 56.38
     },
     "22": {
-     "votos": 12343,
-     "pct": 34.97
+     "votos": 195935,
+     "pct": 43.62
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 35292,
-    "pctSecoes": 0.86,
-    "brancos": 169,
-    "nulos": 474,
-    "abstencao": 11617,
+    "validos": 449229,
+    "pctSecoes": 8.89,
+    "brancos": 3721,
+    "nulos": 6506,
+    "abstencao": 112359,
     "eleitorado": 6262063,
-    "horaTSE": "25/10/2026 17:07:00"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "ES": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 2060,
+     "pct": 47.64
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 2264,
+     "pct": 52.36
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 4324,
+    "pctSecoes": 0.2,
+    "brancos": 47,
+    "nulos": 172,
+    "abstencao": 1218,
     "eleitorado": 2991515,
-    "horaTSE": "13/10/2026 17:45:07"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "MG": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 102892,
+     "pct": 49.68
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 104235,
+     "pct": 50.32
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 207127,
+    "pctSecoes": 1.36,
+    "brancos": 2588,
+    "nulos": 4786,
+    "abstencao": 56654,
     "eleitorado": 16372144,
-    "horaTSE": "13/10/2026 17:46:47"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "GO": {
     "13": {
-     "votos": 768,
-     "pct": 44.89
+     "votos": 3726,
+     "pct": 46.78
     },
     "22": {
-     "votos": 943,
-     "pct": 55.11
+     "votos": 4239,
+     "pct": 53.22
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 1711,
-    "pctSecoes": 0.04,
-    "brancos": 11,
-    "nulos": 20,
-    "abstencao": 409,
+    "validos": 7965,
+    "pctSecoes": 0.19,
+    "brancos": 85,
+    "nulos": 121,
+    "abstencao": 2005,
     "eleitorado": 5080385,
-    "horaTSE": "25/10/2026 17:07:00"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "MS": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 7023,
+     "pct": 46.17
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 8189,
+     "pct": 53.83
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 15212,
+    "pctSecoes": 1.06,
+    "brancos": 161,
+    "nulos": 210,
+    "abstencao": 4344,
     "eleitorado": 2024437,
-    "horaTSE": "13/10/2026 17:46:57"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "PI": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 8056,
+     "pct": 79.53
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 2073,
+     "pct": 20.47
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 10129,
+    "pctSecoes": 0.5,
+    "brancos": 70,
+    "nulos": 181,
+    "abstencao": 2438,
     "eleitorado": 2704695,
-    "horaTSE": "13/10/2026 17:48:27"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "PB": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 168547,
+     "pct": 71.5
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 67178,
+     "pct": 28.5
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 235725,
+    "pctSecoes": 9,
+    "brancos": 2185,
+    "nulos": 5350,
+    "abstencao": 47768,
     "eleitorado": 3248434,
-    "horaTSE": "13/10/2026 17:48:07"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "RS": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 13357,
+     "pct": 35.15
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 24639,
+     "pct": 64.85
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 37996,
+    "pctSecoes": 0.58,
+    "brancos": 499,
+    "nulos": 585,
+    "abstencao": 8395,
     "eleitorado": 8522318,
-    "horaTSE": "13/10/2026 17:49:27"
+    "horaTSE": "25/10/2026 19:19:05"
    },
    "RN": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 23552,
+     "pct": 72.23
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 9057,
+     "pct": 27.77
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 32609,
+    "pctSecoes": 1.61,
+    "brancos": 278,
+    "nulos": 1028,
+    "abstencao": 6609,
     "eleitorado": 2659867,
-    "horaTSE": "13/10/2026 17:48:57"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "PE": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 18997,
+     "pct": 73.25
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 6939,
+     "pct": 26.75
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 25936,
+    "pctSecoes": 0.46,
+    "brancos": 232,
+    "nulos": 494,
+    "abstencao": 4792,
     "eleitorado": 7223227,
-    "horaTSE": "25/10/2026 17:07:00"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "RJ": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 326,
+     "pct": 43.12
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 430,
+     "pct": 56.88
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 756,
+    "pctSecoes": 0.01,
+    "brancos": 5,
+    "nulos": 17,
+    "abstencao": 174,
     "eleitorado": 12857526,
-    "horaTSE": "13/10/2026 17:48:47"
+    "horaTSE": "25/10/2026 19:19:05"
    },
    "PR": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 205055,
+     "pct": 38.82
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 323193,
+     "pct": 61.18
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 528248,
+    "pctSecoes": 7.64,
+    "brancos": 6451,
+    "nulos": 9879,
+    "abstencao": 118761,
     "eleitorado": 8613628,
-    "horaTSE": "13/10/2026 17:48:38"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "RO": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 30737,
+     "pct": 38.89
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 48294,
+     "pct": 61.11
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 79031,
+    "pctSecoes": 7.85,
+    "brancos": 724,
+    "nulos": 1109,
+    "abstencao": 21761,
     "eleitorado": 1265926,
-    "horaTSE": "13/10/2026 17:49:07"
+    "horaTSE": "25/10/2026 19:19:05"
    },
    "SC": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 41934,
+     "pct": 47.18
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 46952,
+     "pct": 52.82
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 88886,
+    "pctSecoes": 1.86,
+    "brancos": 847,
+    "nulos": 1573,
+    "abstencao": 19829,
     "eleitorado": 5734687,
-    "horaTSE": "13/10/2026 17:49:37"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "TO": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 42795,
+     "pct": 51.7
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 39978,
+     "pct": 48.3
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 82773,
+    "pctSecoes": 9.47,
+    "brancos": 670,
+    "nulos": 3425,
+    "abstencao": 20303,
     "eleitorado": 1182041,
-    "horaTSE": "25/10/2026 15:40:09"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "SE": {
     "13": {
@@ -7114,70 +7159,70 @@
     "nulos": 0,
     "abstencao": 0,
     "eleitorado": 1740093,
-    "horaTSE": "24/10/2026 19:32:12"
+    "horaTSE": "25/10/2026 19:19:35"
    },
    "RR": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 896,
+     "pct": 69.3
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 397,
+     "pct": 30.7
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 1293,
+    "pctSecoes": 0.39,
+    "brancos": 1,
+    "nulos": 5,
+    "abstencao": 306,
     "eleitorado": 401540,
-    "horaTSE": "13/10/2026 17:49:17"
+    "horaTSE": "25/10/2026 19:01:55"
    },
    "ZZ": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 141386,
+     "pct": 59.67
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 95551,
+     "pct": 40.33
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 236937,
+    "pctSecoes": 60.47,
+    "brancos": 3278,
+    "nulos": 3387,
+    "abstencao": 309806,
     "eleitorado": 916683,
-    "horaTSE": "24/10/2026 20:11:36"
+    "horaTSE": "25/10/2026 19:19:05"
    },
    "SP": {
     "13": {
-     "votos": 0,
-     "pct": 0
+     "votos": 2940,
+     "pct": 45.04
     },
     "22": {
-     "votos": 0,
-     "pct": 0
+     "votos": 3588,
+     "pct": 54.96
     },
     "outros": {
      "votos": 0,
      "pct": 0
     },
-    "validos": 0,
-    "pctSecoes": 0,
-    "brancos": 0,
-    "nulos": 0,
-    "abstencao": 0,
+    "validos": 6528,
+    "pctSecoes": 0.03,
+    "brancos": 106,
+    "nulos": 123,
+    "abstencao": 1831,
     "eleitorado": 34123591,
-    "horaTSE": "13/10/2026 17:50:07"
+    "horaTSE": "25/10/2026 19:19:05"
    }
   }
  },
