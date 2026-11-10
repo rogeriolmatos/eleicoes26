@@ -1,6 +1,6 @@
 {
  "meta": {
-  "atualizadoEm": "2026-11-10T11:47:08.599Z",
+  "atualizadoEm": "2026-11-10T18:56:04.798Z",
   "exemplo": false,
   "versao": 1,
   "geradoPor": "coleta.js",
@@ -8,7 +8,12 @@
    {
     "nome": "Estadão",
     "itens": 20,
-    "aproveitados": 10
+    "aproveitados": 9
+   },
+   {
+    "nome": "UOL",
+    "itens": 15,
+    "aproveitados": 1
    },
    {
     "nome": "CNN Brasil",
@@ -16,24 +21,24 @@
     "aproveitados": 3
    },
    {
+    "nome": "O Globo",
+    "itens": 100,
+    "aproveitados": 12
+   },
+   {
     "nome": "G1",
     "itens": 100,
-    "aproveitados": 67
+    "aproveitados": 64
    },
    {
     "nome": "Folha de S.Paulo",
     "itens": 100,
-    "aproveitados": 40
+    "aproveitados": 39
    },
    {
-    "nome": "O Globo",
-    "itens": 100,
-    "aproveitados": 15
-   },
-   {
-    "nome": "UOL",
-    "itens": 15,
-    "aproveitados": 0
+    "nome": "Poder360",
+    "itens": 10,
+    "aproveitados": 1
    },
    {
     "nome": "BBC News Brasil",
@@ -41,19 +46,19 @@
     "aproveitados": 4
    },
    {
-    "nome": "Poder360",
-    "itens": 10,
-    "aproveitados": 0
-   },
-   {
     "nome": "Metrópoles",
     "itens": 20,
-    "aproveitados": 1
+    "aproveitados": 0
    },
    {
     "nome": "CartaCapital",
     "itens": 20,
-    "aproveitados": 1
+    "aproveitados": 3
+   },
+   {
+    "nome": "Brasil de Fato",
+    "itens": 99,
+    "aproveitados": 14
    },
    {
     "nome": "Agência Brasil",
@@ -61,19 +66,14 @@
     "aproveitados": 9
    },
    {
-    "nome": "Brasil de Fato",
-    "itens": 99,
-    "aproveitados": 13
-   },
-   {
     "nome": "Revista Oeste",
     "itens": 10,
-    "aproveitados": 3
+    "aproveitados": 4
    },
    {
     "nome": "Gazeta do Povo",
-    "itens": 48,
-    "aproveitados": 21
+    "itens": 66,
+    "aproveitados": 27
    },
    {
     "nome": "Correio Braziliense",
@@ -81,14 +81,14 @@
     "aproveitados": 0
    },
    {
-    "nome": "Estado de Minas",
-    "itens": 20,
-    "aproveitados": 1
+    "nome": "Google Notícias (busca)",
+    "itens": 97,
+    "aproveitados": 93
    },
    {
-    "nome": "Google Notícias (busca)",
-    "itens": 100,
-    "aproveitados": 96
+    "nome": "Estado de Minas",
+    "itens": 20,
+    "aproveitados": 0
    },
    {
     "nome": "O Povo",
@@ -97,13 +97,13 @@
    },
    {
     "nome": "Google Notícias (pesquisas)",
-    "itens": 28,
-    "aproveitados": 26
+    "itens": 25,
+    "aproveitados": 23
    },
    {
     "nome": "Google Notícias (debates)",
     "itens": 30,
-    "aproveitados": 24
+    "aproveitados": 22
    }
   ],
   "fontesFalha": [],
@@ -174,6 +174,768 @@
  ],
  "noticias": [
   {
+   "id": "freixo-defende-2-turno-no-rio-eleitor-do-garotinho-nao-votou-nulo-",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Freixo defende 2° turno no Rio: ‘Eleitor do Garotinho não votou nulo’",
+   "resumo": "O deputado federal eleito Marcelo Freixo (PT-RJ) usou as redes sociais para se manifestar a favor da realização do segundo turno das eleições para governador do Rio de Janeiro entre Douglas Ruas (PL)…",
+   "link": "https://revistaoeste.com/politica/freixo-defende-2-turno-no-rio-eleitor-do-garotinho-nao-votou-nulo/",
+   "dataPub": "2026-11-10T18:54:19.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "lula-discute-parceria-em-defesa-com-presidente-turco-as-margens-da-cop31-na-turquia",
+   "veiculo": "G1",
+   "fonteFeed": "G1",
+   "titulo": "Lula discute parceria em defesa com presidente turco, às margens da COP31 na Turquia",
+   "resumo": "O presidente Luiz Inácio Lula da Silva (PT) se reuniu com o presidente turco, Recep Tayyip Erdogan, às margens da COP 31, realizada na cidade turca de Antália, nesta terça-feira (10). Segundo o…",
+   "link": "https://g1.globo.com/politica/noticia/2026/11/10/lula-discute-parceria-em-defesa-com-presidente-turco-as-margens-da-cop31-na-turquia.ghtml",
+   "dataPub": "2026-11-10T18:39:07.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "lula-inicia-montagem-do-novo-ministerio-da-seguranca-publica-apos-aprovacao-de-pec",
+   "veiculo": "Gazeta do Povo",
+   "fonteFeed": "Gazeta do Povo",
+   "titulo": "Lula inicia montagem do novo Ministério da Segurança Pública após aprovação de PEC",
+   "resumo": "Saiba como o governo Lula planeja o novo Ministério da Segurança Pública, os nomes cotados para ministro e os desafios com o orçamento e a idade penal.",
+   "link": "https://www.gazetadopovo.com.br/republica/lula-inicia-montagem-do-novo-ministerio-da-seguranca-publica-apos-aprovacao-de-pec/",
+   "dataPub": "2026-11-10T18:30:15.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "flavio-tem-o-direito-de-concorrer-em-2030-diz-tarcisio",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Flávio tem o direito de concorrer em 2030, diz Tarcísio",
+   "resumo": "Senador e governador de São Paulo já admitiram, em momentos distintos, a possibilidade de concorrerem ao Palácio do Planalto nas próximas eleições gerais",
+   "link": "https://www.cnnbrasil.com.br/politica/flavio-tem-o-direito-de-concorrer-em-2030-diz-tarcisio/",
+   "dataPub": "2026-11-10T18:27:17.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "nao-podemos-depender-so-dos-eleitores-para-salvar-a-democracia-diz-levitsky",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Não podemos depender só dos eleitores para salvar a democracia, diz Levitsky",
+   "resumo": "O cientista político Steven Levitsky, professor da Universidade Harvard, exaltou a importância da vitória democrata nas eleições de meio de mandato neste ano, mas afirma que em grande medida a…",
+   "link": "https://oglobo.globo.com/mundo/noticia/2026/11/10/nao-podemos-depender-so-dos-eleitores-para-salvar-a-democracia-diz-levitsky.ghtml",
+   "dataPub": "2026-11-10T18:21:59.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "advogados-pro-lula-propoem-reforma-que-anteciparia-em-15-anos-saida-de-zanin-do-stf",
+   "veiculo": "Gazeta do Povo",
+   "fonteFeed": "Gazeta do Povo",
+   "titulo": "Advogados pró-Lula propõem reforma que anteciparia em 15 anos saída de Zanin do STF",
+   "resumo": "Proposta prevê mandato de 12 anos para ministros do Supremo e poderia abrir cinco vagas após Lula 4. Leia na Gazeta do Povo.",
+   "link": "https://www.gazetadopovo.com.br/republica/advogados-pro-lula-propoem-reforma-que-anteciparia-em-15-anos-saida-de-zanin-do-stf/",
+   "dataPub": "2026-11-10T18:18:13.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "dino-rebate-critica-de-ministro-de-lula-a-atuacao-do-stf-no-debate-sobre-escala-6-1",
+   "veiculo": "Gazeta do Povo",
+   "fonteFeed": "Gazeta do Povo",
+   "titulo": "Dino rebate crítica de ministro de Lula à atuação do STF no debate sobre escala 6×1",
+   "resumo": "Flávio Dino responde a Luiz Marinho e explica por que o STF analisa os pedidos da CNC e da CNI sobre o prazo para o fim da escala 6x1.",
+   "link": "https://www.gazetadopovo.com.br/republica/dino-rebate-critica-de-ministro-de-lula-a-atuacao-do-stf-no-debate-sobre-escala-6x1/",
+   "dataPub": "2026-11-10T18:15:41.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "papa-leao-xiv-pode-visitar-o-brasil-e-se-reunir-com-lula-em-2027",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Papa Leão XIV pode visitar o Brasil e se reunir com Lula em 2027",
+   "resumo": "Pontífice recebeu convite formal da CNBB (Conferência Nacional dos Bispos do Brasil) em janeiro; fontes do Planalto afirmam que Vaticano reagiu com animação",
+   "link": "https://www.cnnbrasil.com.br/internacional/papa-leao-xiv-pode-visitar-o-brasil-e-se-reunir-com-lula-em-2027/",
+   "dataPub": "2026-11-10T18:14:49.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "tarcisio-comenta-possivel-candidatura-de-flavio-em-2030",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Tarcísio comenta possível candidatura de Flávio em 2030",
+   "resumo": "O governador de São Paulo, Tarcísio de Freitas (Republicanos) , afirmou nesta terça-feira, 10, que o senador Flávio Bolsonaro (PL-RJ) tem o direito de concorrer à Presidência da República em 2030. O…",
+   "link": "https://revistaoeste.com/politica/tarcisio-comenta-possivel-candidatura-de-flavio-em-2030/",
+   "dataPub": "2026-11-10T18:13:25.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "o-fogo-amigo-sobre-edinho-e-a-nova-base-parlamentar-de-lula",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "O fogo amigo sobre Edinho e a nova base parlamentar de Lula",
+   "resumo": "Os ataques nas redes sociais que vem sofrendo Edinho Silva, presidente do PT e um dos escalados por Lula para construir sua base parlamentar, têm chamado a atenção de lideranças do Congresso. Matéria…",
+   "link": "https://oglobo.globo.com/blogs/lauro-jardim/post/2026/11/o-fogo-amigo-sobre-edinho-e-a-nova-base-parlamentar-de-lula.ghtml",
+   "dataPub": "2026-11-10T18:07:01.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "reforma-eleitoral-trava-apos-presidentes-de-partidos-comunicarem-falta-de-acordo-a-motta",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Reforma eleitoral trava após presidentes de partidos comunicarem falta de acordo a Motta",
+   "resumo": "O presidente da Câmara, Hugo Motta (Republicanos-PB), foi avisado por presidentes de partidos e líderes de bancadas na Casa que a tentativa de reforma eleitoral articulada por ele não alcançou apoio…",
+   "link": "https://oglobo.globo.com/politica/noticia/2026/11/10/reforma-eleitoral-trava-apos-presidentes-de-partidos-comunicarem-falta-de-acordo-a-motta.ghtml",
+   "dataPub": "2026-11-10T18:05:56.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "comissao-aprova-medida-provisoria-de-renegociacao-de-dividas-rurais-a-um-dia-de-perder-val",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Comissão aprova medida provisória de renegociação de dívidas rurais a um dia de perder validade",
+   "resumo": "A comissão mista do Congresso aprovou, nesta terça-feira, em votação simbólica, o relatório do deputado Paulo Pimenta (PT-RS) à medida provisória que autoriza a renegociação de dívidas de produtores…",
+   "link": "https://oglobo.globo.com/economia/noticia/2026/11/10/comissao-aprova-medida-provisoria-de-renegociacao-de-dividas-rurais-a-um-dia-de-medida-perder-validade.ghtml",
+   "dataPub": "2026-11-10T18:03:59.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "lula-estava-preso-e-bolsonaro-governava-quando-stf-abriu-inquerito-das-fake-news-ha-2-8-mi",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "Lula estava preso e Bolsonaro governava quando STF abriu inquérito das fake news, há 2,8 mil dias",
+   "resumo": "Quando o inquérito das fake news foi aberto no Supremo Tribunal Federal ( STF ) em 14 de março de 2019, há 2,8 mil dias, o cenário político era bem diferente nos três Poderes. O presidente Lula (PT)…",
+   "link": "https://www.estadao.com.br/politica/coluna-do-estadao/lula-estava-preso-e-bolsonaro-governava-quando-stf-abriu-inquerito-das-fake-news-ha-28-mil-dias/",
+   "dataPub": "2026-11-10T17:55:42.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "apos-silencio-do-pt-freixo-se-posiciona-a-favor-de-segundo-turno-no-rio",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Após silêncio do PT, Freixo se posiciona a favor de segundo turno no Rio",
+   "resumo": "O deputado federal eleito Marcelo Freixo (PT) publicou um vídeo nas redes sociais em que defende a realização de segundo turno para o governo do Rio. Com a manifestação, o ex-adversário e hoje aliado…",
+   "link": "https://oglobo.globo.com/politica/noticia/2026/11/10/apos-silencio-do-pt-freixo-se-posiciona-a-favor-de-segundo-turno-no-rio.ghtml",
+   "dataPub": "2026-11-10T17:55:10.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "zanin-recebe-advogados-de-paes-para-discutir-segundo-turno-no-rio",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Zanin recebe advogados de Paes para discutir segundo turno no Rio",
+   "resumo": "O ministro Cristiano Zanin, do Supremo Tribunal Federal (STF), recebe nesta terça-feira às 15h30 os advogados Gustavo Schmidt e Felipe Santa Cruz, que representam os interesses do ex-prefeito e…",
+   "link": "https://oglobo.globo.com/politica/noticia/2026/11/10/zanin-recebe-advogados-de-paes-para-discutir-segundo-turno-no-rio.ghtml",
+   "dataPub": "2026-11-10T17:47:23.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "janones-posta-foto-com-lula-e-janja-em-viagem-a-turquia",
+   "veiculo": "Poder360",
+   "fonteFeed": "Poder360",
+   "titulo": "Janones posta foto com Lula e Janja em viagem à Turquia",
+   "resumo": "Deputado publica selfies com presidente e Janja no canal Exército do Lula, que reúne mais de 10 milhões de seguidores",
+   "link": "https://www.poder360.com.br/poder-congresso/janones-posta-foto-com-lula-e-janja-em-viagem-a-turquia/",
+   "dataPub": "2026-11-10T17:44:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "a-imprensa-foi-mesmo-omissa-com-flavio-bolsonaro-",
+   "veiculo": "UOL",
+   "fonteFeed": "UOL",
+   "titulo": "A imprensa foi mesmo omissa com Flávio Bolsonaro?",
+   "resumo": "",
+   "link": "https://www1.folha.uol.com.br/colunas/wilson-gomes/2026/11/a-imprensa-foi-mesmo-omissa-com-flavio-bolsonaro.shtml",
+   "dataPub": "2026-11-10T17:40:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "ex-secretario-do-tesouro-preve-recessao-e-cobra-mudanca-na-politica-fiscal-de-lula",
+   "veiculo": "Gazeta do Povo",
+   "fonteFeed": "Gazeta do Povo",
+   "titulo": "Ex-secretário do Tesouro prevê recessão e cobra mudança na política fiscal de Lula",
+   "resumo": "Dívida pública, gastos do governo Lula e juros elevados preocupam Carlos Kawall, que defende ajuste fiscal e alerta para risco de recessão.",
+   "link": "https://www.gazetadopovo.com.br/republica/ex-secretario-do-tesouro-preve-recessao-e-cobra-mudanca-na-politica-fiscal-de-lula/",
+   "dataPub": "2026-11-10T17:39:04.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "folha-faz-escolha-indefensavel-ao-escalar-glenn-para-entrevistar-flavio",
+   "veiculo": "ICL Notícias",
+   "fonteFeed": "Google Notícias (debates)",
+   "titulo": "Folha faz escolha indefensável ao escalar Glenn para entrevistar Flávio",
+   "resumo": "Folha faz escolha indefensável ao escalar Glenn para entrevistar Flávio ICL Notícias",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQblh5UlZnQnlPamh6ekM3eVZFT3lqbnVtX181aVRiTVNuQndVNHIxRFE5SWE5ejEwMFBTWVNMbnpQcHZnWFBOQTFNOTZRVExtRFpvd0tLdGZ0TGF1ejZaS0tLeFZUaU5mSENKTks0TWtYTXZLWnlqck9kTjh2X2hxdA?oc=5",
+   "dataPub": "2026-11-10T17:30:40.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "tse-julga-acao-de-lula-contra-a-meta-por-favorecimento-a-flavio-bolsonaro",
+   "veiculo": "CartaCapital",
+   "fonteFeed": "CartaCapital",
+   "titulo": "TSE julga ação de Lula contra a Meta por favorecimento a Flávio Bolsonaro",
+   "resumo": "A sessão, presencial, ocorrerá na noite desta terça-feira 10",
+   "link": "https://www.cartacapital.com.br/justica/tse-julga-acao-de-lula-contra-a-meta-por-favorecimento-a-flavio-bolsonaro/",
+   "dataPub": "2026-11-10T17:27:37.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "o-encontro-entre-tereza-cristina-e-michelle-bolsonaro-sobre-eleicao-para-a-presidencia-do-",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "O encontro entre Tereza Cristina e Michelle Bolsonaro sobre eleição para a presidência do Senado",
+   "resumo": "Em campanha para a presidência do Senado, a senadora Tereza Cristina (PP-MS) se reuniu na semana passada com a ex-primeira-dama Michelle Bolsonaro (PL-DF), que assume em 2027 uma das vagas do PL na…",
+   "link": "https://www.estadao.com.br/politica/coluna-do-estadao/o-encontro-entre-tereza-cristina-e-michelle-bolsonaro-sobre-eleicao-para-a-presidencia-do-senado/",
+   "dataPub": "2026-11-10T17:24:25.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "e-falso-que-trump-ligou-para-lula-para-dizer-que-pretende-extraditar-flavio",
+   "veiculo": "Aos Fatos",
+   "fonteFeed": "Google Notícias (debates)",
+   "titulo": "É falso que Trump ligou para Lula para dizer que pretende extraditar Flávio",
+   "resumo": "É falso que Trump ligou para Lula para dizer que pretende extraditar Flávio Aos Fatos",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBlOW8zcFlYM1ZoSlFsWmJaVHBWS0paOVZpZlp5SVdNWlppZ1dtSy1xMGtGdDNCUVBuMFdRRDc4dVhyY2VyTHNLbGhuQTRzY19KWUh6RlRLcnRNZWFTbGlBb2hsUEdqeVdxeDQwM0F4X2s?oc=5",
+   "dataPub": "2026-11-10T17:15:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "qual-e-o-tamanho-do-erro-das-projecoes-do-mercado-financeiro-",
+   "veiculo": "Brasil de Fato",
+   "fonteFeed": "Brasil de Fato",
+   "titulo": "Qual é o tamanho do erro das projeções do mercado financeiro?",
+   "resumo": "Desde o resultado do segundo turno, com a vitória do presidente Lula, os jornais noticiam uma “piora das expectativas”, baseada no boletim Focus. A edição do Focus de 30 de outubro, a primeira depois…",
+   "link": "https://www.brasildefato.com.br/colunista/economia-popular/2026/11/10/qual-e-o-tamanho-do-erro-das-projecoes-do-mercado-financeiro/",
+   "dataPub": "2026-11-10T17:13:14.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "na-comitiva-de-lula-associacao-de-proteina-animal-tenta-evitar-que-filipinas-prolonguem-su",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Na comitiva de Lula, associação de proteína animal tenta evitar que Filipinas prolonguem suspensão da importação de carne suína",
+   "resumo": "O presidente da Associação Brasileira de Proteína Animal (ABPA), Ricardo Santin, está a caminho das Filipinas para integrar a comitiva do presidente Lula ao país, que suspendeu por 60 dias as…",
+   "link": "https://oglobo.globo.com/blogs/miriam-leitao/post/2026/11/na-comitiva-de-lula-associacao-de-proteina-animal-tenta-evitar-que-filipinas-prolonguem-suspensao-da-importacao-de-carne-suina.ghtml",
+   "dataPub": "2026-11-10T17:10:51.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "a-fala-de-lula-e-a-ata-do-copom",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "A fala de Lula e a ata do Copom",
+   "resumo": "No domingo à noite, em rede nacional, Lula prometeu responsabilidade fiscal. Matéria exclusiva para assinantes. Para ter acesso completo, acesse o link da matéria e faça o seu cadastro.",
+   "link": "https://oglobo.globo.com/blogs/lauro-jardim/post/2026/11/a-fala-de-lula-e-a-ata-do-copom.ghtml",
+   "dataPub": "2026-11-10T17:07:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "tarcisio-diz-que-flavio-bolsonaro-tem-o-direito-de-disputar-a-presidencia-em-2030-e-evita-",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Tarcísio diz que Flávio Bolsonaro 'tem o direito' de disputar a Presidência em 2030 e evita dizer se concorrerá",
+   "resumo": "O governador de São Paulo, Tarcísio de Freitas (Republicanos), afirmou nesta terça-feira (10) que o senador Flávio Bolsonaro (PL-RJ) tem o direito de disputar a Presidência da República em 2030, mas…",
+   "link": "https://oglobo.globo.com/politica/noticia/2026/11/10/tarcisio-diz-que-flavio-bolsonaro-tem-o-direito-de-disputar-a-presidencia-em-2030-e-evita-dizer-se-concorrera.ghtml",
+   "dataPub": "2026-11-10T17:04:27.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "faroeste-a-brasileira-assista-ao-programa-de-10-11-2026",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Faroeste à Brasileira: assista ao programa de 10/11/2026",
+   "resumo": "O programa Faroeste à Brasileira vai ao ar de segunda a sexta-feira, das 14h às 16h. Na edição desta terça-feira, 10, a apresentação será de Luís Artur Nogueira e os comentários ficarão por conta de…",
+   "link": "https://revistaoeste.com/videos/faroeste-a-brasileira/faroeste-a-brasileira-assista-ao-programa-de-10-11-2026/",
+   "dataPub": "2026-11-10T17:00:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "tarcisio-de-freitas-segue-no-muro-sobre-disputar-a-presidencia-em-2030",
+   "veiculo": "CartaCapital",
+   "fonteFeed": "CartaCapital",
+   "titulo": "Tarcísio de Freitas segue ‘no muro’ sobre disputar a Presidência em 2030",
+   "resumo": "O governador de São Paulo afirmou que o senador em fuga Flávio Bolsonaro 'tem direito' de concorrer",
+   "link": "https://www.cartacapital.com.br/cartaexpressa/tarcisio-de-freitas-segue-no-muro-sobre-disputar-a-presidencia-em-2030/",
+   "dataPub": "2026-11-10T16:52:05.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "e-claro-que-flavio-bolsonaro-tem-direito-de-ser-candidato-em-2030-diz-tarcisio",
+   "veiculo": "Jornal de Brasília",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "É claro que Flávio Bolsonaro Tem direito de ser candidato em 2030, diz Tarcísio",
+   "resumo": "É claro que Flávio Bolsonaro Tem direito de ser candidato em 2030, diz Tarcísio Jornal de Brasília",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZjFTczFfdzBCbWQ5aEFKZzUtZ2s3aTg4WkdYRWJUNWthT1BYeVhuNml0QS1FdDZmQkI2eVA4S3ZqX3RlUnpPclFGd0hpMjIxUEVQWXE0S2FiaFc3elRWdDhIS3o2QWU0RTdQcXNyUVp6LXVTOHdYYVk1VGtxZm9Xangyd2phZ0R2UGgwZlc5NGx6dUpweVhrQ0Y5VGdiQ0VOSjlfdnR1M0doWGNYWnpTdnVoNUVhMFFXemM3VUdwWnhkZEJlQS04Qm1VREJBSDJsaHFZ?oc=5",
+   "dataPub": "2026-11-10T16:50:02.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "lula-escolhe-diplomata-proximo-ao-planalto-para-embaixada-na-italia",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Lula escolhe diplomata próximo ao Planalto para embaixada na Itália",
+   "resumo": "O presidente Luiz Inácio Lula da Silva (PT) indicou o diplomata Fernando Luís Lemos Igreja, chefe do Cerimonial da Presidência da República, para o cargo de embaixador do Brasil na Itália. A…",
+   "link": "https://revistaoeste.com/politica/lula-escolhe-diplomata-proximo-ao-planalto-para-embaixada-na-italia/",
+   "dataPub": "2026-11-10T16:40:09.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "bc-do-paraguai-afirma-que-93-dos-clientes-do-ueno-bank-receberam-ao-menos-parte-de-seus-de",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "BC do Paraguai afirma que 93% dos clientes do Ueno Bank receberam ao menos parte de seus depósitos",
+   "resumo": "O Banco Central do Paraguai afirmou no final da tarde de segunda-feira que 93% dos clientes aptos do Ueno Bank, liquidado na semana passada e no meio da maior crise institucional em anos no país…",
+   "link": "https://oglobo.globo.com/mundo/noticia/2026/11/10/bc-do-paraguai-afirma-que-93percent-dos-clientes-do-ueno-bank-receberam-ao-menos-parte-de-seus-depositos.ghtml",
+   "dataPub": "2026-11-10T16:31:34.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "tarcisio-diz-que-marinho-e-tereza-cristina-sao-excelentes-nomes-a-presidencia-do-senado",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "Tarcísio diz que Marinho e Tereza Cristina são excelentes nomes à Presidência do Senado",
+   "resumo": "O governador de São Paulo, Tarcísio de Freitas (Republicanos), defendeu nesta terça-feira, 10, que a direita apoie o nome com mais chances de vencer a eleição para a presidência do Senado…",
+   "link": "https://www.estadao.com.br/politica/tarcisio-diz-que-marinho-e-tereza-cristina-sao-excelentes-nomes-a-presidencia-do-senado/",
+   "dataPub": "2026-11-10T16:30:02.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "tarcisio-de-freitas-diz-que-e-claro-que-flavio-bolsonaro-tem-direito-de-ser-candidato-em-2",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "Tarcísio de Freitas diz que ‘é claro’ que Flávio Bolsonaro ‘tem direito’ de ser candidato em 2030",
+   "resumo": "O governador de São Paulo, Tarcísio de Freitas (Republicanos), disse nesta terça-feira, 10, que o senador Flávio Bolsonaro (PL) tem direito de voltar a disputar a Presidência da República em 2030…",
+   "link": "https://www.estadao.com.br/politica/tarcisio-de-freitas-diz-que-e-claro-que-flavio-bolsonaro-tem-direito-de-ser-candidato-em-2030/",
+   "dataPub": "2026-11-10T16:16:45.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "flavio-tem-direito-de-disputar-presidencia-em-2030-diz-tarcisio-apos-admitir-possibilidade",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Flávio tem direito de disputar Presidência em 2030, diz Tarcísio após admitir possibilidade de concorrer",
+   "resumo": "O governador de São Paulo , Tarcísio de Freitas (Republicanos), afirmou em entrevista a jornalistas nesta terça-feira (10) que o senador Flávio Bolsonaro ( PL -RJ) tem o direito de se candidatar à…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/flavio-tem-direito-de-disputar-presidencia-em-2030-diz-tarcisio-apos-admitir-possibilidade-de-concorrer.shtml",
+   "dataPub": "2026-11-10T16:07:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "quem-e-o-servidor-do-stj-suspeito-de-vazar-dados-para-amigo-de-flavio",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Quem é o servidor do STJ suspeito de vazar dados para amigo de Flávio",
+   "resumo": "Humberto Fontoura Pradera é investigado por supostamente ter vazado informações sigilosas do Superior Tribunal de Justiça para o advogado Willer Tomaz",
+   "link": "https://www.cnnbrasil.com.br/politica/quem-e-o-servidor-do-stj-suspeito-de-vazar-dados-para-amigo-de-flavio/",
+   "dataPub": "2026-11-10T15:50:36.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "brasil-pauta-na-cop31-a-saida-dos-combustiveis-fosseis",
+   "veiculo": "CartaCapital",
+   "fonteFeed": "CartaCapital",
+   "titulo": "Brasil pauta na COP31 a saída dos combustíveis fósseis",
+   "resumo": "O presidente Lula já está na Turquia para a cúpula de líderes que ocorre na quarta e na quinta-feira",
+   "link": "https://www.cartacapital.com.br/sustentabilidade/brasil-pauta-na-cop31-a-saida-dos-combustiveis-fosseis/",
+   "dataPub": "2026-11-10T15:43:31.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "inquerito-de-moraes-deveria-ter-sido-contra-conviccoes-erroneas-piores-que-fake-news",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "Inquérito de Moraes deveria ter sido contra convicções errôneas, piores que fake news",
+   "resumo": "Finalmente encerrou-se, nesta semana, o famigerado inquérito sobre as fakes news , por anos presidido pelo ministro do Supremo Tribunal Federal, Alexandre de Moraes . Pesaram na decisão de arquivar…",
+   "link": "https://www.estadao.com.br/politica/fabiano-lana/inquerito-de-moraes-deveria-ter-sido-contra-conviccoes-erroneas-piores-que-fake-news/",
+   "dataPub": "2026-11-10T15:38:16.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "andre-do-prado-tenta-emplacar-aliado-no-comando-da-alesp-e-enfrenta-resistencia-no-pl",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "André do Prado tenta emplacar aliado no comando da Alesp e enfrenta resistência no PL",
+   "resumo": "Prestes a assumir uma cadeira no Senado Federal, o presidente da Assembleia Legislativa de São Paulo (Alesp) , André do Prado (PL), trabalha para emplacar um aliado no comando da Casa e assim…",
+   "link": "https://www.estadao.com.br/politica/andre-do-prado-tenta-emplacar-aliado-no-comando-da-alesp-e-enfrenta-resistencia-no-pl/",
+   "dataPub": "2026-11-10T15:00:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "aliados-reclamam-de-isolamento-de-gleisi-hoffmann-uma-das-unicas-mulheres-no-circulo-de-lu",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "Aliados reclamam de isolamento de Gleisi Hoffmann, uma das únicas mulheres no círculo de Lula",
+   "resumo": "Aliados do presidente Lula reclamaram do afastamento da ex-ministra Gleisi Hoffmann (PT), uma das integrantes mais aguerridas da tropa de choque petista, ao longo da campanha. O entorno do presidente…",
+   "link": "https://www.estadao.com.br/politica/coluna-do-estadao/aliados-reclamam-de-isolamento-de-gleisi-hoffmann-uma-das-unicas-mulheres-no-circulo-de-lula/",
+   "dataPub": "2026-11-10T15:00:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "ministro-de-lula-critica-stf-por-acao-que-tenta-adiar-fim-da-escala-6-1",
+   "veiculo": "Gazeta do Povo",
+   "fonteFeed": "Gazeta do Povo",
+   "titulo": "Ministro de Lula critica STF por ação que tenta adiar fim da escala 6×1",
+   "resumo": "Luiz Marinho afirma que o governo Lula conduz a regulamentação do fim da 6x1 e contesta os argumentos sobre o prazo de adaptação.",
+   "link": "https://www.gazetadopovo.com.br/republica/ministro-de-lula-critica-stf-por-acao-que-tenta-adiar-fim-da-escala-6x1/",
+   "dataPub": "2026-11-10T14:50:02.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "do-mossad-a-vigilancia-privada-os-vinculos-da-inteligencia-israelense-com-o-brasil",
+   "veiculo": "Brasil de Fato",
+   "fonteFeed": "Brasil de Fato",
+   "titulo": "Do Mossad à vigilância privada: os vínculos da inteligência israelense com o Brasil",
+   "resumo": "Duas vans atravessaram a fronteira entre Foz do Iguaçu e Puerto Iguazú com sete minutos de diferença, na noite de 27 de outubro. Em uma delas estavam a esposa e as filhas de Flávio Bolsonaro, que…",
+   "link": "https://www.brasildefato.com.br/2026/11/10/do-mossad-a-vigilancia-privada-os-vinculos-da-inteligencia-israelense-com-o-brasil/",
+   "dataPub": "2026-11-10T14:38:28.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "distribuidor-de-dark-horse-no-brasil-desmente-jim-caviezel-nao-existe-nenhuma-proibicao-de",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Distribuidor de 'Dark Horse' no Brasil desmente Jim Caviezel: 'Não existe nenhuma proibição de lançamento no país'",
+   "resumo": "Em entrevista a um podcast nos Estados Unidos, o ator Jim Caviezel acusou o governo Lula de censurar a exibição de \"Dark Horse\" no Brasil. Conhecido pelos trabalhos em \"A paixão de Cristo\" (2004) e…",
+   "link": "https://oglobo.globo.com/cultura/filmes/noticia/2026/11/10/distribuidor-de-dark-horse-no-brasil-desmente-jim-caviezel-nao-existe-nenhuma-proibicao-de-lancamento-no-pais.ghtml",
+   "dataPub": "2026-11-10T14:35:25.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "ministerio-da-seguranca-pode-gerar-sucessor-ou-queimar-aliado-de-lula",
+   "veiculo": "Gazeta do Povo",
+   "fonteFeed": "Gazeta do Povo",
+   "titulo": "Ministério da Segurança pode gerar sucessor ou queimar aliado de Lula",
+   "resumo": "Lula aposta na criação do Ministério da Segurança Pública para ampliar sua atuação na área e fortalecer o discurso eleitoral.",
+   "link": "https://www.gazetadopovo.com.br/republica/ministerio-da-seguranca-pode-gerar-sucessor-ou-queimar-aliado-de-lula/",
+   "dataPub": "2026-11-10T14:29:45.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "ex-ministro-diz-que-sugeriu-a-lula-meta-de-4-milhoes-de-unidades-do-minha-casa-no-proximo-",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Ex-ministro diz que sugeriu a Lula meta de 4 milhões de unidades do Minha Casa no próximo mandato",
+   "resumo": "Ex-ministro das Cidades e deputado federal eleito, Jader Filho (MDB-PA) diz ter feito uma \"provocação\" ao presidente Luiz Inácio Lula da Silva para que aumente a quantidade de unidades entregues do…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/ex-ministro-diz-que-sugeriu-a-lula-meta-de-4-milhoes-de-unidades-do-minha-casa-no-proximo-mandato.shtml",
+   "dataPub": "2026-11-10T14:28:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "cnj-aprova-regras-para-a-venda-de-precatorios-e-medidas-para-reduzir-acoes-judiciais-contr",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "CNJ aprova regras para a venda de precatórios e medidas para reduzir ações judiciais contra o INSS",
+   "resumo": "O Conselho Nacional de Justiça (CNJ) aprovou nesta terça-feira, por unanimidade, duas resoluções com impacto sobre as contas públicas e sobre quem tem dinheiro a receber do Estado. A primeira…",
+   "link": "https://oglobo.globo.com/economia/noticia/2026/11/10/cnj-aprova-regras-para-a-venda-de-precatorios-e-medidas-para-reduzir-acoes-judiciais-contra-o-inss.ghtml",
+   "dataPub": "2026-11-10T14:24:11.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "lula-indica-chefe-do-cerimonial-do-planalto-para-embaixada-na-italia",
+   "veiculo": "Gazeta do Povo",
+   "fonteFeed": "Gazeta do Povo",
+   "titulo": "Lula indica chefe do cerimonial do Planalto para embaixada na Itália",
+   "resumo": "Nome indicado por Lula para a embaixada na Itália ainda depende de aprovação do Senado após sabatina na Comissão de Relações Exteriores.",
+   "link": "https://www.gazetadopovo.com.br/republica/lula-indica-chefe-do-cerimonial-do-planalto-para-embaixada-na-italia/",
+   "dataPub": "2026-11-10T13:55:41.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "decisao-2026-flavio-tem-53-1-dos-votos-validos-contra-46-9-de-lula-aponta-pesquisa-datatre",
+   "veiculo": "Times Brasil | CNBC",
+   "fonteFeed": "Google Notícias (pesquisas)",
+   "titulo": "DECISÃO 2026: Flávio tem 53,1% dos votos válidos contra 46,9% de Lula, aponta pesquisa DataTrends",
+   "resumo": "DECISÃO 2026: Flávio tem 53,1% dos votos válidos contra 46,9% de Lula, aponta pesquisa DataTrends Times Brasil | CNBC",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSnNOMFRjM0NpTXB4a0cyNDJfQkdsV21OTDhxRGppZ2ZmdTZfTHd2QTFRcVRIUDZEc295dDNaeFFyaGpRdWR6SmpNTUsweEhtQmxfUmZFdVktdld1ZWJ6dGx0VHFfUXBBT3ZTY1VkVHNjVmlsNGVnLUpnR0s5czlyV1JwaW1kZElFa0xqcWlCODZjY1ptT0JYVGpiVQ?oc=5",
+   "dataPub": "2026-11-10T13:21:52.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "poderdata-flavio-sobe-nove-pontos-em-expectativa-de-vitoria-lula-cai-11",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "Google Notícias (pesquisas)",
+   "titulo": "PoderData: Flávio sobe nove pontos em expectativa de vitória; Lula cai 11",
+   "resumo": "PoderData: Flávio sobe nove pontos em expectativa de vitória; Lula cai 11 CNN Brasil",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcE10RFdHc3E0V2ItU0I4Y3BXb2xhM0JrQkJUeHdFSElsdUUtZzFvZk5IQVVHUkx2U3JPeEVRaGNMVTQwVmtJbVByaXowY3pBSmZiRVM4aGhGTk11eVY4Vk5nX2w4TkJrdWZ2QnZoaC1jVGZMd3JNZnV4bnhnTk9FVXcybHdyaGZTLVRDWW9hV3p4OTk1ZnVXeTBuWDR5Q0U2V1Zyd2pJSHJKaF9iSkVN?oc=5",
+   "dataPub": "2026-11-10T13:14:19.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "flavio-bolsonaro-festeja-antes-da-derrota-para-lula",
+   "veiculo": "Diário do Estado",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Flávio Bolsonaro festeja antes da derrota para Lula",
+   "resumo": "Flávio Bolsonaro festeja antes da derrota para Lula Diário do Estado",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNWFpUVWlfdWN3MGNJMzhtWkxzaWx1NDNBbmpvWWpRbUROOGk0Yk9Fd3BDb1lPOWo0MzBtMFJmb0hiTjVnMm5xTjRyWmt5N1NiZ1piVUlpc1Y3blYtcTdIck1wb09taVNfLTlZVkpEX1NTMHZKdEpyMWJnWXdYYUlhOFpJNTk1eFZNVUtJRA?oc=5",
+   "dataPub": "2026-11-10T13:02:49.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "quaest-satisfacao-com-a-democracia-bate-recorde-mas-preferencia-pelo-regime-cai-entre-jove",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Quaest: Satisfação com a democracia bate recorde, mas preferência pelo regime cai entre jovens",
+   "resumo": "Nunca tantos brasileiros se disseram satisfeitos com a democracia depois de uma eleição presidencial, mas a parcela que a considera o melhor regime encolheu, segundo pesquisa Quaest divulgada nesta…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/quaest-satisfacao-com-a-democracia-bate-recorde-mas-preferencia-pelo-regime-cai-entre-jovens.shtml",
+   "dataPub": "2026-11-10T13:00:00.000Z",
+   "mencoes": [],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "video-antes-da-derrota-flavio-festejou-desempenho-em-debate-contra-lula",
+   "veiculo": "Diário do Centro do Mundo",
+   "fonteFeed": "Google Notícias (debates)",
+   "titulo": "VÍDEO: Antes da derrota, Flávio festejou desempenho em debate contra Lula",
+   "resumo": "VÍDEO: Antes da derrota, Flávio festejou desempenho em debate contra Lula Diário do Centro do Mundo",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVU1MY2RvZjc1RmcycnVpNVotbmtwU2lJLTFpRE1fNldKTm1XTFc2Q0FsQUhCTjBYOF9kMkt0ZEhJZGdYdkREcklWQ3kxOUdNZGRsdFd1M0RuNWduZkoxU1ZuYmdKYjEwaXpnT3RObjhhUmU3ZXNnWXhPeldyVGZpT2EzclIxcHA3SzRrTjlTcWV0d0ZlNGsxYzU3bURVbDljUVV0V01uQjZWLTA?oc=5",
+   "dataPub": "2026-11-10T12:35:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "a-pedagogia-algoritmica-que-derrotou-a-extrema-direita-no-brasil-e-a-internacionalizacao-d",
+   "veiculo": "Brasil de Fato",
+   "fonteFeed": "Brasil de Fato",
+   "titulo": "A pedagogia algorítmica que derrotou a extrema direita no Brasil e a internacionalização do janonismo digital",
+   "resumo": "A reeleição do Presidente Lula com mais de 4,4 milhões de votos de diferença produziu um efeito que ultrapassa as fronteiras. A estratégia de mobilização digital conduzida pelo deputado André…",
+   "link": "https://www.brasildefato.com.br/2026/11/10/a-pedagogia-algoritmica-que-derrotou-a-extrema-direita-no-brasil-e-a-internacionalizacao-do-janonismo-digital/",
+   "dataPub": "2026-11-10T12:02:55.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "rua-e-rede-a-politizacao-do-debate-economico-contra-a-hegemonia-do-parasitismo-rentista",
+   "veiculo": "Brasil de Fato",
+   "fonteFeed": "Brasil de Fato",
+   "titulo": "Rua e rede: a politização do debate econômico contra a hegemonia do parasitismo rentista",
+   "resumo": "A relação entre o mercado financeiro e o governo Lula é historicamente marcada por desconfiança. Dias depois da reeleição de Lula, a simples possibilidade de o presidente se reunir com o economista…",
+   "link": "https://www.brasildefato.com.br/2026/11/10/rua-e-rede-a-politizacao-do-debate-economico-contra-a-hegemonia-do-parasitismo-rentista/",
+   "dataPub": "2026-11-10T11:47:37.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "fluxo-paralelo-pf-faz-cinco-buscas-na-bahia-para-frear-desvios-milionarios-com-emendas-pix",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "Fluxo Paralelo: PF faz cinco buscas na Bahia para frear desvios milionários com emendas Pix",
+   "resumo": "Cinco mandados de busca e apreensão, expedidos pelo ministro Flávio Dino do Supremo Tribunal Federal (STF), nos municípios de Porto Seguro, Eunápolis e Itamaraju, na Bahia, foram cumpridos pela…",
+   "link": "https://www.estadao.com.br/politica/blog-do-fausto-macedo/fluxo-paralelo-pf-faz-cinco-buscas-na-bahia-para-frear-desvios-milionarios-com-emendas-pix/",
+   "dataPub": "2026-11-10T11:45:10.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
    "id": "janones-usou-verba-da-camara-para-fazer-campanha-com-lula-em-minas",
    "veiculo": "Revista Oeste",
    "fonteFeed": "Revista Oeste",
@@ -228,7 +990,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "deputado-italiano-pede-abertura-de-investigacao-penal-sobre-passaporte-para-flavio",
@@ -242,7 +1004,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "povo-quer-ver-lula-dar-certo-e-da-as-costas-ao-drama-bolsonarista",
@@ -282,7 +1044,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "pf-prende-ex-servidor-do-stj-suspeito-de-vazar-informacoes-para-willer-tomaz-amigo-de-flav",
@@ -296,7 +1058,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "quaest-para-65-dos-brasileiros-democracia-e-preferivel-a-qualquer-outro-regime",
@@ -308,7 +1070,21 @@
    "dataPub": "2026-11-10T10:31:09.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "suspeito-de-vazar-dados-do-stj-a-willer-tomaz-amigo-de-flavio-e-preso-por-ordem-de-moraes",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "Suspeito de vazar dados do STJ a Willer Tomaz, amigo de Flávio, é preso por ordem de Moraes",
+   "resumo": "A Polícia Federal deflagrou nesta terça-feira, 10, a segunda fase da Operação Linceu para prender Humberto Fontoura Pradera, ex-servidor do Superior Tribunal de Justiça (STJ), que teria facilitado o…",
+   "link": "https://www.estadao.com.br/politica/blog-do-fausto-macedo/moraes-manda-prender-suspeito-de-vazar-dados-sigilosos-do-stj-a-willer-tomaz-amigo-de-flavio/",
+   "dataPub": "2026-11-10T10:22:52.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "moraes-manda-prender-suspeito-de-vazar-dados-sigilosos-do-stj-a-willer-tomaz-amigo-de-flav",
@@ -323,6 +1099,20 @@
    ],
    "tom": "negativo",
    "coletadoEm": "2026-11-10T11:47:08.599Z"
+  },
+  {
+   "id": "pf-prende-ex-servidor-do-stj-suspeito-de-vazar-informacoes-sigilosas-a-willer-tomaz",
+   "veiculo": "G1",
+   "fonteFeed": "G1",
+   "titulo": "PF prende ex-servidor do STJ suspeito de vazar informações sigilosas a Willer Tomaz",
+   "resumo": "PF faz operação contra vazamento de dados do STJ A Polícia Federal cumpriu, na manhã desta terça-feira (10), um mandado de prisão contra Humberto Fontoura Pradera, ex-servidor do Superior Tribunal de…",
+   "link": "https://g1.globo.com/politica/noticia/2026/11/10/pf-segunda-fase-operacao-linceu.ghtml",
+   "dataPub": "2026-11-10T10:13:35.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "pf-prende-ex-servidor-do-stj-suspeito-de-vazar-informacoes-sigilosas",
@@ -379,7 +1169,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "apesar-de-longe-da-meta-inflacao-no-brasil-tem-na-media-menor-diferenca-em-relacao-a-dos-e",
@@ -421,21 +1211,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "folha-faz-escolha-indefensavel-ao-escalar-glenn-para-entrevistar-flavio",
-   "veiculo": "ICL Notícias",
-   "fonteFeed": "Google Notícias (debates)",
-   "titulo": "Folha faz escolha indefensável ao escalar Glenn para entrevistar Flávio",
-   "resumo": "Folha faz escolha indefensável ao escalar Glenn para entrevistar Flávio ICL Notícias",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQblh5UlZnQnlPamh6ekM3eVZFT3lqbnVtX181aVRiTVNuQndVNHIxRFE5SWE5ejEwMFBTWVNMbnpQcHZnWFBOQTFNOTZRVExtRFpvd0tLdGZ0TGF1ejZaS0tLeFZUaU5mSENKTks0TWtYTXZLWnlqck9kTjh2X2hxdA?oc=5",
-   "dataPub": "2026-11-10T08:00:40.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "as-conexoes-da-economia",
@@ -478,7 +1254,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "barradas-no-simples-nacional-dividas-deixam-300-mil-empresas-fora-do-regime-tributario-em-",
@@ -521,7 +1297,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-4-tenta-se-aproveitar-de-um-centrao-machucado-diz-especialista",
@@ -540,17 +1316,17 @@
   {
    "id": "tse-julga-acao-de-lula-que-acusa-meta-de-favorecer-flavio-nas-redes-sociais",
    "veiculo": "CNN Brasil",
-   "fonteFeed": "CNN Brasil",
+   "fonteFeed": "Google Notícias (busca)",
    "titulo": "TSE julga ação de Lula que acusa Meta de favorecer Flávio nas redes sociais",
-   "resumo": "Campanha petista diz que algoritmos e a inteligência artificial da Meta restringiram conteúdos do presidente no segundo turno; empresa admite falhas técnicas, mas nega interferência",
-   "link": "https://www.cnnbrasil.com.br/politica/tse-julga-acao-de-lula-que-acusa-meta-de-favorecer-flavio-nas-redes-sociais/",
+   "resumo": "TSE julga ação de Lula que acusa Meta de favorecer Flávio nas redes sociais CNN Brasil",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPb3MwektGSWFKXzhEa1ZyNzFUUWNPOXFxZWc0VTFQaDducUtqMEhtQWRmcEZUbDhMOW9DbmxJeDJXd3hObFBmQ3ZZelhBVGVGTWRyRXBkOU50c3BXYTIxZWtkaHRoS1pKVW56N3c1SkhESHM3NkdOVzNGQTFONVJVV0Y1eUttOElPWTd3d01pUU44RVBSb0xaQTZSYXZrcG5nOWJ1OEVpZEUtSkpZOHQ4RFV3S2Y?oc=5",
    "dataPub": "2026-11-10T06:30:28.000Z",
    "mencoes": [
     "13",
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "governo-lyra-exonera-aliados-de-presidente-do-pl-pernambucano-em-meio-a-disputa-por-comand",
@@ -664,7 +1440,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "nunes-marques-derruba-canal-de-fake-news-exercito-do-lula-",
@@ -690,21 +1466,6 @@
    "dataPub": "2026-11-10T05:00:00.000Z",
    "mencoes": [
     "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "decisao-2026-flavio-tem-53-1-dos-votos-validos-contra-46-9-de-lula-aponta-pesquisa-datatre",
-   "veiculo": "Times Brasil | CNBC",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "DECISÃO 2026: Flávio tem 53,1% dos votos válidos contra 46,9% de Lula, aponta pesquisa DataTrends",
-   "resumo": "DECISÃO 2026: Flávio tem 53,1% dos votos válidos contra 46,9% de Lula, aponta pesquisa DataTrends Times Brasil | CNBC",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSnNOMFRjM0NpTXB4a0cyNDJfQkdsV21OTDhxRGppZ2ZmdTZfTHd2QTFRcVRIUDZEc295dDNaeFFyaGpRdWR6SmpNTUsweEhtQmxfUmZFdVktdld1ZWJ6dGx0VHFfUXBBT3ZTY1VkVHNjVmlsNGVnLUpnR0s5czlyV1JwaW1kZElFa0xqcWlCODZjY1ptT0JYVGpiVQ?oc=5",
-   "dataPub": "2026-11-10T04:49:05.000Z",
-   "mencoes": [
-    "13",
-    "22"
    ],
    "tom": "neutro",
    "coletadoEm": "2026-11-10T11:47:08.599Z"
@@ -802,7 +1563,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "william-waack-protecao-mutua-entre-poderes-ganha-verniz-institucional-",
@@ -830,7 +1591,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "decreto-que-regulamenta-fim-da-6x1-tem-publicacao-adiada-e-so-deve-sair-apos-retorno-de-lu",
@@ -872,7 +1633,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "governo-preve-publico-recorde-em-posse-de-lula-e-quer-show-de-roger-waters",
@@ -914,7 +1675,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "analise-ww-investimentos-no-brasil-nao-vao-crescer-por-magica",
@@ -942,7 +1703,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-desembarca-na-turquia-para-participar-da-cop-31",
@@ -998,7 +1759,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "analise-ww-nenhum-dos-candidatos-a-presidencia-do-senado-tem-maioria",
@@ -1040,7 +1801,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-se-reunira-com-lideres-do-reino-unido-noruega-e-turquia-na-cop31",
@@ -1082,7 +1843,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "analise-ww-setor-produtivo-nao-esta-preparado-para-reforma-tributaria",
@@ -1138,7 +1899,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "william-waack-os-4-entraves-que-podem-complicar-o-proximo-governo-lula",
@@ -1166,7 +1927,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "restricoes-a-venda-de-carne-para-a-china-derrubam-lucro-da-jbs-e-ofuscam-melhora-nos-eua",
@@ -1237,7 +1998,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "vitoria-do-povo-contra-o-rentismo-sera-decisiva-para-derrotar-de-vez-a-extrema-direita",
@@ -1279,7 +2040,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-ignora-nome-apoiado-por-kassio-e-indica-juiz-de-goias-ao-trf-1",
@@ -1293,7 +2054,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "mpf-e-justica-federal-acionam-governo-para-garantir-r-533-milhoes-em-penduricalhos-a-juize",
@@ -1335,7 +2096,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "ao-new-york-times-flavio-cita-votacao-no-acre-para-questionar-vitoria-de-lula",
@@ -1350,7 +2111,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "arquivamento-do-inquerito-das-fake-news-nao-anula-condenacoes-entenda",
@@ -1392,7 +2153,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "artigo-uma-maioria-que-nao-saiu-das-urnas",
@@ -1418,7 +2179,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "radio-debate-analisa-pesquisa-quaest-sobre-aprovacao-de-lula-situacao-de-flavio-bolsonaro-",
@@ -1475,7 +2236,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "cldf-vota-proposta-que-libera-reeleicao-de-membros-da-mesa-diretora",
@@ -1487,7 +2248,7 @@
    "dataPub": "2026-11-09T20:24:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "inflacao-no-mexico-sobe-acima-do-previsto-e-coloca-em-xeque-a-politica-de-juros-do-banco-c",
@@ -1700,7 +2461,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "o-que-os-numeros-mostram-sobre-as-alegacoes-de-fraude-nas-eleicoes",
@@ -1712,7 +2473,7 @@
    "dataPub": "2026-11-09T19:40:33.000Z",
    "mencoes": [],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "sem-luz-prefeita-de-araruama-critica-enel-apos-temporal-isso-e-um-absurdo-",
@@ -1740,7 +2501,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "flavio-bolsonaro-admite-que-nao-tem-provas-de-fraude-eleitoral",
@@ -1754,7 +2515,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "o-que-acontece-com-o-bolsonarismo-com-flavio-nos-eua-",
@@ -1768,7 +2529,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "flavio-bolsonaro-trava-projeto-que-aumenta-punicao-para-milicias-e-faccoes",
@@ -1811,7 +2572,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "governo-lula-diz-a-fachin-que-voltou-a-cobrar-eua-por-silencio-sobre-paulo-figueiredo",
@@ -1853,7 +2614,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "maceio-registrou-o-maior-crescimento-de-lula-entre-capitais-do-nordeste-no-2-turno",
@@ -1879,7 +2640,7 @@
    "dataPub": "2026-11-09T18:57:22.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "governo-lula-adia-publicacao-de-decreto-que-regulamenta-fim-da-escala-6-1",
@@ -1949,7 +2710,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "nordeste-foi-alvo-de-ataques-nas-redes-sociais-por-causa-da-eleicao-8-em-cada-10-mencoes-f",
@@ -2006,7 +2767,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "encontro-de-alcolumbre-com-bancada-feminina-do-senado-e-adiado-apos-baixa-adesao-e-falta-d",
@@ -2048,7 +2809,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "crescimento-de-flavio-muda-o-humor-da-eleicao-e-preocupa-lula",
@@ -2063,7 +2824,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "datafolha-queda-de-cury-mantem-eleicao-polarizada-entre-lula-e-flavio",
@@ -2078,7 +2839,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "relator-apresenta-diretrizes-da-proposta-de-voto-distrital-misto",
@@ -2092,7 +2853,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "fachin-arquiva-pedido-de-dino-para-que-deltan-fosse-incluido-no-inquerito-das-fake-news",
@@ -2134,7 +2895,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-nomeia-juiz-apoiado-por-dino-e-gilmar-para-o-trf-1-apos-ignorar-magistrado-ligado-a-n",
@@ -2162,7 +2923,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "pt-faz-vaquinha-para-quitar-dividas-de-campanha",
@@ -2205,7 +2966,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-vence-e-trump-perde-uma-nova-perspectiva-para-o-mundo",
@@ -2219,7 +2980,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-escolhe-indicado-por-dino-e-pretere-apadrinhado-de-kassio-para-o-trf-1",
@@ -2236,6 +2997,20 @@
    "coletadoEm": "2026-11-10T11:47:08.599Z"
   },
   {
+   "id": "em-pronunciamento-lula-manda-recado-a-adversarios-o-brasil-nao-e-lugar-para-quem-foge-",
+   "veiculo": "Acorda Cidade",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Em pronunciamento, Lula manda recado a adversários: \"O Brasil não é lugar para quem foge\"",
+   "resumo": "Em pronunciamento, Lula manda recado a adversários: \"O Brasil não é lugar para quem foge\" Acorda Cidade",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOYlRTY2dIaW1tcDFJVWpSYkJ5NHdFZjZlaXBzNk10OTZveWxfeE9NOG1rdV9BazljcVREczJTNVdCMnBpaGQ2YS1ISXZMWkVZaE5wWGgyb3ZTMnl5UDk2NWVYc0s3VFd0enJNTDV1Qmk3cm5ENVVld2ItMmJGVU9qM00wbk92aVllWHFKdk9uN3ZrcnVVYzdXa3haZ2laX3NVWHhKZG1Ha0YtSW9odTVIWHVJanlwRVRKYnpMYjJDQTE0bjRDYmZXWm1VTUliUQ?oc=5",
+   "dataPub": "2026-11-09T15:06:35.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
    "id": "the-economist-destaca-exercito-de-lula-e-papel-de-janones-na-reeleicao",
    "veiculo": "Vermelho",
    "fonteFeed": "Google Notícias (busca)",
@@ -2247,7 +3022,22 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
+  },
+  {
+   "id": "quaest-lula-liderou-entre-pretos-no-2-turno-e-flavio-entre-evangelicos",
+   "veiculo": "UOL Notícias",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Quaest: Lula liderou entre pretos no 2º turno, e Flávio, entre evangélicos",
+   "resumo": "Quaest: Lula liderou entre pretos no 2º turno, e Flávio, entre evangélicos UOL Notícias",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYXBrRUw4cFNCR0RsOUFnWnFVckthMUFJbkJzZGlpQmRWbWhHTW1VNk01R2VaTjVuZzFaeFRJOG1XcG4teGs2LTdocllvVzhWRkN5eFVPV1hIX3J0YVBDUkpEWnB6QkhqOEF5S01Na3ZaTldva1pwMEtCMjBFRHVqRGlnSExYQ2JETmhITTN1bDVGUzNmWUlrdkxNaVY4Uks1SHRwMDY0T2FUVXFaeURzWmFSS2Nod0RPYlhDX2VZdWlJU0otSU9OQ2xvSkFoMjRuMmlUeFpIaw?oc=5",
+   "dataPub": "2026-11-09T15:00:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "a-proposta-de-reforma-do-judiciario-que-aliados-entregaram-a-lula-presidente-citou-urgenci",
@@ -2305,7 +3095,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-viaja-sem-desenhar-a-propria-transicao",
@@ -2319,7 +3109,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "votacao-baixissima-de-flavio-em-3-mil-urnas-nao-e-evidencia-de-fraude-eleitoral",
@@ -2333,7 +3123,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "tre-mg-suspende-investigacao-contra-ana-elisa-por-suposta-divulgacao-de-fake-news-sobre-fl",
@@ -2378,7 +3168,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "kassab-diz-que-equilibrio-fiscal-definira-apoio-do-psd-a-lula",
@@ -2392,7 +3182,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "o-que-os-numeros-da-quaest-revelam-sobre-virada-historica-de-lula-contra-flavio-bolsonaro",
@@ -2407,7 +3197,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-perdeu-a-vantagem-sobre-flavio-no-2-turno-dizem-pesquisas",
@@ -2436,7 +3226,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "cop31-lula-embarca-com-janones-e-ministros-para-turquia-motta-e-alcolumbre-nao-integram-co",
@@ -2450,7 +3240,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-nao-leva-aliados-da-campanha-a-turquia-e-frustra-expectativa-de-montagem-do-governo",
@@ -2507,7 +3297,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "gas-do-povo-governo-prorroga-ate-2031-programa-que-preve-recargas-gratis-para-familias-de-",
@@ -2521,7 +3311,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "estudo-da-ufpe-mostra-que-nao-houve-anomalias-na-vitoria-de-lula-contra-flavio",
@@ -2536,7 +3326,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "a-revolucao-da-linguagem-no-segundo-turno-das-eleicoes-de-2026",
@@ -2548,7 +3338,7 @@
    "dataPub": "2026-11-09T11:56:59.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "fux-diz-que-bets-sao-reconhecidamente-danosas-e-suspende-acoes-sobre-proibicao-de-apostas",
@@ -2576,21 +3366,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "flavio-bolsonaro-lidera-pesquisa-presidencial-em-sc",
-   "veiculo": "ND Mais",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Flávio Bolsonaro lidera pesquisa presidencial em SC",
-   "resumo": "Flávio Bolsonaro lidera pesquisa presidencial em SC ND Mais",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1SWTBmMjA4UXViUWlyRWpxbS04c0JUWXdoclozTmo2YnNuQnJrVTZqUGY2b1dORVRfNEpXc2pNaGdFUURqR1dBM2tRdlhVUy1PdFlSYmxtT2JIUEVSTHV5UWZlb3JaQTRNa1ZkZ3JBd0tMam1OejF0MkY3SQ?oc=5",
-   "dataPub": "2026-11-09T10:46:04.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "folha-alerta-para-risco-de-recessao-no-brasil-em-2027",
@@ -2618,7 +3394,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-transmitiu-em-rede-nacional-um-pronunciamento-de-palanque",
@@ -2687,22 +3463,7 @@
    "dataPub": "2026-11-09T10:00:00.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "quaest-lula-liderou-entre-pretos-no-2-turno-e-flavio-entre-evangelicos",
-   "veiculo": "UOL Notícias",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Quaest: Lula liderou entre pretos no 2º turno, e Flávio, entre evangélicos",
-   "resumo": "Quaest: Lula liderou entre pretos no 2º turno, e Flávio, entre evangélicos UOL Notícias",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYXBrRUw4cFNCR0RsOUFnWnFVckthMUFJbkJzZGlpQmRWbWhHTW1VNk01R2VaTjVuZzFaeFRJOG1XcG4teGs2LTdocllvVzhWRkN5eFVPV1hIX3J0YVBDUkpEWnB6QkhqOEF5S01Na3ZaTldva1pwMEtCMjBFRHVqRGlnSExYQ2JETmhITTN1bDVGUzNmWUlrdkxNaVY4Uks1SHRwMDY0T2FUVXFaeURzWmFSS2Nod0RPYlhDX2VZdWlJU0otSU9OQ2xvSkFoMjRuMmlUeFpIaw?oc=5",
-   "dataPub": "2026-11-09T10:00:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "quaest-lula-teve-maior-vantagem-entre-pretos-e-flavio-entre-evangelicos",
@@ -2717,7 +3478,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "andre-mendonca-encerra-processo-sobre-sigilos-de-lula-e-flavio",
@@ -2818,7 +3579,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "o-recado-de-lula-a-flavio-bolsonaro-no-pronunciamento-o-brasil-nao-e-lugar-para-quem-foge-",
@@ -2933,6 +3694,20 @@
    ],
    "tom": "neutro",
    "coletadoEm": "2026-11-09T10:26:48.338Z"
+  },
+  {
+   "id": "flavio-bolsonaro-lidera-pesquisa-presidencial-em-sc",
+   "veiculo": "ND Mais",
+   "fonteFeed": "Google Notícias (pesquisas)",
+   "titulo": "Flávio Bolsonaro lidera pesquisa presidencial em SC",
+   "resumo": "Flávio Bolsonaro lidera pesquisa presidencial em SC ND Mais",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1SWTBmMjA4UXViUWlyRWpxbS04c0JUWXdoclozTmo2YnNuQnJrVTZqUGY2b1dORVRfNEpXc2pNaGdFUURqR1dBM2tRdlhVUy1PdFlSYmxtT2JIUEVSTHV5UWZlb3JaQTRNa1ZkZ3JBd0tMam1OejF0MkY3SQ?oc=5",
+   "dataPub": "2026-11-09T08:00:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-ganhou-mais-de-5-milhoes-de-seguidores-no-instagram-em-outubro-alta-de-35-",
@@ -3147,7 +3922,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "oposicao-planeja-contra-ataque-contra-a-nova-estrategia-digital-de-lula",
@@ -3161,7 +3936,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "o-novo-congresso-e-o-futuro-do-presidencialismo-o-assunto-1841",
@@ -3176,7 +3951,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "rio-tera-segunda-feira-chuvosa-apos-temporal-no-fim-de-semana-veja-a-previsao-para-os-prox",
@@ -3232,7 +4007,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "divisao-da-direita-pode-fortalecer-alcolumbre-na-disputa-pelo-comando-do-senado-avaliam-al",
@@ -3246,7 +4021,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-ataca-big-techs-e-reclama-de-tentativa-de-interferencia-nas-eleicoes",
@@ -3276,7 +4051,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "e-falso-video-que-atribui-a-marcio-gomes-narracao-sobre-flavio-bolsonaro",
@@ -3376,7 +4151,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-se-compromete-com-responsabilidade-fiscal-e-busca-conciliacao",
@@ -3391,7 +4166,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-diz-que-ampliara-politica-nacional-de-cuidados-para-idosos",
@@ -3476,7 +4251,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "governo-deve-rever-penduricalhos-e-desoneracoes-fiscais-diz-presidente-do-pt",
@@ -3533,7 +4308,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-diz-que-big-techs-tentaram-interferir-nas-eleicoes-a-verdade-venceu-",
@@ -3590,7 +4365,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "andre-mendonca-extingue-processo-de-abertura-de-sigilo-de-lula-e-flavio",
@@ -3633,7 +4408,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "sem-citar-flavio-bolsonaro-lula-manda-recado-a-opositor-em-pronunciamento-jamais-abandonei",
@@ -3662,7 +4437,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "na-tv-lula-promete-responsabilidade-fiscal-manda-indireta-a-flavio-e-cobra-judiciario-etic",
@@ -3677,7 +4452,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-fala-7-minutos-mas-nao-explica-como-fara-ajuste-fiscal",
@@ -3734,7 +4509,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-promete-responsabilidade-fiscal-e-se-diz-preocupado-com-divida-publica",
@@ -3777,7 +4552,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "na-tv-lula-diz-que-se-preocupa-com-divida-publica-e-taxa-de-juros",
@@ -3821,7 +4596,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-diz-que-se-preocupa-com-divida-publica-e-juros-e-reafirma-responsabilidade-fiscal",
@@ -3836,7 +4611,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "em-recados-a-milei-papa-leao-xiv-pede-cuidado-com-a-palavra-limites-ao-poder-e-diz-que-eco",
@@ -3936,7 +4711,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "flavio-bolsonaro-nao-teve-votos-em-106-urnas-no-segundo-turno-lula-zerou-em-quatro",
@@ -3979,7 +4754,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "sistemas-eleitorais-distintos-produzirao-condicoes-opostas-de-governabilidade-de-trump-e-l",
@@ -4090,7 +4865,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "quem-perdeu-o-enem-por-causa-do-clima-podera-refazer-a-prova-diz-ministro",
@@ -4146,7 +4921,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "tre-mg-suspende-investigacao-da-pf-contra-deputada-eleita-apos-denuncia-de-flavio-bolsonar",
@@ -4287,7 +5062,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "gabriel-andrade-costa-qual-e-o-ponto-de-nao-retorno-",
@@ -4459,7 +5234,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "janones-diz-que-perdeu-10-kg-durante-2-turno",
@@ -4546,7 +5321,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "onde-ficam-as-urnas-que-lula-e-flavio-bolsonaro-zeraram-no-2-turno",
@@ -4561,7 +5336,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "-exercito-de-eduardo-paes-por-2-turno-no-rj-flopa-e-tem-apenas-260-mil-seguidores",
@@ -4581,7 +5356,7 @@
   {
    "id": "ratinho-junior-diz-que-vai-com-quem-for-para-derrotar-lula",
    "veiculo": "Gazeta do Povo",
-   "fonteFeed": "Google Notícias (debates)",
+   "fonteFeed": "Google Notícias (pesquisas)",
    "titulo": "Ratinho Junior diz que vai “com quem for” para derrotar Lula",
    "resumo": "Ratinho Junior diz que vai “com quem for” para derrotar Lula Gazeta do Povo",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb3lfU2xXREhodExQZ0N5bm4tQXFoRS1MZzBySThaSE9lcnBQZTNIemxqWS1QWWxyWDViTFNmbFV4WHRoMk1ERXh6SGZ2YkNpOEk4TXoyWTM1MHhXTmRZemVBY21lcGgyUDRWN1VhWjFKelJJUURsUWdGY3RiWjhacllfQU5fOWFSNjZLdEo3cHBXWUI0SFJzTkNkUjBjTmx1T09VSmxIeXY?oc=5",
@@ -4590,7 +5365,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "-enem-e-uma-das-operacoes-mais-complexas-do-mundo-diz-ministro",
@@ -4632,7 +5407,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "lula-ve-enem-como-guerra-contra-retrocesso-e-exalta-participacao-feminina",
@@ -4731,7 +5506,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "pesquisa-quaest-mostra-racha-na-direita-sobre-fuga-de-flavio",
@@ -4803,7 +5578,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-08T19:30:56.463Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "59-rejeitam-criticas-de-flavio-ao-resultado-das-urnas-diz-quaest",
@@ -4927,7 +5702,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "gilmar-chama-de-levianas-criticas-ao-resultado-das-eleicoes",
@@ -5040,7 +5815,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
+   "coletadoEm": "2026-11-10T18:56:04.798Z"
   },
   {
    "id": "quaest-62-dos-eleitores-reprovam-fuga-de-flavio-aos-eua",
@@ -5055,852 +5830,58 @@
    ],
    "tom": "neutro",
    "coletadoEm": "2026-11-08T23:09:02.337Z"
-  },
-  {
-   "id": "quaest-para-60-flavio-se-comportou-mal-ao-questionar-resultado-das-urnas",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "CNN Brasil",
-   "titulo": "Quaest: para 60%, Flávio se comportou mal ao questionar resultado das urnas",
-   "resumo": "Pesquisa \"O Brasil depois das urnas\" ouviu 2.004 pessoas entre os dias 30 de outubro e 2 de novembro; margem de erro é de dois pontos percentuais, para mais ou para menos, com intervalo de confiança…",
-   "link": "https://www.cnnbrasil.com.br/politica/quaest-para-60-flavio-se-comportou-mal-ao-questionar-resultado-das-urnas/",
-   "dataPub": "2026-11-08T12:42:36.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "sob-lula-valor-de-acordos-de-leniencia-e-quase-sete-vezes-menor-que-no-governo-bolsonaro",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Sob Lula, valor de acordos de leniência é quase sete vezes menor que no governo Bolsonaro",
-   "resumo": "O governo Lula fechou quatro acordos de leniência em 2026, que preveem o pagamento de R$ 101 milhões. Em todo o mandato, já são 13 acordos que somam R$ 1,65 bilhão. Matéria exclusiva para assinantes…",
-   "link": "https://oglobo.globo.com/blogs/lauro-jardim/post/2026/11/sob-lula-valor-de-acordos-de-leniencia-e-quase-sete-vezes-menor-que-no-governo-bolsonaro.ghtml",
-   "dataPub": "2026-11-08T12:40:01.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-09T02:41:40.623Z"
-  },
-  {
-   "id": "quaest-48-aprovam-e-44-desaprovam-governo-lula-na-primeira-pesquisa-apos-a-eleicao",
-   "veiculo": "G1",
-   "fonteFeed": "G1",
-   "titulo": "Quaest: 48% aprovam e 44% desaprovam governo Lula na primeira pesquisa após a eleição",
-   "resumo": "Aprovação do governo Lula. Arte/g1 Pesquisa Quaest divulgada neste domingo (8) mostra que 48% dos brasileiros aprovam o governo do presidente Lula (PT), reeleito para o quarto mandato, enquanto 44%…",
-   "link": "https://g1.globo.com/politica/noticia/2026/11/08/quaest-48percent-aprovam-e-44percent-desaprovam-governo-lula-na-primeira-pesquisa-apos-a-eleicao.ghtml",
-   "dataPub": "2026-11-08T12:38:32.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "washington-post-apos-fugir-e-se-declarar-presidente-flavio-diz-que-nao-sabe-o-que-vai-faze",
-   "veiculo": "Estado de Minas",
-   "fonteFeed": "Estado de Minas",
-   "titulo": "Washington Post: Após fugir e se declarar presidente, Flávio diz que não sabe o que vai fazer agora",
-   "resumo": "nos estados unidos",
-   "link": "https://www.em.com.br/politica/2026/11/7535068-washington-post-apos-fugir-e-se-declarar-presidente-flavio-diz-que-nao-sabe-o-que-vai-fazer-agora.html",
-   "dataPub": "2026-11-08T12:24:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "dois-aliados-estiveram-ao-lado-de-flavio-e-jair-bolsonaro-nos-pronunciamentos-das-derrotas",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Dois aliados estiveram ao lado de Flávio e Jair Bolsonaro nos pronunciamentos das derrotas",
-   "resumo": "Rogério Marinho foi um dos dois aliados que ficaram posicionados tanto ao lado de Jair quanto de Flávio Bolsonaro em seus pronunciamentos de derrota. O deputado federal Hélio Lopes, o Hélio Negão…",
-   "link": "https://oglobo.globo.com/blogs/lauro-jardim/post/2026/11/dois-aliados-estiveram-ao-lado-de-flavio-e-jair-bolsonaro-nos-pronunciamentos-das-derrotas.ghtml",
-   "dataPub": "2026-11-08T12:20:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-09T02:41:40.623Z"
-  },
-  {
-   "id": "quaest-fim-da-6x1-e-isencao-da-cesta-basica-lideram-prioridades-de-eleitores-para-lula-4",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Quaest: Fim da 6x1 e isenção da cesta básica lideram prioridades de eleitores para Lula 4",
-   "resumo": "O fim da escala de trabalho 6x1 e o imposto zero sobre a cesta básica são as promessas de campanha que os brasileiros consideram prioritárias no quarto mandato de Luiz Inácio Lula da Silva (PT)…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/quaest-fim-da-6x1-e-isencao-da-cesta-basica-lideram-prioridades-de-eleitores-para-lula-4.shtml",
-   "dataPub": "2026-11-08T12:00:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "62-afirmam-que-flavio-errou-ao-fugir-para-os-eua-e-61-dizem-que-eleicao-foi-justa-mostra-p",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "62% afirmam que Flávio errou ao fugir para os EUA, e 61% dizem que eleição foi justa, mostra pesquisa Quaest",
-   "resumo": "Pesquisa Quaest divulgada neste domingo (8) mostra que 61% dos brasileiros acreditam que as eleições deste ano foram limpas e justas, ante 30% que consideram que houve fraude. Não sabem ou não opinam…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/quaest-61-dizem-que-eleicoes-foram-limpas-e-justas-30-fraudadas.shtml",
-   "dataPub": "2026-11-08T12:00:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "maioria-reprova-ida-de-flavio-aos-eua-cre-que-ele-fugiu-e-ve-eleicoes-limpas-no-brasil-diz",
-   "veiculo": "Estadão",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Maioria reprova ida de Flávio aos EUA, crê que ele fugiu e vê eleições limpas no Brasil, diz Quaest",
-   "resumo": "Maioria reprova ida de Flávio aos EUA, crê que ele fugiu e vê eleições limpas no Brasil, diz Quaest Estadão",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOc011eVNtTkxhdmNJcU5UY3U2VzNoa18tZTdTR2xkdTZpR21vWWhHVVl1enphQmVqaTJHSFU3bjdjVl9WZVdORkVjM00tUVRUZE1HeklaVUgtN3k2S2N4bU9lUWRnQVZCZzl2YnVoeldCME8xWXlUUzlFa3V2Y3o2WVI1Ym9McDJ3ZnVPQi1mRlpwS2VoZlFDMWZHTXVGblU5eFJLVkkzbmxpUWNVaGxTUmQtRzhjV2RFcC1XTk9QWFo4dzRnYVp1OXRPNHRMaUnSAdQBQVVfeXFMTXlIMkpLOVVPdTFibGlGS0tMeElxbjMzSDhrX085eUMwUmwwSzJabVdLZ24wTTZhNXpvc09aQlAzdm9WeWtoWEwtdHNlZXFoZmhfXzlxYjg3Tk9hcVZ1Rlo2MWk5cE5MUEdrMWYtdURPY0V1anlMTHlkMktRYjg5YjA0UzVLel9KY25oNVJkVzJvVVk5R0xOQzFGcnV6UF8wd25JQTFBeEZydjI1NWM5eWVNbFdTbUhnTUp0LTI4YTBweVNabUJQT2ZtcVNRUGtoZGN5ZlE?oc=5",
-   "dataPub": "2026-11-08T12:00:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "apos-eleicao-48-aprovam-e-44-desaprovam-governo-lula-economia-e-principal-preocupacao",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Após eleição, 48% aprovam e 44% desaprovam governo Lula; economia é principal preocupação",
-   "resumo": "Pesquisa Quaest divulgada neste domingo, 8, aponta que 48% dos brasileiros aprovam o governo do presidente Luiz Inácio Lula da Silva , contra 44% que reprovam a gestão. São 8% os que não sabem ou não…",
-   "link": "https://www.estadao.com.br/politica/apos-eleicao-48-aprovam-e-44-desaprovam-governo-lula-economia-e-principal-preocupacao/",
-   "dataPub": "2026-11-08T12:00:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-09T10:26:48.338Z"
-  },
-  {
-   "id": "governo-bloqueia-mais-de-1-2-mil-celulares-em-presidios-apos-decreto-de-lula",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Governo bloqueia mais de 1,2 mil celulares em presídios após decreto de Lula",
-   "resumo": "Às vésperas do segundo turno, Lula publicou um decreto criando um programa nacional para agilizar o bloqueio de celulares em presídios. Em três semanas, mais de 1,2 mil aparelhos foram bloqueados…",
-   "link": "https://oglobo.globo.com/blogs/lauro-jardim/post/2026/11/governo-bloqueia-mais-de-12-mil-celulares-em-presidios-apos-decreto-de-lula.ghtml",
-   "dataPub": "2026-11-08T12:00:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-09T02:41:40.623Z"
-  },
-  {
-   "id": "jose-loredo-filho-vamos-a-guerra-",
-   "veiculo": "Revista Oeste",
-   "fonteFeed": "Revista Oeste",
-   "titulo": "José Lorêdo Filho: ‘Vamos à guerra’",
-   "resumo": "Por José Lorêdo Filho* O país inteiro assistiu, consternado, à histeria da esquerda no primeiro turno e, sobretudo, no segundo turno do último pleito presidencial, ao apresentar o candidato…",
-   "link": "https://revistaoeste.com/politica/jose-loredo-filho-vamos-a-guerra/",
-   "dataPub": "2026-11-08T12:00:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "fuga-de-flavio-aos-eua-e-condenada-por-6-em-cada-10-brasileiros-diz-quaest",
-   "veiculo": "UOL Notícias",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Fuga de Flávio aos EUA é condenada por 6 em cada 10 brasileiros, diz Quaest",
-   "resumo": "Fuga de Flávio aos EUA é condenada por 6 em cada 10 brasileiros, diz Quaest UOL Notícias",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNaURpOWQwNlFSTkZtYm1NQll4TU5QRFd5SjdtN2wzZEVENjNzSHpjZkx6QTVZV21pZC1kbEJ5eERNUjQtRFR4cFg5Y1gwbE5JSGVlX2xNQ0dxRFJkY1V6azRMZHREaHZybnhOTnR1VTJrZ3ppd1UwYlNkYU9PQU80Mi1HZmppWlNDV3lqVHdreHNKMVZHdmx6WWF4cm1oV2VHc3AzV0M2eTJ4TnN4YmdoVkhoTkpUMGpPQ3paVjA4NUo4QkdERDlPeTdzUUx0MHB4N29nZi1TaFVfYjBOTkRxZQ?oc=5",
-   "dataPub": "2026-11-08T11:49:04.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "flavio-critica-nunes-marques-apos-vitoria-de-lula-no-tse",
-   "veiculo": "iG Último Segundo",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Flávio critica Nunes Marques após vitória de Lula no TSE",
-   "resumo": "Flávio critica Nunes Marques após vitória de Lula no TSE iG Último Segundo",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOWxzenhael9GdmtNZC1NOE9ZMmZkWk9jel93YzZEUzhwbTdwZThxaFc0RTVJYXJkVkdNOU9Nb25RRjBSNzUxa1l1cXJYbkxoRy1qSjhQNWRkMlVJWlRfRXZKNVF1VnZ1Umdib3pxMnRSQTA3R3RDQThlZVFubnZ1THREQkZwbEQySkplLUpnSGZCN1VseG9JLUZCd0Q0VUdOdkxPRTZqVdIBrAFBVV95cUxNNGttb1RTVEY5c01RdTI4WGR4RTd3NmFlQXBwU1lhekNUSy12VUNRM0w5ZnJ2SWtrUTNuSE1wT3lWU0ZrWmRuQXhkYUR6R3JfMjRZVlVVejBKay1GdkdHSVFkZG1aelRFX3lwQzctNmk0MFBFWjRxdDVPUkIxaExpY0RLTjF2czJBWVBTTFJ5cWdEZlJRYl9ZMlpMZ09VekoyanJ1UFNuTzR0eFhu?oc=5",
-   "dataPub": "2026-11-08T11:47:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "quaest-62-dizem-que-flavio-errou-ao-fugir-para-os-estados-unidos",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "CNN Brasil",
-   "titulo": "Quaest: 62% dizem que Flávio errou ao fugir para os Estados Unidos",
-   "resumo": "Pesquisa \"O Brasil depois das urnas\" ouviu 2.004 pessoas entre os dias 30 de outubro e 2 de novembro; margem de erro é de dois pontos percentuais, para mais ou para menos, com intervalo de confiança…",
-   "link": "https://www.cnnbrasil.com.br/politica/quaest-62-dizem-que-flavio-errou-ao-fugir-para-os-estados-unidos/",
-   "dataPub": "2026-11-08T11:37:01.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "bolsonaro-perdeu-base-evangelica-entenda-cenario-com-derrota-de-flavio",
-   "veiculo": "Estado de Minas",
-   "fonteFeed": "Estado de Minas",
-   "titulo": "Bolsonaro perdeu base evangélica? Entenda cenário com derrota de Flávio",
-   "resumo": "PÓS-ELEIÇÃO",
-   "link": "https://www.em.com.br/politica/2026/11/7535053-bolsonaro-perdeu-base-evangelica-entenda-cenario-com-derrota-de-flavio.html",
-   "dataPub": "2026-11-08T11:04:22.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "flavio-diz-que-moraes-virou-grande-articulador-politico-do-lula-",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "Google Notícias (debates)",
-   "titulo": "Flávio diz que Moraes virou \"grande articulador político do Lula\"",
-   "resumo": "Flávio diz que Moraes virou \"grande articulador político do Lula\" CNN Brasil",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdWJ5aW51RERMbDh1TGpCbXNUZjZacEZXWTNCdHI2Rm40TGNGaDd2Q2xjQmhoQ1NGdHNXaGNtSGFaVmMxSWRkVHZvekpST2JxaDlJbDd6V3lhSTdzZDYwUVlYTlJTai1pemdmYzVkbmRvbkVxQ0phZTV4QUdRbk9XNDhNUVo2aWhBaXFoNF96OVpXbmZxZ3JTTnAxZ1NYUnh2T0NFbg?oc=5",
-   "dataPub": "2026-11-08T11:02:01.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-10T03:33:11.985Z"
-  },
-  {
-   "id": "o-assunto-fora-de-hora-em-reuniao-de-emergencia-de-flavio-e-aliados-no-domingo-da-eleicao",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "O assunto 'fora de hora' em reunião de emergência de Flávio e aliados no domingo da eleição",
-   "resumo": "A apuração dos votos no segundo turno já indicava o revés de Flávio Bolsonaro. O candidato e aliados se fecharam em uma reunião de emergência e, lá pelas tantas, Rogério Marinho trouxe à pauta a…",
-   "link": "https://oglobo.globo.com/blogs/lauro-jardim/post/2026/11/o-assunto-fora-de-hora-em-reuniao-de-emergencia-de-flavio-e-aliados-no-domingo-da-eleicao.ghtml",
-   "dataPub": "2026-11-08T11:00:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-08T23:09:02.337Z"
-  },
-  {
-   "id": "quaest-62-reprovam-saida-de-flavio-bolsonaro-do-brasil-e-59-rejeitam-contestacao-da-vitori",
-   "veiculo": "Ipolitica",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "QUAEST: 62% REPROVAM SAÍDA DE FLÁVIO BOLSONARO DO BRASIL E 59% REJEITAM CONTESTAÇÃO DA VITÓRIA DE LULA",
-   "resumo": "QUAEST: 62% REPROVAM SAÍDA DE FLÁVIO BOLSONARO DO BRASIL E 59% REJEITAM CONTESTAÇÃO DA VITÓRIA DE LULA Ipolitica",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVk1WODAwRWcyNXRVZVdTX2ZBalA5MkJBRTNndUVwX2VQRkdmd0RFdW9fdm1HdG4yczBiV3JHaXVCd2dRWFdXdHhHVW9ReGJZME1KbUFzZTl0am9yYndZd2l2RHpQTy1pYXhVb0dUcVVjOVdRTi1fcVV0V0lYemNLY1pfTWZfbWxoN3ozWHFDWWpHbjNzdzlWWnJsbzZDWm9jQ0h0UVZtLURTR25QWG53emJ3eklJbjdtalR6TGRvYTZGUDNP?oc=5",
-   "dataPub": "2026-11-08T10:45:19.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "quaest-62-reprovam-ida-de-flavio-bolsonaro-para-os-eua-e-56-acham-que-ele-esta-fugindo-da-",
-   "veiculo": "G1",
-   "fonteFeed": "G1",
-   "titulo": "Quaest: 62% reprovam ida de Flávio Bolsonaro para os EUA, e 56% acham que ele está fugindo da Justiça",
-   "resumo": "Flávio Bolsonaro desembarca em um aeroporto próximo de Miami em 28 de outubro de 2026. REUTERS/Eva Marie Uzcategui Pesquisa Quaest divulgada neste domingo (8) aponta que 56% dos brasileiros acreditam…",
-   "link": "https://g1.globo.com/politica/noticia/2026/11/08/quaest-56percent-acham-que-flavio-bolsonaro-deixou-o-brasil-apos-as-eleicoes-para-fugir-da-justica.ghtml",
-   "dataPub": "2026-11-08T10:42:31.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "tse-acumula-21-acoes-contra-chapas-de-lula-e-flavio-bolsonaro-apos-eleicoes",
-   "veiculo": "Goiás 246",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "TSE acumula 21 ações contra chapas de Lula e Flávio Bolsonaro após eleições",
-   "resumo": "TSE acumula 21 ações contra chapas de Lula e Flávio Bolsonaro após eleições Goiás 246",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMlpyWk5ZeVk1OHg3X0ZGTXdQNHFUdFhIUHFDQnlQVjlZR2VkMmFGanFvMUJUYmhLb2NaVDdjeGh4SVhNV1A3VmdDN0JoaWlybzYwdkVRODVRQ1gyRURHM1lZczRmbkdkdElLa3A0aUJxUzhLTTRpX1FQblVlZElZZHo5N3lBS1FQak9xazY4RzlqMk1tS2tHaEhNVnBWUXZnZTRXQnAzekNhOHYwTnJXTmRSREgxR3JSUDVBR21EMzdXNEFUb3RMTEp3?oc=5",
-   "dataPub": "2026-11-08T10:37:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-09T10:26:48.338Z"
-  },
-  {
-   "id": "governo-acelera-caca-as-bets-ilegais-e-ja-derrubou-47-mil-sites-desde-a-proibicao",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Governo acelera caça às bets ilegais e já derrubou 47 mil sites desde a proibição",
-   "resumo": "Nos 40 dias desde que Lula editou a medida provisória que proibiu as bets no país, de 25 de setembro até a última quarta-feira, o governo derrubou cerca de 47 mil sites ilegais de apostas — 1.175 por…",
-   "link": "https://oglobo.globo.com/blogs/lauro-jardim/post/2026/11/governo-acelera-caca-as-bets-ilegais-e-ja-derrubou-47-mil-sites-desde-a-proibicao.ghtml",
-   "dataPub": "2026-11-08T10:20:01.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T23:09:02.337Z"
-  },
-  {
-   "id": "pesquisa-quaest-revela-que-62-dos-brasileiros-condenam-fuga-de-flavio-bolsonaro-e-expoe-ra",
-   "veiculo": "Agenda do Poder",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Pesquisa Quaest revela que 62% dos brasileiros condenam fuga de Flávio Bolsonaro e expõe racha na direita",
-   "resumo": "Pesquisa Quaest revela que 62% dos brasileiros condenam fuga de Flávio Bolsonaro e expõe racha na direita Agenda do Poder",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOcE1Cd2lxX2hESHVQQmh3bFpfYzhGa21xMDlHVzNMRy1KSWxhZkRPMDlwdDVCUjVPRUZlUHFjS1p4dFFMUjg2ZUUwTWNWcjlxVUVOWU00N256NUZsbUhqNzV2Qnh0THROckNmN1VXR3ZTX2xRTXJmZHlUbDYxTnJaVXBiMURJY0hmOHZWRUdvRDhSYlNTTWVQXzdGdXB1VkV5UW1uWjdXWWtMV3didm9JQktpRmhHWl9VM1lYMDlNZmhOWm1NeGVUN1h2SHo3RWM?oc=5",
-   "dataPub": "2026-11-08T10:12:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "a-saudade-de-lewandowski-e-o-destino-do-ministro-da-justica-de-lula",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "A saudade de Lewandowski e o destino do ministro da Justiça de Lula",
-   "resumo": "Em meio às especulações sobre os nomes que comandarão os ministérios no quarto mandato de Lula, aliados do presidente já tratam como certa a saída do ministro da Justiça, Wellington César, que…",
-   "link": "https://oglobo.globo.com/blogs/lauro-jardim/post/2026/11/a-saudade-de-lewandowski-e-o-destino-do-ministro-da-justica-de-lula.ghtml",
-   "dataPub": "2026-11-08T10:00:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T19:30:56.463Z"
-  },
-  {
-   "id": "por-que-mulheres-podem-estar-por-tras-da-vitoria-de-lula-nas-eleicoes",
-   "veiculo": "BBC News Brasil",
-   "fonteFeed": "BBC News Brasil",
-   "titulo": "Por que mulheres podem estar por trás da vitória de Lula nas eleições",
-   "resumo": "O atual presidente conseguiu ampliar a vantagem que tinha sobre o eleitorado feminino em relação a 2022, especialmente entre as mulheres jovens, indica análise das urnas.",
-   "link": "https://www.bbc.com/portuguese/articles/c3pwg9x8r947o?at_medium=RSS&at_campaign=rss",
-   "dataPub": "2026-11-08T09:22:52.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "itamaraty-acionou-governo-americano-para-liberar-escolta-armada-de-flavio-em-miami-em-2023",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Itamaraty acionou governo americano para liberar escolta armada de Flávio em Miami em 2023",
-   "resumo": "Em junho de 2023, mais de três anos antes de fugir para os EUA, Flávio Bolsonaro fez uma viagem particular para a mesma Miami onde se abrigou depois de perder para Lula nas urnas. Matéria exclusiva…",
-   "link": "https://oglobo.globo.com/blogs/lauro-jardim/post/2026/11/itamaraty-acionou-governo-americano-para-liberar-escolta-armada-de-flavio-em-miami-em-2023.ghtml",
-   "dataPub": "2026-11-08T09:20:01.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T19:30:56.463Z"
-  },
-  {
-   "id": "fas-da-cultura-pop-lideraram-campanha-online-a-favor-de-lula-diz-estudo",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "CNN Brasil",
-   "titulo": "Fãs da cultura pop lideraram campanha online a favor de Lula, diz estudo",
-   "resumo": "Levantamento mostra como organização dos fandoms se uniu a gamers e usou de IA generativa a multiverso digital para mudar resultado histórico da corrida presidencial no segundo turno",
-   "link": "https://www.cnnbrasil.com.br/politica/fas-da-cultura-pop-lideraram-campanha-online-a-favor-de-lula-diz-estudo/",
-   "dataPub": "2026-11-08T09:00:36.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "em-meio-a-onda-de-violencia-contra-povos-indigenas-governo-prepara-novas-demarcacoes-ainda",
-   "veiculo": "Brasil de Fato",
-   "fonteFeed": "Brasil de Fato",
-   "titulo": "Em meio a onda de violência contra povos indígenas, governo prepara novas demarcações ainda em 2026, afirma ministro",
-   "resumo": "A violência contra os povos indígenas em Mato Grosso do Sul está diretamente relacionada à demora na demarcação de seus territórios tradicionais. A avaliação é do ministro dos Povos Indígenas, Eloy…",
-   "link": "https://www.brasildefato.com.br/2026/11/08/em-meio-a-onda-de-violencia-contra-povos-indigenas-governo-prepara-novas-demarcacoes-ainda-em-2026-afirma-ministro/",
-   "dataPub": "2026-11-08T09:00:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "lula-tera-que-escolher-entre-alcolumbre-e-messias",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Lula terá que escolher entre Alcolumbre e Messias",
-   "resumo": "A articulação para que Lula indique novamente, ainda este ano, Jorge Messias para a vaga de Luís Roberto Barroso no STF segue em andamento em Brasília, mas não deve prosperar. Matéria exclusiva para…",
-   "link": "https://oglobo.globo.com/blogs/lauro-jardim/post/2026/11/lula-tera-que-escolher-entre-alcolumbre-e-messias.ghtml",
-   "dataPub": "2026-11-08T08:40:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T19:30:56.463Z"
-  },
-  {
-   "id": "governadores-aliados-de-flavio-bolsonaro-buscam-relacao-pragmatica-com-lula",
-   "veiculo": "UOL Notícias",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Governadores aliados de Flávio Bolsonaro buscam relação pragmática com Lula",
-   "resumo": "Governadores aliados de Flávio Bolsonaro buscam relação pragmática com Lula UOL Notícias",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTnhsWnZlUHJrdGdTOF9NTmNnaWhmMUt4a0tCNW5EQ1BMQmpjY0xZdGgtQlBTSVJWU2pJX2QxaG1URy03aEJmT0lvZ0JCWmFFYU54TG1sX05nVXRmNzJNZmJFM1NMWHdhUUQ2VlRmeXJJU3EySmlaZjc3SUlRdGtubkhySWlXRzRYQlNWRXJnTkZBemxaa0M2X2o1Zw?oc=5",
-   "dataPub": "2026-11-08T08:30:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-09T21:00:32.771Z"
-  },
-  {
-   "id": "lula-vai-pregar-uniao-e-responsabilidade-fiscal-em-pronunciamento-na-tv-mas-sem-anunciar-m",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Lula vai pregar união e responsabilidade fiscal em pronunciamento na TV, mas sem anunciar medidas",
-   "resumo": "BRASÍLIA – O pronunciamento que o presidente Luiz Inácio Lula da Silva fará às 20h30 deste domingo, 8, em rede nacional de rádio e TV, foi preparado a várias mãos, no Palácio do Planalto, para pregar…",
-   "link": "https://www.estadao.com.br/politica/lula-vai-pregar-uniao-e-responsabilidade-fiscal-em-pronunciamento-na-tv-mas-sem-anunciar-medidas/",
-   "dataPub": "2026-11-08T08:30:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-09T10:26:48.338Z"
-  },
-  {
-   "id": "flavio-bolsonaro-segura-ha-500-dias-projeto-que-pune-milicias-e-faccoes-por-controle-do-te",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Flávio Bolsonaro segura há 500 dias projeto que pune milícias e facções por controle do território",
-   "resumo": "O senador Flávio Bolsonaro (PL-RJ), que teve na promessa de combater o crime organizado uma plataforma de sua campanha presidencial, mantém parado há 500 dias um projeto de lei que endurece a pena…",
-   "link": "https://www.estadao.com.br/politica/coluna-do-estadao/flavio-bolsonaro-segura-ha-500-dias-projeto-que-pune-milicias-e-faccoes-por-controle-do-territorio/",
-   "dataPub": "2026-11-08T08:30:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-09T10:26:48.338Z"
-  },
-  {
-   "id": "rio-vira-laboratorio-da-nova-politica-de-seguranca-de-lula-contra-roubo-de-cargas-e-domini",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Rio vira laboratório da nova política de segurança de Lula contra roubo de cargas e domínio de facções",
-   "resumo": "Antes mesmo de o Senado aprovar a PEC da Segurança Pública na semana passada, o Rio assumiu a posição de laboratório dos mecanismos previstos na proposta. A partir de acordos firmados entre o…",
-   "link": "https://oglobo.globo.com/rio/noticia/2026/11/08/rio-vira-laboratorio-da-nova-politica-de-seguranca-de-lula-contra-roubo-de-cargas-e-dominio-de-faccoes.ghtml",
-   "dataPub": "2026-11-08T08:30:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T19:30:56.463Z"
-  },
-  {
-   "id": "lula-tem-13-pontos-de-vantagem-sobre-flavio-bolsonaro-na-pesquisa-cnt-mda",
-   "veiculo": "Revista Fórum",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Lula tem 13 pontos de vantagem sobre Flávio Bolsonaro na pesquisa CNT/MDA",
-   "resumo": "Lula tem 13 pontos de vantagem sobre Flávio Bolsonaro na pesquisa CNT/MDA Revista Fórum",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSzZXYmZQNFBOUXYtTllSV2JGV0R0RWFYUk9KYXg1emJaSkg0TkQyeWF5TjFsQzRUOC1fUEZjbU5PSVZBeXZCUzlfa0hUeDg1cVdEaXEwZEh2MVZBZUxsWm9PR2Jkb09DTnF6RXhBdm5MRW1nVUJSZmctdnVWUUJfTTJlQQ?oc=5",
-   "dataPub": "2026-11-08T08:29:47.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-09T21:00:32.771Z"
-  },
-  {
-   "id": "futuro-da-enel-no-rio-segue-indefinido-a-um-mes-do-fim-do-prazo-para-renovacao-da-concessa",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Futuro da Enel no Rio segue indefinido a um mês do fim do prazo para renovação da concessão",
-   "resumo": "A pouco mais de um mês do prazo final para a renovação do contrato de concessão da Enel, que atende Niterói e outros 65 municípios do Rio de Janeiro, o Ministério de Minas e Energia ainda não se…",
-   "link": "https://oglobo.globo.com/rio/bairros/niteroi/noticia/2026/11/08/futuro-da-enel-no-rio-segue-indefinido-a-um-mes-do-fim-do-prazo-para-renovacao-da-concessao.ghtml",
-   "dataPub": "2026-11-08T08:00:01.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T19:30:56.463Z"
-  },
-  {
-   "id": "-meu-medo-e-o-governo-lula-buscar-atalhos-e-brigar-com-o-mercado-por-que-professor-em-camb",
-   "veiculo": "G1",
-   "fonteFeed": "G1",
-   "titulo": "'Meu medo é o governo Lula buscar atalhos e brigar com o mercado': por que professor em Cambridge defende ajuste fiscal 'suave'",
-   "resumo": "Por que professor de Cambridge defende ajuste fiscal 'suave' REUTERS via BBC Não há \"atalhos\" para equilibrar as contas públicas e cortar os juros no Brasil, defende o economista Tiago Cavalcanti…",
-   "link": "https://g1.globo.com/economia/noticia/2026/11/08/meu-medo-e-o-governo-lula-buscar-atalhos-e-brigar-com-o-mercado-por-que-professor-em-cambridge-defende-ajuste-fiscal-suave.ghtml",
-   "dataPub": "2026-11-08T08:00:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "cnt-mda-lula-tem-48-e-flavio-39-no-2-turno",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "CNT/MDA: Lula tem 48%, e Flávio, 39% no 2º turno",
-   "resumo": "CNT/MDA: Lula tem 48%, e Flávio, 39% no 2º turno CNN Brasil",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQc2tVaVZEbUtlNnc2TFZBSkRKeGVZSWlmR285elp4OFJOZlpGUGUtN3N6Sk5xQU0yaDBEWEtYNXVUdVBFcmZvdG03OHBUVTZiU0RfRm5fZVUtcG4wSm04NGltRVhyTjZ5bklUV2kyalRNamRIWHNCNUtqTzNtZzUyakxIUkhHZXRkaFE?oc=5",
-   "dataPub": "2026-11-08T08:00:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "real-time-lula-tem-59-no-2-turno-na-bahia-e-flavio-30-",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Real Time: Lula tem 59% no 2º turno na Bahia e Flávio, 30%",
-   "resumo": "Real Time: Lula tem 59% no 2º turno na Bahia e Flávio, 30% CNN Brasil",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOGIxSHJYVTN0U0sxckV1cjl6OGJnVk91VERKZWpMdzNXVFNpakNqOVVTMkNzWERDT082U3VIa3ZMb3BzTVJzb2lfa3lpb082a0xaVzFKbWhXdC1FaTFyRkFwTmM2SFJaeFYtd01JaExpRUI5Q0Z5RXFYTEdSamFYZHFfbjBkblJpcmFBNllSS1lDVzBjZHdEZg?oc=5",
-   "dataPub": "2026-11-08T08:00:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "cnt-mda-lula-tem-42-4-e-flavio-28-7-no-1-turno",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "Google Notícias (debates)",
-   "titulo": "CNT/MDA: Lula tem 42,4%, e Flávio, 28,7% no 1º turno",
-   "resumo": "CNT/MDA: Lula tem 42,4%, e Flávio, 28,7% no 1º turno CNN Brasil",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUGJRUUtGbTFtNFFMWWlHbmNRUzM3U0ZRY01YejlZNHRnbDZ6WlZ3YXhEMnA4UEJuX2o0Yzk3ZFF2RUM2S3dITGN1eF9vUGNTQ1RhRThFZlNtRnZ3R3c0RHBqeGR5YmJNekdvQ25WVWhfcEF3eFFxOEJOWHktd3BodWx0XzlNNnlJX3c5cA?oc=5",
-   "dataPub": "2026-11-08T08:00:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "futura-lula-tem-38-8-no-1-turno-flavio-34-1-",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "Google Notícias (debates)",
-   "titulo": "Futura: Lula tem 38,8% no 1º turno; Flávio, 34,1%",
-   "resumo": "Futura: Lula tem 38,8% no 1º turno; Flávio, 34,1% CNN Brasil",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPejdiTGZBOEJNNTBiN3dGcWJxV21ubUwtSjR3MVhheVlfVnlialFDNFFPaXd6MGtnWFRvYzRJT0N2ZjduVXlTYUY5dHVwQVJDTEFKOXUyM05KcVV0bmx3UXFNT2hiOVg5WjNFb3cxdVZPQjZ5YmRYeG15T2RQLVNLTFZFVWRJUVJW?oc=5",
-   "dataPub": "2026-11-08T08:00:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-10T11:47:08.599Z"
-  },
-  {
-   "id": "futura-no-2-turno-lula-tem-46-5-contra-44-de-flavio-bolsonaro",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "Google Notícias (debates)",
-   "titulo": "Futura: No 2º turno, Lula tem 46,5% contra 44% de Flávio Bolsonaro",
-   "resumo": "Futura: No 2º turno, Lula tem 46,5% contra 44% de Flávio Bolsonaro CNN Brasil",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTWJYSTNacWhEcG5oclBDbTVndkNoOVlPc3B5Ui0xWVN4WGhCVzVCa3Npa2hkaHBsWlpSaWRzT1FlWnBnYVNMVm1LVDJMdlNvYlAxVUVuZjdRTTdVblVrSEpqUlJxSlhKV3ZpWkF0QmNqYWNldEphUGlmU0pvRDJRYm5mVWYwM3gwZmpab1dsdWt3QUNtdEhxbExuRUtJVjg4N1E?oc=5",
-   "dataPub": "2026-11-08T08:00:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-10T03:33:11.985Z"
-  },
-  {
-   "id": "proibidas-por-lula-no-brasil-bets-seguem-atraindo-apostadores-no-telegram",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "Proibidas por Lula no Brasil, bets seguem atraindo apostadores no Telegram",
-   "resumo": "Mensagens prometem bônus por convite e saques sem taxa. Usuários relatam ter sido incluídos em canais sem autorização",
-   "link": "https://www.metropoles.com/brasil/proibidas-por-lula-no-brasil-bets-seguem-atraindo-apostadores-no-telegram",
-   "dataPub": "2026-11-08T07:30:56.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T07:53:49.259Z"
-  },
-  {
-   "id": "pt-e-pl-foram-partidos-que-mais-mencionaram-lula-na-camara-desde-2023",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "PT e PL foram partidos que mais mencionaram \"Lula\" na Câmara desde 2023",
-   "resumo": "Levantamento mostra que partido de Bolsonaro ficou a apenas 679 menções do PT; líder da oposição, Cabo Gilberto lidera ranking individual",
-   "link": "https://www.metropoles.com/brasil/pt-e-pl-foram-partidos-que-mais-mencionaram-lula-na-camara-desde-2023",
-   "dataPub": "2026-11-08T07:30:49.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T07:53:49.259Z"
-  },
-  {
-   "id": "ora-provas-para-que-o-fantastico-mundo-de-flavio-na-america",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "Ora, provas para quê? O fantástico mundo de Flávio na América",
-   "resumo": "Sob a proteção de um Trump derrotado por um tsunami azul",
-   "link": "https://www.metropoles.com/blog-do-noblat/ricardo-noblat/ora-provas-para-que-o-fantastico-mundo-de-flavio-na-america",
-   "dataPub": "2026-11-08T07:30:46.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T07:53:49.259Z"
-  },
-  {
-   "id": "tse-acumula-21-acoes-contra-chapas-presidenciais-apos-o-2-turno",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "TSE acumula 21 ações contra chapas presidenciais após o 2º turno",
-   "resumo": "Corte tem processos sobre supostas irregularidades dos candidatos à Presidência em 2026. Ações pedem investigações e cassação de chapas",
-   "link": "https://www.metropoles.com/brasil/tse-acumula-21-acoes-contra-chapas-presidenciais-apos-o-2o-turno",
-   "dataPub": "2026-11-08T07:30:10.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T07:53:49.259Z"
-  },
-  {
-   "id": "avesso-do-espelho-e-novos-desafios",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Avesso do espelho e novos desafios",
-   "resumo": "O presidente Lula irá para a COP31 na Turquia. Notícia que todos já sabem. Agora tentem imaginar o que seria essa viagem, e a participação brasileira, caso o Brasil tivesse colocado na presidência um…",
-   "link": "https://oglobo.globo.com/blogs/miriam-leitao/coluna/2026/11/avesso-do-espelho-e-novos-desafios.ghtml",
-   "dataPub": "2026-11-08T07:30:01.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T19:30:56.463Z"
-  },
-  {
-   "id": "-cavalo-de-pau-",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "“Cavalo de pau”",
-   "resumo": "Estamos vivendo a estranha situação de um governante que prepara a transição para si mesmo tendo como objetivo fazer uma administração radicalmente diferente do que fez até a agora. A famosa “herança…",
-   "link": "https://oglobo.globo.com/blogs/merval-pereira/coluna/2026/11/cavalo-de-pau.ghtml",
-   "dataPub": "2026-11-08T07:30:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "os-exercitos-digitais-para-alem-das-eleicoes",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Os exércitos digitais para além das eleições",
-   "resumo": "Quem diria que, em pleno 2026, uma das maiores tecnologias eleitorais do mundo seria brasileira? E que, para entrar na guerra, bastariam um celular carregado, internet e disposição para cumprir…",
-   "link": "https://oglobo.globo.com/ela/luana-genot/coluna/2026/11/os-exercitos-digitais-para-alem-das-eleicoes.ghtml",
-   "dataPub": "2026-11-08T07:00:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "ajuste-fiscal-gradual-de-lula-perde-forca-desde-2024-e-gasto-cresce-5-acima-da-inflacao",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Ajuste fiscal gradual de Lula perde força desde 2024, e gasto cresce 5% acima da inflação",
-   "resumo": "Pressionado pelo mercado financeiro para promover um maior aperto nas contas públicas, o presidente Luiz Inácio Lula da Silva e seus principais auxiliares têm ressaltado em discursos que o governo…",
-   "link": "https://oglobo.globo.com/economia/fabio-graner/post/2026/11/ajuste-fiscal-gradual-de-lula-perde-forca-desde-2024-e-gasto-cresce-5percent-acima-da-inflacao.ghtml",
-   "dataPub": "2026-11-08T07:00:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "o-mundo-inteiro-esta-fazendo-o-l",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "O mundo inteiro está fazendo o L",
-   "resumo": "Por essa eu não esperava: ver o Brasil exportando consciência. O mundo inteiro está fazendo o L, e já não se trata de Lula, que agora tem que focar nos ajustes fiscais para conter o endividamento e…",
-   "link": "https://oglobo.globo.com/ela/martha-medeiros/coluna/2026/11/o-mundo-inteiro-esta-fazendo-o-l.ghtml",
-   "dataPub": "2026-11-08T07:00:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "lula-acompanha-primeiro-dia-do-enem-em-sala-de-monitoramento-do-inep",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "CNN Brasil",
-   "titulo": "Lula acompanha primeiro dia do Enem em sala de monitoramento do Inep",
-   "resumo": "Com mais de 5 milhões de inscritos, primeiro dia do exame contará com visita do presidente à sala que acompanha a entrega dos malotes com as provas, a presença dos profissionais responsáveis pela…",
-   "link": "https://www.cnnbrasil.com.br/politica/lula-acompanha-primeiro-dia-do-enem-em-sala-de-monitoramento-do-inep/",
-   "dataPub": "2026-11-08T06:30:50.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T07:53:49.259Z"
-  },
-  {
-   "id": "da-seguranca-a-fazenda-alckmin-vira-nome-coringa-em-montagem-de-ministerios-do-lula-4",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Da Segurança à Fazenda: Alckmin vira nome 'coringa' em montagem de ministérios do Lula 4",
-   "resumo": "Após desempenhar papel relevante na campanha que garantiu a reeleição de Luiz Inácio Lula da Silva, o vice-presidente Geraldo Alckmin (PSB) se cacifou para ampliar o espaço no quarto mandato e passou…",
-   "link": "https://oglobo.globo.com/politica/noticia/2026/11/08/da-seguranca-a-fazenda-alckmin-vira-nome-coringa-em-montagem-de-ministerios-do-lula-4.ghtml",
-   "dataPub": "2026-11-08T06:30:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "pesquisa-quaest-mostra-que-lula-4-gera-maior-receio-de-conflitos-com-congresso-e-stf-mas-m",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Pesquisa Quaest mostra que Lula 4 gera maior receio de conflitos com Congresso e STF, mas mais otimismo do que em 2022",
-   "resumo": "A quarta vitória presidencial de Luiz Inácio Lula da Silva (PT), que disputou sete das dez eleições brasileiras desde a redemocratização, deixou os brasileiros mais otimistas do que em 2022, quando…",
-   "link": "https://oglobo.globo.com/blogs/pulso/post/2026/11/pesquisa-quaest-mostra-que-lula-4-gera-maior-receio-de-conflitos-com-congresso-e-stf-mas-mais-otimismo-do-que-em-2022.ghtml",
-   "dataPub": "2026-11-08T06:30:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "entrevista-pec-da-seguranca-acaba-com-ilhas-de-informacao-ao-padronizar-e-compartilhar-dad",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Entrevista: 'PEC da Segurança acaba com ilhas de informação ao padronizar e compartilhar dados', diz Ricardo Saadi, presidente do Coaf",
-   "resumo": "O presidente do Conselho de Controle de Atividades Financeiras (Coaf), Ricardo Saadi, avalia que a Proposta de Emenda à Constituição (PEC) da Segurança, aprovada pelo Congresso, vai acabar com as…",
-   "link": "https://oglobo.globo.com/politica/noticia/2026/11/08/entrevista-pec-da-seguranca-acaba-com-ilhas-de-informacao-ao-padronizar-e-compartilhar-dados-diz-ricardo-saadi-presidente-do-coaf.ghtml",
-   "dataPub": "2026-11-08T06:30:00.000Z",
-   "mencoes": [],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "fuga-e-postura-golpista-de-flavio-bolsonaro-dividem-direita-e-sao-rejeitadas-por-seis-em-c",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Fuga e postura golpista de Flávio Bolsonaro dividem direita e são rejeitadas por seis em cada dez brasileiros, aponta Quaest",
-   "resumo": "Seis em cada dez brasileiros repudiam a fuga de Flávio Bolsonaro (PL) para os Estados Unidos após a derrota na eleição presidencial e a postura golpista de questionar o resultado do segundo turno. A…",
-   "link": "https://oglobo.globo.com/blogs/pulso/post/2026/11/fuga-e-postura-golpista-de-flavio-bolsonaro-dividem-direita-e-sao-rejeitadas-por-seis-em-cada-dez-brasileiros-aponta-quaest.ghtml",
-   "dataPub": "2026-11-08T06:30:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
-  },
-  {
-   "id": "vitoria-de-lula-reforca-isolamento-de-mendonca-e-nunes-marques-no-stf",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Vitória de Lula reforça isolamento de Mendonça e Nunes Marques no STF",
-   "resumo": "Foco dos candidatos na campanha eleitoral, a correlação de forças no Supremo Tribunal Federal (STF) deve acirrar o isolamento dos ministros Kassio Nunes Marques e André Mendonça após a reeleição do…",
-   "link": "https://oglobo.globo.com/politica/noticia/2026/11/08/vitoria-de-lula-reforca-isolamento-de-mendonca-e-nunes-marques-no-stf.ghtml",
-   "dataPub": "2026-11-08T06:30:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-08T14:58:08.503Z"
   }
  ],
  "midia": {
   "janelaHoras": 72,
   "totalManchetes": 400,
   "mencoes": {
-   "13": 321,
-   "22": 162
+   "13": 323,
+   "22": 150
   },
   "tom": {
    "13": {
-    "positivo": 63,
-    "neutro": 211,
-    "negativo": 47
+    "positivo": 62,
+    "neutro": 210,
+    "negativo": 51
    },
    "22": {
-    "positivo": 27,
-    "neutro": 90,
+    "positivo": 24,
+    "neutro": 81,
     "negativo": 45
    }
   },
   "termos": [
    [
     "quaest",
-    48
+    37
    ],
    [
     "governo",
-    39
+    31
    ],
    [
     "fiscal",
-    23
-   ],
-   [
-    "pesquisa",
     21
    ],
    [
     "enem",
-    20
+    19
    ],
    [
-    "brasileiros",
-    15
+    "pesquisa",
+    16
    ],
    [
     "pronunciamento",
     14
    ],
    [
-    "fuga",
-    14
+    "brasileiros",
+    12
    ],
    [
-    "vitória",
-    13
-   ],
-   [
-    "justiça",
+    "senado",
     11
    ],
    [
@@ -5908,44 +5889,76 @@
     11
    ],
    [
-    "bets",
+    "fuga",
     11
    ],
    [
-    "maioria",
-    11
+    "vitória",
+    10
    ],
    [
     "disputa",
     10
    ],
    [
-    "congresso",
+    "maioria",
     10
    ],
    [
+    "crítica",
+    9
+   ],
+   [
+    "fake",
+    9
+   ],
+   [
+    "news",
+    9
+   ],
+   [
+    "justiça",
+    9
+   ],
+   [
+    "congresso",
+    9
+   ],
+   [
+    "bets",
+    9
+   ],
+   [
+    "turquia",
+    8
+   ],
+   [
+    "tarcísio",
+    8
+   ],
+   [
+    "reforma",
+    8
+   ],
+   [
+    "escala",
+    8
+   ],
+   [
+    "ação",
+    8
+   ],
+   [
+    "meta",
+    8
+   ],
+   [
+    "milhões",
+    8
+   ],
+   [
     "aponta",
-    9
-   ],
-   [
-    "senado",
-    9
-   ],
-   [
-    "aliados",
-    9
-   ],
-   [
-    "decreto",
-    9
-   ],
-   [
-    "urnas",
-    9
-   ],
-   [
-    "reprova",
-    9
+    8
    ],
    [
     "investigação",
@@ -5956,19 +5969,11 @@
     8
    ],
    [
-    "mostra",
+    "manda",
     8
    ],
    [
-    "segurança",
-    8
-   ],
-   [
-    "desde",
-    8
-   ],
-   [
-    "ajuste",
+    "decreto",
     8
    ],
    [
@@ -5976,108 +5981,97 @@
     8
    ],
    [
-    "critica",
+    "urnas",
     8
    ],
    [
-    "pede",
+    "reprova",
+    8
+   ],
+   [
+    "segurança",
     7
    ],
    [
-    "manda",
+    "eleitores",
     7
    ],
    [
-    "fake",
+    "dino",
     7
    ],
    [
-    "news",
+    "ministro",
     7
    ],
    [
-    "ações",
+    "inquérito",
     7
    ],
    [
-    "nunes",
-    7
-   ],
-   [
-    "marques",
-    7
-   ],
-   [
-    "adia",
-    7
-   ],
-   [
-    "análise",
-    7
-   ],
-   [
-    "direita",
-    7
-   ],
-   [
-    "milhões",
+    "janones",
     7
    ]
   ],
   "serieDiaria": [
    {
-    "13": 131,
-    "22": 101,
+    "13": 91,
+    "22": 68,
     "dia": "2026-11-08"
    },
    {
-    "13": 158,
+    "13": 159,
     "22": 44,
     "dia": "2026-11-09"
    },
    {
-    "13": 32,
-    "22": 17,
+    "13": 73,
+    "22": 38,
     "dia": "2026-11-10"
    }
   ],
   "veiculos": {
-   "Revista Oeste": 18,
-   "O Globo": 104,
-   "Blog do Esmael": 1,
-   "Gazeta do Povo": 29,
-   "Metrópoles": 16,
-   "G1": 20,
-   "Folha de S.Paulo": 18,
-   "Estadão": 29,
-   "Brasil 247": 3,
-   "CNN Brasil": 42,
+   "Revista Oeste": 21,
+   "G1": 19,
+   "Gazeta do Povo": 36,
+   "CNN Brasil": 36,
+   "O Globo": 96,
+   "Estadão": 34,
+   "Poder360": 21,
+   "UOL": 7,
    "ICL Notícias": 1,
-   "Estado de Minas": 10,
+   "CartaCapital": 17,
+   "Aos Fatos": 1,
+   "Brasil de Fato": 12,
+   "Jornal de Brasília": 1,
+   "Folha de S.Paulo": 19,
    "Times Brasil | CNBC": 1,
+   "Diário do Estado": 1,
+   "Diário do Centro do Mundo": 1,
+   "Blog do Esmael": 1,
+   "Metrópoles": 12,
+   "Brasil 247": 3,
+   "Estado de Minas": 8,
    "VEJA": 2,
-   "CartaCapital": 14,
-   "Brasil de Fato": 9,
    "ContilNet": 1,
    "Blog da Polo": 1,
    "Agazeta.net": 1,
    "Agência Brasil": 4,
-   "UOL": 6,
-   "Poder360": 20,
-   "BBC News Brasil": 3,
+   "BBC News Brasil": 2,
    "Agora RN": 1,
    "BR104": 1,
-   "Revista Fórum": 4,
+   "Revista Fórum": 3,
    "BNC Amazonas": 1,
    "Blog do Dércio": 1,
+   "Acorda Cidade": 1,
    "Vermelho": 1,
+   "UOL Notícias": 2,
    "Plantão Brasil": 1,
    "Tribuna de Jundiaí": 1,
    "Folha PE": 1,
    "The Conversation": 1,
-   "ND Mais": 1,
-   "UOL Notícias": 4,
    "Canaã Notícias": 1,
+   "ND Mais": 1,
    "Instagram": 1,
    "Jornal Primeira Página": 1,
    "Bahia Notícias": 2,
@@ -6098,11 +6092,7 @@
    "Jornal do Brasil": 1,
    "Tribuna do Sertão": 1,
    "Tribuna do Agreste": 1,
-   "Jornal GGN": 1,
-   "iG Último Segundo": 1,
-   "Ipolitica": 1,
-   "Goiás 246": 1,
-   "Agenda do Poder": 1
+   "Jornal GGN": 1
   }
  },
  "primeiroTurno": {
@@ -6723,7 +6713,7 @@
   "urlBr": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json",
   "codigoEleicao": "6258",
   "horaTSE": "25/10/2026 23:27:02",
-  "espelhadoEm": "2026-11-10T11:47:08.599Z",
+  "espelhadoEm": "2026-11-10T18:56:04.798Z",
   "pctSecoes": 100,
   "eleitorado": 158745502,
   "comparecimento": 128236074,
