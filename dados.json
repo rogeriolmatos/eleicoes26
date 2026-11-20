@@ -1,6 +1,6 @@
 {
  "meta": {
-  "atualizadoEm": "2026-11-19T18:09:06.138Z",
+  "atualizadoEm": "2026-11-20T00:38:48.601Z",
   "exemplo": false,
   "versao": 1,
   "geradoPor": "coleta.js",
@@ -8,12 +8,22 @@
    {
     "nome": "Estadão",
     "itens": 20,
-    "aproveitados": 6
+    "aproveitados": 5
    },
    {
     "nome": "CNN Brasil",
     "itens": 60,
-    "aproveitados": 7
+    "aproveitados": 3
+   },
+   {
+    "nome": "O Globo",
+    "itens": 100,
+    "aproveitados": 11
+   },
+   {
+    "nome": "Folha de S.Paulo",
+    "itens": 100,
+    "aproveitados": 27
    },
    {
     "nome": "UOL",
@@ -23,37 +33,17 @@
    {
     "nome": "G1",
     "itens": 100,
-    "aproveitados": 57
-   },
-   {
-    "nome": "Folha de S.Paulo",
-    "itens": 100,
-    "aproveitados": 26
-   },
-   {
-    "nome": "O Globo",
-    "itens": 100,
-    "aproveitados": 9
+    "aproveitados": 56
    },
    {
     "nome": "Poder360",
     "itens": 10,
-    "aproveitados": 3
-   },
-   {
-    "nome": "BBC News Brasil",
-    "itens": 31,
     "aproveitados": 0
-   },
-   {
-    "nome": "Metrópoles",
-    "itens": 20,
-    "aproveitados": 1
    },
    {
     "nome": "CartaCapital",
     "itens": 20,
-    "aproveitados": 4
+    "aproveitados": 1
    },
    {
     "nome": "Agência Brasil",
@@ -63,17 +53,27 @@
    {
     "nome": "Brasil de Fato",
     "itens": 99,
-    "aproveitados": 12
+    "aproveitados": 8
+   },
+   {
+    "nome": "Metrópoles",
+    "itens": 20,
+    "aproveitados": 0
+   },
+   {
+    "nome": "BBC News Brasil",
+    "itens": 31,
+    "aproveitados": 1
    },
    {
     "nome": "Revista Oeste",
     "itens": 10,
-    "aproveitados": 5
+    "aproveitados": 3
    },
    {
     "nome": "Gazeta do Povo",
-    "itens": 62,
-    "aproveitados": 22
+    "itens": 57,
+    "aproveitados": 17
    },
    {
     "nome": "Correio Braziliense",
@@ -81,14 +81,14 @@
     "aproveitados": 0
    },
    {
-    "nome": "Estado de Minas",
-    "itens": 20,
-    "aproveitados": 0
+    "nome": "Google Notícias (busca)",
+    "itens": 72,
+    "aproveitados": 71
    },
    {
-    "nome": "Google Notícias (busca)",
-    "itens": 74,
-    "aproveitados": 73
+    "nome": "Estado de Minas",
+    "itens": 20,
+    "aproveitados": 2
    },
    {
     "nome": "O Povo",
@@ -96,14 +96,14 @@
     "aproveitados": 0
    },
    {
-    "nome": "Google Notícias (pesquisas)",
-    "itens": 23,
-    "aproveitados": 17
-   },
-   {
     "nome": "Google Notícias (debates)",
     "itens": 26,
     "aproveitados": 25
+   },
+   {
+    "nome": "Google Notícias (pesquisas)",
+    "itens": 20,
+    "aproveitados": 15
    }
   ],
   "fontesFalha": [],
@@ -174,18 +174,502 @@
  ],
  "noticias": [
   {
+   "id": "campanha-de-paes-distribui-cartilha-para-militancia-evitar-polarizacao-entre-lula-e-flavio",
+   "veiculo": "sentidohorario.com.br",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Campanha de Paes distribui cartilha para militância evitar polarização entre Lula e Flávio Bolsonaro",
+   "resumo": "Campanha de Paes distribui cartilha para militância evitar polarização entre Lula e Flávio Bolsonaro sentidohorario.com.br",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZjVzdGYyV1dkX0t4Sy1hZGt0bEJpd3J4WUxvRHRZMThReS1RbEhZeGJuRUV2V0lWSDRDR1hjSFFVY2ZEaENwdllOeEhaTndpMEctWExTSUltSGV6bEJSOWF2Z2FXMmlsYTVQbXZWR2ZSb0NwWEFmeUpaWWNGNmZxeXdvcFExSFllZzZYOHQzdDhubkw3WV95amM5UTIzUVYtaEhjYUxDZ1ctd0Z3cklLSFlCbkp2SjhJZjR5RWZPZ3NrX3BLNmxuYWJKbw?oc=5",
+   "dataPub": "2026-11-19T23:56:09.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "relator-do-ajuste-fiscal-na-camara-mantem-texto-do-senado-projeto-deve-ser-votado-na-segun",
+   "veiculo": "G1",
+   "fonteFeed": "G1",
+   "titulo": "Relator do ajuste fiscal na Câmara mantém texto do Senado; projeto deve ser votado na segunda-feira",
+   "resumo": "Projeto de ajuste fiscal segue para Câmara dos Deputados O relator do projeto de ajuste fiscal do governo Lula (PT) na Câmara dos Deputados, Mauro Benevides (União Brasil-CE), apresentou nesta…",
+   "link": "https://g1.globo.com/politica/noticia/2026/11/19/relator-do-ajuste-fiscal-na-camara-mantem-texto-do-senado-projeto-deve-ser-votado-segunda-feira.ghtml",
+   "dataPub": "2026-11-19T23:37:50.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "lula-confirma-40-ministerio-pasta-vai-focar-em-idosos",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Lula confirma 40º ministério; pasta vai focar em idosos",
+   "resumo": "O presidente Luiz Inácio Lula da Silva anunciou nesta quinta-feira, 19, a criação de um ministério voltado às pessoas idosas em seu próximo mandato. A declaração ocorreu durante a cerimônia de…",
+   "link": "https://revistaoeste.com/politica/lula-confirma-40o-ministerio-pasta-vai-focar-em-idosos/",
+   "dataPub": "2026-11-19T23:35:05.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "vamos-ter-dialogo-diz-nova-secretaria-de-tarcisio-sobre-relacao-com-lula",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Vamos ter diálogo, diz nova secretária de Tarcísio sobre relação com Lula",
+   "resumo": "Natália Resende, que vai assumir a pasta de Planejamento, Orçamento e Investimentos também disse que prioridade do governo será expansão de obras com responsabilidade fiscal",
+   "link": "https://www.cnnbrasil.com.br/politica/vamos-ter-dialogo-diz-nova-secretaria-de-tarcisio-sobre-relacao-com-lula/",
+   "dataPub": "2026-11-19T23:33:09.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "lula-assina-decreto-que-estabelece-novas-regras-para-a-jornada-de-trabalho",
+   "veiculo": "Gazeta do Povo",
+   "fonteFeed": "Gazeta do Povo",
+   "titulo": "Lula assina decreto que estabelece novas regras para a jornada de trabalho",
+   "resumo": "Confira as regras do novo decreto que regulamenta a escala 5x2, os prazos para redução da jornada e como fica o cálculo do salário-hora do trabalhador.",
+   "link": "https://www.gazetadopovo.com.br/republica/lula-assina-decreto-que-estabelece-novas-regras-para-a-jornada-de-trabalho/",
+   "dataPub": "2026-11-19T23:18:49.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "ala-do-psol-lanca-movimento-revolucionario-brasileiro-",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Ala do Psol lança ‘Movimento Revolucionário Brasileiro’",
+   "resumo": "Briga interna na esquerda brasileira. Na noite desta quinta-feira, 19, por meio de transmissão ao vivo na internet, uma ala do Partido Socialismo e Liberdade (Psol) se rebelou contra o comando da…",
+   "link": "https://revistaoeste.com/politica/ala-do-psol-lanca-movimento-revolucionario-brasileiro/",
+   "dataPub": "2026-11-19T23:15:16.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "lula-oficializa-declaracao-da-terra-indigena-em-que-o-cacique-raoni-nasceu-e-promete-avanc",
+   "veiculo": "Brasil de Fato",
+   "fonteFeed": "Brasil de Fato",
+   "titulo": "Lula oficializa declaração da Terra Indígena em que o cacique Raoni nasceu e promete avançar no tratamento do Estado aos povos originários",
+   "resumo": "O presidente Luiz Inácio Lula da Silva (PT) visitou nesta quinta-feira (19) o Cacique Raoni Metuktire, de 94 anos, que está sob cuidados médicos domiciliares na cidade de Peixoto de Azevedo (MT)…",
+   "link": "https://www.brasildefato.com.br/2026/11/19/lula-oficializa-declaracao-da-terra-indigena-em-que-o-cacique-raoni-nasceu-e-promete-avancar-no-tratamento-do-estado-aos-povos-originarios/",
+   "dataPub": "2026-11-19T23:11:53.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "psd-entra-com-novo-recurso-no-stf-e-volta-a-pedir-2-turno-no-rio",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "PSD entra com novo recurso no STF e volta a pedir 2º turno no Rio",
+   "resumo": "Partido de Eduardo Paes contestou decisão anterior do ministro Cristiano Zanin, que negou pedido de liminar para suspender o resultado das eleições que elegeram Douglas Ruas",
+   "link": "https://www.cnnbrasil.com.br/politica/psd-entra-com-novo-recurso-no-stf-e-volta-a-pedir-2o-turno-no-rio/",
+   "dataPub": "2026-11-19T23:00:26.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "lula-visita-raoni-e-reconhece-a-posse-permanente-da-terra-onde-o-cacique-nasceu",
+   "veiculo": "CartaCapital",
+   "fonteFeed": "CartaCapital",
+   "titulo": "Lula visita Raoni e reconhece a posse permanente da terra onde o cacique nasceu",
+   "resumo": "A liderança indígena, de 94 anos, recebe cuidados paliativos por um câncer gastrointestinal",
+   "link": "https://www.cartacapital.com.br/politica/lula-visita-raoni-e-reconhece-a-posse-permanente-da-terra-onde-o-cacique-nasceu/",
+   "dataPub": "2026-11-19T22:50:11.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "relator-na-camara-divulga-parecer-de-pacote-fiscal-e-nao-faz-alteracoes-no-texto-para-acel",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Relator na Câmara divulga parecer de pacote fiscal e não faz alterações no texto para acelerar aprovação",
+   "resumo": "O deputado Mauro Benevides Filho (União-CE), relator do projeto de ajuste fiscal elaborado pelo governo do presidente Luiz Inácio Lula da Silva, divulgou o parecer nesta quinta-feira. Ele não fez…",
+   "link": "https://oglobo.globo.com/economia/noticia/2026/11/19/relator-na-camara-divulga-parecer-de-pacote-fiscal-e-nao-faz-alteracoes-no-texto-para-acelerar-aprovacao.ghtml",
+   "dataPub": "2026-11-19T22:21:11.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "dolar-fecha-a-r-5-93-maior-patamar-desde-abril-de-2025",
+   "veiculo": "Revista Oeste",
+   "fonteFeed": "Revista Oeste",
+   "titulo": "Dólar fecha a R$ 5,93, maior patamar desde abril de 2025",
+   "resumo": "Nesta quinta-feira, 19, o dólar comercial fechou em alta de 1,08%, cotado a R$ 5,93. Este foi o maior nível de fechamento desde abril de 2025. Em semana mais curta devido ao feriado da Consciência…",
+   "link": "https://revistaoeste.com/economia/dolar-fecha-a-r-593-maior-patamar-desde-abril-de-2025/",
+   "dataPub": "2026-11-19T22:17:25.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "debate-sobre-plano-moretti-e-so-o-aperitivo-da-disputa-da-esquerda-no-lula-4-veja-video",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Debate sobre plano Moretti é só o aperitivo da disputa da esquerda no Lula 4; veja vídeo",
+   "resumo": "Passada a euforia com a vitória suada de Lula, a esquerda voltou ao que sabe fazer de melhor, que é discutir a relação. Leia mais (11/19/2026 - 19h11)",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/debate-sobre-plano-moretti-e-so-o-aperitivo-da-disputa-da-esquerda-no-lula-4-veja-video.shtml",
+   "dataPub": "2026-11-19T22:11:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "moraes-libera-acao-para-stf-julgar-lei-da-dosimetria-que-pode-beneficiar-bolsonaro",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "Moraes libera ação para STF julgar lei da dosimetria que pode beneficiar Bolsonaro",
+   "resumo": "BRASÍLIA - O ministro do Supremo Tribunal Federal (STF) Alexandre de Moraes liberou para julgamento no plenário virtual da Corte, entre 4 e 15 de dezembro, as ações que contestam a chamada Lei da…",
+   "link": "https://www.estadao.com.br/politica/moraes-libera-acao-que-trata-da-lei-da-dosimetria-para-julgamento-no-plenario-virtual-do-stf/",
+   "dataPub": "2026-11-19T21:57:50.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "mp-aciona-tcu-para-suspender-salario-de-flavio-no-senado-federal",
+   "veiculo": "Estado de Minas",
+   "fonteFeed": "Estado de Minas",
+   "titulo": "MP aciona TCU para suspender salário de Flávio no Senado Federal",
+   "resumo": "CONTAS PÚBLICAS",
+   "link": "https://www.em.com.br/politica/2026/11/7541581-mp-aciona-tcu-para-suspender-salario-de-flavio-no-senado-federal.html",
+   "dataPub": "2026-11-19T21:55:00.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "lula-sobre-ajuste-nao-e-o-mercado-quem-deseja-o-controle-fiscal-sou-eu-",
+   "veiculo": "Estado de Minas",
+   "fonteFeed": "Estado de Minas",
+   "titulo": "Lula sobre ajuste: 'Não é o mercado, quem deseja o controle fiscal sou eu'",
+   "resumo": "AJUSTE FISCAL",
+   "link": "https://www.em.com.br/politica/2026/11/7541576-lula-sobre-ajuste-nao-e-o-mercado-quem-deseja-o-controle-fiscal-sou-eu.html",
+   "dataPub": "2026-11-19T21:48:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "dinamica-do-mercado-pode-forcar-bc-e-tesouro-a-atuarem-de-forma-coordenada-para-reduzir-tu",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Dinâmica do mercado pode forçar BC e Tesouro a atuarem de forma coordenada para reduzir turbulência, diz ex-coordenador da dívida",
+   "resumo": "Ex-coordenador-geral da dívida pública, o chefe de estratégia macro da Warren, Luiz Felipe Vital, avaliou ao GLOBO que dinâmica do mercado financeiro brasileiro pode exigir que nos próximos dias…",
+   "link": "https://oglobo.globo.com/economia/fabio-graner/post/2026/11/dinamica-do-mercado-pode-forcar-bc-e-tesouro-a-atuarem-de-forma-coordenada-para-reduzir-turbulencia-diz-ex-coordenador-da-divida.ghtml",
+   "dataPub": "2026-11-19T21:47:52.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "agro-nao-entra-em-lista-de-excecoes-e-tera-de-se-adaptar-ao-5-2",
+   "veiculo": "CNN Brasil",
+   "fonteFeed": "CNN Brasil",
+   "titulo": "Agro não entra em lista de exceções e terá de se adaptar ao 5×2",
+   "resumo": "Decreto de Lula não prevê exceções para atividades do campo; setor avalia que desgaste econômico e político pode abrir espaço para alterações nos próximos dois anos",
+   "link": "https://www.cnnbrasil.com.br/agro/agro-nao-entra-em-lista-de-excecoes-e-tera-de-se-adaptar-ao-5x2/",
+   "dataPub": "2026-11-19T21:42:57.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "moraes-libera-analise-de-lei-que-pode-reduzir-pena-de-bolsonaro-e-julgamento-no-stf-deve-c",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Moraes libera análise de lei que pode reduzir pena de Bolsonaro, e julgamento no STF deve começar em 4 de dezembro",
+   "resumo": "O ministro Alexandre de Moraes, do Supremo Tribunal Federal (STF), pautou para dezembro o julgamento da Lei da Dosimetria, que pode reduzir as penas de condenados pela tentativa de golpe de Estado…",
+   "link": "https://oglobo.globo.com/politica/noticia/2026/11/19/moraes-pauta-julgamento-da-lei-da-dosimetria-que-pode-reduzir-pena-de-bolsonaro.ghtml",
+   "dataPub": "2026-11-19T21:23:25.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "moraes-libera-acoes-sobre-lei-da-dosimetria-para-julgamento-no-stf-caso-sera-analisado-em-",
+   "veiculo": "G1",
+   "fonteFeed": "G1",
+   "titulo": "Moraes libera ações sobre Lei da Dosimetria para julgamento no STF; caso será analisado em dezembro",
+   "resumo": "Moraes libera ações sobre lei da dosimetria para julgamento no STF O ministro Alexandre de Moraes, do Supremo Tribunal Federal (STF), liberou nesta quinta-feira (19) para julgamento ações que…",
+   "link": "https://g1.globo.com/politica/noticia/2026/11/19/moraes-libera-acoes-sobre-lei-da-dosimetria-para-julgamento-no-stf.ghtml",
+   "dataPub": "2026-11-19T21:20:39.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "presidente-do-psol-diz-que-partido-esta-unido-contra-pressao-do-mercado-sobre-lula",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Presidente do PSOL diz que partido está unido contra pressão do mercado sobre Lula",
+   "resumo": "A presidente nacional do PSOL , Paula Coradi, diz que o partido está unido para resistir à pressão econômica do mercado sobre o próximo governo de Luiz Inácio Lula da Silva. Leia mais (11/19/2026…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/presidente-do-psol-diz-que-partido-esta-unido-contra-pressao-do-mercado-sobre-lula.shtml",
+   "dataPub": "2026-11-19T20:41:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "lula-visita-cacique-raoni-e-deseja-boa-recuperacao-a-lideranca-indigena-apos-alta-hospital",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Lula visita cacique Raoni e deseja boa recuperação a liderança indígena após alta hospitalar",
+   "resumo": "O presidente Luiz Inácio Lula da Silva (PT) visitou o cacique Raoni Metuktire, de 94 anos, na tarde desta quinta-feira, após a liderança indígena ter recebido alta hospitalar. Em vídeo publicado nas…",
+   "link": "https://oglobo.globo.com/brasil/noticia/2026/11/19/lula-visita-cacique-raoni-e-deseja-boa-recuperacao-a-lideranca-indigena-apos-alta-hospitalar.ghtml",
+   "dataPub": "2026-11-19T20:39:22.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "hora-extra-mais-cara-com-fim-da-6x1-veja-conta-com-salario-de-r-3-mil-e-o-que-muda-com-dec",
+   "veiculo": "BBC News Brasil",
+   "fonteFeed": "BBC News Brasil",
+   "titulo": "Hora extra mais cara com fim da 6x1? Veja conta com salário de R$ 3 mil e o que muda com decreto de Lula",
+   "resumo": "A maior mudança nas jornadas de trabalho em quase 40 anos começará a entrar em vigor no mês que vem, com um período de transição. Ainda há contestações na Justiça.",
+   "link": "https://www.bbc.com/portuguese/articles/cvlyjkw9zr5jo?at_medium=RSS&at_campaign=rss",
+   "dataPub": "2026-11-19T20:39:07.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "bombeiros-resgatam-jacare-que-circulava-por-ruas-de-governador-valadares-em-minas-gerais",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Bombeiros resgatam jacaré que circulava por ruas de Governador Valadares, em Minas Gerais",
+   "resumo": "Um jacaré foi capturado pelo Corpo de Bombeiros após sair da Lagoa do Pérola e percorrer cerca de 600 metros pelas ruas do bairro Jardim Pérola, em Governador Valadares, no Leste de Minas Gerais. O…",
+   "link": "https://oglobo.globo.com/brasil/noticia/2026/11/19/bombeiros-resgatam-jacare-que-circulava-por-ruas-de-governador-valadares-em-minas-gerais.ghtml",
+   "dataPub": "2026-11-19T20:34:55.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "apos-reforma-que-criou-reeleicao-por-tempo-indeterminado-bukele-anuncia-candidatura-a-um-t",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Após reforma que criou reeleição por tempo indeterminado, Bukele anuncia candidatura a um terceiro mandato em El Salvador",
+   "resumo": "O presidente de El Salvador, Nayib Bukele, registrou nesta quinta-feira sua candidatura a um terceiro mandato nas eleições de fevereiro do próximo ano. com 80% de aprovação, ele tem praticamente um…",
+   "link": "https://oglobo.globo.com/mundo/noticia/2026/11/19/apos-reforma-que-criou-reeleicao-por-tempo-indeterminado-bukele-anuncia-candidatura-a-um-terceiro-mandato-em-el-salvador.ghtml",
+   "dataPub": "2026-11-19T20:16:30.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "dolar-vai-a-r-5-93-e-juros-vao-as-maximas-do-ano-bolsa-cai",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Dólar vai a R$ 5,93 e juros vão às máximas do ano; Bolsa cai",
+   "resumo": "O dia de aversão ao risco no exterior e as incertezas sobre a condução da política econômica a partir de 2027 pressionaram os indicadores nesta quinta-feira. O dólar renovou a máxima em 19 meses e…",
+   "link": "https://oglobo.globo.com/economia/financas/noticia/2026/11/19/dolar-hoje-maxima-ano-5-93.ghtml",
+   "dataPub": "2026-11-19T20:00:39.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "montadora-chinesa-jetour-anuncia-investimento-de-r-400-milhoes-em-sua-primeira-fabrica-no-",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Montadora chinesa Jetour anuncia investimento de R$ 400 milhões em sua primeira fábrica no Brasil",
+   "resumo": "A montadora chinesa Jetour vai investir R$ 400 milhões para instalar uma fábrica no Brasil e iniciar a produção nacional de veículos no primeiro trimestre de 2027. A companhia, no entanto, não…",
+   "link": "https://oglobo.globo.com/economia/negocios/noticia/2026/11/19/montadora-chinesa-jetour-anuncia-investimento-de-r-400-milhoes-em-sua-primeira-fabrica-no-brasil.ghtml",
+   "dataPub": "2026-11-19T19:56:53.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "lula-diz-que-criara-ministerio-voltado-a-populacao-idosa-e-cita-apoio-na-eleicao",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Lula diz que criará ministério voltado à população idosa e cita apoio na eleição",
+   "resumo": "O presidente Lula (PT) disse nesta quinta-feira (19) que criará um ministério voltado à população idosa . O chefe do governo também afirmou ser grato ao eleitorado mais velho pelo apoio que deu à sua…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/blogs/brasilia-hoje/2026/11/lula-diz-que-criara-ministerio-voltado-a-populacao-idosa-e-cita-apoio-na-eleicao.shtml",
+   "dataPub": "2026-11-19T19:40:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "paes-cobra-que-tse-julgue-recurso-sobre-segundo-turno-no-rio",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "Paes cobra que TSE julgue recurso sobre segundo turno no Rio",
+   "resumo": "A coligação do ex-prefeito do Rio de Janeiro e candidato ao governo do Estado Eduardo Paes (PSD) solicitou ao Tribunal Superior Eleitoral (TSE) que o julgamento sobre o recurso do segundo turno do…",
+   "link": "https://www.estadao.com.br/politica/paes-cobra-que-tse-julgue-recurso-sobre-segundo-turno-no-rio-nprp/",
+   "dataPub": "2026-11-19T19:36:35.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "mercado-de-cambio-trava-apos-fala-de-lula-sobre-escolha-de-ministros-e-bc-intervem-com-lei",
+   "veiculo": "G1",
+   "fonteFeed": "G1",
+   "titulo": "Mercado de câmbio trava após fala de Lula sobre escolha de ministros e BC intervém com leilão de dólar",
+   "resumo": "Mercado de câmbio trava após Lula sobre escolha de ministros e BC intervém Mesmo com a aprovação do ajuste fiscal pelo Senado Federal, o mercado cambial segue pressionado nesta quinta-feira (19) por…",
+   "link": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/19/mercado-de-cambio-trava-apos-fala-de-lula-sobre-escolha-de-ministros-e-bc-intervem-com-leilao-de-dolar.ghtml",
+   "dataPub": "2026-11-19T19:28:15.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "psd-recorre-de-decisao-de-zanin-e-volta-a-defender-segundo-turno-no-rio-entre-paes-e-ruas",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "PSD recorre de decisão de Zanin e volta a defender segundo turno no Rio entre Paes e Ruas",
+   "resumo": "O PSD pediu ao ministro Cristiano Zanin, do Supremo Tribunal Federal (STF), que reconsidere a decisão que rejeitou a realização do segundo turno da eleição para o governo do Rio de Janeiro. A legenda…",
+   "link": "https://oglobo.globo.com/politica/noticia/2026/11/19/psd-recorre-de-decisao-de-zanin-e-volta-a-defender-segundo-turno-no-rio-entre-paes-e-ruas.ghtml",
+   "dataPub": "2026-11-19T19:26:57.000Z",
+   "mencoes": [],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "escala-5-2-o-que-muda-com-o-decreto-de-lula-e-o-que-ainda-depende-do-stf",
+   "veiculo": "Gazeta do Povo",
+   "fonteFeed": "Gazeta do Povo",
+   "titulo": "Escala 5×2: o que muda com o decreto de Lula e o que ainda depende do STF",
+   "resumo": "Entenda como funciona a escala 5x2, quando a redução da jornada começa e quais pontos ainda dependem do STF e de regulamentação.",
+   "link": "https://www.gazetadopovo.com.br/republica/escala-5x2-o-que-muda-com-o-decreto-de-lula-e-o-que-ainda-depende-do-stf/",
+   "dataPub": "2026-11-19T19:18:16.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "lula-exonera-ministro-do-desenvolvimento-social-a-pedido",
+   "veiculo": "Estadão",
+   "fonteFeed": "Estadão",
+   "titulo": "Lula exonera ministro do Desenvolvimento Social a pedido",
+   "resumo": "O presidente Luiz Inácio Lula da Silva (PT) exonerou o ministro do Desenvolvimento e Assistência Social, Família e Combate à Fome , Wellington Dias . A saída do cargo é temporária e ocorreu a pedido…",
+   "link": "https://www.estadao.com.br/politica/lula-exonera-ministro-do-desenvolvimento-social-a-pedido-nprp/",
+   "dataPub": "2026-11-19T18:26:11.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "lula-anuncia-ministerio-dos-idosos-e-caminha-para-a-maior-esplanada-da-historia",
+   "veiculo": "Gazeta do Povo",
+   "fonteFeed": "Gazeta do Povo",
+   "titulo": "Lula anuncia ministério dos idosos e caminha para a maior Esplanada da história",
+   "resumo": "Presidente ainda deve criar pasta da Segurança e superar recorde do governo de Dilma Rousseff. Leia na Gazeta do Povo.",
+   "link": "https://www.gazetadopovo.com.br/republica/lula-anuncia-ministerio-dos-idosos-e-caminha-para-a-maior-esplanada-da-historia/",
+   "dataPub": "2026-11-19T18:24:47.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "tarifa-hora-certa-coloca-as-baterias-em-foco",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Tarifa Hora Certa coloca as baterias em foco",
+   "resumo": "A forma de pagar pela energia elétrica poderá mudar nos próximos anos. Em 9 de novembro de 2026, a Agência Nacional de Energia Elétrica (ANEEL) apresentou a proposta da Tarifa Hora Certa, que prevê…",
+   "link": "https://oglobo.globo.com/patrocinado/dino/noticia/2026/11/19/tarifa-hora-certa-coloca-as-baterias-em-foco-1.ghtml",
+   "dataPub": "2026-11-19T18:23:45.000Z",
+   "mencoes": [
+    "22"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "welligton-dias-e-exonerado-do-governo-para-voltar-ao-senado-e-indicar-emendas",
+   "veiculo": "O Globo",
+   "fonteFeed": "O Globo",
+   "titulo": "Welligton Dias é exonerado do governo para voltar ao Senado e indicar emendas",
+   "resumo": "O presidente Luiz Inácio Lula da Silva exonerou do cargo o ministro do Desenvolvimento Social, Wellington Dias, para que ele possa voltar a exercer o mandato de senador temporariamente. A medida foi…",
+   "link": "https://oglobo.globo.com/politica/noticia/2026/11/19/welligton-dias-e-exonerado-do-governo-para-voltar-ao-senado-e-indicar-emendas.ghtml",
+   "dataPub": "2026-11-19T18:09:07.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
    "id": "lula-exonera-ministro-do-bolsa-familia-para-encaminhar-emendas-parlamentares",
    "veiculo": "Gazeta do Povo",
    "fonteFeed": "Gazeta do Povo",
    "titulo": "Lula exonera ministro do Bolsa Família para encaminhar emendas parlamentares",
    "resumo": "Wellington Dias é responsável pelo Ministério do Desenvolvimento Social, licenciado do cargo de senador pelo estado do Piauí. Leia na Gazeta do Povo.",
    "link": "https://www.gazetadopovo.com.br/republica/lula-exonera-ministro-bolsa-familia-encaminhar-emendas-parlamentares/",
-   "dataPub": "2026-11-19T17:58:48.000Z",
+   "dataPub": "2026-11-19T18:06:30.000Z",
    "mencoes": [
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-define-prioridades-legislativas-para-o-fim-de-2026-saiba-quais-sao",
@@ -270,7 +754,21 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "lula-transporte-gratuito-no-fim-de-semana-complementaria-escala-5x2",
+   "veiculo": "Agência Brasil",
+   "fonteFeed": "Agência Brasil",
+   "titulo": "Lula: transporte gratuito no fim de semana complementaria escala 5x2",
+   "resumo": "O presidente da República, Luiz Inácio Lula da Silva, afirmou nesta quinta-feira (19) que o governo federal vai defender a gratuidade no transporte público aos fins de semana, em todo o Brasil, para…",
+   "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/lula-transporte-gratuito-no-fim-de-semana-complementaria-escala-5x2",
+   "dataPub": "2026-11-19T17:43:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "transporte-gratuito-no-fim-de-semana-complementa-escala-5x2-diz-lula",
@@ -298,7 +796,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "ao-vivo-lula-assina-portaria-de-posse-permanente-de-terra-indigena",
@@ -412,7 +910,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "janones-perde-recurso-e-tera-de-pagar-r-30-mil-ao-ator-carlos-vereza",
@@ -440,7 +938,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "empresarios-doam-r-4-milhoes-apos-vitoria-de-lula-para-quitar-campanha",
@@ -454,7 +952,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-reage-a-especulacoes-sobre-ministros-sera-quando-eu-quiser-",
@@ -497,22 +995,22 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "acordo-com-a-pgr-pode-encerrar-processo-sobre-calunia-de-flavio-bolsonaro-contra-lula",
    "veiculo": "CartaCapital",
-   "fonteFeed": "CartaCapital",
+   "fonteFeed": "Google Notícias (debates)",
    "titulo": "Acordo com a PGR pode encerrar processo sobre calúnia de Flávio Bolsonaro contra Lula",
-   "resumo": "O caso preenche os requisitos para firmar o acerto com a Procuradoria, avalia o advogado Fernando Hideo Lacerda",
-   "link": "https://www.cartacapital.com.br/politica/acordo-com-a-pgr-pode-encerrar-processo-sobre-calunia-de-flavio-bolsonaro-contra-lula/",
-   "dataPub": "2026-11-19T16:01:45.000Z",
+   "resumo": "Acordo com a PGR pode encerrar processo sobre calúnia de Flávio Bolsonaro contra Lula CartaCapital",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQm15YlhtRk5lZkhXZXV5VjFjeWZlVXB1TmZJUWplYmZ3STFkOF9VYmZHN0ZxdW9Tc01OaUhDSEhWVjlnMVYwOUpRWG9LTjBMd3A2ZDEzQzhacFVpbmVucG5GNk9JdTVYWmVhb09mTzBqQnlKUWU3RWd5X1dWTnVKUlpmV28xcUJic0ZxSlZyX1U4Z3RScVdrdXZrOVJwcGNCLUVpMFF2WXJub2JNWGw5dHExcE1IMTNqTXNSbFIyOEFzenM2bHc?oc=5",
+   "dataPub": "2026-11-19T16:01:00.000Z",
    "mencoes": [
     "13",
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "escala-5x2-governo-ainda-ira-detalhar-nova-jornada-em-categorias-especificas-e-calculo-do-",
@@ -569,7 +1067,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "moraes-arquiva-inquerito-contra-carla-zambelli",
@@ -596,7 +1094,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "nao-quero-ir-embora-do-brasil-quero-trabalhar-pelo-pais-diz-tereza-cristina-sobre-futuro-d",
@@ -610,7 +1108,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-promete-manter-direitos-e-diz-que-controle-fiscal-e-prioridade",
@@ -624,7 +1122,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "janones-tera-que-indenizar-calos-vereza-em-r-30-mil-e-pedir-desculpas-apos-post-sobre-pedo",
@@ -652,7 +1150,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "-enquanto-eu-for-presidente-nao-havera-diminuicao-de-direitos-diz-lula-ao-assinar-decreto-",
@@ -666,7 +1164,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "hora-extra-fica-mais-cara-com-fim-da-escala-6x1-veja-simulacao",
@@ -695,6 +1193,20 @@
    ],
    "tom": "neutro",
    "coletadoEm": "2026-11-19T18:09:06.138Z"
+  },
+  {
+   "id": "lula-critica-especulacao-e-afirma-que-indicara-ministros-na-hora-que-quiser",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Lula critica especulação e afirma que indicará ministros na hora que quiser",
+   "resumo": "O presidente Lula ( PT ) criticou nesta quinta-feira (19) as especulações sobre quem serão os ministros indicados para o seu quarto mandato . O petista também buscou afastar pressões do mercado para…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/lula-critica-especulacoes-sobre-ministerio-e-diz-que-quem-senta-na-cadeira-antes-cai-antes-de-sentar.shtml",
+   "dataPub": "2026-11-19T15:02:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-diz-que-indicara-ministros-na-hora-que-quiser-e-promete-pasta-voltada-aos-idosos",
@@ -751,7 +1263,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-diz-que-nao-tem-pressa-para-indicar-ministros-e-promete-criar-ministerio-dos-idosos",
@@ -766,7 +1278,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-deve-passar-controle-da-caixa-de-arthur-lira-para-hugo-motta",
@@ -808,7 +1320,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-assina-decreto-com-regras-para-o-fim-da-escala-6x1-assista",
@@ -822,7 +1334,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-anuncia-ministerio-voltado-aos-idosos-e-afirma-que-nao-tem-pressa-para-definir-primei",
@@ -865,7 +1377,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "apos-regulamentacao-da-escala-5x2-lula-diz-que-vai-articular-transporte-gratuito-no-fim-de",
@@ -879,7 +1391,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "alcolumbre-vai-se-reunir-com-lula-nos-proximos-dias-para-debater-indicacao-ao-stf-e-montag",
@@ -893,7 +1405,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-visita-cacique-raoni-e-assina-portaria-para-demarcacao-da-terra-indigena-kapot-nhinor",
@@ -907,7 +1419,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "mulheres-aparecem-como-ultima-opcao-ao-stf",
@@ -921,7 +1433,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-assina-decreto-que-regulamenta-a-escala-5x2-e-hora-extra-fica-mais-cara",
@@ -949,7 +1461,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-assina-regulamentacao-da-escala-5x2-medida-esta-prevista-para-comecar-a-valer-em-deze",
@@ -963,7 +1475,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "cristaos-pela-democracia-a-caminhada-por-13-capitais-que-uniu-a-fe-ao-amor-e-ajudou-a-reel",
@@ -977,7 +1489,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "motta-agenda-votacao-do-ajuste-fiscal-de-lula-na-camara-para-segunda-feira-23-",
@@ -991,7 +1503,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "ministro-do-planejamento-preve-estabilizar-divida-publica-em-ate-3-anos-economistas-acham-",
@@ -1005,7 +1517,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "a-danca-das-cadeiras-entre-haddad-alckmin-e-camilo-na-nova-equipe-ministerial-de-lula",
@@ -1033,7 +1545,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "disputas-na-esquerda-e-direita-sao-ensaios-para-os-duelos-pelo-espolio-politico-de-lula-e-",
@@ -1063,7 +1575,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-assina-nesta-quinta-decreto-que-regulamenta-o-fim-da-escala-6-1",
@@ -1092,7 +1604,21 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "lula-visita-cacique-raoni-durante-viagem-a-mato-grosso",
+   "veiculo": "G1",
+   "fonteFeed": "G1",
+   "titulo": "Lula visita cacique Raoni durante viagem a Mato Grosso",
+   "resumo": "O presidente Lula durante visita ao cacique Raoni, em Mato Grosso Ricardo Stuckert/Presidência da República O presidente Luiz Inácio Lula da Silva (PT) viajou a Mato Grosso nesta quinta-feira (19), e…",
+   "link": "https://g1.globo.com/politica/noticia/2026/11/19/lula-viaja-a-mato-grosso-nesta-quinta-feira-e-visita-cacique-raoni.ghtml",
+   "dataPub": "2026-11-19T11:33:52.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-fara-visita-ao-cacique-raoni-durante-viagem-a-mato-grosso-nesta-quinta",
@@ -1134,7 +1660,22 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "pgr-denuncia-flavio-bolsonaro-ao-stf-por-calunia-contra-lula-em-postagem",
+   "veiculo": "Diario de Pernambuco",
+   "fonteFeed": "Google Notícias (debates)",
+   "titulo": "PGR denuncia Flávio Bolsonaro ao STF por calúnia contra Lula em postagem",
+   "resumo": "PGR denuncia Flávio Bolsonaro ao STF por calúnia contra Lula em postagem Diario de Pernambuco",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOM1R1T0FxSVZKSDhJMFlfMDRrZndjbkZQZUw2MXpGWDh4OTl4TXlmV1JLNDZ0TnNWNXBOQXBIRHY5V0ZIeTlNVTdHQWs1VW12R0NVQ211UFJQQmVvYmlocWRTTG5xZDVQSFJ0Z2dMYW1sdVdVWEg4bGNBY05WdzltY2pMNHBDcTI4czh0amM4eHlYdkZFek9JQW5CMUUyeXJScmxQS19lY3UzNEV4Z0hBUi11Uy1yWXVSeEYyRzV5N3VZdU9LaVVkaUl0a0ItU0VPNlctLUVQazE?oc=5",
+   "dataPub": "2026-11-19T09:49:00.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "pgr-denuncia-flavio-bolsonaro-sob-acusacao-de-calunia-contra-presidente-lula",
@@ -1149,7 +1690,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-4-aliada-de-mucio-cotada-para-assumir-defesa-tem-apoio-de-militares-e-resistencia-de-",
@@ -1274,7 +1815,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "o-futuro-do-comando-da-pf-no-governo-lula-4",
@@ -1289,6 +1830,20 @@
    ],
    "tom": "neutro",
    "coletadoEm": "2026-11-19T08:54:13.401Z"
+  },
+  {
+   "id": "stedile-do-mst-chama-ajuste-fiscal-de-enganacao-e-defende-ministros-mais-jovens",
+   "veiculo": "Folha de S.Paulo",
+   "fonteFeed": "Folha de S.Paulo",
+   "titulo": "Stedile, do MST, chama ajuste fiscal de enganação e defende ministros mais jovens",
+   "resumo": "Fundador e líder histórico do MST (Movimento dos Trabalhadores Rurais Sem Terra), João Pedro Stedile afirma que a proposta apresentada pelo governo de um ajuste fiscal é uma enganação. \"Não entendo…",
+   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/stedile-do-mst-chama-ajuste-fiscal-de-enganacao-e-defende-ministros-mais-jovens-e-representativos.shtml",
+   "dataPub": "2026-11-19T07:00:00.000Z",
+   "mencoes": [
+    "13"
+   ],
+   "tom": "neutro",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "stedile-do-mst-chama-ajuste-fiscal-de-enganacao-e-defende-ministros-mais-jovens-e-represen",
@@ -1499,7 +2054,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "votacao-do-governo-em-projeto-de-ajuste-fiscal-expoe-disputa-entre-alcolumbre-e-marinho-pe",
@@ -1515,21 +2070,6 @@
    ],
    "tom": "neutro",
    "coletadoEm": "2026-11-19T08:54:13.401Z"
-  },
-  {
-   "id": "pgr-denuncia-flavio-ao-stf-por-calunia-por-post-que-associa-lula-ao-trafico",
-   "veiculo": "UOL Notícias",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "PGR denuncia Flávio ao STF por calúnia por post que associa Lula ao tráfico",
-   "resumo": "PGR denuncia Flávio ao STF por calúnia por post que associa Lula ao tráfico UOL Notícias",
-   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPblBhMFNhdkJaM2loMWFQSFBaMzExNEFmRlhYamt4eGVkZ3lielNGLVRzX0Y4ejlpZmxVc2xYWXB5WmhPUmhBMlAyLUpHWWdZR0RmVENHRU5ZdktvVWpDemU5Q3hhSExoZVNBczU1by1xdDROVFo3QlZHVkN1QmJ3QWwtUEN0N0dBeVVqR3JKTjFGNFM0UjkxMXJha01XYWpfTVNGSExmNUpza0JtdFF4Ymd0Y2RrenIxc3FLWG44SWZjRUNMOGk4ai1GYUQ2TnNmVG84ZU42MElNai1IR0E?oc=5",
-   "dataPub": "2026-11-19T03:41:13.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
   },
   {
    "id": "lula-se-protege-no-ajuste-fiscal",
@@ -1557,7 +2097,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "governo-regulamenta-jornada-5x2-nesta-quinta-feira-lula-assina-decreto-com-novas-regras",
@@ -1571,7 +2111,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "posse-de-lula-com-hoteis-caros-e-cheios-planalto-e-governo-do-df-discutem-camping-para-car",
@@ -1585,7 +2125,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "sem-avanco-nas-negociacoes-brasil-pede-a-omc-para-julgar-tarifaco-imposto-pelos-eua",
@@ -1599,7 +2139,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "psb-e-pdt-aprovam-criacao-de-federacao-partidaria",
@@ -1627,7 +2167,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "flavio-e-denunciado-pela-pgr-por-suposta-calunia-contra-lula",
@@ -1671,7 +2211,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "motta-convoca-sessao-para-votar-ajuste-fiscal-na-segunda-feira",
@@ -1703,21 +2243,6 @@
    "coletadoEm": "2026-11-19T08:54:13.401Z"
   },
   {
-   "id": "pgr-denuncia-flavio-bolsonaro-ao-stf-por-calunia-contra-lula-em-postagem",
-   "veiculo": "Estadão",
-   "fonteFeed": "Google Notícias (debates)",
-   "titulo": "PGR denuncia Flávio Bolsonaro ao STF por calúnia contra Lula em postagem",
-   "resumo": "PGR denuncia Flávio Bolsonaro ao STF por calúnia contra Lula em postagem Estadão",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNT2s1b3o4aDJqV2pzdDVLRFVRQ1MzZUlqdWhXbnZUU040ZERmOEgxMXBhZjVTaDZoSXJIU1hldG1DUXNzQUhSa3NYZmhXd2g2NWFoTmE3NmI2OC1TWjFBT3AzX1h1THdFZktPSVJoeWZmTWJhWmoyZkFScnFCTlRDTUlzb3V5X1F4cTZVV0tsMXlXc0VHZFlGSzcxenltcjFDRGo0UFVUOFBLU3U3ZkHSAbMBQVVfeXFMUFpVN1ZEZFk2ZXBOd0NfT1d0c05PT1BQRm43SUFkLXJyUHZsVDQ5TFZtUVlRQkRTTC1CZjBUSFpScC1ISEdBVzhhRWstV3Vvd2x3ZXVPRVVpQVZDVjI4bl9uWU42VHdrMUhNdmFnTmkwdGl4SVEySjZqYnBHRktTYk9GN0l2ZVJZU3gybjZIaThqbWlqZjlGM3Q3ZllmRUgtZndTdUw5VmRuUVpQcTRlTVpMUWc?oc=5",
-   "dataPub": "2026-11-19T00:42:25.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
-  },
-  {
    "id": "temor-de-colapso-economico-sustenta-apostas-de-eleicao-presidencial-antecipada",
    "veiculo": "Gazeta do Povo",
    "fonteFeed": "Gazeta do Povo",
@@ -1727,7 +2252,7 @@
    "dataPub": "2026-11-19T00:22:35.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "crise-fiscal-alimenta-aposta-de-eleicao-presidencial-antes-de-2030",
@@ -1739,7 +2264,22 @@
    "dataPub": "2026-11-19T00:22:00.000Z",
    "mencoes": [],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "apos-relaxar-lula-e-apoiar-flavio-bolsonaro-pedro-lucas-volta-a-ser-cotado-para-ministerio",
+   "veiculo": "Marrapá",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "Após relaxar Lula e apoiar Flávio Bolsonaro, Pedro Lucas volta a ser cotado para ministério",
+   "resumo": "Após relaxar Lula e apoiar Flávio Bolsonaro, Pedro Lucas volta a ser cotado para ministério Marrapá",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPcmwwcWFndTJxdjMyb20xYTNUV0drQWZ1VEtublM0TlRDVG5SazQzYmkwSnBFc1h5c3NBMHhpN3lwUGY2OEhtaVo1RGk1VVBNM0JKLTNXQjRpQmc3ZkQ3OUpvS3ltQjJYaEp5RmVucW1FdmgyQzJDX1BTN2NuWUNZRVVQVTktOHVCejNyV1phQkQ2TlBpRzlTLTd1NUJJUjU2RlpCd0FKUmZVQlRPY29rNlFqclg2ZWhQbGlHMHFMYVMyNnBRSEF0QXYzMXZ4Zw?oc=5",
+   "dataPub": "2026-11-19T00:17:50.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "positivo",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "flavio-bolsonaro-e-denunciado-pela-pgr-apos-fazer-acusacoes-graves-contra-lula",
@@ -1754,7 +2294,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "governo-lula-tenta-preservar-acordo-do-ajuste-fiscal-na-camara",
@@ -1840,7 +2380,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "motta-diz-que-vai-convocar-sessao-para-votar-ajuste-fiscal-na-segunda-feira",
@@ -1854,7 +2394,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "pgr-denuncia-flavio-bolsonaro-sob-acusacao-de-calunia-contra-lula-em-postagem-sobre-maduro",
@@ -1869,7 +2409,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "pgr-denuncia-flavio-bolsonaro-por-suposta-calunia-contra-lula",
@@ -1884,7 +2424,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "pgr-admite-possibilidade-de-acordo-com-flavio-por-calunia-contra-lula",
@@ -1956,7 +2496,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "sob-pressao-da-faria-lima-senado-conclui-ajuste-fiscal-e-barra-arrocho-bolsonarista-de-0-6",
@@ -1970,7 +2510,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "os-proximos-passos-de-processo-em-que-o-stf-pode-condenar-flavio-bolsonaro",
@@ -2029,7 +2569,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "tcu-ve-indicios-de-propaganda-eleitoral-em-pronunciamento-de-lula-e-cobra-explicacoes",
@@ -2043,7 +2583,22 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
+  },
+  {
+   "id": "pgr-denuncia-flavio-ao-stf-por-calunia-por-post-que-associa-lula-ao-trafico",
+   "veiculo": "UOL Notícias",
+   "fonteFeed": "Google Notícias (busca)",
+   "titulo": "PGR denuncia Flávio ao STF por calúnia por post que associa Lula ao tráfico",
+   "resumo": "PGR denuncia Flávio ao STF por calúnia por post que associa Lula ao tráfico UOL Notícias",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPblBhMFNhdkJaM2loMWFQSFBaMzExNEFmRlhYamt4eGVkZ3lielNGLVRzX0Y4ejlpZmxVc2xYWXB5WmhPUmhBMlAyLUpHWWdZR0RmVENHRU5ZdktvVWpDemU5Q3hhSExoZVNBczU1by1xdDROVFo3QlZHVkN1QmJ3QWwtUEN0N0dBeVVqR3JKTjFGNFM0UjkxMXJha01XYWpfTVNGSExmNUpza0JtdFF4Ymd0Y2RrenIxc3FLWG44SWZjRUNMOGk4ai1GYUQ2TnNmVG84ZU42MElNai1IR0E?oc=5",
+   "dataPub": "2026-11-18T22:41:13.000Z",
+   "mencoes": [
+    "13",
+    "22"
+   ],
+   "tom": "negativo",
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "pgr-denuncia-flavio-bolsonaro-por-calunia-contra-lula",
@@ -2058,7 +2613,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "pgr-denuncia-flavio-bolsonaro-por-calunia-contra-lula-em-publicacao-sobre-maduro",
@@ -2087,7 +2642,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "pgr-denuncia-flavio-bolsonaro-por-calunia-por-associar-lula-a-trafico-internacional-de-dro",
@@ -2159,7 +2714,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-deve-definir-casa-civil-e-fazenda-ate-o-fim-do-mes",
@@ -2255,7 +2810,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "psb-e-pdt-oficializam-federacao-partidaria-de-centro-esquerda",
@@ -2339,7 +2894,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "ajuste-fiscal-senado-faz-acordo-sobre-mudanca-na-lei-kandir-rejeita-outras-alteracoes-e-co",
@@ -2353,7 +2908,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "senado-conclui-votacao-do-pacote-fiscal-apos-destaques-serem-rejeitados-e-governo-fechar-a",
@@ -2381,7 +2936,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "transicao-em-disputa-brasil-na-cop31",
@@ -2393,7 +2948,7 @@
    "dataPub": "2026-11-18T18:52:55.000Z",
    "mencoes": [],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "na-fao-wellington-dias-celebra-avancos-no-combate-a-fome",
@@ -2407,7 +2962,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "feriado-e-tarifa-zero-propostas-tentam-ampliar-participacao-popular-na-posse-de-lula-em-br",
@@ -2421,7 +2976,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "pgr-denuncia-flavio-bolsonaro-ao-stf-por-calunia-contra-lula-por-postagem-em-rede-social-p",
@@ -2450,7 +3005,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "diretor-geral-da-pf-andrei-rodrigues-fala-ao-senado-sobre-troca-de-delegados-assista",
@@ -2588,7 +3143,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "marina-silva-integra-video-cobrando-lula-por-mulher-negra-no-stf",
@@ -2602,7 +3157,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "pt-apresenta-alternativa-ao-ajuste-fiscal-com-mais-impostos-e-mudanca-na-autonomia-do-bc",
@@ -2616,7 +3171,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "medico-explica-mito-sobre-sol-e-testosterona",
@@ -2644,7 +3199,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "a-geografia-da-polarizacao-na-eleicao-presidencial-o-empate-nacional-que-o-interior-nao-vi",
@@ -2659,7 +3214,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "valdemar-candidatura-de-nikolas-a-presidencia-da-camara-e-loucura-aliados-buscam-compor-co",
@@ -2758,7 +3313,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "andrei-rodrigues-se-reuniu-com-lula-no-alvorada-antes-de-decidir-ir-ao-senado-para-sessao-",
@@ -2802,7 +3357,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "audiencia-sobre-caso-master-e-necessidade-de-quorum-elevado-preocupam-governo-em-votacao-d",
@@ -2844,7 +3399,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "-nao-nos-sentimos-representadas-marina-silva-e-advogadas-cobram-indicacao-de-mulher-negra-",
@@ -2887,7 +3442,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "conversa-com-lula-faz-andrei-mudar-de-posicao-e-confirmar-presenca-no-senado",
@@ -2901,7 +3456,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "governo-negocia-dois-ministerios-para-uniao-brasil-e-quer-pp-com-comunicacoes-e-ciencia",
@@ -2915,7 +3470,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "novo-anuncia-candidatura-de-paulo-martins-a-presidencia-da-camara",
@@ -2984,7 +3539,7 @@
     "22"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "sandro-regis-diz-que-flavio-bolsonaro-foi-a-pior-escolha-da-direita-para-disputar-a-presid",
@@ -3057,7 +3612,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "diretor-da-pf-confirma-que-ira-ao-senado-prestar-esclarecimentos-sobre-troca-de-delegados",
@@ -3071,7 +3626,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-nao-foi-eleito-pra-governar-foi-eleito-pra-resistir",
@@ -3114,7 +3669,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "alcolumbre-diz-que-senado-tem-votos-para-o-ajuste-fiscal",
@@ -3212,7 +3767,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "aliados-de-lula-veem-camilo-como-favorito-para-a-casa-civil-apos-missoes-e-contato-constan",
@@ -3327,7 +3882,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "os-aprendizados-da-campanha-de-lula-no-primeiro-e-no-segundo-turno",
@@ -3341,7 +3896,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "a-boa-sacada-de-flavio-no-1-turno-da-eleicao-segundo-a-campanha-de-lula",
@@ -3356,7 +3911,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "pl-das-big-techs-mira-em-concorrencia-nao-conteudo-e-pode-beneficiar-empresas-e-consumidor",
@@ -3501,7 +4056,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-nao-pode-mais-tardar-a-apresentar-plano-fiscal-robusto",
@@ -3543,7 +4098,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "campanha-de-lula-atingiu-limite-de-gastos-gastos-de-flavio-bolsonaro-ficaram-r-18-6-milhoe",
@@ -3558,7 +4113,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "numero-de-brasileiros-no-exterior-que-foram-as-urnas-cresce-em-mais-de-40-mil-no-2-turno-l",
@@ -3573,7 +4128,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "ajuste-fiscal-expoe-dificuldade-de-articulacao-do-governo-lula-no-congresso",
@@ -3630,7 +4185,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "se-o-pt-nao-entender-por-que-lula-venceu-ira-repetir-os-mesmos-erros",
@@ -3976,7 +4531,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-deve-divulgar-video-defendendo-pacote-fiscal-apos-criticas-da-esquerda",
@@ -4075,7 +4630,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lara-resende-volta-a-defender-reducao-de-juros-em-conjunto-com-equilibrio-das-contas-do-go",
@@ -4130,7 +4685,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-18T02:24:55.886Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "apos-adiamento-de-pacote-fiscal-no-senado-motta-evita-sinalizar-data-de-votacao-de-projeto",
@@ -4272,7 +4827,7 @@
     "22"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "senado-adia-votacao-do-projeto-de-ajuste-fiscal-para-quarta-18-",
@@ -4372,7 +4927,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "sugestao-de-lula-para-reuniao-trilateral-sobre-guerra-na-ucrania-foi-dada-a-trump-xi-e-put",
@@ -4400,7 +4955,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "senado-adia-conclusao-da-votacao-de-pacote-fiscal-por-falta-de-acordo-e-atrasa-analise-da-",
@@ -4440,7 +4995,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lider-do-governo-no-congresso-apresenta-projeto-para-taxar-big-techs",
@@ -4454,7 +5009,7 @@
     "13"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "pela-primeira-vez-em-quase-60-anos-ibovespa-tera-acoes-de-empresas-brasileiras-listadas-no",
@@ -4664,7 +5219,7 @@
     "13"
    ],
    "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "ajuste-fiscal-gera-debandada-em-canal-de-apoio-a-lula-no-whatsapp",
@@ -4792,7 +5347,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "ministros-do-stf-veem-tendencia-de-plenario-validar-lei-que-pode-reduzir-pena-de-bolsonaro",
@@ -4948,7 +5503,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "pacote-fiscal-sera-votado-na-camara-nesta-terca-feira-se-senado-concluir-analise-diz-motta",
@@ -5033,7 +5588,7 @@
     "22"
    ],
    "tom": "positivo",
-   "coletadoEm": "2026-11-19T08:54:13.401Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "bolsa-sobe-e-dolar-opera-estavel-com-reuniao-de-lula-com-fonteles",
@@ -5101,7 +5656,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "alcolumbre-e-motta-se-reunem-com-moraes-e-pedem-que-stf-julgue-lei-que-pode-diminuir-pena-",
@@ -5130,7 +5685,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "durigan-diz-que-pacote-fiscal-e-so-o-primeiro-passo-e-defende-ajuste-gradual-e-sem-negacio",
@@ -5144,7 +5699,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "separacao-de-r-550-mil-de-filho-de-lula-e-medica-foi-feita-por-advogada-sem-oab-e-acabou-e",
@@ -5186,7 +5741,7 @@
     "13"
    ],
    "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
+   "coletadoEm": "2026-11-20T00:38:48.601Z"
   },
   {
    "id": "lula-convoca-reuniao-com-rui-costa-camilo-santana-e-rafael-fonteles-para-debater-formacao-",
@@ -5257,619 +5812,51 @@
    ],
    "tom": "neutro",
    "coletadoEm": "2026-11-19T08:54:13.401Z"
-  },
-  {
-   "id": "nao-serei-refem-da-direita-ou-do-mercado-mas-do-povo-brasileiro-diz-lula-na-espanha",
-   "veiculo": "CartaCapital",
-   "fonteFeed": "CartaCapital",
-   "titulo": "Não serei refém da direita ou do mercado, mas do povo brasileiro, diz Lula na Espanha",
-   "resumo": "A declaração ocorre em meio ao debate sobre ajuste fiscal",
-   "link": "https://www.cartacapital.com.br/economia/nao-serei-refem-da-direita-ou-do-mercado-mas-do-povo-brasileiro-diz-lula-na-espanha/",
-   "dataPub": "2026-11-17T16:24:25.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-17T20:03:26.596Z"
-  },
-  {
-   "id": "maioria-desaprova-fuga-de-flavio-bolsonaro-e-rejeita-justificativa-de-perseguicao-politica",
-   "veiculo": "CartaCapital",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Maioria desaprova fuga de Flávio Bolsonaro e rejeita justificativa de perseguição política",
-   "resumo": "Maioria desaprova fuga de Flávio Bolsonaro e rejeita justificativa de perseguição política CartaCapital",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNY0c0RE9zeVhmbTJhS1FQX0wzUzBid1RKZWswZGNHRUFiS3VXa2ZQUzNVa21Ka084U0hiWU8zODlsUEZxbFd5bmtBTEZrOTl3RXo4NGt1MHotcUtQekd5cXJvaVFMZkdKQXVDQXRGZi1GbS1nOUlrVDVDdS1oR0pkYjktVmY4dlFZeWx4dTFxQm90OFFKQXZoSzBDdDVMWnZ0U2wzd2pTUEcwdkRkMzg3aW52YWFUenF5UGVSOVFlUFhCMUNkYkh6cy1WUlU?oc=5",
-   "dataPub": "2026-11-17T16:22:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
-  },
-  {
-   "id": "divida-publica-pode-superar-100-do-pib-ate-fim-do-governo-lula-alerta-ceo-do-itau",
-   "veiculo": "Revista Oeste",
-   "fonteFeed": "Google Notícias (debates)",
-   "titulo": "Dívida pública pode superar 100% do PIB até fim do governo Lula, alerta CEO do Itaú",
-   "resumo": "Dívida pública pode superar 100% do PIB até fim do governo Lula, alerta CEO do Itaú Revista Oeste",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQVFpeGpkQWF4V0NLYzJWUEthS0R3N2YxRUc4QXJxT2VCOUQ4dFBzRW5QVlp6Q3ltRjFOOVZaXzBGOWR0a1B1R0tOUkpIMmRNa2s4VjQ0N0NKc3B3Vnl5VXRCQUpRS2hHRHNobmd1b2lMaUtfNFRwTTlVRElXa0s0dzNpYzE5SXh5cnpKZENsX2N2a3VXWm9lRUlCLTQ2c1RQTWFhZkVRc043RV95dm9UaGhMTEZVeTQ?oc=5",
-   "dataPub": "2026-11-17T16:15:43.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-17T20:03:26.596Z"
-  },
-  {
-   "id": "festival-gastronomia-do-mar-reune-mais-de-30-restaurantes-em-niteroi",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Festival Gastronomia do Mar reúne mais de 30 restaurantes em Niterói",
-   "resumo": "O Festival Gastronomia do Mar volta a Niterói entre os dias 25 de novembro e 6 de dezembro, com a participação de mais de 30 restaurantes em um circuito gastronômico dedicado aos pescados e frutos do…",
-   "link": "https://oglobo.globo.com/rio/bairros/niteroi/noticia/2026/11/17/festival-gastronomia-do-mar-reune-mais-de-30-restaurantes-em-niteroi.ghtml",
-   "dataPub": "2026-11-17T16:10:10.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-17T20:03:26.596Z"
-  },
-  {
-   "id": "lula-se-reune-nesta-terca-feira-com-camilo-fonteles-e-rui-costa-para-discutir-formacao-do-",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Lula se reúne nesta terça-feira com Camilo, Fonteles e Rui Costa para discutir formação do Lula 4",
-   "resumo": "BRASÍLIA - O presidente Luiz Inácio Lula da Silva (PT) vai se reunir nesta terça-feira, 17, com o senador Camilo Santana (PT-CE), com o governador do Piauí, Rafael Fonteles (PT), e com o senador…",
-   "link": "https://www.estadao.com.br/politica/lula-se-reune-nesta-terca-feira-com-camilo-fonteles-e-rui-costa-para-discutir-formacao-do-lula-4/",
-   "dataPub": "2026-11-17T16:07:16.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-18T10:37:17.762Z"
-  },
-  {
-   "id": "lula-reune-aliados-para-definir-nova-esplanada-e-prepara-anuncio-de-ministros",
-   "veiculo": "Gazeta do Povo",
-   "fonteFeed": "Gazeta do Povo",
-   "titulo": "Lula reúne aliados para definir nova Esplanada e prepara anúncio de ministros",
-   "resumo": "Antes de tomar uma decisão, Lula também pretende ouvir integrantes do próprio Supremo. Entre os ministros com quem o presidente deve conversar estão Alexandre de Moraes, Flávio Dino, Cristiano Zanin…",
-   "link": "https://www.gazetadopovo.com.br/republica/lula-reune-aliados-para-definir-nova-esplanada-e-prepara-anuncio-de-ministros/",
-   "dataPub": "2026-11-17T15:56:56.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-19T08:54:13.401Z"
-  },
-  {
-   "id": "pesquisa-revela-apoio-massivo-a-resultado-das-urnas-e-rejeicao-a-saida-de-flavio-bolsonaro",
-   "veiculo": "bra1.com.br",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Pesquisa revela apoio massivo a resultado das urnas e rejeição à saída de Flávio Bolsonaro do país",
-   "resumo": "Pesquisa revela apoio massivo a resultado das urnas e rejeição à saída de Flávio Bolsonaro do país bra1.com.br",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbmRlZ1RqWHRFZ04tRElBOG5PUVBGS1NMMG0tdGU3WFBQMXZDQzhQZzZvVmNJMVV0d0RNSGpUVTB5UkpRbVp5MXVRaTFwQVJXV0xFb0lPUElQelVpVUJNZHlCSG1HaV9vTGp1V1JjTmJWeXdnWExNRnFjaE1aRnRxQ25OOU1VU2w4WU50QTdzaWE1OG16cWNQNnJNWWE2c01wblNBTThTcW53dE56V1BwcTdmUjVmcGJJcV93VEVMSkxvUS1vWFI3Tm12MWhfakdUQnFIMEhIZU0?oc=5",
-   "dataPub": "2026-11-17T15:51:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-19T01:11:36.080Z"
-  },
-  {
-   "id": "-com-lula-e-contra-o-mercado-estudantes-chamam-ato-no-rio-nesta-terca-feira-17-",
-   "veiculo": "Brasil de Fato",
-   "fonteFeed": "Brasil de Fato",
-   "titulo": "‘Com Lula e contra o mercado’: estudantes chamam ato no Rio nesta terça-feira (17)",
-   "resumo": "A União Nacional dos Estudantes (UNE) realiza nesta terça-feira (17) uma mobilização nacional contra os juros altos e o ajuste fiscal. No Rio de Janeiro, o ato acontece a partir das 16h30 na…",
-   "link": "https://www.brasildefato.com.br/2026/11/17/com-lula-e-contra-o-mercado-estudantes-chamam-ato-no-rio-nesta-terca-feira-17/",
-   "dataPub": "2026-11-17T15:36:17.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-18T19:05:03.202Z"
-  },
-  {
-   "id": "jones-manoel-e-glauber-braga-integram-novo-canal-de-esquerda-em-meio-a-criticas-ao-ajuste-",
-   "veiculo": "Blog do Mário Flávio",
-   "fonteFeed": "Google Notícias (debates)",
-   "titulo": "Jones Manoel e Glauber Braga integram novo canal de esquerda em meio a críticas ao ajuste fiscal de Lula",
-   "resumo": "Jones Manoel e Glauber Braga integram novo canal de esquerda em meio a críticas ao ajuste fiscal de Lula Blog do Mário Flávio",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRnM3ZkNQWTFlZjdxRHVRaXJEZXo5MjZQOGRBak0yS29ibWJ5VFpPSDhsVWNaM2ctUzNndEt3X3dsVjFIbmZFVms2Yjd5bVFLRHhQNmpjNEFiQzZ3TnUwUms4cmZNb1pBQWdMSXZyQVJQdEZrTXg5YmFzdDhORW1ZNm00MlpjQVpzanlhbmtORmoya0VKZ2s5MF92Szc3Xzl4blNJR040Qlo2NlY1RkVOMEhsNWpoaC0yVjNTSWlBVmE1eHFrV2ZEdEpiQmswbWg5bEl5Tg?oc=5",
-   "dataPub": "2026-11-17T15:33:33.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-17T20:03:26.596Z"
-  },
-  {
-   "id": "com-medidas-do-governo-projecoes-apontam-que-saude-pode-deixar-de-receber-ate-r-9-bi-em-20",
-   "veiculo": "G1",
-   "fonteFeed": "G1",
-   "titulo": "Com medidas do governo, projeções apontam que Saúde pode deixar de receber até R$ 9 bi em 2027; Planejamento nega",
-   "resumo": "A Saúde pode deixar de receber cerca de R$ 9 bilhões em 2027 por conta de medidas do governo, incluindo as que estão previstas no pacote fiscal que está sendo analisado pelo Congresso Nacional. O…",
-   "link": "https://g1.globo.com/economia/noticia/2026/11/17/com-medidas-do-governo-saude-pode-deixar-de-receber-r-9-bilhoes-em-2027-e-ter-alta-limitada-ate-2030-organizacoes-sociais-reagem.ghtml",
-   "dataPub": "2026-11-17T15:25:28.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
-  },
-  {
-   "id": "com-medidas-do-governo-saude-pode-deixar-de-receber-r-9-bilhoes-em-2027-e-ter-alta-limitad",
-   "veiculo": "G1",
-   "fonteFeed": "G1",
-   "titulo": "Com medidas do governo, Saúde pode deixar de receber R$ 9 bilhões em 2027 e ter alta limitada até 2030; organizações sociais reagem",
-   "resumo": "A Saúde pode deixar de receber cerca de R$ 9 bilhões em 2027 por conta de medidas do governo, incluindo as que estão previstas no pacote fiscal que está sendo analisado pelo Congresso Nacional. O…",
-   "link": "https://g1.globo.com/economia/noticia/2026/11/17/com-medidas-do-governo-saude-pode-deixar-de-receber-r-9-bilhoes-em-2027-e-ter-alta-limitada-ate-2030-organizacoes-sociais-reagem.ghtml",
-   "dataPub": "2026-11-17T15:25:28.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-17T20:03:26.596Z"
-  },
-  {
-   "id": "mapas-mostram-voto-em-lula-por-escolaridade-religiao-e-renda-veja-video",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Mapas mostram voto em Lula por escolaridade, religião e renda; veja vídeo",
-   "resumo": "O presidente Lula (PT) conquistou maior votação em áreas de maioria negra, de menor renda , rurais e católicas, mostra levantamento que cruza dados eleitorais dos locais de votação no segundo turno…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/mapas-mostram-voto-em-lula-por-escolaridade-religiao-e-renda-veja-video.shtml",
-   "dataPub": "2026-11-17T15:13:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
-  },
-  {
-   "id": "alcolumbre-participa-de-articulacoes-para-preservar-pacote-fiscal-e-busca-rejeitar-destaqu",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "Alcolumbre participa de articulações para preservar pacote fiscal e busca rejeitar destaques, dizem aliados",
-   "resumo": "O presidente do Senado Federal, Davi Alcolumbre (União-AP), participa das articulações para evitar mudanças no pacote de ajuste fiscal durante a votação dos destaques, prevista para esta terça-feira…",
-   "link": "https://oglobo.globo.com/economia/noticia/2026/11/17/alcolumbre-participa-de-articulacoes-para-preservar-pacote-fiscal-e-busca-rejeitar-destaques-dizem-aliados.ghtml",
-   "dataPub": "2026-11-17T15:09:16.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-17T20:03:26.596Z"
-  },
-  {
-   "id": "caos-criado-pelo-socialismo-gen-z-na-espanha-aponta-para-possivel-futuro-de-lula-4",
-   "veiculo": "Gazeta do Povo",
-   "fonteFeed": "Gazeta do Povo",
-   "titulo": "Caos criado pelo Socialismo Gen-Z na Espanha aponta para possível futuro de Lula 4",
-   "resumo": "Crise habitacional na Espanha expõe efeitos do controle estatal de aluguéis e acende alerta para intervencionismo no governo Lula 4.",
-   "link": "https://www.gazetadopovo.com.br/republica/caos-socialismo-gen-z-espanha-possivel-futuro-lula-4/",
-   "dataPub": "2026-11-17T15:05:42.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-19T08:54:13.401Z"
-  },
-  {
-   "id": "campanha-de-lula-atinge-limite-de-gastos-e-a-de-flavio-fica-r-18-6-milhoes-abaixo-do-teto",
-   "veiculo": "O GLOBO",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Campanha de Lula atinge limite de gastos e a de Flávio fica R$ 18,6 milhões abaixo do teto",
-   "resumo": "Campanha de Lula atinge limite de gastos e a de Flávio fica R$ 18,6 milhões abaixo do teto O GLOBO",
-   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQMUFNbGVJWlQ2TzllaWtMbTFwc2xyVHF2LWplcGRjNGRWMndJd0tibFIyLTlSdGNFVzN2ZjFhZEVuYkxCTFZ2Z3lxRVFIZzZYZ3VwQ3A3WnJBQlhRS28tNUhsVEd5eFdlRG91ZkFRTExJV1REZGpJRUJYaFF3QWNqd1lnUW5wVl9ySWZGSVhodjhVdnFRZ01EMVhQY1VDTklFNzJLOHN1TkViczFIdVczNUxWaGg2ZXc3cUZOQ2pvWkY4UGhITzlsNnUxanZ3dGFZTmUxNVZRTWVUUlJoTVI1QU5GQVNmQdIB9AFBVV95cUxPVE5lVlJhd0tsLTBoMkk4X1phbnZGNHl4YkZ3YmFDRUFEWERwM0xWcHl1WTUzbU85aTh5c1AtSjI4QmlVb250dzQzdG9OajlYUnlWMUpMQ1I4dVRMQi1CSnhZdVZCdGlkUTRXNjNyYkhYWS1MbGc1QzRUeExGbmhTS21KLUp6ZGdMeDNNQU9ZMFpVMFl4RE51R0c4cmItWmNJelFLZmZjV21WMlVjLUlFdG5HSVEwU1k3VThybDdKNlZ5V2FlVVVuTks1QWFCRWdrVkxXQTllTG9qVW1fZmxoVlZldkZMZ094YUhvdTNVSXItdmZy?oc=5",
-   "dataPub": "2026-11-17T15:05:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
-  },
-  {
-   "id": "lula-propoe-nova-engenharia-para-atrair-maioria-no-parlamento",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Lula propõe nova engenharia para atrair maioria no Parlamento",
-   "resumo": "Governar em minoria no Parlamento tem sido um desafio permanente e uma fonte de problemas para o PT , que de novo se vê às voltas com a mesma questão: conciliar o ideário de esquerda do Executivo com…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/dora-kramer/2026/11/lula-propoe-nova-engenharia-para-atrair-maioria-no-parlamento.shtml",
-   "dataPub": "2026-11-17T15:01:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
-  },
-  {
-   "id": "jones-x-janones-deputado-do-psol-vira-alvo-de-apoiadores-de-lula-por-criticas-ao-ajuste-fi",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Jones X Janones: deputado do PSOL vira alvo de apoiadores de Lula por críticas ao ajuste fiscal",
-   "resumo": "Em meio a uma disputa na esquerda, o deputado federal eleito Jones Manoel (PSOL-PE) virou alvo de aliados do presidente Luiz Inácio Lula da Silva (PT) por críticas à proposta de ajuste fiscal do…",
-   "link": "https://www.estadao.com.br/politica/eleicoes/jones-x-janones-deputado-do-psol-vira-alvo-de-apoiadores-de-lula-por-criticas-ao-ajuste-fiscal/",
-   "dataPub": "2026-11-17T15:00:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-18T10:37:17.762Z"
-  },
-  {
-   "id": "lula-faz-reuniao-com-camilo-rui-costa-e-fonteles-para-retomar-conversas-sobre-formacao-de-",
-   "veiculo": "Jornal do Tocantins",
-   "fonteFeed": "Google Notícias (debates)",
-   "titulo": "Lula faz reunião com Camilo, Rui Costa e Fonteles para retomar conversas sobre formação de governo",
-   "resumo": "Lula faz reunião com Camilo, Rui Costa e Fonteles para retomar conversas sobre formação de governo Jornal do Tocantins",
-   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNYzlfWkd0dHRuNE9VSEhXQ25NUnVKNjcwb1pMRG5yQ0g4ODYyU2tOQzY2bkM4aUlLTk5BbGc5YXJuZVc4LURWN1NaMlhTVkxuN2IyZTZaelFCS3UwV1ZEMC1pV2xzdHNPaUZvMVdrNGpLWTV5UlFoN2pDNWVCeVlGcEY4N3I0TVJLU095Sm9wQ0cxVU1TOTZBWi1MYUE1MnliMllvT0JBLWEtTEtkLXNWMWJfYnRsMUF3MmltWFpnREVKd1J5c1cxanI0RVF1NjZqN0FUQTExLXhEeG5kVGlkU0lGeVowcnFs?oc=5",
-   "dataPub": "2026-11-17T14:55:55.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-18T02:24:55.886Z"
-  },
-  {
-   "id": "-exercito-de-lula-perde-320-mil-inscritos-em-meio-a-crise-entre-governistas-e-janones-cont",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "'Exército de Lula' perde 320 mil inscritos em meio à crise entre governistas e Janones contra 'esquerda revolucionária'",
-   "resumo": "Criado durante a campanha para o segundo turno, o canal de WhatsApp \"Exército do Lula\" perdeu, segundo um levantamento feito pelo GLOBO, cerca de 328,5 mil apoiadores entre a sexta-feira da semana…",
-   "link": "https://oglobo.globo.com/blogs/sonar-a-escuta-das-redes/post/2026/11/exercito-de-lula-perde-320-mil-inscritos-em-meio-a-crise-entre-governistas-e-janones-contra-esquerda-revolucionaria.ghtml",
-   "dataPub": "2026-11-17T14:47:20.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-17T20:03:26.596Z"
-  },
-  {
-   "id": "o-ajuste-fiscal-e-o-desafio-de-um-novo-ciclo-de-desenvolvimento",
-   "veiculo": "Brasil de Fato",
-   "fonteFeed": "Brasil de Fato",
-   "titulo": "O ajuste fiscal e o desafio de um novo ciclo de desenvolvimento",
-   "resumo": "O quarto mandato do presidente Lula começa diante de uma escolha histórica: administrar os limites de uma economia que cresce pouco ou mobilizar o país para superá-los. O debate fiscal, acalorado…",
-   "link": "https://www.brasildefato.com.br/2026/11/17/o-ajuste-fiscal-e-o-desafio-de-um-novo-ciclo-de-desenvolvimento/",
-   "dataPub": "2026-11-17T14:43:18.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-18T19:05:03.202Z"
-  },
-  {
-   "id": "proposta-de-ajuste-fiscal-provoca-crise-na-esquerda-e-racha-o-exercito-do-lula",
-   "veiculo": "Gazeta do Povo",
-   "fonteFeed": "Gazeta do Povo",
-   "titulo": "Proposta de ajuste fiscal provoca crise na esquerda e racha o Exército do Lula",
-   "resumo": "O ajuste fiscal proposto pelo governo provocou a revolta de seus eleitores e o racha do canal Exército de Lula.",
-   "link": "https://www.gazetadopovo.com.br/republica/proposta-de-ajuste-fiscal-provoca-crise-na-esquerda-e-racha-o-exercito-do-lula/",
-   "dataPub": "2026-11-17T14:43:03.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-19T08:54:13.401Z"
-  },
-  {
-   "id": "governo-lula-divulga-estimativa-bilionaria-as-vesperas-de-votacao-sobre-regulacao-de-big-t",
-   "veiculo": "Gazeta do Povo",
-   "fonteFeed": "Gazeta do Povo",
-   "titulo": "Governo Lula divulga estimativa bilionária às vésperas de votação sobre regulação de big techs",
-   "resumo": "Proposta amplia os poderes do governo para fiscalizar big techs e prevê critérios específicos para enquadrar empresas com atuação no Brasil.",
-   "link": "https://www.gazetadopovo.com.br/republica/governo-lula-divulga-estimativa-bilionaria-as-vesperas-de-votacao-sobre-regulacao-de-big-techs/",
-   "dataPub": "2026-11-17T14:06:27.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-19T08:54:13.401Z"
-  },
-  {
-   "id": "recusa-a-qualquer-ajuste-mostra-que-temos-uma-extrema-esquerda-no-brasil",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Recusa a qualquer ajuste mostra que temos uma extrema esquerda no Brasil",
-   "resumo": "Mesmo a favor de uma intervenção militar , negando vacinas, fanaticamente devotados a um líder apologista da ditadura brasileira , nem todos, os bolsonaristas sempre se ressentiram com o rótulo de…",
-   "link": "https://www.estadao.com.br/politica/fabiano-lana/recusa-a-qualquer-ajuste-mostra-que-temos-uma-extrema-esquerda/",
-   "dataPub": "2026-11-17T14:03:06.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-17T20:03:26.596Z"
-  },
-  {
-   "id": "justica-condena-candidata-a-deputada-federal-a-pagar-indenizacao-a-flavio-bolsonaro",
-   "veiculo": "Diario de Pernambuco",
-   "fonteFeed": "Google Notícias (busca)",
-   "titulo": "Justiça condena candidata a deputada federal a pagar indenização a Flávio Bolsonaro",
-   "resumo": "Justiça condena candidata a deputada federal a pagar indenização a Flávio Bolsonaro Diario de Pernambuco",
-   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOemJQd2lsZU1ybjNxY1k1bjloMzlCRG44UU4wZERTNGc2aHYyYW4xR3R5LUNlSjdsS2VfQ3k2OHpRcjF3ejNaWmJwVVhpVHRIN3VSZ3lSLV9ZUXU0c3Nqa0thN2VUalgtb2ZjUXZ1RXBlTkNfME4xRElQcEJJLWJkbUV6a1FZczNMWGt1T1hIbEM2bFV2UHlyTVNWYVBvdlJmYnNaclBXc0ZzUVpTMzUxYURDc2lic05RZGRLWjVtY1RtSE1xSzVCQjlfNHkwVkdhMXFvTnBHUTBqQzdQZ2t0Nlp2azBBamM?oc=5",
-   "dataPub": "2026-11-17T13:43:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-18T10:37:17.762Z"
-  },
-  {
-   "id": "ajuste-fiscal-governo-quer-concluir-analise-de-projeto-no-congresso-nesta-terca-motta-diz-",
-   "veiculo": "G1",
-   "fonteFeed": "G1",
-   "titulo": "Ajuste fiscal: governo quer concluir análise de projeto no Congresso nesta terça; Motta diz que Câmara está disposta a votar",
-   "resumo": "Hugo Motta: Estamos preocupados com a alta do dólar O ministro das Relações Institucionais, José Guimarães, afirmou nesta terça-feira (17) que o governo tem um acordo com o presidente da Câmara dos…",
-   "link": "https://g1.globo.com/politica/noticia/2026/11/17/governo-quer-aprovar-ajuste-fiscal-no-senado-e-na-camara-ainda-nesta-terca-diz-ministro.ghtml",
-   "dataPub": "2026-11-17T13:42:30.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
-  },
-  {
-   "id": "ate-onde-o-dolar-pode-subir-por-que-o-real-e-a-moeda-que-mais-perdeu-valor-desde-a-reeleic",
-   "veiculo": "BBC News Brasil",
-   "fonteFeed": "BBC News Brasil",
-   "titulo": "Até onde o dólar pode subir? Por que o real é a moeda que mais perdeu valor desde a reeleição de Lula",
-   "resumo": "Moeda brasileira sofre pressões tanto do cenário externo como doméstico — onde há indefinição sobre os rumos do ajuste fiscal e sobre quem será o próximo ministro da Fazenda.",
-   "link": "https://www.bbc.com/portuguese/articles/cmj4r9klkqego?at_medium=RSS&at_campaign=rss",
-   "dataPub": "2026-11-17T13:42:05.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-17T20:03:26.596Z"
-  },
-  {
-   "id": "senado-vota-destaques-que-podem-mudar-texto-do-ajuste-fiscal-em-dia-de-protestos-de-estuda",
-   "veiculo": "Brasil de Fato",
-   "fonteFeed": "Brasil de Fato",
-   "titulo": "Senado vota destaques que podem mudar texto do ajuste fiscal em dia de protestos de estudantes contra pressão do mercado financeiro",
-   "resumo": "O Senado Federal retoma, nesta terça-feira (17), a votação do Projeto de Lei Complementar (PLP) 299/2026, o ajuste fiscal do governo do presidente Luiz Inácio Lula da Silva (PT). Os senadores…",
-   "link": "https://www.brasildefato.com.br/2026/11/17/senado-vota-destaques-que-podem-mudar-texto-do-ajuste-fiscal-em-dia-de-protestos-de-estudantes-contra-pressao-do-mercado-financeiro/",
-   "dataPub": "2026-11-17T13:40:16.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-18T19:05:03.202Z"
-  },
-  {
-   "id": "lula-retoma-conversas-sobre-formacao-de-governo-e-tenta-impulsionar-plano-moretti-apos-pre",
-   "veiculo": "Folha de S.Paulo",
-   "fonteFeed": "Folha de S.Paulo",
-   "titulo": "Lula retoma conversas sobre formação de governo e tenta impulsionar 'Plano Moretti' após pressão",
-   "resumo": "De volta ao Brasil depois de viagem à Ásia e à Europa , o presidente Lula ( PT ) decidiu retomar as conversas sobre a formação de seu novo governo. Também discutiu com aliados o avanço das medidas…",
-   "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/lula-faz-reuniao-com-camilo-rui-costa-e-fonteles-para-retomar-conversas-sobre-formacao-de-governo.shtml",
-   "dataPub": "2026-11-17T13:40:00.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
-  },
-  {
-   "id": "justica-do-df-condena-candidata-a-deputada-federal-a-pagar-indenizacao-a-flavio-bolsonaro",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Justiça do DF condena candidata a deputada federal a pagar indenização a Flávio Bolsonaro",
-   "resumo": "A 21ª Vara Cível de Brasília condenou a candidata a deputada federal Manuella Tyler (PSB) ao pagamento de R$ 7,5 mil de indenização por danos morais ao senador e ex-presidenciável Flávio Bolsonaro…",
-   "link": "https://www.estadao.com.br/politica/eleicoes/justica-do-df-condena-candidata-a-deputada-federal-a-pagar-indenizacao-a-flavio-bolsonaro-nprp/",
-   "dataPub": "2026-11-17T13:03:33.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-17T20:03:26.596Z"
-  },
-  {
-   "id": "um-ano-apos-prisao-de-vorcaro-investigacoes-contra-ministros-do-stf-nao-avancam",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Um ano após prisão de Vorcaro, investigações contra ministros do STF não avançam",
-   "resumo": "A prisão do dono do Banco Master, Daniel Vorcaro , completa um ano nesta terça-feira, 17, sem que o banqueiro tenha sido denunciado ou que as investigações contra ministros do Supremo Tribunal…",
-   "link": "https://www.estadao.com.br/politica/um-ano-apos-prisao-de-vorcaro-investigacoes-contra-ministros-do-stf-nao-avancam/",
-   "dataPub": "2026-11-17T12:41:17.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-17T20:03:26.596Z"
-  },
-  {
-   "id": "direita-espanhola-detona-visita-de-lula-a-presidente-socialista-e-questiona-vitoria-do-pet",
-   "veiculo": "Diário 360",
-   "fonteFeed": "Google Notícias (debates)",
-   "titulo": "DIREITA ESPANHOLA DETONA VISITA DE LULA A PRESIDENTE SOCIALISTA E QUESTIONA \"VITÓRIA\" DO PETISTA SOBRE FLÁVIO",
-   "resumo": "DIREITA ESPANHOLA DETONA VISITA DE LULA A PRESIDENTE SOCIALISTA E QUESTIONA \"VITÓRIA\" DO PETISTA SOBRE FLÁVIO Diário 360",
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOekpkR3VvT0NPV2Y2dUhoWF9lWXk0YTFSODZwOW5KRFBXd0V0UnkwUy1WdXVtSmZtZUYyd1FKY0oyVFltSEdyNEF0MnZNSEpFaGExWnBtM3FkZGFITEZNM21Qem5JZHRSeXJxSVIwRGh6NGxLQkZsQ0RsMlByUXpvWG1hZWtrZUN2eE90VGlyc29rcUctc0U3d2JJb21FY1N3Skl4YU4tNGlZa2kwNzZmMHBkRzlZVzJHSzkxUGNZLXdSTlhCWExPUlgzVGpuakNyRVN3d0ZwUXd1V0Ft?oc=5",
-   "dataPub": "2026-11-17T12:35:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-17T20:03:26.596Z"
-  },
-  {
-   "id": "advogadas-suspeitas-de-aplicar-golpe-em-filho-de-lula-sao-alvo-da-policia-em-sp",
-   "veiculo": "Estadão",
-   "fonteFeed": "Estadão",
-   "titulo": "Advogadas suspeitas de aplicar golpe em filho de Lula são alvo da Polícia em SP",
-   "resumo": "O Departamento Estadual de Investigações Criminais (DEIC) da Polícia Civil de São Paulo deflagrou nesta terça-feira, 17, a Operação Nexus, que investiga um suposto golpe contra o empresário Luís…",
-   "link": "https://www.estadao.com.br/politica/blog-do-fausto-macedo/advogados-suspeitos-de-aplicar-golpe-em-filho-de-lula-sao-alvo-da-policia-em-sp/",
-   "dataPub": "2026-11-17T12:16:14.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-17T20:03:26.596Z"
-  },
-  {
-   "id": "lula-se-reune-com-sanchez-em-madri-a-dias-da-eleicao-na-espanha",
-   "veiculo": "O Popular",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Lula se reúne com Sánchez em Madri a dias da eleição na Espanha",
-   "resumo": "Lula se reúne com Sánchez em Madri a dias da eleição na Espanha O Popular",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQlZYTUU5S192SXd4QmNfaVlxSjJVUkdwUGFMOWl0S1ExRUNzUEowcGlzcndNSlJEU2RRM2FWWTZJa2xkVXg5cnVMUUc3ZDB6dXllWmtIOWZIdWQyWjRWQXdlcFYyaGtUWUtkUUlRUmRHY3hZVVVSbWY2NlFfdndJbmh1b1Z2NUVqV1NPZFFHRUZlQjN0MDRuNzF4WmZybGNoVHdXd3V3?oc=5",
-   "dataPub": "2026-11-17T12:01:26.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-19T08:54:13.401Z"
-  },
-  {
-   "id": "direita-espanhola-critica-visita-de-lula-a-sanchez-e-questiona-vitoria-do-petista-sobre-fl",
-   "veiculo": "Gazeta do Povo",
-   "fonteFeed": "Google Notícias (pesquisas)",
-   "titulo": "Direita espanhola critica visita de Lula a Sánchez e questiona vitória do petista sobre Flávio",
-   "resumo": "Direita espanhola critica visita de Lula a Sánchez e questiona vitória do petista sobre Flávio Gazeta do Povo",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZ3lfQ1BuMm9kQ2ZXUnhQN2FXb1puSFc5RWhpWWwyNzlmYVVRYng1cjNFRzRlM1V2QlVvVUZzQjJLLXlGQ1lFd2ZmeklGNUJGdGdNSGFQaHY5cE1reWJrZFh5bl8yaVVTaWxLMll1SWtjR3gyOGtHYlVMZGFQejRXaFZBSXgwUDVMdkpEMW5sMXpkX3VMUlV5aVVTZUtEWkhCVnVIbUlPSV92VkYwWTZoSUVrZldlcWVVdjNKVnV4TTQ?oc=5",
-   "dataPub": "2026-11-17T11:51:00.000Z",
-   "mencoes": [
-    "13",
-    "22"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-19T18:09:06.138Z"
-  },
-  {
-   "id": "flavio-bolsonaro-quer-liderar-a-oposicao-mas-nao-consegue-comandar-o-proprio-pl",
-   "veiculo": "CartaCapital",
-   "fonteFeed": "Google Notícias (debates)",
-   "titulo": "Flávio Bolsonaro quer liderar a oposição, mas não consegue comandar o próprio PL",
-   "resumo": "Flávio Bolsonaro quer liderar a oposição, mas não consegue comandar o próprio PL CartaCapital",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcnZWelVJc3dZVWh0cE1Cc2NfRWZRemxYd1UtN2tpWnV3bjMzVjVvYUMteHBELTI1XzhCN2xXQXlpSDkzUkZ5X1hSeWRBMko1ZHlGNkZYSHl2dzJuM1NEZ0x4WUwxWmstZTZGSFJta0N2LUNkdEd3bUpzNGoweV85aXJiWEZxMHNOMHZXVFBKUUtiUzVkVXg1VUtORjV5U3BkMmw5b3h4eFhMa0VSaDRudEJMa1VLS2Q5R0hHOWhR?oc=5",
-   "dataPub": "2026-11-17T11:41:00.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "positivo",
-   "coletadoEm": "2026-11-18T02:24:55.886Z"
-  },
-  {
-   "id": "quem-e-o-filho-de-lula-apontado-como-vitima-de-um-golpe-de-advogadas",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "Quem é o filho de Lula apontado como vítima de um golpe de advogadas",
-   "resumo": "Investigação da Polícia Civil de São Paulo aponta que grupo se apropriou de R$ 800 mil de Luís Cláudio Lula da Silva",
-   "link": "https://www.metropoles.com/sao-paulo/quem-e-o-filho-de-lula-apontado-como-vitima-de-um-golpe-de-advogadas",
-   "dataPub": "2026-11-17T11:23:18.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-17T11:39:47.480Z"
-  },
-  {
-   "id": "china-reage-a-eua-e-diz-que-adotara-medidas-necessarias-apos-restricao-a-uso-de-chips-amer",
-   "veiculo": "O Globo",
-   "fonteFeed": "O Globo",
-   "titulo": "China reage a EUA e diz que adotará 'medidas necessárias' após restrição a uso de chips americanos",
-   "resumo": "A China prometeu nesta terça-feira adotar as \"medidas necessárias\" para defender seus interesses após as novas restrições dos Estados Unidos às exportações de chips, que afetam o Brasil e quatro…",
-   "link": "https://oglobo.globo.com/economia/tecnologia/noticia/2026/11/17/china-reage-a-eua-e-diz-que-adotara-medidas-necessarias-apos-restricao-a-uso-de-chips-americanos.ghtml",
-   "dataPub": "2026-11-17T11:22:57.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-17T11:39:47.480Z"
-  },
-  {
-   "id": "lula-critica-escudo-das-americas-e-orientacao-de-trump-na-america-latina",
-   "veiculo": "CNN Brasil",
-   "fonteFeed": "CNN Brasil",
-   "titulo": "Lula critica Escudo das Américas e “orientação” de Trump na América Latina",
-   "resumo": "Presidente brasileiro declarou apoio ao premiê espanhol, Pedro Sánchez, a quem chamou de aliado progressista na defesa da democracia no mundo",
-   "link": "https://www.cnnbrasil.com.br/internacional/lula-critica-escudo-das-americas-e-orientacao-de-trump-na-america-latina/",
-   "dataPub": "2026-11-17T11:15:11.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-17T11:39:47.480Z"
-  },
-  {
-   "id": "grupo-prerrogativas-e-deputado-do-pt-pedem-prisao-de-flavio-bolsonaro-e-bloqueio-de-salari",
-   "veiculo": "Gazeta do Povo",
-   "fonteFeed": "Gazeta do Povo",
-   "titulo": "Grupo Prerrogativas e deputado do PT pedem prisão de Flávio Bolsonaro e bloqueio de salário",
-   "resumo": "O pedido encaminhado a Alexandre de Moraes também prevê o bloqueio de verbas do gabinete e a suspensão do exercício do mandato de Flávio.",
-   "link": "https://www.gazetadopovo.com.br/republica/grupo-prerrogativas-e-deputado-do-pt-pedem-prisao-de-flavio-e-bloqueio-de-salario/",
-   "dataPub": "2026-11-17T11:02:55.000Z",
-   "mencoes": [
-    "22"
-   ],
-   "tom": "negativo",
-   "coletadoEm": "2026-11-19T08:54:13.401Z"
-  },
-  {
-   "id": "o-quebra-cabeca-do-novo-governo-lula",
-   "veiculo": "Metrópoles",
-   "fonteFeed": "Metrópoles",
-   "titulo": "O quebra-cabeça do novo governo Lula",
-   "resumo": "Lula acelera escolha para o STF enquanto negocia espaço com aliados",
-   "link": "https://www.metropoles.com/blog-do-noblat/o-quebra-cabeca-do-novo-governo-lula",
-   "dataPub": "2026-11-17T11:00:54.000Z",
-   "mencoes": [
-    "13"
-   ],
-   "tom": "neutro",
-   "coletadoEm": "2026-11-17T11:39:47.480Z"
   }
  ],
  "midia": {
   "janelaHoras": 72,
   "totalManchetes": 400,
   "mencoes": {
-   "13": 359,
-   "22": 109
+   "13": 360,
+   "22": 99
   },
   "tom": {
    "13": {
-    "positivo": 48,
-    "neutro": 243,
-    "negativo": 68
+    "positivo": 49,
+    "neutro": 248,
+    "negativo": 63
    },
    "22": {
     "positivo": 12,
-    "neutro": 54,
-    "negativo": 43
+    "neutro": 51,
+    "negativo": 36
    }
   },
   "termos": [
    [
     "fiscal",
-    82
-   ],
-   [
-    "governo",
-    60
+    79
    ],
    [
     "ajuste",
-    60
+    56
+   ],
+   [
+    "governo",
+    53
    ],
    [
     "senado",
-    31
+    33
    ],
    [
     "câmara",
-    29
+    30
    ],
    [
     "escala",
-    22
+    24
    ],
    [
     "pacote",
@@ -5880,11 +5867,7 @@
     21
    ],
    [
-    "motta",
-    20
-   ],
-   [
-    "votação",
+    "decreto",
     20
    ],
    [
@@ -5892,83 +5875,87 @@
     19
    ],
    [
+    "motta",
+    19
+   ],
+   [
+    "votação",
+    19
+   ],
+   [
     "projeto",
     18
    ],
    [
-    "decreto",
-    17
-   ],
-   [
-    "alcolumbre",
+    "moraes",
     16
    ],
    [
-    "esquerda",
+    "ministros",
     15
    ],
    [
-    "ministros",
-    14
+    "alcolumbre",
+    15
+   ],
+   [
+    "mercado",
+    13
    ],
    [
     "milhões",
     13
    ],
    [
-    "moraes",
-    13
-   ],
-   [
-    "nesta",
-    13
-   ],
-   [
     "ministro",
-    12
+    13
    ],
    [
-    "mercado",
+    "ministério",
     12
-   ],
-   [
-    "janones",
-    11
    ],
    [
     "assina",
-    11
+    12
+   ],
+   [
+    "esquerda",
+    12
    ],
    [
     "regulamenta",
     11
    ],
    [
-    "trump",
+    "nesta",
     10
    ],
    [
-    "vitória",
+    "reduzir",
     9
-   ],
-   [
-    "reunião",
-    9
-   ],
-   [
-    "techs",
-    9
-   ],
-   [
-    "ministério",
-    8
    ],
    [
     "caso",
+    9
+   ],
+   [
+    "janones",
+    9
+   ],
+   [
+    "trump",
+    9
+   ],
+   [
+    "hora",
     8
    ],
    [
-    "gastos",
+    "anuncia",
+    8
+   ],
+   [
+    "reunião",
     8
    ],
    [
@@ -5976,80 +5963,85 @@
     8
    ],
    [
-    "meio",
+    "techs",
     8
    ],
    [
-    "críticas",
-    8
-   ],
-   [
-    "reúne",
-    8
-   ],
-   [
-    "congresso",
-    8
-   ],
-   [
-    "exército",
+    "texto",
     7
    ],
    [
-    "acordo",
+    "cacique",
     7
    ],
    [
-    "direita",
+    "raoni",
     7
    ],
    [
-    "aliados",
+    "volta",
+    7
+   ],
+   [
+    "dólar",
+    7
+   ],
+   [
+    "análise",
+    7
+   ],
+   [
+    "julgamento",
     7
    ]
   ],
   "serieDiaria": [
    {
-    "13": 138,
-    "22": 39,
+    "13": 105,
+    "22": 24,
     "dia": "2026-11-17"
    },
    {
-    "13": 128,
-    "22": 46,
+    "13": 129,
+    "22": 47,
     "dia": "2026-11-18"
    },
    {
-    "13": 93,
-    "22": 24,
+    "13": 126,
+    "22": 28,
     "dia": "2026-11-19"
    }
   ],
   "veiculos": {
-   "Gazeta do Povo": 30,
-   "CNN Brasil": 15,
-   "Revista Oeste": 19,
+   "sentidohorario.com.br": 1,
+   "G1": 49,
+   "Revista Oeste": 21,
+   "CNN Brasil": 17,
+   "Gazeta do Povo": 27,
+   "Brasil de Fato": 16,
+   "CartaCapital": 15,
+   "O Globo": 114,
+   "Folha de S.Paulo": 18,
+   "Estadão": 32,
+   "Estado de Minas": 4,
+   "BBC News Brasil": 2,
    "Poder360": 13,
-   "Metrópoles": 18,
-   "Estadão": 36,
-   "Agência Brasil": 6,
-   "G1": 48,
-   "O Globo": 107,
+   "Metrópoles": 16,
+   "Agência Brasil": 7,
    "CBN": 1,
    "UOL Notícias": 2,
    "Instagram": 1,
-   "CartaCapital": 17,
    "Jurinews": 1,
    "InfoMoney": 1,
-   "Folha de S.Paulo": 16,
-   "Brasil de Fato": 18,
    "A Crítica": 1,
    "GCMais": 1,
+   "Diario de Pernambuco": 1,
    "ICL Notícias": 2,
    "UOL": 4,
    "Money Times": 1,
    "aRede": 1,
    "iG Último Segundo": 1,
+   "Marrapá": 1,
    "Revista Fórum": 1,
    "Portal VV8": 1,
    "Band": 1,
@@ -6057,7 +6049,6 @@
    "NSC Total": 1,
    "R7": 1,
    "Correio Braziliense": 1,
-   "Estado de Minas": 2,
    "Portal do Holanda": 1,
    "| Instituto Socioambiental": 1,
    "Blog do BG": 1,
@@ -6073,17 +6064,9 @@
    "Plantão Brasil": 2,
    "World Socialist Web Site": 1,
    "Tribuna do Sertão": 1,
-   "BBC News Brasil": 2,
    "www.plantaobrasil.net": 1,
    "Tribuna do Planalto": 1,
-   "Brasil 247": 1,
-   "bra1.com.br": 1,
-   "Blog do Mário Flávio": 1,
-   "O GLOBO": 1,
-   "Jornal do Tocantins": 1,
-   "Diario de Pernambuco": 1,
-   "Diário 360": 1,
-   "O Popular": 1
+   "Brasil 247": 1
   }
  },
  "primeiroTurno": {
@@ -6704,7 +6687,7 @@
   "urlBr": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json",
   "codigoEleicao": "6258",
   "horaTSE": "25/10/2026 23:27:02",
-  "espelhadoEm": "2026-11-19T18:09:06.138Z",
+  "espelhadoEm": "2026-11-20T00:38:48.601Z",
   "pctSecoes": 100,
   "eleitorado": 158745502,
   "comparecimento": 128236074,
